@@ -1,0 +1,182 @@
+[
+ {
+  "id": "q01",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 2578.8,
+  "text": "According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:9] [C:attention:12] [C:attention:9] [C:attention:12]"
+ },
+ {
+  "id": "q02",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 1328.4,
+  "text": "According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9] [C:attention:22] [C:attention:9]"
+ },
+ {
+  "id": "q03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 5040.6,
+  "text": "According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:23] [C:attention:20] [C:attention:23]"
+ },
+ {
+  "id": "q04",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q05",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q06",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.3,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q07",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q08",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q09",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q10",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q11",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q12",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q13",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q14",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q15",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q16",
+  "type": "cross",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.1,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q17",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q18",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q19",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ },
+ {
+  "id": "q20",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "shed",
+  "ms": 0.2,
+  "text": "I'm too busy to answer within a reasonable time. Please try again in a minute."
+ }
+]

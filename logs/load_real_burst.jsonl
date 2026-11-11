@@ -1,0 +1,25 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8100", "rate": 0.03, "duration": 120, "n": 8, "window": 3.0, "patience": 20.0, "seed": 1234, "tag": "real_burst", "drain": 0}, "n": 8, "perf0": 1378994.3195302}
+{"t": 1378994.6124233, "req": "real_burst-0000", "event": "arrive", "sched": 0.03224120009690523, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1378994.8503673, "req": "real_burst-0001", "event": "arrive", "sched": 0.2701856999192387, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1378995.9237854, "req": "real_burst-0002", "event": "arrive", "sched": 1.3436022999230772, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1378996.3274382, "req": "real_burst-0003", "event": "arrive", "sched": 1.7472592999693006, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1378996.5231868, "req": "real_burst-0000", "event": "first_byte"}
+{"t": 1378996.5258437, "req": "real_burst-0000", "event": "end", "status": "answered"}
+{"t": 1378996.5939053, "req": "real_burst-0004", "event": "arrive", "sched": 2.0137261000927538, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1378996.6123973, "req": "real_burst-0004", "event": "first_byte"}
+{"t": 1378996.6139685, "req": "real_burst-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1378996.9489235, "req": "real_burst-0001", "event": "first_byte"}
+{"t": 1378996.9504496, "req": "real_burst-0001", "event": "end", "status": "answered"}
+{"t": 1378997.3214069, "req": "real_burst-0005", "event": "arrive", "sched": 2.741221300093457, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1378997.3463719, "req": "real_burst-0005", "event": "first_byte"}
+{"t": 1378997.3543312, "req": "real_burst-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1378997.4154508, "req": "real_burst-0006", "event": "arrive", "sched": 2.8352665998972952, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1378997.435513, "req": "real_burst-0006", "event": "first_byte"}
+{"t": 1378997.4427414, "req": "real_burst-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1378997.4790053, "req": "real_burst-0007", "event": "arrive", "sched": 2.8988228000234812, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1378997.5015235, "req": "real_burst-0007", "event": "first_byte"}
+{"t": 1378997.5035922, "req": "real_burst-0007", "event": "end", "status": "shed"}
+{"t": 1378998.9600972, "req": "real_burst-0002", "event": "first_byte"}
+{"t": 1378998.9787581, "req": "real_burst-0002", "event": "end", "status": "extractive_overload"}
+{"t": 1378999.6616767, "req": "real_burst-0003", "event": "first_byte"}
+{"t": 1378999.6662357, "req": "real_burst-0003", "event": "end", "status": "answered"}

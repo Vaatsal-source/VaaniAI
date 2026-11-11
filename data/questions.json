@@ -1,0 +1,22 @@
+[
+ {"id":"q01","type":"answerable","q":"How many attention heads does the base Transformer use, and what is the dimension of each head's keys?","paper":["attention"],"pages":[5],"must":[["\\b8\\b","eight"],["\\b64\\b"]]},
+ {"id":"q02","type":"answerable","q":"What value of label smoothing was used when training the Transformer?","paper":["attention"],"pages":[8],"must":[["0\\.1"]]},
+ {"id":"q03","type":"answerable","q":"What hardware and how much wall-clock time were used to train the base Transformer models?","paper":["attention"],"pages":[7],"must":[["P100"],["12 hours|12 h"]]},
+ {"id":"q04","type":"answerable","q":"Which functions does the Transformer use for positional encodings?","paper":["attention"],"pages":[6],"must":[["sin"],["cos"]]},
+ {"id":"q05","type":"answerable","q":"How does the Transformer's learning rate change over the course of training?","paper":["attention"],"pages":[7],"must":[["warmup|warm-up|increas"],["inverse square root|step_num|decreas"]]},
+ {"id":"q06","type":"answerable","q":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German translation?","paper":["attention"],"pages":[8],"must":[["28\\.4"]]},
+ {"id":"q07","type":"answerable","q":"What theoretical and practical latency does Moshi report?","paper":["moshi"],"pages":[1],"must":[["160"],["200"]]},
+ {"id":"q08","type":"answerable","q":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?","paper":["moshi"],"pages":[11],"must":[["\\b8\\b|eight"],["1\\.1 ?kbps|1\\.1"]]},
+ {"id":"q09","type":"answerable","q":"How many tokens was Helium pretrained on?","paper":["moshi"],"pages":[3,22],"must":[["2\\.1 ?T|2\\.1 trillion"]]},
+ {"id":"q10","type":"answerable","q":"What GPUs were Moshi's models trained on?","paper":["moshi"],"pages":[20],"must":[["H100"]]},
+ {"id":"q11","type":"answerable","q":"How does Moshi's theoretical latency compare with the average latency in natural human conversation, according to the paper?","paper":["moshi"],"pages":[2],"must":[["160"],["230"]]},
+ {"id":"q12","type":"answerable","q":"How does the H-Net routing module decide where chunk boundaries go?","paper":["dynchunk"],"pages":[6],"must":[["cosine"],["adjacent|consecutive|neighbo"]]},
+ {"id":"q13","type":"answerable","q":"What is the ratio loss in the dynamic chunking paper for?","paper":["dynchunk"],"pages":[8],"must":[["compress|fraction|boundar|target"]]},
+ {"id":"q14","type":"answerable","q":"Which gradient estimator does the dynamic chunking paper use to stabilize training through discrete boundary decisions?","paper":["dynchunk"],"pages":[8],"must":[["straight.through|STE"]]},
+ {"id":"q15","type":"answerable","q":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Transformer baseline?","paper":["dynchunk"],"pages":[11],"must":[["760 ?M"]]},
+ {"id":"q16","type":"cross","q":"How many attention heads does the Transformer base model use, and how many heads does Moshi's Depth Transformer use?","paper":["attention","moshi"],"pages":[5,8],"must":[["\\b8\\b|eight"],["\\b16\\b|sixteen"]]},
+ {"id":"q17","type":"unanswerable","q":"What BLEU score did the Transformer achieve on English-to-Chinese translation?","paper":[],"pages":[],"forbid":["\\bBLEU (score )?(of|was|is) \\d"]},
+ {"id":"q18","type":"unanswerable","q":"What open-source license are the Moshi model weights released under?","paper":[],"pages":[],"forbid":["Apache|MIT|CC-BY|CC BY|GPL"]},
+ {"id":"q19","type":"unanswerable","q":"How well does H-Net perform on protein sequence modeling?","paper":[],"pages":[],"forbid":["perplexity of \\d|accuracy of \\d"]},
+ {"id":"q20","type":"unanswerable","q":"What word error rate did the original Transformer achieve on speech recognition?","paper":[],"pages":[],"forbid":["WER (of|was|is) \\d|\\d+(\\.\\d+)?% WER"]}
+]

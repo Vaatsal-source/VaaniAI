@@ -1,0 +1,61 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8100", "rate": 0.03, "duration": 120, "n": 20, "window": 5.0, "patience": 25.0, "seed": 1234, "tag": "s_burst_free", "drain": 0}, "n": 20, "perf0": 1371730.1970948}
+{"t": 1371730.5831713, "req": "s_burst_free-0000", "event": "arrive", "sched": 0.046097599901258945, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1371730.6370996, "req": "s_burst_free-0001", "event": "arrive", "sched": 0.10002919984981418, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1371730.6822564, "req": "s_burst_free-0002", "event": "arrive", "sched": 0.14518669992685318, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1371730.9607176, "req": "s_burst_free-0003", "event": "arrive", "sched": 0.42364469985477626, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1371731.1281155, "req": "s_burst_free-0004", "event": "arrive", "sched": 0.5910397998522967, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1371731.2873272, "req": "s_burst_free-0005", "event": "arrive", "sched": 0.7502528999466449, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1371731.4688534, "req": "s_burst_free-0006", "event": "arrive", "sched": 0.9317809999920428, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1371731.7208931, "req": "s_burst_free-0007", "event": "arrive", "sched": 1.18382090004161, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1371732.2302943, "req": "s_burst_free-0000", "event": "first_byte"}
+{"t": 1371732.232938, "req": "s_burst_free-0000", "event": "end", "status": "answered"}
+{"t": 1371732.2600342, "req": "s_burst_free-0008", "event": "arrive", "sched": 1.7229639999568462, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1371732.3035033, "req": "s_burst_free-0001", "event": "first_byte"}
+{"t": 1371732.3060182, "req": "s_burst_free-0001", "event": "end", "status": "answered"}
+{"t": 1371732.7442796, "req": "s_burst_free-0009", "event": "arrive", "sched": 2.207204299978912, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1371732.9816431, "req": "s_burst_free-0010", "event": "arrive", "sched": 2.444569000042975, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1371733.4542314, "req": "s_burst_free-0011", "event": "arrive", "sched": 2.917159599950537, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1371733.6210312, "req": "s_burst_free-0012", "event": "arrive", "sched": 3.0839567999355495, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1371733.6543306, "req": "s_burst_free-0013", "event": "arrive", "sched": 3.117258299840614, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1371733.8931231, "req": "s_burst_free-0014", "event": "arrive", "sched": 3.356047800043598, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1371734.3611946, "req": "s_burst_free-0015", "event": "arrive", "sched": 3.8241216999012977, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1371734.4772751, "req": "s_burst_free-0016", "event": "arrive", "sched": 3.9402026999741793, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1371735.0943776, "req": "s_burst_free-0017", "event": "arrive", "sched": 4.557305600028485, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1371735.2435365, "req": "s_burst_free-0018", "event": "arrive", "sched": 4.706460899906233, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1371735.3846354, "req": "s_burst_free-0019", "event": "arrive", "sched": 4.847562900045887, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1371735.3932233, "req": "s_burst_free-0019", "event": "first_byte"}
+{"t": 1371735.3944395, "req": "s_burst_free-0019", "event": "end", "status": "shed"}
+{"t": 1371735.8210498, "req": "s_burst_free-0002", "event": "first_byte"}
+{"t": 1371735.8384672, "req": "s_burst_free-0002", "event": "end", "status": "answered"}
+{"t": 1371754.3747419, "req": "s_burst_free-0004", "event": "first_byte"}
+{"t": 1371754.3860551, "req": "s_burst_free-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.3863648, "req": "s_burst_free-0005", "event": "first_byte"}
+{"t": 1371754.4032889, "req": "s_burst_free-0008", "event": "first_byte"}
+{"t": 1371754.4177699, "req": "s_burst_free-0009", "event": "first_byte"}
+{"t": 1371754.4266974, "req": "s_burst_free-0006", "event": "first_byte"}
+{"t": 1371754.4301917, "req": "s_burst_free-0013", "event": "first_byte"}
+{"t": 1371754.4368405, "req": "s_burst_free-0010", "event": "first_byte"}
+{"t": 1371754.4443491, "req": "s_burst_free-0012", "event": "first_byte"}
+{"t": 1371754.4493821, "req": "s_burst_free-0011", "event": "first_byte"}
+{"t": 1371754.4551998, "req": "s_burst_free-0014", "event": "first_byte"}
+{"t": 1371754.4600754, "req": "s_burst_free-0015", "event": "first_byte"}
+{"t": 1371754.4661408, "req": "s_burst_free-0018", "event": "first_byte"}
+{"t": 1371754.4725306, "req": "s_burst_free-0016", "event": "first_byte"}
+{"t": 1371754.4768108, "req": "s_burst_free-0017", "event": "first_byte"}
+{"t": 1371754.4810983, "req": "s_burst_free-0007", "event": "first_byte"}
+{"t": 1371754.4849148, "req": "s_burst_free-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4862429, "req": "s_burst_free-0008", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4865387, "req": "s_burst_free-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4880911, "req": "s_burst_free-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4888687, "req": "s_burst_free-0013", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4893381, "req": "s_burst_free-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.489763, "req": "s_burst_free-0012", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4906937, "req": "s_burst_free-0011", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4910794, "req": "s_burst_free-0014", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4924192, "req": "s_burst_free-0015", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4938525, "req": "s_burst_free-0018", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4943753, "req": "s_burst_free-0016", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4948648, "req": "s_burst_free-0017", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4953908, "req": "s_burst_free-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1371754.4957937, "req": "s_burst_free-0003", "event": "first_byte"}
+{"t": 1371754.5042724, "req": "s_burst_free-0003", "event": "end", "status": "extractive_overload"}

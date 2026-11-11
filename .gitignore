@@ -1,0 +1,31 @@
+# secrets: never commit real keys (.env.example is the template)
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# regenerable caches (python scripts/... rebuilds them; chunk JSONs are kept
+# because the README points at them)
+data/emb_*.npy
+data/emb_*.sig
+
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local-only: raw assistant session transcripts may contain machine paths and
+# account ids. Add docs/ transcript deliberately after reviewing it.
+*.jsonl.bak

@@ -1,0 +1,327 @@
+{"t":1369384.9240263,"req":"q01","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1369384.9242339,"req":"q01","event":"step_start","step":"classify"}
+{"t":1369384.9245003,"req":"q01","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":295}
+{"t":1369385.3793884,"req":"q01","event":"first_token","step":"classify","ttft_ms":454.8}
+{"t":1369385.3804226,"req":"q01","event":"last_token","step":"classify","total_ms":455.9,"prompt_tokens":214,"completion_tokens":80}
+{"t":1369385.3806432,"req":"q01","event":"step_end","step":"classify"}
+{"t":1369385.3813544,"req":"q01","event":"step_start","step":"retrieve"}
+{"t":1369385.40775,"req":"q01","event":"step_end","step":"retrieve"}
+{"t":1369385.4089935,"req":"q01","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369385.4094023,"req":"q01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2580}
+{"t":1369386.0933537,"req":"q01","event":"first_token","step":"draft","ttft_ms":683.9}
+{"t":1369386.158147,"req":"q01","event":"last_token","step":"draft","total_ms":748.7,"prompt_tokens":1897,"completion_tokens":99}
+{"t":1369386.1584631,"req":"q01","event":"verify_det","ok":false,"issues":["no_citation","number_not_in_cited:8","number_not_in_cited:64","number_not_in_cited:12","number_not_in_cited:11"]}
+{"t":1369386.1585323,"req":"q01","event":"decide","branch":"regenerate","issues":["no_citation","number_not_in_cited:8","number_not_in_cited:64","number_not_in_cited:12","number_not_in_cited:11"]}
+{"t":1369386.1588854,"req":"q01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2655}
+{"t":1369386.9868112,"req":"q01","event":"first_token","step":"draft","ttft_ms":827.9}
+{"t":1369387.0724989,"req":"q01","event":"last_token","step":"draft","total_ms":913.5,"prompt_tokens":1957,"completion_tokens":96}
+{"t":1369387.0728384,"req":"q01","event":"verify_det","ok":true,"issues":[]}
+{"t":1369387.0729356,"req":"q01","event":"user_first_token"}
+{"t":1369387.0729965,"req":"q01","event":"user_last_token"}
+{"t":1369387.0730434,"req":"q01","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft","draft"],"answer":"The base Transformer uses 8 parallel attention heads, and each head\u2019s keys (and values) have dimension 64 [C:attention:12][C:attention:11]"}
+{"t":1369387.0741578,"req":"q02","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1369387.0742864,"req":"q02","event":"step_start","step":"classify"}
+{"t":1369387.0749326,"req":"q02","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1369388.1623489,"req":"q02","event":"first_token","step":"classify","ttft_ms":1087.3}
+{"t":1369388.1637479,"req":"q02","event":"last_token","step":"classify","total_ms":1088.7,"prompt_tokens":205,"completion_tokens":54}
+{"t":1369388.1663455,"req":"q02","event":"step_end","step":"classify"}
+{"t":1369388.16653,"req":"q02","event":"step_start","step":"retrieve"}
+{"t":1369388.1925699,"req":"q02","event":"step_end","step":"retrieve"}
+{"t":1369388.1937409,"req":"q02","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1369393.7626466,"req":"q02","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2559}
+{"t":1369394.4864329,"req":"q02","event":"first_token","step":"draft","ttft_ms":723.5}
+{"t":1369394.5419734,"req":"q02","event":"last_token","step":"draft","total_ms":779.0,"prompt_tokens":1930,"completion_tokens":66}
+{"t":1369394.5422636,"req":"q02","event":"verify_det","ok":true,"issues":[]}
+{"t":1369394.5423479,"req":"q02","event":"user_first_token"}
+{"t":1369394.5424062,"req":"q02","event":"user_last_token"}
+{"t":1369394.5424544,"req":"q02","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer was trained with label smoothing \u03f5\u2097\u209b = 0.1[C:attention:22]"}
+{"t":1369394.5428733,"req":"q03","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1369394.543127,"req":"q03","event":"step_start","step":"classify"}
+{"t":1369395.944832,"req":"q03","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1369397.1294538,"req":"q03","event":"first_token","step":"classify","ttft_ms":1184.4}
+{"t":1369397.1309944,"req":"q03","event":"last_token","step":"classify","total_ms":1186.0,"prompt_tokens":210,"completion_tokens":58}
+{"t":1369397.1311604,"req":"q03","event":"step_end","step":"classify"}
+{"t":1369397.1313235,"req":"q03","event":"step_start","step":"retrieve"}
+{"t":1369397.1384082,"req":"q03","event":"step_end","step":"retrieve"}
+{"t":1369397.1399292,"req":"q03","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1369415.2063773,"req":"q03","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2568}
+{"t":1369415.9946702,"req":"q03","event":"first_token","step":"draft","ttft_ms":788.1}
+{"t":1369416.1307655,"req":"q03","event":"last_token","step":"draft","total_ms":924.2,"prompt_tokens":1875,"completion_tokens":117}
+{"t":1369416.1309877,"req":"q03","event":"verify_det","ok":true,"issues":[]}
+{"t":1369416.1311079,"req":"q03","event":"user_first_token"}
+{"t":1369416.131176,"req":"q03","event":"user_last_token"}
+{"t":1369416.1312156,"req":"q03","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The base Transformer models were trained on a single machine equipped with **8 NVIDIA P100 GPUs**, and the training ran for **about 12 hours of wall\u2011clock time** (100 k steps)[C:attention:20]."}
+{"t":1369416.1316155,"req":"q04","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1369416.1316687,"req":"q04","event":"step_start","step":"classify"}
+{"t":1369417.3234553,"req":"q04","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1369417.6774524,"req":"q04","event":"first_token","step":"classify","ttft_ms":353.8}
+{"t":1369417.6792522,"req":"q04","event":"last_token","step":"classify","total_ms":355.6,"prompt_tokens":204,"completion_tokens":56}
+{"t":1369417.679459,"req":"q04","event":"step_end","step":"classify"}
+{"t":1369417.6795585,"req":"q04","event":"step_start","step":"retrieve"}
+{"t":1369417.6829304,"req":"q04","event":"step_end","step":"retrieve"}
+{"t":1369417.6838199,"req":"q04","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369436.5225795,"req":"q04","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2560}
+{"t":1369437.2767076,"req":"q04","event":"first_token","step":"draft","ttft_ms":752.4}
+{"t":1369437.4203233,"req":"q04","event":"last_token","step":"draft","total_ms":896.0,"prompt_tokens":1772,"completion_tokens":93}
+{"t":1369437.4223192,"req":"q04","event":"verify_det","ok":true,"issues":[]}
+{"t":1369437.422441,"req":"q04","event":"user_first_token"}
+{"t":1369437.4224942,"req":"q04","event":"user_last_token"}
+{"t":1369437.4225343,"req":"q04","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer adds sinusoidal positional encodings, using sine and cosine functions of varying frequencies (e.g., PE(pos,2i)=sin(pos/10000^{2i/dmodel}), PE(pos,2i+1)=cos(pos/10000^{2i/dmodel}))[C:attention:15]."}
+{"t":1369437.4227728,"req":"q05","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1369437.4228152,"req":"q05","event":"step_start","step":"classify"}
+{"t":1369438.6728343,"req":"q05","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":286}
+{"t":1369440.1325808,"req":"q05","event":"first_token","step":"classify","ttft_ms":1459.5}
+{"t":1369440.133896,"req":"q05","event":"last_token","step":"classify","total_ms":1460.9,"prompt_tokens":207,"completion_tokens":60}
+{"t":1369440.1340619,"req":"q05","event":"step_end","step":"classify"}
+{"t":1369440.1343591,"req":"q05","event":"step_start","step":"retrieve"}
+{"t":1369440.1450461,"req":"q05","event":"step_end","step":"retrieve"}
+{"t":1369440.14617,"req":"q05","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369457.868951,"req":"q05","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2559}
+{"t":1369458.9330894,"req":"q05","event":"first_token","step":"draft","ttft_ms":1064.0}
+{"t":1369459.17483,"req":"q05","event":"last_token","step":"draft","total_ms":1305.7,"prompt_tokens":2062,"completion_tokens":160}
+{"t":1369459.175148,"req":"q05","event":"verify_det","ok":true,"issues":[]}
+{"t":1369459.1752107,"req":"q05","event":"user_first_token"}
+{"t":1369459.1752569,"req":"q05","event":"user_last_token"}
+{"t":1369459.1752941,"req":"q05","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The learning rate is increased linearly for the first warmup_steps training steps and then decays proportionally to the inverse square\u2011root of the step number for the remainder of training [C:attention:20]. This behavior follows the schedule lrate = d\u207b\u2070\u00b7\u2075_model \u00b7 min(step_num\u207b\u2070\u00b7\u2075, step_num \u00b7 warmup_steps\u207b\u00b9\u00b7\u2075) with warmup_steps = 4000 [C:attention:21]."}
+{"t":1369459.1758298,"req":"q06","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1369459.1758946,"req":"q06","event":"step_start","step":"classify"}
+{"t":1369460.039735,"req":"q06","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":290}
+{"t":1369460.5137861,"req":"q06","event":"first_token","step":"classify","ttft_ms":473.9}
+{"t":1369460.5152923,"req":"q06","event":"last_token","step":"classify","total_ms":475.4,"prompt_tokens":214,"completion_tokens":55}
+{"t":1369460.5154297,"req":"q06","event":"step_end","step":"classify"}
+{"t":1369460.515533,"req":"q06","event":"step_start","step":"retrieve"}
+{"t":1369460.5196806,"req":"q06","event":"step_end","step":"retrieve"}
+{"t":1369460.5205553,"req":"q06","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1369479.2241684,"req":"q06","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1369480.0071166,"req":"q06","event":"first_token","step":"draft","ttft_ms":782.8}
+{"t":1369480.0904806,"req":"q06","event":"last_token","step":"draft","total_ms":866.1,"prompt_tokens":1668,"completion_tokens":102}
+{"t":1369480.0909211,"req":"q06","event":"verify_det","ok":true,"issues":[]}
+{"t":1369480.0910418,"req":"q06","event":"user_first_token"}
+{"t":1369480.0911099,"req":"q06","event":"user_last_token"}
+{"t":1369480.091168,"req":"q06","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The big Transformer achieved a BLEU score of 28.4 on the WMT 2014 English\u2011to\u2011German translation task[C:attention:22]."}
+{"t":1369480.0915244,"req":"q07","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1369480.0916048,"req":"q07","event":"step_start","step":"classify"}
+{"t":1369481.3113324,"req":"q07","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1369481.9307539,"req":"q07","event":"first_token","step":"classify","ttft_ms":619.2}
+{"t":1369481.9321212,"req":"q07","event":"last_token","step":"classify","total_ms":620.6,"prompt_tokens":203,"completion_tokens":76}
+{"t":1369481.932285,"req":"q07","event":"step_end","step":"classify"}
+{"t":1369481.9323938,"req":"q07","event":"step_start","step":"retrieve"}
+{"t":1369481.9357059,"req":"q07","event":"step_end","step":"retrieve"}
+{"t":1369481.9367331,"req":"q07","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369500.4893587,"req":"q07","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1369501.2111114,"req":"q07","event":"first_token","step":"draft","ttft_ms":721.6}
+{"t":1369501.3304463,"req":"q07","event":"last_token","step":"draft","total_ms":840.9,"prompt_tokens":1691,"completion_tokens":113}
+{"t":1369501.330729,"req":"q07","event":"verify_det","ok":true,"issues":[]}
+{"t":1369501.3307995,"req":"q07","event":"user_first_token"}
+{"t":1369501.3308689,"req":"q07","event":"user_last_token"}
+{"t":1369501.3309275,"req":"q07","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi reports a theoretical latency of 160 ms and a practical (in\u2011practice) latency of \u2248200 ms[C:moshi:1]. (The same 160 ms theoretical latency is also noted in the system description[C:moshi:4].)"}
+{"t":1369501.3312721,"req":"q08","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1369501.3313769,"req":"q08","event":"step_start","step":"classify"}
+{"t":1369502.6404377,"req":"q08","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1369503.3458723,"req":"q08","event":"first_token","step":"classify","ttft_ms":705.3}
+{"t":1369503.348632,"req":"q08","event":"last_token","step":"classify","total_ms":708.0,"prompt_tokens":214,"completion_tokens":93}
+{"t":1369503.3487867,"req":"q08","event":"step_end","step":"classify"}
+{"t":1369503.3489813,"req":"q08","event":"step_start","step":"retrieve"}
+{"t":1369503.3671647,"req":"q08","event":"step_end","step":"retrieve"}
+{"t":1369503.3694696,"req":"q08","event":"decide","branch":"draft","conf":0.71,"k":5}
+{"t":1369522.2924713,"req":"q08","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2615}
+{"t":1369522.9919096,"req":"q08","event":"first_token","step":"draft","ttft_ms":699.3}
+{"t":1369523.0763047,"req":"q08","event":"last_token","step":"draft","total_ms":783.7,"prompt_tokens":1894,"completion_tokens":123}
+{"t":1369523.0765135,"req":"q08","event":"verify_det","ok":true,"issues":[]}
+{"t":1369523.0765552,"req":"q08","event":"user_first_token"}
+{"t":1369523.0766525,"req":"q08","event":"user_last_token"}
+{"t":1369523.0767135,"req":"q08","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Mimi uses eight quantizers, which at a 12.5 Hz sampling rate yields a bitrate of about 1.1 kbps[C:moshi:32]."}
+{"t":1369523.0771416,"req":"q09","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1369523.0771949,"req":"q09","event":"step_start","step":"classify"}
+{"t":1369524.3242978,"req":"q09","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":275}
+{"t":1369525.2560098,"req":"q09","event":"first_token","step":"classify","ttft_ms":931.4}
+{"t":1369525.2572957,"req":"q09","event":"last_token","step":"classify","total_ms":932.7,"prompt_tokens":202,"completion_tokens":73}
+{"t":1369525.2574775,"req":"q09","event":"step_end","step":"classify"}
+{"t":1369525.257564,"req":"q09","event":"step_start","step":"retrieve"}
+{"t":1369525.2612603,"req":"q09","event":"step_end","step":"retrieve"}
+{"t":1369525.2626323,"req":"q09","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1369543.8471104,"req":"q09","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2602}
+{"t":1369544.4231489,"req":"q09","event":"first_token","step":"draft","ttft_ms":575.8}
+{"t":1369544.4790218,"req":"q09","event":"last_token","step":"draft","total_ms":631.7,"prompt_tokens":1845,"completion_tokens":74}
+{"t":1369544.4792454,"req":"q09","event":"verify_det","ok":true,"issues":[]}
+{"t":1369544.4793066,"req":"q09","event":"user_first_token"}
+{"t":1369544.4794049,"req":"q09","event":"user_last_token"}
+{"t":1369544.4794895,"req":"q09","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Helium was pretrained on 2.1 trillion tokens of public English data[C:moshi:6]."}
+{"t":1369544.4799189,"req":"q10","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1369544.480025,"req":"q10","event":"step_start","step":"classify"}
+{"t":1369545.9067767,"req":"q10","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":275}
+{"t":1369546.8320203,"req":"q10","event":"first_token","step":"classify","ttft_ms":925.1}
+{"t":1369546.8332823,"req":"q10","event":"last_token","step":"classify","total_ms":926.3,"prompt_tokens":203,"completion_tokens":54}
+{"t":1369546.8334303,"req":"q10","event":"step_end","step":"classify"}
+{"t":1369546.8335149,"req":"q10","event":"step_start","step":"retrieve"}
+{"t":1369546.8368643,"req":"q10","event":"step_end","step":"retrieve"}
+{"t":1369546.839005,"req":"q10","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369565.1919954,"req":"q10","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2572}
+{"t":1369566.0954625,"req":"q10","event":"first_token","step":"draft","ttft_ms":903.1}
+{"t":1369566.1298784,"req":"q10","event":"last_token","step":"draft","total_ms":937.5,"prompt_tokens":1727,"completion_tokens":78}
+{"t":1369566.1354189,"req":"q10","event":"verify_det","ok":true,"issues":[]}
+{"t":1369566.1355224,"req":"q10","event":"user_first_token"}
+{"t":1369566.1355791,"req":"q10","event":"user_last_token"}
+{"t":1369566.1356138,"req":"q10","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi\u2019s models were trained on H100 GPUs[C:moshi:58][C:moshi:59]"}
+{"t":1369566.135802,"req":"q11","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1369566.1358429,"req":"q11","event":"step_start","step":"classify"}
+{"t":1369567.4576009,"req":"q11","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":302}
+{"t":1369569.9727746,"req":"q11","event":"first_token","step":"classify","ttft_ms":2515.0}
+{"t":1369569.9744016,"req":"q11","event":"last_token","step":"classify","total_ms":2516.6,"prompt_tokens":215,"completion_tokens":52}
+{"t":1369569.9745232,"req":"q11","event":"step_end","step":"classify"}
+{"t":1369569.9746154,"req":"q11","event":"step_start","step":"retrieve"}
+{"t":1369569.9806163,"req":"q11","event":"step_end","step":"retrieve"}
+{"t":1369569.9815136,"req":"q11","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1369586.7801118,"req":"q11","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2577}
+{"t":1369587.6827524,"req":"q11","event":"first_token","step":"draft","ttft_ms":902.5}
+{"t":1369587.7956124,"req":"q11","event":"last_token","step":"draft","total_ms":1015.3,"prompt_tokens":1683,"completion_tokens":75}
+{"t":1369587.7959019,"req":"q11","event":"verify_det","ok":true,"issues":[]}
+{"t":1369587.7959777,"req":"q11","event":"user_first_token"}
+{"t":1369587.7960365,"req":"q11","event":"user_last_token"}
+{"t":1369587.7961312,"req":"q11","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi\u2019s streaming architecture achieves a theoretical latency of 160 ms, which is lower than the roughly 230 ms average response time measured in natural human conversations[C:moshi:4]."}
+{"t":1369587.7965208,"req":"q12","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1369587.7966383,"req":"q12","event":"step_start","step":"classify"}
+{"t":1369588.9071516,"req":"q12","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1369589.4833688,"req":"q12","event":"first_token","step":"classify","ttft_ms":574.5}
+{"t":1369589.4851299,"req":"q12","event":"last_token","step":"classify","total_ms":576.3,"prompt_tokens":206,"completion_tokens":72}
+{"t":1369589.4853084,"req":"q12","event":"step_end","step":"classify"}
+{"t":1369589.4855245,"req":"q12","event":"step_start","step":"retrieve"}
+{"t":1369589.4938732,"req":"q12","event":"step_end","step":"retrieve"}
+{"t":1369589.4949643,"req":"q12","event":"decide","branch":"tool_fetch_section"}
+{"t":1369589.4950313,"req":"q12","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"3.2.2"}
+{"t":1369589.4953216,"req":"q12","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1369607.9849866,"req":"q12","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2545}
+{"t":1369608.6926957,"req":"q12","event":"first_token","step":"draft","ttft_ms":707.5}
+{"t":1369608.9463868,"req":"q12","event":"last_token","step":"draft","total_ms":961.2,"prompt_tokens":1747,"completion_tokens":227}
+{"t":1369608.9467069,"req":"q12","event":"verify_det","ok":true,"issues":[]}
+{"t":1369608.9467822,"req":"q12","event":"user_first_token"}
+{"t":1369608.9469165,"req":"q12","event":"user_last_token"}
+{"t":1369608.9469872,"req":"q12","event":"done","status":"answered","level":0,"steps":["classify","retrieve","tool","draft"],"answer":"The routing module measures the similarity between adjacent encoder outputs: it projects each output into query q\u209c and key k\u209c vectors, computes the cosine similarity between q\u209c and k\u209c\u208b\u2081, rescales it to a boundary probability p\u209c = \u00bd(1 \u2212 cosine), and then places a boundary whenever p\u209c \u2265 0.5 (with p\u2081 = 1.0 by definition)[C:dynchunk:20]. This similarity\u2011based scoring is the core mechanism for predicting chunk boundaries[C:dynchunk:7]."}
+{"t":1369608.9474965,"req":"q13","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1369608.9475743,"req":"q13","event":"step_start","step":"classify"}
+{"t":1369610.0968713,"req":"q13","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1369611.3913652,"req":"q13","event":"first_token","step":"classify","ttft_ms":1294.3}
+{"t":1369611.3927543,"req":"q13","event":"last_token","step":"classify","total_ms":1295.7,"prompt_tokens":206,"completion_tokens":60}
+{"t":1369611.3929064,"req":"q13","event":"step_end","step":"classify"}
+{"t":1369611.3929976,"req":"q13","event":"step_start","step":"retrieve"}
+{"t":1369611.3975579,"req":"q13","event":"step_end","step":"retrieve"}
+{"t":1369611.3984026,"req":"q13","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369629.131069,"req":"q13","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2540}
+{"t":1369629.9614013,"req":"q13","event":"first_token","step":"draft","ttft_ms":830.1}
+{"t":1369630.1633152,"req":"q13","event":"last_token","step":"draft","total_ms":1032.1,"prompt_tokens":1663,"completion_tokens":131}
+{"t":1369630.1635887,"req":"q13","event":"verify_det","ok":true,"issues":[]}
+{"t":1369630.1636438,"req":"q13","event":"user_first_token"}
+{"t":1369630.1636948,"req":"q13","event":"user_last_token"}
+{"t":1369630.1637299,"req":"q13","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The ratio loss is introduced to regularize the dynamic\u2011chunking process so that the model learns to compress data to a target down\u2011sampling (compression) ratio rather than collapsing to trivial solutions (keeping almost all vectors or over\u2011compressing). It provides continuous feedback on the average boundary probability, encouraging balanced \u201cexpert\u201d (chunk) utilization and guiding the network toward the desired compression ratio. [C:dynchunk:28] [C:dynchunk:27]"}
+{"t":1369630.164079,"req":"q14","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1369630.1641369,"req":"q14","event":"step_start","step":"classify"}
+{"t":1369631.3990951,"req":"q14","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":301}
+{"t":1369632.250164,"req":"q14","event":"first_token","step":"classify","ttft_ms":850.9}
+{"t":1369632.2518226,"req":"q14","event":"last_token","step":"classify","total_ms":852.6,"prompt_tokens":211,"completion_tokens":68}
+{"t":1369632.2520081,"req":"q14","event":"step_end","step":"classify"}
+{"t":1369632.252183,"req":"q14","event":"step_start","step":"retrieve"}
+{"t":1369632.2619771,"req":"q14","event":"step_end","step":"retrieve"}
+{"t":1369632.2637475,"req":"q14","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1369650.581867,"req":"q14","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2559}
+{"t":1369651.3474264,"req":"q14","event":"first_token","step":"draft","ttft_ms":765.0}
+{"t":1369651.4163068,"req":"q14","event":"last_token","step":"draft","total_ms":833.9,"prompt_tokens":1786,"completion_tokens":64}
+{"t":1369651.4165388,"req":"q14","event":"verify_det","ok":true,"issues":[]}
+{"t":1369651.4166154,"req":"q14","event":"user_first_token"}
+{"t":1369651.4167521,"req":"q14","event":"user_last_token"}
+{"t":1369651.4168167,"req":"q14","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The dynamic\u2011chunking model stabilizes training of discrete boundary decisions with the Straight\u2011Through Estimator (STE) [C:dynchunk:26]."}
+{"t":1369651.4172183,"req":"q15","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1369651.4172953,"req":"q15","event":"step_start","step":"classify"}
+{"t":1369652.7865661,"req":"q15","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":293}
+{"t":1369653.2321976,"req":"q15","event":"first_token","step":"classify","ttft_ms":445.4}
+{"t":1369653.233376,"req":"q15","event":"last_token","step":"classify","total_ms":446.6,"prompt_tokens":216,"completion_tokens":75}
+{"t":1369653.2335173,"req":"q15","event":"step_end","step":"classify"}
+{"t":1369653.233617,"req":"q15","event":"step_start","step":"retrieve"}
+{"t":1369653.2494938,"req":"q15","event":"step_end","step":"retrieve"}
+{"t":1369653.2504667,"req":"q15","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369672.0656886,"req":"q15","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2569}
+{"t":1369672.976854,"req":"q15","event":"first_token","step":"draft","ttft_ms":911.0}
+{"t":1369673.0487124,"req":"q15","event":"last_token","step":"draft","total_ms":982.8,"prompt_tokens":2156,"completion_tokens":118}
+{"t":1369673.0490628,"req":"q15","event":"verify_det","ok":true,"issues":[]}
+{"t":1369673.0491812,"req":"q15","event":"user_first_token"}
+{"t":1369673.0492598,"req":"q15","event":"user_last_token"}
+{"t":1369673.0493274,"req":"q15","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The FLOPs\u2011matched GPT\u20113 Large Transformer baseline uses a 760 M\u2011parameter model[C:dynchunk:40]."}
+{"t":1369673.0496932,"req":"q16","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1369673.0497855,"req":"q16","event":"step_start","step":"classify"}
+{"t":1369674.3023436,"req":"q16","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":300}
+{"t":1369674.7313391,"req":"q16","event":"first_token","step":"classify","ttft_ms":428.8}
+{"t":1369674.7332665,"req":"q16","event":"last_token","step":"classify","total_ms":430.7,"prompt_tokens":216,"completion_tokens":63}
+{"t":1369674.7334148,"req":"q16","event":"step_end","step":"classify"}
+{"t":1369674.7336665,"req":"q16","event":"step_start","step":"retrieve"}
+{"t":1369674.7487939,"req":"q16","event":"step_end","step":"retrieve"}
+{"t":1369674.7499902,"req":"q16","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1369691.9170345,"req":"q16","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2349}
+{"t":1369692.6994993,"req":"q16","event":"first_token","step":"draft","ttft_ms":782.2}
+{"t":1369692.7772426,"req":"q16","event":"last_token","step":"draft","total_ms":860.0,"prompt_tokens":1948,"completion_tokens":146}
+{"t":1369692.7777982,"req":"q16","event":"verify_det","ok":true,"issues":[]}
+{"t":1369692.7778842,"req":"q16","event":"user_first_token"}
+{"t":1369692.7779576,"req":"q16","event":"user_last_token"}
+{"t":1369692.7780189,"req":"q16","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer base model uses 8 attention heads [C:attention:25], and Moshi\u2019s Depth Transformer uses 16 attention heads [C:moshi:23]."}
+{"t":1369692.778394,"req":"q17","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1369692.7784776,"req":"q17","event":"step_start","step":"classify"}
+{"t":1369694.0832937,"req":"q17","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1369695.0320341,"req":"q17","event":"first_token","step":"classify","ttft_ms":948.5}
+{"t":1369695.0335131,"req":"q17","event":"last_token","step":"classify","total_ms":950.0,"prompt_tokens":208,"completion_tokens":52}
+{"t":1369695.0336473,"req":"q17","event":"step_end","step":"classify"}
+{"t":1369695.0337783,"req":"q17","event":"step_start","step":"retrieve"}
+{"t":1369695.06775,"req":"q17","event":"step_end","step":"retrieve"}
+{"t":1369695.0689011,"req":"q17","event":"decide","branch":"draft","conf":0.86,"k":5}
+{"t":1369713.2090524,"req":"q17","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2553}
+{"t":1369714.0565095,"req":"q17","event":"first_token","step":"draft","ttft_ms":847.2}
+{"t":1369714.1248642,"req":"q17","event":"last_token","step":"draft","total_ms":915.6,"prompt_tokens":1787,"completion_tokens":61}
+{"t":1369714.1250214,"req":"q17","event":"verify_det","ok":true,"issues":[]}
+{"t":1369714.1251076,"req":"q17","event":"user_first_token"}
+{"t":1369714.1251529,"req":"q17","event":"user_last_token"}
+{"t":1369714.1251953,"req":"q17","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide BLEU results for English\u2011German and English\u2011French translation, but contain no information about English\u2011to\u2011Chinese performance."}
+{"t":1369714.1255921,"req":"q18","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1369714.1256472,"req":"q18","event":"step_start","step":"classify"}
+{"t":1369715.350093,"req":"q18","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1369716.4500015,"req":"q18","event":"first_token","step":"classify","ttft_ms":1099.7}
+{"t":1369716.4513297,"req":"q18","event":"last_token","step":"classify","total_ms":1101.0,"prompt_tokens":206,"completion_tokens":64}
+{"t":1369716.4514788,"req":"q18","event":"step_end","step":"classify"}
+{"t":1369716.4516039,"req":"q18","event":"step_start","step":"retrieve"}
+{"t":1369716.4601498,"req":"q18","event":"step_end","step":"retrieve"}
+{"t":1369716.4612645,"req":"q18","event":"decide","branch":"draft","conf":0.62,"k":5}
+{"t":1369734.3487604,"req":"q18","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2535}
+{"t":1369735.0826521,"req":"q18","event":"first_token","step":"draft","ttft_ms":733.7}
+{"t":1369735.1522401,"req":"q18","event":"last_token","step":"draft","total_ms":803.3,"prompt_tokens":1683,"completion_tokens":42}
+{"t":1369735.1524081,"req":"q18","event":"verify_det","ok":true,"issues":[]}
+{"t":1369735.1524478,"req":"q18","event":"user_first_token"}
+{"t":1369735.1524778,"req":"q18","event":"user_last_token"}
+{"t":1369735.1525058,"req":"q18","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. The provided excerpts contain no information about the open\u2011source license for Moshi model weights."}
+{"t":1369735.1530762,"req":"q19","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1369735.1531459,"req":"q19","event":"step_start","step":"classify"}
+{"t":1369736.460422,"req":"q19","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1369737.237525,"req":"q19","event":"first_token","step":"classify","ttft_ms":777.0}
+{"t":1369737.2401423,"req":"q19","event":"last_token","step":"classify","total_ms":779.6,"prompt_tokens":204,"completion_tokens":64}
+{"t":1369737.2406602,"req":"q19","event":"step_end","step":"classify"}
+{"t":1369737.2408358,"req":"q19","event":"step_start","step":"retrieve"}
+{"t":1369737.2458528,"req":"q19","event":"step_end","step":"retrieve"}
+{"t":1369737.2466959,"req":"q19","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1369755.6481214,"req":"q19","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2556}
+{"t":1369756.4480642,"req":"q19","event":"first_token","step":"draft","ttft_ms":799.8}
+{"t":1369756.4986959,"req":"q19","event":"last_token","step":"draft","total_ms":850.4,"prompt_tokens":1691,"completion_tokens":44}
+{"t":1369756.498873,"req":"q19","event":"verify_det","ok":true,"issues":[]}
+{"t":1369756.4989911,"req":"q19","event":"user_first_token"}
+{"t":1369756.4990458,"req":"q19","event":"user_last_token"}
+{"t":1369756.4991,"req":"q19","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide results for DNA, Chinese, code, and general language modeling, but no information on protein sequence modeling."}
+{"t":1369756.4995155,"req":"q20","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1369756.4996026,"req":"q20","event":"step_start","step":"classify"}
+{"t":1369757.7858715,"req":"q20","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":288}
+{"t":1369758.2413503,"req":"q20","event":"first_token","step":"classify","ttft_ms":455.4}
+{"t":1369758.2425658,"req":"q20","event":"last_token","step":"classify","total_ms":456.6,"prompt_tokens":206,"completion_tokens":75}
+{"t":1369758.2426981,"req":"q20","event":"step_end","step":"classify"}
+{"t":1369758.2428021,"req":"q20","event":"step_start","step":"retrieve"}
+{"t":1369758.2502271,"req":"q20","event":"step_end","step":"retrieve"}
+{"t":1369758.2511588,"req":"q20","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1369777.0874497,"req":"q20","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2573}
+{"t":1369777.636491,"req":"q20","event":"first_token","step":"draft","ttft_ms":548.9}
+{"t":1369777.6776189,"req":"q20","event":"last_token","step":"draft","total_ms":590.0,"prompt_tokens":2215,"completion_tokens":51}
+{"t":1369777.6777838,"req":"q20","event":"verify_det","ok":true,"issues":[]}
+{"t":1369777.6778422,"req":"q20","event":"user_first_token"}
+{"t":1369777.6778939,"req":"q20","event":"user_last_token"}
+{"t":1369777.6779451,"req":"q20","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. None of the provided passages report the word error rate achieved by the original Transformer on speech recognition."}

@@ -1,0 +1,678 @@
+{"t":1372514.6357489,"req":"s_daily_known-0000","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1372514.6367335,"req":"s_daily_known-0000","event":"step_start","step":"classify"}
+{"t":1372514.6389743,"req":"s_daily_known-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":290}
+{"t":1372515.4945782,"req":"s_daily_known-0000","event":"first_token","step":"classify","ttft_ms":855.4}
+{"t":1372515.4971781,"req":"s_daily_known-0000","event":"last_token","step":"classify","total_ms":858.0,"prompt_tokens":113,"completion_tokens":22}
+{"t":1372515.4975926,"req":"s_daily_known-0000","event":"step_end","step":"classify"}
+{"t":1372515.5197063,"req":"s_daily_known-0000","event":"step_start","step":"retrieve"}
+{"t":1372515.5291381,"req":"s_daily_known-0000","event":"step_end","step":"retrieve"}
+{"t":1372515.5301541,"req":"s_daily_known-0000","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1372515.5306892,"req":"s_daily_known-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1372516.0026122,"req":"s_daily_known-0000","event":"first_token","step":"draft","ttft_ms":471.8}
+{"t":1372516.082498,"req":"s_daily_known-0000","event":"last_token","step":"draft","total_ms":551.7,"prompt_tokens":1700,"completion_tokens":189}
+{"t":1372516.0828314,"req":"s_daily_known-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1372516.0829006,"req":"s_daily_known-0000","event":"user_first_token"}
+{"t":1372516.0829809,"req":"s_daily_known-0000","event":"user_last_token"}
+{"t":1372516.0830412,"req":"s_daily_known-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1372516.4014499,"req":"s_daily_known-0001","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1372516.4016127,"req":"s_daily_known-0001","event":"step_start","step":"classify"}
+{"t":1372516.4018011,"req":"s_daily_known-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":275}
+{"t":1372516.4143789,"req":"s_daily_known-0002","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1372516.4145139,"req":"s_daily_known-0002","event":"step_start","step":"classify"}
+{"t":1372516.414976,"req":"s_daily_known-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":286}
+{"t":1372517.1515888,"req":"s_daily_known-0001","event":"first_token","step":"classify","ttft_ms":749.7}
+{"t":1372517.1560765,"req":"s_daily_known-0001","event":"last_token","step":"classify","total_ms":754.2,"prompt_tokens":101,"completion_tokens":22}
+{"t":1372517.1564027,"req":"s_daily_known-0001","event":"step_end","step":"classify"}
+{"t":1372517.1571682,"req":"s_daily_known-0001","event":"step_start","step":"retrieve"}
+{"t":1372517.1625572,"req":"s_daily_known-0001","event":"step_end","step":"retrieve"}
+{"t":1372517.1635427,"req":"s_daily_known-0001","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372517.1642796,"req":"s_daily_known-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2586}
+{"t":1372517.3561051,"req":"s_daily_known-0002","event":"first_token","step":"classify","ttft_ms":941.0}
+{"t":1372517.3606368,"req":"s_daily_known-0002","event":"last_token","step":"classify","total_ms":945.5,"prompt_tokens":110,"completion_tokens":22}
+{"t":1372517.3609277,"req":"s_daily_known-0002","event":"step_end","step":"classify"}
+{"t":1372517.361509,"req":"s_daily_known-0002","event":"step_start","step":"retrieve"}
+{"t":1372517.3662291,"req":"s_daily_known-0002","event":"step_end","step":"retrieve"}
+{"t":1372517.367205,"req":"s_daily_known-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372517.3676691,"req":"s_daily_known-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2563}
+{"t":1372517.6382144,"req":"s_daily_known-0001","event":"first_token","step":"draft","ttft_ms":473.8}
+{"t":1372517.6696772,"req":"s_daily_known-0001","event":"last_token","step":"draft","total_ms":505.2,"prompt_tokens":1723,"completion_tokens":187}
+{"t":1372517.6700353,"req":"s_daily_known-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1372517.6701542,"req":"s_daily_known-0001","event":"user_first_token"}
+{"t":1372517.6702329,"req":"s_daily_known-0001","event":"user_last_token"}
+{"t":1372517.6703711,"req":"s_daily_known-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:84] [C:moshi:85]"}
+{"t":1372517.8677956,"req":"s_daily_known-0002","event":"first_token","step":"draft","ttft_ms":500.0}
+{"t":1372517.8984594,"req":"s_daily_known-0002","event":"last_token","step":"draft","total_ms":530.6,"prompt_tokens":1705,"completion_tokens":189}
+{"t":1372517.8988346,"req":"s_daily_known-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1372517.8989116,"req":"s_daily_known-0002","event":"user_first_token"}
+{"t":1372517.8989615,"req":"s_daily_known-0002","event":"user_last_token"}
+{"t":1372517.8989968,"req":"s_daily_known-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:21]"}
+{"t":1372524.443244,"req":"s_daily_known-0003","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1372524.443397,"req":"s_daily_known-0003","event":"step_start","step":"classify"}
+{"t":1372524.4435671,"req":"s_daily_known-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":275}
+{"t":1372526.1109676,"req":"s_daily_known-0003","event":"first_token","step":"classify","ttft_ms":1667.3}
+{"t":1372526.1198461,"req":"s_daily_known-0003","event":"last_token","step":"classify","total_ms":1676.2,"prompt_tokens":101,"completion_tokens":22}
+{"t":1372526.1201417,"req":"s_daily_known-0003","event":"step_end","step":"classify"}
+{"t":1372526.1202717,"req":"s_daily_known-0003","event":"step_start","step":"retrieve"}
+{"t":1372526.130439,"req":"s_daily_known-0003","event":"step_end","step":"retrieve"}
+{"t":1372526.134082,"req":"s_daily_known-0003","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372526.1346751,"req":"s_daily_known-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1372526.7079951,"req":"s_daily_known-0003","event":"first_token","step":"draft","ttft_ms":573.2}
+{"t":1372526.7709635,"req":"s_daily_known-0003","event":"last_token","step":"draft","total_ms":636.1,"prompt_tokens":1701,"completion_tokens":187}
+{"t":1372526.7728493,"req":"s_daily_known-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1372526.772976,"req":"s_daily_known-0003","event":"user_first_token"}
+{"t":1372526.7730968,"req":"s_daily_known-0003","event":"user_last_token"}
+{"t":1372526.7731667,"req":"s_daily_known-0003","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:58] [C:moshi:94]"}
+{"t":1372533.7860898,"req":"s_daily_known-0004","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1372533.7862557,"req":"s_daily_known-0004","event":"step_start","step":"classify"}
+{"t":1372533.7865925,"req":"s_daily_known-0004","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":286}
+{"t":1372535.3151669,"req":"s_daily_known-0004","event":"first_token","step":"classify","ttft_ms":1528.4}
+{"t":1372535.3184807,"req":"s_daily_known-0004","event":"last_token","step":"classify","total_ms":1531.7,"prompt_tokens":110,"completion_tokens":22}
+{"t":1372535.3188438,"req":"s_daily_known-0004","event":"step_end","step":"classify"}
+{"t":1372535.3190076,"req":"s_daily_known-0004","event":"step_start","step":"retrieve"}
+{"t":1372535.3247392,"req":"s_daily_known-0004","event":"step_end","step":"retrieve"}
+{"t":1372535.3257116,"req":"s_daily_known-0004","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372535.3261204,"req":"s_daily_known-0004","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2563}
+{"t":1372536.6813962,"req":"s_daily_known-0005","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1372536.6815179,"req":"s_daily_known-0005","event":"step_start","step":"classify"}
+{"t":1372536.6816457,"req":"s_daily_known-0005","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":293}
+{"t":1372537.2975931,"req":"s_daily_known-0005","event":"first_token","step":"classify","ttft_ms":615.9}
+{"t":1372537.3020693,"req":"s_daily_known-0005","event":"last_token","step":"classify","total_ms":620.4,"prompt_tokens":115,"completion_tokens":22}
+{"t":1372537.3022329,"req":"s_daily_known-0005","event":"step_end","step":"classify"}
+{"t":1372537.3023681,"req":"s_daily_known-0005","event":"step_start","step":"retrieve"}
+{"t":1372537.3165709,"req":"s_daily_known-0005","event":"step_end","step":"retrieve"}
+{"t":1372537.3177225,"req":"s_daily_known-0005","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1372537.3179665,"req":"s_daily_known-0005","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372537.8511001,"req":"s_daily_known-0005","event":"first_token","step":"draft","ttft_ms":532.9}
+{"t":1372537.967053,"req":"s_daily_known-0005","event":"last_token","step":"draft","total_ms":648.8,"prompt_tokens":1707,"completion_tokens":189}
+{"t":1372537.9673631,"req":"s_daily_known-0005","event":"verify_det","ok":true,"issues":[]}
+{"t":1372537.9674278,"req":"s_daily_known-0005","event":"user_first_token"}
+{"t":1372537.9675048,"req":"s_daily_known-0005","event":"user_last_token"}
+{"t":1372537.9675639,"req":"s_daily_known-0005","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1372538.3978173,"req":"s_daily_known-0004","event":"first_token","step":"draft","ttft_ms":3071.6}
+{"t":1372538.4971274,"req":"s_daily_known-0004","event":"last_token","step":"draft","total_ms":3170.9,"prompt_tokens":1705,"completion_tokens":189}
+{"t":1372538.4975805,"req":"s_daily_known-0004","event":"verify_det","ok":true,"issues":[]}
+{"t":1372538.4976562,"req":"s_daily_known-0004","event":"user_first_token"}
+{"t":1372538.49859,"req":"s_daily_known-0004","event":"user_last_token"}
+{"t":1372538.498656,"req":"s_daily_known-0004","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:21]"}
+{"t":1372540.4030613,"req":"s_daily_known-0006","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1372540.403388,"req":"s_daily_known-0006","event":"step_start","step":"classify"}
+{"t":1372540.4036871,"req":"s_daily_known-0006","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1372540.6900125,"req":"s_daily_known-0007","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1372540.6901932,"req":"s_daily_known-0007","event":"step_start","step":"classify"}
+{"t":1372540.6904571,"req":"s_daily_known-0007","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1372541.3803453,"req":"s_daily_known-0007","event":"first_token","step":"classify","ttft_ms":689.8}
+{"t":1372541.3864616,"req":"s_daily_known-0007","event":"last_token","step":"classify","total_ms":695.9,"prompt_tokens":105,"completion_tokens":22}
+{"t":1372541.3878237,"req":"s_daily_known-0007","event":"step_end","step":"classify"}
+{"t":1372541.3879388,"req":"s_daily_known-0007","event":"step_start","step":"retrieve"}
+{"t":1372541.3948986,"req":"s_daily_known-0007","event":"step_end","step":"retrieve"}
+{"t":1372541.3965156,"req":"s_daily_known-0007","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1372541.3972248,"req":"s_daily_known-0007","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372541.4933199,"req":"s_daily_known-0006","event":"first_token","step":"classify","ttft_ms":1089.5}
+{"t":1372541.5015716,"req":"s_daily_known-0006","event":"last_token","step":"classify","total_ms":1097.8,"prompt_tokens":108,"completion_tokens":22}
+{"t":1372541.5017409,"req":"s_daily_known-0006","event":"step_end","step":"classify"}
+{"t":1372541.5018613,"req":"s_daily_known-0006","event":"step_start","step":"retrieve"}
+{"t":1372541.5187938,"req":"s_daily_known-0006","event":"step_end","step":"retrieve"}
+{"t":1372541.5219923,"req":"s_daily_known-0006","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372541.5224123,"req":"s_daily_known-0006","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1372541.9437285,"req":"s_daily_known-0007","event":"first_token","step":"draft","ttft_ms":546.3}
+{"t":1372541.9578784,"req":"s_daily_known-0006","event":"first_token","step":"draft","ttft_ms":435.3}
+{"t":1372541.9718602,"req":"s_daily_known-0007","event":"last_token","step":"draft","total_ms":574.4,"prompt_tokens":1708,"completion_tokens":189}
+{"t":1372541.9722092,"req":"s_daily_known-0007","event":"verify_det","ok":true,"issues":[]}
+{"t":1372541.9722894,"req":"s_daily_known-0007","event":"user_first_token"}
+{"t":1372541.9723471,"req":"s_daily_known-0007","event":"user_last_token"}
+{"t":1372541.9723883,"req":"s_daily_known-0007","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1372541.9980278,"req":"s_daily_known-0006","event":"last_token","step":"draft","total_ms":475.5,"prompt_tokens":1710,"completion_tokens":189}
+{"t":1372541.9983265,"req":"s_daily_known-0006","event":"verify_det","ok":true,"issues":[]}
+{"t":1372541.9983956,"req":"s_daily_known-0006","event":"user_first_token"}
+{"t":1372541.998472,"req":"s_daily_known-0006","event":"user_last_token"}
+{"t":1372541.9985289,"req":"s_daily_known-0006","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9]"}
+{"t":1372545.5364042,"req":"s_daily_known-0008","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1372545.5365682,"req":"s_daily_known-0008","event":"step_start","step":"classify"}
+{"t":1372545.5367683,"req":"s_daily_known-0008","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1372545.7403599,"req":"s_daily_known-0008","event":"first_token","step":"classify","ttft_ms":203.5}
+{"t":1372545.7451024,"req":"s_daily_known-0008","event":"last_token","step":"classify","total_ms":208.2,"prompt_tokens":105,"completion_tokens":22}
+{"t":1372545.745237,"req":"s_daily_known-0008","event":"step_end","step":"classify"}
+{"t":1372545.7461367,"req":"s_daily_known-0008","event":"step_start","step":"retrieve"}
+{"t":1372545.7514039,"req":"s_daily_known-0008","event":"step_end","step":"retrieve"}
+{"t":1372545.7527577,"req":"s_daily_known-0008","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372545.7530454,"req":"s_daily_known-0008","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2542}
+{"t":1372546.2505421,"req":"s_daily_known-0008","event":"first_token","step":"draft","ttft_ms":497.4}
+{"t":1372546.3390458,"req":"s_daily_known-0008","event":"last_token","step":"draft","total_ms":585.9,"prompt_tokens":1690,"completion_tokens":189}
+{"t":1372546.3393841,"req":"s_daily_known-0008","event":"verify_det","ok":true,"issues":[]}
+{"t":1372546.3394501,"req":"s_daily_known-0008","event":"user_first_token"}
+{"t":1372546.3395248,"req":"s_daily_known-0008","event":"user_last_token"}
+{"t":1372546.3395827,"req":"s_daily_known-0008","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:29] [C:dynchunk:28]"}
+{"t":1372546.4309303,"req":"s_daily_known-0009","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1372546.4482425,"req":"s_daily_known-0009","event":"step_start","step":"classify"}
+{"t":1372546.4485875,"req":"s_daily_known-0009","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1372546.5545904,"req":"s_daily_known-0010","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1372546.5547403,"req":"s_daily_known-0010","event":"step_start","step":"classify"}
+{"t":1372546.5550747,"req":"s_daily_known-0010","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":300}
+{"t":1372547.1156596,"req":"s_daily_known-0009","event":"first_token","step":"classify","ttft_ms":666.9}
+{"t":1372547.1292846,"req":"s_daily_known-0009","event":"last_token","step":"classify","total_ms":680.6,"prompt_tokens":108,"completion_tokens":22}
+{"t":1372547.1294885,"req":"s_daily_known-0009","event":"step_end","step":"classify"}
+{"t":1372547.1296201,"req":"s_daily_known-0009","event":"step_start","step":"retrieve"}
+{"t":1372547.1435035,"req":"s_daily_known-0009","event":"step_end","step":"retrieve"}
+{"t":1372547.1445688,"req":"s_daily_known-0009","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1372547.1448339,"req":"s_daily_known-0009","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2545}
+{"t":1372547.6771746,"req":"s_daily_known-0010","event":"first_token","step":"classify","ttft_ms":1122.0}
+{"t":1372547.6808294,"req":"s_daily_known-0009","event":"first_token","step":"draft","ttft_ms":535.9}
+{"t":1372547.7045507,"req":"s_daily_known-0010","event":"last_token","step":"classify","total_ms":1149.4,"prompt_tokens":120,"completion_tokens":22}
+{"t":1372547.7048949,"req":"s_daily_known-0010","event":"step_end","step":"classify"}
+{"t":1372547.7051688,"req":"s_daily_known-0010","event":"step_start","step":"retrieve"}
+{"t":1372547.7479548,"req":"s_daily_known-0010","event":"step_end","step":"retrieve"}
+{"t":1372547.7489795,"req":"s_daily_known-0010","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372547.7551173,"req":"s_daily_known-0010","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2330}
+{"t":1372547.7709599,"req":"s_daily_known-0009","event":"last_token","step":"draft","total_ms":626.0,"prompt_tokens":1691,"completion_tokens":189}
+{"t":1372547.7713214,"req":"s_daily_known-0009","event":"verify_det","ok":true,"issues":[]}
+{"t":1372547.7713724,"req":"s_daily_known-0009","event":"user_first_token"}
+{"t":1372547.7714287,"req":"s_daily_known-0009","event":"user_last_token"}
+{"t":1372547.77147,"req":"s_daily_known-0009","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:8] [C:dynchunk:20]"}
+{"t":1372548.080076,"req":"s_daily_known-0010","event":"first_token","step":"draft","ttft_ms":324.8}
+{"t":1372548.2570505,"req":"s_daily_known-0010","event":"last_token","step":"draft","total_ms":501.8,"prompt_tokens":1530,"completion_tokens":189}
+{"t":1372548.2573661,"req":"s_daily_known-0010","event":"verify_det","ok":true,"issues":[]}
+{"t":1372548.2574318,"req":"s_daily_known-0010","event":"user_first_token"}
+{"t":1372548.2575082,"req":"s_daily_known-0010","event":"user_last_token"}
+{"t":1372548.2575657,"req":"s_daily_known-0010","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1372551.7390789,"req":"s_daily_known-0011","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1372551.7392462,"req":"s_daily_known-0011","event":"step_start","step":"classify"}
+{"t":1372551.7394426,"req":"s_daily_known-0011","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":302}
+{"t":1372552.4516835,"req":"s_daily_known-0011","event":"first_token","step":"classify","ttft_ms":712.1}
+{"t":1372552.455547,"req":"s_daily_known-0011","event":"last_token","step":"classify","total_ms":716.0,"prompt_tokens":122,"completion_tokens":22}
+{"t":1372552.4557306,"req":"s_daily_known-0011","event":"step_end","step":"classify"}
+{"t":1372552.4558747,"req":"s_daily_known-0011","event":"step_start","step":"retrieve"}
+{"t":1372552.4624188,"req":"s_daily_known-0011","event":"step_end","step":"retrieve"}
+{"t":1372552.4637545,"req":"s_daily_known-0011","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1372552.4643081,"req":"s_daily_known-0011","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2577}
+{"t":1372553.0051064,"req":"s_daily_known-0011","event":"first_token","step":"draft","ttft_ms":540.7}
+{"t":1372553.0668255,"req":"s_daily_known-0011","event":"last_token","step":"draft","total_ms":602.4,"prompt_tokens":1716,"completion_tokens":187}
+{"t":1372553.067142,"req":"s_daily_known-0011","event":"verify_det","ok":true,"issues":[]}
+{"t":1372553.0672069,"req":"s_daily_known-0011","event":"user_first_token"}
+{"t":1372553.0672841,"req":"s_daily_known-0011","event":"user_last_token"}
+{"t":1372553.0673433,"req":"s_daily_known-0011","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:4] [C:moshi:78]"}
+{"t":1372553.1442483,"req":"s_daily_known-0012","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1372553.1443913,"req":"s_daily_known-0012","event":"step_start","step":"classify"}
+{"t":1372553.1445695,"req":"s_daily_known-0012","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1372554.4510734,"req":"s_daily_known-0012","event":"first_token","step":"classify","ttft_ms":1306.4}
+{"t":1372554.4601386,"req":"s_daily_known-0012","event":"last_token","step":"classify","total_ms":1315.5,"prompt_tokens":105,"completion_tokens":22}
+{"t":1372554.4604505,"req":"s_daily_known-0012","event":"step_end","step":"classify"}
+{"t":1372554.4605814,"req":"s_daily_known-0012","event":"step_start","step":"retrieve"}
+{"t":1372554.4696087,"req":"s_daily_known-0012","event":"step_end","step":"retrieve"}
+{"t":1372554.4708023,"req":"s_daily_known-0012","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1372554.4710679,"req":"s_daily_known-0012","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372554.9832969,"req":"s_daily_known-0012","event":"first_token","step":"draft","ttft_ms":512.0}
+{"t":1372555.0700488,"req":"s_daily_known-0012","event":"last_token","step":"draft","total_ms":598.7,"prompt_tokens":1708,"completion_tokens":189}
+{"t":1372555.0704784,"req":"s_daily_known-0012","event":"verify_det","ok":true,"issues":[]}
+{"t":1372555.0705518,"req":"s_daily_known-0012","event":"user_first_token"}
+{"t":1372555.0706273,"req":"s_daily_known-0012","event":"user_last_token"}
+{"t":1372555.0706846,"req":"s_daily_known-0012","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1372556.4086223,"req":"s_daily_known-0013","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1372556.4087821,"req":"s_daily_known-0013","event":"step_start","step":"classify"}
+{"t":1372556.4102736,"req":"s_daily_known-0013","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":293}
+{"t":1372557.3354847,"req":"s_daily_known-0013","event":"first_token","step":"classify","ttft_ms":925.1}
+{"t":1372557.3410485,"req":"s_daily_known-0013","event":"last_token","step":"classify","total_ms":930.7,"prompt_tokens":115,"completion_tokens":22}
+{"t":1372557.3414463,"req":"s_daily_known-0013","event":"step_end","step":"classify"}
+{"t":1372557.3415773,"req":"s_daily_known-0013","event":"step_start","step":"retrieve"}
+{"t":1372557.3496287,"req":"s_daily_known-0013","event":"step_end","step":"retrieve"}
+{"t":1372557.350908,"req":"s_daily_known-0013","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1372557.3513373,"req":"s_daily_known-0013","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372557.7782523,"req":"s_daily_known-0013","event":"first_token","step":"draft","ttft_ms":426.8}
+{"t":1372557.8012823,"req":"s_daily_known-0013","event":"last_token","step":"draft","total_ms":449.8,"prompt_tokens":1707,"completion_tokens":189}
+{"t":1372557.8016374,"req":"s_daily_known-0013","event":"verify_det","ok":true,"issues":[]}
+{"t":1372557.8016787,"req":"s_daily_known-0013","event":"user_first_token"}
+{"t":1372557.8017117,"req":"s_daily_known-0013","event":"user_last_token"}
+{"t":1372557.8017357,"req":"s_daily_known-0013","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1372559.5902424,"req":"s_daily_known-0014","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1372559.5903757,"req":"s_daily_known-0014","event":"step_start","step":"classify"}
+{"t":1372559.5905372,"req":"s_daily_known-0014","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":300}
+{"t":1372560.1368688,"req":"s_daily_known-0015","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1372560.1372251,"req":"s_daily_known-0015","event":"step_start","step":"classify"}
+{"t":1372560.1374124,"req":"s_daily_known-0015","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1372560.5680262,"req":"s_daily_known-0015","event":"first_token","step":"classify","ttft_ms":430.5}
+{"t":1372560.5710666,"req":"s_daily_known-0015","event":"last_token","step":"classify","total_ms":433.5,"prompt_tokens":108,"completion_tokens":22}
+{"t":1372560.5711888,"req":"s_daily_known-0015","event":"step_end","step":"classify"}
+{"t":1372560.5738038,"req":"s_daily_known-0015","event":"step_start","step":"retrieve"}
+{"t":1372560.5826461,"req":"s_daily_known-0015","event":"step_end","step":"retrieve"}
+{"t":1372560.5835474,"req":"s_daily_known-0015","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372560.5837407,"req":"s_daily_known-0015","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1372560.8119639,"req":"s_daily_known-0016","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1372560.8121328,"req":"s_daily_known-0016","event":"step_start","step":"classify"}
+{"t":1372560.8123473,"req":"s_daily_known-0016","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":300}
+{"t":1372560.9496009,"req":"s_daily_known-0015","event":"first_token","step":"draft","ttft_ms":365.8}
+{"t":1372560.9746148,"req":"s_daily_known-0015","event":"last_token","step":"draft","total_ms":390.6,"prompt_tokens":1710,"completion_tokens":189}
+{"t":1372560.9748974,"req":"s_daily_known-0015","event":"verify_det","ok":true,"issues":[]}
+{"t":1372560.9749517,"req":"s_daily_known-0015","event":"user_first_token"}
+{"t":1372560.9750028,"req":"s_daily_known-0015","event":"user_last_token"}
+{"t":1372560.9750414,"req":"s_daily_known-0015","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9]"}
+{"t":1372560.9779536,"req":"s_daily_known-0014","event":"first_token","step":"classify","ttft_ms":1387.3}
+{"t":1372560.9830209,"req":"s_daily_known-0014","event":"last_token","step":"classify","total_ms":1392.4,"prompt_tokens":120,"completion_tokens":22}
+{"t":1372560.9832603,"req":"s_daily_known-0014","event":"step_end","step":"classify"}
+{"t":1372560.9833924,"req":"s_daily_known-0014","event":"step_start","step":"retrieve"}
+{"t":1372560.9943739,"req":"s_daily_known-0014","event":"step_end","step":"retrieve"}
+{"t":1372560.9952524,"req":"s_daily_known-0014","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372560.9958305,"req":"s_daily_known-0014","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2330}
+{"t":1372561.2117097,"req":"s_daily_known-0017","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1372561.2118682,"req":"s_daily_known-0017","event":"step_start","step":"classify"}
+{"t":1372561.2121448,"req":"s_daily_known-0017","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":288}
+{"t":1372561.255997,"req":"s_daily_known-0018","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1372561.2562508,"req":"s_daily_known-0018","event":"step_start","step":"classify"}
+{"t":1372561.2564224,"req":"s_daily_known-0018","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":290}
+{"t":1372561.3999859,"req":"s_daily_known-0016","event":"first_token","step":"classify","ttft_ms":587.5}
+{"t":1372561.4063783,"req":"s_daily_known-0016","event":"last_token","step":"classify","total_ms":593.9,"prompt_tokens":120,"completion_tokens":22}
+{"t":1372561.4068541,"req":"s_daily_known-0016","event":"step_end","step":"classify"}
+{"t":1372561.4070928,"req":"s_daily_known-0016","event":"step_start","step":"retrieve"}
+{"t":1372561.415942,"req":"s_daily_known-0016","event":"step_end","step":"retrieve"}
+{"t":1372561.4168525,"req":"s_daily_known-0016","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1372561.4172457,"req":"s_daily_known-0016","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2330}
+{"t":1372561.6081915,"req":"s_daily_known-0014","event":"first_token","step":"draft","ttft_ms":612.2}
+{"t":1372561.6138294,"req":"s_daily_known-0018","event":"first_token","step":"classify","ttft_ms":357.3}
+{"t":1372561.6218914,"req":"s_daily_known-0018","event":"last_token","step":"classify","total_ms":365.4,"prompt_tokens":113,"completion_tokens":22}
+{"t":1372561.622033,"req":"s_daily_known-0018","event":"step_end","step":"classify"}
+{"t":1372561.622132,"req":"s_daily_known-0018","event":"step_start","step":"retrieve"}
+{"t":1372561.631887,"req":"s_daily_known-0018","event":"step_end","step":"retrieve"}
+{"t":1372561.6334594,"req":"s_daily_known-0018","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1372561.6356387,"req":"s_daily_known-0018","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1372561.6404287,"req":"s_daily_known-0014","event":"last_token","step":"draft","total_ms":644.5,"prompt_tokens":1530,"completion_tokens":189}
+{"t":1372561.6406329,"req":"s_daily_known-0014","event":"verify_det","ok":true,"issues":[]}
+{"t":1372561.6406801,"req":"s_daily_known-0014","event":"user_first_token"}
+{"t":1372561.6407243,"req":"s_daily_known-0014","event":"user_last_token"}
+{"t":1372561.6407555,"req":"s_daily_known-0014","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1372561.7334858,"req":"s_daily_known-0016","event":"first_token","step":"draft","ttft_ms":316.1}
+{"t":1372561.7804239,"req":"s_daily_known-0016","event":"last_token","step":"draft","total_ms":363.1,"prompt_tokens":1530,"completion_tokens":189}
+{"t":1372561.7807307,"req":"s_daily_known-0016","event":"verify_det","ok":true,"issues":[]}
+{"t":1372561.7807939,"req":"s_daily_known-0016","event":"user_first_token"}
+{"t":1372561.7808987,"req":"s_daily_known-0016","event":"user_last_token"}
+{"t":1372561.7809621,"req":"s_daily_known-0016","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1372561.9503707,"req":"s_daily_known-0018","event":"first_token","step":"draft","ttft_ms":314.6}
+{"t":1372562.018088,"req":"s_daily_known-0018","event":"last_token","step":"draft","total_ms":382.3,"prompt_tokens":1700,"completion_tokens":189}
+{"t":1372562.0184052,"req":"s_daily_known-0018","event":"verify_det","ok":true,"issues":[]}
+{"t":1372562.0184841,"req":"s_daily_known-0018","event":"user_first_token"}
+{"t":1372562.0185699,"req":"s_daily_known-0018","event":"user_last_token"}
+{"t":1372562.0186576,"req":"s_daily_known-0018","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1372563.4626025,"req":"s_daily_known-0019","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1372563.4627799,"req":"s_daily_known-0019","event":"step_start","step":"classify"}
+{"t":1372563.4629916,"req":"s_daily_known-0019","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":293}
+{"t":1372565.5710339,"req":"s_daily_known-0019","event":"first_token","step":"classify","ttft_ms":2107.9}
+{"t":1372565.5759837,"req":"s_daily_known-0019","event":"last_token","step":"classify","total_ms":2112.7,"prompt_tokens":115,"completion_tokens":22}
+{"t":1372565.5762326,"req":"s_daily_known-0019","event":"step_end","step":"classify"}
+{"t":1372565.5763466,"req":"s_daily_known-0019","event":"step_start","step":"retrieve"}
+{"t":1372565.5853084,"req":"s_daily_known-0019","event":"step_end","step":"retrieve"}
+{"t":1372565.5866012,"req":"s_daily_known-0019","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1372565.587442,"req":"s_daily_known-0019","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372566.0922054,"req":"s_daily_known-0019","event":"first_token","step":"draft","ttft_ms":504.5}
+{"t":1372566.1194151,"req":"s_daily_known-0019","event":"last_token","step":"draft","total_ms":531.7,"prompt_tokens":1707,"completion_tokens":189}
+{"t":1372566.1197663,"req":"s_daily_known-0019","event":"verify_det","ok":true,"issues":[]}
+{"t":1372566.1198204,"req":"s_daily_known-0019","event":"user_first_token"}
+{"t":1372566.1198551,"req":"s_daily_known-0019","event":"user_last_token"}
+{"t":1372566.1198844,"req":"s_daily_known-0019","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1372573.2204812,"req":"s_daily_known-0017","event":"call_timeout","step":"classify","after_s":12,"attempt":1}
+{"t":1372573.2206963,"req":"s_daily_known-0017","event":"retry","step":"classify","attempt":1,"reason":"call_timeout","backoff_ms":31.0}
+{"t":1372573.2670375,"req":"s_daily_known-0017","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":2,"est_tokens":288}
+{"t":1372573.8252612,"req":"s_daily_known-0017","event":"first_token","step":"classify","ttft_ms":558.0}
+{"t":1372573.830269,"req":"s_daily_known-0017","event":"last_token","step":"classify","total_ms":563.0,"prompt_tokens":111,"completion_tokens":22}
+{"t":1372573.8305695,"req":"s_daily_known-0017","event":"step_end","step":"classify"}
+{"t":1372573.8306854,"req":"s_daily_known-0017","event":"step_start","step":"retrieve"}
+{"t":1372573.8375394,"req":"s_daily_known-0017","event":"step_end","step":"retrieve"}
+{"t":1372573.8385441,"req":"s_daily_known-0017","event":"decide","branch":"loop_rewrite","conf":0.5}
+{"t":1372573.8388365,"req":"s_daily_known-0017","event":"send","step":"rewrite","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":126}
+{"t":1372574.6465429,"req":"s_daily_known-0020","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1372574.6467061,"req":"s_daily_known-0020","event":"step_start","step":"classify"}
+{"t":1372574.6469017,"req":"s_daily_known-0020","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1372574.7799817,"req":"s_daily_known-0017","event":"first_token","step":"rewrite","ttft_ms":941.0}
+{"t":1372574.7824744,"req":"s_daily_known-0017","event":"last_token","step":"rewrite","total_ms":943.5,"prompt_tokens":58,"completion_tokens":5}
+{"t":1372574.7826141,"req":"s_daily_known-0017","event":"step_start","step":"retrieve"}
+{"t":1372574.7863885,"req":"s_daily_known-0017","event":"step_end","step":"retrieve"}
+{"t":1372574.78862,"req":"s_daily_known-0017","event":"decide","branch":"draft","conf":0.5,"k":5}
+{"t":1372574.7909129,"req":"s_daily_known-0017","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2555}
+{"t":1372574.8513961,"req":"s_daily_known-0021","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1372574.8515686,"req":"s_daily_known-0021","event":"step_start","step":"classify"}
+{"t":1372574.8517808,"req":"s_daily_known-0021","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":293}
+{"t":1372575.2313348,"req":"s_daily_known-0017","event":"first_token","step":"draft","ttft_ms":440.2}
+{"t":1372575.2446927,"req":"s_daily_known-0017","event":"last_token","step":"draft","total_ms":453.6,"prompt_tokens":1699,"completion_tokens":189}
+{"t":1372575.2450036,"req":"s_daily_known-0017","event":"verify_det","ok":true,"issues":[]}
+{"t":1372575.2450854,"req":"s_daily_known-0017","event":"user_first_token"}
+{"t":1372575.2451668,"req":"s_daily_known-0017","event":"user_last_token"}
+{"t":1372575.2452043,"req":"s_daily_known-0017","event":"done","status":"answered","level":0,"steps":["classify","retrieve","loop","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:38] [C:attention:9]"}
+{"t":1372575.8664728,"req":"s_daily_known-0021","event":"first_token","step":"classify","ttft_ms":1014.6}
+{"t":1372575.8700749,"req":"s_daily_known-0021","event":"last_token","step":"classify","total_ms":1018.2,"prompt_tokens":115,"completion_tokens":22}
+{"t":1372575.8702865,"req":"s_daily_known-0021","event":"step_end","step":"classify"}
+{"t":1372575.871003,"req":"s_daily_known-0021","event":"step_start","step":"retrieve"}
+{"t":1372575.880881,"req":"s_daily_known-0021","event":"step_end","step":"retrieve"}
+{"t":1372575.8817982,"req":"s_daily_known-0021","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1372575.8824566,"req":"s_daily_known-0021","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1372575.8920044,"req":"s_daily_known-0021","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"10000","x-ratelimit-limit-tokens":"80000","x-ratelimit-remaining-requests":"9980","x-ratelimit-remaining-tokens":"42423","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"3362"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per day (TPD): Limit 40000, Used 39549, Requested 2007. Please try again in 3361s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"}
+{"t":1372575.8921752,"req":"s_daily_known-0021","event":"daily_limit","step":"draft","kind":"TPD","limit":40000.0,"used":39549.0,"retry_after":"3362"}
+{"t":1372575.8923132,"req":"s_daily_known-0021","event":"degrade","what":"extractive_daily"}
+{"t":1372575.8936803,"req":"s_daily_known-0021","event":"user_first_token"}
+{"t":1372575.8937924,"req":"s_daily_known-0021","event":"user_last_token"}
+{"t":1372575.8938433,"req":"s_daily_known-0021","event":"done","status":"extractive_daily","level":0,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"3.2 Attention An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors.\" [C:attention:8]\n\"3.2.1 Scaled Dot-Product Attention We call our particular attention \"Scaled Dot-Product Attention\" (Figure 2).\" [C:attention:9]\n\"<EOS> <pad> <pad> <pad> <pad> <pad> <pad> Figure 3: An example of the attention mechanism following long-distance dependencies in the encoder self-attention in layer 5 of 6.\" [C:attention:37]"}
+{"t":1372577.0512656,"req":"s_daily_known-0020","event":"first_token","step":"classify","ttft_ms":2404.3}
+{"t":1372577.0575889,"req":"s_daily_known-0020","event":"last_token","step":"classify","total_ms":2410.6,"prompt_tokens":111,"completion_tokens":22}
+{"t":1372577.0577837,"req":"s_daily_known-0020","event":"step_end","step":"classify"}
+{"t":1372577.0578925,"req":"s_daily_known-0020","event":"step_start","step":"retrieve"}
+{"t":1372577.0688576,"req":"s_daily_known-0020","event":"step_end","step":"retrieve"}
+{"t":1372577.0703055,"req":"s_daily_known-0020","event":"decide","branch":"draft","conf":0.86,"k":5}
+{"t":1372577.073287,"req":"s_daily_known-0020","event":"degrade","what":"extractive_daily"}
+{"t":1372577.0799859,"req":"s_daily_known-0020","event":"user_first_token"}
+{"t":1372577.0816537,"req":"s_daily_known-0020","event":"user_last_token"}
+{"t":1372577.0817783,"req":"s_daily_known-0020","event":"done","status":"extractive_daily","level":0,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1372577.4749192,"req":"s_daily_known-0022","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1372577.4750984,"req":"s_daily_known-0022","event":"step_start","step":"classify"}
+{"t":1372577.4751643,"req":"s_daily_known-0022","event":"degrade","what":"classify_heuristic"}
+{"t":1372577.475209,"req":"s_daily_known-0022","event":"step_end","step":"classify"}
+{"t":1372577.4753208,"req":"s_daily_known-0022","event":"step_start","step":"retrieve"}
+{"t":1372577.4810823,"req":"s_daily_known-0022","event":"step_end","step":"retrieve"}
+{"t":1372577.4818343,"req":"s_daily_known-0022","event":"degrade","what":"extractive_daily"}
+{"t":1372577.4830064,"req":"s_daily_known-0022","event":"user_first_token"}
+{"t":1372577.4830894,"req":"s_daily_known-0022","event":"user_last_token"}
+{"t":1372577.4831414,"req":"s_daily_known-0022","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"All models are trained on H100 GPUs, using FSDP and activation checkp\" [C:moshi:58]\n\"Both have a perplexity that is better than the ground truth, which is explained by these models being trained on data that is closer to what DialoGPT has been trained on compared to the Fisher dataset.\" [C:moshi:94]\n\"All models are trained on H100 GPUs, using FSDP and activation checkpointing.\" [C:moshi:59]"}
+{"t":1372579.5638513,"req":"s_daily_known-0023","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1372579.5641013,"req":"s_daily_known-0023","event":"step_start","step":"classify"}
+{"t":1372579.5641618,"req":"s_daily_known-0023","event":"degrade","what":"classify_heuristic"}
+{"t":1372579.5642053,"req":"s_daily_known-0023","event":"step_end","step":"classify"}
+{"t":1372579.564315,"req":"s_daily_known-0023","event":"step_start","step":"retrieve"}
+{"t":1372579.5682381,"req":"s_daily_known-0023","event":"step_end","step":"retrieve"}
+{"t":1372579.5689347,"req":"s_daily_known-0023","event":"degrade","what":"extractive_daily"}
+{"t":1372579.5701445,"req":"s_daily_known-0023","event":"user_first_token"}
+{"t":1372579.5703715,"req":"s_daily_known-0023","event":"user_last_token"}
+{"t":1372579.5704326,"req":"s_daily_known-0023","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
+{"t":1372582.6168744,"req":"s_daily_known-0024","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1372582.616991,"req":"s_daily_known-0024","event":"step_start","step":"classify"}
+{"t":1372582.617043,"req":"s_daily_known-0024","event":"degrade","what":"classify_heuristic"}
+{"t":1372582.6170852,"req":"s_daily_known-0024","event":"step_end","step":"classify"}
+{"t":1372582.6172013,"req":"s_daily_known-0024","event":"step_start","step":"retrieve"}
+{"t":1372582.6213657,"req":"s_daily_known-0024","event":"step_end","step":"retrieve"}
+{"t":1372582.6220023,"req":"s_daily_known-0024","event":"degrade","what":"extractive_daily"}
+{"t":1372582.6230319,"req":"s_daily_known-0024","event":"user_first_token"}
+{"t":1372582.6231147,"req":"s_daily_known-0024","event":"user_last_token"}
+{"t":1372582.6231723,"req":"s_daily_known-0024","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]\n\"In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.\" [C:attention:22]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]"}
+{"t":1372582.9252686,"req":"s_daily_known-0025","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1372582.9254052,"req":"s_daily_known-0025","event":"step_start","step":"classify"}
+{"t":1372582.9254576,"req":"s_daily_known-0025","event":"degrade","what":"classify_heuristic"}
+{"t":1372582.9255,"req":"s_daily_known-0025","event":"step_end","step":"classify"}
+{"t":1372582.9256263,"req":"s_daily_known-0025","event":"step_start","step":"retrieve"}
+{"t":1372582.9318407,"req":"s_daily_known-0025","event":"step_end","step":"retrieve"}
+{"t":1372582.9325586,"req":"s_daily_known-0025","event":"degrade","what":"extractive_daily"}
+{"t":1372582.9337407,"req":"s_daily_known-0025","event":"user_first_token"}
+{"t":1372582.9338315,"req":"s_daily_known-0025","event":"user_last_token"}
+{"t":1372582.9338831,"req":"s_daily_known-0025","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1372585.8082555,"req":"s_daily_known-0026","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1372585.8084152,"req":"s_daily_known-0026","event":"step_start","step":"classify"}
+{"t":1372585.8084757,"req":"s_daily_known-0026","event":"degrade","what":"classify_heuristic"}
+{"t":1372585.8085724,"req":"s_daily_known-0026","event":"step_end","step":"classify"}
+{"t":1372585.8087462,"req":"s_daily_known-0026","event":"step_start","step":"retrieve"}
+{"t":1372585.8128677,"req":"s_daily_known-0026","event":"step_end","step":"retrieve"}
+{"t":1372585.8135362,"req":"s_daily_known-0026","event":"degrade","what":"extractive_daily"}
+{"t":1372585.814524,"req":"s_daily_known-0026","event":"user_first_token"}
+{"t":1372585.8146092,"req":"s_daily_known-0026","event":"user_last_token"}
+{"t":1372585.8146419,"req":"s_daily_known-0026","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"\u2022 Gradient stabilization (7): The Straight-Through Estimator (STE) (Bengio, L\u00e9onard, and Courville 2013) is a well established technique from discrete representation learning (Van Den Oord, Vinyals, et al.\" [C:dynchunk:26]\n\"A.1.4 Dynamic Chunking The ideal tokenizer-free architecture would incorporate a dynamic chunking method that attempts to learn optimal segmentation strategies directly from data through gradient-based optimization.\" [C:dynchunk:121]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1372586.8696286,"req":"s_daily_known-0027","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1372586.8697826,"req":"s_daily_known-0027","event":"step_start","step":"classify"}
+{"t":1372586.8698359,"req":"s_daily_known-0027","event":"degrade","what":"classify_heuristic"}
+{"t":1372586.8698787,"req":"s_daily_known-0027","event":"step_end","step":"classify"}
+{"t":1372586.8700218,"req":"s_daily_known-0027","event":"step_start","step":"retrieve"}
+{"t":1372586.885158,"req":"s_daily_known-0027","event":"step_end","step":"retrieve"}
+{"t":1372586.885936,"req":"s_daily_known-0027","event":"degrade","what":"extractive_daily"}
+{"t":1372586.8889911,"req":"s_daily_known-0027","event":"user_first_token"}
+{"t":1372586.8891436,"req":"s_daily_known-0027","event":"user_last_token"}
+{"t":1372586.8892048,"req":"s_daily_known-0027","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"\u2022 Gradient stabilization (7): The Straight-Through Estimator (STE) (Bengio, L\u00e9onard, and Courville 2013) is a well established technique from discrete representation learning (Van Den Oord, Vinyals, et al.\" [C:dynchunk:26]\n\"A.1.4 Dynamic Chunking The ideal tokenizer-free architecture would incorporate a dynamic chunking method that attempts to learn optimal segmentation strategies directly from data through gradient-based optimization.\" [C:dynchunk:121]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1372589.5563128,"req":"s_daily_known-0028","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1372589.5563807,"req":"s_daily_known-0028","event":"step_start","step":"classify"}
+{"t":1372589.5563989,"req":"s_daily_known-0028","event":"degrade","what":"classify_heuristic"}
+{"t":1372589.5564096,"req":"s_daily_known-0028","event":"step_end","step":"classify"}
+{"t":1372589.5564499,"req":"s_daily_known-0028","event":"step_start","step":"retrieve"}
+{"t":1372589.5601524,"req":"s_daily_known-0028","event":"step_end","step":"retrieve"}
+{"t":1372589.5604983,"req":"s_daily_known-0028","event":"degrade","what":"extractive_daily"}
+{"t":1372589.5610937,"req":"s_daily_known-0028","event":"user_first_token"}
+{"t":1372589.5611495,"req":"s_daily_known-0028","event":"user_last_token"}
+{"t":1372589.5612023,"req":"s_daily_known-0028","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]\n\"In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.\" [C:attention:22]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]"}
+{"t":1372593.0663992,"req":"s_daily_known-0029","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1372593.0665509,"req":"s_daily_known-0029","event":"step_start","step":"classify"}
+{"t":1372593.0666047,"req":"s_daily_known-0029","event":"degrade","what":"classify_heuristic"}
+{"t":1372593.0666756,"req":"s_daily_known-0029","event":"step_end","step":"classify"}
+{"t":1372593.066807,"req":"s_daily_known-0029","event":"step_start","step":"retrieve"}
+{"t":1372593.0803134,"req":"s_daily_known-0029","event":"step_end","step":"retrieve"}
+{"t":1372593.0815293,"req":"s_daily_known-0029","event":"degrade","what":"extractive_daily"}
+{"t":1372593.0852348,"req":"s_daily_known-0029","event":"user_first_token"}
+{"t":1372593.0853926,"req":"s_daily_known-0029","event":"user_last_token"}
+{"t":1372593.0854482,"req":"s_daily_known-0029","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1372595.1959928,"req":"s_daily_known-0030","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1372595.1961346,"req":"s_daily_known-0030","event":"step_start","step":"classify"}
+{"t":1372595.1962105,"req":"s_daily_known-0030","event":"degrade","what":"classify_heuristic"}
+{"t":1372595.1962603,"req":"s_daily_known-0030","event":"step_end","step":"classify"}
+{"t":1372595.1964229,"req":"s_daily_known-0030","event":"step_start","step":"retrieve"}
+{"t":1372595.2003299,"req":"s_daily_known-0030","event":"step_end","step":"retrieve"}
+{"t":1372595.2015431,"req":"s_daily_known-0030","event":"degrade","what":"extractive_daily"}
+{"t":1372595.2037458,"req":"s_daily_known-0030","event":"user_first_token"}
+{"t":1372595.2038869,"req":"s_daily_known-0030","event":"user_last_token"}
+{"t":1372595.203945,"req":"s_daily_known-0030","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]\n\"In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.\" [C:attention:22]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]"}
+{"t":1372596.6638599,"req":"s_daily_known-0031","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1372596.6639128,"req":"s_daily_known-0031","event":"step_start","step":"classify"}
+{"t":1372596.6639257,"req":"s_daily_known-0031","event":"degrade","what":"classify_heuristic"}
+{"t":1372596.6639364,"req":"s_daily_known-0031","event":"step_end","step":"classify"}
+{"t":1372596.6639887,"req":"s_daily_known-0031","event":"step_start","step":"retrieve"}
+{"t":1372596.6674651,"req":"s_daily_known-0031","event":"step_end","step":"retrieve"}
+{"t":1372596.6676669,"req":"s_daily_known-0031","event":"degrade","what":"extractive_daily"}
+{"t":1372596.6680174,"req":"s_daily_known-0031","event":"user_first_token"}
+{"t":1372596.6680523,"req":"s_daily_known-0031","event":"user_last_token"}
+{"t":1372596.6680636,"req":"s_daily_known-0031","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"<EOS> <pad> Figure 5: Many of the attention heads exhibit behaviour that seems related to the structure of the sentence.\" [C:attention:39]\n\"While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.\" [C:attention:25]\n\"MOSHI: Entropy is calculated using a formula where it\u2019s negative sum of the products of each possible outcome\u2019s probability and its logarithm to a base, usually base-2 or base-e.\" [C:moshi:181]"}
+{"t":1372597.628477,"req":"s_daily_known-0032","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1372597.6286368,"req":"s_daily_known-0032","event":"step_start","step":"classify"}
+{"t":1372597.6287378,"req":"s_daily_known-0032","event":"degrade","what":"classify_heuristic"}
+{"t":1372597.6287915,"req":"s_daily_known-0032","event":"step_end","step":"classify"}
+{"t":1372597.6289278,"req":"s_daily_known-0032","event":"step_start","step":"retrieve"}
+{"t":1372597.6356945,"req":"s_daily_known-0032","event":"step_end","step":"retrieve"}
+{"t":1372597.6364116,"req":"s_daily_known-0032","event":"degrade","what":"extractive_daily"}
+{"t":1372597.6377013,"req":"s_daily_known-0032","event":"user_first_token"}
+{"t":1372597.6379168,"req":"s_daily_known-0032","event":"user_last_token"}
+{"t":1372597.6379995,"req":"s_daily_known-0032","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"cisions (i.e., boundary probabilities approaching 0 or 1), \ud835\udc39 naturally converges toward \ud835\udc3a, and the loss effectively guides the model toward the desired compression ratio.\" [C:dynchunk:29]\n\"Mixture-of-Experts (MoE) models (Fedus, Zoph, and Shazeer 2022), which face similar challenges in maintaining balanced expert utilization, we introduce a ratio loss to guide compression: Lratio = \ud835\udc41 \ud835\udc41\u22121 ((\ud835\udc41\u22121)\ud835\udc39\ud835\udc3a+ (1 \u2212\ud835\udc39)(1 \u2212\ud835\udc3a)) , \ud835\udc39= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc4f\ud835\udc61, \ud835\udc3a= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc5d\ud835\udc61, (10) where \ud835\udc39represents the fract\" [C:dynchunk:28]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1372606.655776,"req":"s_daily_known-0033","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1372606.6559228,"req":"s_daily_known-0033","event":"step_start","step":"classify"}
+{"t":1372606.655975,"req":"s_daily_known-0033","event":"degrade","what":"classify_heuristic"}
+{"t":1372606.6560076,"req":"s_daily_known-0033","event":"step_end","step":"classify"}
+{"t":1372606.656184,"req":"s_daily_known-0033","event":"step_start","step":"retrieve"}
+{"t":1372606.6640535,"req":"s_daily_known-0033","event":"step_end","step":"retrieve"}
+{"t":1372606.665673,"req":"s_daily_known-0033","event":"degrade","what":"extractive_daily"}
+{"t":1372606.6671785,"req":"s_daily_known-0033","event":"user_first_token"}
+{"t":1372606.6673094,"req":"s_daily_known-0033","event":"user_last_token"}
+{"t":1372606.6673626,"req":"s_daily_known-0033","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"ise, the same downsampler applies to boundary probabilities, compressing \ud835\udc5d\ud835\udc60into \ud835\udc43\ud835\udc60+1 for use in a dechunking layer (see Section 2.2.2).\" [C:dynchunk:22]\n\"(right) Dynamic Chunking (DC).\" [C:dynchunk:9]\n\"2.2 Dynamic Chunking (DC) H-Net learns chunking boundaries through end-to-end training, allowing it to identify semantically meaningful units adaptively.\" [C:dynchunk:19]"}
+{"t":1372608.6735331,"req":"s_daily_known-0034","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1372608.6737089,"req":"s_daily_known-0034","event":"step_start","step":"classify"}
+{"t":1372608.6737779,"req":"s_daily_known-0034","event":"degrade","what":"classify_heuristic"}
+{"t":1372608.6738179,"req":"s_daily_known-0034","event":"step_end","step":"classify"}
+{"t":1372608.6739342,"req":"s_daily_known-0034","event":"step_start","step":"retrieve"}
+{"t":1372608.676517,"req":"s_daily_known-0034","event":"step_end","step":"retrieve"}
+{"t":1372608.6771756,"req":"s_daily_known-0034","event":"degrade","what":"extractive_daily"}
+{"t":1372608.6781623,"req":"s_daily_known-0034","event":"user_first_token"}
+{"t":1372608.6782451,"req":"s_daily_known-0034","event":"user_last_token"}
+{"t":1372608.6782793,"req":"s_daily_known-0034","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
+{"t":1372611.1990433,"req":"s_daily_known-0035","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1372611.1991944,"req":"s_daily_known-0035","event":"step_start","step":"classify"}
+{"t":1372611.1992544,"req":"s_daily_known-0035","event":"degrade","what":"classify_heuristic"}
+{"t":1372611.199291,"req":"s_daily_known-0035","event":"step_end","step":"classify"}
+{"t":1372611.1994754,"req":"s_daily_known-0035","event":"step_start","step":"retrieve"}
+{"t":1372611.203628,"req":"s_daily_known-0035","event":"step_end","step":"retrieve"}
+{"t":1372611.2047584,"req":"s_daily_known-0035","event":"degrade","what":"extractive_daily"}
+{"t":1372611.2063109,"req":"s_daily_known-0035","event":"user_first_token"}
+{"t":1372611.2064482,"req":"s_daily_known-0035","event":"user_last_token"}
+{"t":1372611.206499,"req":"s_daily_known-0035","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"The output is computed as a weighted sum 3 Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention.\" [C:attention:8]\n\"3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: \u2022 In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\" [C:attention:12]\n\"In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.\" [C:attention:5]"}
+{"t":1372611.2641054,"req":"s_daily_known-0036","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1372611.2642187,"req":"s_daily_known-0036","event":"step_start","step":"classify"}
+{"t":1372611.2642505,"req":"s_daily_known-0036","event":"degrade","what":"classify_heuristic"}
+{"t":1372611.2642726,"req":"s_daily_known-0036","event":"step_end","step":"classify"}
+{"t":1372611.264364,"req":"s_daily_known-0036","event":"step_start","step":"retrieve"}
+{"t":1372611.2668512,"req":"s_daily_known-0036","event":"step_end","step":"retrieve"}
+{"t":1372611.267565,"req":"s_daily_known-0036","event":"degrade","what":"extractive_daily"}
+{"t":1372611.2686565,"req":"s_daily_known-0036","event":"user_first_token"}
+{"t":1372611.2687605,"req":"s_daily_known-0036","event":"user_last_token"}
+{"t":1372611.2687972,"req":"s_daily_known-0036","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"Moreover, and as described in Table 1, we settle on a theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1.\" [C:moshi:81]\n\"In this work we introduce Moshi, a speech-text foundation model and real-time spoken dialogue system that aims at solving the aforementioned limitations: latency, textual information bottleneck and turn-based modeling.\" [C:moshi:4]"}
+{"t":1372613.6315415,"req":"s_daily_known-0037","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1372613.6316877,"req":"s_daily_known-0037","event":"step_start","step":"classify"}
+{"t":1372613.6317403,"req":"s_daily_known-0037","event":"degrade","what":"classify_heuristic"}
+{"t":1372613.6317837,"req":"s_daily_known-0037","event":"step_end","step":"classify"}
+{"t":1372613.6318982,"req":"s_daily_known-0037","event":"step_start","step":"retrieve"}
+{"t":1372613.6450323,"req":"s_daily_known-0038","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1372613.645149,"req":"s_daily_known-0038","event":"step_start","step":"classify"}
+{"t":1372613.6452171,"req":"s_daily_known-0038","event":"degrade","what":"classify_heuristic"}
+{"t":1372613.6458157,"req":"s_daily_known-0038","event":"step_end","step":"classify"}
+{"t":1372613.6489723,"req":"s_daily_known-0038","event":"step_start","step":"retrieve"}
+{"t":1372613.6768525,"req":"s_daily_known-0037","event":"step_end","step":"retrieve"}
+{"t":1372613.680019,"req":"s_daily_known-0037","event":"degrade","what":"extractive_daily"}
+{"t":1372613.6871324,"req":"s_daily_known-0037","event":"user_first_token"}
+{"t":1372613.6872792,"req":"s_daily_known-0037","event":"user_last_token"}
+{"t":1372613.6874044,"req":"s_daily_known-0037","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1372613.6980705,"req":"s_daily_known-0038","event":"step_end","step":"retrieve"}
+{"t":1372613.6988176,"req":"s_daily_known-0038","event":"degrade","what":"extractive_daily"}
+{"t":1372613.6999927,"req":"s_daily_known-0038","event":"user_first_token"}
+{"t":1372613.7000778,"req":"s_daily_known-0038","event":"user_last_token"}
+{"t":1372613.700132,"req":"s_daily_known-0038","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]\n\"In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.\" [C:attention:22]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]"}
+{"t":1372614.159963,"req":"s_daily_known-0039","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1372614.1601177,"req":"s_daily_known-0039","event":"step_start","step":"classify"}
+{"t":1372614.1601715,"req":"s_daily_known-0039","event":"degrade","what":"classify_heuristic"}
+{"t":1372614.1602143,"req":"s_daily_known-0039","event":"step_end","step":"classify"}
+{"t":1372614.1603406,"req":"s_daily_known-0039","event":"step_start","step":"retrieve"}
+{"t":1372614.1660099,"req":"s_daily_known-0039","event":"step_end","step":"retrieve"}
+{"t":1372614.1667498,"req":"s_daily_known-0039","event":"degrade","what":"extractive_daily"}
+{"t":1372614.1682971,"req":"s_daily_known-0039","event":"user_first_token"}
+{"t":1372614.1684076,"req":"s_daily_known-0039","event":"user_last_token"}
+{"t":1372614.1684599,"req":"s_daily_known-0039","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1372616.2956184,"req":"s_daily_known-0040","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1372616.295792,"req":"s_daily_known-0040","event":"step_start","step":"classify"}
+{"t":1372616.2958535,"req":"s_daily_known-0040","event":"degrade","what":"classify_heuristic"}
+{"t":1372616.2959033,"req":"s_daily_known-0040","event":"step_end","step":"classify"}
+{"t":1372616.2961934,"req":"s_daily_known-0040","event":"step_start","step":"retrieve"}
+{"t":1372616.301672,"req":"s_daily_known-0040","event":"step_end","step":"retrieve"}
+{"t":1372616.302415,"req":"s_daily_known-0040","event":"degrade","what":"extractive_daily"}
+{"t":1372616.3035066,"req":"s_daily_known-0040","event":"user_first_token"}
+{"t":1372616.303596,"req":"s_daily_known-0040","event":"user_last_token"}
+{"t":1372616.3036471,"req":"s_daily_known-0040","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"H-Net\u2019s improvements are even more pronounced on languages without obvious segmentation cues, including Chinese and code (59.9 \u219266.3 on XWinograd-zh compared to tokenized Transformer) and DNA language modeling (3.6\u00d7 improved data efficiency compared to isotropic models).\" [C:dynchunk:12]\n\"izer, we find that H-Net (2-stage) scales better than BPE Transformer and H-Net (space) on both Chinese and code (Figure 5), and achieves lower compression after the decay phase (Table 4).\" [C:dynchunk:61]\n\"15 20B 30B 40B 50B 60B 70B 80B 90B 100B Total Training Bytes 0.74 0.76 0.78 0.80 0.82 0.84 0.86 0.88 0.90 Validation Bits-per-byte Chinese (F.-Edu-Chinese-V2.1) 20B 30B 40B 50B 60B 70B 80B Total Training Bytes 0.36 0.38 0.40 0.42 0.44 Code (Pile Github) H-Net (2-stage) H-Net (space) (BPE) Transforme\" [C:dynchunk:58]"}
+{"t":1372617.8961828,"req":"s_daily_known-0041","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1372617.8963075,"req":"s_daily_known-0041","event":"step_start","step":"classify"}
+{"t":1372617.8963468,"req":"s_daily_known-0041","event":"degrade","what":"classify_heuristic"}
+{"t":1372617.8963687,"req":"s_daily_known-0041","event":"step_end","step":"classify"}
+{"t":1372617.8964414,"req":"s_daily_known-0041","event":"step_start","step":"retrieve"}
+{"t":1372617.927096,"req":"s_daily_known-0041","event":"step_end","step":"retrieve"}
+{"t":1372617.9278215,"req":"s_daily_known-0041","event":"degrade","what":"extractive_daily"}
+{"t":1372617.9289903,"req":"s_daily_known-0041","event":"user_first_token"}
+{"t":1372617.9290861,"req":"s_daily_known-0041","event":"user_last_token"}
+{"t":1372617.9291453,"req":"s_daily_known-0041","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
+{"t":1372618.0421438,"req":"s_daily_known-0042","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1372618.0422693,"req":"s_daily_known-0042","event":"step_start","step":"classify"}
+{"t":1372618.0423145,"req":"s_daily_known-0042","event":"degrade","what":"classify_heuristic"}
+{"t":1372618.0423516,"req":"s_daily_known-0042","event":"step_end","step":"classify"}
+{"t":1372618.0424592,"req":"s_daily_known-0042","event":"step_start","step":"retrieve"}
+{"t":1372618.0479195,"req":"s_daily_known-0042","event":"step_end","step":"retrieve"}
+{"t":1372618.0488381,"req":"s_daily_known-0042","event":"degrade","what":"extractive_daily"}
+{"t":1372618.0503975,"req":"s_daily_known-0042","event":"user_first_token"}
+{"t":1372618.0505195,"req":"s_daily_known-0042","event":"user_last_token"}
+{"t":1372618.0505813,"req":"s_daily_known-0042","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmu\" [C:attention:20]\n\"the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of th\" [C:attention:21]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]"}
+{"t":1372621.0340236,"req":"s_daily_known-0043","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1372621.0341738,"req":"s_daily_known-0043","event":"step_start","step":"classify"}
+{"t":1372621.0342362,"req":"s_daily_known-0043","event":"degrade","what":"classify_heuristic"}
+{"t":1372621.0343159,"req":"s_daily_known-0043","event":"step_end","step":"classify"}
+{"t":1372621.0344713,"req":"s_daily_known-0043","event":"step_start","step":"retrieve"}
+{"t":1372621.1069287,"req":"s_daily_known-0043","event":"step_end","step":"retrieve"}
+{"t":1372621.1079907,"req":"s_daily_known-0043","event":"degrade","what":"extractive_daily"}
+{"t":1372621.1093331,"req":"s_daily_known-0043","event":"user_first_token"}
+{"t":1372621.1094607,"req":"s_daily_known-0043","event":"user_last_token"}
+{"t":1372621.1095202,"req":"s_daily_known-0043","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"We extend previous work on audio language models and design a streaming, hierarchical architecture, with a theoretical latency of 160 ms\u2014lower than the 230 ms average in natural conversations measured over 10 langu\" [C:moshi:4]\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"We thus switch to a reduced latency of 240ms with the pattern [0, 2, 2, 2, 2, 2, 2, 2].\" [C:moshi:79]"}
+{"t":1372621.6036268,"req":"s_daily_known-0044","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1372621.6037874,"req":"s_daily_known-0044","event":"step_start","step":"classify"}
+{"t":1372621.6038403,"req":"s_daily_known-0044","event":"degrade","what":"classify_heuristic"}
+{"t":1372621.6038631,"req":"s_daily_known-0044","event":"step_end","step":"classify"}
+{"t":1372621.6039626,"req":"s_daily_known-0044","event":"step_start","step":"retrieve"}
+{"t":1372621.6118909,"req":"s_daily_known-0044","event":"step_end","step":"retrieve"}
+{"t":1372621.6125109,"req":"s_daily_known-0044","event":"degrade","what":"extractive_daily"}
+{"t":1372621.6136489,"req":"s_daily_known-0044","event":"user_first_token"}
+{"t":1372621.6139263,"req":"s_daily_known-0044","event":"user_last_token"}
+{"t":1372621.6139642,"req":"s_daily_known-0044","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"<EOS> <pad> <pad> <pad> <pad> <pad> <pad> Figure 3: An example of the attention mechanism following long-distance dependencies in the encoder self-attention in layer 5 of 6.\" [C:attention:37]\n\"are missing , in my opinion .\" [C:attention:38]\n\"Net (2-stage) (3,3)-DC 7.0 870M M4 + T1M4 + T26 + M4T1 + M4 1024 , 1024 , 1536 #FLOPs matched to GPT-3 XL Transformer Token GPT2 1792 4.6 1.3B T24 2048 SpaceByte++ Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (space) Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (1-stage) Byte 6-DC 8192 4\" [C:dynchunk:41]"}
+{"t":1372624.433406,"req":"s_daily_known-0045","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1372624.4335348,"req":"s_daily_known-0045","event":"step_start","step":"classify"}
+{"t":1372624.4335919,"req":"s_daily_known-0045","event":"degrade","what":"classify_heuristic"}
+{"t":1372624.4336391,"req":"s_daily_known-0045","event":"step_end","step":"classify"}
+{"t":1372624.4339693,"req":"s_daily_known-0045","event":"step_start","step":"retrieve"}
+{"t":1372624.4974727,"req":"s_daily_known-0045","event":"step_end","step":"retrieve"}
+{"t":1372624.4981851,"req":"s_daily_known-0045","event":"degrade","what":"extractive_daily"}
+{"t":1372624.5079448,"req":"s_daily_known-0045","event":"user_first_token"}
+{"t":1372624.5081543,"req":"s_daily_known-0045","event":"user_last_token"}
+{"t":1372624.5082584,"req":"s_daily_known-0045","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1372624.8540119,"req":"s_daily_known-0046","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1372624.85425,"req":"s_daily_known-0046","event":"step_start","step":"classify"}
+{"t":1372624.8543088,"req":"s_daily_known-0046","event":"degrade","what":"classify_heuristic"}
+{"t":1372624.8543466,"req":"s_daily_known-0046","event":"step_end","step":"classify"}
+{"t":1372624.8550469,"req":"s_daily_known-0046","event":"step_start","step":"retrieve"}
+{"t":1372624.864908,"req":"s_daily_known-0046","event":"step_end","step":"retrieve"}
+{"t":1372624.8657706,"req":"s_daily_known-0046","event":"degrade","what":"extractive_daily"}
+{"t":1372624.867086,"req":"s_daily_known-0046","event":"user_first_token"}
+{"t":1372624.8671998,"req":"s_daily_known-0046","event":"user_last_token"}
+{"t":1372624.8672654,"req":"s_daily_known-0046","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1372634.0618279,"req":"s_daily_known-0047","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1372634.0619578,"req":"s_daily_known-0047","event":"step_start","step":"classify"}
+{"t":1372634.0619947,"req":"s_daily_known-0047","event":"degrade","what":"classify_heuristic"}
+{"t":1372634.0620198,"req":"s_daily_known-0047","event":"step_end","step":"classify"}
+{"t":1372634.0621148,"req":"s_daily_known-0047","event":"step_start","step":"retrieve"}
+{"t":1372634.0657186,"req":"s_daily_known-0047","event":"step_end","step":"retrieve"}
+{"t":1372634.0663574,"req":"s_daily_known-0047","event":"degrade","what":"extractive_daily"}
+{"t":1372634.0674285,"req":"s_daily_known-0047","event":"user_first_token"}
+{"t":1372634.0675033,"req":"s_daily_known-0047","event":"user_last_token"}
+{"t":1372634.0675392,"req":"s_daily_known-0047","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"cisions (i.e., boundary probabilities approaching 0 or 1), \ud835\udc39 naturally converges toward \ud835\udc3a, and the loss effectively guides the model toward the desired compression ratio.\" [C:dynchunk:29]\n\"Mixture-of-Experts (MoE) models (Fedus, Zoph, and Shazeer 2022), which face similar challenges in maintaining balanced expert utilization, we introduce a ratio loss to guide compression: Lratio = \ud835\udc41 \ud835\udc41\u22121 ((\ud835\udc41\u22121)\ud835\udc39\ud835\udc3a+ (1 \u2212\ud835\udc39)(1 \u2212\ud835\udc3a)) , \ud835\udc39= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc4f\ud835\udc61, \ud835\udc3a= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc5d\ud835\udc61, (10) where \ud835\udc39represents the fract\" [C:dynchunk:28]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1372638.9861683,"req":"s_daily_known-0048","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1372638.9862913,"req":"s_daily_known-0048","event":"step_start","step":"classify"}
+{"t":1372638.986337,"req":"s_daily_known-0048","event":"degrade","what":"classify_heuristic"}
+{"t":1372638.9863654,"req":"s_daily_known-0048","event":"step_end","step":"classify"}
+{"t":1372638.9864659,"req":"s_daily_known-0048","event":"step_start","step":"retrieve"}
+{"t":1372638.9889722,"req":"s_daily_known-0048","event":"step_end","step":"retrieve"}
+{"t":1372638.9893427,"req":"s_daily_known-0048","event":"degrade","what":"extractive_daily"}
+{"t":1372638.9901304,"req":"s_daily_known-0048","event":"user_first_token"}
+{"t":1372638.990207,"req":"s_daily_known-0048","event":"user_last_token"}
+{"t":1372638.9902404,"req":"s_daily_known-0048","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"Moreover, and as described in Table 1, we settle on a theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1.\" [C:moshi:81]\n\"In this work we introduce Moshi, a speech-text foundation model and real-time spoken dialogue system that aims at solving the aforementioned limitations: latency, textual information bottleneck and turn-based modeling.\" [C:moshi:4]"}
+{"t":1372649.4591116,"req":"s_daily_known-0049","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1372649.4592054,"req":"s_daily_known-0049","event":"step_start","step":"classify"}
+{"t":1372649.4592395,"req":"s_daily_known-0049","event":"degrade","what":"classify_heuristic"}
+{"t":1372649.4592622,"req":"s_daily_known-0049","event":"step_end","step":"classify"}
+{"t":1372649.4593292,"req":"s_daily_known-0049","event":"step_start","step":"retrieve"}
+{"t":1372649.4656143,"req":"s_daily_known-0049","event":"step_end","step":"retrieve"}
+{"t":1372649.4661908,"req":"s_daily_known-0049","event":"degrade","what":"extractive_daily"}
+{"t":1372649.4671934,"req":"s_daily_known-0049","event":"user_first_token"}
+{"t":1372649.4672791,"req":"s_daily_known-0049","event":"user_last_token"}
+{"t":1372649.4673125,"req":"s_daily_known-0049","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36].\" [C:attention:22]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"1B 2B 3B 4B 5B 6B 7B 8B Training Base Pairs Seen 2.75 2.80 2.85 2.90 2.95 3.6x more data efficient than isotropic model Perplexity on HG38 Transformer Mamba-2 H-Net (Trans.) H-Net (Mamba) Figure 6: Scaling performance on HG38 during the stable phase of training.\" [C:dynchunk:64]"}
+{"t":1372649.969322,"req":"s_daily_known-0050","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1372649.9694083,"req":"s_daily_known-0050","event":"step_start","step":"classify"}
+{"t":1372649.9694394,"req":"s_daily_known-0050","event":"degrade","what":"classify_heuristic"}
+{"t":1372649.9694613,"req":"s_daily_known-0050","event":"step_end","step":"classify"}
+{"t":1372649.9695347,"req":"s_daily_known-0050","event":"step_start","step":"retrieve"}
+{"t":1372649.9717729,"req":"s_daily_known-0050","event":"step_end","step":"retrieve"}
+{"t":1372649.9723253,"req":"s_daily_known-0050","event":"degrade","what":"extractive_daily"}
+{"t":1372649.9733105,"req":"s_daily_known-0050","event":"user_first_token"}
+{"t":1372649.9734034,"req":"s_daily_known-0050","event":"user_last_token"}
+{"t":1372649.9734395,"req":"s_daily_known-0050","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"All models are trained on H100 GPUs, using FSDP and activation checkp\" [C:moshi:58]\n\"Both have a perplexity that is better than the ground truth, which is explained by these models being trained on data that is closer to what DialoGPT has been trained on compared to the Fisher dataset.\" [C:moshi:94]\n\"All models are trained on H100 GPUs, using FSDP and activation checkpointing.\" [C:moshi:59]"}
+{"t":1372651.1912709,"req":"s_daily_known-0051","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1372651.1913564,"req":"s_daily_known-0051","event":"step_start","step":"classify"}
+{"t":1372651.1913856,"req":"s_daily_known-0051","event":"degrade","what":"classify_heuristic"}
+{"t":1372651.191401,"req":"s_daily_known-0051","event":"step_end","step":"classify"}
+{"t":1372651.1914572,"req":"s_daily_known-0051","event":"step_start","step":"retrieve"}
+{"t":1372651.195326,"req":"s_daily_known-0051","event":"step_end","step":"retrieve"}
+{"t":1372651.195743,"req":"s_daily_known-0051","event":"degrade","what":"extractive_daily"}
+{"t":1372651.1964756,"req":"s_daily_known-0051","event":"user_first_token"}
+{"t":1372651.1965244,"req":"s_daily_known-0051","event":"user_last_token"}
+{"t":1372651.1965452,"req":"s_daily_known-0051","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36].\" [C:attention:22]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"1B 2B 3B 4B 5B 6B 7B 8B Training Base Pairs Seen 2.75 2.80 2.85 2.90 2.95 3.6x more data efficient than isotropic model Perplexity on HG38 Transformer Mamba-2 H-Net (Trans.) H-Net (Mamba) Figure 6: Scaling performance on HG38 during the stable phase of training.\" [C:dynchunk:64]"}
+{"t":1372651.3137289,"req":"s_daily_known-0052","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1372651.3138199,"req":"s_daily_known-0052","event":"step_start","step":"classify"}
+{"t":1372651.3138547,"req":"s_daily_known-0052","event":"degrade","what":"classify_heuristic"}
+{"t":1372651.3138771,"req":"s_daily_known-0052","event":"step_end","step":"classify"}
+{"t":1372651.3139553,"req":"s_daily_known-0052","event":"step_start","step":"retrieve"}
+{"t":1372651.318338,"req":"s_daily_known-0052","event":"step_end","step":"retrieve"}
+{"t":1372651.3191971,"req":"s_daily_known-0052","event":"degrade","what":"extractive_daily"}
+{"t":1372651.3201251,"req":"s_daily_known-0052","event":"user_first_token"}
+{"t":1372651.3202002,"req":"s_daily_known-0052","event":"user_last_token"}
+{"t":1372651.3202353,"req":"s_daily_known-0052","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1372652.3963208,"req":"s_daily_known-0053","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1372652.3964365,"req":"s_daily_known-0053","event":"step_start","step":"classify"}
+{"t":1372652.3964752,"req":"s_daily_known-0053","event":"degrade","what":"classify_heuristic"}
+{"t":1372652.3965002,"req":"s_daily_known-0053","event":"step_end","step":"classify"}
+{"t":1372652.3965902,"req":"s_daily_known-0053","event":"step_start","step":"retrieve"}
+{"t":1372652.4014584,"req":"s_daily_known-0053","event":"step_end","step":"retrieve"}
+{"t":1372652.4020139,"req":"s_daily_known-0053","event":"degrade","what":"extractive_daily"}
+{"t":1372652.4029821,"req":"s_daily_known-0053","event":"user_first_token"}
+{"t":1372652.4030772,"req":"s_daily_known-0053","event":"user_last_token"}
+{"t":1372652.4031481,"req":"s_daily_known-0053","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}

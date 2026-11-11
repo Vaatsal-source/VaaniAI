@@ -1,0 +1,83 @@
+[
+ {
+  "id": "h01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3838.5,
+  "text": "The original attention mechanism divides the query\u2011key dot products by a constant (specifically \\(1/\\sqrt{d_k}\\)) before applying softmax to prevent the dot products from becoming too large, which would push the softmax into regions with extremely small gradients and make learning difficult. [C:attention:4]"
+ },
+ {
+  "id": "h02",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 2425.5,
+  "text": "The papers don\u2019t say. They report that learned positional embeddings produced nearly identical results to the sinusoidal version, but no evidence that they performed better. [C:attention:7]"
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17122.2,
+  "text": "The big Transformer model has 213 million parameters. [C:attention:12]"
+ },
+ {
+  "id": "h04",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 14135.8,
+  "text": "The papers don't say. The specific number of layers and the model dimension for Moshi's Depth Transformer are not provided in the supplied passages."
+ },
+ {
+  "id": "h05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 25279.7,
+  "text": "The smoothing module converts the discrete chunk\u2011boundary decisions into a differentiable form, enabling stable gradient flow during training. Without it, the hard boundary decisions would block back\u2011propagation and cause training instability. [C:dynchunk:10]"
+ },
+ {
+  "id": "h06",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 22885.9,
+  "text": "The hierarchical network consists of three stages: an **encoder** stage, a **main** stage, and a **decoder** stage. [C:dynchunk:6]"
+ },
+ {
+  "id": "h07",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 23577.9,
+  "text": "Moshi\u2019s Inner Monologue is a hierarchical, multi\u2011stream architecture that first generates a sequence of text tokens (the \u201cinner monologue\u201d) and then uses those tokens as a prefix to predict aligned semantic and acoustic tokens for speech. This decomposition allows the model to produce both text and audio in a single generative process, enabling real\u2011time, full\u2011duplex speech\u2011to\u2011speech dialogue while preserving paralinguistic information and allowing streaming TTS/ASR by adjusting the delay between token types. [C:moshi:7]"
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 25406.5,
+  "text": "The papers don't say. They only mention training on NVIDIA GPUs, not TPUs."
+ },
+ {
+  "id": "h09",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 22564.7,
+  "text": "The papers don't say. The provided passages only report BLEU scores for English\u2011to\u2011German and English\u2011to\u2011French translation tasks."
+ }
+]

@@ -1,0 +1,64 @@
+{"t":1371621.9246,"req":"s_steady_free-0000","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1371621.925114,"req":"s_steady_free-0000","event":"step_start","step":"classify"}
+{"t":1371621.9274182,"req":"s_steady_free-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1371622.6273576,"req":"s_steady_free-0000","event":"first_token","step":"classify","ttft_ms":699.6}
+{"t":1371622.6365157,"req":"s_steady_free-0000","event":"last_token","step":"classify","total_ms":708.8,"prompt_tokens":105,"completion_tokens":22}
+{"t":1371622.6369118,"req":"s_steady_free-0000","event":"step_end","step":"classify"}
+{"t":1371622.6582522,"req":"s_steady_free-0000","event":"step_start","step":"retrieve"}
+{"t":1371622.7175594,"req":"s_steady_free-0000","event":"step_end","step":"retrieve"}
+{"t":1371622.7187083,"req":"s_steady_free-0000","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1371622.7189791,"req":"s_steady_free-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1371623.2002701,"req":"s_steady_free-0000","event":"first_token","step":"draft","ttft_ms":481.1}
+{"t":1371623.2412102,"req":"s_steady_free-0000","event":"last_token","step":"draft","total_ms":522.1,"prompt_tokens":1708,"completion_tokens":189}
+{"t":1371623.241577,"req":"s_steady_free-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1371623.2416494,"req":"s_steady_free-0000","event":"user_first_token"}
+{"t":1371623.2417019,"req":"s_steady_free-0000","event":"user_last_token"}
+{"t":1371623.2417343,"req":"s_steady_free-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1371641.1257508,"req":"s_steady_free-0001","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1371641.1261902,"req":"s_steady_free-0001","event":"step_start","step":"classify"}
+{"t":1371641.1264118,"req":"s_steady_free-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1371641.3873184,"req":"s_steady_free-0002","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1371641.3875001,"req":"s_steady_free-0002","event":"step_start","step":"classify"}
+{"t":1371641.3877186,"req":"s_steady_free-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1371641.8777174,"req":"s_steady_free-0001","event":"first_token","step":"classify","ttft_ms":751.2}
+{"t":1371641.8860813,"req":"s_steady_free-0001","event":"last_token","step":"classify","total_ms":759.6,"prompt_tokens":108,"completion_tokens":22}
+{"t":1371641.8862795,"req":"s_steady_free-0001","event":"step_end","step":"classify"}
+{"t":1371641.8864071,"req":"s_steady_free-0001","event":"step_start","step":"retrieve"}
+{"t":1371641.8975623,"req":"s_steady_free-0001","event":"step_end","step":"retrieve"}
+{"t":1371641.8987015,"req":"s_steady_free-0001","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1371641.8989334,"req":"s_steady_free-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1371642.297732,"req":"s_steady_free-0002","event":"first_token","step":"classify","ttft_ms":909.9}
+{"t":1371642.3031177,"req":"s_steady_free-0002","event":"last_token","step":"classify","total_ms":915.3,"prompt_tokens":109,"completion_tokens":22}
+{"t":1371642.3034345,"req":"s_steady_free-0002","event":"step_end","step":"classify"}
+{"t":1371642.3035257,"req":"s_steady_free-0002","event":"step_start","step":"retrieve"}
+{"t":1371642.3072428,"req":"s_steady_free-0002","event":"step_end","step":"retrieve"}
+{"t":1371642.3081346,"req":"s_steady_free-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1371642.3086177,"req":"s_steady_free-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2549}
+{"t":1371642.3721348,"req":"s_steady_free-0001","event":"first_token","step":"draft","ttft_ms":473.1}
+{"t":1371642.3975715,"req":"s_steady_free-0001","event":"last_token","step":"draft","total_ms":498.5,"prompt_tokens":1710,"completion_tokens":189}
+{"t":1371642.3979562,"req":"s_steady_free-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1371642.3980243,"req":"s_steady_free-0001","event":"user_first_token"}
+{"t":1371642.3980633,"req":"s_steady_free-0001","event":"user_last_token"}
+{"t":1371642.398089,"req":"s_steady_free-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9]"}
+{"t":1371642.7960799,"req":"s_steady_free-0002","event":"first_token","step":"draft","ttft_ms":487.3}
+{"t":1371642.8772626,"req":"s_steady_free-0002","event":"last_token","step":"draft","total_ms":568.5,"prompt_tokens":1694,"completion_tokens":189}
+{"t":1371642.8775658,"req":"s_steady_free-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1371642.87763,"req":"s_steady_free-0002","event":"user_first_token"}
+{"t":1371642.8777062,"req":"s_steady_free-0002","event":"user_last_token"}
+{"t":1371642.8777616,"req":"s_steady_free-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:22] [C:dynchunk:9]"}
+{"t":1371722.0341928,"req":"s_steady_free-0003","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1371722.0344183,"req":"s_steady_free-0003","event":"step_start","step":"classify"}
+{"t":1371722.0346434,"req":"s_steady_free-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1371723.68851,"req":"s_steady_free-0003","event":"first_token","step":"classify","ttft_ms":1653.7}
+{"t":1371723.6930682,"req":"s_steady_free-0003","event":"last_token","step":"classify","total_ms":1658.3,"prompt_tokens":114,"completion_tokens":22}
+{"t":1371723.6934684,"req":"s_steady_free-0003","event":"step_end","step":"classify"}
+{"t":1371723.6937005,"req":"s_steady_free-0003","event":"step_start","step":"retrieve"}
+{"t":1371723.6989393,"req":"s_steady_free-0003","event":"step_end","step":"retrieve"}
+{"t":1371723.6998931,"req":"s_steady_free-0003","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1371723.70022,"req":"s_steady_free-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1371724.2784373,"req":"s_steady_free-0003","event":"first_token","step":"draft","ttft_ms":578.1}
+{"t":1371724.3013845,"req":"s_steady_free-0003","event":"last_token","step":"draft","total_ms":601.1,"prompt_tokens":1711,"completion_tokens":189}
+{"t":1371724.3026851,"req":"s_steady_free-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1371724.3027753,"req":"s_steady_free-0003","event":"user_first_token"}
+{"t":1371724.302817,"req":"s_steady_free-0003","event":"user_last_token"}
+{"t":1371724.3028427,"req":"s_steady_free-0003","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:23]"}

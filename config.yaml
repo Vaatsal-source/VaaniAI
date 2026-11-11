@@ -1,0 +1,54 @@
+# Single config for every knob. Seeds are fixed for reproducibility.
+seed: 1234
+
+providers:
+  # Switching real <-> stand-in is only a base_url change.
+  groq:
+    base_url: https://api.groq.com/openai/v1
+    key_env: GROQ_API_KEY
+  standin:
+    base_url: http://127.0.0.1:8099/v1
+    key_env: ""
+  gemini:            # secondary fallback (OpenAI-compatible endpoint)
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai
+    key_env: GEMINI_API_KEY
+active_provider: groq
+
+models:
+  # Small/fast model: classify, rewrite, LLM-verify.  Large: draft answer.
+  small: openai/gpt-oss-20b
+  large: openai/gpt-oss-120b
+  # Confirm against GET /models and the console before the real run.
+
+# Conservative starting limits; the limiter is re-seeded from x-ratelimit-* headers at runtime.
+limits:
+  rpm: 27
+  tpm: 7200
+  rpd: 1000
+  tpd: 200000                 # tokens/day: NOT in headers; found in a 429 body (gpt-oss-120b)
+  daily_reserve_frac: 0.10     # keep 10% of the day for high-priority/degraded replies
+
+retrieval:
+  chunk_chars: 1200
+  overlap_chars: 200
+  top_k: 5
+  mode: bm25           # bm25 | dense | dense_rerank
+
+pipeline:
+  max_loop_iters: 1
+  tool_timeout_s: 3.0
+  tool_p_slow: 0.05          # tool injected faults (for experiments)
+  tool_p_fail: 0.03
+  tool_slow_s: 6.0
+  conf_threshold: 0.6        # query-term coverage below this -> loop / LLM verify
+  verify_llm_when_confidence_below: 0.5
+  request_deadline_s: 25     # user abandon horizon
+  ttft_target_ms: 2500
+  p95_total_target_ms: 12000
+
+retries:
+  max_attempts: 3
+  call_timeout_s: 12         # cut a call that produces no complete reply in this long (slow-but-not-failing)
+  base_backoff_s: 0.5
+  max_backoff_s: 8
+  retry_budget_frac: 0.2     # retries may be at most 20% of first attempts (rolling)

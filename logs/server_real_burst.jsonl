@@ -1,0 +1,108 @@
+{"t":1378994.6790278,"req":"real_burst-0000","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1378994.6792124,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378994.6792563,"req":"real_burst-0000","event":"step_start","step":"classify"}
+{"t":1378994.6793571,"req":"real_burst-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1378994.8565031,"req":"real_burst-0001","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1378994.8566361,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378994.8591279,"req":"real_burst-0001","event":"step_start","step":"classify"}
+{"t":1378994.859466,"req":"real_burst-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1378995.4149687,"req":"real_burst-0000","event":"first_token","step":"classify","ttft_ms":735.5}
+{"t":1378995.4192736,"req":"real_burst-0000","event":"last_token","step":"classify","total_ms":739.8,"prompt_tokens":206,"completion_tokens":72}
+{"t":1378995.419769,"req":"real_burst-0000","event":"step_end","step":"classify"}
+{"t":1378995.4212995,"req":"real_burst-0000","event":"step_start","step":"retrieve"}
+{"t":1378995.4337257,"req":"real_burst-0000","event":"step_end","step":"retrieve"}
+{"t":1378995.4350596,"req":"real_burst-0000","event":"decide","branch":"tool_fetch_section"}
+{"t":1378995.4351532,"req":"real_burst-0000","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"3.2.2"}
+{"t":1378995.435474,"req":"real_burst-0000","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1378995.4360426,"req":"real_burst-0000","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2545}
+{"t":1378995.9347632,"req":"real_burst-0002","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1378995.9349529,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378995.9350202,"req":"real_burst-0002","event":"step_start","step":"classify"}
+{"t":1378995.9352192,"req":"real_burst-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":295}
+{"t":1378995.9674158,"req":"real_burst-0001","event":"first_token","step":"classify","ttft_ms":1107.8}
+{"t":1378995.96915,"req":"real_burst-0001","event":"last_token","step":"classify","total_ms":1109.6,"prompt_tokens":214,"completion_tokens":93}
+{"t":1378995.9693573,"req":"real_burst-0001","event":"step_end","step":"classify"}
+{"t":1378995.9695116,"req":"real_burst-0001","event":"step_start","step":"retrieve"}
+{"t":1378995.9770359,"req":"real_burst-0001","event":"step_end","step":"retrieve"}
+{"t":1378995.9784293,"req":"real_burst-0001","event":"decide","branch":"draft","conf":0.71,"k":5}
+{"t":1378995.9790564,"req":"real_burst-0001","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2615}
+{"t":1378996.3319105,"req":"real_burst-0003","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1378996.3320718,"req":"-","event":"pressure","wait_s":6.09,"remaining_s":17.0,"queued":0}
+{"t":1378996.3321377,"req":"real_burst-0003","event":"step_start","step":"classify"}
+{"t":1378996.3321873,"req":"real_burst-0003","event":"degrade","what":"classify_heuristic"}
+{"t":1378996.3322294,"req":"real_burst-0003","event":"step_end","step":"classify"}
+{"t":1378996.3323728,"req":"real_burst-0003","event":"step_start","step":"retrieve"}
+{"t":1378996.3377495,"req":"real_burst-0003","event":"step_end","step":"retrieve"}
+{"t":1378996.3384129,"req":"real_burst-0003","event":"decide","branch":"draft","conf":0.78,"k":3}
+{"t":1378996.4210069,"req":"real_burst-0000","event":"first_token","step":"draft","ttft_ms":984.8}
+{"t":1378996.5185588,"req":"real_burst-0000","event":"last_token","step":"draft","total_ms":1082.4,"prompt_tokens":1747,"completion_tokens":137}
+{"t":1378996.5190641,"req":"real_burst-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1378996.519176,"req":"real_burst-0000","event":"user_first_token"}
+{"t":1378996.5192617,"req":"real_burst-0000","event":"user_last_token"}
+{"t":1378996.5193301,"req":"real_burst-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","tool","draft"],"answer":"The routing module decides chunk boundaries by computing a similarity score between adjacent encoder outputs. It projects each output into query and key vectors, then uses cosine similarity to produce a boundary probability \\(p_t\\); a boundary indicator \\(b_t\\) is set to 1 when \\(p_t \\ge 0.5\\) (with the first position always a boundary). This mechanism lets the model place boundaries where contextual or semantic shift occurs, as lower similarity indicates a change in context. [C:dynchunk:20]"}
+{"t":1378996.5647659,"req":"real_burst-0002","event":"first_token","step":"classify","ttft_ms":629.4}
+{"t":1378996.5660422,"req":"real_burst-0002","event":"last_token","step":"classify","total_ms":630.7,"prompt_tokens":214,"completion_tokens":80}
+{"t":1378996.5661943,"req":"real_burst-0002","event":"step_end","step":"classify"}
+{"t":1378996.5663427,"req":"real_burst-0002","event":"step_start","step":"retrieve"}
+{"t":1378996.5797244,"req":"real_burst-0002","event":"step_end","step":"retrieve"}
+{"t":1378996.5807679,"req":"real_burst-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1378996.598645,"req":"real_burst-0004","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1378996.5987591,"req":"-","event":"pressure","wait_s":38.18,"remaining_s":17.0,"queued":2}
+{"t":1378996.5988072,"req":"real_burst-0004","event":"step_start","step":"classify"}
+{"t":1378996.5988468,"req":"real_burst-0004","event":"degrade","what":"classify_heuristic"}
+{"t":1378996.5988875,"req":"real_burst-0004","event":"step_end","step":"classify"}
+{"t":1378996.5990321,"req":"real_burst-0004","event":"step_start","step":"retrieve"}
+{"t":1378996.6039206,"req":"real_burst-0004","event":"step_end","step":"retrieve"}
+{"t":1378996.604521,"req":"real_burst-0004","event":"degrade","what":"extractive_overload"}
+{"t":1378996.6057518,"req":"real_burst-0004","event":"user_first_token"}
+{"t":1378996.6081245,"req":"real_burst-0004","event":"user_last_token"}
+{"t":1378996.6085084,"req":"real_burst-0004","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1.\" [C:attention:11]\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]"}
+{"t":1378996.9262401,"req":"real_burst-0001","event":"first_token","step":"draft","ttft_ms":947.0}
+{"t":1378996.9467174,"req":"real_burst-0001","event":"last_token","step":"draft","total_ms":967.5,"prompt_tokens":1894,"completion_tokens":79}
+{"t":1378996.9470015,"req":"real_burst-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1378996.9470744,"req":"real_burst-0001","event":"user_first_token"}
+{"t":1378996.9471452,"req":"real_burst-0001","event":"user_last_token"}
+{"t":1378996.9472075,"req":"real_burst-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Mimi uses 8 quantizers, which yields a bitrate of 1.1 kbps at 12.5 Hz. [C:moshi:32]"}
+{"t":1378997.3302734,"req":"real_burst-0005","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1378997.3306537,"req":"-","event":"pressure","wait_s":37.46,"remaining_s":17.0,"queued":2}
+{"t":1378997.330762,"req":"real_burst-0005","event":"step_start","step":"classify"}
+{"t":1378997.330822,"req":"real_burst-0005","event":"degrade","what":"classify_heuristic"}
+{"t":1378997.3308729,"req":"real_burst-0005","event":"step_end","step":"classify"}
+{"t":1378997.3310175,"req":"real_burst-0005","event":"step_start","step":"retrieve"}
+{"t":1378997.3360916,"req":"real_burst-0005","event":"step_end","step":"retrieve"}
+{"t":1378997.3370325,"req":"real_burst-0005","event":"degrade","what":"extractive_overload"}
+{"t":1378997.338907,"req":"real_burst-0005","event":"user_first_token"}
+{"t":1378997.339074,"req":"real_burst-0005","event":"user_last_token"}
+{"t":1378997.3391451,"req":"real_burst-0005","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1378997.421709,"req":"real_burst-0006","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1378997.4219266,"req":"-","event":"pressure","wait_s":37.37,"remaining_s":17.0,"queued":2}
+{"t":1378997.421995,"req":"real_burst-0006","event":"step_start","step":"classify"}
+{"t":1378997.4220453,"req":"real_burst-0006","event":"degrade","what":"classify_heuristic"}
+{"t":1378997.4220906,"req":"real_burst-0006","event":"step_end","step":"classify"}
+{"t":1378997.4222239,"req":"real_burst-0006","event":"step_start","step":"retrieve"}
+{"t":1378997.4290836,"req":"real_burst-0006","event":"step_end","step":"retrieve"}
+{"t":1378997.429938,"req":"real_burst-0006","event":"degrade","what":"extractive_overload"}
+{"t":1378997.4312481,"req":"real_burst-0006","event":"user_first_token"}
+{"t":1378997.4313862,"req":"real_burst-0006","event":"user_last_token"}
+{"t":1378997.4314456,"req":"real_burst-0006","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The output is computed as a weighted sum 3 Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention.\" [C:attention:8]\n\"3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: \u2022 In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\" [C:attention:12]\n\"In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.\" [C:attention:5]"}
+{"t":1378997.4852408,"req":"real_burst-0007","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1378997.4854264,"req":"-","event":"pressure","wait_s":37.3,"remaining_s":17.0,"queued":2}
+{"t":1378997.4854912,"req":"real_burst-0007","event":"step_start","step":"classify"}
+{"t":1378997.4855376,"req":"real_burst-0007","event":"degrade","what":"classify_heuristic"}
+{"t":1378997.485597,"req":"real_burst-0007","event":"step_end","step":"classify"}
+{"t":1378997.4857464,"req":"real_burst-0007","event":"step_start","step":"retrieve"}
+{"t":1378997.4987747,"req":"real_burst-0007","event":"step_end","step":"retrieve"}
+{"t":1378997.4996955,"req":"real_burst-0007","event":"shed","reason":"overload_low_confidence"}
+{"t":1378997.499764,"req":"real_burst-0007","event":"user_first_token"}
+{"t":1378997.4998251,"req":"real_burst-0007","event":"done","status":"shed","level":2,"steps":["classify","retrieve"],"answer":"I'm at capacity and couldn't find a passage that clearly answers this. Please try again in a minute."}
+{"t":1378998.947908,"req":"real_burst-0003","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":1734}
+{"t":1378998.9500391,"req":"real_burst-0002","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline","wait_s":19.335899999942633,"remaining_s":14.0}
+{"t":1378998.9515346,"req":"real_burst-0002","event":"user_first_token"}
+{"t":1378998.9516469,"req":"real_burst-0002","event":"user_last_token"}
+{"t":1378998.9517096,"req":"real_burst-0002","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack.\" [C:attention:8]\n\"On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1.\" [C:attention:11]"}
+{"t":1378999.5916749,"req":"real_burst-0003","event":"first_token","step":"draft","ttft_ms":643.3}
+{"t":1378999.659301,"req":"real_burst-0003","event":"last_token","step":"draft","total_ms":711.0,"prompt_tokens":1106,"completion_tokens":80}
+{"t":1378999.6596703,"req":"real_burst-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1378999.6597648,"req":"real_burst-0003","event":"user_first_token"}
+{"t":1378999.6598499,"req":"real_burst-0003","event":"user_last_token"}
+{"t":1378999.6599206,"req":"real_burst-0003","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"The base Transformer uses 8 attention heads, and each head\u2019s keys have dimension 64. [C:attention:12] [C:attention:11]"}

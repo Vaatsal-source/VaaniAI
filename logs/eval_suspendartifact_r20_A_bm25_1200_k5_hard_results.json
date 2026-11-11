@@ -1,0 +1,83 @@
+[
+ {
+  "id": "h01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 2145.2,
+  "text": "The original attention mechanism divides the query\u2011key dot products by a constant (specifically \\(1/\\sqrt{d_k}\\)) before applying softmax to prevent the dot products from becoming too large in magnitude when the dimensionality \\(d_k\\) is large. Large dot products push the softmax into regions with extremely small gradients, so scaling keeps the values in a range where the softmax is more stable and gradients are not vanishing [C:attention:10]."
+ },
+ {
+  "id": "h02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 2316.3,
+  "text": "The papers say the two versions performed almost the same. In both the English\u2011constituency parsing experiments and the general ablation studies, replacing the sinusoidal positional encodings with learned positional embeddings produced nearly identical results (see Table 3 row (E) in [C:attention:26] and the discussion in [C:attention:16]). Thus the authors did not find a clear advantage for learned embeddings over the sinusoidal version."
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 8246.5,
+  "text": "The papers don't say. The parameter count for the big Transformer model is not provided in the supplied passages."
+ },
+ {
+  "id": "h04",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21154.4,
+  "text": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [C:moshi:41]."
+ },
+ {
+  "id": "h05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20711.2,
+  "text": "The smoothing module converts the discrete chunk\u2011boundary decisions into smooth, interpolated representations, thereby restoring gradient flow that would otherwise be blocked by the hard, discrete boundaries. This stabilises training dynamics and prevents large fluctuations in compression ratios during optimisation. [C:dynchunk:22] [C:dynchunk:65]"
+ },
+ {
+  "id": "h06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21642.9,
+  "text": "The hierarchical network is organized into three stages: an **encoder** that processes raw data, a **main network** that operates on compressed chunks, and a **decoder** that upsamples back to the original resolution. Each stage plays a distinct role in the hierarchy, with the outer encoder/decoder handling fine\u2011grained patterns and the inner main network handling coarse representations. [C:dynchunk:6]"
+ },
+ {
+  "id": "h07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20728.9,
+  "text": "Moshi\u2019s Inner Monologue method generates text tokens as a prefix to audio tokens, allowing the model to produce a spoken output that is linguistically coherent while remaining compatible with streaming inference. This approach improves the linguistic quality of the generated speech and can be used to build streaming speech\u2011to\u2011speech, speech\u2011to\u2011text, and text\u2011to\u2011speech systems [C:moshi:1] [C:moshi:126]"
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 1974959.5,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]\n\"For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds.\" [C:attention:20]"
+ },
+ {
+  "id": "h09",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 4621.8,
+  "text": "The papers don't say. They only report English\u2011to\u2011German and English\u2011to\u2011French results."
+ }
+]

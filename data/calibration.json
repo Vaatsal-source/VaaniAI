@@ -1,0 +1,30 @@
+{
+  "source": "groq_probe_1794406507.jsonl",
+  "models": {
+    "openai/gpt-oss-20b": {
+      "n": 15,
+      "ttft_mu": 6.574485297755195,
+      "ttft_sigma": 0.7400912912322509,
+      "ms_per_token": 1.8117847619578242
+    },
+    "openai/gpt-oss-120b": {
+      "n": 15,
+      "ttft_mu": 6.096360547009236,
+      "ttft_sigma": 0.32983452435485033,
+      "ms_per_token": 1.3914688490331173
+    }
+  },
+  "concurrency": {
+    "conc4_median_ms": 534.130249870941,
+    "conc8_median_ms": 1029.8588499426842,
+    "note": "20B only; slowdown per extra in-flight request fitted below",
+    "slowdown_per_inflight": 0.06245610785606031
+  },
+  "limits": {
+    "rpm": 30,
+    "tpm": 8000,
+    "rpd": 1000,
+    "retry_after_s": 2,
+    "rpd_refill_s_per_req": 86.4
+  }
+}

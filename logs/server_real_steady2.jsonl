@@ -1,0 +1,93 @@
+{"t":1379131.037007,"req":"-","event":"loop_lag","lag_ms":599.5}
+{"t":1379132.8036135,"req":"-","event":"loop_lag","lag_ms":1170.1}
+{"t":1379133.6321787,"req":"-","event":"loop_lag","lag_ms":778.4}
+{"t":1379135.7360378,"req":"-","event":"loop_lag","lag_ms":1394.3}
+{"t":1379136.8093155,"req":"-","event":"loop_lag","lag_ms":416.5}
+{"t":1379137.4087624,"req":"real_steady2-0000","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1379137.4089748,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1379137.4090508,"req":"real_steady2-0000","event":"step_start","step":"classify"}
+{"t":1379137.409249,"req":"real_steady2-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1379138.4362152,"req":"real_steady2-0000","event":"first_token","step":"classify","ttft_ms":1026.2}
+{"t":1379138.4385589,"req":"real_steady2-0000","event":"last_token","step":"classify","total_ms":1028.6,"prompt_tokens":204,"completion_tokens":64,"provider_queue_ms":378.6,"provider_total_ms":146.4}
+{"t":1379138.4389938,"req":"real_steady2-0000","event":"step_end","step":"classify"}
+{"t":1379138.4424422,"req":"real_steady2-0000","event":"step_start","step":"retrieve"}
+{"t":1379138.4554688,"req":"real_steady2-0000","event":"step_end","step":"retrieve"}
+{"t":1379138.4604666,"req":"real_steady2-0000","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1379138.4614634,"req":"real_steady2-0000","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2556}
+{"t":1379139.1112335,"req":"real_steady2-0000","event":"first_token","step":"draft","ttft_ms":649.6}
+{"t":1379139.1154729,"req":"real_steady2-0000","event":"last_token","step":"draft","total_ms":653.8,"prompt_tokens":1691,"completion_tokens":39,"provider_queue_ms":53.8,"provider_total_ms":175.6}
+{"t":1379139.1156429,"req":"real_steady2-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1379139.1157084,"req":"real_steady2-0000","event":"user_first_token"}
+{"t":1379139.1157676,"req":"real_steady2-0000","event":"user_last_token"}
+{"t":1379139.1158247,"req":"real_steady2-0000","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They discuss DNA and other languages, but no mention of protein sequence modeling."}
+{"t":1379140.8311165,"req":"-","event":"loop_lag","lag_ms":181.2}
+{"t":1379141.7337107,"req":"-","event":"loop_lag","lag_ms":213.4}
+{"t":1379142.6013718,"req":"-","event":"loop_lag","lag_ms":211.3}
+{"t":1379143.4110832,"req":"-","event":"loop_lag","lag_ms":153.2}
+{"t":1379144.3401027,"req":"-","event":"loop_lag","lag_ms":219.5}
+{"t":1379145.1208014,"req":"-","event":"loop_lag","lag_ms":130.2}
+{"t":1379145.9302022,"req":"-","event":"loop_lag","lag_ms":167.2}
+{"t":1379146.9799287,"req":"-","event":"loop_lag","lag_ms":344.1}
+{"t":1379147.896294,"req":"-","event":"loop_lag","lag_ms":265.4}
+{"t":1379148.0447862,"req":"real_steady2-0001","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1379148.0449289,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1379148.0449754,"req":"real_steady2-0001","event":"step_start","step":"classify"}
+{"t":1379148.0451094,"req":"real_steady2-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1379148.254903,"req":"-","event":"loop_lag","lag_ms":199.0}
+{"t":1379148.2612306,"req":"real_steady2-0002","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1379148.2613788,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1379148.2614273,"req":"real_steady2-0002","event":"step_start","step":"classify"}
+{"t":1379148.2619036,"req":"real_steady2-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1379149.1032091,"req":"real_steady2-0001","event":"first_token","step":"classify","ttft_ms":1058.0}
+{"t":1379149.1050032,"req":"real_steady2-0001","event":"last_token","step":"classify","total_ms":1059.8,"prompt_tokens":205,"completion_tokens":54,"provider_queue_ms":316.8,"provider_total_ms":80.2}
+{"t":1379149.1052256,"req":"real_steady2-0001","event":"step_end","step":"classify"}
+{"t":1379149.1053797,"req":"real_steady2-0001","event":"step_start","step":"retrieve"}
+{"t":1379149.1182788,"req":"real_steady2-0001","event":"step_end","step":"retrieve"}
+{"t":1379149.1196807,"req":"real_steady2-0001","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1379149.1201965,"req":"real_steady2-0001","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2559}
+{"t":1379149.7638332,"req":"real_steady2-0002","event":"first_token","step":"classify","ttft_ms":1501.8}
+{"t":1379149.7657418,"req":"real_steady2-0002","event":"last_token","step":"classify","total_ms":1503.7,"prompt_tokens":213,"completion_tokens":57,"provider_queue_ms":941.8,"provider_total_ms":84.1}
+{"t":1379149.765955,"req":"real_steady2-0002","event":"step_end","step":"classify"}
+{"t":1379149.7661015,"req":"real_steady2-0002","event":"step_start","step":"retrieve"}
+{"t":1379149.7720744,"req":"real_steady2-0002","event":"step_end","step":"retrieve"}
+{"t":1379149.7742497,"req":"real_steady2-0002","event":"decide","branch":"tool_fetch_section"}
+{"t":1379149.774411,"req":"real_steady2-0002","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"2.2"}
+{"t":1379149.7749067,"req":"real_steady2-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1379149.7759044,"req":"real_steady2-0002","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2545}
+{"t":1379149.9376911,"req":"real_steady2-0001","event":"first_token","step":"draft","ttft_ms":817.3}
+{"t":1379149.9692616,"req":"real_steady2-0001","event":"last_token","step":"draft","total_ms":848.9,"prompt_tokens":1930,"completion_tokens":69,"provider_queue_ms":156.3,"provider_total_ms":192.2}
+{"t":1379149.969591,"req":"real_steady2-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1379149.96967,"req":"real_steady2-0001","event":"user_first_token"}
+{"t":1379149.9697472,"req":"real_steady2-0001","event":"user_last_token"}
+{"t":1379149.9698117,"req":"real_steady2-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer was trained with a label\u2011smoothing value of \u03f5ls = 0.1. [C:attention:22]"}
+{"t":1379150.7360641,"req":"real_steady2-0002","event":"first_token","step":"draft","ttft_ms":960.0}
+{"t":1379150.8341221,"req":"real_steady2-0002","event":"last_token","step":"draft","total_ms":1058.0,"prompt_tokens":1891,"completion_tokens":125,"provider_queue_ms":368.0,"provider_total_ms":247.8}
+{"t":1379150.8346049,"req":"real_steady2-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1379150.8347259,"req":"real_steady2-0002","event":"user_first_token"}
+{"t":1379150.8348106,"req":"real_steady2-0002","event":"user_last_token"}
+{"t":1379150.8348791,"req":"real_steady2-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","tool","draft"],"answer":"In section 2.2 the dechunking layer (Dechunk) takes the compressed sequence produced by the chunking layer and restores it to the original resolution. It does this by first applying a **smoothing module** that converts the discrete chunk boundaries into interpolated representations, and then an **upsampler** that expands the compressed vectors back to their original length using the boundary indicators. [C:dynchunk:22]"}
+{"t":1379200.6782061,"req":"-","event":"loop_lag","lag_ms":236.8}
+{"t":1379201.6149019,"req":"-","event":"loop_lag","lag_ms":236.5}
+{"t":1379202.0558914,"req":"-","event":"loop_lag","lag_ms":151.3}
+{"t":1379202.6005697,"req":"-","event":"loop_lag","lag_ms":128.0}
+{"t":1379202.9004198,"req":"-","event":"loop_lag","lag_ms":130.2}
+{"t":1379203.9381294,"req":"-","event":"loop_lag","lag_ms":329.1}
+{"t":1379206.14098,"req":"-","event":"loop_lag","lag_ms":141.4}
+{"t":1379207.6356597,"req":"-","event":"loop_lag","lag_ms":136.3}
+{"t":1379208.2182452,"req":"real_steady2-0003","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1379208.2183529,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1379208.218391,"req":"real_steady2-0003","event":"step_start","step":"classify"}
+{"t":1379208.2185026,"req":"real_steady2-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1379208.8085404,"req":"real_steady2-0003","event":"first_token","step":"classify","ttft_ms":590.0}
+{"t":1379208.8096709,"req":"real_steady2-0003","event":"last_token","step":"classify","total_ms":591.1,"prompt_tokens":210,"completion_tokens":58,"provider_queue_ms":53.3,"provider_total_ms":70.8}
+{"t":1379208.8098148,"req":"real_steady2-0003","event":"step_end","step":"classify"}
+{"t":1379208.8099262,"req":"real_steady2-0003","event":"step_start","step":"retrieve"}
+{"t":1379208.8170887,"req":"real_steady2-0003","event":"step_end","step":"retrieve"}
+{"t":1379208.8180364,"req":"real_steady2-0003","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1379208.8184631,"req":"real_steady2-0003","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2568}
+{"t":1379210.0514521,"req":"real_steady2-0003","event":"first_token","step":"draft","ttft_ms":1232.8}
+{"t":1379210.0998432,"req":"real_steady2-0003","event":"last_token","step":"draft","total_ms":1281.2,"prompt_tokens":1875,"completion_tokens":90,"provider_queue_ms":548.4,"provider_total_ms":229.9}
+{"t":1379210.1000584,"req":"real_steady2-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1379210.1001112,"req":"real_steady2-0003","event":"user_first_token"}
+{"t":1379210.1001618,"req":"real_steady2-0003","event":"user_last_token"}
+{"t":1379210.1002058,"req":"real_steady2-0003","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The base Transformer models were trained on a single machine equipped with 8 NVIDIA P100 GPUs, and training took about 12 hours of wall\u2011clock time. [C:attention:20]"}

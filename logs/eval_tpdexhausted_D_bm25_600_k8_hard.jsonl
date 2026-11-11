@@ -1,0 +1,48 @@
+{"t":1370951.8301271,"req":"h01","event":"enqueue","question":"Why does the original attention mechanism divide the query-key products by a con"}
+{"t":1370951.830324,"req":"h01","event":"step_start","step":"classify"}
+{"t":1370951.8305736,"req":"h01","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":298}
+{"t":1370953.2670137,"req":"h01","event":"first_token","step":"classify","ttft_ms":1436.4}
+{"t":1370953.2693525,"req":"h01","event":"last_token","step":"classify","total_ms":1438.7,"prompt_tokens":212,"completion_tokens":70}
+{"t":1370953.2697228,"req":"h01","event":"step_end","step":"classify"}
+{"t":1370953.2711119,"req":"h01","event":"step_start","step":"retrieve"}
+{"t":1370953.2814087,"req":"h01","event":"step_end","step":"retrieve"}
+{"t":1370953.281937,"req":"h01","event":"decide","branch":"draft","conf":0.67,"k":8}
+{"t":1370953.2820905,"req":"h01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2254}
+{"t":1370953.4281144,"req":"h01","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"893","x-ratelimit-remaining-tokens":"8000","x-ratelimit-reset-requests":"2h34m4.8s","x-ratelimit-reset-tokens":"1ms","retry-after":"464"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199400, Requested 1674. Please try again in 7m43.967999999s. Need more tokens? Upgrade to Dev Tier today at ht"}
+{"t":1370953.4283453,"req":"h01","event":"giveup","step":"draft","reason":"429","attempt":1}
+{"t":1370953.4286195,"req":"h01","event":"degrade","what":"extractive_overload","why":"429"}
+{"t":1370953.4295047,"req":"h01","event":"user_first_token"}
+{"t":1370953.429595,"req":"h01","event":"user_last_token"}
+{"t":1370953.4296415,"req":"h01","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"We compute the dot products of the query with all keys, divide each by \u221adk, and apply a softmax function to obtain the weights on the values.\" [C:attention:18]\n\"s, divide each by \u221adk, and apply a softmax function to obtain the weights on the values.\" [C:attention:19]\n\"3.2 Attention An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors.\" [C:attention:17]"}
+{"t":1370953.4298208,"req":"h02","event":"enqueue","question":"Did the authors find learned positional embeddings worked better than the sinuso"}
+{"t":1370953.429888,"req":"h02","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4299173,"req":"h02","event":"user_first_token"}
+{"t":1370953.429948,"req":"h02","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4300072,"req":"h03","event":"enqueue","question":"How many parameters does the big Transformer model have?"}
+{"t":1370953.4300468,"req":"h03","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4300731,"req":"h03","event":"user_first_token"}
+{"t":1370953.4301024,"req":"h03","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4301437,"req":"h04","event":"enqueue","question":"How many layers and what model dimension does Moshi's Depth Transformer use?"}
+{"t":1370953.4301793,"req":"h04","event":"shed","reason":"overload_front_door"}
+{"t":1370953.430203,"req":"h04","event":"user_first_token"}
+{"t":1370953.4302298,"req":"h04","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.430269,"req":"h05","event":"enqueue","question":"What problem does the smoothing module in H-Net solve?"}
+{"t":1370953.4304027,"req":"h05","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4304324,"req":"h05","event":"user_first_token"}
+{"t":1370953.430458,"req":"h05","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4304951,"req":"h06","event":"enqueue","question":"What are the three stages of the hierarchical network described in the dynamic c"}
+{"t":1370953.4305265,"req":"h06","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4305495,"req":"h06","event":"user_first_token"}
+{"t":1370953.4305745,"req":"h06","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4306103,"req":"h07","event":"enqueue","question":"What is Moshi's Inner Monologue method?"}
+{"t":1370953.4306403,"req":"h07","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4306631,"req":"h07","event":"user_first_token"}
+{"t":1370953.4306872,"req":"h07","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4307216,"req":"h08","event":"enqueue","question":"How many TPUs were used to train the Transformer base model?"}
+{"t":1370953.4307509,"req":"h08","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4307734,"req":"h08","event":"user_first_token"}
+{"t":1370953.4307968,"req":"h08","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1370953.4308306,"req":"h09","event":"enqueue","question":"What BLEU score did the Transformer get on English-to-Czech translation?"}
+{"t":1370953.4308607,"req":"h09","event":"shed","reason":"overload_front_door"}
+{"t":1370953.4308829,"req":"h09","event":"user_first_token"}
+{"t":1370953.4309066,"req":"h09","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}

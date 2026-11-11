@@ -1,0 +1,13 @@
+{
+ "F bm25 1200/200 k3 (degraded)": {
+  "n": 23,
+  "hit_pct": 91.3,
+  "mean_ctx_chars": 3567,
+  "search_ms_p50": 1.7,
+  "search_ms_p95": 3.4,
+  "misses": [
+   "h04",
+   "h07"
+  ]
+ }
+}

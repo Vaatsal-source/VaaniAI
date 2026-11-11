@@ -1,0 +1,335 @@
+{"t":1371784.3493176,"req":"s_overload_free-0000","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1371784.3499891,"req":"s_overload_free-0000","event":"step_start","step":"classify"}
+{"t":1371784.3503686,"req":"s_overload_free-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1371785.0669836,"req":"s_overload_free-0000","event":"first_token","step":"classify","ttft_ms":716.4}
+{"t":1371785.0720799,"req":"s_overload_free-0000","event":"last_token","step":"classify","total_ms":721.5,"prompt_tokens":108,"completion_tokens":22}
+{"t":1371785.072551,"req":"s_overload_free-0000","event":"step_end","step":"classify"}
+{"t":1371785.093953,"req":"s_overload_free-0000","event":"step_start","step":"retrieve"}
+{"t":1371785.125105,"req":"s_overload_free-0000","event":"step_end","step":"retrieve"}
+{"t":1371785.1262081,"req":"s_overload_free-0000","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1371785.1264753,"req":"s_overload_free-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2545}
+{"t":1371785.5891744,"req":"s_overload_free-0000","event":"first_token","step":"draft","ttft_ms":462.5}
+{"t":1371785.6166555,"req":"s_overload_free-0000","event":"last_token","step":"draft","total_ms":490.0,"prompt_tokens":1691,"completion_tokens":189}
+{"t":1371785.6170745,"req":"s_overload_free-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1371785.6171295,"req":"s_overload_free-0000","event":"user_first_token"}
+{"t":1371785.6171668,"req":"s_overload_free-0000","event":"user_last_token"}
+{"t":1371785.6171916,"req":"s_overload_free-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:8] [C:dynchunk:20]"}
+{"t":1371788.1495792,"req":"s_overload_free-0001","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1371788.1497078,"req":"s_overload_free-0001","event":"step_start","step":"classify"}
+{"t":1371788.1503607,"req":"s_overload_free-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":275}
+{"t":1371788.1559296,"req":"s_overload_free-0002","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1371788.1560845,"req":"s_overload_free-0002","event":"step_start","step":"classify"}
+{"t":1371788.1579768,"req":"s_overload_free-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1371788.894543,"req":"s_overload_free-0001","event":"first_token","step":"classify","ttft_ms":744.0}
+{"t":1371788.8975705,"req":"s_overload_free-0001","event":"last_token","step":"classify","total_ms":747.0,"prompt_tokens":101,"completion_tokens":22}
+{"t":1371788.8979053,"req":"s_overload_free-0001","event":"step_end","step":"classify"}
+{"t":1371788.8980067,"req":"s_overload_free-0001","event":"step_start","step":"retrieve"}
+{"t":1371788.9007366,"req":"s_overload_free-0001","event":"step_end","step":"retrieve"}
+{"t":1371788.9016953,"req":"s_overload_free-0001","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1371788.9022776,"req":"s_overload_free-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2586}
+{"t":1371789.0726685,"req":"s_overload_free-0002","event":"first_token","step":"classify","ttft_ms":914.6}
+{"t":1371789.0761693,"req":"s_overload_free-0002","event":"last_token","step":"classify","total_ms":918.1,"prompt_tokens":110,"completion_tokens":22}
+{"t":1371789.0765043,"req":"s_overload_free-0002","event":"step_end","step":"classify"}
+{"t":1371789.0766012,"req":"s_overload_free-0002","event":"step_start","step":"retrieve"}
+{"t":1371789.0805279,"req":"s_overload_free-0002","event":"step_end","step":"retrieve"}
+{"t":1371789.0814083,"req":"s_overload_free-0002","event":"decide","branch":"draft","conf":0.86,"k":5}
+{"t":1371789.0995563,"req":"s_overload_free-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2597}
+{"t":1371789.392781,"req":"s_overload_free-0001","event":"first_token","step":"draft","ttft_ms":490.4}
+{"t":1371789.4140626,"req":"s_overload_free-0001","event":"last_token","step":"draft","total_ms":511.7,"prompt_tokens":1723,"completion_tokens":187}
+{"t":1371789.4142832,"req":"s_overload_free-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1371789.4143243,"req":"s_overload_free-0001","event":"user_first_token"}
+{"t":1371789.4143641,"req":"s_overload_free-0001","event":"user_last_token"}
+{"t":1371789.4143931,"req":"s_overload_free-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:84] [C:moshi:85]"}
+{"t":1371789.59433,"req":"s_overload_free-0002","event":"first_token","step":"draft","ttft_ms":494.6}
+{"t":1371789.6259356,"req":"s_overload_free-0002","event":"last_token","step":"draft","total_ms":526.2,"prompt_tokens":1730,"completion_tokens":187}
+{"t":1371789.626668,"req":"s_overload_free-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1371789.6268445,"req":"s_overload_free-0002","event":"user_first_token"}
+{"t":1371789.62693,"req":"s_overload_free-0002","event":"user_last_token"}
+{"t":1371789.6269885,"req":"s_overload_free-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:32] [C:moshi:71]"}
+{"t":1371804.2627547,"req":"s_overload_free-0003","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1371804.263058,"req":"s_overload_free-0003","event":"step_start","step":"classify"}
+{"t":1371804.2632936,"req":"s_overload_free-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1371805.9270501,"req":"s_overload_free-0003","event":"first_token","step":"classify","ttft_ms":1663.6}
+{"t":1371805.9318054,"req":"s_overload_free-0003","event":"last_token","step":"classify","total_ms":1668.4,"prompt_tokens":111,"completion_tokens":22}
+{"t":1371805.932086,"req":"s_overload_free-0003","event":"step_end","step":"classify"}
+{"t":1371805.9322351,"req":"s_overload_free-0003","event":"step_start","step":"retrieve"}
+{"t":1371805.9399742,"req":"s_overload_free-0003","event":"step_end","step":"retrieve"}
+{"t":1371805.9408467,"req":"s_overload_free-0003","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1371808.3810206,"req":"s_overload_free-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2572}
+{"t":1371808.3959015,"req":"s_overload_free-0003","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"997","x-ratelimit-remaining-tokens":"1956","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"37"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per minute (TPM): Limit 8000, Used 8000, Requested 2012. Please try again in 37s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"}
+{"t":1371808.3962132,"req":"s_overload_free-0003","event":"giveup","step":"draft","reason":"429","attempt":1}
+{"t":1371808.3964735,"req":"s_overload_free-0003","event":"degrade","what":"extractive_overload","why":"429"}
+{"t":1371808.3983536,"req":"s_overload_free-0003","event":"user_first_token"}
+{"t":1371808.3984912,"req":"s_overload_free-0003","event":"user_last_token"}
+{"t":1371808.3985696,"req":"s_overload_free-0003","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The output is computed as a weighted sum 3 Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention.\" [C:attention:8]\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]\n\"3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: \u2022 In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\" [C:attention:12]"}
+{"t":1371822.9557084,"req":"s_overload_free-0004","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1371822.9558749,"req":"s_overload_free-0004","event":"shed","reason":"overload_front_door"}
+{"t":1371822.9559325,"req":"s_overload_free-0004","event":"user_first_token"}
+{"t":1371822.9559851,"req":"s_overload_free-0004","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371828.7533204,"req":"s_overload_free-0005","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1371828.7534385,"req":"s_overload_free-0005","event":"shed","reason":"overload_front_door"}
+{"t":1371828.7534763,"req":"s_overload_free-0005","event":"user_first_token"}
+{"t":1371828.7535095,"req":"s_overload_free-0005","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371836.1808596,"req":"s_overload_free-0006","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1371836.1810855,"req":"s_overload_free-0006","event":"step_start","step":"classify"}
+{"t":1371836.1811635,"req":"s_overload_free-0006","event":"degrade","what":"classify_heuristic"}
+{"t":1371836.1812055,"req":"s_overload_free-0006","event":"step_end","step":"classify"}
+{"t":1371836.1813413,"req":"s_overload_free-0006","event":"step_start","step":"retrieve"}
+{"t":1371836.184546,"req":"s_overload_free-0006","event":"step_end","step":"retrieve"}
+{"t":1371836.1858085,"req":"s_overload_free-0006","event":"decide","branch":"draft","conf":0.71,"k":3}
+{"t":1371836.7610813,"req":"s_overload_free-0007","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1371836.7612541,"req":"s_overload_free-0007","event":"step_start","step":"classify"}
+{"t":1371836.7613119,"req":"s_overload_free-0007","event":"degrade","what":"classify_heuristic"}
+{"t":1371836.7613525,"req":"s_overload_free-0007","event":"step_end","step":"classify"}
+{"t":1371836.7615414,"req":"s_overload_free-0007","event":"step_start","step":"retrieve"}
+{"t":1371836.765897,"req":"s_overload_free-0007","event":"step_end","step":"retrieve"}
+{"t":1371836.7664694,"req":"s_overload_free-0007","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1371845.4154978,"req":"s_overload_free-0006","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1712}
+{"t":1371845.4166758,"req":"s_overload_free-0007","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1704}
+{"t":1371845.9853919,"req":"s_overload_free-0007","event":"first_token","step":"draft","ttft_ms":568.6}
+{"t":1371846.0008469,"req":"s_overload_free-0007","event":"last_token","step":"draft","total_ms":584.1,"prompt_tokens":1061,"completion_tokens":189}
+{"t":1371846.0012396,"req":"s_overload_free-0007","event":"verify_det","ok":true,"issues":[]}
+{"t":1371846.0013014,"req":"s_overload_free-0007","event":"user_first_token"}
+{"t":1371846.0014167,"req":"s_overload_free-0007","event":"user_last_token"}
+{"t":1371846.0015287,"req":"s_overload_free-0007","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:22] [C:dynchunk:9]"}
+{"t":1371846.0901926,"req":"s_overload_free-0006","event":"first_token","step":"draft","ttft_ms":674.5}
+{"t":1371846.1802104,"req":"s_overload_free-0006","event":"last_token","step":"draft","total_ms":764.5,"prompt_tokens":1067,"completion_tokens":189}
+{"t":1371846.1805398,"req":"s_overload_free-0006","event":"verify_det","ok":true,"issues":[]}
+{"t":1371846.1806108,"req":"s_overload_free-0006","event":"user_first_token"}
+{"t":1371846.1806912,"req":"s_overload_free-0006","event":"user_last_token"}
+{"t":1371846.1807464,"req":"s_overload_free-0006","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:1] [C:attention:22]"}
+{"t":1371846.4662599,"req":"s_overload_free-0008","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1371846.4665029,"req":"s_overload_free-0008","event":"step_start","step":"classify"}
+{"t":1371846.4667405,"req":"s_overload_free-0008","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":295}
+{"t":1371848.2839697,"req":"s_overload_free-0009","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1371848.2841509,"req":"s_overload_free-0009","event":"step_start","step":"classify"}
+{"t":1371848.2844397,"req":"s_overload_free-0009","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":287}
+{"t":1371848.4826412,"req":"s_overload_free-0010","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1371848.4828058,"req":"s_overload_free-0010","event":"step_start","step":"classify"}
+{"t":1371848.4829883,"req":"s_overload_free-0010","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1371848.9277759,"req":"s_overload_free-0009","event":"first_token","step":"classify","ttft_ms":643.2}
+{"t":1371848.9315402,"req":"s_overload_free-0009","event":"last_token","step":"classify","total_ms":647.0,"prompt_tokens":111,"completion_tokens":22}
+{"t":1371848.9319597,"req":"s_overload_free-0009","event":"step_end","step":"classify"}
+{"t":1371848.9320555,"req":"s_overload_free-0009","event":"step_start","step":"retrieve"}
+{"t":1371848.9367151,"req":"s_overload_free-0009","event":"step_end","step":"retrieve"}
+{"t":1371848.9378345,"req":"s_overload_free-0009","event":"decide","branch":"draft","conf":0.86,"k":5}
+{"t":1371848.9383734,"req":"s_overload_free-0009","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2553}
+{"t":1371849.4740235,"req":"s_overload_free-0009","event":"first_token","step":"draft","ttft_ms":535.5}
+{"t":1371849.4748791,"req":"s_overload_free-0010","event":"first_token","step":"classify","ttft_ms":991.8}
+{"t":1371849.4810443,"req":"s_overload_free-0010","event":"last_token","step":"classify","total_ms":998.0,"prompt_tokens":114,"completion_tokens":22}
+{"t":1371849.4812271,"req":"s_overload_free-0010","event":"step_end","step":"classify"}
+{"t":1371849.4814026,"req":"s_overload_free-0010","event":"step_start","step":"retrieve"}
+{"t":1371849.4958379,"req":"s_overload_free-0010","event":"step_end","step":"retrieve"}
+{"t":1371849.4970932,"req":"s_overload_free-0010","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1371849.5046106,"req":"s_overload_free-0009","event":"last_token","step":"draft","total_ms":566.1,"prompt_tokens":1698,"completion_tokens":189}
+{"t":1371849.504908,"req":"s_overload_free-0009","event":"verify_det","ok":true,"issues":[]}
+{"t":1371849.5049718,"req":"s_overload_free-0009","event":"user_first_token"}
+{"t":1371849.5050446,"req":"s_overload_free-0009","event":"user_last_token"}
+{"t":1371849.505099,"req":"s_overload_free-0009","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:1] [C:attention:22]"}
+{"t":1371850.6000738,"req":"s_overload_free-0008","event":"first_token","step":"classify","ttft_ms":4133.2}
+{"t":1371850.6043599,"req":"s_overload_free-0008","event":"last_token","step":"classify","total_ms":4137.5,"prompt_tokens":117,"completion_tokens":22}
+{"t":1371850.6047718,"req":"s_overload_free-0008","event":"step_end","step":"classify"}
+{"t":1371850.6050659,"req":"s_overload_free-0008","event":"step_start","step":"retrieve"}
+{"t":1371850.6113728,"req":"s_overload_free-0008","event":"step_end","step":"retrieve"}
+{"t":1371850.6123399,"req":"s_overload_free-0008","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1371856.8382918,"req":"s_overload_free-0010","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1371856.8392183,"req":"s_overload_free-0008","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371856.8403307,"req":"s_overload_free-0008","event":"user_first_token"}
+{"t":1371856.84042,"req":"s_overload_free-0008","event":"user_last_token"}
+{"t":1371856.8404604,"req":"s_overload_free-0008","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack.\" [C:attention:8]"}
+{"t":1371857.2817274,"req":"s_overload_free-0010","event":"first_token","step":"draft","ttft_ms":443.2}
+{"t":1371857.3264363,"req":"s_overload_free-0010","event":"last_token","step":"draft","total_ms":487.9,"prompt_tokens":1711,"completion_tokens":189}
+{"t":1371857.3268335,"req":"s_overload_free-0010","event":"verify_det","ok":true,"issues":[]}
+{"t":1371857.3269063,"req":"s_overload_free-0010","event":"user_first_token"}
+{"t":1371857.3269557,"req":"s_overload_free-0010","event":"user_last_token"}
+{"t":1371857.3269924,"req":"s_overload_free-0010","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:23]"}
+{"t":1371858.8352082,"req":"s_overload_free-0011","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1371858.8368724,"req":"s_overload_free-0011","event":"shed","reason":"overload_front_door"}
+{"t":1371858.8369468,"req":"s_overload_free-0011","event":"user_first_token"}
+{"t":1371858.8369824,"req":"s_overload_free-0011","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371861.6792759,"req":"s_overload_free-0012","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1371861.6794174,"req":"s_overload_free-0012","event":"step_start","step":"classify"}
+{"t":1371861.6794704,"req":"s_overload_free-0012","event":"degrade","what":"classify_heuristic"}
+{"t":1371861.6795128,"req":"s_overload_free-0012","event":"step_end","step":"classify"}
+{"t":1371861.6796441,"req":"s_overload_free-0012","event":"step_start","step":"retrieve"}
+{"t":1371861.6869712,"req":"s_overload_free-0012","event":"step_end","step":"retrieve"}
+{"t":1371861.6876622,"req":"s_overload_free-0012","event":"decide","branch":"draft","conf":0.67,"k":3}
+{"t":1371868.1704838,"req":"s_overload_free-0013","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1371868.1706619,"req":"s_overload_free-0013","event":"step_start","step":"classify"}
+{"t":1371868.170944,"req":"s_overload_free-0013","event":"degrade","what":"classify_heuristic"}
+{"t":1371868.1709861,"req":"s_overload_free-0013","event":"step_end","step":"classify"}
+{"t":1371868.1710915,"req":"s_overload_free-0013","event":"step_start","step":"retrieve"}
+{"t":1371868.1746328,"req":"s_overload_free-0013","event":"step_end","step":"retrieve"}
+{"t":1371868.175348,"req":"s_overload_free-0013","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1371869.9225629,"req":"s_overload_free-0012","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1745}
+{"t":1371869.9304121,"req":"s_overload_free-0012","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"993","x-ratelimit-remaining-tokens":"1263","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"36"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per minute (TPM): Limit 8000, Used 8000, Requested 1392. Please try again in 36s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"}
+{"t":1371869.9306714,"req":"s_overload_free-0012","event":"giveup","step":"draft","reason":"429","attempt":1}
+{"t":1371869.9307479,"req":"s_overload_free-0012","event":"degrade","what":"extractive_overload","why":"429"}
+{"t":1371869.9317966,"req":"s_overload_free-0012","event":"user_first_token"}
+{"t":1371869.9319108,"req":"s_overload_free-0012","event":"user_last_token"}
+{"t":1371869.9319582,"req":"s_overload_free-0012","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"We extend previous work on audio language models and design a streaming, hierarchical architecture, with a theoretical latency of 160 ms\u2014lower than the 230 ms average in natural conversations measured over 10 langu\" [C:moshi:4]\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"We thus switch to a reduced latency of 240ms with the pattern [0, 2, 2, 2, 2, 2, 2, 2].\" [C:moshi:79]"}
+{"t":1371869.9630655,"req":"s_overload_free-0013","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371869.9642976,"req":"s_overload_free-0013","event":"user_first_token"}
+{"t":1371869.9643856,"req":"s_overload_free-0013","event":"user_last_token"}
+{"t":1371869.9644225,"req":"s_overload_free-0013","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmu\" [C:attention:20]\n\"the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of th\" [C:attention:21]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]"}
+{"t":1371874.5614327,"req":"s_overload_free-0014","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1371874.5615963,"req":"s_overload_free-0014","event":"shed","reason":"overload_front_door"}
+{"t":1371874.5616559,"req":"s_overload_free-0014","event":"user_first_token"}
+{"t":1371874.5617655,"req":"s_overload_free-0014","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371875.6537902,"req":"s_overload_free-0015","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1371875.653927,"req":"s_overload_free-0015","event":"shed","reason":"overload_front_door"}
+{"t":1371875.6539696,"req":"s_overload_free-0015","event":"user_first_token"}
+{"t":1371875.6540043,"req":"s_overload_free-0015","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371876.9773229,"req":"s_overload_free-0016","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1371876.9774613,"req":"s_overload_free-0016","event":"shed","reason":"overload_front_door"}
+{"t":1371876.977513,"req":"s_overload_free-0016","event":"user_first_token"}
+{"t":1371876.9775612,"req":"s_overload_free-0016","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371877.7968381,"req":"s_overload_free-0017","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1371877.797098,"req":"s_overload_free-0017","event":"shed","reason":"overload_front_door"}
+{"t":1371877.7971629,"req":"s_overload_free-0017","event":"user_first_token"}
+{"t":1371877.7972177,"req":"s_overload_free-0017","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371877.9197682,"req":"s_overload_free-0018","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1371877.9199295,"req":"s_overload_free-0018","event":"shed","reason":"overload_front_door"}
+{"t":1371877.9199755,"req":"s_overload_free-0018","event":"user_first_token"}
+{"t":1371877.9200121,"req":"s_overload_free-0018","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371882.3461758,"req":"s_overload_free-0019","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1371882.3463413,"req":"s_overload_free-0019","event":"shed","reason":"overload_front_door"}
+{"t":1371882.3463898,"req":"s_overload_free-0019","event":"user_first_token"}
+{"t":1371882.3464254,"req":"s_overload_free-0019","event":"done","status":"shed","level":2,"steps":[],"answer":"I'm too busy to answer within a reasonable time. Please try again in a minute."}
+{"t":1371904.6635174,"req":"s_overload_free-0020","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1371904.6636988,"req":"s_overload_free-0020","event":"step_start","step":"classify"}
+{"t":1371904.6641948,"req":"s_overload_free-0020","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1371905.104098,"req":"s_overload_free-0021","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1371905.1044024,"req":"s_overload_free-0021","event":"step_start","step":"classify"}
+{"t":1371905.1046011,"req":"s_overload_free-0021","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":300}
+{"t":1371905.7569994,"req":"s_overload_free-0020","event":"first_token","step":"classify","ttft_ms":1092.7}
+{"t":1371905.7600925,"req":"s_overload_free-0020","event":"last_token","step":"classify","total_ms":1095.8,"prompt_tokens":105,"completion_tokens":22}
+{"t":1371905.7604147,"req":"s_overload_free-0020","event":"step_end","step":"classify"}
+{"t":1371905.7605303,"req":"s_overload_free-0020","event":"step_start","step":"retrieve"}
+{"t":1371905.7642974,"req":"s_overload_free-0020","event":"step_end","step":"retrieve"}
+{"t":1371905.7652123,"req":"s_overload_free-0020","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1371905.8051343,"req":"s_overload_free-0021","event":"first_token","step":"classify","ttft_ms":700.3}
+{"t":1371905.8106038,"req":"s_overload_free-0021","event":"last_token","step":"classify","total_ms":705.8,"prompt_tokens":120,"completion_tokens":22}
+{"t":1371905.8108015,"req":"s_overload_free-0021","event":"step_end","step":"classify"}
+{"t":1371905.8109265,"req":"s_overload_free-0021","event":"step_start","step":"retrieve"}
+{"t":1371905.820792,"req":"s_overload_free-0021","event":"step_end","step":"retrieve"}
+{"t":1371905.8216421,"req":"s_overload_free-0021","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1371905.9378579,"req":"s_overload_free-0020","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2566}
+{"t":1371905.9397586,"req":"s_overload_free-0021","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2330}
+{"t":1371906.198003,"req":"s_overload_free-0020","event":"first_token","step":"draft","ttft_ms":259.7}
+{"t":1371906.2211403,"req":"s_overload_free-0020","event":"last_token","step":"draft","total_ms":282.8,"prompt_tokens":1708,"completion_tokens":189}
+{"t":1371906.2214587,"req":"s_overload_free-0020","event":"verify_det","ok":true,"issues":[]}
+{"t":1371906.2215133,"req":"s_overload_free-0020","event":"user_first_token"}
+{"t":1371906.2215468,"req":"s_overload_free-0020","event":"user_last_token"}
+{"t":1371906.2215694,"req":"s_overload_free-0020","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1371906.472888,"req":"s_overload_free-0021","event":"first_token","step":"draft","ttft_ms":532.9}
+{"t":1371906.4978324,"req":"s_overload_free-0021","event":"last_token","step":"draft","total_ms":557.8,"prompt_tokens":1530,"completion_tokens":189}
+{"t":1371906.4980894,"req":"s_overload_free-0021","event":"verify_det","ok":true,"issues":[]}
+{"t":1371906.4981247,"req":"s_overload_free-0021","event":"user_first_token"}
+{"t":1371906.4981576,"req":"s_overload_free-0021","event":"user_last_token"}
+{"t":1371906.4981806,"req":"s_overload_free-0021","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1371910.3109568,"req":"s_overload_free-0022","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1371910.3110495,"req":"s_overload_free-0022","event":"step_start","step":"classify"}
+{"t":1371910.311164,"req":"s_overload_free-0022","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":290}
+{"t":1371910.9734015,"req":"s_overload_free-0022","event":"first_token","step":"classify","ttft_ms":662.2}
+{"t":1371910.97645,"req":"s_overload_free-0022","event":"last_token","step":"classify","total_ms":665.2,"prompt_tokens":113,"completion_tokens":22}
+{"t":1371910.9766765,"req":"s_overload_free-0022","event":"step_end","step":"classify"}
+{"t":1371910.97692,"req":"s_overload_free-0022","event":"step_start","step":"retrieve"}
+{"t":1371910.9822333,"req":"s_overload_free-0022","event":"step_end","step":"retrieve"}
+{"t":1371910.9833121,"req":"s_overload_free-0022","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1371914.4774186,"req":"s_overload_free-0023","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1371914.4775891,"req":"s_overload_free-0023","event":"step_start","step":"classify"}
+{"t":1371914.477793,"req":"s_overload_free-0023","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1371915.5124256,"req":"s_overload_free-0023","event":"first_token","step":"classify","ttft_ms":1034.5}
+{"t":1371915.5155174,"req":"s_overload_free-0023","event":"last_token","step":"classify","total_ms":1037.6,"prompt_tokens":114,"completion_tokens":22}
+{"t":1371915.5159433,"req":"s_overload_free-0023","event":"step_end","step":"classify"}
+{"t":1371915.5160977,"req":"s_overload_free-0023","event":"step_start","step":"retrieve"}
+{"t":1371915.5216799,"req":"s_overload_free-0023","event":"step_end","step":"retrieve"}
+{"t":1371915.522601,"req":"s_overload_free-0023","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1371916.3376527,"req":"s_overload_free-0022","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2557}
+{"t":1371916.9057173,"req":"s_overload_free-0022","event":"first_token","step":"draft","ttft_ms":567.8}
+{"t":1371916.9310927,"req":"s_overload_free-0022","event":"last_token","step":"draft","total_ms":593.2,"prompt_tokens":1700,"completion_tokens":189}
+{"t":1371916.931465,"req":"s_overload_free-0022","event":"verify_det","ok":true,"issues":[]}
+{"t":1371916.9315086,"req":"s_overload_free-0022","event":"user_first_token"}
+{"t":1371916.931542,"req":"s_overload_free-0022","event":"user_last_token"}
+{"t":1371916.9315665,"req":"s_overload_free-0022","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1371920.629277,"req":"s_overload_free-0024","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1371920.6294174,"req":"s_overload_free-0024","event":"step_start","step":"classify"}
+{"t":1371920.6294835,"req":"s_overload_free-0024","event":"degrade","what":"classify_heuristic"}
+{"t":1371920.6295341,"req":"s_overload_free-0024","event":"step_end","step":"classify"}
+{"t":1371920.6296664,"req":"s_overload_free-0024","event":"step_start","step":"retrieve"}
+{"t":1371920.6419607,"req":"s_overload_free-0024","event":"step_end","step":"retrieve"}
+{"t":1371920.642808,"req":"s_overload_free-0024","event":"decide","branch":"draft","conf":0.75,"k":3}
+{"t":1371921.2805134,"req":"s_overload_free-0025","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1371921.280714,"req":"s_overload_free-0025","event":"step_start","step":"classify"}
+{"t":1371921.280767,"req":"s_overload_free-0025","event":"degrade","what":"classify_heuristic"}
+{"t":1371921.2808119,"req":"s_overload_free-0025","event":"step_end","step":"classify"}
+{"t":1371921.2810718,"req":"s_overload_free-0025","event":"step_start","step":"retrieve"}
+{"t":1371921.2940399,"req":"s_overload_free-0025","event":"step_end","step":"retrieve"}
+{"t":1371921.2949844,"req":"s_overload_free-0025","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1371927.0086457,"req":"s_overload_free-0026","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1371927.0087775,"req":"s_overload_free-0026","event":"step_start","step":"classify"}
+{"t":1371927.0088321,"req":"s_overload_free-0026","event":"degrade","what":"classify_heuristic"}
+{"t":1371927.0088761,"req":"s_overload_free-0026","event":"step_end","step":"classify"}
+{"t":1371927.0090318,"req":"s_overload_free-0026","event":"step_start","step":"retrieve"}
+{"t":1371927.0143026,"req":"s_overload_free-0026","event":"step_end","step":"retrieve"}
+{"t":1371927.0150373,"req":"s_overload_free-0026","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1371929.1186754,"req":"s_overload_free-0027","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1371929.1207923,"req":"s_overload_free-0027","event":"step_start","step":"classify"}
+{"t":1371929.1210516,"req":"s_overload_free-0027","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":295}
+{"t":1371929.4119752,"req":"s_overload_free-0027","event":"first_token","step":"classify","ttft_ms":290.8}
+{"t":1371929.4195199,"req":"s_overload_free-0027","event":"last_token","step":"classify","total_ms":298.4,"prompt_tokens":117,"completion_tokens":22}
+{"t":1371929.4196702,"req":"s_overload_free-0027","event":"step_end","step":"classify"}
+{"t":1371929.4198291,"req":"s_overload_free-0027","event":"step_start","step":"retrieve"}
+{"t":1371929.4308187,"req":"s_overload_free-0027","event":"step_end","step":"retrieve"}
+{"t":1371929.4318334,"req":"s_overload_free-0027","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1371934.5151845,"req":"s_overload_free-0028","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1371934.5153574,"req":"s_overload_free-0028","event":"step_start","step":"classify"}
+{"t":1371934.5155418,"req":"s_overload_free-0028","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":283}
+{"t":1371935.192587,"req":"s_overload_free-0028","event":"first_token","step":"classify","ttft_ms":676.9}
+{"t":1371935.19597,"req":"s_overload_free-0028","event":"last_token","step":"classify","total_ms":680.3,"prompt_tokens":108,"completion_tokens":22}
+{"t":1371935.1962854,"req":"s_overload_free-0028","event":"step_end","step":"classify"}
+{"t":1371935.1964091,"req":"s_overload_free-0028","event":"step_start","step":"retrieve"}
+{"t":1371935.1997397,"req":"s_overload_free-0028","event":"step_end","step":"retrieve"}
+{"t":1371935.2005651,"req":"s_overload_free-0028","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1371935.6061395,"req":"s_overload_free-0023","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2570}
+{"t":1371935.6226665,"req":"s_overload_free-0024","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371935.624164,"req":"s_overload_free-0024","event":"user_first_token"}
+{"t":1371935.6242845,"req":"s_overload_free-0024","event":"user_last_token"}
+{"t":1371935.624347,"req":"s_overload_free-0024","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"(2023), the semantic evaluation uses the open-source DialoGPT model Zhang et al.\" [C:moshi:93]\n\"The first component of Moshi is Helium, a 7B parameter text LLM which is competitive with open-weights models trained with a similar compute budget.\" [C:moshi:125]\n\"substance cannabis 62.95 80.87 82.07 99.60 24.30 68.12 56.17 32.66 72.50 43.82 43.02 substance drug 65.79 93.50 97.37 100.0 34.00 89.18 77.27 48.99 94.74 63.83 63.98 substance tobacco 84.91 99.05 99.05 100.0 66.98 99.05 91.50 75.47 100.0 89.62 87.73 substance other 81.77 96.57 98.88 100.0 45.94 91.8\" [C:moshi:180]"}
+{"t":1371935.6402286,"req":"s_overload_free-0025","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371935.6415218,"req":"s_overload_free-0025","event":"user_first_token"}
+{"t":1371935.6416173,"req":"s_overload_free-0025","event":"user_last_token"}
+{"t":1371935.6416747,"req":"s_overload_free-0025","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"Moreover, and as described in Table 1, we settle on a theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1.\" [C:moshi:81]\n\"In this work we introduce Moshi, a speech-text foundation model and real-time spoken dialogue system that aims at solving the aforementioned limitations: latency, textual information bottleneck and turn-based modeling.\" [C:moshi:4]"}
+{"t":1371936.2391522,"req":"s_overload_free-0023","event":"first_token","step":"draft","ttft_ms":617.3}
+{"t":1371936.3076293,"req":"s_overload_free-0023","event":"last_token","step":"draft","total_ms":685.8,"prompt_tokens":1711,"completion_tokens":189}
+{"t":1371936.3079455,"req":"s_overload_free-0023","event":"verify_det","ok":true,"issues":[]}
+{"t":1371936.3080108,"req":"s_overload_free-0023","event":"user_first_token"}
+{"t":1371936.3080871,"req":"s_overload_free-0023","event":"user_last_token"}
+{"t":1371936.308145,"req":"s_overload_free-0023","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:23]"}
+{"t":1371941.4243911,"req":"s_overload_free-0029","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1371941.424546,"req":"s_overload_free-0029","event":"step_start","step":"classify"}
+{"t":1371941.4245967,"req":"s_overload_free-0029","event":"degrade","what":"classify_heuristic"}
+{"t":1371941.4246507,"req":"s_overload_free-0029","event":"step_end","step":"classify"}
+{"t":1371941.4259273,"req":"s_overload_free-0029","event":"step_start","step":"retrieve"}
+{"t":1371941.4323783,"req":"s_overload_free-0029","event":"step_end","step":"retrieve"}
+{"t":1371941.4331386,"req":"s_overload_free-0029","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1371948.4516505,"req":"s_overload_free-0026","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1712}
+{"t":1371948.4558216,"req":"s_overload_free-0027","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371948.4583957,"req":"s_overload_free-0027","event":"user_first_token"}
+{"t":1371948.4585511,"req":"s_overload_free-0027","event":"user_last_token"}
+{"t":1371948.4586112,"req":"s_overload_free-0027","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack.\" [C:attention:8]"}
+{"t":1371948.4608678,"req":"s_overload_free-0028","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371948.4637352,"req":"s_overload_free-0028","event":"user_first_token"}
+{"t":1371948.4639064,"req":"s_overload_free-0028","event":"user_last_token"}
+{"t":1371948.4639691,"req":"s_overload_free-0028","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1371948.484685,"req":"s_overload_free-0026","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"990","x-ratelimit-remaining-tokens":"151","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"18"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per minute (TPM): Limit 8000, Used 8000, Requested 1367. Please try again in 17s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"}
+{"t":1371948.4849844,"req":"s_overload_free-0026","event":"giveup","step":"draft","reason":"429","attempt":1}
+{"t":1371948.4850862,"req":"s_overload_free-0026","event":"degrade","what":"extractive_overload","why":"429"}
+{"t":1371948.4876501,"req":"s_overload_free-0026","event":"user_first_token"}
+{"t":1371948.4878163,"req":"s_overload_free-0026","event":"user_last_token"}
+{"t":1371948.4878917,"req":"s_overload_free-0026","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmu\" [C:attention:20]\n\"the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of th\" [C:attention:21]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]"}
+{"t":1371948.4987341,"req":"s_overload_free-0029","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline"}
+{"t":1371948.5033808,"req":"s_overload_free-0029","event":"user_first_token"}
+{"t":1371948.5034943,"req":"s_overload_free-0029","event":"user_last_token"}
+{"t":1371948.5035442,"req":"s_overload_free-0029","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]\n\"In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.\" [C:attention:22]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]"}

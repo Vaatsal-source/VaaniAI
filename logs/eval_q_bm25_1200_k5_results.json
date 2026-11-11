@@ -1,0 +1,182 @@
+[
+ {
+  "id": "q01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 2150.1,
+  "text": "The base Transformer uses 8 parallel attention heads, and each head\u2019s keys (and values) have dimension 64 [C:attention:12][C:attention:11]"
+ },
+ {
+  "id": "q02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 7468.7,
+  "text": "The Transformer was trained with label smoothing \u03f5\u2097\u209b = 0.1[C:attention:22]"
+ },
+ {
+  "id": "q03",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21588.7,
+  "text": "The base Transformer models were trained on a single machine equipped with **8 NVIDIA P100 GPUs**, and the training ran for **about 12 hours of wall\u2011clock time** (100 k steps)[C:attention:20]."
+ },
+ {
+  "id": "q04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21291.1,
+  "text": "The Transformer adds sinusoidal positional encodings, using sine and cosine functions of varying frequencies (e.g., PE(pos,2i)=sin(pos/10000^{2i/dmodel}), PE(pos,2i+1)=cos(pos/10000^{2i/dmodel}))[C:attention:15]."
+ },
+ {
+  "id": "q05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21753.0,
+  "text": "The learning rate is increased linearly for the first warmup_steps training steps and then decays proportionally to the inverse square\u2011root of the step number for the remainder of training [C:attention:20]. This behavior follows the schedule lrate = d\u207b\u2070\u00b7\u2075_model \u00b7 min(step_num\u207b\u2070\u00b7\u2075, step_num \u00b7 warmup_steps\u207b\u00b9\u00b7\u2075) with warmup_steps = 4000 [C:attention:21]."
+ },
+ {
+  "id": "q06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20915.7,
+  "text": "The big Transformer achieved a BLEU score of 28.4 on the WMT 2014 English\u2011to\u2011German translation task[C:attention:22]."
+ },
+ {
+  "id": "q07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21239.7,
+  "text": "Moshi reports a theoretical latency of 160 ms and a practical (in\u2011practice) latency of \u2248200 ms[C:moshi:1]. (The same 160 ms theoretical latency is also noted in the system description[C:moshi:4].)"
+ },
+ {
+  "id": "q08",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21745.8,
+  "text": "Mimi uses eight quantizers, which at a 12.5 Hz sampling rate yields a bitrate of about 1.1 kbps[C:moshi:32]."
+ },
+ {
+  "id": "q09",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21402.8,
+  "text": "Helium was pretrained on 2.1 trillion tokens of public English data[C:moshi:6]."
+ },
+ {
+  "id": "q10",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21655.9,
+  "text": "Moshi\u2019s models were trained on H100 GPUs[C:moshi:58][C:moshi:59]"
+ },
+ {
+  "id": "q11",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21660.7,
+  "text": "Moshi\u2019s streaming architecture achieves a theoretical latency of 160 ms, which is lower than the roughly 230 ms average response time measured in natural human conversations[C:moshi:4]."
+ },
+ {
+  "id": "q12",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21150.9,
+  "text": "The routing module measures the similarity between adjacent encoder outputs: it projects each output into query q\u209c and key k\u209c vectors, computes the cosine similarity between q\u209c and k\u209c\u208b\u2081, rescales it to a boundary probability p\u209c = \u00bd(1 \u2212 cosine), and then places a boundary whenever p\u209c \u2265 0.5 (with p\u2081 = 1.0 by definition)[C:dynchunk:20]. This similarity\u2011based scoring is the core mechanism for predicting chunk boundaries[C:dynchunk:7]."
+ },
+ {
+  "id": "q13",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21216.6,
+  "text": "The ratio loss is introduced to regularize the dynamic\u2011chunking process so that the model learns to compress data to a target down\u2011sampling (compression) ratio rather than collapsing to trivial solutions (keeping almost all vectors or over\u2011compressing). It provides continuous feedback on the average boundary probability, encouraging balanced \u201cexpert\u201d (chunk) utilization and guiding the network toward the desired compression ratio. [C:dynchunk:28] [C:dynchunk:27]"
+ },
+ {
+  "id": "q14",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21253.1,
+  "text": "The dynamic\u2011chunking model stabilizes training of discrete boundary decisions with the Straight\u2011Through Estimator (STE) [C:dynchunk:26]."
+ },
+ {
+  "id": "q15",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21632.4,
+  "text": "The FLOPs\u2011matched GPT\u20113 Large Transformer baseline uses a 760 M\u2011parameter model[C:dynchunk:40]."
+ },
+ {
+  "id": "q16",
+  "type": "cross",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 19728.7,
+  "text": "The Transformer base model uses 8 attention heads [C:attention:25], and Moshi\u2019s Depth Transformer uses 16 attention heads [C:moshi:23]."
+ },
+ {
+  "id": "q17",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21347.2,
+  "text": "The papers don't say. They provide BLEU results for English\u2011German and English\u2011French translation, but contain no information about English\u2011to\u2011Chinese performance."
+ },
+ {
+  "id": "q18",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21027.5,
+  "text": "The papers don't say. The provided excerpts contain no information about the open\u2011source license for Moshi model weights."
+ },
+ {
+  "id": "q19",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21346.4,
+  "text": "The papers don't say. They provide results for DNA, Chinese, code, and general language modeling, but no information on protein sequence modeling."
+ },
+ {
+  "id": "q20",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21179.0,
+  "text": "The papers don't say. None of the provided passages report the word error rate achieved by the original Transformer on speech recognition."
+ }
+]

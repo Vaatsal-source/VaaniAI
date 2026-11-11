@@ -1,0 +1,182 @@
+[
+ {
+  "id": "q01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 43131.4,
+  "text": "The base Transformer uses **8 parallel attention heads**, and each head\u2019s key (and value) dimension is **dk = 64**[C:attention:12]."
+ },
+ {
+  "id": "q02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21597.7,
+  "text": "The Transformer was trained with label smoothing \u03f5\u2097\u209b = 0.1[C:attention:22]."
+ },
+ {
+  "id": "q03",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 9780.5,
+  "text": "The base Transformer models were trained on a single machine equipped with eight NVIDIA P100 GPUs, and training ran for about 12 hours (\u2248100 000 steps). [C:attention:20]"
+ },
+ {
+  "id": "q04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3976.5,
+  "text": "The Transformer adds sinusoidal positional encodings defined by sine and cosine functions of different frequencies (e.g., PE(pos,2i)=sin(pos/10000^{2i/dmodel}), PE(pos,2i+1)=cos(pos/10000^{2i/dmodel}))[C:attention:15]."
+ },
+ {
+  "id": "q05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 9421.7,
+  "text": "The learning rate is increased linearly during the first warmup_steps training steps and then decays proportionally to the inverse square root of the step number for the remainder of training [C:attention:21]."
+ },
+ {
+  "id": "q06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21317.7,
+  "text": "The big Transformer achieved a BLEU score of 28.4 on the WMT 2014 English\u2011to\u2011German translation task[C:attention:22]."
+ },
+ {
+  "id": "q07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21322.1,
+  "text": "Moshi reports a theoretical latency of 160 ms and a practical (real\u2011world) latency of \u2248200 ms[C:moshi:1]."
+ },
+ {
+  "id": "q08",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 22331.6,
+  "text": "Mimi uses eight residual vector quantizers, which at a 12.5 Hz frame rate yields a bitrate of about 1.1 kbps[C:moshi:32]."
+ },
+ {
+  "id": "q09",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 22033.7,
+  "text": "Helium was pretrained on 2.1 trillion tokens of public English data [C:moshi:6]."
+ },
+ {
+  "id": "q10",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21065.7,
+  "text": "Moshi\u2019s models were trained on H100 GPUs[C:moshi:59][C:moshi:58]."
+ },
+ {
+  "id": "q11",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21665.1,
+  "text": "Moshi\u2019s streaming architecture is designed for a theoretical latency of 160 ms, which the authors note is lower than the roughly 230 ms average latency observed in natural human conversations[C:moshi:4]."
+ },
+ {
+  "id": "q12",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21228.0,
+  "text": "The routing module predicts chunk boundaries by computing a similarity score between adjacent elements; this score is used to decide where to place a boundary, and the resulting confidence values are then smoothed by the downstream smoothing module to form the final chunking decisions[C:dynchunk:7]. The module is illustrated as the \u201crouting module for dynamically drawing chunk boundaries\u201d in the architecture diagram[C:dynchunk:8]."
+ },
+ {
+  "id": "q13",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20947.0,
+  "text": "The ratio loss is an auxiliary objective that pushes the dynamic\u2011chunking module to achieve a target down\u2011sampling (compression) ratio.  By adding it to the standard autoregressive prediction loss, the model is encouraged to retain vectors based on semantic importance while meeting a desired chunk\u2011size budget, thereby preserving content\u2011adaptive compression rather than following a fixed pattern [C:dynchunk:29]."
+ },
+ {
+  "id": "q14",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21683.3,
+  "text": "The dynamic\u2011chunking model uses a Straight\u2011Through Estimator (STE) to obtain gradients through the discrete boundary decisions[C:dynchunk:9]."
+ },
+ {
+  "id": "q15",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21644.2,
+  "text": "The FLOPs\u2011matched GPT\u20113 Large Transformer baseline has about 760 million parameters[C:dynchunk:41]."
+ },
+ {
+  "id": "q16",
+  "type": "cross",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21768.1,
+  "text": "The Transformer base model uses **8 attention heads**[C:attention:12].  \nMoshi\u2019s Depth Transformer uses **16 attention heads**[C:moshi:41][C:moshi:23]."
+ },
+ {
+  "id": "q17",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21145.9,
+  "text": "The papers don't say. None of the provided passages report a BLEU score for English\u2011to\u2011Chinese translation."
+ },
+ {
+  "id": "q18",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 22139.6,
+  "text": "The papers don't say. None of the provided excerpts mention the open\u2011source license for Moshi\u2019s model weights."
+ },
+ {
+  "id": "q19",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21217.8,
+  "text": "The papers don't say. They provide performance details for DNA sequences but give no information about protein sequence modeling."
+ },
+ {
+  "id": "q20",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 25543.0,
+  "text": "The papers don't say. They provide BLEU scores for translation and various codec metrics, but no word error rate for speech recognition."
+ }
+]

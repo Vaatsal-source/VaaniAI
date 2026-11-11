@@ -1,0 +1,83 @@
+[
+ {
+  "id": "h01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 6296.9,
+  "text": "The original attention mechanism divides the query\u2011key dot products by a constant (specifically \\(1/\\sqrt{d_k}\\)) before applying softmax to prevent the dot products from becoming too large in magnitude when the dimensionality \\(d_k\\) is large. Large dot products push the softmax into regions with extremely small gradients, so scaling keeps the values in a range where the softmax is more stable and gradients are not vanishing [C:attention:10]."
+ },
+ {
+  "id": "h02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 4316.4,
+  "text": "The papers say the two versions performed almost the same. In both the English\u2011constituency parsing experiments and the general ablation studies, replacing the sinusoidal positional encodings with learned positional embeddings produced nearly identical results (see Table 3 row (E) in [C:attention:26] and the discussion in [C:attention:16]). Thus the authors did not find a clear advantage for learned embeddings over the sinusoidal version."
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 1796.1,
+  "text": "The papers don't say. The parameter count for the big Transformer model is not provided in the supplied passages."
+ },
+ {
+  "id": "h04",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 25238.6,
+  "text": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [C:moshi:41]."
+ },
+ {
+  "id": "h05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17417.5,
+  "text": "The smoothing module converts the discrete chunk\u2011boundary decisions into smooth, interpolated representations, thereby restoring gradient flow that would otherwise be blocked by the hard, discrete boundary choices. This stabilises training dynamics and prevents large fluctuations in compression ratios during optimisation. [C:dynchunk:22] [C:dynchunk:65]"
+ },
+ {
+  "id": "h06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21432.3,
+  "text": "The hierarchical network is composed of three stages: an **encoder** that processes raw data, a **main network** that operates on compressed chunks, and a **decoder** that upsamples back to the original resolution [C:dynchunk:6]."
+ },
+ {
+  "id": "h07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20994.6,
+  "text": "Moshi\u2019s Inner Monologue method generates text tokens as a prefix to audio tokens, allowing the model to produce a spoken output that is linguistically coherent while remaining compatible with streaming inference. This approach improves the linguistic quality of the generated speech and can be used to build streaming speech\u2011to\u2011speech, speech\u2011to\u2011text, and text\u2011to\u2011speech systems [C:moshi:1] [C:moshi:126]"
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21199.4,
+  "text": "The papers don't say. The passages do not mention the use of TPUs for training the base model."
+ },
+ {
+  "id": "h09",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21227.8,
+  "text": "The papers don't say. They only report English\u2011to\u2011German and English\u2011to\u2011French results."
+ }
+]

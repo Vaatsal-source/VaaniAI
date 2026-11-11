@@ -1,0 +1,70 @@
+{"t":1378882.4259316,"req":"real_steady-0000","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1378882.4264611,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378882.4265799,"req":"real_steady-0000","event":"step_start","step":"classify"}
+{"t":1378882.426893,"req":"real_steady-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":280}
+{"t":1378883.1721201,"req":"real_steady-0000","event":"first_token","step":"classify","ttft_ms":744.7}
+{"t":1378883.179568,"req":"real_steady-0000","event":"last_token","step":"classify","total_ms":752.2,"prompt_tokens":204,"completion_tokens":64}
+{"t":1378883.1863802,"req":"real_steady-0000","event":"step_end","step":"classify"}
+{"t":1378883.1882181,"req":"real_steady-0000","event":"step_start","step":"retrieve"}
+{"t":1378883.1973225,"req":"real_steady-0000","event":"step_end","step":"retrieve"}
+{"t":1378883.1983299,"req":"real_steady-0000","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1378883.1988479,"req":"real_steady-0000","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2556}
+{"t":1378884.2316792,"req":"real_steady-0000","event":"first_token","step":"draft","ttft_ms":1032.7}
+{"t":1378884.263362,"req":"real_steady-0000","event":"last_token","step":"draft","total_ms":1064.3,"prompt_tokens":1691,"completion_tokens":47}
+{"t":1378884.2636008,"req":"real_steady-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1378884.2636745,"req":"real_steady-0000","event":"user_first_token"}
+{"t":1378884.2637398,"req":"real_steady-0000","event":"user_last_token"}
+{"t":1378884.263806,"req":"real_steady-0000","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They discuss DNA and other languages, but no mention of protein sequence modeling."}
+{"t":1378897.7124752,"req":"real_steady-0001","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1378897.7126233,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378897.7126814,"req":"real_steady-0001","event":"step_start","step":"classify"}
+{"t":1378897.7128616,"req":"real_steady-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1378897.9604443,"req":"real_steady-0002","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1378897.9606479,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378897.9607188,"req":"real_steady-0002","event":"step_start","step":"classify"}
+{"t":1378897.9609234,"req":"real_steady-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":284}
+{"t":1378898.6309766,"req":"real_steady-0001","event":"first_token","step":"classify","ttft_ms":918.0}
+{"t":1378898.6330252,"req":"real_steady-0001","event":"last_token","step":"classify","total_ms":920.1,"prompt_tokens":205,"completion_tokens":54}
+{"t":1378898.6331716,"req":"real_steady-0001","event":"step_end","step":"classify"}
+{"t":1378898.6332773,"req":"real_steady-0001","event":"step_start","step":"retrieve"}
+{"t":1378898.6437186,"req":"real_steady-0001","event":"step_end","step":"retrieve"}
+{"t":1378898.6448697,"req":"real_steady-0001","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1378898.6453608,"req":"real_steady-0001","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2559}
+{"t":1378898.8051352,"req":"real_steady-0002","event":"first_token","step":"classify","ttft_ms":844.1}
+{"t":1378898.8092816,"req":"real_steady-0002","event":"last_token","step":"classify","total_ms":848.2,"prompt_tokens":213,"completion_tokens":57}
+{"t":1378898.8095102,"req":"real_steady-0002","event":"step_end","step":"classify"}
+{"t":1378898.8096584,"req":"real_steady-0002","event":"step_start","step":"retrieve"}
+{"t":1378898.8151906,"req":"real_steady-0002","event":"step_end","step":"retrieve"}
+{"t":1378898.8165486,"req":"real_steady-0002","event":"decide","branch":"tool_fetch_section"}
+{"t":1378898.8166364,"req":"real_steady-0002","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"2.2"}
+{"t":1378898.8169053,"req":"real_steady-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1378898.8174164,"req":"real_steady-0002","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2545}
+{"t":1378899.6692513,"req":"real_steady-0001","event":"first_token","step":"draft","ttft_ms":1023.8}
+{"t":1378899.8200535,"req":"real_steady-0001","event":"last_token","step":"draft","total_ms":1174.2,"prompt_tokens":1930,"completion_tokens":69}
+{"t":1378899.8204122,"req":"real_steady-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1378899.8204971,"req":"real_steady-0001","event":"user_first_token"}
+{"t":1378899.8205734,"req":"real_steady-0001","event":"user_last_token"}
+{"t":1378899.8206379,"req":"real_steady-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer was trained with a label\u2011smoothing value of \u03f5ls = 0.1. [C:attention:22]"}
+{"t":1378899.8615868,"req":"real_steady-0002","event":"first_token","step":"draft","ttft_ms":1044.1}
+{"t":1378899.9176465,"req":"real_steady-0002","event":"last_token","step":"draft","total_ms":1100.1,"prompt_tokens":1891,"completion_tokens":113}
+{"t":1378899.9179673,"req":"real_steady-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1378899.9180431,"req":"real_steady-0002","event":"user_first_token"}
+{"t":1378899.9181255,"req":"real_steady-0002","event":"user_last_token"}
+{"t":1378899.9182295,"req":"real_steady-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","tool","draft"],"answer":"In section 2.2 the dechunking layer (Dechunk) transforms the compressed representation back to the original resolution. It does this by first applying a smoothing module that converts the discrete chunk boundaries into interpolated representations, and then an upsampler that restores the compressed vectors to their original length based on the boundary indicators. [C:dynchunk:22]"}
+{"t":1378979.2255809,"req":"real_steady-0003","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1378979.225716,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0}
+{"t":1378979.225763,"req":"real_steady-0003","event":"step_start","step":"classify"}
+{"t":1378979.2258989,"req":"real_steady-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":291}
+{"t":1378981.7148171,"req":"real_steady-0003","event":"first_token","step":"classify","ttft_ms":2488.8}
+{"t":1378981.7158575,"req":"real_steady-0003","event":"last_token","step":"classify","total_ms":2489.9,"prompt_tokens":210,"completion_tokens":58}
+{"t":1378981.7159813,"req":"real_steady-0003","event":"step_end","step":"classify"}
+{"t":1378981.7161029,"req":"real_steady-0003","event":"step_start","step":"retrieve"}
+{"t":1378982.6527012,"req":"real_steady-0003","event":"step_end","step":"retrieve"}
+{"t":1378982.6537073,"req":"real_steady-0003","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1378982.7589397,"req":"real_steady-0003","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2568}
+{"t":1378985.376538,"req":"real_steady-0003","event":"first_token","step":"draft","ttft_ms":2617.5}
+{"t":1378985.3796696,"req":"real_steady-0003","event":"last_token","step":"draft","total_ms":2620.6,"prompt_tokens":1875,"completion_tokens":90}
+{"t":1378985.3798578,"req":"real_steady-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1378985.3799144,"req":"real_steady-0003","event":"user_first_token"}
+{"t":1378985.490658,"req":"real_steady-0003","event":"user_last_token"}
+{"t":1378985.4907632,"req":"real_steady-0003","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The base Transformer models were trained on a single machine equipped with 8 NVIDIA P100 GPUs, and training took about 12 hours of wall\u2011clock time. [C:attention:20]"}

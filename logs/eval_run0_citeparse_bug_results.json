@@ -1,0 +1,182 @@
+[
+ {
+  "id": "q01",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 2434.8,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q02",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 28030.3,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 40400.8,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q04",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 42066.0,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q05",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 21776.0,
+  "text": "The learning rate follows the schedule  \n\n\\[\n\\text{lrate}=d_{\\text{model}}^{-0.5}\\;\\min\\bigl(\\text{step\\_num}^{-0.5},\\;\\text{step\\_num}\\times\\text{warmup\\_steps}^{-1.5}\\bigr)\n\\]  \n\nwhich means it **rises linearly** during the initial\u202fwarm\u2011up phase (the first\u202fwarmup_steps\u202fsteps, set to\u202f4000) and **then decays** proportionally to the inverse square\u2011root of the step number for the remainder of training\u202f[C:attention:20][C:attention:21]."
+ },
+ {
+  "id": "q06",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 39011.5,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q07",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 40618.4,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q08",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 22430.7,
+  "text": "Mimi uses\u202f8\u202fquantizers, which at a 12.5\u202fHz sampling rate yields a bitrate of\u202f\u22481.1\u202fkbps\u202f[C:moshi:32]."
+ },
+ {
+  "id": "q09",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 40526.7,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q10",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 40569.1,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q11",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 41349.7,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q12",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 40797.5,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q13",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 42751.8,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q14",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 18816.3,
+  "text": "The dynamic\u2011chunking model stabilizes training of discrete boundary decisions with the Straight\u2011Through Estimator (STE)\u202f\u2014\u202fa gradient estimator that rounds confidence scores in the forward pass while preserving continuous gradients during back\u2011propagation [C:dynchunk:26]."
+ },
+ {
+  "id": "q15",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 41100.8,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "q16",
+  "type": "cross",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 19537.9,
+  "text": "The Transformer base model uses\u202f8 attention heads\u202f[C:attention:25], and Moshi\u2019s Depth Transformer uses\u202f16 attention heads\u202f[C:moshi:23]."
+ },
+ {
+  "id": "q17",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21316.3,
+  "text": "The papers don't say. They provide BLEU results for English\u2011German and English\u2011French translation, but contain no information about English\u2011to\u2011Chinese performance."
+ },
+ {
+  "id": "q18",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21472.4,
+  "text": "The papers don't say. None of the provided excerpts mention the open\u2011source license for Moshi\u2019s model weights."
+ },
+ {
+  "id": "q19",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 20796.7,
+  "text": "The papers don't say. They provide results for DNA and other languages, but contain no information about protein sequence modeling."
+ },
+ {
+  "id": "q20",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21197.6,
+  "text": "The papers don't say. None of the provided excerpts report the word error rate achieved by the original Transformer on speech recognition."
+ }
+]
