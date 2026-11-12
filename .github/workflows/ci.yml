@@ -41,7 +41,12 @@ jobs:
           python scripts/make_tables.py
           python scripts/build_readme.py
       - name: Fail if committed tables or README differ from the logs
-        run: git diff --exit-code -- results/tables.md README.md
+        run: |
+          git diff --exit-code -- results/tables.md README.md || {
+            echo "README.md is generated from README.template.md. Edit the template, then run: python scripts/build_readme.py"; exit 1; }
+      - name: Fail if the README still has unfinished TODO markers or unfilled table slots
+        run: |
+          if grep -nE 'TODO\(|\{\{snip_' README.md; then exit 1; fi
 
   no-secrets:
     runs-on: ubuntu-latest
