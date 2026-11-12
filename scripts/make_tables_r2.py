@@ -275,7 +275,7 @@ def run(md, SN, OUT):
                 continue
             key = "ok" if st_ == 200 else "429" if st_ == 429 else "5xx" if isinstance(st_, int) and st_ >= 500 else "404" if st_ == 404 else "client error"
             cnt[prov_][("probe", key)] += 1
-    real_logs = [f for f in glob.glob(str(LOGS / "eval_*.jsonl")) + glob.glob(str(LOGS / "server_real*.jsonl")) + glob.glob(str(LOGS / "server_mytest.jsonl"))
+    real_logs = [f for f in glob.glob(str(LOGS / "eval_*.jsonl")) + glob.glob(str(LOGS / "server_real*.jsonl")) 
                  if "standin" not in f and "_results" not in f and "check_" not in f]     # check_* are scratch runs of scripts/check.py
     for f in real_logs:
         for e in jl(f):
