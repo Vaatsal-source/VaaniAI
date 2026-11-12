@@ -42,3 +42,7 @@ ci-requirements.txt
 htmlcov/
 act/
 *.log.tmp
+.scratch/
+
+# scratch output of scripts/check.py
+logs/*check_*

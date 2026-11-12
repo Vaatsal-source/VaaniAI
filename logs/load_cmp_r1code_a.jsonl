@@ -1,0 +1,25 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8100", "rate": 0.03, "duration": 120, "n": 8, "window": 3.0, "patience": 20.0, "seed": 1234, "tag": "cmp_r1code_a", "drain": 0}, "n": 8, "perf0": 1461512.7523575}
+{"t": 1461513.2272937, "req": "cmp_r1code_a-0000", "event": "arrive", "sched": 0.03904629987664521, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461513.4436206, "req": "cmp_r1code_a-0001", "event": "arrive", "sched": 0.25537250004708767, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1461514.5345747, "req": "cmp_r1code_a-0002", "event": "arrive", "sched": 1.3463292999658734, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461514.9509227, "req": "cmp_r1code_a-0003", "event": "arrive", "sched": 1.7626769000198692, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461515.1793611, "req": "cmp_r1code_a-0000", "event": "first_byte"}
+{"t": 1461515.1850201, "req": "cmp_r1code_a-0000", "event": "end", "status": "answered"}
+{"t": 1461515.1865056, "req": "cmp_r1code_a-0001", "event": "first_byte"}
+{"t": 1461515.1905631, "req": "cmp_r1code_a-0001", "event": "end", "status": "answered"}
+{"t": 1461515.1939534, "req": "cmp_r1code_a-0004", "event": "arrive", "sched": 2.005709100048989, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461515.930342, "req": "cmp_r1code_a-0005", "event": "arrive", "sched": 2.7420939998701215, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461515.9610299, "req": "cmp_r1code_a-0005", "event": "first_byte"}
+{"t": 1461515.970334, "req": "cmp_r1code_a-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1461516.0128471, "req": "cmp_r1code_a-0006", "event": "arrive", "sched": 2.824597399914637, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1461516.2074781, "req": "cmp_r1code_a-0007", "event": "arrive", "sched": 3.019231599988416, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1461516.3188617, "req": "cmp_r1code_a-0006", "event": "first_byte"}
+{"t": 1461516.33681, "req": "cmp_r1code_a-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1461516.3439027, "req": "cmp_r1code_a-0002", "event": "first_byte"}
+{"t": 1461516.3487264, "req": "cmp_r1code_a-0002", "event": "end", "status": "answered"}
+{"t": 1461516.3638835, "req": "cmp_r1code_a-0007", "event": "first_byte"}
+{"t": 1461516.3657492, "req": "cmp_r1code_a-0007", "event": "end", "status": "shed"}
+{"t": 1461531.3267871, "req": "cmp_r1code_a-0004", "event": "first_byte"}
+{"t": 1461531.5150015, "req": "cmp_r1code_a-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1461532.2296286, "req": "cmp_r1code_a-0003", "event": "first_byte"}
+{"t": 1461532.2525848, "req": "cmp_r1code_a-0003", "event": "end", "status": "extractive_overload"}

@@ -1,0 +1,257 @@
+{"t":1453724.5742447,"req":"r2_cache_burst_free_off-0000","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1453724.5745995,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453724.5746682,"req":"r2_cache_burst_free_off-0000","event":"step_start","step":"classify"}
+{"t":1453724.5748122,"req":"r2_cache_burst_free_off-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":192,"provider":"standin"}
+{"t":1453724.6630343,"req":"r2_cache_burst_free_off-0001","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1453724.6638772,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1453724.6639838,"req":"r2_cache_burst_free_off-0001","event":"step_start","step":"classify"}
+{"t":1453724.6655771,"req":"r2_cache_burst_free_off-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":185,"provider":"standin"}
+{"t":1453724.6668814,"req":"r2_cache_burst_free_off-0002","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1453724.6670437,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":2,"provider":"standin"}
+{"t":1453724.6670968,"req":"r2_cache_burst_free_off-0002","event":"step_start","step":"classify"}
+{"t":1453724.6691585,"req":"r2_cache_burst_free_off-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":181,"provider":"standin"}
+{"t":1453725.0281135,"req":"-","event":"loop_lag","lag_ms":263.0}
+{"t":1453725.1647231,"req":"r2_cache_burst_free_off-0003","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1453725.1650337,"req":"-","event":"pressure","wait_s":6.67,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1453725.165112,"req":"r2_cache_burst_free_off-0003","event":"step_start","step":"classify"}
+{"t":1453725.1651803,"req":"r2_cache_burst_free_off-0003","event":"degrade","what":"classify_heuristic"}
+{"t":1453725.1652272,"req":"r2_cache_burst_free_off-0003","event":"step_end","step":"classify"}
+{"t":1453725.1669463,"req":"r2_cache_burst_free_off-0003","event":"step_start","step":"retrieve"}
+{"t":1453725.221539,"req":"r2_cache_burst_free_off-0003","event":"step_end","step":"retrieve"}
+{"t":1453725.2228509,"req":"r2_cache_burst_free_off-0003","event":"decide","branch":"draft","conf":0.78,"k":3}
+{"t":1453725.2232235,"req":"-","event":"loop_lag","lag_ms":144.9}
+{"t":1453725.2238829,"req":"r2_cache_burst_free_off-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1424,"provider":"standin"}
+{"t":1453725.2315205,"req":"r2_cache_burst_free_off-0004","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1453725.2317678,"req":"-","event":"pressure","wait_s":18.52,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1453725.2318334,"req":"r2_cache_burst_free_off-0004","event":"step_start","step":"classify"}
+{"t":1453725.2318749,"req":"r2_cache_burst_free_off-0004","event":"degrade","what":"classify_heuristic"}
+{"t":1453725.2319112,"req":"r2_cache_burst_free_off-0004","event":"step_end","step":"classify"}
+{"t":1453725.2320087,"req":"r2_cache_burst_free_off-0004","event":"step_start","step":"retrieve"}
+{"t":1453725.2381392,"req":"r2_cache_burst_free_off-0004","event":"step_end","step":"retrieve"}
+{"t":1453725.2391722,"req":"r2_cache_burst_free_off-0004","event":"degrade","what":"extractive_overload"}
+{"t":1453725.2416136,"req":"r2_cache_burst_free_off-0004","event":"user_first_token"}
+{"t":1453725.2417328,"req":"r2_cache_burst_free_off-0004","event":"user_last_token"}
+{"t":1453725.2417944,"req":"r2_cache_burst_free_off-0004","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"cisions (i.e., boundary probabilities approaching 0 or 1), \ud835\udc39 naturally converges toward \ud835\udc3a, and the loss effectively guides the model toward the desired compression ratio.\" [C:dynchunk:29]\n\"Mixture-of-Experts (MoE) models (Fedus, Zoph, and Shazeer 2022), which face similar challenges in maintaining balanced expert utilization, we introduce a ratio loss to guide compression: Lratio = \ud835\udc41 \ud835\udc41\u22121 ((\ud835\udc41\u22121)\ud835\udc39\ud835\udc3a+ (1 \u2212\ud835\udc39)(1 \u2212\ud835\udc3a)) , \ud835\udc39= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc4f\ud835\udc61, \ud835\udc3a= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc5d\ud835\udc61, (10) where \ud835\udc39represents the fract\" [C:dynchunk:28]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1453725.3539874,"req":"r2_cache_burst_free_off-0000","event":"first_token","step":"classify","ttft_ms":779.1}
+{"t":1453725.4403608,"req":"r2_cache_burst_free_off-0000","event":"last_token","step":"classify","total_ms":865.5,"prompt_tokens":117,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453725.4409719,"req":"r2_cache_burst_free_off-0000","event":"step_end","step":"classify"}
+{"t":1453725.4415151,"req":"r2_cache_burst_free_off-0000","event":"step_start","step":"retrieve"}
+{"t":1453725.4558163,"req":"r2_cache_burst_free_off-0000","event":"step_end","step":"retrieve"}
+{"t":1453725.4573221,"req":"r2_cache_burst_free_off-0000","event":"decide","branch":"draft","conf":0.89,"k":5}
+{"t":1453725.4578051,"req":"r2_cache_burst_free_off-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1966,"provider":"standin"}
+{"t":1453725.4674975,"req":"r2_cache_burst_free_off-0001","event":"first_token","step":"classify","ttft_ms":801.7}
+{"t":1453725.4753775,"req":"r2_cache_burst_free_off-0001","event":"last_token","step":"classify","total_ms":809.6,"prompt_tokens":111,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453725.4756055,"req":"r2_cache_burst_free_off-0001","event":"step_end","step":"classify"}
+{"t":1453725.4757459,"req":"r2_cache_burst_free_off-0001","event":"step_start","step":"retrieve"}
+{"t":1453725.4901187,"req":"r2_cache_burst_free_off-0001","event":"step_end","step":"retrieve"}
+{"t":1453725.4978372,"req":"r2_cache_burst_free_off-0001","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1453725.4986052,"req":"r2_cache_burst_free_off-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2183,"provider":"standin"}
+{"t":1453725.5033449,"req":"r2_cache_burst_free_off-0002","event":"first_token","step":"classify","ttft_ms":834.0}
+{"t":1453725.5136602,"req":"r2_cache_burst_free_off-0002","event":"last_token","step":"classify","total_ms":844.3,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453725.5138773,"req":"r2_cache_burst_free_off-0002","event":"step_end","step":"classify"}
+{"t":1453725.5139923,"req":"r2_cache_burst_free_off-0002","event":"step_start","step":"retrieve"}
+{"t":1453725.5329209,"req":"r2_cache_burst_free_off-0002","event":"step_end","step":"retrieve"}
+{"t":1453725.5348741,"req":"r2_cache_burst_free_off-0002","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1453725.6367187,"req":"r2_cache_burst_free_off-0005","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1453725.6368705,"req":"-","event":"pressure","wait_s":18.47,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1453725.6369103,"req":"r2_cache_burst_free_off-0005","event":"step_start","step":"classify"}
+{"t":1453725.6369341,"req":"r2_cache_burst_free_off-0005","event":"degrade","what":"classify_heuristic"}
+{"t":1453725.6369551,"req":"r2_cache_burst_free_off-0005","event":"step_end","step":"classify"}
+{"t":1453725.6371202,"req":"r2_cache_burst_free_off-0005","event":"step_start","step":"retrieve"}
+{"t":1453725.6408348,"req":"r2_cache_burst_free_off-0005","event":"step_end","step":"retrieve"}
+{"t":1453725.6417273,"req":"r2_cache_burst_free_off-0005","event":"degrade","what":"extractive_overload"}
+{"t":1453725.6465453,"req":"r2_cache_burst_free_off-0005","event":"user_first_token"}
+{"t":1453725.6467018,"req":"r2_cache_burst_free_off-0005","event":"user_last_token"}
+{"t":1453725.6467446,"req":"r2_cache_burst_free_off-0005","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"ise, the same downsampler applies to boundary probabilities, compressing \ud835\udc5d\ud835\udc60into \ud835\udc43\ud835\udc60+1 for use in a dechunking layer (see Section 2.2.2).\" [C:dynchunk:22]\n\"(right) Dynamic Chunking (DC).\" [C:dynchunk:9]\n\"2.2 Dynamic Chunking (DC) H-Net learns chunking boundaries through end-to-end training, allowing it to identify semantically meaningful units adaptively.\" [C:dynchunk:19]"}
+{"t":1453725.7392371,"req":"r2_cache_burst_free_off-0003","event":"first_token","step":"draft","ttft_ms":515.2}
+{"t":1453725.7620463,"req":"r2_cache_burst_free_off-0003","event":"last_token","step":"draft","total_ms":538.0,"prompt_tokens":1084,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453725.7622951,"req":"r2_cache_burst_free_off-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1453725.7623549,"req":"r2_cache_burst_free_off-0003","event":"user_first_token"}
+{"t":1453725.7623986,"req":"r2_cache_burst_free_off-0003","event":"user_last_token"}
+{"t":1453725.76243,"req":"r2_cache_burst_free_off-0003","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:12] [C:attention:11]"}
+{"t":1453725.768766,"req":"r2_cache_burst_free_off-0006","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1453725.7689501,"req":"-","event":"pressure","wait_s":16.1,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1453725.7690114,"req":"r2_cache_burst_free_off-0006","event":"step_start","step":"classify"}
+{"t":1453725.7690457,"req":"r2_cache_burst_free_off-0006","event":"degrade","what":"classify_heuristic"}
+{"t":1453725.7690749,"req":"r2_cache_burst_free_off-0006","event":"step_end","step":"classify"}
+{"t":1453725.7692581,"req":"r2_cache_burst_free_off-0006","event":"step_start","step":"retrieve"}
+{"t":1453725.7794551,"req":"r2_cache_burst_free_off-0006","event":"step_end","step":"retrieve"}
+{"t":1453725.780576,"req":"r2_cache_burst_free_off-0006","event":"degrade","what":"extractive_overload"}
+{"t":1453725.7824923,"req":"r2_cache_burst_free_off-0006","event":"user_first_token"}
+{"t":1453725.7826636,"req":"r2_cache_burst_free_off-0006","event":"user_last_token"}
+{"t":1453725.7827376,"req":"r2_cache_burst_free_off-0006","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"Moreover, and as described in Table 1, we settle on a theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1.\" [C:moshi:81]\n\"In this work we introduce Moshi, a speech-text foundation model and real-time spoken dialogue system that aims at solving the aforementioned limitations: latency, textual information bottleneck and turn-based modeling.\" [C:moshi:4]"}
+{"t":1453725.9757308,"req":"r2_cache_burst_free_off-0000","event":"first_token","step":"draft","ttft_ms":517.8}
+{"t":1453726.0009536,"req":"r2_cache_burst_free_off-0000","event":"last_token","step":"draft","total_ms":543.0,"prompt_tokens":1531,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453726.0013054,"req":"r2_cache_burst_free_off-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1453726.0013698,"req":"r2_cache_burst_free_off-0000","event":"user_first_token"}
+{"t":1453726.0014207,"req":"r2_cache_burst_free_off-0000","event":"user_last_token"}
+{"t":1453726.0014589,"req":"r2_cache_burst_free_off-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:9] [C:attention:12]"}
+{"t":1453726.0398769,"req":"r2_cache_burst_free_off-0001","event":"first_token","step":"draft","ttft_ms":541.0}
+{"t":1453726.0686396,"req":"r2_cache_burst_free_off-0001","event":"last_token","step":"draft","total_ms":569.9,"prompt_tokens":1710,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453726.0689569,"req":"r2_cache_burst_free_off-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1453726.0690292,"req":"r2_cache_burst_free_off-0001","event":"user_first_token"}
+{"t":1453726.0690797,"req":"r2_cache_burst_free_off-0001","event":"user_last_token"}
+{"t":1453726.0691189,"req":"r2_cache_burst_free_off-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1453726.0959875,"req":"r2_cache_burst_free_off-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2145,"provider":"standin"}
+{"t":1453726.7298342,"req":"-","event":"loop_lag","lag_ms":111.4}
+{"t":1453726.7833855,"req":"r2_cache_burst_free_off-0007","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1453726.7837871,"req":"-","event":"pressure","wait_s":11.03,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453726.7839114,"req":"r2_cache_burst_free_off-0007","event":"step_start","step":"classify"}
+{"t":1453726.7839676,"req":"r2_cache_burst_free_off-0007","event":"degrade","what":"classify_heuristic"}
+{"t":1453726.784004,"req":"r2_cache_burst_free_off-0007","event":"step_end","step":"classify"}
+{"t":1453726.7841753,"req":"r2_cache_burst_free_off-0007","event":"step_start","step":"retrieve"}
+{"t":1453726.7979712,"req":"r2_cache_burst_free_off-0008","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1453726.7982445,"req":"-","event":"pressure","wait_s":11.02,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453726.7983312,"req":"r2_cache_burst_free_off-0008","event":"step_start","step":"classify"}
+{"t":1453726.7983708,"req":"r2_cache_burst_free_off-0008","event":"degrade","what":"classify_heuristic"}
+{"t":1453726.7984028,"req":"r2_cache_burst_free_off-0008","event":"step_end","step":"classify"}
+{"t":1453726.7985566,"req":"r2_cache_burst_free_off-0008","event":"step_start","step":"retrieve"}
+{"t":1453726.8118637,"req":"r2_cache_burst_free_off-0002","event":"first_token","step":"draft","ttft_ms":715.6}
+{"t":1453726.8129852,"req":"r2_cache_burst_free_off-0007","event":"step_end","step":"retrieve"}
+{"t":1453726.8144142,"req":"r2_cache_burst_free_off-0007","event":"degrade","what":"extractive_overload"}
+{"t":1453726.8184042,"req":"r2_cache_burst_free_off-0007","event":"user_first_token"}
+{"t":1453726.8185782,"req":"r2_cache_burst_free_off-0007","event":"user_last_token"}
+{"t":1453726.8187023,"req":"r2_cache_burst_free_off-0007","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"\u2022 Gradient stabilization (7): The Straight-Through Estimator (STE) (Bengio, L\u00e9onard, and Courville 2013) is a well established technique from discrete representation learning (Van Den Oord, Vinyals, et al.\" [C:dynchunk:26]\n\"A.1.4 Dynamic Chunking The ideal tokenizer-free architecture would incorporate a dynamic chunking method that attempts to learn optimal segmentation strategies directly from data through gradient-based optimization.\" [C:dynchunk:121]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1453726.8217128,"req":"r2_cache_burst_free_off-0008","event":"step_end","step":"retrieve"}
+{"t":1453726.8227059,"req":"r2_cache_burst_free_off-0008","event":"degrade","what":"extractive_overload"}
+{"t":1453726.8255987,"req":"r2_cache_burst_free_off-0008","event":"user_first_token"}
+{"t":1453726.8273889,"req":"r2_cache_burst_free_off-0008","event":"user_last_token"}
+{"t":1453726.8275196,"req":"r2_cache_burst_free_off-0008","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1.\" [C:attention:11]\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]"}
+{"t":1453726.8417971,"req":"r2_cache_burst_free_off-0009","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1453726.842,"req":"-","event":"pressure","wait_s":10.97,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453726.8420709,"req":"r2_cache_burst_free_off-0009","event":"step_start","step":"classify"}
+{"t":1453726.8421286,"req":"r2_cache_burst_free_off-0009","event":"degrade","what":"classify_heuristic"}
+{"t":1453726.8421748,"req":"r2_cache_burst_free_off-0009","event":"step_end","step":"classify"}
+{"t":1453726.8422997,"req":"r2_cache_burst_free_off-0009","event":"step_start","step":"retrieve"}
+{"t":1453726.8513942,"req":"r2_cache_burst_free_off-0002","event":"last_token","step":"draft","total_ms":755.2,"prompt_tokens":1679,"completion_tokens":188,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1453726.8517481,"req":"r2_cache_burst_free_off-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1453726.8518354,"req":"r2_cache_burst_free_off-0002","event":"user_first_token"}
+{"t":1453726.8518934,"req":"r2_cache_burst_free_off-0002","event":"user_last_token"}
+{"t":1453726.8519342,"req":"r2_cache_burst_free_off-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:93] [C:moshi:125]"}
+{"t":1453726.8553259,"req":"r2_cache_burst_free_off-0009","event":"step_end","step":"retrieve"}
+{"t":1453726.8572171,"req":"r2_cache_burst_free_off-0009","event":"degrade","what":"extractive_overload"}
+{"t":1453726.8606855,"req":"r2_cache_burst_free_off-0009","event":"user_first_token"}
+{"t":1453726.861042,"req":"r2_cache_burst_free_off-0009","event":"user_last_token"}
+{"t":1453726.8614755,"req":"r2_cache_burst_free_off-0009","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1453726.983792,"req":"r2_cache_burst_free_off-0010","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1453726.9840658,"req":"-","event":"pressure","wait_s":8.78,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453726.9841525,"req":"r2_cache_burst_free_off-0010","event":"step_start","step":"classify"}
+{"t":1453726.984197,"req":"r2_cache_burst_free_off-0010","event":"degrade","what":"classify_heuristic"}
+{"t":1453726.9842334,"req":"r2_cache_burst_free_off-0010","event":"step_end","step":"classify"}
+{"t":1453726.9843561,"req":"r2_cache_burst_free_off-0010","event":"step_start","step":"retrieve"}
+{"t":1453726.9918878,"req":"r2_cache_burst_free_off-0010","event":"step_end","step":"retrieve"}
+{"t":1453726.9940997,"req":"r2_cache_burst_free_off-0010","event":"degrade","what":"extractive_overload"}
+{"t":1453726.9971103,"req":"r2_cache_burst_free_off-0010","event":"user_first_token"}
+{"t":1453726.9972983,"req":"r2_cache_burst_free_off-0010","event":"user_last_token"}
+{"t":1453726.9973693,"req":"r2_cache_burst_free_off-0010","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1453727.7133989,"req":"-","event":"loop_lag","lag_ms":122.7}
+{"t":1453727.753218,"req":"r2_cache_burst_free_off-0011","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1453727.7534821,"req":"-","event":"pressure","wait_s":8.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453727.7535621,"req":"r2_cache_burst_free_off-0011","event":"step_start","step":"classify"}
+{"t":1453727.7536082,"req":"r2_cache_burst_free_off-0011","event":"degrade","what":"classify_heuristic"}
+{"t":1453727.7536446,"req":"r2_cache_burst_free_off-0011","event":"step_end","step":"classify"}
+{"t":1453727.7537793,"req":"r2_cache_burst_free_off-0011","event":"step_start","step":"retrieve"}
+{"t":1453727.7680338,"req":"r2_cache_burst_free_off-0011","event":"step_end","step":"retrieve"}
+{"t":1453727.7693826,"req":"r2_cache_burst_free_off-0011","event":"degrade","what":"extractive_overload"}
+{"t":1453727.7713096,"req":"r2_cache_burst_free_off-0011","event":"user_first_token"}
+{"t":1453727.7714451,"req":"r2_cache_burst_free_off-0011","event":"user_last_token"}
+{"t":1453727.771504,"req":"r2_cache_burst_free_off-0011","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"are missing , in my opinion .\" [C:attention:38]\n\"just this is what we are missing , in my opinion .\" [C:attention:39]\n\"Net (2-stage) (3,3)-DC 7.0 870M M4 + T1M4 + T26 + M4T1 + M4 1024 , 1024 , 1536 #FLOPs matched to GPT-3 XL Transformer Token GPT2 1792 4.6 1.3B T24 2048 SpaceByte++ Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (space) Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (1-stage) Byte 6-DC 8192 4\" [C:dynchunk:41]"}
+{"t":1453728.0984925,"req":"r2_cache_burst_free_off-0012","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1453728.0988324,"req":"-","event":"pressure","wait_s":7.67,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.098982,"req":"r2_cache_burst_free_off-0012","event":"step_start","step":"classify"}
+{"t":1453728.099037,"req":"r2_cache_burst_free_off-0012","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.0990787,"req":"r2_cache_burst_free_off-0012","event":"step_end","step":"classify"}
+{"t":1453728.0992352,"req":"r2_cache_burst_free_off-0012","event":"step_start","step":"retrieve"}
+{"t":1453728.1184208,"req":"r2_cache_burst_free_off-0012","event":"step_end","step":"retrieve"}
+{"t":1453728.1193416,"req":"r2_cache_burst_free_off-0012","event":"degrade","what":"extractive_overload"}
+{"t":1453728.1217369,"req":"r2_cache_burst_free_off-0012","event":"user_first_token"}
+{"t":1453728.1218718,"req":"r2_cache_burst_free_off-0012","event":"user_last_token"}
+{"t":1453728.1219279,"req":"r2_cache_burst_free_off-0012","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"<EOS> <pad> Figure 5: Many of the attention heads exhibit behaviour that seems related to the structure of the sentence.\" [C:attention:39]\n\"While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.\" [C:attention:25]\n\"MOSHI: Entropy is calculated using a formula where it\u2019s negative sum of the products of each possible outcome\u2019s probability and its logarithm to a base, usually base-2 or base-e.\" [C:moshi:181]"}
+{"t":1453728.3052439,"req":"r2_cache_burst_free_off-0013","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1453728.3054868,"req":"-","event":"pressure","wait_s":7.45,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.3055633,"req":"r2_cache_burst_free_off-0013","event":"step_start","step":"classify"}
+{"t":1453728.3056074,"req":"r2_cache_burst_free_off-0013","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.3056439,"req":"r2_cache_burst_free_off-0013","event":"step_end","step":"classify"}
+{"t":1453728.3059877,"req":"r2_cache_burst_free_off-0013","event":"step_start","step":"retrieve"}
+{"t":1453728.3247406,"req":"r2_cache_burst_free_off-0014","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1453728.3250925,"req":"-","event":"pressure","wait_s":7.44,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.3252328,"req":"r2_cache_burst_free_off-0014","event":"step_start","step":"classify"}
+{"t":1453728.3252932,"req":"r2_cache_burst_free_off-0014","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.3253259,"req":"r2_cache_burst_free_off-0014","event":"step_end","step":"classify"}
+{"t":1453728.3254252,"req":"r2_cache_burst_free_off-0014","event":"step_start","step":"retrieve"}
+{"t":1453728.3349401,"req":"r2_cache_burst_free_off-0013","event":"step_end","step":"retrieve"}
+{"t":1453728.3365612,"req":"r2_cache_burst_free_off-0013","event":"degrade","what":"extractive_overload"}
+{"t":1453728.3420523,"req":"r2_cache_burst_free_off-0013","event":"user_first_token"}
+{"t":1453728.3423028,"req":"r2_cache_burst_free_off-0013","event":"user_last_token"}
+{"t":1453728.3448095,"req":"r2_cache_burst_free_off-0013","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"(2023), the semantic evaluation uses the open-source DialoGPT model Zhang et al.\" [C:moshi:93]\n\"The first component of Moshi is Helium, a 7B parameter text LLM which is competitive with open-weights models trained with a similar compute budget.\" [C:moshi:125]\n\"substance cannabis 62.95 80.87 82.07 99.60 24.30 68.12 56.17 32.66 72.50 43.82 43.02 substance drug 65.79 93.50 97.37 100.0 34.00 89.18 77.27 48.99 94.74 63.83 63.98 substance tobacco 84.91 99.05 99.05 100.0 66.98 99.05 91.50 75.47 100.0 89.62 87.73 substance other 81.77 96.57 98.88 100.0 45.94 91.8\" [C:moshi:180]"}
+{"t":1453728.3488675,"req":"r2_cache_burst_free_off-0014","event":"step_end","step":"retrieve"}
+{"t":1453728.3504403,"req":"r2_cache_burst_free_off-0014","event":"degrade","what":"extractive_overload"}
+{"t":1453728.3521593,"req":"r2_cache_burst_free_off-0014","event":"user_first_token"}
+{"t":1453728.3522486,"req":"r2_cache_burst_free_off-0014","event":"user_last_token"}
+{"t":1453728.3522877,"req":"r2_cache_burst_free_off-0014","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1453728.4218273,"req":"r2_cache_burst_free_off-0015","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1453728.4220641,"req":"-","event":"pressure","wait_s":7.34,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.4223014,"req":"r2_cache_burst_free_off-0015","event":"step_start","step":"classify"}
+{"t":1453728.4223486,"req":"r2_cache_burst_free_off-0015","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.4223851,"req":"r2_cache_burst_free_off-0015","event":"step_end","step":"classify"}
+{"t":1453728.4225097,"req":"r2_cache_burst_free_off-0015","event":"step_start","step":"retrieve"}
+{"t":1453728.4292846,"req":"r2_cache_burst_free_off-0015","event":"step_end","step":"retrieve"}
+{"t":1453728.430139,"req":"r2_cache_burst_free_off-0015","event":"degrade","what":"extractive_overload"}
+{"t":1453728.4317637,"req":"r2_cache_burst_free_off-0015","event":"user_first_token"}
+{"t":1453728.4318866,"req":"r2_cache_burst_free_off-0015","event":"user_last_token"}
+{"t":1453728.4319245,"req":"r2_cache_burst_free_off-0015","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1453728.6665808,"req":"r2_cache_burst_free_off-0016","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1453728.6668283,"req":"-","event":"pressure","wait_s":7.09,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.6669097,"req":"r2_cache_burst_free_off-0016","event":"step_start","step":"classify"}
+{"t":1453728.6669535,"req":"r2_cache_burst_free_off-0016","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.6669865,"req":"r2_cache_burst_free_off-0016","event":"step_end","step":"classify"}
+{"t":1453728.6671009,"req":"r2_cache_burst_free_off-0016","event":"step_start","step":"retrieve"}
+{"t":1453728.6750591,"req":"r2_cache_burst_free_off-0016","event":"step_end","step":"retrieve"}
+{"t":1453728.680457,"req":"r2_cache_burst_free_off-0016","event":"degrade","what":"extractive_overload"}
+{"t":1453728.6836123,"req":"r2_cache_burst_free_off-0016","event":"user_first_token"}
+{"t":1453728.6838138,"req":"r2_cache_burst_free_off-0016","event":"user_last_token"}
+{"t":1453728.6838846,"req":"r2_cache_burst_free_off-0016","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1453728.7031036,"req":"r2_cache_burst_free_off-0017","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1453728.7035142,"req":"-","event":"pressure","wait_s":7.06,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453728.7036528,"req":"r2_cache_burst_free_off-0017","event":"step_start","step":"classify"}
+{"t":1453728.7037072,"req":"r2_cache_burst_free_off-0017","event":"degrade","what":"classify_heuristic"}
+{"t":1453728.7037456,"req":"r2_cache_burst_free_off-0017","event":"step_end","step":"classify"}
+{"t":1453728.7038759,"req":"r2_cache_burst_free_off-0017","event":"step_start","step":"retrieve"}
+{"t":1453728.7111702,"req":"r2_cache_burst_free_off-0017","event":"step_end","step":"retrieve"}
+{"t":1453728.7125824,"req":"r2_cache_burst_free_off-0017","event":"degrade","what":"extractive_overload"}
+{"t":1453728.7162822,"req":"r2_cache_burst_free_off-0017","event":"user_first_token"}
+{"t":1453728.7164429,"req":"r2_cache_burst_free_off-0017","event":"user_last_token"}
+{"t":1453728.7164915,"req":"r2_cache_burst_free_off-0017","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"ise, the same downsampler applies to boundary probabilities, compressing \ud835\udc5d\ud835\udc60into \ud835\udc43\ud835\udc60+1 for use in a dechunking layer (see Section 2.2.2).\" [C:dynchunk:22]\n\"(right) Dynamic Chunking (DC).\" [C:dynchunk:9]\n\"2.2 Dynamic Chunking (DC) H-Net learns chunking boundaries through end-to-end training, allowing it to identify semantically meaningful units adaptively.\" [C:dynchunk:19]"}
+{"t":1453729.0053583,"req":"r2_cache_burst_free_off-0018","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1453729.0056515,"req":"-","event":"pressure","wait_s":6.75,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1453729.0057563,"req":"r2_cache_burst_free_off-0018","event":"step_start","step":"classify"}
+{"t":1453729.0058027,"req":"r2_cache_burst_free_off-0018","event":"degrade","what":"classify_heuristic"}
+{"t":1453729.0058403,"req":"r2_cache_burst_free_off-0018","event":"step_end","step":"classify"}
+{"t":1453729.0059669,"req":"r2_cache_burst_free_off-0018","event":"step_start","step":"retrieve"}
+{"t":1453729.0157428,"req":"r2_cache_burst_free_off-0018","event":"step_end","step":"retrieve"}
+{"t":1453729.0175032,"req":"r2_cache_burst_free_off-0018","event":"decide","branch":"draft","conf":0.71,"k":4}
+{"t":1453729.2375554,"req":"r2_cache_burst_free_off-0019","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1453729.237799,"req":"-","event":"pressure","wait_s":19.69,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1453729.2380264,"req":"r2_cache_burst_free_off-0019","event":"step_start","step":"classify"}
+{"t":1453729.238093,"req":"r2_cache_burst_free_off-0019","event":"degrade","what":"classify_heuristic"}
+{"t":1453729.238145,"req":"r2_cache_burst_free_off-0019","event":"step_end","step":"classify"}
+{"t":1453729.2382975,"req":"r2_cache_burst_free_off-0019","event":"step_start","step":"retrieve"}
+{"t":1453729.26531,"req":"r2_cache_burst_free_off-0019","event":"step_end","step":"retrieve"}
+{"t":1453729.2662808,"req":"r2_cache_burst_free_off-0019","event":"degrade","what":"extractive_overload"}
+{"t":1453729.2680718,"req":"r2_cache_burst_free_off-0019","event":"user_first_token"}
+{"t":1453729.2681601,"req":"r2_cache_burst_free_off-0019","event":"user_last_token"}
+{"t":1453729.2682148,"req":"r2_cache_burst_free_off-0019","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"are missing , in my opinion .\" [C:attention:38]\n\"just this is what we are missing , in my opinion .\" [C:attention:39]\n\"Net (2-stage) (3,3)-DC 7.0 870M M4 + T1M4 + T26 + M4T1 + M4 1024 , 1024 , 1536 #FLOPs matched to GPT-3 XL Transformer Token GPT2 1792 4.6 1.3B T24 2048 SpaceByte++ Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (space) Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (1-stage) Byte 6-DC 8192 4\" [C:dynchunk:41]"}
+{"t":1453731.585448,"req":"-","event":"loop_lag","lag_ms":195.5}
+{"t":1453732.9908454,"req":"-","event":"loop_lag","lag_ms":132.6}
+{"t":1453734.976071,"req":"-","event":"loop_lag","lag_ms":202.3}
+{"t":1453735.0895748,"req":"r2_cache_burst_free_off-0018","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1755,"provider":"standin"}
+{"t":1453735.8520389,"req":"-","event":"loop_lag","lag_ms":712.6}
+{"t":1453736.3006388,"req":"-","event":"loop_lag","lag_ms":343.0}
+{"t":1453736.3207638,"req":"r2_cache_burst_free_off-0018","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"996","x-ratelimit-remaining-tokens":"1241","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"50"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per minute (TPM): Limit 8000, Used 8000, Requested 1544. Please try again in 49s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"}
+{"t":1453736.3213225,"req":"r2_cache_burst_free_off-0018","event":"giveup","step":"draft","reason":"429","attempt":1}
+{"t":1453736.3214269,"req":"r2_cache_burst_free_off-0018","event":"degrade","what":"extractive_overload","why":"429","wait_s":null,"remaining_s":9.7}
+{"t":1453736.5639631,"req":"r2_cache_burst_free_off-0018","event":"user_first_token"}
+{"t":1453736.5653897,"req":"r2_cache_burst_free_off-0018","event":"user_last_token"}
+{"t":1453736.5655215,"req":"r2_cache_burst_free_off-0018","event":"done","status":"extractive_overload","level":1,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1453736.574394,"req":"-","event":"loop_lag","lag_ms":223.6}
+{"t":1453737.9927031,"req":"-","event":"loop_lag","lag_ms":205.2}

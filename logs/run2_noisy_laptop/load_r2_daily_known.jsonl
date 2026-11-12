@@ -1,0 +1,163 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.3, "duration": 150.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "r2_daily_known", "drain": 0}, "n": 54, "perf0": 1452936.8338164}
+{"t": 1452949.0835786, "req": "r2_daily_known-0000", "event": "arrive", "sched": 11.875146699836478, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1452951.0157765, "req": "r2_daily_known-0001", "event": "arrive", "sched": 13.80734539986588, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1452951.0192708, "req": "r2_daily_known-0002", "event": "arrive", "sched": 13.810841799946502, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1452952.395795, "req": "r2_daily_known-0000", "event": "first_byte"}
+{"t": 1452952.4033248, "req": "r2_daily_known-0000", "event": "end", "status": "answered"}
+{"t": 1452952.584558, "req": "r2_daily_known-0001", "event": "first_byte"}
+{"t": 1452952.5917938, "req": "r2_daily_known-0001", "event": "end", "status": "answered"}
+{"t": 1452952.5928007, "req": "r2_daily_known-0002", "event": "first_byte"}
+{"t": 1452952.6024079, "req": "r2_daily_known-0002", "event": "end", "status": "answered"}
+{"t": 1452958.5478448, "req": "r2_daily_known-0003", "event": "arrive", "sched": 21.339413499925286, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1452960.8947427, "req": "r2_daily_known-0003", "event": "first_byte"}
+{"t": 1452960.9031054, "req": "r2_daily_known-0003", "event": "end", "status": "answered"}
+{"t": 1452968.7427468, "req": "r2_daily_known-0004", "event": "arrive", "sched": 31.534315599827096, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1452970.8417231, "req": "r2_daily_known-0005", "event": "arrive", "sched": 33.633291400037706, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1452972.5629707, "req": "r2_daily_known-0004", "event": "first_byte"}
+{"t": 1452972.5707653, "req": "r2_daily_known-0004", "event": "end", "status": "answered"}
+{"t": 1452974.9110047, "req": "r2_daily_known-0006", "event": "arrive", "sched": 37.70257209986448, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1452974.9140748, "req": "r2_daily_known-0007", "event": "arrive", "sched": 37.70564759988338, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1452975.8514435, "req": "r2_daily_known-0005", "event": "first_byte"}
+{"t": 1452975.8570272, "req": "r2_daily_known-0005", "event": "end", "status": "answered"}
+{"t": 1452976.8061932, "req": "r2_daily_known-0006", "event": "first_byte"}
+{"t": 1452976.8153296, "req": "r2_daily_known-0006", "event": "end", "status": "answered"}
+{"t": 1452977.2257144, "req": "r2_daily_known-0007", "event": "first_byte"}
+{"t": 1452977.2346834, "req": "r2_daily_known-0007", "event": "end", "status": "answered"}
+{"t": 1452979.6643944, "req": "r2_daily_known-0008", "event": "arrive", "sched": 42.455958700040355, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1452980.4536571, "req": "r2_daily_known-0008", "event": "first_byte"}
+{"t": 1452980.4640298, "req": "r2_daily_known-0008", "event": "end", "status": "answered"}
+{"t": 1452980.5639316, "req": "r2_daily_known-0009", "event": "arrive", "sched": 43.355496499920264, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1452980.6485465, "req": "r2_daily_known-0010", "event": "arrive", "sched": 43.440114999888465, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1452981.8567361, "req": "r2_daily_known-0009", "event": "first_byte"}
+{"t": 1452981.8672463, "req": "r2_daily_known-0009", "event": "end", "status": "answered"}
+{"t": 1452982.1919702, "req": "r2_daily_known-0010", "event": "first_byte"}
+{"t": 1452982.2023052, "req": "r2_daily_known-0010", "event": "end", "status": "answered"}
+{"t": 1452985.8480796, "req": "r2_daily_known-0011", "event": "arrive", "sched": 48.63964660000056, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1452987.199659, "req": "r2_daily_known-0011", "event": "first_byte"}
+{"t": 1452987.2063242, "req": "r2_daily_known-0011", "event": "end", "status": "answered"}
+{"t": 1452987.2718052, "req": "r2_daily_known-0012", "event": "arrive", "sched": 50.06337499991059, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1452989.0973906, "req": "r2_daily_known-0012", "event": "first_byte"}
+{"t": 1452989.1040084, "req": "r2_daily_known-0012", "event": "end", "status": "answered"}
+{"t": 1452990.5135997, "req": "r2_daily_known-0013", "event": "arrive", "sched": 53.30516889994033, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1452992.9401797, "req": "r2_daily_known-0013", "event": "first_byte"}
+{"t": 1452992.9523046, "req": "r2_daily_known-0013", "event": "end", "status": "answered"}
+{"t": 1452993.706381, "req": "r2_daily_known-0014", "event": "arrive", "sched": 56.49794979998842, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1452994.789455, "req": "r2_daily_known-0015", "event": "arrive", "sched": 57.58102549985051, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1452995.2464834, "req": "r2_daily_known-0016", "event": "arrive", "sched": 58.03805570001714, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1452996.0904357, "req": "r2_daily_known-0017", "event": "arrive", "sched": 58.88200609991327, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1452996.404531, "req": "r2_daily_known-0018", "event": "arrive", "sched": 59.196095699910074, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1452998.1974856, "req": "r2_daily_known-0019", "event": "arrive", "sched": 60.98905580001883, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453002.0877841, "req": "r2_daily_known-0015", "event": "first_byte"}
+{"t": 1453002.1045844, "req": "r2_daily_known-0015", "event": "end", "status": "answered"}
+{"t": 1453004.0180615, "req": "r2_daily_known-0017", "event": "first_byte"}
+{"t": 1453004.0278037, "req": "r2_daily_known-0017", "event": "end", "status": "extractive_daily"}
+{"t": 1453004.0499634, "req": "r2_daily_known-0016", "event": "first_byte"}
+{"t": 1453004.0764192, "req": "r2_daily_known-0016", "event": "end", "status": "answered"}
+{"t": 1453004.1299632, "req": "r2_daily_known-0019", "event": "first_byte"}
+{"t": 1453004.1403129, "req": "r2_daily_known-0019", "event": "end", "status": "answered"}
+{"t": 1453004.1406242, "req": "r2_daily_known-0018", "event": "first_byte"}
+{"t": 1453004.1506216, "req": "r2_daily_known-0018", "event": "end", "status": "answered"}
+{"t": 1453008.7669089, "req": "r2_daily_known-0020", "event": "arrive", "sched": 71.55847679986618, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1453008.7882377, "req": "r2_daily_known-0020", "event": "first_byte"}
+{"t": 1453008.7989364, "req": "r2_daily_known-0020", "event": "end", "status": "extractive_daily"}
+{"t": 1453008.9661558, "req": "r2_daily_known-0021", "event": "arrive", "sched": 71.75772410002537, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453008.9980612, "req": "r2_daily_known-0021", "event": "first_byte"}
+{"t": 1453009.0042722, "req": "r2_daily_known-0021", "event": "end", "status": "extractive_daily"}
+{"t": 1453010.7482806, "req": "r2_daily_known-0014", "event": "first_byte"}
+{"t": 1453010.7531748, "req": "r2_daily_known-0014", "event": "end", "status": "extractive_overload"}
+{"t": 1453011.6210245, "req": "r2_daily_known-0022", "event": "arrive", "sched": 74.41259429999627, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1453011.7859438, "req": "r2_daily_known-0022", "event": "first_byte"}
+{"t": 1453011.7982577, "req": "r2_daily_known-0022", "event": "end", "status": "extractive_daily"}
+{"t": 1453013.6656195, "req": "r2_daily_known-0023", "event": "arrive", "sched": 76.4571910998784, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1453013.6829937, "req": "r2_daily_known-0023", "event": "first_byte"}
+{"t": 1453013.6877137, "req": "r2_daily_known-0023", "event": "end", "status": "extractive_daily"}
+{"t": 1453016.7314436, "req": "r2_daily_known-0024", "event": "arrive", "sched": 79.52301019988954, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1453016.755705, "req": "r2_daily_known-0024", "event": "first_byte"}
+{"t": 1453016.7660001, "req": "r2_daily_known-0024", "event": "end", "status": "extractive_daily"}
+{"t": 1453017.1614985, "req": "r2_daily_known-0025", "event": "arrive", "sched": 79.95306780003011, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1453018.5079646, "req": "r2_daily_known-0025", "event": "first_byte"}
+{"t": 1453018.5404479, "req": "r2_daily_known-0025", "event": "end", "status": "extractive_daily"}
+{"t": 1453019.9189194, "req": "r2_daily_known-0026", "event": "arrive", "sched": 82.71048879995942, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1453020.1395722, "req": "r2_daily_known-0026", "event": "first_byte"}
+{"t": 1453020.1483762, "req": "r2_daily_known-0026", "event": "end", "status": "extractive_daily"}
+{"t": 1453020.9826705, "req": "r2_daily_known-0027", "event": "arrive", "sched": 83.77424179995432, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1453021.0039349, "req": "r2_daily_known-0027", "event": "first_byte"}
+{"t": 1453021.0076159, "req": "r2_daily_known-0027", "event": "end", "status": "extractive_daily"}
+{"t": 1453023.6828701, "req": "r2_daily_known-0028", "event": "arrive", "sched": 86.47443780000322, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1453023.7095473, "req": "r2_daily_known-0028", "event": "first_byte"}
+{"t": 1453023.7189431, "req": "r2_daily_known-0028", "event": "end", "status": "extractive_daily"}
+{"t": 1453027.1336031, "req": "r2_daily_known-0029", "event": "arrive", "sched": 89.9251713999547, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1453027.1598335, "req": "r2_daily_known-0029", "event": "first_byte"}
+{"t": 1453027.1744681, "req": "r2_daily_known-0029", "event": "end", "status": "extractive_daily"}
+{"t": 1453029.7798681, "req": "r2_daily_known-0030", "event": "arrive", "sched": 92.57143649994396, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1453030.5525243, "req": "r2_daily_known-0030", "event": "first_byte"}
+{"t": 1453030.5593933, "req": "r2_daily_known-0030", "event": "end", "status": "extractive_daily"}
+{"t": 1453030.7795651, "req": "r2_daily_known-0031", "event": "arrive", "sched": 93.57113489997573, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1453030.8094305, "req": "r2_daily_known-0031", "event": "first_byte"}
+{"t": 1453030.8173867, "req": "r2_daily_known-0031", "event": "end", "status": "extractive_daily"}
+{"t": 1453031.7304573, "req": "r2_daily_known-0032", "event": "arrive", "sched": 94.52202749997377, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1453031.7535805, "req": "r2_daily_known-0032", "event": "first_byte"}
+{"t": 1453031.7575995, "req": "r2_daily_known-0032", "event": "end", "status": "extractive_daily"}
+{"t": 1453041.1414991, "req": "r2_daily_known-0033", "event": "arrive", "sched": 103.93306920002215, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1453041.189299, "req": "r2_daily_known-0033", "event": "first_byte"}
+{"t": 1453041.2242849, "req": "r2_daily_known-0033", "event": "end", "status": "extractive_daily"}
+{"t": 1453043.129127, "req": "r2_daily_known-0034", "event": "arrive", "sched": 105.92069669999182, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1453043.5051114, "req": "r2_daily_known-0034", "event": "first_byte"}
+{"t": 1453043.6413476, "req": "r2_daily_known-0034", "event": "end", "status": "extractive_daily"}
+{"t": 1453045.3401083, "req": "r2_daily_known-0035", "event": "arrive", "sched": 108.13167549995705, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1453045.5201686, "req": "r2_daily_known-0036", "event": "arrive", "sched": 108.31173860002309, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1453046.3990969, "req": "r2_daily_known-0035", "event": "first_byte"}
+{"t": 1453046.4719113, "req": "r2_daily_known-0035", "event": "end", "status": "extractive_daily"}
+{"t": 1453046.4722446, "req": "r2_daily_known-0036", "event": "first_byte"}
+{"t": 1453046.6684406, "req": "r2_daily_known-0036", "event": "end", "status": "extractive_daily"}
+{"t": 1453048.0144423, "req": "r2_daily_known-0037", "event": "arrive", "sched": 110.80601099994965, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1453048.0176969, "req": "r2_daily_known-0038", "event": "arrive", "sched": 110.80926839984022, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1453048.4838161, "req": "r2_daily_known-0039", "event": "arrive", "sched": 111.27538859983906, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1453048.9233259, "req": "r2_daily_known-0037", "event": "first_byte"}
+{"t": 1453049.1886374, "req": "r2_daily_known-0038", "event": "first_byte"}
+{"t": 1453049.7104269, "req": "r2_daily_known-0037", "event": "end", "status": "extractive_daily"}
+{"t": 1453049.7108234, "req": "r2_daily_known-0038", "event": "end", "status": "extractive_daily"}
+{"t": 1453049.7115957, "req": "r2_daily_known-0039", "event": "first_byte"}
+{"t": 1453050.0345951, "req": "r2_daily_known-0039", "event": "end", "status": "extractive_daily"}
+{"t": 1453050.4046895, "req": "r2_daily_known-0040", "event": "arrive", "sched": 113.19625799986534, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1453051.7797361, "req": "r2_daily_known-0040", "event": "first_byte"}
+{"t": 1453052.0620338, "req": "r2_daily_known-0040", "event": "end", "status": "extractive_daily"}
+{"t": 1453052.0624798, "req": "r2_daily_known-0041", "event": "arrive", "sched": 114.85405119997449, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1453052.1991789, "req": "r2_daily_known-0042", "event": "arrive", "sched": 114.99074969999492, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1453052.7494153, "req": "r2_daily_known-0041", "event": "first_byte"}
+{"t": 1453052.7578103, "req": "r2_daily_known-0041", "event": "end", "status": "extractive_daily"}
+{"t": 1453052.7649456, "req": "r2_daily_known-0042", "event": "first_byte"}
+{"t": 1453052.7739496, "req": "r2_daily_known-0042", "event": "end", "status": "extractive_daily"}
+{"t": 1453055.3140129, "req": "r2_daily_known-0043", "event": "arrive", "sched": 118.10558219999075, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1453055.7111397, "req": "r2_daily_known-0044", "event": "arrive", "sched": 118.50271030003205, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453055.757784, "req": "r2_daily_known-0043", "event": "first_byte"}
+{"t": 1453055.7901905, "req": "r2_daily_known-0043", "event": "end", "status": "extractive_daily"}
+{"t": 1453057.2165322, "req": "r2_daily_known-0044", "event": "first_byte"}
+{"t": 1453057.4690402, "req": "r2_daily_known-0044", "event": "end", "status": "extractive_daily"}
+{"t": 1453058.6008737, "req": "r2_daily_known-0045", "event": "arrive", "sched": 121.39244299987331, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1453058.8845534, "req": "r2_daily_known-0045", "event": "first_byte"}
+{"t": 1453058.8917282, "req": "r2_daily_known-0045", "event": "end", "status": "extractive_daily"}
+{"t": 1453058.9475747, "req": "r2_daily_known-0046", "event": "arrive", "sched": 121.73914349987172, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1453058.9744933, "req": "r2_daily_known-0046", "event": "first_byte"}
+{"t": 1453058.9841135, "req": "r2_daily_known-0046", "event": "end", "status": "extractive_daily"}
+{"t": 1453068.3052181, "req": "r2_daily_known-0047", "event": "arrive", "sched": 131.0967865998391, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1453069.0816445, "req": "r2_daily_known-0047", "event": "first_byte"}
+{"t": 1453069.4798196, "req": "r2_daily_known-0047", "event": "end", "status": "extractive_daily"}
+{"t": 1453073.10328, "req": "r2_daily_known-0048", "event": "arrive", "sched": 135.89485020004213, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1453073.1198285, "req": "r2_daily_known-0048", "event": "first_byte"}
+{"t": 1453073.1237384, "req": "r2_daily_known-0048", "event": "end", "status": "extractive_daily"}
+{"t": 1453083.8054767, "req": "r2_daily_known-0049", "event": "arrive", "sched": 146.59704449982382, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1453084.1047684, "req": "r2_daily_known-0050", "event": "arrive", "sched": 146.8963360998314, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1453085.2914565, "req": "r2_daily_known-0049", "event": "first_byte"}
+{"t": 1453085.3220893, "req": "r2_daily_known-0051", "event": "arrive", "sched": 148.11365829990245, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1453085.3392972, "req": "r2_daily_known-0049", "event": "end", "status": "extractive_daily"}
+{"t": 1453085.3423827, "req": "r2_daily_known-0050", "event": "first_byte"}
+{"t": 1453085.3891557, "req": "r2_daily_known-0050", "event": "end", "status": "extractive_daily"}
+{"t": 1453085.4148632, "req": "r2_daily_known-0052", "event": "arrive", "sched": 148.20643289992586, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453085.4564538, "req": "r2_daily_known-0051", "event": "first_byte"}
+{"t": 1453085.4886368, "req": "r2_daily_known-0051", "event": "end", "status": "extractive_daily"}
+{"t": 1453085.5378883, "req": "r2_daily_known-0052", "event": "first_byte"}
+{"t": 1453085.5481365, "req": "r2_daily_known-0052", "event": "end", "status": "extractive_daily"}
+{"t": 1453086.5152393, "req": "r2_daily_known-0053", "event": "arrive", "sched": 149.30680909985676, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1453086.5379227, "req": "r2_daily_known-0053", "event": "first_byte"}
+{"t": 1453086.5491531, "req": "r2_daily_known-0053", "event": "end", "status": "extractive_daily"}

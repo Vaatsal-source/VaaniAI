@@ -26,5 +26,19 @@
     "rpd": 1000,
     "retry_after_s": 2,
     "rpd_refill_s_per_req": 86.4
+  },
+  "round2": {
+    "concurrency_file": "groq_probe2_concurrency_1794497794.jsonl",
+    "baseline_20B_median_ttft_ms_quiet": 556.3533999957144,
+    "median_ttft_ms_by_in_flight": {
+      "4": 495.01290009357035,
+      "8": 935.9489999478683,
+      "12": 1005.1939999684691,
+      "16": 662.1403000317514
+    },
+    "slowdown_per_inflight_refit": 0.04002903835012741,
+    "slowdown_per_inflight_round1": 0.06245610785606031,
+    "groq_requests_without_a_5xx_in_these_two_probes": 160,
+    "note": "Groq returned no 5xx in any real request in logs/ (see README appendix A); p_fail in the stand-in is a deliberately pessimistic assumption, not a measurement."
   }
 }

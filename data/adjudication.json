@@ -1,0 +1,51 @@
+{
+ "_about": "Hand reading of answers that the frozen regex rubric scored in a way a person would not. Made AFTER seeing the results, so it is reported next to, never instead of, the rubric score. verdict: correct = the answer is right and its citation page is a gold page (score becomes 1.0); wrong = stays 0; exclude = the question itself is defective and is left out of the denominator.",
+ "r2_hard2_v2_20B_run1|n12": {
+  "verdict": "correct",
+  "reason": "32 000 and 2 048 written with a space, which the pattern for 32000 / 2048 rejects; cited moshi:24, pages 8-9, gold page 8"
+ },
+ "r2_hard2_v2_120B_run1|n12": {
+  "verdict": "correct",
+  "reason": "same: 32 000 and 2 048 with a space; cited moshi:24 and the table chunk moshi:t0"
+ },
+ "r2_hard2_v2_120B_run1|n10": {
+  "verdict": "correct",
+  "reason": "'500 k' written with a space, which the pattern rejects; cited moshi:59, page 20, gold page 20"
+ },
+ "r2_hard2_v2_120B_run1|n08": {
+  "verdict": "wrong",
+  "reason": "says 38.1 x 10^18 FLOPs: 38.1 is the English-to-French BLEU in the same table row, the cost is 3.3 x 10^18. The number is in the cited chunk, so the deterministic check cannot see the wrong column"
+ },
+ "r2_hard2_v2_20B_run1|u06": {
+  "verdict": "exclude",
+  "reason": "defective question: the Moshi paper does report speaker consistency of about 98-99% (Table 14, page 38); the model described exactly that, so calling it a confident invention is wrong, and calling the question unanswerable is wrong too"
+ },
+ "r2_hard2_v2_120B_run1|u06": {
+  "verdict": "exclude",
+  "reason": "same defective question"
+ },
+ "r2_hard2_v2_20B_rep_a|u06": {
+  "verdict": "exclude",
+  "reason": "same defective question"
+ },
+ "r2_hard2_v2_20B_rep_b|u06": {
+  "verdict": "exclude",
+  "reason": "same defective question"
+ },
+ "r2_hard2_v2_20B_rep_a|n12": {
+  "verdict": "correct",
+  "reason": "same as run 1"
+ },
+ "r2_hard2_v2_20B_rep_b|n12": {
+  "verdict": "correct",
+  "reason": "same as run 1"
+ },
+ "r2_hard2_gemini_run1|u06": {
+  "verdict": "exclude",
+  "reason": "same defective question"
+ },
+ "r2_hard2_gemini_run1|u03": {
+  "verdict": "exclude",
+  "reason": "this question took 1,427 s and ended as a quoted-passages reply: the laptop was asleep for most of it (the same kind of gap as eval_suspendartifact_*), so it measures the machine and not Gemini"
+ }
+}

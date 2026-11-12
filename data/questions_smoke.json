@@ -1,0 +1,75 @@
+[
+ {
+  "id": "q01",
+  "type": "answerable",
+  "q": "How many attention heads does the base Transformer use, and what is the dimension of each head's keys?",
+  "paper": [
+   "attention"
+  ],
+  "pages": [
+   5
+  ],
+  "must": [
+   [
+    "\\b8\\b",
+    "eight"
+   ],
+   [
+    "\\b64\\b"
+   ]
+  ]
+ },
+ {
+  "id": "q06",
+  "type": "answerable",
+  "q": "What BLEU score did the big Transformer reach on WMT 2014 English-to-German translation?",
+  "paper": [
+   "attention"
+  ],
+  "pages": [
+   8
+  ],
+  "must": [
+   [
+    "28\\.4"
+   ]
+  ]
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "q": "How many parameters does the big Transformer model have?",
+  "paper": [
+   "attention"
+  ],
+  "pages": [
+   9
+  ],
+  "must": [
+   [
+    "213"
+   ]
+  ]
+ },
+ {
+  "id": "q17",
+  "type": "unanswerable",
+  "q": "What BLEU score did the Transformer achieve on English-to-Chinese translation?",
+  "paper": [],
+  "pages": [],
+  "forbid": [
+   "\\bBLEU (score )?(of|was|is) \\d"
+  ]
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "q": "How many TPUs were used to train the Transformer base model?",
+  "paper": [],
+  "pages": [],
+  "forbid": [
+   "\\b\\d+ TPUs?\\b",
+   "TPU v\\d"
+  ]
+ }
+]

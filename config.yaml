@@ -9,9 +9,15 @@ providers:
   standin:
     base_url: http://127.0.0.1:8099/v1
     key_env: ""
+  standin_fb:        # a second "provider" on the same stand-in (its own model names => its own quota pools)
+    base_url: http://127.0.0.1:8099/v1
+    key_env: ""
   gemini:            # secondary fallback (OpenAI-compatible endpoint)
     base_url: https://generativelanguage.googleapis.com/v1beta/openai
     key_env: GEMINI_API_KEY
+    read_timeout_s: 90                     # measured: some streams were silent for more than 30 s before the first byte
+    call_timeout_s: 90                     # measured: one-word replies took 1.3-22 s, so Groq's 12 s cut-off killed most calls
+    extra_body: {reasoning_effort: none}   # measured: "none" avoids ~50 hidden thinking tokens per call on gemini-3.1-flash-lite
 active_provider: groq
 
 models:
@@ -52,3 +58,48 @@ retries:
   base_backoff_s: 0.5
   max_backoff_s: 8
   retry_budget_frac: 0.2     # retries may be at most 20% of first attempts (rolling)
+
+# ---- round 2 additions ----------------------------------------------------------------
+# Papers are data, not code: add an entry here (and see docs/ADD_A_PAPER.md) to add a paper.
+papers:
+  attention:
+    arxiv: 1706.03762v7
+    desc: Attention Is All You Need
+    keywords: "transformer|attention is all|multi-?head|bleu|wmt|positional|label smoothing|dot-product"
+  moshi:
+    arxiv: 2410.00037v1
+    desc: Moshi speech-text model
+    keywords: "moshi|mimi|helium|full-duplex|depth transformer|kyutai|spoken|audio|speech|quantizer"
+  dynchunk:
+    arxiv: 2507.07955v2
+    desc: H-Net dynamic chunking
+    keywords: "h-?net|dynamic chunk|chunk|routing module|dechunk|smoothing|ratio loss|byte"
+
+ingest:
+  version: v2            # v1 = original chunker (round 1); v2 = reference filter fixed + table rows rebuilt from page layout
+
+tokens:
+  # Measured (logs/groq_probe2_accounting_*): Groq charges the tokens actually used, not max_tokens.
+  chars_per_token: 3.3   # prompt size estimate, from real prompt_tokens vs characters sent
+  expected_completion: {classify: 60, rewrite: 30, draft: 120, verify: 40}
+  refund_on_success: true
+
+pipeline_policy:
+  degrade_frac: 0.15     # expected wait < this share of remaining time -> normal path
+  shed_frac: 0.40        # expected wait >= this share -> no model call (quoted passages / honest decline)
+  commit_admitted: true  # count the model calls that already-admitted requests will still make
+
+cache:
+  enabled: false         # exact-question answer cache: pinned off for experiments; set true (or RELAY_CACHE=1) in production
+  max_entries: 500
+  ttl_s: 3600
+  join_wait_frac: 0.5    # identical question already being answered: wait for it, but at most this share of the remaining time
+
+fallback:
+  # Second provider used when the first one's daily budget is gone. Never used unless enabled.
+  enabled: false
+  provider: gemini
+  # gemini-2.5-* returned 404 "no longer available to new users". 3.5-flash-lite was slower (4-22 s for one word) and
+  # rejects reasoning_effort=none, so the cheaper 3.1 model does both jobs.
+  models: {small: gemini-3.1-flash-lite, large: gemini-3.1-flash-lite}
+  limits: {rpm: 13, tpm: 200000, rpd: 400, tpd: 0, daily_reserve_frac: 0.1}   # free tier measured: 15 requests/minute

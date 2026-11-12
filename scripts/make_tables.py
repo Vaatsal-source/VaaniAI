@@ -94,7 +94,9 @@ def qrow(tag, label, model, qset):
     n = len(res)
     return {"setting": label, "drafter": model, "question set": qset, "n": n,
             "quality %": f"{100 * sum(r['score'] for r in res) / n:.1f}",
-            "confident-wrong": sum(r["confident_wrong"] for r in res), "declined": sum(r["status"] == "declined" for r in res),
+            "unanswerable question answered": sum(r["confident_wrong"] for r in res),
+            "answerable question answered with wrong or missing facts": sum(r["type"] != "unanswerable" and r["status"] == "answered" and r["score"] == 0 for r in res),
+            "declined": sum(r["status"] == "declined" for r in res),
             "tokens/answer (API usage, all calls)": f"{np.mean(list(tok.values())):.0f}",
             "provider draft TTFT p50 ms": f"{np.median(dt):.1f}"}
 Q = [("q_bm25_1200_k5", "A bm25 1200/200 k5", "gpt-oss-120b", "easy 20"),
@@ -199,3 +201,12 @@ if before.exists():
     (OUT / "snip_before_fix.md").write_text(pre.to_markdown(index=False, disable_numparse=True) + "\n", encoding="utf-8")
     A.LOGDIR = LOGS
     print("wrote before-fix snippet")
+
+# ---------------- round 2 ----------------
+import make_tables_r2 as R2
+n0 = len(SN)
+R2.run(md, SN, OUT)
+for k, v in SN.items():
+    (OUT / f"snip_{k}.md").write_text(v + "\n", encoding="utf-8")
+(OUT / "tables.md").write_text("\n".join(md), encoding="utf-8")
+print("wrote round-2 tables and", len(SN) - n0, "snippets")

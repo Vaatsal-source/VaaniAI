@@ -25,6 +25,31 @@ jobs:
       - name: Unit tests (limiter, citation checker, 429 parsing)
         run: pytest -q
 
+  quality-guard:
+    # No model calls: retrieval is run exactly as the pipeline runs it and compared with data/quality_baseline.json.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install dependencies
+        run: grep -v '^sentence-transformers' requirements.txt > ci-requirements.txt && pip install -r ci-requirements.txt
+      - name: Papers match the recorded hashes
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib
+          m = json.load(open("papers/MANIFEST.json"))
+          for k, v in m.items():
+              h = hashlib.sha256(pathlib.Path("papers", v["file"]).read_bytes()).hexdigest()
+              assert h == v["sha256"], f"{k}: pdf differs from papers/MANIFEST.json"
+          print("papers ok")
+          PY
+      - name: Retrieval quality has not dropped
+        run: python scripts/check_quality.py
+
   tables-match-logs:
     runs-on: ubuntu-latest
     steps:
@@ -46,7 +71,7 @@ jobs:
             echo "README.md is generated from README.template.md. Edit the template, then run: python scripts/build_readme.py"; exit 1; }
       - name: Fail if the README still has unfinished TODO markers or unfilled table slots
         run: |
-          if grep -nE 'TODO\(|\{\{snip_' README.md; then exit 1; fi
+          if grep -nE 'TODO\(|\{\{(snip_|TEXT_)' README.md; then exit 1; fi
 
   no-secrets:
     runs-on: ubuntu-latest

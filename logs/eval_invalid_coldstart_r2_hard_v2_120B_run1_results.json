@@ -1,0 +1,83 @@
+[
+ {
+  "id": "h01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 5002.6,
+  "text": "The original attention divides the query\u2011key dot products by \\( \\sqrt{d_k} \\) because without this scaling the dot products can become large in magnitude (especially for large \\(d_k\\)), pushing the softmax into regions with extremely small gradients. Scaling by \\(1/\\sqrt{d_k}\\) keeps the values in a range where the softmax remains sensitive and gradients are stable[C:attention:9]. The same reasoning is reiterated: dot\u2011product magnitudes grow with \\(d_k\\), so scaling counteracts this effect[C:attention:10]."
+ },
+ {
+  "id": "h02",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 1961.7,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"In row (E) we replace our sinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical results to the base model.\" [C:attention:26]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]"
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 12201.8,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The Transformer (big) model trained for English-to-French used dropout rate Pdrop = 0.1, instead of 0.3.\" [C:attention:23]\n\"41.29 7.7 \u00b7 1019 1.2 \u00b7 1021 Transformer (base model) 27.3 38.1 3.3 \u00b7 1018 Transformer (big) 28.4 41.8 2.3 \u00b7 1019 Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized.\" [C:attention:22]\n\"Model BLEU Training Cost (FLOPs) EN-DE EN-FR EN-DE EN-FR ByteNet [18] 23.75 Deep-Att + PosUnk [39] 39.2 1.0 \u00b7 1020 GNMT + RL [38] 24.6 39.92 2.3 \u00b7 1019 1.4 \u00b7 1020 ConvS2S [9] 25.16 40.46 9.6 \u00b7 1018 1.5 \u00b7 1020 MoE [32] 26.03 40.56 2.0 \u00b7 1019 1.2 \u00b7 1020 Deep-Att + PosUnk Ensemble [39] 40.4 8.0 \u00b7 1020 \" [C:attention:21]"
+ },
+ {
+  "id": "h04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 5749.2,
+  "text": "Moshi\u2019s Depth Transformer has 6 layers and a model dimension of 1024 [C:moshi:41] [C:moshi:t0]."
+ },
+ {
+  "id": "h05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 13506.4,
+  "text": "The smoothing module is introduced to turn the discrete chunk\u2011boundary decisions into differentiable, interpolated representations, thereby restoring gradient flow that is blocked by the discrete nature of chunk boundaries and enabling stable training dynamics[C:dynchunk:22]. It is shown to be essential for maintaining stable training; without it, compression\u2011ratio fluctuations occur[C:dynchunk:65]."
+ },
+ {
+  "id": "h06",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 866.8,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"H-Net\u2019s core is a novel dynamic chunking (DC) mechanism which interfaces between the main network and the encoder/decoder networks, learning how to segment data while using st\" [C:dynchunk:6]\n\"H-Net is the first dynamic hierarchical model that can recursively nest its chunking strategy (see Table 6 and Appendix A).\" [C:dynchunk:78]\n\"+\" Dynamic Chunking n _ e \u2133 Figure 1: (left) Architectural overview of H-Net with a two-stage hierarchical design (\ud835\udc46= 2).\" [C:dynchunk:8]"
+ },
+ {
+  "id": "h07",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 12161.0,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Additionally, we show how our Inner Monologue method allows designing streaming TTS and streaming ASR just by changing the delay between text and audio tokens.\" [C:moshi:127]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"Not only this \u201cInner Monologue\u201d method significantly improves the linguistic quality of generated speech, but we also illustrate how it can provide streaming speech recognition and text-to-speech.\" [C:moshi:1]"
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 1157.5,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]\n\"For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds.\" [C:attention:20]"
+ },
+ {
+  "id": "h09",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 5510.2,
+  "text": "The papers don't say. They provide BLEU scores for English\u2011German and English\u2011French, but no information on English\u2011Czech translation."
+ }
+]

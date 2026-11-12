@@ -1,0 +1,151 @@
+{"t":1454189.5506428,"req":"n01","event":"enqueue","question":"What are the Adam optimizer settings (beta1 and beta2) used to train the Transfo"}
+{"t":1454189.5510237,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454189.5511168,"req":"n01","event":"step_start","step":"classify"}
+{"t":1454189.5513762,"req":"n01","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":186,"provider":"gemini"}
+{"t":1454191.6705335,"req":"n01","event":"first_token","step":"classify","ttft_ms":2119.0}
+{"t":1454191.9489071,"req":"n01","event":"last_token","step":"classify","total_ms":2397.4,"prompt_tokens":112,"completion_tokens":61,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454191.9647438,"req":"n01","event":"step_end","step":"classify"}
+{"t":1454191.9658814,"req":"n01","event":"step_start","step":"retrieve"}
+{"t":1454191.9758396,"req":"n01","event":"step_end","step":"retrieve"}
+{"t":1454191.976735,"req":"n01","event":"decide","branch":"loop_rewrite","conf":0.57}
+{"t":1454191.9769207,"req":"n01","event":"send","step":"rewrite","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":92,"provider":"gemini"}
+{"t":1454222.0212098,"req":"n01","event":"retry","step":"rewrite","attempt":1,"reason":"ReadTimeout","backoff_ms":363.3}
+{"t":1454222.3965758,"req":"n01","event":"send","step":"rewrite","model":"gemini-3.1-flash-lite","attempt":2,"est_tokens":92,"provider":"gemini"}
+{"t":1454231.6361035,"req":"n01","event":"first_token","step":"rewrite","ttft_ms":9239.3}
+{"t":1454231.8472659,"req":"n01","event":"last_token","step":"rewrite","total_ms":9450.5,"prompt_tokens":46,"completion_tokens":18,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454231.8478783,"req":"n01","event":"step_start","step":"retrieve"}
+{"t":1454231.9225257,"req":"n01","event":"step_end","step":"retrieve"}
+{"t":1454231.9249831,"req":"n01","event":"decide","branch":"tool_fetch_section"}
+{"t":1454231.9251067,"req":"n01","event":"tool_call","name":"fetch_section","paper":"attention","section":"5.3"}
+{"t":1454231.9265603,"req":"n01","event":"decide","branch":"draft","conf":0.57,"k":5}
+{"t":1454231.9273762,"req":"n01","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2184,"provider":"gemini"}
+{"t":1454233.6665511,"req":"n01","event":"first_token","step":"draft","ttft_ms":1739.0}
+{"t":1454233.9002461,"req":"n01","event":"last_token","step":"draft","total_ms":1972.7,"prompt_tokens":1904,"completion_tokens":30,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454233.9005219,"req":"n01","event":"verify_det","ok":true,"issues":[]}
+{"t":1454233.9067663,"req":"n01","event":"user_first_token"}
+{"t":1454233.9069505,"req":"n01","event":"user_last_token"}
+{"t":1454233.9070219,"req":"n01","event":"done","status":"answered","level":0,"steps":["classify","retrieve","loop","tool","draft"],"answer":"The Adam optimizer settings used are \u03b21 = 0.9 and \u03b22 = 0.98 [C:attention:20]."}
+{"t":1454233.9094135,"req":"n02","event":"enqueue","question":"How many warmup steps does the Transformer's learning-rate schedule use?"}
+{"t":1454233.909614,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454233.9096853,"req":"n02","event":"step_start","step":"classify"}
+{"t":1454233.9102445,"req":"n02","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":183,"provider":"gemini"}
+{"t":1454235.8083065,"req":"n02","event":"giveup","step":"classify","reason":"retry_budget","attempt":1}
+{"t":1454235.808441,"req":"n02","event":"degrade","what":"classify_heuristic"}
+{"t":1454235.8084853,"req":"n02","event":"step_end","step":"classify"}
+{"t":1454235.8085874,"req":"n02","event":"step_start","step":"retrieve"}
+{"t":1454235.8158322,"req":"n02","event":"step_end","step":"retrieve"}
+{"t":1454235.8165023,"req":"n02","event":"decide","branch":"draft","conf":1.0,"k":3}
+{"t":1454235.8167166,"req":"n02","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":1403,"provider":"gemini"}
+{"t":1454236.7412059,"req":"n02","event":"first_token","step":"draft","ttft_ms":924.3}
+{"t":1454236.8891698,"req":"n02","event":"last_token","step":"draft","total_ms":1072.2,"prompt_tokens":1309,"completion_tokens":24,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454236.8894703,"req":"n02","event":"verify_det","ok":true,"issues":[]}
+{"t":1454236.8895472,"req":"n02","event":"user_first_token"}
+{"t":1454236.8896097,"req":"n02","event":"user_last_token"}
+{"t":1454236.8896685,"req":"n02","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Transformer's learning-rate schedule uses 4000 warmup steps [C:attention:21]."}
+{"t":1454236.9224928,"req":"n03","event":"enqueue","question":"What beam size and length penalty were used when decoding the Transformer's tran"}
+{"t":1454236.9227282,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454236.9228089,"req":"n03","event":"step_start","step":"classify"}
+{"t":1454236.9234558,"req":"n03","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":188,"provider":"gemini"}
+{"t":1454267.0994097,"req":"n03","event":"retry","step":"classify","attempt":1,"reason":"ReadTimeout","backoff_ms":492.6}
+{"t":1454267.5982739,"req":"n03","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":2,"est_tokens":188,"provider":"gemini"}
+{"t":1454286.5568773,"req":"n03","event":"first_token","step":"classify","ttft_ms":18958.2}
+{"t":1454286.6875878,"req":"n03","event":"last_token","step":"classify","total_ms":19088.9,"prompt_tokens":109,"completion_tokens":60,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454286.6878515,"req":"n03","event":"step_end","step":"classify"}
+{"t":1454286.6879682,"req":"n03","event":"step_start","step":"retrieve"}
+{"t":1454286.6968414,"req":"n03","event":"step_end","step":"retrieve"}
+{"t":1454286.6976293,"req":"n03","event":"decide","branch":"tool_fetch_section"}
+{"t":1454286.6977114,"req":"n03","event":"tool_call","name":"fetch_section","paper":"attention","section":"5.1"}
+{"t":1454289.7042501,"req":"n03","event":"tool_timeout","name":"fetch_section"}
+{"t":1454289.7044949,"req":"n03","event":"decide","branch":"draft","conf":0.88,"k":5}
+{"t":1454289.704866,"req":"n03","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2175,"provider":"gemini"}
+{"t":1454296.553923,"req":"n03","event":"first_token","step":"draft","ttft_ms":6848.9}
+{"t":1454296.5674731,"req":"n03","event":"last_token","step":"draft","total_ms":6862.5,"prompt_tokens":1663,"completion_tokens":35,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454296.5676531,"req":"n03","event":"verify_det","ok":true,"issues":[]}
+{"t":1454296.5676912,"req":"n03","event":"user_first_token"}
+{"t":1454296.5677233,"req":"n03","event":"user_last_token"}
+{"t":1454296.5677484,"req":"n03","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"For the Transformer's translation tasks, a beam size of 4 and a length penalty of \u03b1 = 0.6 were used [C:attention:23]."}
+{"t":1454296.5680548,"req":"n04","event":"enqueue","question":"About how many sentence pairs are in the English-German training set the Transfo"}
+{"t":1454296.5681265,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454296.5681583,"req":"n04","event":"step_start","step":"classify"}
+{"t":1454296.5684538,"req":"n04","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":200,"provider":"gemini"}
+{"t":1454326.6131228,"req":"n04","event":"retry","step":"classify","attempt":1,"reason":"ReadTimeout","backoff_ms":498.8}
+{"t":1454327.1257728,"req":"n04","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":2,"est_tokens":200,"provider":"gemini"}
+{"t":1454327.8004261,"req":"n04","event":"first_token","step":"classify","ttft_ms":674.5}
+{"t":1454327.9429117,"req":"n04","event":"last_token","step":"classify","total_ms":816.9,"prompt_tokens":118,"completion_tokens":72,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454327.9431918,"req":"n04","event":"step_end","step":"classify"}
+{"t":1454327.9433115,"req":"n04","event":"step_start","step":"retrieve"}
+{"t":1454327.9601521,"req":"n04","event":"step_end","step":"retrieve"}
+{"t":1454327.961256,"req":"n04","event":"decide","branch":"tool_fetch_section"}
+{"t":1454327.9613631,"req":"n04","event":"tool_call","name":"fetch_section","paper":"attention","section":"5.1"}
+{"t":1454327.9615484,"req":"n04","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1454327.9621195,"req":"n04","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2187,"provider":"gemini"}
+{"t":1454329.1687534,"req":"n04","event":"first_token","step":"draft","ttft_ms":1206.5}
+{"t":1454329.3084432,"req":"n04","event":"last_token","step":"draft","total_ms":1346.2,"prompt_tokens":1896,"completion_tokens":55,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454329.3087547,"req":"n04","event":"verify_det","ok":false,"issues":["number_not_in_cited:19"]}
+{"t":1454329.3088349,"req":"n04","event":"decide","branch":"regenerate","issues":["number_not_in_cited:19"]}
+{"t":1454329.3092146,"req":"n04","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2228,"provider":"gemini"}
+{"t":1454359.3621274,"req":"n04","event":"retry","step":"draft","attempt":1,"reason":"ReadTimeout","backoff_ms":326.4}
+{"t":1454359.6955303,"req":"n04","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":2,"est_tokens":2228,"provider":"gemini"}
+{"t":1454372.5361022,"req":"n04","event":"giveup","step":"draft","reason":"retry_budget","attempt":2}
+{"t":1454372.5362734,"req":"n04","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":224.0}
+{"t":1454372.5379047,"req":"n04","event":"user_first_token"}
+{"t":1454372.5380185,"req":"n04","event":"user_last_token"}
+{"t":1454372.5380672,"req":"n04","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve","tool","draft"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.1 Training Data and Batching We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs.\" [C:attention:19]\n\"Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.\" [C:attention:20]\n\"We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model.\" [C:attention:27]"}
+{"t":1454372.5382479,"req":"n05","event":"enqueue","question":"According to the layer comparison table, what is the maximum path length for a s"}
+{"t":1454372.5383421,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454372.5383872,"req":"n05","event":"step_start","step":"classify"}
+{"t":1454372.538544,"req":"n05","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":199,"provider":"gemini"}
+{"t":1454373.7452248,"req":"n05","event":"first_token","step":"classify","ttft_ms":1206.6}
+{"t":1454373.8244097,"req":"n05","event":"last_token","step":"classify","total_ms":1285.8,"prompt_tokens":117,"completion_tokens":65,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454373.8246284,"req":"n05","event":"step_end","step":"classify"}
+{"t":1454373.8247353,"req":"n05","event":"step_start","step":"retrieve"}
+{"t":1454373.8336894,"req":"n05","event":"step_end","step":"retrieve"}
+{"t":1454373.8346543,"req":"n05","event":"decide","branch":"tool_fetch_section"}
+{"t":1454373.8347453,"req":"n05","event":"tool_call","name":"fetch_section","paper":"attention","section":"3.2"}
+{"t":1454373.8349442,"req":"n05","event":"decide","branch":"draft","conf":0.73,"k":5}
+{"t":1454373.8354322,"req":"n05","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2193,"provider":"gemini"}
+{"t":1454375.9759032,"req":"n05","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1454375.9760443,"req":"n05","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":296.6}
+{"t":1454375.9769334,"req":"n05","event":"user_first_token"}
+{"t":1454375.977026,"req":"n05","event":"user_last_token"}
+{"t":1454375.9770782,"req":"n05","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve","tool"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations.\" [C:attention:17]\n\"Layer Type Complexity per Layer Sequential Maximum Path Length Operations Self-Attention O(n2 \u00b7 d) O(1) O(1) Recurrent O(n \u00b7 d2) O(n) O(n) Convolutional O(k \u00b7 n \u00b7 d2) O(1) O(logk(n)) Self-Attention (restricted) O(r \u00b7 n \u00b7 d) O(1) O(n/r) 3.5 Positional Encoding Since our model contain\" [C:attention:14]\n\"computational complexity, self-attention layers are faster than recurrent layers when the sequence 6 length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [3\" [C:attention:18]"}
+{"t":1454375.9785955,"req":"n06","event":"enqueue","question":"What F1 score did the 4-layer Transformer reach on WSJ-only constituency parsing"}
+{"t":1454375.9787815,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454375.9789959,"req":"n06","event":"step_start","step":"classify"}
+{"t":1454375.9791644,"req":"n06","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":185,"provider":"gemini"}
+{"t":1454377.2481469,"req":"n06","event":"first_token","step":"classify","ttft_ms":1268.9}
+{"t":1454377.2515894,"req":"n06","event":"last_token","step":"classify","total_ms":1272.3,"prompt_tokens":113,"completion_tokens":67,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1454377.2517774,"req":"n06","event":"step_end","step":"classify"}
+{"t":1454377.2518775,"req":"n06","event":"step_start","step":"retrieve"}
+{"t":1454377.2615792,"req":"n06","event":"step_end","step":"retrieve"}
+{"t":1454377.2630601,"req":"n06","event":"decide","branch":"tool_fetch_section"}
+{"t":1454377.2632298,"req":"n06","event":"tool_call","name":"fetch_section","paper":"attention","section":"5.4"}
+{"t":1454377.2633921,"req":"n06","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1454377.2638097,"req":"n06","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":2561,"provider":"gemini"}
+{"t":1454407.3006098,"req":"n06","event":"retry","step":"draft","attempt":1,"reason":"ReadTimeout","backoff_ms":26.3}
+{"t":1454407.3415216,"req":"n06","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":2,"est_tokens":2561,"provider":"gemini"}
+{"t":1454411.0371964,"req":"n06","event":"giveup","step":"draft","reason":"retry_budget","attempt":2}
+{"t":1454411.0373775,"req":"n06","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":264.9}
+{"t":1454411.0388524,"req":"n06","event":"user_first_token"}
+{"t":1454411.0390078,"req":"n06","event":"user_last_token"}
+{"t":1454411.0390702,"req":"n06","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve","tool"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Model BLEU Training Cost (FLOPs) EN-DE EN-FR EN-DE EN-FR ByteNet [18] 23.75 Deep-Att + PosUnk [39] 39.2 1.0 \u00b7 1020 GNMT + RL [38] 24.6 39.92 2.3 \u00b7 1019 1.4 \u00b7 1020 ConvS2S [9] 25.16 40.46 9.6 \u00b7 1018 1.5 \u00b7 1020 MoE [32] 26.03 40.56 2.0 \u00b7 1019 1.2 \u00b7 1020 Deep-Att + PosUnk Ensemble [39] 40.4 8.0 \u00b7 1020 \" [C:attention:21]\n\"41.29 7.7 \u00b7 1019 1.2 \u00b7 1021 Transformer (base model) 27.3 38.1 3.3 \u00b7 1018 Transformer (big) 28.4 41.8 2.3 \u00b7 1019 Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized.\" [C:attention:22]\n\"During inference, we 9 Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ) Parser Training WSJ 23 F1 Vinyals & Kaiser el al.\" [C:attention:27]"}
+{"t":1454411.0393532,"req":"n07","event":"enqueue","question":"How many checkpoints were averaged for the base models versus the big models?"}
+{"t":1454411.0394322,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454411.0394668,"req":"n07","event":"step_start","step":"classify"}
+{"t":1454411.0396,"req":"n07","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":184,"provider":"gemini"}
+{"t":1454425.1307252,"req":"n07","event":"giveup","step":"classify","reason":"retry_budget","attempt":1}
+{"t":1454425.1308391,"req":"n07","event":"degrade","what":"classify_heuristic"}
+{"t":1454425.1308754,"req":"n07","event":"step_end","step":"classify"}
+{"t":1454425.1309672,"req":"n07","event":"step_start","step":"retrieve"}
+{"t":1454425.1359586,"req":"n07","event":"step_end","step":"retrieve"}
+{"t":1454425.1367206,"req":"n07","event":"decide","branch":"draft","conf":0.86,"k":4}
+{"t":1454425.1369508,"req":"n07","event":"send","step":"draft","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":1654,"provider":"gemini"}
+{"t":1454431.5171954,"req":"n07","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1454431.5173407,"req":"n07","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":279.5}
+{"t":1454431.5185314,"req":"n07","event":"user_first_token"}
+{"t":1454431.5185975,"req":"n07","event":"user_last_token"}
+{"t":1454431.5186381,"req":"n07","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"For the big models, we averaged the last 20 checkpoints.\" [C:attention:23]\n\"For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds.\" [C:attention:20]\n\"E.2 Details of Chinese and Code Experiments In Section 3.2, we analyzed the performance of H-Net (2-stage) against Transformer and H-Net (space) on Chinese and on code, finding superior scaling for H-Net (2-stage) versus the other architectures.\" [C:dynchunk:135]"}
+{"t":1454431.5187809,"req":"n08","event":"enqueue","question":"What training cost in FLOPs does the results table report for the Transformer ba"}
+{"t":1454431.5188491,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"gemini"}
+{"t":1454431.5188819,"req":"n08","event":"step_start","step":"classify"}
+{"t":1454431.5189992,"req":"n08","event":"send","step":"classify","model":"gemini-3.1-flash-lite","attempt":1,"est_tokens":194,"provider":"gemini"}

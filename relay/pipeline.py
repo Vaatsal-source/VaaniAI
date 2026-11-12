@@ -21,20 +21,17 @@ import time
 from .events import EventLog
 from .limiter import DailyBudgetExhausted, Limiter, Shed
 from .llm import LLMClient, LLMError
-from .retrieval import Retriever, tokenize
+from .papers import PAPER_DESC, PAPER_KW
+from .retrieval import STOP, Retriever, tokenize
 
 ABSTAIN = "the papers don't say"
-CITE = re.compile(r"[\[\u3010]\s*C:\s*([a-z]+:\d+)\s*[\]\u3011]")
+CITE = re.compile(r"[\[\u3010]\s*C:\s*([a-z]+:t?\d+)\s*[\]\u3011]")     # "attention:12" or a table chunk "attention:t1"
 NUM = re.compile(r"(?<![\w.])\d+(?:\.\d+)?")
-STOP = set("a an the of in on and or to is are was were what which how does do did for with by as at from that this it its be used use paper papers".split())
-PAPER_KW = {"attention": r"transformer|attention is all|multi-?head|bleu|wmt|positional|label smoothing|dot-product",
-            "moshi": r"moshi|mimi|helium|full-duplex|depth transformer|kyutai|spoken|audio|speech|quantizer",
-            "dynchunk": r"h-?net|dynamic chunk|chunk|routing module|dechunk|smoothing|ratio loss|byte"}
 
-SYS_CLASSIFY = ("[[STEP:classify]] You route questions about three papers: attention (Attention Is All You Need), "
-                "moshi (Moshi speech-text model), dynchunk (H-Net dynamic chunking). Reply with JSON only: "
-                '{"intent":"factual|compare|offtopic","paper":"attention|moshi|dynchunk|any","section":"e.g. 3.2.2 or empty",'
-                '"queries":["1-2 short search queries"]}')
+SYS_CLASSIFY = ("[[STEP:classify]] You route questions about three papers: "
+                + ", ".join(f"{k} ({v})" for k, v in PAPER_DESC.items())
+                + '. Reply with JSON only: {"intent":"factual|compare|offtopic","paper":"' + "|".join(PAPER_DESC) + '|any",'
+                '"section":"e.g. 3.2.2 or empty","queries":["1-2 short search queries"]}')
 SYS_DRAFT = ("[[STEP:draft]] Answer ONLY from the numbered passages below; never use outside knowledge. "
              "Cite every claim with the passage id in the form [C:paper:n] using plain ASCII square brackets. If the passages do not contain the answer, "
              "reply exactly: The papers don't say. followed by one short sentence on what is missing. "
@@ -92,31 +89,73 @@ class Tool:
         return [c for c in self.r.chunks if c["paper"] == paper and c["section"].split(" ")[0] == section][:2]
 
 
+def norm_question(q: str) -> str:
+    return re.sub(r"\s+", " ", q.strip().lower()).strip(" ?!.")
+
+
 class Pipeline:
-    def __init__(self, cfg, retriever: Retriever, llm: LLMClient, log: EventLog, seed=1234):
+    def __init__(self, cfg, retriever: Retriever, llm: LLMClient, log: EventLog, seed=1234, fallback=None):
         self.cfg, self.pc = cfg, cfg["pipeline"]
+        self.pol = cfg.get("pipeline_policy", {})
+        self.degrade_frac = self.pol.get("degrade_frac", 0.15)
+        self.shed_frac = self.pol.get("shed_frac", 0.40)
+        self.commit_admitted = self.pol.get("commit_admitted", False)
         self.r, self.llm, self.log = retriever, llm, log
         self.small, self.large = cfg["models"]["small"], cfg["models"]["large"]
         self.lim = llm.limiters[self.large]          # the draft model is the bottleneck
         self.lim_small = llm.limiters[self.small]
+        # optional second provider, used only while the first one's daily budget is gone
+        self.fb = fallback        # {"provider": name, "small": model, "large": model} or None
+        self.fb_lim = llm.limiters[fallback["large"]] if fallback else None
         self.tool = Tool(retriever, self.pc, random.Random(seed))
         self.base_k = retriever.top_k
+        self.ctx_trim = cfg.get("retrieval", {}).get("ctx_trim_chars", 0)
+        self.avg_draft_tokens = 2000.0       # running average of what a draft really costs (prompt + reply)
+        cc = cfg.get("cache", {})
+        self.cache_on, self.cache_max, self.cache_ttl = bool(cc.get("enabled")), cc.get("max_entries", 500), cc.get("ttl_s", 3600)
+        self.join_frac = cc.get("join_wait_frac", 0.5)   # a request that joins an identical in-flight one waits at most this share of its remaining time
+        self._cache: dict = {}               # normalised question -> (expires, result)
+        self._inflight: dict = {}            # normalised question -> Future (identical concurrent questions share one run)
 
     # ---------- overload policy ----------
+    def active(self):
+        """(provider, small model, large model, large-model limiter) to use right now: the primary, or the fallback
+        provider while the primary's daily budget is gone. None when no provider can take a call."""
+        t = self.avg_draft_tokens
+        if not self.lim.daily_blocked(t, 1):
+            return (self.llm.primary, self.small, self.large, self.lim)
+        if self.fb and not self.fb_lim.daily_blocked(t, 1):
+            return (self.fb["provider"], self.fb["small"], self.fb["large"], self.fb_lim)
+        return None
+
     def pressure(self, deadline) -> int:
         """0 normal, 1 degraded (drop optional work), 2 = extractive-only (no LLM)."""
-        if self.lim.daily_blocked(2200, 1):
+        route = self.active()
+        if route is None:
             return 2
+        lim = route[3]
         remaining = max(0.1, deadline - time.monotonic())
-        wait = self.lim.expected_wait(2200, include_queue=True)   # includes everyone already queued
+        # Includes everyone already queued AND the model calls that already-admitted requests still have to make.
+        wait = lim.expected_wait(self.avg_draft_tokens, include_queue=True)
         self.log.emit("-", "pressure", wait_s=round(wait, 2), remaining_s=round(remaining, 2),
-                      queued=len(self.lim._q))
-        return 0 if wait < 0.15 * remaining else 1 if wait < 0.4 * remaining else 2
+                      queued=len(lim._q), committed=lim.committed_n, provider=route[0])
+        return 0 if wait < self.degrade_frac * remaining else 1 if wait < self.shed_frac * remaining else 2
+
+    def retry_phrase(self) -> str:
+        """'in about N minutes' from the limiter's own estimate of when a call will be allowed again."""
+        sec = self.lim.daily_retry_after(self.avg_draft_tokens)
+        if sec <= 0:
+            return "in a minute"
+        if sec < 90:
+            return "in about a minute"
+        if sec < 5400:
+            return f"in about {int(round(sec / 60))} minutes"
+        return f"in about {int(round(sec / 3600))} hours"
 
     def extractive(self, question, chunks, reason):
         qt = {t for t in tokenize(question) if t not in STOP}
         picks = []
-        for c in chunks[:3]:
+        for c in [c for c in chunks if c.get("kind") != "table"][:3]:
             sents = re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", c["text"]))
             best = max(sents, key=lambda s: len(qt & set(tokenize(s))), default="")
             if best:
@@ -127,24 +166,74 @@ class Pipeline:
 
     # ---------- steps ----------
     async def _llm(self, rid, step, model, system, user, *, max_tokens, priority, deadline, json_mode=False):
+        provider = self.llm.primary
+        if self.fb and model in (self.small, self.large) and self.lim.daily_blocked(self.avg_draft_tokens, priority):
+            provider = self.fb["provider"]      # primary's daily budget is gone: same job, second provider
+            model = self.fb["small"] if model == self.small else self.fb["large"]
         return await self.llm.chat(rid, step, model, [{"role": "system", "content": system},
                                                        {"role": "user", "content": user}],
                                    max_tokens=max_tokens, priority=priority, deadline=deadline,
-                                   json_mode=json_mode)
+                                   json_mode=json_mode, provider=provider)
+
+    @staticmethod
+    def trim_context(text: str, query: str, max_chars: int) -> str:
+        """Keep the sentences that overlap the question most, in their original order, up to max_chars."""
+        if max_chars <= 0 or len(text) <= max_chars:
+            return text
+        qt = {t for t in tokenize(query) if t not in STOP and len(t) > 1}
+        sents = re.split(r"(?<=[.!?])\s+|\n", text)
+        scored = sorted(range(len(sents)), key=lambda i: -(len(qt & set(tokenize(sents[i]))) + 0.01 * (i == 0)))
+        keep, size = set(), 0
+        for i in scored:
+            if size + len(sents[i]) + 1 > max_chars and keep:
+                continue
+            keep.add(i); size += len(sents[i]) + 1
+        return " ".join(sents[i] for i in sorted(keep))[:max_chars + 200]
 
     async def handle(self, rid: str, question: str, deadline_s: float | None = None) -> dict:
         t_arr = time.monotonic()
         deadline = t_arr + (deadline_s or self.pc["request_deadline_s"])
         self.log.emit(rid, "enqueue", question=question[:80])
+        key = norm_question(question)
+        if self.cache_on:
+            hit = self._cache.get(key)
+            if hit and hit[0] > t_arr:                          # served without touching the limiter or the provider
+                res = dict(hit[1], id=rid, cached=True, steps=["cache"])
+                self.log.emit(rid, "cache_hit")
+                self.log.emit(rid, "user_first_token"); self.log.emit(rid, "user_last_token")
+                self.log.emit(rid, "done", status=res["status"], level=0, steps=res["steps"], answer=res["text"][:2000], cached=True)
+                return res
+            fut = self._inflight.get(key)
+            if fut is not None:                                 # the same question is being answered right now: share it
+                self.log.emit(rid, "cache_join")
+                try:
+                    base = await asyncio.wait_for(asyncio.shield(fut), max(0.1, (deadline - time.monotonic()) * self.join_frac))
+                    res = dict(base, id=rid, cached=True, steps=["cache_join"])
+                    self.log.emit(rid, "user_first_token"); self.log.emit(rid, "user_last_token")
+                    self.log.emit(rid, "done", status=res["status"], level=res["level"], steps=res["steps"], answer=res["text"][:2000], cached=True)
+                    return res
+                except (asyncio.TimeoutError, Exception):
+                    pass                                        # leader failed or was too slow: run our own
+            fut = asyncio.get_running_loop().create_future()
+            self._inflight[key] = fut
         res = {"id": rid, "status": "error", "text": "", "citations": [], "level": 0, "steps": []}
         try:
             res = await self._run(rid, question, deadline, res)
         except asyncio.CancelledError:
             self.log.emit(rid, "abandon")
+            if self.cache_on and self._inflight.get(key) is fut:
+                del self._inflight[key]
+                fut.cancel()
             raise
         finally:
-            if res["status"] != "error" or True:
-                pass
+            if self.cache_on and self._inflight.get(key) is fut:
+                del self._inflight[key]
+                if not fut.done():
+                    fut.set_result(res) if res["status"] in ("answered", "abstained") else fut.cancel()
+        if self.cache_on and res["status"] in ("answered", "abstained"):   # only verified answers are ever cached
+            if len(self._cache) >= self.cache_max:
+                self._cache.pop(next(iter(self._cache)))
+            self._cache[key] = (time.monotonic() + self.cache_ttl, res)
         self.log.emit(rid, "done", status=res["status"], level=res["level"], steps=res["steps"],
                       answer=res["text"][:2000])
         return res
@@ -160,10 +249,27 @@ class Pipeline:
         return res
 
     async def _run(self, rid, question, deadline, res):
+        route = self.active()
         level = self.pressure(deadline)
         res["level"] = level
-        daily = self.lim.daily_blocked(2200, 1)
+        daily = route is None            # no provider has daily budget left
         no_llm = daily or level == 2     # fail fast: no model calls, answer from local retrieval or decline
+        state = {"tokens": 0.0, "lim": None}
+        if not no_llm and self.commit_admitted:
+            # tell the limiter about the draft call this request will make later, so new arrivals count it
+            state["tokens"], state["lim"] = self.avg_draft_tokens, route[3]
+            route[3].commit(state["tokens"])
+
+        def release():                   # idempotent: called when the draft enters the queue, or when the request ends
+            if state["lim"] is not None:
+                state["lim"].uncommit(state["tokens"])
+                state["lim"] = None
+        try:
+            return await self._steps(rid, question, deadline, res, level, daily, no_llm, route, release)
+        finally:
+            release()                    # a request that ends early must not leave its commitment behind
+
+    async def _steps(self, rid, question, deadline, res, level, daily, no_llm, route, release):
         # ---- 1 classify ----
         self.log.emit(rid, "step_start", step="classify")
         cls = {"intent": "factual", "section": "", "queries": [question]}
@@ -193,7 +299,9 @@ class Pipeline:
             for p in papers:
                 hits += await self.r.search(q, p, per)
             self.log.emit(rid, "step_end", step="retrieve")
-            return [c for c, _ in hits][:max(k, len(papers))]
+            prose = [c for c, _ in hits if c.get("kind") != "table"][:max(k, len(papers))]
+            tabs = [c for c, _ in hits if c.get("kind") == "table"][:self.r.table_extra]
+            return prose + tabs
         chunks = await retrieve(query)
         res["steps"].append("retrieve")
         conf = coverage(question, chunks)
@@ -222,8 +330,8 @@ class Pipeline:
             # retrieval did not clearly match: quoting unrelated passages would be misleading -> honest decline
             self.log.emit(rid, "shed", reason=reason + "_low_confidence")
             self.log.emit(rid, "user_first_token")
-            msg = ("Today's model budget is used up and I couldn't find a passage that clearly answers this. "
-                   "Please try again tomorrow." if daily else
+            msg = (f"Our model budget is used up for now and I couldn't find a passage that clearly answers this. "
+                   f"Please try again {self.retry_phrase()}." if daily else
                    "I'm at capacity and couldn't find a passage that clearly answers this. Please try again in a minute.")
             res.update(status="shed", text=msg)
             return res
@@ -244,15 +352,26 @@ class Pipeline:
         self.log.emit(rid, "decide", branch="draft", conf=round(conf, 2), k=len(chunks))
 
         # ---- 4 draft (priority 0: a started request outranks new arrivals) ----
-        ctx = "\n\n".join(f'[C:{c["id"]}] ({c["paper"]} v{c["version"][-1]}, p.{c["pages"][0]}, sec {c["section"]})\n{c["text"]}'
-                          for c in chunks)
+        ctx = "\n\n".join(f'[C:{c["id"]}] ({c["paper"]} v{c["version"][-1]}, p.{c["pages"][0]}, sec {c["section"]})\n'
+                          f'{self.trim_context(c["text"], question, self.ctx_trim)}' for c in chunks)
         user = f"Passages:\n{ctx}\n\nQuestion: {question}"
         feedback = ""
-        for attempt in range(2):
+        attempt, switched = -1, False
+        while attempt < 1:
+            attempt += 1
+            release()                    # from here the draft call itself sits in the limiter queue
             try:
                 out = await self._llm(rid, "draft", self.large, SYS_DRAFT, user + feedback, max_tokens=300,
                                       priority=0, deadline=deadline)
+                tot = out["usage"].get("total") or 0
+                if tot:
+                    self.avg_draft_tokens = 0.8 * self.avg_draft_tokens + 0.2 * tot
             except DailyBudgetExhausted:
+                if self.fb and not switched and not self.fb_lim.daily_blocked(self.avg_draft_tokens, 0):
+                    switched = True      # the first provider's daily wall was just learned from its 429: use the second
+                    attempt -= 1
+                    self.log.emit(rid, "failover", to=self.fb["provider"])
+                    continue
                 self.log.emit(rid, "degrade", what="extractive_daily")
                 return self._release(rid, res, self.extractive(question, chunks, "daily"), "extractive_daily")
             except (Shed, LLMError) as e:

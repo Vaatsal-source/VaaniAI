@@ -1,0 +1,25 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 8, "window": 3.0, "patience": 20.0, "seed": 1234, "tag": "cmp_r2code_b", "drain": 0}, "n": 8, "perf0": 1461571.4488409}
+{"t": 1461571.929107, "req": "cmp_r2code_b-0000", "event": "arrive", "sched": 0.02770600002259016, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461572.1617989, "req": "cmp_r2code_b-0001", "event": "arrive", "sched": 0.2603993001393974, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1461573.2512372, "req": "cmp_r2code_b-0002", "event": "arrive", "sched": 1.3498373001348227, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461573.6509591, "req": "cmp_r2code_b-0003", "event": "arrive", "sched": 1.749559700023383, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461573.9166261, "req": "cmp_r2code_b-0004", "event": "arrive", "sched": 2.015226700110361, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461573.9429685, "req": "cmp_r2code_b-0004", "event": "first_byte"}
+{"t": 1461573.9506026, "req": "cmp_r2code_b-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1461574.4342052, "req": "cmp_r2code_b-0003", "event": "first_byte"}
+{"t": 1461574.4362884, "req": "cmp_r2code_b-0003", "event": "end", "status": "answered"}
+{"t": 1461574.6424895, "req": "cmp_r2code_b-0005", "event": "arrive", "sched": 2.741088700015098, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461574.6632254, "req": "cmp_r2code_b-0005", "event": "first_byte"}
+{"t": 1461574.6696356, "req": "cmp_r2code_b-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1461574.7173828, "req": "cmp_r2code_b-0006", "event": "arrive", "sched": 2.8159796001855284, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1461574.7428176, "req": "cmp_r2code_b-0006", "event": "first_byte"}
+{"t": 1461574.7496238, "req": "cmp_r2code_b-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1461574.8094132, "req": "cmp_r2code_b-0007", "event": "arrive", "sched": 2.908011500025168, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1461574.8454149, "req": "cmp_r2code_b-0007", "event": "first_byte"}
+{"t": 1461574.8473304, "req": "cmp_r2code_b-0007", "event": "end", "status": "shed"}
+{"t": 1461589.3743054, "req": "cmp_r2code_b-0002", "event": "first_byte"}
+{"t": 1461589.3805333, "req": "cmp_r2code_b-0002", "event": "end", "status": "extractive_overload"}
+{"t": 1461589.3807753, "req": "cmp_r2code_b-0000", "event": "first_byte"}
+{"t": 1461589.3876497, "req": "cmp_r2code_b-0000", "event": "end", "status": "extractive_overload"}
+{"t": 1461590.53317, "req": "cmp_r2code_b-0001", "event": "first_byte"}
+{"t": 1461590.5409244, "req": "cmp_r2code_b-0001", "event": "end", "status": "extractive_overload"}

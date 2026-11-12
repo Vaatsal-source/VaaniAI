@@ -1,0 +1,10 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.035, "duration": 170.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "real_steady_r2", "drain": 0}, "n": 3, "perf0": 1458612.8416899}
+{"t": 1458710.1428185, "req": "real_steady_r2-0000", "event": "arrive", "sched": 97.00123329996131, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1458711.6802765, "req": "real_steady_r2-0000", "event": "first_byte"}
+{"t": 1458711.6817336, "req": "real_steady_r2-0000", "event": "end", "status": "abstained"}
+{"t": 1458726.7387726, "req": "real_steady_r2-0001", "event": "arrive", "sched": 113.59719989984296, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1458726.9753408, "req": "real_steady_r2-0002", "event": "arrive", "sched": 113.8337677998934, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1458729.4743201, "req": "real_steady_r2-0002", "event": "first_byte"}
+{"t": 1458729.477583, "req": "real_steady_r2-0002", "event": "end", "status": "answered"}
+{"t": 1458729.5690208, "req": "real_steady_r2-0001", "event": "first_byte"}
+{"t": 1458729.5717945, "req": "real_steady_r2-0001", "event": "end", "status": "answered"}

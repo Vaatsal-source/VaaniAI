@@ -33,6 +33,9 @@ S = {
     "retry_after_s": 2, "p_fail": 0.01, "p_stall": 0.005, "p_slow": 0.03, "slow_mult": 8.0,
     "stall_s": 60, "slowdown_per_inflight": CAL["concurrency"]["slowdown_per_inflight"],
     "out_tokens_draft": 180, "time_scale": 1.0,
+    # Round 1 charged prompt+max_tokens against the per-minute and daily pools (the then-assumption). Round 2
+    # measured on real Groq that it charges tokens actually used, so that is now the default.
+    "charge_max_tokens": False,
 }
 rng = random.Random(S["seed"])
 app = FastAPI()
@@ -132,7 +135,9 @@ async def chat(req: Request):
     msgs = body["messages"]; max_tokens = int(body.get("max_tokens", 256))
     ptok = sum(len(x["content"]) for x in msgs) // 4 + 8
     m.trim(now); m.refill(now)
-    cost = ptok + max_tokens
+    text = _canned(msgs, max_tokens)
+    ctok = max(1, len(text) // 4)
+    cost = ptok + (max_tokens if S["charge_max_tokens"] else ctok)
     if len(m.req_win) >= S["rpm"]:
         return _429(m, "rpm", S["retry_after_s"], now, model)
     used = sum(n for _, n in m.tok_win)
@@ -156,8 +161,6 @@ async def chat(req: Request):
         if rng.random() < S["p_slow"]:
             ttft *= S["slow_mult"]
         stall = rng.random() < S["p_stall"]
-        text = _canned(msgs, max_tokens)
-        ctok = max(1, len(text) // 4)
         hdrs = _hdrs(m, now)
     except Exception:
         m.inflight -= 1

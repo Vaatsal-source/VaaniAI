@@ -1,0 +1,25 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 8, "window": 3.0, "patience": 20.0, "seed": 1234, "tag": "cmp_r2code_a", "drain": 0}, "n": 8, "perf0": 1461537.5970421}
+{"t": 1461538.1519851, "req": "cmp_r2code_a-0000", "event": "arrive", "sched": 0.024750899989157915, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461538.3873875, "req": "cmp_r2code_a-0001", "event": "arrive", "sched": 0.2601552000269294, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1461539.4522583, "req": "cmp_r2code_a-0002", "event": "arrive", "sched": 1.3250289000570774, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461539.8739295, "req": "cmp_r2code_a-0003", "event": "arrive", "sched": 1.746698300121352, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461540.1296488, "req": "cmp_r2code_a-0004", "event": "arrive", "sched": 2.0024196000304073, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1461540.1355099, "req": "cmp_r2code_a-0003", "event": "first_byte"}
+{"t": 1461540.1436796, "req": "cmp_r2code_a-0003", "event": "end", "status": "extractive_overload"}
+{"t": 1461540.1604983, "req": "cmp_r2code_a-0004", "event": "first_byte"}
+{"t": 1461540.1648181, "req": "cmp_r2code_a-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1461540.1971532, "req": "cmp_r2code_a-0001", "event": "first_byte"}
+{"t": 1461540.1989905, "req": "cmp_r2code_a-0001", "event": "end", "status": "answered"}
+{"t": 1461540.8689871, "req": "cmp_r2code_a-0005", "event": "arrive", "sched": 2.7417544999625534, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1461540.8958766, "req": "cmp_r2code_a-0005", "event": "first_byte"}
+{"t": 1461540.902076, "req": "cmp_r2code_a-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1461540.9668644, "req": "cmp_r2code_a-0006", "event": "arrive", "sched": 2.839632000075653, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1461541.1272152, "req": "cmp_r2code_a-0007", "event": "arrive", "sched": 2.999983699992299, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1461541.2378249, "req": "cmp_r2code_a-0006", "event": "first_byte"}
+{"t": 1461541.2485542, "req": "cmp_r2code_a-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1461541.249587, "req": "cmp_r2code_a-0007", "event": "first_byte"}
+{"t": 1461541.2513555, "req": "cmp_r2code_a-0007", "event": "end", "status": "shed"}
+{"t": 1461551.9448492, "req": "cmp_r2code_a-0000", "event": "first_byte"}
+{"t": 1461552.1746283, "req": "cmp_r2code_a-0000", "event": "end", "status": "extractive_overload"}
+{"t": 1461553.5636102, "req": "cmp_r2code_a-0002", "event": "first_byte"}
+{"t": 1461553.5654525, "req": "cmp_r2code_a-0002", "event": "end", "status": "answered"}

@@ -1,0 +1,61 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 20, "window": 5.0, "patience": 20.0, "seed": 1, "tag": "r2_cache_burst_free_on", "drain": 0}, "n": 20, "perf0": 1453842.7335604}
+{"t": 1453843.6817052, "req": "r2_cache_burst_free_on-0000", "event": "arrive", "sched": 0.010381300002336502, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453843.8191327, "req": "r2_cache_burst_free_on-0001", "event": "arrive", "sched": 0.14780819998122752, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1453843.8233295, "req": "r2_cache_burst_free_on-0002", "event": "arrive", "sched": 0.15200429991818964, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1453844.1497363, "req": "r2_cache_burst_free_on-0003", "event": "arrive", "sched": 0.47841469990089536, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453844.3526441, "req": "r2_cache_burst_free_on-0004", "event": "arrive", "sched": 0.6813212998677045, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1453844.8390242, "req": "r2_cache_burst_free_on-0005", "event": "arrive", "sched": 1.1677021000068635, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1453844.8604425, "req": "r2_cache_burst_free_on-0005", "event": "first_byte"}
+{"t": 1453844.8644877, "req": "r2_cache_burst_free_on-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1453844.9160109, "req": "r2_cache_burst_free_on-0004", "event": "first_byte"}
+{"t": 1453844.9220845, "req": "r2_cache_burst_free_on-0004", "event": "end", "status": "answered"}
+{"t": 1453844.961465, "req": "r2_cache_burst_free_on-0006", "event": "arrive", "sched": 1.2901468998752534, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1453844.9812756, "req": "r2_cache_burst_free_on-0006", "event": "first_byte"}
+{"t": 1453844.9874915, "req": "r2_cache_burst_free_on-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1453845.1974133, "req": "r2_cache_burst_free_on-0000", "event": "first_byte"}
+{"t": 1453845.2073763, "req": "r2_cache_burst_free_on-0000", "event": "end", "status": "answered"}
+{"t": 1453845.208428, "req": "r2_cache_burst_free_on-0003", "event": "first_byte"}
+{"t": 1453845.2170668, "req": "r2_cache_burst_free_on-0003", "event": "end", "status": "answered"}
+{"t": 1453845.3295736, "req": "r2_cache_burst_free_on-0001", "event": "first_byte"}
+{"t": 1453845.3385318, "req": "r2_cache_burst_free_on-0001", "event": "end", "status": "answered"}
+{"t": 1453845.8385607, "req": "r2_cache_burst_free_on-0007", "event": "arrive", "sched": 2.1672390000894666, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1453845.8637843, "req": "r2_cache_burst_free_on-0007", "event": "first_byte"}
+{"t": 1453845.8707377, "req": "r2_cache_burst_free_on-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1453845.9039668, "req": "r2_cache_burst_free_on-0008", "event": "arrive", "sched": 2.232645299984142, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453845.9075114, "req": "r2_cache_burst_free_on-0009", "event": "arrive", "sched": 2.236138599924743, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1453845.9255269, "req": "r2_cache_burst_free_on-0008", "event": "first_byte"}
+{"t": 1453845.9343082, "req": "r2_cache_burst_free_on-0008", "event": "end", "status": "answered"}
+{"t": 1453845.9453284, "req": "r2_cache_burst_free_on-0009", "event": "first_byte"}
+{"t": 1453845.9522124, "req": "r2_cache_burst_free_on-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1453845.9639335, "req": "r2_cache_burst_free_on-0002", "event": "first_byte"}
+{"t": 1453845.9715231, "req": "r2_cache_burst_free_on-0002", "event": "end", "status": "answered"}
+{"t": 1453846.1633545, "req": "r2_cache_burst_free_on-0010", "event": "arrive", "sched": 2.492034599883482, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453846.1831737, "req": "r2_cache_burst_free_on-0010", "event": "first_byte"}
+{"t": 1453846.1883874, "req": "r2_cache_burst_free_on-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1453846.9412764, "req": "r2_cache_burst_free_on-0011", "event": "arrive", "sched": 3.2699521998874843, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453846.9799411, "req": "r2_cache_burst_free_on-0011", "event": "first_byte"}
+{"t": 1453846.9883602, "req": "r2_cache_burst_free_on-0011", "event": "end", "status": "extractive_overload"}
+{"t": 1453847.2858338, "req": "r2_cache_burst_free_on-0012", "event": "arrive", "sched": 3.6145122998859733, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1453847.3275179, "req": "r2_cache_burst_free_on-0012", "event": "first_byte"}
+{"t": 1453847.3338149, "req": "r2_cache_burst_free_on-0012", "event": "end", "status": "extractive_overload"}
+{"t": 1453847.4850012, "req": "r2_cache_burst_free_on-0013", "event": "arrive", "sched": 3.8136783000081778, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1453847.4901468, "req": "r2_cache_burst_free_on-0014", "event": "arrive", "sched": 3.8188203000463545, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453847.5054622, "req": "r2_cache_burst_free_on-0013", "event": "first_byte"}
+{"t": 1453847.5157084, "req": "r2_cache_burst_free_on-0013", "event": "end", "status": "answered"}
+{"t": 1453847.5291735, "req": "r2_cache_burst_free_on-0014", "event": "first_byte"}
+{"t": 1453847.5354694, "req": "r2_cache_burst_free_on-0014", "event": "end", "status": "extractive_overload"}
+{"t": 1453847.6209473, "req": "r2_cache_burst_free_on-0015", "event": "arrive", "sched": 3.9496249000076205, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1453847.6467861, "req": "r2_cache_burst_free_on-0015", "event": "first_byte"}
+{"t": 1453847.6523329, "req": "r2_cache_burst_free_on-0015", "event": "end", "status": "extractive_overload"}
+{"t": 1453847.8583259, "req": "r2_cache_burst_free_on-0016", "event": "arrive", "sched": 4.18700490007177, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453847.8819791, "req": "r2_cache_burst_free_on-0016", "event": "first_byte"}
+{"t": 1453847.888405, "req": "r2_cache_burst_free_on-0016", "event": "end", "status": "extractive_overload"}
+{"t": 1453847.9242406, "req": "r2_cache_burst_free_on-0017", "event": "arrive", "sched": 4.252919599879533, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1453848.1800106, "req": "r2_cache_burst_free_on-0018", "event": "arrive", "sched": 4.5086884999182075, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453848.2095695, "req": "r2_cache_burst_free_on-0018", "event": "first_byte"}
+{"t": 1453848.2168092, "req": "r2_cache_burst_free_on-0018", "event": "end", "status": "extractive_overload"}
+{"t": 1453848.4116321, "req": "r2_cache_burst_free_on-0019", "event": "arrive", "sched": 4.7403118999209255, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453848.4539187, "req": "r2_cache_burst_free_on-0019", "event": "first_byte"}
+{"t": 1453848.4663691, "req": "r2_cache_burst_free_on-0019", "event": "end", "status": "extractive_overload"}
+{"t": 1453851.9788998, "req": "r2_cache_burst_free_on-0017", "event": "first_byte"}
+{"t": 1453851.9862239, "req": "r2_cache_burst_free_on-0017", "event": "end", "status": "answered"}

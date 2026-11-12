@@ -1,12 +1,10 @@
 """Download the three exact arXiv versions and record SHA-256 of each."""
 import hashlib, json, pathlib, sys, urllib.request
 
-PAPERS = {
-    "attention": "1706.03762v7",
-    "moshi": "2410.00037v1",
-    "dynchunk": "2507.07955v2",
-}
-OUT = pathlib.Path(__file__).resolve().parent.parent / "papers"
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from relay.papers import PAPERS          # key -> versioned arXiv id; the list lives in config.yaml (docs/ADD_A_PAPER.md)
+OUT = ROOT / "papers"
 
 
 def main():

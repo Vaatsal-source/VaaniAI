@@ -47,6 +47,12 @@ class Bucket:
     def refund(self, n: float):
         self.level = min(self.capacity, self.level + n)
 
+    def charge(self, n: float):
+        """Take tokens unconditionally (the real cost turned out higher than the estimate). May go negative:
+        that debt is repaid by refill before the next call is admitted."""
+        self._refill()
+        self.level = max(-self.capacity, self.level - n)
+
     def resize(self, capacity: float):
         self._refill()
         self.capacity = float(capacity)
@@ -67,7 +73,7 @@ class DailyBudgetExhausted(Shed):
 
 
 class Limiter:
-    def __init__(self, rpm, tpm, rpd, daily_reserve_frac=0.1, clock=time.monotonic):
+    def __init__(self, rpm, tpm, rpd, daily_reserve_frac=0.1, clock=time.monotonic, refund_on_success=False):
         self.clock = clock
         self.req = Bucket(rpm, 60, clock)
         self.tok = Bucket(tpm, 60, clock)
@@ -82,9 +88,14 @@ class Limiter:
         self.tpd = None            # tokens/day: not exposed in headers, learned from a 429 body
         self.tpd_used = 0
         self.tpd_block_until = 0.0
-        # Groq appears to charge prompt+max_tokens up front and not refund the unused part, so
-        # by default we do NOT refund on success (conservative). Failed/rejected calls are released.
-        self.refund_on_success = False
+        # Round 1 assumed Groq charges prompt+max_tokens up front. Round 2 measured it (logs/groq_probe2_accounting_*):
+        # it charges the tokens actually used. With refund_on_success the bucket is reconciled with the real usage
+        # after each call (refund when we over-reserved, extra charge when we under-reserved).
+        self.refund_on_success = refund_on_success
+        # Model calls that already-admitted requests will still make but that are not in the queue yet
+        # (e.g. the draft of a request that is still being classified). New arrivals must see them.
+        self.committed_tokens = 0.0
+        self.committed_n = 0
 
     # ---- provider feedback (limits are discovered, not hard-coded) ----
     def observe_headers(self, h: dict):
@@ -96,6 +107,12 @@ class Limiter:
         lr, lt, ld = num("x-ratelimit-limit-requests"), num("x-ratelimit-limit-tokens"), None
         if lt:
             self.tok.resize(lt)
+        rt = num("x-ratelimit-remaining-tokens")
+        if rt is not None:
+            # The provider sees every client of this key (another process, a run that just ended). If it says fewer
+            # tokens remain than we think, believe it; never raise our own level from it (we reserve more than we use).
+            self.tok._refill()
+            self.tok.level = min(self.tok.level, rt)
         # Groq's *requests* limit header is per-day (RPD); do not treat it as RPM.
         if lr:
             self.rpd = int(lr)
@@ -145,8 +162,29 @@ class Limiter:
         nq = qt = 0
         if include_queue:
             live = [e for e in self._q if not e[4].done()]
-            nq, qt = len(live), sum(e[2] for e in live)
+            nq, qt = len(live) + self.committed_n, sum(e[2] for e in live) + self.committed_tokens
         return max(cool, self.req.wait_time(1 + nq), self.tok.wait_time(tokens + qt))
+
+    def commit(self, tokens: float):
+        """An admitted request will make a model call of about `tokens` later (not queued yet)."""
+        self.committed_tokens += tokens
+        self.committed_n += 1
+
+    def uncommit(self, tokens: float):
+        self.committed_tokens = max(0.0, self.committed_tokens - tokens)
+        self.committed_n = max(0, self.committed_n - 1)
+
+    def daily_retry_after(self, tokens: float = 2200) -> float:
+        """Best estimate, in seconds, until a call of `tokens` is allowed again once a daily limit has bitten.
+        Daily limits on Groq are rolling: tokens/day refill continuously at tpd/86400 per second and requests/day at
+        rpd/86400 per second, so the wait is roughly the shortfall divided by that rate."""
+        now = self.clock()
+        waits = [max(0.0, self.tpd_block_until - now)]
+        if self.tpd:
+            waits.append(max(0.0, self.tpd_used + tokens - self.tpd) * 86400.0 / self.tpd)
+        if self.daily_left() <= self.reserve:
+            waits.append((self.reserve - self.daily_left() + 1) * 86400.0 / max(1, self.rpd))
+        return max(waits)
 
     async def acquire(self, tokens: float, priority: int, deadline: float | None):
         """Wait for capacity. Raises Shed if the daily budget (minus reserve for priority<=0)
@@ -190,8 +228,12 @@ class Limiter:
 
     def refund_tokens(self, reserved: float, actual: float):
         """Reconcile estimate with API usage (only if the provider is known to refund)."""
-        if self.refund_on_success and actual < reserved:
+        if not self.refund_on_success:
+            return
+        if actual < reserved:
             self.tok.refund(reserved - actual)
+        elif actual > reserved:
+            self.tok.charge(actual - reserved)
 
     def release(self, reserved: float):
         """A request that was rejected or failed before producing output: give the tokens back."""

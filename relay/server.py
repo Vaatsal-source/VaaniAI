@@ -10,10 +10,13 @@ import time
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse
 
-from .runtime import build, load_cfg
+from .runtime import build, deep_update, load_cfg
 
 cfg = load_cfg()
 cfg["retries"].update(json.loads(os.environ.get("RELAY_RETRIES", "{}")))
+deep_update(cfg, json.loads(os.environ.get("RELAY_CFG", "{}")))          # any config key, e.g. {"cache": {"enabled": true}}
+if os.environ.get("RELAY_CACHE") in ("0", "1"):
+    cfg["cache"]["enabled"] = os.environ["RELAY_CACHE"] == "1"             # production default is on; experiments pin it
 if os.environ.get("RELAY_LARGE"):
     cfg["models"]["large"] = os.environ["RELAY_LARGE"]
 pipe, log = build(cfg, os.environ.get("RELAY_PROVIDER", "standin"), os.environ.get("RELAY_LOG"),

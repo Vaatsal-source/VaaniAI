@@ -1,0 +1,159 @@
+{"t":1454298.964616,"req":"h01","event":"enqueue","question":"Why does the original attention mechanism divide the query-key products by a con"}
+{"t":1454298.9649572,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454298.9650268,"req":"h01","event":"step_start","step":"classify"}
+{"t":1454298.9652899,"req":"h01","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":194,"provider":"groq"}
+{"t":1454300.5119731,"req":"h01","event":"first_token","step":"classify","ttft_ms":1546.6}
+{"t":1454300.514396,"req":"h01","event":"last_token","step":"classify","total_ms":1549.0,"prompt_tokens":212,"completion_tokens":70,"provider_queue_ms":1264.9,"provider_total_ms":105.1}
+{"t":1454300.536613,"req":"h01","event":"step_end","step":"classify"}
+{"t":1454300.5375223,"req":"h01","event":"step_start","step":"retrieve"}
+{"t":1454300.5429093,"req":"h01","event":"step_end","step":"retrieve"}
+{"t":1454300.5436631,"req":"h01","event":"decide","branch":"loop_rewrite","conf":0.58}
+{"t":1454300.5440942,"req":"h01","event":"send","step":"rewrite","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":99,"provider":"groq"}
+{"t":1454301.0829996,"req":"h01","event":"first_token","step":"rewrite","ttft_ms":538.7}
+{"t":1454301.0984746,"req":"h01","event":"last_token","step":"rewrite","total_ms":554.2,"prompt_tokens":117,"completion_tokens":33,"provider_queue_ms":345.9,"provider_total_ms":41.4}
+{"t":1454301.098627,"req":"h01","event":"step_start","step":"retrieve"}
+{"t":1454301.1032356,"req":"h01","event":"step_end","step":"retrieve"}
+{"t":1454301.1047889,"req":"h01","event":"decide","branch":"draft","conf":0.58,"k":5}
+{"t":1454301.1051942,"req":"h01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2196,"provider":"groq"}
+{"t":1454301.7372243,"req":"h01","event":"first_token","step":"draft","ttft_ms":631.9}
+{"t":1454301.9955038,"req":"h01","event":"last_token","step":"draft","total_ms":890.2,"prompt_tokens":1831,"completion_tokens":151,"provider_queue_ms":293.7,"provider_total_ms":483.7}
+{"t":1454301.9958599,"req":"h01","event":"verify_det","ok":true,"issues":[]}
+{"t":1454301.995924,"req":"h01","event":"user_first_token"}
+{"t":1454301.9959816,"req":"h01","event":"user_last_token"}
+{"t":1454301.9960242,"req":"h01","event":"done","status":"answered","level":0,"steps":["classify","retrieve","loop","draft"],"answer":"The original attention divides the query\u2011key dot products by \\( \\sqrt{d_k} \\) because without this scaling the dot products can become large in magnitude (especially for large \\(d_k\\)), pushing the softmax into regions with extremely small gradients. Scaling by \\(1/\\sqrt{d_k}\\) keeps the values in a range where the softmax remains sensitive and gradients are stable[C:attention:9]. The same reasoning is reiterated: dot\u2011product attention can produce large values, so the scaling counteracts this effect and improves training stability[C:attention:10]."}
+{"t":1454301.9968954,"req":"h02","event":"enqueue","question":"Did the authors find learned positional embeddings worked better than the sinuso"}
+{"t":1454301.9970512,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454301.9971031,"req":"h02","event":"step_start","step":"classify"}
+{"t":1454301.9975724,"req":"h02","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":189,"provider":"groq"}
+{"t":1454302.7489088,"req":"h02","event":"first_token","step":"classify","ttft_ms":751.2}
+{"t":1454302.7505175,"req":"h02","event":"last_token","step":"classify","total_ms":752.9,"prompt_tokens":208,"completion_tokens":64,"provider_queue_ms":465.7,"provider_total_ms":177.9}
+{"t":1454302.7507167,"req":"h02","event":"step_end","step":"classify"}
+{"t":1454302.7508781,"req":"h02","event":"step_start","step":"retrieve"}
+{"t":1454302.7613347,"req":"h02","event":"step_end","step":"retrieve"}
+{"t":1454302.7627405,"req":"h02","event":"decide","branch":"draft","conf":0.7,"k":5}
+{"t":1454302.7634872,"req":"h02","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2180,"provider":"groq"}
+{"t":1454303.4499638,"req":"h02","event":"first_token","step":"draft","ttft_ms":686.3}
+{"t":1454303.5575892,"req":"h02","event":"last_token","step":"draft","total_ms":793.9,"prompt_tokens":1769,"completion_tokens":105,"provider_queue_ms":369.7,"provider_total_ms":322.1}
+{"t":1454303.557912,"req":"h02","event":"verify_det","ok":true,"issues":[]}
+{"t":1454303.5580062,"req":"h02","event":"user_first_token"}
+{"t":1454303.5580731,"req":"h02","event":"user_last_token"}
+{"t":1454303.5581315,"req":"h02","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"No. The authors report that learned positional embeddings and the sinusoidal version produced \u201cnearly identical results\u201d (see Table 3 row E), and they chose the sinusoidal version for its potential extrapolation benefits[C:attention:16]."}
+{"t":1454303.5592805,"req":"h03","event":"enqueue","question":"How many parameters does the big Transformer model have?"}
+{"t":1454303.5594964,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454303.5595628,"req":"h03","event":"step_start","step":"classify"}
+{"t":1454303.560198,"req":"h03","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":178,"provider":"groq"}
+{"t":1454304.8091208,"req":"h03","event":"first_token","step":"classify","ttft_ms":1248.8}
+{"t":1454304.8114317,"req":"h03","event":"last_token","step":"classify","total_ms":1251.1,"prompt_tokens":203,"completion_tokens":50,"provider_queue_ms":1062.3,"provider_total_ms":81.2}
+{"t":1454304.8116523,"req":"h03","event":"step_end","step":"classify"}
+{"t":1454304.8117889,"req":"h03","event":"step_start","step":"retrieve"}
+{"t":1454304.8181449,"req":"h03","event":"step_end","step":"retrieve"}
+{"t":1454304.8197647,"req":"h03","event":"decide","branch":"draft","conf":0.67,"k":6}
+{"t":1454304.8203873,"req":"h03","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2413,"provider":"groq"}
+{"t":1454305.550722,"req":"h03","event":"first_token","step":"draft","ttft_ms":730.2}
+{"t":1454305.6143727,"req":"h03","event":"last_token","step":"draft","total_ms":793.8,"prompt_tokens":2502,"completion_tokens":41,"provider_queue_ms":375.9,"provider_total_ms":224.5}
+{"t":1454305.6145413,"req":"h03","event":"verify_det","ok":true,"issues":[]}
+{"t":1454305.6145797,"req":"h03","event":"user_first_token"}
+{"t":1454305.6146131,"req":"h03","event":"user_last_token"}
+{"t":1454305.6146512,"req":"h03","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide BLEU scores and training FLOPs but no explicit parameter count for the big Transformer."}
+{"t":1454305.6148528,"req":"h04","event":"enqueue","question":"How many layers and what model dimension does Moshi's Depth Transformer use?"}
+{"t":1454305.6149631,"req":"-","event":"pressure","wait_s":5.17,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454305.6150045,"req":"h04","event":"step_start","step":"classify"}
+{"t":1454305.6153142,"req":"h04","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"groq"}
+{"t":1454307.7574589,"req":"h04","event":"first_token","step":"classify","ttft_ms":2142.0}
+{"t":1454307.7585732,"req":"h04","event":"last_token","step":"classify","total_ms":2143.1,"prompt_tokens":208,"completion_tokens":73,"provider_queue_ms":1867.5,"provider_total_ms":88.5}
+{"t":1454307.7587099,"req":"h04","event":"step_end","step":"classify"}
+{"t":1454307.7588088,"req":"h04","event":"step_start","step":"retrieve"}
+{"t":1454307.7873024,"req":"h04","event":"step_end","step":"retrieve"}
+{"t":1454307.7880613,"req":"h04","event":"decide","branch":"draft","conf":0.86,"k":6}
+{"t":1454314.6352786,"req":"h04","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2597,"provider":"groq"}
+{"t":1454315.4275099,"req":"h04","event":"first_token","step":"draft","ttft_ms":791.8}
+{"t":1454315.4890264,"req":"h04","event":"last_token","step":"draft","total_ms":853.4,"prompt_tokens":2194,"completion_tokens":84,"provider_queue_ms":402.9,"provider_total_ms":347.9}
+{"t":1454315.4891953,"req":"h04","event":"verify_det","ok":true,"issues":[]}
+{"t":1454315.4892449,"req":"h04","event":"user_first_token"}
+{"t":1454315.4892838,"req":"h04","event":"user_last_token"}
+{"t":1454315.489326,"req":"h04","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi\u2019s Depth Transformer has **6 layers** and a **model dimension of 1024**[C:moshi:23]."}
+{"t":1454315.4896413,"req":"h05","event":"enqueue","question":"What problem does the smoothing module in H-Net solve?"}
+{"t":1454315.4897112,"req":"-","event":"pressure","wait_s":12.68,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454315.4897513,"req":"h05","event":"step_start","step":"classify"}
+{"t":1454315.4901999,"req":"h05","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":177,"provider":"groq"}
+{"t":1454316.1154916,"req":"h05","event":"first_token","step":"classify","ttft_ms":625.2}
+{"t":1454316.1161699,"req":"h05","event":"last_token","step":"classify","total_ms":625.9,"prompt_tokens":204,"completion_tokens":98,"provider_queue_ms":388.5,"provider_total_ms":144.3}
+{"t":1454316.1162683,"req":"h05","event":"step_end","step":"classify"}
+{"t":1454316.11633,"req":"h05","event":"step_start","step":"retrieve"}
+{"t":1454316.119786,"req":"h05","event":"step_end","step":"retrieve"}
+{"t":1454316.120463,"req":"h05","event":"decide","branch":"draft","conf":0.8,"k":5}
+{"t":1454328.3995977,"req":"h05","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2156,"provider":"groq"}
+{"t":1454329.1298825,"req":"h05","event":"first_token","step":"draft","ttft_ms":730.1}
+{"t":1454329.3119069,"req":"h05","event":"last_token","step":"draft","total_ms":912.1,"prompt_tokens":2163,"completion_tokens":124,"provider_queue_ms":369.9,"provider_total_ms":369.5}
+{"t":1454329.3121917,"req":"h05","event":"verify_det","ok":true,"issues":[]}
+{"t":1454329.3122502,"req":"h05","event":"user_first_token"}
+{"t":1454329.3123097,"req":"h05","event":"user_last_token"}
+{"t":1454329.3123485,"req":"h05","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The smoothing module solves the difficulty of training with discrete chunk boundaries \u2013 it makes the boundary\u2011learning operation differentiable so gradients can flow through chunking, prevents unstable or over\u2011fitted chunk patterns, and provides adaptive error\u2011correction for low\u2011confidence chunks[C:dynchunk:22]. It is essential for stable training dynamics, as removing it causes compression\u2011ratio fluctuations[C:dynchunk:65]."}
+{"t":1454329.3127341,"req":"h06","event":"enqueue","question":"What are the three stages of the hierarchical network described in the dynamic c"}
+{"t":1454329.3128161,"req":"-","event":"pressure","wait_s":16.25,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454329.312854,"req":"h06","event":"step_start","step":"classify"}
+{"t":1454329.3133885,"req":"h06","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":189,"provider":"groq"}
+{"t":1454329.64693,"req":"h06","event":"first_token","step":"classify","ttft_ms":333.4}
+{"t":1454329.6484416,"req":"h06","event":"last_token","step":"classify","total_ms":335.0,"prompt_tokens":210,"completion_tokens":49,"provider_queue_ms":161.2,"provider_total_ms":69.7}
+{"t":1454329.6486213,"req":"h06","event":"step_end","step":"classify"}
+{"t":1454329.6487731,"req":"h06","event":"step_start","step":"retrieve"}
+{"t":1454329.7029327,"req":"h06","event":"step_end","step":"retrieve"}
+{"t":1454329.7038685,"req":"h06","event":"decide","branch":"draft","conf":0.71,"k":5}
+{"t":1454345.6136489,"req":"h06","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2163,"provider":"groq"}
+{"t":1454346.0950548,"req":"h06","event":"first_token","step":"draft","ttft_ms":481.2}
+{"t":1454346.2545377,"req":"h06","event":"last_token","step":"draft","total_ms":640.7,"prompt_tokens":1737,"completion_tokens":90,"provider_queue_ms":158.1,"provider_total_ms":280.8}
+{"t":1454346.2550158,"req":"h06","event":"verify_det","ok":true,"issues":[]}
+{"t":1454346.2551364,"req":"h06","event":"user_first_token"}
+{"t":1454346.2552895,"req":"h06","event":"user_last_token"}
+{"t":1454346.2553555,"req":"h06","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The hierarchical network consists of three stages: (i) a small encoder network that processes the raw data, (ii) a main network that operates on compressed chunks, and (iii) a decoder network that upsamples and processes the data at the original resolution[C:dynchunk:6]."}
+{"t":1454346.2570064,"req":"h07","event":"enqueue","question":"What is Moshi's Inner Monologue method?"}
+{"t":1454346.257122,"req":"-","event":"pressure","wait_s":12.51,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454346.2573125,"req":"h07","event":"step_start","step":"classify"}
+{"t":1454346.2581833,"req":"h07","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":173,"provider":"groq"}
+{"t":1454346.9353731,"req":"h07","event":"first_token","step":"classify","ttft_ms":677.1}
+{"t":1454346.9361252,"req":"h07","event":"last_token","step":"classify","total_ms":677.8,"prompt_tokens":203,"completion_tokens":54,"provider_queue_ms":493.1,"provider_total_ms":69.0}
+{"t":1454346.9362369,"req":"h07","event":"step_end","step":"classify"}
+{"t":1454346.9362941,"req":"h07","event":"step_start","step":"retrieve"}
+{"t":1454346.9408528,"req":"h07","event":"step_end","step":"retrieve"}
+{"t":1454346.9414421,"req":"h07","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1454361.3505534,"req":"h07","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2433,"provider":"groq"}
+{"t":1454362.0798975,"req":"h07","event":"first_token","step":"draft","ttft_ms":729.2}
+{"t":1454362.3478798,"req":"h07","event":"last_token","step":"draft","total_ms":997.2,"prompt_tokens":1964,"completion_tokens":157,"provider_queue_ms":323.3,"provider_total_ms":458.4}
+{"t":1454362.3482164,"req":"h07","event":"verify_det","ok":true,"issues":[]}
+{"t":1454362.3483027,"req":"h07","event":"user_first_token"}
+{"t":1454362.3483581,"req":"h07","event":"user_last_token"}
+{"t":1454362.3484399,"req":"h07","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi\u2019s \u201cInner Monologue\u201d is a modeling technique that first predicts time\u2011aligned text tokens as a prefix and then generates the corresponding audio tokens from a neural audio\u2011codec residual quantizer.  By running the text\u2011to\u2011speech generation and the user\u2011speech generation in parallel streams, it removes explicit speaker turns and enables real\u2011time, full\u2011duplex spoken dialogue.  The method also allows Moshi to be repurposed as streaming TTS or streaming ASR simply by adjusting the delay between the two token types[C:moshi:1][C:moshi:15]."}
+{"t":1454362.3490354,"req":"h08","event":"enqueue","question":"How many TPUs were used to train the Transformer base model?"}
+{"t":1454362.3491685,"req":"-","event":"pressure","wait_s":12.36,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454362.3492241,"req":"h08","event":"step_start","step":"classify"}
+{"t":1454362.3496809,"req":"h08","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":179,"provider":"groq"}
+{"t":1454363.7484604,"req":"h08","event":"first_token","step":"classify","ttft_ms":1398.7}
+{"t":1454363.7495759,"req":"h08","event":"last_token","step":"classify","total_ms":1399.8,"prompt_tokens":206,"completion_tokens":61,"provider_queue_ms":1187.0,"provider_total_ms":82.2}
+{"t":1454363.7497792,"req":"h08","event":"step_end","step":"classify"}
+{"t":1454363.7498813,"req":"h08","event":"step_start","step":"retrieve"}
+{"t":1454363.7568159,"req":"h08","event":"step_end","step":"retrieve"}
+{"t":1454363.7577758,"req":"h08","event":"decide","branch":"draft","conf":0.67,"k":6}
+{"t":1454377.4898479,"req":"h08","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2464,"provider":"groq"}
+{"t":1454377.9530855,"req":"h08","event":"first_token","step":"draft","ttft_ms":462.8}
+{"t":1454378.0009927,"req":"h08","event":"last_token","step":"draft","total_ms":510.8,"prompt_tokens":2297,"completion_tokens":48,"provider_queue_ms":159.0,"provider_total_ms":240.2}
+{"t":1454378.0011598,"req":"h08","event":"verify_det","ok":true,"issues":[]}
+{"t":1454378.0011998,"req":"h08","event":"user_first_token"}
+{"t":1454378.0012333,"req":"h08","event":"user_last_token"}
+{"t":1454378.0012731,"req":"h08","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide details about using NVIDIA P100 GPUs, but give no information on TPU usage."}
+{"t":1454378.0018936,"req":"h09","event":"enqueue","question":"What BLEU score did the Transformer get on English-to-Czech translation?"}
+{"t":1454378.0020249,"req":"-","event":"pressure","wait_s":14.68,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454378.0020945,"req":"h09","event":"step_start","step":"classify"}
+{"t":1454378.0026751,"req":"h09","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":183,"provider":"groq"}
+{"t":1454379.1025691,"req":"h09","event":"first_token","step":"classify","ttft_ms":1099.7}
+{"t":1454379.1034827,"req":"h09","event":"last_token","step":"classify","total_ms":1100.6,"prompt_tokens":208,"completion_tokens":62,"provider_queue_ms":908.5,"provider_total_ms":82.2}
+{"t":1454379.1035989,"req":"h09","event":"step_end","step":"classify"}
+{"t":1454379.1036752,"req":"h09","event":"step_start","step":"retrieve"}
+{"t":1454379.111572,"req":"h09","event":"step_end","step":"retrieve"}
+{"t":1454379.1135415,"req":"h09","event":"decide","branch":"draft","conf":0.71,"k":6}
+{"t":1454394.6770934,"req":"h09","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2413,"provider":"groq"}
+{"t":1454395.3327079,"req":"h09","event":"first_token","step":"draft","ttft_ms":655.0}
+{"t":1454395.4152285,"req":"h09","event":"last_token","step":"draft","total_ms":737.6,"prompt_tokens":2350,"completion_tokens":57,"provider_queue_ms":371.2,"provider_total_ms":233.2}
+{"t":1454395.4154036,"req":"h09","event":"verify_det","ok":true,"issues":[]}
+{"t":1454395.4154458,"req":"h09","event":"user_first_token"}
+{"t":1454395.4154781,"req":"h09","event":"user_last_token"}
+{"t":1454395.4155141,"req":"h09","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide BLEU scores for English\u2011German and English\u2011French, but no information on English\u2011Czech translation."}

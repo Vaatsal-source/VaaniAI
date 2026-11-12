@@ -1,0 +1,8 @@
+| settings                                                                    | full answers (normal / degraded)   | quoted fallback   | TTFT p95 ms   | full-answer TTFT p95 ms   | laptop stalls >100 ms   |
+|:----------------------------------------------------------------------------|:-----------------------------------|:------------------|:--------------|:--------------------------|:------------------------|
+| round 1 as it was (stand-in charges max_tokens)                             | 36 / 2                             | 108               | 17197.4       | 12515.4                   | 0                       |
+| round 1 + count admitted requests' coming draft calls                       | 34 / 2                             | 109               | 5269.5        | 12158.0                   | 14 (worst 714 ms)       |
+| round 1 limiter, stand-in charges real usage                                | 34 / 3                             | 108               | 18072.3       | 14888.2                   | 23 (worst 1514 ms)      |
+| + real-usage token estimate and refunds (stand-in still charges max_tokens) | 39 / 0                             | 108               | 5264.9        | 4557.7                    | 9 (worst 171 ms)        |
+| + both of the above (stand-in still charges max_tokens)                     | 33 / 8                             | 105               | 3471.2        | 3539.4                    | 3 (worst 144 ms)        |
+| all round-2 changes (stand-in charges real usage)                           | 35 / 11                            | 100               | 4101.0        | 4517.4                    | 0                       |

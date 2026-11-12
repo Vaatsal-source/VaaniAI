@@ -1,0 +1,60 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 20, "window": 5.0, "patience": 20.0, "seed": 1, "tag": "r2_cache_burst_free_on", "drain": 0}, "n": 20, "perf0": 1453744.3041712}
+{"t": 1453744.7188143, "req": "r2_cache_burst_free_on-0000", "event": "arrive", "sched": 0.011066799983382225, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453744.848893, "req": "r2_cache_burst_free_on-0001", "event": "arrive", "sched": 0.1411458000075072, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1453744.8525193, "req": "r2_cache_burst_free_on-0002", "event": "arrive", "sched": 0.14477419992908835, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1453745.1899442, "req": "r2_cache_burst_free_on-0003", "event": "arrive", "sched": 0.4821985000744462, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453745.3686163, "req": "r2_cache_burst_free_on-0004", "event": "arrive", "sched": 0.6608716999180615, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1453745.8683016, "req": "r2_cache_burst_free_on-0005", "event": "arrive", "sched": 1.160557199968025, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1453745.9932863, "req": "r2_cache_burst_free_on-0006", "event": "arrive", "sched": 1.2855414999648929, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1453747.0108824, "req": "r2_cache_burst_free_on-0007", "event": "arrive", "sched": 2.3031351000536233, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1453747.0142604, "req": "r2_cache_burst_free_on-0008", "event": "arrive", "sched": 2.306361800059676, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1453747.6395489, "req": "r2_cache_burst_free_on-0009", "event": "arrive", "sched": 2.9318035000469536, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1453748.7548299, "req": "r2_cache_burst_free_on-0010", "event": "arrive", "sched": 4.047082799952477, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453749.0118299, "req": "r2_cache_burst_free_on-0011", "event": "arrive", "sched": 4.304082100046799, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453749.3951988, "req": "r2_cache_burst_free_on-0012", "event": "arrive", "sched": 4.687453200109303, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1453750.3790523, "req": "r2_cache_burst_free_on-0013", "event": "arrive", "sched": 5.671305000083521, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1453750.7602428, "req": "r2_cache_burst_free_on-0014", "event": "arrive", "sched": 6.052496900083497, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453751.5366632, "req": "r2_cache_burst_free_on-0015", "event": "arrive", "sched": 6.828914599958807, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1453751.6230847, "req": "r2_cache_burst_free_on-0016", "event": "arrive", "sched": 6.915336899925023, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453751.6692168, "req": "r2_cache_burst_free_on-0017", "event": "arrive", "sched": 6.961468100082129, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1453751.7694592, "req": "r2_cache_burst_free_on-0018", "event": "arrive", "sched": 7.061711800051853, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1453751.7877181, "req": "r2_cache_burst_free_on-0019", "event": "arrive", "sched": 7.079971499973908, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1453751.8265681, "req": "r2_cache_burst_free_on-0005", "event": "first_byte"}
+{"t": 1453751.8654816, "req": "r2_cache_burst_free_on-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1453751.8982546, "req": "r2_cache_burst_free_on-0006", "event": "first_byte"}
+{"t": 1453751.9197852, "req": "r2_cache_burst_free_on-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1453751.9581855, "req": "r2_cache_burst_free_on-0007", "event": "first_byte"}
+{"t": 1453751.9691806, "req": "r2_cache_burst_free_on-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.0462503, "req": "r2_cache_burst_free_on-0009", "event": "first_byte"}
+{"t": 1453752.0671582, "req": "r2_cache_burst_free_on-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.1081433, "req": "r2_cache_burst_free_on-0010", "event": "first_byte"}
+{"t": 1453752.1168579, "req": "r2_cache_burst_free_on-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.3009953, "req": "r2_cache_burst_free_on-0011", "event": "first_byte"}
+{"t": 1453752.3086432, "req": "r2_cache_burst_free_on-0011", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.457153, "req": "r2_cache_burst_free_on-0012", "event": "first_byte"}
+{"t": 1453752.4757964, "req": "r2_cache_burst_free_on-0012", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.4766328, "req": "r2_cache_burst_free_on-0014", "event": "first_byte"}
+{"t": 1453752.5070732, "req": "r2_cache_burst_free_on-0014", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.5075423, "req": "r2_cache_burst_free_on-0015", "event": "first_byte"}
+{"t": 1453752.573502, "req": "r2_cache_burst_free_on-0015", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.7114759, "req": "r2_cache_burst_free_on-0017", "event": "first_byte"}
+{"t": 1453752.7199401, "req": "r2_cache_burst_free_on-0017", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.7234799, "req": "r2_cache_burst_free_on-0018", "event": "first_byte"}
+{"t": 1453752.7337674, "req": "r2_cache_burst_free_on-0018", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.7589067, "req": "r2_cache_burst_free_on-0016", "event": "error", "error": "RemoteProtocolError('peer closed connection without sending complete message body (incomplete chunked read)')"}
+{"t": 1453752.7607887, "req": "r2_cache_burst_free_on-0019", "event": "first_byte"}
+{"t": 1453752.7718734, "req": "r2_cache_burst_free_on-0019", "event": "end", "status": "extractive_overload"}
+{"t": 1453752.8903384, "req": "r2_cache_burst_free_on-0004", "event": "first_byte"}
+{"t": 1453752.9130546, "req": "r2_cache_burst_free_on-0004", "event": "end", "status": "answered"}
+{"t": 1453754.4054304, "req": "r2_cache_burst_free_on-0000", "event": "first_byte"}
+{"t": 1453754.6815272, "req": "r2_cache_burst_free_on-0000", "event": "end", "status": "answered"}
+{"t": 1453754.7905745, "req": "r2_cache_burst_free_on-0003", "event": "first_byte"}
+{"t": 1453754.8879738, "req": "r2_cache_burst_free_on-0003", "event": "end", "status": "answered"}
+{"t": 1453754.8992223, "req": "r2_cache_burst_free_on-0008", "event": "first_byte"}
+{"t": 1453755.3076076, "req": "r2_cache_burst_free_on-0008", "event": "end", "status": "answered"}
+{"t": 1453755.3628755, "req": "r2_cache_burst_free_on-0001", "event": "first_byte"}
+{"t": 1453755.4837147, "req": "r2_cache_burst_free_on-0001", "event": "end", "status": "answered"}
+{"t": 1453756.0018492, "req": "r2_cache_burst_free_on-0002", "event": "first_byte"}
+{"t": 1453756.019274, "req": "r2_cache_burst_free_on-0002", "event": "end", "status": "answered"}
+{"t": 1453756.0204764, "req": "r2_cache_burst_free_on-0013", "event": "first_byte"}
+{"t": 1453756.0394636, "req": "r2_cache_burst_free_on-0013", "event": "end", "status": "answered"}

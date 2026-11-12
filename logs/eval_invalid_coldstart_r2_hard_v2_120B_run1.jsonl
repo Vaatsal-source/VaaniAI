@@ -1,0 +1,165 @@
+{"t":1453979.8095457,"req":"h01","event":"enqueue","question":"Why does the original attention mechanism divide the query-key products by a con"}
+{"t":1453979.810112,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1453979.8101873,"req":"h01","event":"step_start","step":"classify"}
+{"t":1453979.8104465,"req":"h01","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":194,"provider":"groq"}
+{"t":1453980.4680701,"req":"h01","event":"first_token","step":"classify","ttft_ms":657.5}
+{"t":1453980.4696962,"req":"h01","event":"last_token","step":"classify","total_ms":659.1,"prompt_tokens":212,"completion_tokens":71,"provider_queue_ms":330.1,"provider_total_ms":175.2}
+{"t":1453980.4711539,"req":"h01","event":"step_end","step":"classify"}
+{"t":1453980.4722027,"req":"h01","event":"step_start","step":"retrieve"}
+{"t":1453980.4782588,"req":"h01","event":"step_end","step":"retrieve"}
+{"t":1453980.4789648,"req":"h01","event":"decide","branch":"loop_rewrite","conf":0.58}
+{"t":1453980.479282,"req":"h01","event":"send","step":"rewrite","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":99,"provider":"groq"}
+{"t":1453980.7800776,"req":"h01","event":"first_token","step":"rewrite","ttft_ms":300.7}
+{"t":1453980.8044469,"req":"h01","event":"last_token","step":"rewrite","total_ms":325.1,"prompt_tokens":117,"completion_tokens":33,"provider_queue_ms":157.0,"provider_total_ms":43.4}
+{"t":1453980.8046161,"req":"h01","event":"step_start","step":"retrieve"}
+{"t":1453980.8127121,"req":"h01","event":"step_end","step":"retrieve"}
+{"t":1453980.8149981,"req":"h01","event":"decide","branch":"draft","conf":0.58,"k":5}
+{"t":1453980.8154864,"req":"h01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2196,"provider":"groq"}
+{"t":1453980.9444997,"req":"h01","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"974","x-ratelimit-remaining-tokens":"1614","x-ratelimit-reset-requests":"37m26.4s","x-ratelimit-reset-tokens":"47.895s","retry-after":"3"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6386, Requested 1993. Please try again in 2.8425s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1453980.9447189,"req":"h01","event":"retry","step":"draft","attempt":1,"reason":"429","backoff_ms":3000.0}
+{"t":1453983.9472057,"req":"h01","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":2,"est_tokens":2196,"provider":"groq"}
+{"t":1453984.5510186,"req":"h01","event":"first_token","step":"draft","ttft_ms":603.6}
+{"t":1453984.8113776,"req":"h01","event":"last_token","step":"draft","total_ms":864.0,"prompt_tokens":1831,"completion_tokens":149,"provider_queue_ms":369.9,"provider_total_ms":417.5}
+{"t":1453984.8116007,"req":"h01","event":"verify_det","ok":true,"issues":[]}
+{"t":1453984.811645,"req":"h01","event":"user_first_token"}
+{"t":1453984.8117131,"req":"h01","event":"user_last_token"}
+{"t":1453984.8117567,"req":"h01","event":"done","status":"answered","level":0,"steps":["classify","retrieve","loop","draft"],"answer":"The original attention divides the query\u2011key dot products by \\( \\sqrt{d_k} \\) because without this scaling the dot products can become large in magnitude (especially for large \\(d_k\\)), pushing the softmax into regions with extremely small gradients. Scaling by \\(1/\\sqrt{d_k}\\) keeps the values in a range where the softmax remains sensitive and gradients are stable[C:attention:9]. The same reasoning is reiterated: dot\u2011product magnitudes grow with \\(d_k\\), so scaling counteracts this effect[C:attention:10]."}
+{"t":1453984.8123436,"req":"h02","event":"enqueue","question":"Did the authors find learned positional embeddings worked better than the sinuso"}
+{"t":1453984.8125067,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1453984.8125549,"req":"h02","event":"step_start","step":"classify"}
+{"t":1453984.8129593,"req":"h02","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":189,"provider":"groq"}
+{"t":1453986.6695604,"req":"h02","event":"first_token","step":"classify","ttft_ms":1856.5}
+{"t":1453986.6703503,"req":"h02","event":"last_token","step":"classify","total_ms":1857.3,"prompt_tokens":208,"completion_tokens":64,"provider_queue_ms":1569.6,"provider_total_ms":98.5}
+{"t":1453986.6704664,"req":"h02","event":"step_end","step":"classify"}
+{"t":1453986.6705404,"req":"h02","event":"step_start","step":"retrieve"}
+{"t":1453986.6775111,"req":"h02","event":"step_end","step":"retrieve"}
+{"t":1453986.6784085,"req":"h02","event":"decide","branch":"draft","conf":0.7,"k":5}
+{"t":1453986.678761,"req":"h02","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2180,"provider":"groq"}
+{"t":1453986.7725192,"req":"h02","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"973","x-ratelimit-remaining-tokens":"410","x-ratelimit-reset-requests":"38m52.8s","x-ratelimit-reset-tokens":"56.925s","retry-after":"12"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7590, Requested 1941. Please try again in 11.4825s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1453986.7726915,"req":"h02","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1453986.7727497,"req":"h02","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":298.0}
+{"t":1453986.7737509,"req":"h02","event":"user_first_token"}
+{"t":1453986.7739101,"req":"h02","event":"user_last_token"}
+{"t":1453986.7739826,"req":"h02","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"In row (E) we replace our sinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical results to the base model.\" [C:attention:26]\n\"We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).\" [C:attention:16]\n\"To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks.\" [C:attention:15]"}
+{"t":1453986.7741257,"req":"h03","event":"enqueue","question":"How many parameters does the big Transformer model have?"}
+{"t":1453986.7741934,"req":"-","event":"pressure","wait_s":11.98,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1453986.7742311,"req":"h03","event":"step_start","step":"classify"}
+{"t":1453986.7743589,"req":"h03","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":178,"provider":"groq"}
+{"t":1453987.6615775,"req":"h03","event":"first_token","step":"classify","ttft_ms":887.1}
+{"t":1453987.6628617,"req":"h03","event":"last_token","step":"classify","total_ms":888.4,"prompt_tokens":203,"completion_tokens":50,"provider_queue_ms":752.6,"provider_total_ms":78.0}
+{"t":1453987.6630187,"req":"h03","event":"step_end","step":"classify"}
+{"t":1453987.6631198,"req":"h03","event":"step_start","step":"retrieve"}
+{"t":1453987.6684383,"req":"h03","event":"step_end","step":"retrieve"}
+{"t":1453987.6692981,"req":"h03","event":"decide","branch":"draft","conf":0.67,"k":6}
+{"t":1453998.7641311,"req":"h03","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2413,"provider":"groq"}
+{"t":1453998.9745391,"req":"h03","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"973","x-ratelimit-remaining-tokens":"2036","x-ratelimit-reset-requests":"38m52.8s","x-ratelimit-reset-tokens":"44.73s","retry-after":"5"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5964, Requested 2651. Please try again in 4.6125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1453998.9747626,"req":"h03","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1453998.9748503,"req":"h03","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":287.8}
+{"t":1453998.9758089,"req":"h03","event":"user_first_token"}
+{"t":1453998.9758822,"req":"h03","event":"user_last_token"}
+{"t":1453998.9759211,"req":"h03","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The Transformer (big) model trained for English-to-French used dropout rate Pdrop = 0.1, instead of 0.3.\" [C:attention:23]\n\"41.29 7.7 \u00b7 1019 1.2 \u00b7 1021 Transformer (base model) 27.3 38.1 3.3 \u00b7 1018 Transformer (big) 28.4 41.8 2.3 \u00b7 1019 Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized.\" [C:attention:22]\n\"Model BLEU Training Cost (FLOPs) EN-DE EN-FR EN-DE EN-FR ByteNet [18] 23.75 Deep-Att + PosUnk [39] 39.2 1.0 \u00b7 1020 GNMT + RL [38] 24.6 39.92 2.3 \u00b7 1019 1.4 \u00b7 1020 ConvS2S [9] 25.16 40.46 9.6 \u00b7 1018 1.5 \u00b7 1020 MoE [32] 26.03 40.56 2.0 \u00b7 1019 1.2 \u00b7 1020 Deep-Att + PosUnk Ensemble [39] 40.4 8.0 \u00b7 1020 \" [C:attention:21]"}
+{"t":1453998.9760356,"req":"h04","event":"enqueue","question":"How many layers and what model dimension does Moshi's Depth Transformer use?"}
+{"t":1453998.9760851,"req":"-","event":"pressure","wait_s":5.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1453998.9761088,"req":"h04","event":"step_start","step":"classify"}
+{"t":1453998.9762835,"req":"h04","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"groq"}
+{"t":1453999.3004585,"req":"h04","event":"first_token","step":"classify","ttft_ms":324.1}
+{"t":1453999.3017299,"req":"h04","event":"last_token","step":"classify","total_ms":325.4,"prompt_tokens":208,"completion_tokens":56,"provider_queue_ms":156.6,"provider_total_ms":74.6}
+{"t":1453999.3018755,"req":"h04","event":"step_end","step":"classify"}
+{"t":1453999.3019786,"req":"h04","event":"step_start","step":"retrieve"}
+{"t":1453999.3111585,"req":"h04","event":"step_end","step":"retrieve"}
+{"t":1453999.3120072,"req":"h04","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1454003.995261,"req":"h04","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2591,"provider":"groq"}
+{"t":1454004.6515593,"req":"h04","event":"first_token","step":"draft","ttft_ms":655.9}
+{"t":1454004.7245034,"req":"h04","event":"last_token","step":"draft","total_ms":728.9,"prompt_tokens":2250,"completion_tokens":87,"provider_queue_ms":322.5,"provider_total_ms":277.5}
+{"t":1454004.7247437,"req":"h04","event":"verify_det","ok":true,"issues":[]}
+{"t":1454004.7248229,"req":"h04","event":"user_first_token"}
+{"t":1454004.7248761,"req":"h04","event":"user_last_token"}
+{"t":1454004.7249252,"req":"h04","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"Moshi\u2019s Depth Transformer has 6 layers and a model dimension of 1024 [C:moshi:41] [C:moshi:t0]."}
+{"t":1454004.7253385,"req":"h05","event":"enqueue","question":"What problem does the smoothing module in H-Net solve?"}
+{"t":1454004.7254207,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454004.7254577,"req":"h05","event":"step_start","step":"classify"}
+{"t":1454004.7258335,"req":"h05","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":177,"provider":"groq"}
+{"t":1454006.9406899,"req":"h05","event":"first_token","step":"classify","ttft_ms":2214.7}
+{"t":1454006.9428657,"req":"h05","event":"last_token","step":"classify","total_ms":2216.9,"prompt_tokens":204,"completion_tokens":79,"provider_queue_ms":1990.4,"provider_total_ms":100.7}
+{"t":1454006.943998,"req":"h05","event":"step_end","step":"classify"}
+{"t":1454006.9441676,"req":"h05","event":"step_start","step":"retrieve"}
+{"t":1454006.9537677,"req":"h05","event":"step_end","step":"retrieve"}
+{"t":1454006.956195,"req":"h05","event":"decide","branch":"draft","conf":0.8,"k":5}
+{"t":1454006.957316,"req":"h05","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2153,"provider":"groq"}
+{"t":1454007.1250857,"req":"h05","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"972","x-ratelimit-remaining-tokens":"784","x-ratelimit-reset-requests":"40m19.2s","x-ratelimit-reset-tokens":"54.12s","retry-after":"10"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7216, Requested 2037. Please try again in 9.3975s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1454007.1253633,"req":"h05","event":"retry","step":"draft","attempt":1,"reason":"429","backoff_ms":10000.0}
+{"t":1454017.1367517,"req":"h05","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":2,"est_tokens":2153,"provider":"groq"}
+{"t":1454018.0694346,"req":"h05","event":"first_token","step":"draft","ttft_ms":932.5}
+{"t":1454018.231143,"req":"h05","event":"last_token","step":"draft","total_ms":1094.2,"prompt_tokens":1888,"completion_tokens":113,"provider_queue_ms":335.2,"provider_total_ms":609.4}
+{"t":1454018.2313751,"req":"h05","event":"verify_det","ok":true,"issues":[]}
+{"t":1454018.2314216,"req":"h05","event":"user_first_token"}
+{"t":1454018.2314821,"req":"h05","event":"user_last_token"}
+{"t":1454018.231518,"req":"h05","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The smoothing module is introduced to turn the discrete chunk\u2011boundary decisions into differentiable, interpolated representations, thereby restoring gradient flow that is blocked by the discrete nature of chunk boundaries and enabling stable training dynamics[C:dynchunk:22]. It is shown to be essential for maintaining stable training; without it, compression\u2011ratio fluctuations occur[C:dynchunk:65]."}
+{"t":1454018.231887,"req":"h06","event":"enqueue","question":"What are the three stages of the hierarchical network described in the dynamic c"}
+{"t":1454018.2319734,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454018.2320152,"req":"h06","event":"step_start","step":"classify"}
+{"t":1454018.2322884,"req":"h06","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":189,"provider":"groq"}
+{"t":1454018.9479788,"req":"h06","event":"first_token","step":"classify","ttft_ms":715.6}
+{"t":1454018.9488326,"req":"h06","event":"last_token","step":"classify","total_ms":716.5,"prompt_tokens":210,"completion_tokens":49,"provider_queue_ms":498.2,"provider_total_ms":69.8}
+{"t":1454018.9489593,"req":"h06","event":"step_end","step":"classify"}
+{"t":1454018.9490666,"req":"h06","event":"step_start","step":"retrieve"}
+{"t":1454018.9587417,"req":"h06","event":"step_end","step":"retrieve"}
+{"t":1454018.9595525,"req":"h06","event":"decide","branch":"draft","conf":0.71,"k":5}
+{"t":1454018.9601792,"req":"h06","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2163,"provider":"groq"}
+{"t":1454019.0971821,"req":"h06","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"971","x-ratelimit-remaining-tokens":"380","x-ratelimit-reset-requests":"41m45.6s","x-ratelimit-reset-tokens":"57.15s","retry-after":"12"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7620, Requested 1909. Please try again in 11.4675s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1454019.0974132,"req":"h06","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1454019.0974891,"req":"h06","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":299.1}
+{"t":1454019.0985256,"req":"h06","event":"user_first_token"}
+{"t":1454019.0986037,"req":"h06","event":"user_last_token"}
+{"t":1454019.0986504,"req":"h06","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"H-Net\u2019s core is a novel dynamic chunking (DC) mechanism which interfaces between the main network and the encoder/decoder networks, learning how to segment data while using st\" [C:dynchunk:6]\n\"H-Net is the first dynamic hierarchical model that can recursively nest its chunking strategy (see Table 6 and Appendix A).\" [C:dynchunk:78]\n\"+\" Dynamic Chunking n _ e \u2133 Figure 1: (left) Architectural overview of H-Net with a two-stage hierarchical design (\ud835\udc46= 2).\" [C:dynchunk:8]"}
+{"t":1454019.0988038,"req":"h07","event":"enqueue","question":"What is Moshi's Inner Monologue method?"}
+{"t":1454019.0988655,"req":"-","event":"pressure","wait_s":11.98,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454019.0988981,"req":"h07","event":"step_start","step":"classify"}
+{"t":1454019.0990259,"req":"h07","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":173,"provider":"groq"}
+{"t":1454019.9599341,"req":"h07","event":"first_token","step":"classify","ttft_ms":860.8}
+{"t":1454019.9614147,"req":"h07","event":"last_token","step":"classify","total_ms":862.3,"prompt_tokens":203,"completion_tokens":54,"provider_queue_ms":750.0,"provider_total_ms":69.5}
+{"t":1454019.961565,"req":"h07","event":"step_end","step":"classify"}
+{"t":1454019.9616493,"req":"h07","event":"step_start","step":"retrieve"}
+{"t":1454019.9675066,"req":"h07","event":"step_end","step":"retrieve"}
+{"t":1454019.9680922,"req":"h07","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1454031.1143983,"req":"h07","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2433,"provider":"groq"}
+{"t":1454031.257973,"req":"h07","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"971","x-ratelimit-remaining-tokens":"2001","x-ratelimit-reset-requests":"41m45.6s","x-ratelimit-reset-tokens":"44.992s","retry-after":"1"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5999, Requested 2123. Please try again in 915ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1454031.2584261,"req":"h07","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1454031.2586189,"req":"h07","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":287.8}
+{"t":1454031.2595769,"req":"h07","event":"user_first_token"}
+{"t":1454031.2596521,"req":"h07","event":"user_last_token"}
+{"t":1454031.2597007,"req":"h07","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Additionally, we show how our Inner Monologue method allows designing streaming TTS and streaming ASR just by changing the delay between text and audio tokens.\" [C:moshi:127]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"Not only this \u201cInner Monologue\u201d method significantly improves the linguistic quality of generated speech, but we also illustrate how it can provide streaming speech recognition and text-to-speech.\" [C:moshi:1]"}
+{"t":1454031.2598347,"req":"h08","event":"enqueue","question":"How many TPUs were used to train the Transformer base model?"}
+{"t":1454031.259899,"req":"-","event":"pressure","wait_s":1.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454031.2599304,"req":"h08","event":"step_start","step":"classify"}
+{"t":1454031.260056,"req":"h08","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":179,"provider":"groq"}
+{"t":1454031.7155821,"req":"h08","event":"first_token","step":"classify","ttft_ms":455.5}
+{"t":1454031.7166036,"req":"h08","event":"last_token","step":"classify","total_ms":456.5,"prompt_tokens":206,"completion_tokens":69,"provider_queue_ms":319.5,"provider_total_ms":89.3}
+{"t":1454031.7168196,"req":"h08","event":"step_end","step":"classify"}
+{"t":1454031.7169884,"req":"h08","event":"step_start","step":"retrieve"}
+{"t":1454031.7225234,"req":"h08","event":"step_end","step":"retrieve"}
+{"t":1454031.7232079,"req":"h08","event":"decide","branch":"draft","conf":0.67,"k":6}
+{"t":1454032.2657297,"req":"h08","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2464,"provider":"groq"}
+{"t":1454032.4142865,"req":"h08","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"971","x-ratelimit-remaining-tokens":"2155","x-ratelimit-reset-requests":"41m45.6s","x-ratelimit-reset-tokens":"43.837s","retry-after":"3"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5845, Requested 2469. Please try again in 2.355s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"}
+{"t":1454032.4146838,"req":"h08","event":"giveup","step":"draft","reason":"retry_budget","attempt":1}
+{"t":1454032.4148363,"req":"h08","event":"degrade","what":"extractive_overload","why":"retry_budget","wait_s":null,"remaining_s":298.8}
+{"t":1454032.4168779,"req":"h08","event":"user_first_token"}
+{"t":1454032.4170854,"req":"h08","event":"user_last_token"}
+{"t":1454032.4171944,"req":"h08","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]\n\"For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds.\" [C:attention:20]"}
+{"t":1454032.417507,"req":"h09","event":"enqueue","question":"What BLEU score did the Transformer get on English-to-Czech translation?"}
+{"t":1454032.417723,"req":"-","event":"pressure","wait_s":3.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454032.4178077,"req":"h09","event":"step_start","step":"classify"}
+{"t":1454032.418085,"req":"h09","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":183,"provider":"groq"}
+{"t":1454034.8353327,"req":"h09","event":"first_token","step":"classify","ttft_ms":2417.1}
+{"t":1454034.8364639,"req":"h09","event":"last_token","step":"classify","total_ms":2418.3,"prompt_tokens":208,"completion_tokens":62,"provider_queue_ms":2154.8,"provider_total_ms":192.1}
+{"t":1454034.8366556,"req":"h09","event":"step_end","step":"classify"}
+{"t":1454034.8367612,"req":"h09","event":"step_start","step":"retrieve"}
+{"t":1454034.8470196,"req":"h09","event":"step_end","step":"retrieve"}
+{"t":1454034.8480528,"req":"h09","event":"decide","branch":"draft","conf":0.71,"k":6}
+{"t":1454035.4357804,"req":"h09","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2413,"provider":"groq"}
+{"t":1454037.8643558,"req":"h09","event":"first_token","step":"draft","ttft_ms":2428.3}
+{"t":1454037.9268263,"req":"h09","event":"last_token","step":"draft","total_ms":2490.8,"prompt_tokens":2350,"completion_tokens":57,"provider_queue_ms":2118.3,"provider_total_ms":235.2}
+{"t":1454037.9269789,"req":"h09","event":"verify_det","ok":true,"issues":[]}
+{"t":1454037.9270278,"req":"h09","event":"user_first_token"}
+{"t":1454037.9270577,"req":"h09","event":"user_last_token"}
+{"t":1454037.9270998,"req":"h09","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They provide BLEU scores for English\u2011German and English\u2011French, but no information on English\u2011Czech translation."}

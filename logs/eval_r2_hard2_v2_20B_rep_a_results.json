@@ -1,0 +1,56 @@
+[
+ {
+  "id": "n12",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 1531.5,
+  "text": "The Moshi model\u2019s input and output space uses a text vocabulary of 32 000 tokens and an audio vocabulary of 2 048 tokens, with an audio frame rate of 12.5 Hz. [C:moshi:t0]"
+ },
+ {
+  "id": "n14",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 5395.5,
+  "text": "The papers don't say. They do not specify a single dataset or token count that all H\u2011Net experiment models were trained on."
+ },
+ {
+  "id": "n16",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 3635.5,
+  "text": "The papers don't say. They do not provide the specific learning\u2011rate multipliers per stage that the learning\u2011rate modulation appendix recommends."
+ },
+ {
+  "id": "n17",
+  "type": "answerable",
+  "score": 0.5,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 7891.5,
+  "text": "The appendix states that the core difficulty is \u201ctransforming raw sequential data into computationally efficient representations,\u201d i.e., the challenge of chunking data in a way that is both efficient and learnable without a fixed tokenizer. [C:dynchunk:5]"
+ },
+ {
+  "id": "n18",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 33643.0,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "u06",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": true,
+  "status": "answered",
+  "ms": 15569.8,
+  "text": "The speaker\u2011identification accuracy of Moshi is reported to be between 98.4 % and 99.3 % over the evaluated time windows. [C:moshi:115]"
+ }
+]

@@ -1,0 +1,227 @@
+[
+ {
+  "id": "n01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 49292.4,
+  "text": "The Adam optimizer settings used are \u03b21 = 0.9 and \u03b22 = 0.98 [C:attention:20]."
+ },
+ {
+  "id": "n02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 15688.9,
+  "text": "The Transformer uses 4000 warmup steps [C:attention:21]."
+ },
+ {
+  "id": "n03",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 24069.7,
+  "text": "For the Transformer's translation tasks, a beam size of 4 and a length penalty of \u03b1 = 0.6 were used [C:attention:23]."
+ },
+ {
+  "id": "n04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 7530.2,
+  "text": "The English-German training set consists of about 4.5 million sentence pairs [C:attention:19]. The shared source-target vocabulary contains about 37,000 tokens [C:attention:19]."
+ },
+ {
+  "id": "n05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 4759.4,
+  "text": "According to the layer comparison table, the maximum path length for a self-attention layer is O(1), while the maximum path length for a recurrent layer is O(n) [C:attention:14]."
+ },
+ {
+  "id": "n06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 6769.5,
+  "text": "The 4-layer Transformer reached an F1 score of 91.3 on WSJ-only constituency parsing [C:attention:27]."
+ },
+ {
+  "id": "n07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 38750.2,
+  "text": "For the base models, the last 5 checkpoints were averaged [C:attention:23]. For the big models, the last 20 checkpoints were averaged [C:attention:23]."
+ },
+ {
+  "id": "n08",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 6263.0,
+  "text": "The training cost for the Transformer (base model) on English-to-German is 3.3 \u00b7 1018 FLOPs [C:attention:t0]."
+ },
+ {
+  "id": "n09",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16531.4,
+  "text": "Moshi uses an acoustic delay of 2 during pre-training and an acoustic delay of 1 during fine-tuning to reach a theoretical latency of 160ms [C:moshi:81]."
+ },
+ {
+  "id": "n10",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3641.1,
+  "text": "Helium was trained for 500k steps with a batch size of 4.2M tokens [C:moshi:59]."
+ },
+ {
+  "id": "n11",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 38384.5,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "n12",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3325.1,
+  "text": "For Moshi, the text cardinality is 32,000, the audio cardinality is 2,048, and the frame rate is 12.5 Hz [C:moshi:t0]."
+ },
+ {
+  "id": "n13",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16215.0,
+  "text": "For every training phase, Moshi uses the AdamW optimizer [C:moshi:58]. This optimizer is used with a weight decay of 0.1 [C:moshi:58]."
+ },
+ {
+  "id": "n14",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 21895.6,
+  "text": "The papers don't say. The provided text mentions training on the HG38 dataset for DNA models, but it does not specify the total number of tokens used for all H-Net experiment models."
+ },
+ {
+  "id": "n15",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 43726.0,
+  "text": "The tokenizer-free models process 8192 utf-8 encoded bytes per sequence [C:dynchunk:42]. The Transformer baseline uses 1792 tokens from the GPT2 tokenizer [C:dynchunk:42]."
+ },
+ {
+  "id": "n16",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 29517.4,
+  "text": "The papers don't say. The provided passages do not contain information regarding specific learning rate multipliers per stage."
+ },
+ {
+  "id": "n17",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 9061.7,
+  "text": "The fundamental challenge of transforming raw sequential data into computationally efficient representations manifests across multiple domains through implicit chunking processes [C:dynchunk:111]. Additionally, creating a tokenizer-free architecture requires incorporating the data chunking process directly into the model while overcoming challenges in efficiency, learnability, and stability at scale [C:dynchunk:5]."
+ },
+ {
+  "id": "n18",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 24741.0,
+  "text": "H-Net improves on XWinograd-zh compared to the tokenized Transformer from 59.9 to 66.3 [C:dynchunk:12]."
+ },
+ {
+  "id": "n19",
+  "type": "cross",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 54462.1,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "u01",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 9767.4,
+  "text": "The papers don't say. The provided passages only contain results for English-to-German and English-to-French translation tasks."
+ },
+ {
+  "id": "u02",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 26902.3,
+  "text": "The papers don't say. The provided text lists the training cost in FLOPs and time, but does not provide a monetary cost in dollars."
+ },
+ {
+  "id": "u03",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "extractive_overload",
+  "ms": 1427530.9,
+  "text": "We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"MOSHI: Entropy tells us how much information we need to send from the source to the receiver to ensure reliable communication.\" [C:moshi:182]\n\"So Moshi, how does it feel to be finally back on the moon?\" [C:moshi:188]\n\"MOSHI: (annoyed) Not much, just trying to avoid this endless stream of small talk here.\" [C:moshi:189]"
+ },
+ {
+  "id": "u04",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 17354.6,
+  "text": "The papers don't say. The provided text does not mention a specific dropout rate used during training."
+ },
+ {
+  "id": "u05",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 17469.5,
+  "text": "The papers don't say. The provided passages do not contain information regarding the accuracy of Moshi for Japanese speech recognition."
+ },
+ {
+  "id": "u06",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": true,
+  "status": "answered",
+  "ms": 18691.1,
+  "text": "Moshi maintains speaker consistency with an accuracy ranging from 98.4% to 99.3% over time, as measured by comparing speaker embeddings from segments to a reference segment [C:moshi:115]."
+ }
+]

@@ -31,6 +31,10 @@ def main():
     ap.add_argument("--tpd", type=int, default=None, help="daily token budget (stand-in)")
     ap.add_argument("--tpd_unknown", action="store_true", help="relay limiter does not know the TPD; must learn it from a 429 body")
     ap.add_argument("--large", default=None, help="override the drafting model")
+    ap.add_argument("--cfg", default="{}", help="JSON deep-merged into config.yaml for the relay server, e.g. '{\"pipeline_policy\": {\"shed_frac\": 0.3}}'")
+    ap.add_argument("--relay_port", type=int, default=8110, help="port for the relay server under test")
+    ap.add_argument("--cache", action="store_true", help="enable the answer cache (pinned off by default so experiments stay comparable)")
+    ap.add_argument("--charge_max_tokens", action="store_true", help="stand-in charges prompt+max_tokens (the round-1 assumption) instead of real usage")
     ap.add_argument("--retries", default="", help="overrides for config retries as k=v,k=v e.g. max_attempts=1,retry_budget_frac=10")
     a, rest = ap.parse_known_args()
     procs = []
@@ -44,16 +48,17 @@ def main():
             s = {"rpm": int(30 * a.tier), "tpm": int(8000 * a.tier), "rpd": a.rpd or int(1000 * a.tier),
                  "tpd": a.tpd or int(200000 * a.tier)}
             if a.p_fail is not None: s["p_fail"] = a.p_fail
+            if a.charge_max_tokens: s["charge_max_tokens"] = True
             conf = httpx.post("http://127.0.0.1:8099/admin/config", json={"set": s, "reset": True}).json()
             (ROOT / "logs" / f"standin_{a.tag}.json").write_text(json.dumps(conf, indent=1))
         env = dict(os.environ, RELAY_PROVIDER=a.provider, RELAY_LOG=str(ROOT / "logs" / f"server_{a.tag}.jsonl"),
                    RELAY_LIMITS=json.dumps(base_l) if a.provider == "standin" else json.dumps({"rpd": a.rpd} if a.rpd else {}),
-                   RELAY_RETRIEVAL=json.dumps({"mode": a.mode}), RELAY_LARGE=a.large or "", RELAY_RETRIES=json.dumps({k: float(v) for k, v in (kv.split("=") for kv in a.retries.split(",") if kv)}))
+                   RELAY_RETRIEVAL=json.dumps({"mode": a.mode}), RELAY_CFG=a.cfg, RELAY_CACHE="1" if a.cache else "0", RELAY_LARGE=a.large or "", RELAY_RETRIES=json.dumps({k: float(v) for k, v in (kv.split("=") for kv in a.retries.split(",") if kv)}))
         (ROOT / "logs" / f"server_{a.tag}.jsonl").write_text("")
-        procs.append(subprocess.Popen([PY, "-m", "uvicorn", "relay.server:app", "--port", "8100", "--log-level", "warning"],
+        procs.append(subprocess.Popen([PY, "-m", "uvicorn", "relay.server:app", "--port", str(a.relay_port), "--log-level", "warning"],
                                       cwd=ROOT, env=env, stdout=subprocess.DEVNULL))
-        wait("http://127.0.0.1:8100/health", 120)
-        subprocess.run([PY, str(ROOT / "loadgen" / "loadgen.py"), "--shape", a.shape, "--tag", a.tag] + rest, check=True)
+        wait(f"http://127.0.0.1:{a.relay_port}/health", 120)
+        subprocess.run([PY, str(ROOT / "loadgen" / "loadgen.py"), "--shape", a.shape, "--tag", a.tag, "--base", f"http://127.0.0.1:{a.relay_port}"] + rest, check=True)
         time.sleep(1)
     finally:
         for p in procs:

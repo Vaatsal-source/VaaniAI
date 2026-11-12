@@ -1,0 +1,83 @@
+[
+ {
+  "id": "h01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3032.0,
+  "text": "The original attention divides the query\u2011key dot products by \\( \\sqrt{d_k} \\) because without this scaling the dot products can become large in magnitude (especially for large \\(d_k\\)), pushing the softmax into regions with extremely small gradients. Scaling by \\(1/\\sqrt{d_k}\\) keeps the values in a range where the softmax remains sensitive and gradients are stable[C:attention:9]. The same reasoning is reiterated: dot\u2011product attention can produce large values, so the scaling counteracts this effect and improves training stability[C:attention:10]."
+ },
+ {
+  "id": "h02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 1562.2,
+  "text": "No. The authors report that learned positional embeddings and the sinusoidal version produced \u201cnearly identical results\u201d (see Table 3 row E), and they chose the sinusoidal version for its potential extrapolation benefits[C:attention:16]."
+ },
+ {
+  "id": "h03",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 2055.4,
+  "text": "The papers don't say. They provide BLEU scores and training FLOPs but no explicit parameter count for the big Transformer."
+ },
+ {
+  "id": "h04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 9874.7,
+  "text": "Moshi\u2019s Depth Transformer has **6 layers** and a **model dimension of 1024**[C:moshi:23]."
+ },
+ {
+  "id": "h05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 13823.0,
+  "text": "The smoothing module solves the difficulty of training with discrete chunk boundaries \u2013 it makes the boundary\u2011learning operation differentiable so gradients can flow through chunking, prevents unstable or over\u2011fitted chunk patterns, and provides adaptive error\u2011correction for low\u2011confidence chunks[C:dynchunk:22]. It is essential for stable training dynamics, as removing it causes compression\u2011ratio fluctuations[C:dynchunk:65]."
+ },
+ {
+  "id": "h06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16944.1,
+  "text": "The hierarchical network consists of three stages: (i) a small encoder network that processes the raw data, (ii) a main network that operates on compressed chunks, and (iii) a decoder network that upsamples and processes the data at the original resolution[C:dynchunk:6]."
+ },
+ {
+  "id": "h07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16091.9,
+  "text": "Moshi\u2019s \u201cInner Monologue\u201d is a modeling technique that first predicts time\u2011aligned text tokens as a prefix and then generates the corresponding audio tokens from a neural audio\u2011codec residual quantizer.  By running the text\u2011to\u2011speech generation and the user\u2011speech generation in parallel streams, it removes explicit speaker turns and enables real\u2011time, full\u2011duplex spoken dialogue.  The method also allows Moshi to be repurposed as streaming TTS or streaming ASR simply by adjusting the delay between the two token types[C:moshi:1][C:moshi:15]."
+ },
+ {
+  "id": "h08",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 15652.7,
+  "text": "The papers don't say. They provide details about using NVIDIA P100 GPUs, but give no information on TPU usage."
+ },
+ {
+  "id": "h09",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 17414.0,
+  "text": "The papers don't say. They provide BLEU scores for English\u2011German and English\u2011French, but no information on English\u2011Czech translation."
+ }
+]

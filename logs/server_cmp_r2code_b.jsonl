@@ -1,0 +1,118 @@
+{"t":1461572.501196,"req":"-","event":"loop_lag","lag_ms":714.5}
+{"t":1461573.5122506,"req":"cmp_r2code_b-0000","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1461573.5129972,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1461573.5132255,"req":"cmp_r2code_b-0000","event":"step_start","step":"classify"}
+{"t":1461573.516736,"req":"cmp_r2code_b-0001","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1461573.51711,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"groq"}
+{"t":1461573.5181956,"req":"cmp_r2code_b-0001","event":"step_start","step":"classify"}
+{"t":1461573.5185086,"req":"-","event":"loop_lag","lag_ms":966.9}
+{"t":1461573.5186775,"req":"cmp_r2code_b-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":181,"provider":"groq"}
+{"t":1461573.5294333,"req":"cmp_r2code_b-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"groq"}
+{"t":1461573.546349,"req":"cmp_r2code_b-0002","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1461573.546565,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":2,"provider":"groq"}
+{"t":1461573.5466558,"req":"cmp_r2code_b-0002","event":"step_start","step":"classify"}
+{"t":1461573.546941,"req":"cmp_r2code_b-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":192,"provider":"groq"}
+{"t":1461573.6639179,"req":"cmp_r2code_b-0003","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1461573.6641169,"req":"-","event":"pressure","wait_s":6.67,"remaining_s":17.0,"queued":0,"committed":3,"provider":"groq"}
+{"t":1461573.6641978,"req":"cmp_r2code_b-0003","event":"step_start","step":"classify"}
+{"t":1461573.6642523,"req":"cmp_r2code_b-0003","event":"degrade","what":"classify_heuristic"}
+{"t":1461573.6643004,"req":"cmp_r2code_b-0003","event":"step_end","step":"classify"}
+{"t":1461573.6657787,"req":"cmp_r2code_b-0003","event":"step_start","step":"retrieve"}
+{"t":1461573.678803,"req":"cmp_r2code_b-0003","event":"step_end","step":"retrieve"}
+{"t":1461573.6797287,"req":"cmp_r2code_b-0003","event":"decide","branch":"draft","conf":0.78,"k":3}
+{"t":1461573.6800826,"req":"cmp_r2code_b-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1424,"provider":"groq"}
+{"t":1461573.923581,"req":"cmp_r2code_b-0004","event":"enqueue","question":"How many attention heads does the base Transformer use, and what is the dimensio"}
+{"t":1461573.9238406,"req":"-","event":"pressure","wait_s":18.3,"remaining_s":17.0,"queued":0,"committed":3,"provider":"groq"}
+{"t":1461573.9239423,"req":"cmp_r2code_b-0004","event":"step_start","step":"classify"}
+{"t":1461573.9240021,"req":"cmp_r2code_b-0004","event":"degrade","what":"classify_heuristic"}
+{"t":1461573.9240463,"req":"cmp_r2code_b-0004","event":"step_end","step":"classify"}
+{"t":1461573.9242951,"req":"cmp_r2code_b-0004","event":"step_start","step":"retrieve"}
+{"t":1461573.9319125,"req":"cmp_r2code_b-0004","event":"step_end","step":"retrieve"}
+{"t":1461573.9326196,"req":"cmp_r2code_b-0004","event":"degrade","what":"extractive_overload"}
+{"t":1461573.9344054,"req":"cmp_r2code_b-0004","event":"user_first_token"}
+{"t":1461573.9345624,"req":"cmp_r2code_b-0004","event":"user_last_token"}
+{"t":1461573.9346312,"req":"cmp_r2code_b-0004","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1.\" [C:attention:11]\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]"}
+{"t":1461574.1120328,"req":"cmp_r2code_b-0000","event":"first_token","step":"classify","ttft_ms":593.2}
+{"t":1461574.1137839,"req":"cmp_r2code_b-0000","event":"last_token","step":"classify","total_ms":595.0,"prompt_tokens":206,"completion_tokens":72,"provider_queue_ms":289.6,"provider_total_ms":91.7}
+{"t":1461574.1142748,"req":"cmp_r2code_b-0000","event":"step_end","step":"classify"}
+{"t":1461574.1144439,"req":"cmp_r2code_b-0000","event":"step_start","step":"retrieve"}
+{"t":1461574.1261938,"req":"cmp_r2code_b-0000","event":"step_end","step":"retrieve"}
+{"t":1461574.1291449,"req":"cmp_r2code_b-0000","event":"decide","branch":"tool_fetch_section"}
+{"t":1461574.1292933,"req":"cmp_r2code_b-0000","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"3.2.2"}
+{"t":1461574.1295965,"req":"cmp_r2code_b-0000","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1461574.1302451,"req":"cmp_r2code_b-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2160,"provider":"groq"}
+{"t":1461574.3008289,"req":"-","event":"loop_lag","lag_ms":104.3}
+{"t":1461574.3600874,"req":"cmp_r2code_b-0003","event":"first_token","step":"draft","ttft_ms":679.9}
+{"t":1461574.3608521,"req":"cmp_r2code_b-0000","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"1000","x-ratelimit-limit-tokens":"8000","x-ratelimit-remaining-requests":"983","x-ratelimit-remaining-tokens":"129","x-ratelimit-reset-requests":"24m28.8s","x-ratelimit-reset-tokens":"59.032s","retry-after":"15"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m75egbx4e6karavgqg9q3r3b` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7871, Requested 2034. Please try again in 14.2875s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n","provider":"groq"}
+{"t":1461574.3610766,"req":"cmp_r2code_b-0000","event":"retry","step":"draft","attempt":1,"reason":"429","provider":"groq","backoff_ms":15000.0}
+{"t":1461574.3620717,"req":"cmp_r2code_b-0001","event":"first_token","step":"classify","ttft_ms":832.4}
+{"t":1461574.3632785,"req":"cmp_r2code_b-0001","event":"last_token","step":"classify","total_ms":833.6,"prompt_tokens":214,"completion_tokens":117,"provider_queue_ms":468.6,"provider_total_ms":152.4}
+{"t":1461574.3634438,"req":"cmp_r2code_b-0001","event":"step_end","step":"classify"}
+{"t":1461574.3635392,"req":"cmp_r2code_b-0001","event":"step_start","step":"retrieve"}
+{"t":1461574.3712385,"req":"cmp_r2code_b-0001","event":"step_end","step":"retrieve"}
+{"t":1461574.3742762,"req":"cmp_r2code_b-0001","event":"decide","branch":"draft","conf":0.71,"k":6}
+{"t":1461574.4321651,"req":"cmp_r2code_b-0003","event":"last_token","step":"draft","total_ms":751.9,"prompt_tokens":1106,"completion_tokens":91,"provider_queue_ms":323.9,"provider_total_ms":256.4}
+{"t":1461574.4325633,"req":"cmp_r2code_b-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1461574.4326378,"req":"cmp_r2code_b-0003","event":"user_first_token"}
+{"t":1461574.4326821,"req":"cmp_r2code_b-0003","event":"user_last_token"}
+{"t":1461574.4327206,"req":"cmp_r2code_b-0003","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"The model uses 8 parallel attention heads, and each head\u2019s keys (and queries) have dimension dk = 64 [C:attention:11]."}
+{"t":1461574.6485122,"req":"cmp_r2code_b-0005","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1461574.6487051,"req":"-","event":"pressure","wait_s":32.44,"remaining_s":17.0,"queued":1,"committed":1,"provider":"groq"}
+{"t":1461574.6488905,"req":"cmp_r2code_b-0005","event":"step_start","step":"classify"}
+{"t":1461574.6489542,"req":"cmp_r2code_b-0005","event":"degrade","what":"classify_heuristic"}
+{"t":1461574.6490003,"req":"cmp_r2code_b-0005","event":"step_end","step":"classify"}
+{"t":1461574.6491147,"req":"cmp_r2code_b-0005","event":"step_start","step":"retrieve"}
+{"t":1461574.6539642,"req":"cmp_r2code_b-0005","event":"step_end","step":"retrieve"}
+{"t":1461574.6568191,"req":"cmp_r2code_b-0005","event":"degrade","what":"extractive_overload"}
+{"t":1461574.6584393,"req":"cmp_r2code_b-0005","event":"user_first_token"}
+{"t":1461574.6597119,"req":"cmp_r2code_b-0005","event":"user_last_token"}
+{"t":1461574.6597842,"req":"cmp_r2code_b-0005","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1461574.6880519,"req":"cmp_r2code_b-0002","event":"first_token","step":"classify","ttft_ms":1141.0}
+{"t":1461574.6934957,"req":"cmp_r2code_b-0002","event":"last_token","step":"classify","total_ms":1146.4,"prompt_tokens":214,"completion_tokens":79,"provider_queue_ms":873.9,"provider_total_ms":95.7}
+{"t":1461574.6938473,"req":"cmp_r2code_b-0002","event":"step_end","step":"classify"}
+{"t":1461574.6940252,"req":"cmp_r2code_b-0002","event":"step_start","step":"retrieve"}
+{"t":1461574.709749,"req":"cmp_r2code_b-0002","event":"step_end","step":"retrieve"}
+{"t":1461574.7108759,"req":"cmp_r2code_b-0002","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1461574.726889,"req":"cmp_r2code_b-0006","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1461574.7271232,"req":"-","event":"pressure","wait_s":33.98,"remaining_s":17.0,"queued":2,"committed":0,"provider":"groq"}
+{"t":1461574.7272043,"req":"cmp_r2code_b-0006","event":"step_start","step":"classify"}
+{"t":1461574.7272579,"req":"cmp_r2code_b-0006","event":"degrade","what":"classify_heuristic"}
+{"t":1461574.7273346,"req":"cmp_r2code_b-0006","event":"step_end","step":"classify"}
+{"t":1461574.7275576,"req":"cmp_r2code_b-0006","event":"step_start","step":"retrieve"}
+{"t":1461574.7346303,"req":"cmp_r2code_b-0006","event":"step_end","step":"retrieve"}
+{"t":1461574.7353385,"req":"cmp_r2code_b-0006","event":"degrade","what":"extractive_overload"}
+{"t":1461574.7364378,"req":"cmp_r2code_b-0006","event":"user_first_token"}
+{"t":1461574.7365272,"req":"cmp_r2code_b-0006","event":"user_last_token"}
+{"t":1461574.7365788,"req":"cmp_r2code_b-0006","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The output is computed as a weighted sum 3 Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention.\" [C:attention:8]\n\"3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: \u2022 In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\" [C:attention:12]\n\"In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.\" [C:attention:5]"}
+{"t":1461574.8198428,"req":"cmp_r2code_b-0007","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1461574.8202161,"req":"-","event":"pressure","wait_s":33.89,"remaining_s":17.0,"queued":2,"committed":0,"provider":"groq"}
+{"t":1461574.8203251,"req":"cmp_r2code_b-0007","event":"step_start","step":"classify"}
+{"t":1461574.8203818,"req":"cmp_r2code_b-0007","event":"degrade","what":"classify_heuristic"}
+{"t":1461574.820428,"req":"cmp_r2code_b-0007","event":"step_end","step":"classify"}
+{"t":1461574.8205628,"req":"cmp_r2code_b-0007","event":"step_start","step":"retrieve"}
+{"t":1461574.8426508,"req":"cmp_r2code_b-0007","event":"step_end","step":"retrieve"}
+{"t":1461574.8435806,"req":"cmp_r2code_b-0007","event":"shed","reason":"overload_low_confidence"}
+{"t":1461574.8436532,"req":"cmp_r2code_b-0007","event":"user_first_token"}
+{"t":1461574.843722,"req":"cmp_r2code_b-0007","event":"done","status":"shed","level":2,"steps":["classify","retrieve"],"answer":"I'm at capacity and couldn't find a passage that clearly answers this. Please try again in a minute."}
+{"t":1461575.3289265,"req":"-","event":"loop_lag","lag_ms":130.0}
+{"t":1461575.5290178,"req":"-","event":"loop_lag","lag_ms":141.8}
+{"t":1461575.9075579,"req":"-","event":"loop_lag","lag_ms":328.4}
+{"t":1461576.9719815,"req":"-","event":"loop_lag","lag_ms":505.1}
+{"t":1461588.2841328,"req":"-","event":"loop_lag","lag_ms":284.3}
+{"t":1461588.5701298,"req":"-","event":"loop_lag","lag_ms":235.8}
+{"t":1461588.8326159,"req":"-","event":"loop_lag","lag_ms":113.3}
+{"t":1461589.3609605,"req":"cmp_r2code_b-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2543,"provider":"groq"}
+{"t":1461589.3628838,"req":"cmp_r2code_b-0002","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline","wait_s":4.0311111112021685,"remaining_s":1.2}
+{"t":1461589.3643405,"req":"cmp_r2code_b-0002","event":"user_first_token"}
+{"t":1461589.3644409,"req":"cmp_r2code_b-0002","event":"user_last_token"}
+{"t":1461589.3645108,"req":"cmp_r2code_b-0002","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.\" [C:attention:12]\n\"On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random variables with mean 0 and variance 1.\" [C:attention:11]\n\"(right) Multi-Head Attention consists of several attention layers running in parallel.\" [C:attention:9]"}
+{"t":1461589.36749,"req":"cmp_r2code_b-0000","event":"degrade","what":"extractive_overload","why":"wait_exceeds_deadline","wait_s":3.7227777778688353,"remaining_s":1.1}
+{"t":1461589.368775,"req":"cmp_r2code_b-0000","event":"user_first_token"}
+{"t":1461589.3689226,"req":"cmp_r2code_b-0000","event":"user_last_token"}
+{"t":1461589.3690054,"req":"cmp_r2code_b-0000","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve","tool"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]"}
+{"t":1461590.5208343,"req":"cmp_r2code_b-0001","event":"call_timeout","step":"draft","after_s":1.16,"attempt":1,"provider":"groq"}
+{"t":1461590.5210733,"req":"cmp_r2code_b-0001","event":"giveup","step":"draft","reason":"call_timeout","attempt":1,"provider":"groq"}
+{"t":1461590.5211897,"req":"cmp_r2code_b-0001","event":"degrade","what":"extractive_overload","why":"call_timeout","wait_s":null,"remaining_s":-0.0}
+{"t":1461590.5286895,"req":"cmp_r2code_b-0001","event":"user_first_token"}
+{"t":1461590.5289139,"req":"cmp_r2code_b-0001","event":"user_last_token"}
+{"t":1461590.5296117,"req":"cmp_r2code_b-0001","event":"done","status":"extractive_overload","level":0,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]"}

@@ -1,0 +1,15 @@
+{
+ "retrieval": {
+  "original": {
+   "n": 23,
+   "hit_pct": 100.0,
+   "has_answer_pct": 100.0
+  },
+  "hard2": {
+   "n": 19,
+   "hit_pct": 94.7,
+   "has_answer_pct": 89.5
+  }
+ },
+ "note": "retrieval-only guard; produced by scripts/check_quality.py --update"
+}

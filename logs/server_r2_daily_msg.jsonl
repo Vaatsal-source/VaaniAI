@@ -1,0 +1,36 @@
+{"t":1461711.4314931,"req":"daily-0","event":"enqueue","question":"How many attention heads does the base Transformer use?"}
+{"t":1461711.4322526,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1461711.4324061,"req":"daily-0","event":"step_start","step":"classify"}
+{"t":1461711.4327701,"req":"daily-0","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":177,"provider":"standin"}
+{"t":1461712.1538857,"req":"daily-0","event":"first_token","step":"classify","ttft_ms":720.9}
+{"t":1461712.160883,"req":"daily-0","event":"last_token","step":"classify","total_ms":727.9,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1461712.1663001,"req":"daily-0","event":"step_end","step":"classify"}
+{"t":1461712.1679267,"req":"daily-0","event":"step_start","step":"retrieve"}
+{"t":1461712.1826563,"req":"daily-0","event":"step_end","step":"retrieve"}
+{"t":1461712.1838351,"req":"daily-0","event":"decide","branch":"draft","conf":0.8,"k":5}
+{"t":1461712.1845167,"req":"daily-0","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1939,"provider":"standin"}
+{"t":1461712.6514784,"req":"daily-0","event":"first_token","step":"draft","ttft_ms":466.7}
+{"t":1461712.6813618,"req":"daily-0","event":"last_token","step":"draft","total_ms":496.6,"prompt_tokens":1509,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1461712.6824037,"req":"daily-0","event":"verify_det","ok":true,"issues":[]}
+{"t":1461712.6825122,"req":"daily-0","event":"user_first_token"}
+{"t":1461712.6826051,"req":"daily-0","event":"user_last_token"}
+{"t":1461712.6826774,"req":"daily-0","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1461713.6707034,"req":"daily-1","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1461713.6716091,"req":"daily-1","event":"step_start","step":"classify"}
+{"t":1461713.672686,"req":"daily-1","event":"degrade","what":"classify_heuristic"}
+{"t":1461713.6758984,"req":"daily-1","event":"step_end","step":"classify"}
+{"t":1461713.6794517,"req":"daily-1","event":"step_start","step":"retrieve"}
+{"t":1461713.7092001,"req":"daily-1","event":"step_end","step":"retrieve"}
+{"t":1461713.7103715,"req":"daily-1","event":"degrade","what":"extractive_daily"}
+{"t":1461713.7122462,"req":"daily-1","event":"user_first_token"}
+{"t":1461713.7123926,"req":"daily-1","event":"user_last_token"}
+{"t":1461713.7124689,"req":"daily-1","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1461714.850111,"req":"daily-2","event":"enqueue","question":"Who won the football world cup in 2022?"}
+{"t":1461714.8503341,"req":"daily-2","event":"step_start","step":"classify"}
+{"t":1461714.8504034,"req":"daily-2","event":"degrade","what":"classify_heuristic"}
+{"t":1461714.8504555,"req":"daily-2","event":"step_end","step":"classify"}
+{"t":1461714.8505784,"req":"daily-2","event":"step_start","step":"retrieve"}
+{"t":1461714.8551967,"req":"daily-2","event":"step_end","step":"retrieve"}
+{"t":1461714.8573362,"req":"daily-2","event":"shed","reason":"daily_low_confidence"}
+{"t":1461714.8575092,"req":"daily-2","event":"user_first_token"}
+{"t":1461714.8577155,"req":"daily-2","event":"done","status":"shed","level":2,"steps":["classify","retrieve"],"answer":"Our model budget is used up for now and I couldn't find a passage that clearly answers this. Please try again in about 5 hours."}

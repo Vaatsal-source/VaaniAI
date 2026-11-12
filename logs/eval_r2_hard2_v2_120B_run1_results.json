@@ -1,0 +1,227 @@
+[
+ {
+  "id": "n01",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 1957.3,
+  "text": "The Adam optimizer was configured with \u03b2\u2081 = 0.9 and \u03b2\u2082 = 0.98[C:attention:20]."
+ },
+ {
+  "id": "n02",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 3390.7,
+  "text": "The Transformer's learning\u2011rate schedule uses 4000 warmup steps[C:attention:21]."
+ },
+ {
+  "id": "n03",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 2212.0,
+  "text": "The Transformer\u2019s translations were decoded with a beam size of 4 and a length\u2011penalty \u03b1 = 0.6[C:attention:23]."
+ },
+ {
+  "id": "n04",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 6842.8,
+  "text": "The Transformer was trained on roughly 4.5 million English\u2011German sentence pairs, using a shared source\u2011target vocabulary of about 37 000 tokens [C:attention:19]."
+ },
+ {
+  "id": "n05",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 20041.3,
+  "text": "The table lists the maximum path length as O(1) for a self\u2011attention layer and O(n) for a recurrent layer[C:attention:14]."
+ },
+ {
+  "id": "n06",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 14993.3,
+  "text": "The 4\u2011layer Transformer achieved an F1 score of **91.3** on the WSJ\u2011only constituency\u2011parsing setting[C:attention:27]."
+ },
+ {
+  "id": "n07",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16823.1,
+  "text": "The base models were created by averaging the last 5 checkpoints, while the big models were created by averaging the last 20 checkpoints [C:attention:23]."
+ },
+ {
+  "id": "n08",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 18437.8,
+  "text": "The results table lists the Transformer (base model) as having a training cost of **38.1 \u00d7 10\u00b9\u2078 FLOPs** for English\u2011to\u2011German translation[C:attention:21]. The paper does not provide the exact unit label, but the column is \u201cTraining Cost (FLOPs)\u201d."
+ },
+ {
+  "id": "n09",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17916.0,
+  "text": "Moshi is pretrained with an acoustic\u2011delay of 2 and then finetuned with an acoustic\u2011delay of 1 to achieve the reported 160 ms theoretical latency[C:moshi:81]."
+ },
+ {
+  "id": "n10",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17951.2,
+  "text": "Helium was trained with a text\u2011only batch size of 4.2 million tokens and for 500 k training steps[C:moshi:59]."
+ },
+ {
+  "id": "n11",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16110.6,
+  "text": "Mimi\u2019s latent representation has dimension 512 [C:moshi:29], and its embeddings are projected down to 256 dimensions before the residual vector quantizer is applied [C:moshi:32]."
+ },
+ {
+  "id": "n12",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17332.2,
+  "text": "Moshi uses a text vocabulary of size 32 000 tokens and an audio token set of size 2 048, with a processing frame rate of 12.5 Hz[C:moshi:24]. This is confirmed in the hyper\u2011parameter table where the same values are listed for the model\u2019s input/output space[C:moshi:t0]."
+ },
+ {
+  "id": "n13",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17007.9,
+  "text": "Moshi is trained with the AdamW optimizer and a weight\u2011decay of 0.1 in all of its training phases[C:moshi:58]."
+ },
+ {
+  "id": "n14",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 15781.6,
+  "text": "The papers don't say. They specify that H\u2011Net models were trained on the HG38 DNA dataset, but they do not provide the total number of tokens (or base\u2011pair tokens) used for training any of the experiments."
+ },
+ {
+  "id": "n15",
+  "type": "answerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 16083.8,
+  "text": "The tokenizer\u2011free models process **8192 bytes per sequence**, whereas the baseline Transformer uses **1792 tokens** (equivalent to roughly 8192 bytes) per sequence[C:dynchunk:42]."
+ },
+ {
+  "id": "n16",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 16107.6,
+  "text": "The papers don't say. The provided passages contain the learning\u2011rate formula and warm\u2011up steps, but they do not list any specific learning\u2011rate multipliers per training stage."
+ },
+ {
+  "id": "n17",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 14882.7,
+  "text": "The appendix notes that the core difficulty of tokenization and chunking is that it \u201crequires optimizing discrete selection operations without supervision, which is fundamentally a challenging problem\u201d and that building tokenizer\u2011free models must overcome \u201cefficiency, learnability, and stability\u201d issues at scale [C:dynchunk:5]."
+ },
+ {
+  "id": "n18",
+  "type": "answerable",
+  "score": 0.0,
+  "confident_wrong": false,
+  "status": "declined",
+  "ms": 33036.4,
+  "text": "I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."
+ },
+ {
+  "id": "n19",
+  "type": "cross",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "answered",
+  "ms": 17001.2,
+  "text": "The base Transformer encoder consists of 6 identical layers [C:attention:7], whereas Moshi\u2019s Temporal Transformer uses 32 layers [C:moshi:t0]."
+ },
+ {
+  "id": "u01",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 15044.5,
+  "text": "The papers don't say. They provide BLEU scores for English\u2011German and English\u2011French, but no information on English\u2011Spanish translation."
+ },
+ {
+  "id": "u02",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 18285.8,
+  "text": "The papers don't say. They provide training FLOPs for the big Transformer but no dollar cost."
+ },
+ {
+  "id": "u03",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 16950.1,
+  "text": "The papers don't say. They provide no information about the kilowatt\u2011hour energy consumption used to train Moshi."
+ },
+ {
+  "id": "u04",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 14851.2,
+  "text": "The papers don't say. The provided excerpts contain no information about the dropout rate used in H\u2011Net training."
+ },
+ {
+  "id": "u05",
+  "type": "unanswerable",
+  "score": 1.0,
+  "confident_wrong": false,
+  "status": "abstained",
+  "ms": 13721.6,
+  "text": "The papers don't say. They provide no data on Moshi\u2019s Japanese speech\u2011recognition accuracy."
+ },
+ {
+  "id": "u06",
+  "type": "unanswerable",
+  "score": 0.0,
+  "confident_wrong": true,
+  "status": "answered",
+  "ms": 14196.3,
+  "text": "Moshi\u2019s speaker\u2011consistency evaluation shows that the model\u2019s speaker embedding is closer to its own reference than to the user\u2019s embedding in \u2248 98 %\u201399 % of cases across time intervals (98.4 %\u201399.3 %)[C:moshi:115][C:moshi:t17]."
+ }
+]

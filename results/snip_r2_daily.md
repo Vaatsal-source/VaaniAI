@@ -1,0 +1,9 @@
+| run                                                  | N   | full answers   | quoted-passages fallback   | turned away   | gave up   | TTFT p50 ms   | TTFT p95 ms   | full-answer TTFT p95 ms   | tokens/full answer   | laptop stalls >100 ms   |
+|:-----------------------------------------------------|:----|:---------------|:---------------------------|:--------------|:----------|:--------------|:--------------|:--------------------------|:---------------------|:------------------------|
+| round 1: limiter told the budget                     | 54  | 20             | 34                         | 0             | 0         | 28.4          | 4506.0        | 5941.7                    | 2004.0               | 0                       |
+| round 2: limiter told the budget                     | 54  | 20             | 34                         | 0             | 0         | 71.1          | 3825.8        | 5859.0                    | 2073.7               | 15 (worst 481 ms)       |
+| round 1: limiter learns it from the 429              | 54  | 20             | 34                         | 0             | 0         | 22.8          | 2517.0        | 5113.9                    | 2004.0               | 0                       |
+| round 2: limiter learns it from the 429              | 54  | 20             | 34                         | 0             | 0         | 37.1          | 2542.4        | 2998.4                    | 2084.9               | 12 (worst 413 ms)       |
+| round 2 + second provider ready (also 40,000 tokens) | 54  | 40             | 14                         | 0             | 0         | 1190.3        | 3882.7        | 4101.7                    | 2082.7               | 19 (worst 1043 ms)      |
+
+Draft calls by provider in the failover run: {'standin': 21, 'standin_fb': 21}; calls moved mid-request after a daily 429: 1.

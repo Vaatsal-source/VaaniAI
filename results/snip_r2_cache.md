@@ -1,0 +1,6 @@
+| run                              | full answers   | quoted fallback   | gave up   | model calls   | cache hits   | joined an in-flight answer   | tokens used   | TTFT p50 ms   | TTFT p95 ms   | laptop stalls >100 ms   |
+|:---------------------------------|:---------------|:------------------|:----------|:--------------|:-------------|:-----------------------------|:--------------|:--------------|:--------------|:------------------------|
+| 10x burst of 150, cache off      | 44             | 102               | 0         | 84            | 0            | 0                            | 83988         | 603.5         | 4495.2        | 8 (worst 318 ms)        |
+| 10x burst of 150, cache on       | 149            | 1                 | 0         | 58            | 95           | 33                           | 51800         | 14.6          | 4189.2        | 0                       |
+| free-tier burst of 20, cache off | 4              | 16                | 0         | 8             | 0            | 0                            | 7161          | 28.8          | 2202.4        | 0                       |
+| free-tier burst of 20, cache on  | 8              | 12                | 0         | 8             | 2            | 1                            | 8383          | 38.2          | 2236.3        | 0                       |

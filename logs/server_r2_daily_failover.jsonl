@@ -1,0 +1,859 @@
+{"t":1460773.639547,"req":"r2_daily_failover-0000","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1460773.6405522,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460773.6406946,"req":"r2_daily_failover-0000","event":"step_start","step":"classify"}
+{"t":1460773.6410309,"req":"r2_daily_failover-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":187,"provider":"standin"}
+{"t":1460774.3970754,"req":"r2_daily_failover-0000","event":"first_token","step":"classify","ttft_ms":755.9}
+{"t":1460774.4183957,"req":"r2_daily_failover-0000","event":"last_token","step":"classify","total_ms":777.2,"prompt_tokens":113,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460774.4499245,"req":"r2_daily_failover-0000","event":"step_end","step":"classify"}
+{"t":1460774.451217,"req":"r2_daily_failover-0000","event":"step_start","step":"retrieve"}
+{"t":1460774.5004757,"req":"r2_daily_failover-0000","event":"step_end","step":"retrieve"}
+{"t":1460774.5017033,"req":"r2_daily_failover-0000","event":"decide","branch":"draft","conf":0.9,"k":6}
+{"t":1460774.5020269,"req":"r2_daily_failover-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2417,"provider":"standin"}
+{"t":1460774.9828413,"req":"r2_daily_failover-0000","event":"first_token","step":"draft","ttft_ms":480.7}
+{"t":1460775.0070775,"req":"r2_daily_failover-0000","event":"last_token","step":"draft","total_ms":504.9,"prompt_tokens":1903,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460775.007408,"req":"r2_daily_failover-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1460775.0074557,"req":"r2_daily_failover-0000","event":"user_first_token"}
+{"t":1460775.0074908,"req":"r2_daily_failover-0000","event":"user_last_token"}
+{"t":1460775.0075149,"req":"r2_daily_failover-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1460775.4759297,"req":"r2_daily_failover-0001","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1460775.4761371,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460775.476224,"req":"r2_daily_failover-0001","event":"step_start","step":"classify"}
+{"t":1460775.476988,"req":"r2_daily_failover-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":173,"provider":"standin"}
+{"t":1460775.4816884,"req":"r2_daily_failover-0002","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1460775.4818533,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460775.4819143,"req":"r2_daily_failover-0002","event":"step_start","step":"classify"}
+{"t":1460775.4830506,"req":"r2_daily_failover-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"standin"}
+{"t":1460776.2365552,"req":"r2_daily_failover-0001","event":"first_token","step":"classify","ttft_ms":759.4}
+{"t":1460776.2425006,"req":"r2_daily_failover-0001","event":"last_token","step":"classify","total_ms":765.4,"prompt_tokens":101,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460776.242907,"req":"r2_daily_failover-0001","event":"step_end","step":"classify"}
+{"t":1460776.2430419,"req":"r2_daily_failover-0001","event":"step_start","step":"retrieve"}
+{"t":1460776.2497754,"req":"r2_daily_failover-0001","event":"step_end","step":"retrieve"}
+{"t":1460776.250941,"req":"r2_daily_failover-0001","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1460776.2512635,"req":"r2_daily_failover-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2406,"provider":"standin"}
+{"t":1460776.4221607,"req":"r2_daily_failover-0002","event":"first_token","step":"classify","ttft_ms":939.0}
+{"t":1460776.4304306,"req":"r2_daily_failover-0002","event":"last_token","step":"classify","total_ms":947.2,"prompt_tokens":110,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460776.4306064,"req":"r2_daily_failover-0002","event":"step_end","step":"classify"}
+{"t":1460776.4307391,"req":"r2_daily_failover-0002","event":"step_start","step":"retrieve"}
+{"t":1460776.4449633,"req":"r2_daily_failover-0002","event":"step_end","step":"retrieve"}
+{"t":1460776.4461751,"req":"r2_daily_failover-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460776.4464259,"req":"r2_daily_failover-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2177,"provider":"standin"}
+{"t":1460776.7248263,"req":"r2_daily_failover-0001","event":"first_token","step":"draft","ttft_ms":473.5}
+{"t":1460776.758358,"req":"r2_daily_failover-0001","event":"last_token","step":"draft","total_ms":507.0,"prompt_tokens":1894,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460776.7587009,"req":"r2_daily_failover-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1460776.7587808,"req":"r2_daily_failover-0001","event":"user_first_token"}
+{"t":1460776.7588662,"req":"r2_daily_failover-0001","event":"user_last_token"}
+{"t":1460776.7589732,"req":"r2_daily_failover-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:84] [C:moshi:85]"}
+{"t":1460777.0021032,"req":"r2_daily_failover-0002","event":"first_token","step":"draft","ttft_ms":555.6}
+{"t":1460777.0376868,"req":"r2_daily_failover-0002","event":"last_token","step":"draft","total_ms":591.1,"prompt_tokens":1705,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460777.0380186,"req":"r2_daily_failover-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1460777.0380938,"req":"r2_daily_failover-0002","event":"user_first_token"}
+{"t":1460777.0381472,"req":"r2_daily_failover-0002","event":"user_last_token"}
+{"t":1460777.0382018,"req":"r2_daily_failover-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:21]"}
+{"t":1460783.4822791,"req":"r2_daily_failover-0003","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1460783.4824295,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460783.4824817,"req":"r2_daily_failover-0003","event":"step_start","step":"classify"}
+{"t":1460783.4831776,"req":"r2_daily_failover-0003","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":173,"provider":"standin"}
+{"t":1460784.7118189,"req":"-","event":"loop_lag","lag_ms":512.4}
+{"t":1460785.277974,"req":"-","event":"loop_lag","lag_ms":510.3}
+{"t":1460785.4980618,"req":"-","event":"loop_lag","lag_ms":169.9}
+{"t":1460785.4986641,"req":"r2_daily_failover-0003","event":"first_token","step":"classify","ttft_ms":2015.3}
+{"t":1460785.5166887,"req":"r2_daily_failover-0003","event":"last_token","step":"classify","total_ms":2033.4,"prompt_tokens":101,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460785.5169127,"req":"r2_daily_failover-0003","event":"step_end","step":"classify"}
+{"t":1460785.5170384,"req":"r2_daily_failover-0003","event":"step_start","step":"retrieve"}
+{"t":1460785.5872726,"req":"r2_daily_failover-0003","event":"step_end","step":"retrieve"}
+{"t":1460785.5890819,"req":"r2_daily_failover-0003","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460785.5964591,"req":"r2_daily_failover-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2198,"provider":"standin"}
+{"t":1460786.1807425,"req":"r2_daily_failover-0003","event":"first_token","step":"draft","ttft_ms":584.1}
+{"t":1460786.2727232,"req":"r2_daily_failover-0003","event":"last_token","step":"draft","total_ms":676.1,"prompt_tokens":1722,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460786.273031,"req":"r2_daily_failover-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1460786.273097,"req":"r2_daily_failover-0003","event":"user_first_token"}
+{"t":1460786.2731719,"req":"r2_daily_failover-0003","event":"user_last_token"}
+{"t":1460786.273231,"req":"r2_daily_failover-0003","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:58] [C:moshi:94]"}
+{"t":1460789.2498708,"req":"-","event":"loop_lag","lag_ms":584.2}
+{"t":1460789.4202786,"req":"-","event":"loop_lag","lag_ms":120.3}
+{"t":1460792.8314384,"req":"r2_daily_failover-0004","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1460792.8316665,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":16.98,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460792.8317437,"req":"r2_daily_failover-0004","event":"step_start","step":"classify"}
+{"t":1460792.8319601,"req":"r2_daily_failover-0004","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"standin"}
+{"t":1460794.359303,"req":"r2_daily_failover-0004","event":"first_token","step":"classify","ttft_ms":1527.2}
+{"t":1460794.3618394,"req":"r2_daily_failover-0004","event":"last_token","step":"classify","total_ms":1529.8,"prompt_tokens":110,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460794.3620198,"req":"r2_daily_failover-0004","event":"step_end","step":"classify"}
+{"t":1460794.362147,"req":"r2_daily_failover-0004","event":"step_start","step":"retrieve"}
+{"t":1460794.3712667,"req":"r2_daily_failover-0004","event":"step_end","step":"retrieve"}
+{"t":1460794.3730726,"req":"r2_daily_failover-0004","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460794.3737642,"req":"r2_daily_failover-0004","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2177,"provider":"standin"}
+{"t":1460795.7772667,"req":"r2_daily_failover-0005","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1460795.7775479,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460795.7776625,"req":"r2_daily_failover-0005","event":"step_start","step":"classify"}
+{"t":1460795.7786943,"req":"r2_daily_failover-0005","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":190,"provider":"standin"}
+{"t":1460796.3985695,"req":"r2_daily_failover-0005","event":"first_token","step":"classify","ttft_ms":619.7}
+{"t":1460796.4072701,"req":"r2_daily_failover-0005","event":"last_token","step":"classify","total_ms":628.4,"prompt_tokens":115,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460796.4074948,"req":"r2_daily_failover-0005","event":"step_end","step":"classify"}
+{"t":1460796.4077539,"req":"r2_daily_failover-0005","event":"step_start","step":"retrieve"}
+{"t":1460796.4226317,"req":"r2_daily_failover-0005","event":"step_end","step":"retrieve"}
+{"t":1460796.4236897,"req":"r2_daily_failover-0005","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1460796.4240537,"req":"r2_daily_failover-0005","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2510,"provider":"standin"}
+{"t":1460796.9498307,"req":"r2_daily_failover-0005","event":"first_token","step":"draft","ttft_ms":525.6}
+{"t":1460797.0853319,"req":"r2_daily_failover-0005","event":"last_token","step":"draft","total_ms":661.1,"prompt_tokens":1979,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460797.0855762,"req":"r2_daily_failover-0005","event":"verify_det","ok":true,"issues":[]}
+{"t":1460797.0856214,"req":"r2_daily_failover-0005","event":"user_first_token"}
+{"t":1460797.0856695,"req":"r2_daily_failover-0005","event":"user_last_token"}
+{"t":1460797.0857057,"req":"r2_daily_failover-0005","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1460797.4500622,"req":"r2_daily_failover-0004","event":"first_token","step":"draft","ttft_ms":3076.1}
+{"t":1460797.5016815,"req":"r2_daily_failover-0004","event":"last_token","step":"draft","total_ms":3127.8,"prompt_tokens":1705,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460797.5020779,"req":"r2_daily_failover-0004","event":"verify_det","ok":true,"issues":[]}
+{"t":1460797.5021365,"req":"r2_daily_failover-0004","event":"user_first_token"}
+{"t":1460797.50217,"req":"r2_daily_failover-0004","event":"user_last_token"}
+{"t":1460797.5021953,"req":"r2_daily_failover-0004","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:21]"}
+{"t":1460799.4761701,"req":"r2_daily_failover-0006","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1460799.4763554,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460799.4764269,"req":"r2_daily_failover-0006","event":"step_start","step":"classify"}
+{"t":1460799.4766234,"req":"r2_daily_failover-0006","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":182,"provider":"standin"}
+{"t":1460799.7471095,"req":"r2_daily_failover-0007","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1460799.747551,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460799.7476267,"req":"r2_daily_failover-0007","event":"step_start","step":"classify"}
+{"t":1460799.747836,"req":"r2_daily_failover-0007","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":178,"provider":"standin"}
+{"t":1460800.4498815,"req":"r2_daily_failover-0007","event":"first_token","step":"classify","ttft_ms":701.9}
+{"t":1460800.4533613,"req":"r2_daily_failover-0007","event":"last_token","step":"classify","total_ms":705.4,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460800.4535911,"req":"r2_daily_failover-0007","event":"step_end","step":"classify"}
+{"t":1460800.4537582,"req":"r2_daily_failover-0007","event":"step_start","step":"retrieve"}
+{"t":1460800.461476,"req":"r2_daily_failover-0007","event":"step_end","step":"retrieve"}
+{"t":1460800.4628476,"req":"r2_daily_failover-0007","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1460800.4635276,"req":"r2_daily_failover-0007","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2181,"provider":"standin"}
+{"t":1460800.5583147,"req":"r2_daily_failover-0006","event":"first_token","step":"classify","ttft_ms":1081.6}
+{"t":1460800.561545,"req":"r2_daily_failover-0006","event":"last_token","step":"classify","total_ms":1084.8,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460800.5617325,"req":"r2_daily_failover-0006","event":"step_end","step":"classify"}
+{"t":1460800.5618666,"req":"r2_daily_failover-0006","event":"step_start","step":"retrieve"}
+{"t":1460800.5753638,"req":"r2_daily_failover-0006","event":"step_end","step":"retrieve"}
+{"t":1460800.5764674,"req":"r2_daily_failover-0006","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460800.5769534,"req":"r2_daily_failover-0006","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2180,"provider":"standin"}
+{"t":1460801.0086856,"req":"r2_daily_failover-0007","event":"first_token","step":"draft","ttft_ms":545.0}
+{"t":1460801.0212617,"req":"r2_daily_failover-0006","event":"first_token","step":"draft","ttft_ms":444.2}
+{"t":1460801.0455639,"req":"r2_daily_failover-0007","event":"last_token","step":"draft","total_ms":581.9,"prompt_tokens":1708,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460801.0458914,"req":"r2_daily_failover-0007","event":"verify_det","ok":true,"issues":[]}
+{"t":1460801.0459592,"req":"r2_daily_failover-0007","event":"user_first_token"}
+{"t":1460801.0460358,"req":"r2_daily_failover-0007","event":"user_last_token"}
+{"t":1460801.0460947,"req":"r2_daily_failover-0007","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1460801.0644955,"req":"r2_daily_failover-0006","event":"last_token","step":"draft","total_ms":487.4,"prompt_tokens":1708,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460801.085134,"req":"r2_daily_failover-0006","event":"verify_det","ok":true,"issues":[]}
+{"t":1460801.0852768,"req":"r2_daily_failover-0006","event":"user_first_token"}
+{"t":1460801.0853686,"req":"r2_daily_failover-0006","event":"user_last_token"}
+{"t":1460801.0854484,"req":"r2_daily_failover-0006","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9]"}
+{"t":1460804.6058797,"req":"r2_daily_failover-0008","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1460804.6060895,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460804.6061595,"req":"r2_daily_failover-0008","event":"step_start","step":"classify"}
+{"t":1460804.6064714,"req":"r2_daily_failover-0008","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":178,"provider":"standin"}
+{"t":1460804.829421,"req":"r2_daily_failover-0008","event":"first_token","step":"classify","ttft_ms":222.8}
+{"t":1460804.8465523,"req":"r2_daily_failover-0008","event":"last_token","step":"classify","total_ms":240.0,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460804.846767,"req":"r2_daily_failover-0008","event":"step_end","step":"classify"}
+{"t":1460804.8468915,"req":"r2_daily_failover-0008","event":"step_start","step":"retrieve"}
+{"t":1460804.8596485,"req":"r2_daily_failover-0008","event":"step_end","step":"retrieve"}
+{"t":1460804.8607971,"req":"r2_daily_failover-0008","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460804.8610592,"req":"r2_daily_failover-0008","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2161,"provider":"standin"}
+{"t":1460805.3771627,"req":"r2_daily_failover-0008","event":"first_token","step":"draft","ttft_ms":516.0}
+{"t":1460805.3928962,"req":"r2_daily_failover-0008","event":"last_token","step":"draft","total_ms":531.7,"prompt_tokens":1692,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460805.3932405,"req":"r2_daily_failover-0008","event":"verify_det","ok":true,"issues":[]}
+{"t":1460805.3933224,"req":"r2_daily_failover-0008","event":"user_first_token"}
+{"t":1460805.3933765,"req":"r2_daily_failover-0008","event":"user_last_token"}
+{"t":1460805.3934184,"req":"r2_daily_failover-0008","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:29] [C:dynchunk:28]"}
+{"t":1460805.4800228,"req":"r2_daily_failover-0009","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1460805.4802452,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460805.480372,"req":"r2_daily_failover-0009","event":"step_start","step":"classify"}
+{"t":1460805.4805959,"req":"r2_daily_failover-0009","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":181,"provider":"standin"}
+{"t":1460805.586897,"req":"r2_daily_failover-0010","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1460805.5871004,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460805.5871648,"req":"r2_daily_failover-0010","event":"step_start","step":"classify"}
+{"t":1460805.5876087,"req":"r2_daily_failover-0010","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":196,"provider":"standin"}
+{"t":1460806.1384973,"req":"r2_daily_failover-0009","event":"first_token","step":"classify","ttft_ms":657.8}
+{"t":1460806.1464,"req":"r2_daily_failover-0009","event":"last_token","step":"classify","total_ms":665.7,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460806.1465363,"req":"r2_daily_failover-0009","event":"step_end","step":"classify"}
+{"t":1460806.146628,"req":"r2_daily_failover-0009","event":"step_start","step":"retrieve"}
+{"t":1460806.1528832,"req":"r2_daily_failover-0009","event":"step_end","step":"retrieve"}
+{"t":1460806.1594729,"req":"r2_daily_failover-0009","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1460806.1607046,"req":"r2_daily_failover-0009","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2160,"provider":"standin"}
+{"t":1460806.6798355,"req":"r2_daily_failover-0010","event":"first_token","step":"classify","ttft_ms":1092.1}
+{"t":1460806.6895372,"req":"r2_daily_failover-0010","event":"last_token","step":"classify","total_ms":1101.8,"prompt_tokens":120,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460806.689725,"req":"r2_daily_failover-0010","event":"step_end","step":"classify"}
+{"t":1460806.689905,"req":"r2_daily_failover-0010","event":"step_start","step":"retrieve"}
+{"t":1460806.7057595,"req":"r2_daily_failover-0009","event":"first_token","step":"draft","ttft_ms":544.9}
+{"t":1460806.7641501,"req":"r2_daily_failover-0010","event":"step_end","step":"retrieve"}
+{"t":1460806.7652223,"req":"r2_daily_failover-0010","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460806.7684084,"req":"r2_daily_failover-0010","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1960,"provider":"standin"}
+{"t":1460806.772025,"req":"r2_daily_failover-0009","event":"last_token","step":"draft","total_ms":611.2,"prompt_tokens":1691,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460806.7722644,"req":"r2_daily_failover-0009","event":"verify_det","ok":true,"issues":[]}
+{"t":1460806.7723189,"req":"r2_daily_failover-0009","event":"user_first_token"}
+{"t":1460806.7723994,"req":"r2_daily_failover-0009","event":"user_last_token"}
+{"t":1460806.7724611,"req":"r2_daily_failover-0009","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:8] [C:dynchunk:20]"}
+{"t":1460807.1128405,"req":"r2_daily_failover-0010","event":"first_token","step":"draft","ttft_ms":344.3}
+{"t":1460807.3104638,"req":"r2_daily_failover-0010","event":"last_token","step":"draft","total_ms":541.9,"prompt_tokens":1526,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460807.3108043,"req":"r2_daily_failover-0010","event":"verify_det","ok":true,"issues":[]}
+{"t":1460807.3108706,"req":"r2_daily_failover-0010","event":"user_first_token"}
+{"t":1460807.3109493,"req":"r2_daily_failover-0010","event":"user_last_token"}
+{"t":1460807.3110123,"req":"r2_daily_failover-0010","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1460810.8483021,"req":"r2_daily_failover-0011","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1460810.8487196,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460810.8488002,"req":"r2_daily_failover-0011","event":"step_start","step":"classify"}
+{"t":1460810.8490394,"req":"r2_daily_failover-0011","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":198,"provider":"standin"}
+{"t":1460811.6310511,"req":"r2_daily_failover-0011","event":"first_token","step":"classify","ttft_ms":781.9}
+{"t":1460811.645134,"req":"r2_daily_failover-0011","event":"last_token","step":"classify","total_ms":795.9,"prompt_tokens":122,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460811.6454649,"req":"r2_daily_failover-0011","event":"step_end","step":"classify"}
+{"t":1460811.6456511,"req":"r2_daily_failover-0011","event":"step_start","step":"retrieve"}
+{"t":1460811.6582503,"req":"r2_daily_failover-0011","event":"step_end","step":"retrieve"}
+{"t":1460811.6591536,"req":"r2_daily_failover-0011","event":"decide","branch":"draft","conf":0.67,"k":5}
+{"t":1460811.6593903,"req":"r2_daily_failover-0011","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2190,"provider":"standin"}
+{"t":1460812.1862797,"req":"r2_daily_failover-0012","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1460812.1879275,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460812.1883102,"req":"r2_daily_failover-0012","event":"step_start","step":"classify"}
+{"t":1460812.1886091,"req":"r2_daily_failover-0012","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":178,"provider":"standin"}
+{"t":1460812.1945081,"req":"r2_daily_failover-0011","event":"first_token","step":"draft","ttft_ms":534.9}
+{"t":1460812.2159973,"req":"r2_daily_failover-0011","event":"last_token","step":"draft","total_ms":556.4,"prompt_tokens":1715,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460812.2164077,"req":"r2_daily_failover-0011","event":"verify_det","ok":true,"issues":[]}
+{"t":1460812.2164906,"req":"r2_daily_failover-0011","event":"user_first_token"}
+{"t":1460812.21656,"req":"r2_daily_failover-0011","event":"user_last_token"}
+{"t":1460812.2166021,"req":"r2_daily_failover-0011","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:4] [C:moshi:78]"}
+{"t":1460813.4799517,"req":"r2_daily_failover-0012","event":"first_token","step":"classify","ttft_ms":1290.6}
+{"t":1460813.483752,"req":"r2_daily_failover-0012","event":"last_token","step":"classify","total_ms":1294.4,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460813.483971,"req":"r2_daily_failover-0012","event":"step_end","step":"classify"}
+{"t":1460813.4840958,"req":"r2_daily_failover-0012","event":"step_start","step":"retrieve"}
+{"t":1460813.4933251,"req":"r2_daily_failover-0012","event":"step_end","step":"retrieve"}
+{"t":1460813.4945982,"req":"r2_daily_failover-0012","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1460813.495294,"req":"r2_daily_failover-0012","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2181,"provider":"standin"}
+{"t":1460813.9754957,"req":"r2_daily_failover-0012","event":"first_token","step":"draft","ttft_ms":480.0}
+{"t":1460813.9894759,"req":"r2_daily_failover-0012","event":"last_token","step":"draft","total_ms":494.0,"prompt_tokens":1708,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460813.990032,"req":"r2_daily_failover-0012","event":"verify_det","ok":true,"issues":[]}
+{"t":1460813.9902931,"req":"r2_daily_failover-0012","event":"user_first_token"}
+{"t":1460813.9903972,"req":"r2_daily_failover-0012","event":"user_last_token"}
+{"t":1460813.9904874,"req":"r2_daily_failover-0012","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1460815.4852443,"req":"r2_daily_failover-0013","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1460815.4854543,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460815.4855259,"req":"r2_daily_failover-0013","event":"step_start","step":"classify"}
+{"t":1460815.4857154,"req":"r2_daily_failover-0013","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":190,"provider":"standin"}
+{"t":1460816.432683,"req":"r2_daily_failover-0013","event":"first_token","step":"classify","ttft_ms":946.8}
+{"t":1460816.4384382,"req":"r2_daily_failover-0013","event":"last_token","step":"classify","total_ms":952.6,"prompt_tokens":115,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460816.4386609,"req":"r2_daily_failover-0013","event":"step_end","step":"classify"}
+{"t":1460816.4388046,"req":"r2_daily_failover-0013","event":"step_start","step":"retrieve"}
+{"t":1460816.4543749,"req":"r2_daily_failover-0013","event":"step_end","step":"retrieve"}
+{"t":1460816.4554075,"req":"r2_daily_failover-0013","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1460816.4557968,"req":"r2_daily_failover-0013","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2510,"provider":"standin"}
+{"t":1460816.900452,"req":"r2_daily_failover-0013","event":"first_token","step":"draft","ttft_ms":444.5}
+{"t":1460816.9281226,"req":"r2_daily_failover-0013","event":"last_token","step":"draft","total_ms":472.2,"prompt_tokens":1979,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460816.9294581,"req":"r2_daily_failover-0013","event":"verify_det","ok":true,"issues":[]}
+{"t":1460816.929564,"req":"r2_daily_failover-0013","event":"user_first_token"}
+{"t":1460816.9296418,"req":"r2_daily_failover-0013","event":"user_last_token"}
+{"t":1460816.9297017,"req":"r2_daily_failover-0013","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1460818.5892952,"req":"-","event":"loop_lag","lag_ms":104.3}
+{"t":1460818.6760975,"req":"r2_daily_failover-0014","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1460818.6762962,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1460818.6763657,"req":"r2_daily_failover-0014","event":"step_start","step":"classify"}
+{"t":1460818.6765681,"req":"r2_daily_failover-0014","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":196,"provider":"standin"}
+{"t":1460819.1806706,"req":"r2_daily_failover-0015","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1460819.1808677,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460819.1809387,"req":"r2_daily_failover-0015","event":"step_start","step":"classify"}
+{"t":1460819.181124,"req":"r2_daily_failover-0015","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":182,"provider":"standin"}
+{"t":1460819.6521196,"req":"r2_daily_failover-0015","event":"first_token","step":"classify","ttft_ms":470.9}
+{"t":1460819.6573114,"req":"r2_daily_failover-0015","event":"last_token","step":"classify","total_ms":476.1,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460819.6574796,"req":"r2_daily_failover-0015","event":"step_end","step":"classify"}
+{"t":1460819.6576032,"req":"r2_daily_failover-0015","event":"step_start","step":"retrieve"}
+{"t":1460819.669471,"req":"r2_daily_failover-0015","event":"step_end","step":"retrieve"}
+{"t":1460819.670374,"req":"r2_daily_failover-0015","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460819.6706787,"req":"r2_daily_failover-0015","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2180,"provider":"standin"}
+{"t":1460819.8502638,"req":"r2_daily_failover-0016","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1460819.8505209,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460819.8506148,"req":"r2_daily_failover-0016","event":"step_start","step":"classify"}
+{"t":1460819.8508184,"req":"r2_daily_failover-0016","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":196,"provider":"standin"}
+{"t":1460820.0288834,"req":"r2_daily_failover-0015","event":"first_token","step":"draft","ttft_ms":358.1}
+{"t":1460820.0496117,"req":"r2_daily_failover-0015","event":"last_token","step":"draft","total_ms":378.8,"prompt_tokens":1708,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.0500314,"req":"r2_daily_failover-0015","event":"verify_det","ok":true,"issues":[]}
+{"t":1460820.0501416,"req":"r2_daily_failover-0015","event":"user_first_token"}
+{"t":1460820.0501934,"req":"r2_daily_failover-0015","event":"user_last_token"}
+{"t":1460820.0502431,"req":"r2_daily_failover-0015","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:9]"}
+{"t":1460820.1354371,"req":"r2_daily_failover-0014","event":"first_token","step":"classify","ttft_ms":1458.8}
+{"t":1460820.1388907,"req":"r2_daily_failover-0014","event":"last_token","step":"classify","total_ms":1462.2,"prompt_tokens":120,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.1390615,"req":"r2_daily_failover-0014","event":"step_end","step":"classify"}
+{"t":1460820.1391852,"req":"r2_daily_failover-0014","event":"step_start","step":"retrieve"}
+{"t":1460820.1542092,"req":"r2_daily_failover-0014","event":"step_end","step":"retrieve"}
+{"t":1460820.1552985,"req":"r2_daily_failover-0014","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460820.1559616,"req":"r2_daily_failover-0014","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1960,"provider":"standin"}
+{"t":1460820.2441936,"req":"r2_daily_failover-0017","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1460820.2444271,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460820.2445662,"req":"r2_daily_failover-0017","event":"step_start","step":"classify"}
+{"t":1460820.2447925,"req":"r2_daily_failover-0017","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":185,"provider":"standin"}
+{"t":1460820.2826045,"req":"r2_daily_failover-0018","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1460820.2828251,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":2,"provider":"standin"}
+{"t":1460820.2829044,"req":"r2_daily_failover-0018","event":"step_start","step":"classify"}
+{"t":1460820.2834375,"req":"r2_daily_failover-0018","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":187,"provider":"standin"}
+{"t":1460820.4219541,"req":"r2_daily_failover-0016","event":"first_token","step":"classify","ttft_ms":571.0}
+{"t":1460820.4303489,"req":"r2_daily_failover-0016","event":"last_token","step":"classify","total_ms":579.4,"prompt_tokens":120,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.4305457,"req":"r2_daily_failover-0016","event":"step_end","step":"classify"}
+{"t":1460820.4306961,"req":"r2_daily_failover-0016","event":"step_start","step":"retrieve"}
+{"t":1460820.457797,"req":"r2_daily_failover-0016","event":"step_end","step":"retrieve"}
+{"t":1460820.4588444,"req":"r2_daily_failover-0016","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460820.4591019,"req":"r2_daily_failover-0016","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1960,"provider":"standin"}
+{"t":1460820.6570759,"req":"r2_daily_failover-0018","event":"first_token","step":"classify","ttft_ms":373.3}
+{"t":1460820.659666,"req":"r2_daily_failover-0018","event":"last_token","step":"classify","total_ms":375.9,"prompt_tokens":113,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.6598312,"req":"r2_daily_failover-0018","event":"step_end","step":"classify"}
+{"t":1460820.6599662,"req":"r2_daily_failover-0018","event":"step_start","step":"retrieve"}
+{"t":1460820.6718813,"req":"r2_daily_failover-0018","event":"step_end","step":"retrieve"}
+{"t":1460820.6730807,"req":"r2_daily_failover-0018","event":"decide","branch":"draft","conf":0.9,"k":6}
+{"t":1460820.6733408,"req":"r2_daily_failover-0018","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2417,"provider":"standin"}
+{"t":1460820.779904,"req":"r2_daily_failover-0016","event":"first_token","step":"draft","ttft_ms":320.7}
+{"t":1460820.7805708,"req":"r2_daily_failover-0014","event":"first_token","step":"draft","ttft_ms":624.5}
+{"t":1460820.8309787,"req":"r2_daily_failover-0016","event":"last_token","step":"draft","total_ms":371.8,"prompt_tokens":1526,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.8313594,"req":"r2_daily_failover-0016","event":"verify_det","ok":true,"issues":[]}
+{"t":1460820.8314603,"req":"r2_daily_failover-0016","event":"user_first_token"}
+{"t":1460820.8315378,"req":"r2_daily_failover-0016","event":"user_last_token"}
+{"t":1460820.8315966,"req":"r2_daily_failover-0016","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1460820.8375654,"req":"r2_daily_failover-0014","event":"last_token","step":"draft","total_ms":681.5,"prompt_tokens":1526,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460820.8379093,"req":"r2_daily_failover-0014","event":"verify_det","ok":true,"issues":[]}
+{"t":1460820.8379815,"req":"r2_daily_failover-0014","event":"user_first_token"}
+{"t":1460820.8380462,"req":"r2_daily_failover-0014","event":"user_last_token"}
+{"t":1460820.8381,"req":"r2_daily_failover-0014","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1460821.0155898,"req":"r2_daily_failover-0018","event":"first_token","step":"draft","ttft_ms":342.1}
+{"t":1460821.1219479,"req":"r2_daily_failover-0018","event":"last_token","step":"draft","total_ms":448.5,"prompt_tokens":1903,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460821.1222311,"req":"r2_daily_failover-0018","event":"verify_det","ok":true,"issues":[]}
+{"t":1460821.1222806,"req":"r2_daily_failover-0018","event":"user_first_token"}
+{"t":1460821.1223422,"req":"r2_daily_failover-0018","event":"user_last_token"}
+{"t":1460821.1223957,"req":"r2_daily_failover-0018","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1460822.5300623,"req":"r2_daily_failover-0019","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1460822.5302537,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460822.5303244,"req":"r2_daily_failover-0019","event":"step_start","step":"classify"}
+{"t":1460822.5305083,"req":"r2_daily_failover-0019","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":190,"provider":"standin"}
+{"t":1460824.6714631,"req":"r2_daily_failover-0019","event":"first_token","step":"classify","ttft_ms":2140.8}
+{"t":1460824.6749385,"req":"r2_daily_failover-0019","event":"last_token","step":"classify","total_ms":2144.3,"prompt_tokens":115,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460824.6752577,"req":"r2_daily_failover-0019","event":"step_end","step":"classify"}
+{"t":1460824.6753579,"req":"r2_daily_failover-0019","event":"step_start","step":"retrieve"}
+{"t":1460824.6983778,"req":"r2_daily_failover-0019","event":"step_end","step":"retrieve"}
+{"t":1460824.6997737,"req":"r2_daily_failover-0019","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1460824.7003855,"req":"r2_daily_failover-0019","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2510,"provider":"standin"}
+{"t":1460825.2065394,"req":"r2_daily_failover-0019","event":"first_token","step":"draft","ttft_ms":506.0}
+{"t":1460825.2798267,"req":"r2_daily_failover-0019","event":"last_token","step":"draft","total_ms":579.3,"prompt_tokens":1979,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460825.280149,"req":"r2_daily_failover-0019","event":"verify_det","ok":true,"issues":[]}
+{"t":1460825.2802142,"req":"r2_daily_failover-0019","event":"user_first_token"}
+{"t":1460825.2802887,"req":"r2_daily_failover-0019","event":"user_last_token"}
+{"t":1460825.280351,"req":"r2_daily_failover-0019","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1460826.7653304,"req":"-","event":"loop_lag","lag_ms":582.8}
+{"t":1460827.3044076,"req":"-","event":"loop_lag","lag_ms":364.0}
+{"t":1460832.2407369,"req":"r2_daily_failover-0017","event":"call_timeout","step":"classify","after_s":12,"attempt":1,"provider":"standin"}
+{"t":1460832.2409288,"req":"r2_daily_failover-0017","event":"retry","step":"classify","attempt":1,"reason":"call_timeout","provider":"standin","backoff_ms":417.3}
+{"t":1460832.6465391,"req":"r2_daily_failover-0017","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":2,"est_tokens":185,"provider":"standin"}
+{"t":1460833.1966437,"req":"r2_daily_failover-0017","event":"first_token","step":"classify","ttft_ms":549.9}
+{"t":1460833.2079416,"req":"r2_daily_failover-0017","event":"last_token","step":"classify","total_ms":561.2,"prompt_tokens":111,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460833.2093037,"req":"r2_daily_failover-0017","event":"step_end","step":"classify"}
+{"t":1460833.2094844,"req":"r2_daily_failover-0017","event":"step_start","step":"retrieve"}
+{"t":1460833.2357187,"req":"r2_daily_failover-0017","event":"step_end","step":"retrieve"}
+{"t":1460833.2400058,"req":"r2_daily_failover-0017","event":"decide","branch":"loop_rewrite","conf":0.5}
+{"t":1460833.2404098,"req":"r2_daily_failover-0017","event":"send","step":"rewrite","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":90,"provider":"standin"}
+{"t":1460833.6915913,"req":"r2_daily_failover-0020","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1460833.6918217,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1460833.6919179,"req":"r2_daily_failover-0020","event":"step_start","step":"classify"}
+{"t":1460833.6921741,"req":"r2_daily_failover-0020","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"standin"}
+{"t":1460833.8977582,"req":"r2_daily_failover-0021","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1460833.8979367,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":2,"provider":"standin"}
+{"t":1460833.8980026,"req":"r2_daily_failover-0021","event":"step_start","step":"classify"}
+{"t":1460833.8981864,"req":"r2_daily_failover-0021","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":190,"provider":"standin"}
+{"t":1460834.1948675,"req":"r2_daily_failover-0017","event":"first_token","step":"rewrite","ttft_ms":954.3}
+{"t":1460834.1984098,"req":"r2_daily_failover-0017","event":"last_token","step":"rewrite","total_ms":957.9,"prompt_tokens":58,"completion_tokens":5,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460834.1985753,"req":"r2_daily_failover-0017","event":"step_start","step":"retrieve"}
+{"t":1460834.2064148,"req":"r2_daily_failover-0017","event":"step_end","step":"retrieve"}
+{"t":1460834.2078028,"req":"r2_daily_failover-0017","event":"decide","branch":"draft","conf":0.5,"k":5}
+{"t":1460834.2084595,"req":"r2_daily_failover-0017","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2165,"provider":"standin"}
+{"t":1460834.6356651,"req":"r2_daily_failover-0021","event":"first_token","step":"classify","ttft_ms":737.4}
+{"t":1460834.6448804,"req":"r2_daily_failover-0021","event":"last_token","step":"classify","total_ms":746.6,"prompt_tokens":115,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460834.645082,"req":"r2_daily_failover-0021","event":"step_end","step":"classify"}
+{"t":1460834.6452284,"req":"r2_daily_failover-0021","event":"step_start","step":"retrieve"}
+{"t":1460834.6772227,"req":"r2_daily_failover-0021","event":"step_end","step":"retrieve"}
+{"t":1460834.678837,"req":"r2_daily_failover-0021","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1460834.6792841,"req":"r2_daily_failover-0021","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2510,"provider":"standin"}
+{"t":1460834.7017908,"req":"r2_daily_failover-0021","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"10000","x-ratelimit-limit-tokens":"80000","x-ratelimit-remaining-requests":"9980","x-ratelimit-remaining-tokens":"43346","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"1915"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` on tokens per day (TPD): Limit 40000, Used 38718, Requested 2168. Please try again in 1914s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}","provider":"standin"}
+{"t":1460834.7019828,"req":"r2_daily_failover-0021","event":"daily_limit","step":"draft","kind":"TPD","limit":40000.0,"used":38718.0,"retry_after":"1915"}
+{"t":1460834.7022083,"req":"r2_daily_failover-0021","event":"failover","to":"standin_fb"}
+{"t":1460834.7024089,"req":"r2_daily_failover-0021","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2510,"provider":"standin_fb"}
+{"t":1460834.7187696,"req":"r2_daily_failover-0017","event":"first_token","step":"draft","ttft_ms":510.2}
+{"t":1460834.7477018,"req":"r2_daily_failover-0017","event":"last_token","step":"draft","total_ms":539.1,"prompt_tokens":1695,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460834.7481912,"req":"r2_daily_failover-0017","event":"verify_det","ok":true,"issues":[]}
+{"t":1460834.7483287,"req":"r2_daily_failover-0017","event":"user_first_token"}
+{"t":1460834.7483983,"req":"r2_daily_failover-0017","event":"user_last_token"}
+{"t":1460834.7484913,"req":"r2_daily_failover-0017","event":"done","status":"answered","level":0,"steps":["classify","retrieve","loop","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:38] [C:attention:9]"}
+{"t":1460835.1418849,"req":"r2_daily_failover-0021","event":"first_token","step":"draft","ttft_ms":439.4}
+{"t":1460835.1681595,"req":"r2_daily_failover-0021","event":"last_token","step":"draft","total_ms":465.7,"prompt_tokens":1979,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460835.1684638,"req":"r2_daily_failover-0021","event":"verify_det","ok":true,"issues":[]}
+{"t":1460835.1685351,"req":"r2_daily_failover-0021","event":"user_first_token"}
+{"t":1460835.1686111,"req":"r2_daily_failover-0021","event":"user_last_token"}
+{"t":1460835.1686738,"req":"r2_daily_failover-0021","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1460836.0924761,"req":"r2_daily_failover-0020","event":"first_token","step":"classify","ttft_ms":2400.1}
+{"t":1460836.0959832,"req":"r2_daily_failover-0020","event":"last_token","step":"classify","total_ms":2403.6,"prompt_tokens":111,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460836.0962163,"req":"r2_daily_failover-0020","event":"step_end","step":"classify"}
+{"t":1460836.0963772,"req":"r2_daily_failover-0020","event":"step_start","step":"retrieve"}
+{"t":1460836.1065689,"req":"r2_daily_failover-0020","event":"step_end","step":"retrieve"}
+{"t":1460836.1079976,"req":"r2_daily_failover-0020","event":"decide","branch":"draft","conf":0.86,"k":6}
+{"t":1460836.1088676,"req":"r2_daily_failover-0020","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2465,"provider":"standin_fb"}
+{"t":1460836.4970536,"req":"r2_daily_failover-0022","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1460836.4972478,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460836.4973195,"req":"r2_daily_failover-0022","event":"step_start","step":"classify"}
+{"t":1460836.4975032,"req":"r2_daily_failover-0022","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":173,"provider":"standin_fb"}
+{"t":1460836.7090095,"req":"r2_daily_failover-0020","event":"first_token","step":"draft","ttft_ms":599.9}
+{"t":1460836.7625528,"req":"r2_daily_failover-0020","event":"last_token","step":"draft","total_ms":653.5,"prompt_tokens":1943,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460836.7628969,"req":"r2_daily_failover-0020","event":"verify_det","ok":true,"issues":[]}
+{"t":1460836.7630173,"req":"r2_daily_failover-0020","event":"user_first_token"}
+{"t":1460836.7632369,"req":"r2_daily_failover-0020","event":"user_last_token"}
+{"t":1460836.7634314,"req":"r2_daily_failover-0020","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:1] [C:attention:22]"}
+{"t":1460836.8272764,"req":"r2_daily_failover-0022","event":"first_token","step":"classify","ttft_ms":329.6}
+{"t":1460836.8310405,"req":"r2_daily_failover-0022","event":"last_token","step":"classify","total_ms":333.4,"prompt_tokens":101,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460836.8312052,"req":"r2_daily_failover-0022","event":"step_end","step":"classify"}
+{"t":1460836.8313142,"req":"r2_daily_failover-0022","event":"step_start","step":"retrieve"}
+{"t":1460836.8378268,"req":"r2_daily_failover-0022","event":"step_end","step":"retrieve"}
+{"t":1460836.8388728,"req":"r2_daily_failover-0022","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460836.8401911,"req":"r2_daily_failover-0022","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2198,"provider":"standin_fb"}
+{"t":1460837.1270553,"req":"r2_daily_failover-0022","event":"first_token","step":"draft","ttft_ms":286.6}
+{"t":1460837.1521029,"req":"r2_daily_failover-0022","event":"last_token","step":"draft","total_ms":311.6,"prompt_tokens":1722,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460837.1523976,"req":"r2_daily_failover-0022","event":"verify_det","ok":true,"issues":[]}
+{"t":1460837.1524785,"req":"r2_daily_failover-0022","event":"user_first_token"}
+{"t":1460837.1525644,"req":"r2_daily_failover-0022","event":"user_last_token"}
+{"t":1460837.1526371,"req":"r2_daily_failover-0022","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:58] [C:moshi:94]"}
+{"t":1460838.6154984,"req":"r2_daily_failover-0023","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1460838.6156797,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460838.6157484,"req":"r2_daily_failover-0023","event":"step_start","step":"classify"}
+{"t":1460838.6159344,"req":"r2_daily_failover-0023","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":173,"provider":"standin_fb"}
+{"t":1460839.3160802,"req":"r2_daily_failover-0023","event":"first_token","step":"classify","ttft_ms":700.0}
+{"t":1460839.3244897,"req":"r2_daily_failover-0023","event":"last_token","step":"classify","total_ms":708.4,"prompt_tokens":101,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460839.3248394,"req":"r2_daily_failover-0023","event":"step_end","step":"classify"}
+{"t":1460839.3249751,"req":"r2_daily_failover-0023","event":"step_start","step":"retrieve"}
+{"t":1460839.3344694,"req":"r2_daily_failover-0023","event":"step_end","step":"retrieve"}
+{"t":1460839.3356371,"req":"r2_daily_failover-0023","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1460839.3358885,"req":"r2_daily_failover-0023","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2406,"provider":"standin_fb"}
+{"t":1460840.1315353,"req":"r2_daily_failover-0023","event":"first_token","step":"draft","ttft_ms":795.5}
+{"t":1460840.2071209,"req":"r2_daily_failover-0023","event":"last_token","step":"draft","total_ms":871.1,"prompt_tokens":1894,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460840.2074458,"req":"r2_daily_failover-0023","event":"verify_det","ok":true,"issues":[]}
+{"t":1460840.2075124,"req":"r2_daily_failover-0023","event":"user_first_token"}
+{"t":1460840.2075887,"req":"r2_daily_failover-0023","event":"user_last_token"}
+{"t":1460840.207655,"req":"r2_daily_failover-0023","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:84] [C:moshi:85]"}
+{"t":1460841.6634627,"req":"r2_daily_failover-0024","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1460841.6636494,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460841.6637176,"req":"r2_daily_failover-0024","event":"step_start","step":"classify"}
+{"t":1460841.6647598,"req":"r2_daily_failover-0024","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":181,"provider":"standin_fb"}
+{"t":1460841.983889,"req":"r2_daily_failover-0025","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1460841.9840851,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460841.9841551,"req":"r2_daily_failover-0025","event":"step_start","step":"classify"}
+{"t":1460841.9843343,"req":"r2_daily_failover-0025","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":187,"provider":"standin_fb"}
+{"t":1460842.0041281,"req":"r2_daily_failover-0024","event":"first_token","step":"classify","ttft_ms":339.2}
+{"t":1460842.0218567,"req":"r2_daily_failover-0024","event":"last_token","step":"classify","total_ms":357.0,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460842.0220562,"req":"r2_daily_failover-0024","event":"step_end","step":"classify"}
+{"t":1460842.022188,"req":"r2_daily_failover-0024","event":"step_start","step":"retrieve"}
+{"t":1460842.0311825,"req":"r2_daily_failover-0024","event":"step_end","step":"retrieve"}
+{"t":1460842.0323518,"req":"r2_daily_failover-0024","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460842.0326062,"req":"r2_daily_failover-0024","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2173,"provider":"standin_fb"}
+{"t":1460842.4408625,"req":"r2_daily_failover-0024","event":"first_token","step":"draft","ttft_ms":408.1}
+{"t":1460842.516451,"req":"r2_daily_failover-0024","event":"last_token","step":"draft","total_ms":483.7,"prompt_tokens":1702,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460842.5167715,"req":"r2_daily_failover-0024","event":"verify_det","ok":true,"issues":[]}
+{"t":1460842.5168368,"req":"r2_daily_failover-0024","event":"user_first_token"}
+{"t":1460842.516912,"req":"r2_daily_failover-0024","event":"user_last_token"}
+{"t":1460842.5169729,"req":"r2_daily_failover-0024","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:15] [C:attention:22]"}
+{"t":1460842.9651792,"req":"r2_daily_failover-0025","event":"first_token","step":"classify","ttft_ms":980.7}
+{"t":1460842.9759785,"req":"r2_daily_failover-0025","event":"last_token","step":"classify","total_ms":991.5,"prompt_tokens":113,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460842.9761808,"req":"r2_daily_failover-0025","event":"step_end","step":"classify"}
+{"t":1460842.9763189,"req":"r2_daily_failover-0025","event":"step_start","step":"retrieve"}
+{"t":1460843.0045667,"req":"r2_daily_failover-0025","event":"step_end","step":"retrieve"}
+{"t":1460843.0058291,"req":"r2_daily_failover-0025","event":"decide","branch":"draft","conf":0.9,"k":6}
+{"t":1460843.0061552,"req":"r2_daily_failover-0025","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2417,"provider":"standin_fb"}
+{"t":1460843.6009426,"req":"r2_daily_failover-0025","event":"first_token","step":"draft","ttft_ms":594.7}
+{"t":1460843.7430678,"req":"r2_daily_failover-0025","event":"last_token","step":"draft","total_ms":736.8,"prompt_tokens":1903,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460843.7433838,"req":"r2_daily_failover-0025","event":"verify_det","ok":true,"issues":[]}
+{"t":1460843.7434498,"req":"r2_daily_failover-0025","event":"user_first_token"}
+{"t":1460843.7435255,"req":"r2_daily_failover-0025","event":"user_last_token"}
+{"t":1460843.7435868,"req":"r2_daily_failover-0025","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1460844.8560949,"req":"r2_daily_failover-0026","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1460844.8563256,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460844.856396,"req":"r2_daily_failover-0026","event":"step_start","step":"classify"}
+{"t":1460844.8578458,"req":"r2_daily_failover-0026","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":197,"provider":"standin_fb"}
+{"t":1460845.9105997,"req":"r2_daily_failover-0027","event":"enqueue","question":"Which gradient estimator does the dynamic chunking paper use to stabilize traini"}
+{"t":1460845.9108125,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460845.9108823,"req":"r2_daily_failover-0027","event":"step_start","step":"classify"}
+{"t":1460845.9110712,"req":"r2_daily_failover-0027","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":197,"provider":"standin_fb"}
+{"t":1460846.77198,"req":"-","event":"loop_lag","lag_ms":633.1}
+{"t":1460846.7782173,"req":"r2_daily_failover-0027","event":"first_token","step":"classify","ttft_ms":866.9}
+{"t":1460846.8165272,"req":"r2_daily_failover-0027","event":"last_token","step":"classify","total_ms":905.2,"prompt_tokens":121,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460846.8169248,"req":"r2_daily_failover-0027","event":"step_end","step":"classify"}
+{"t":1460846.8170923,"req":"r2_daily_failover-0027","event":"step_start","step":"retrieve"}
+{"t":1460846.8496767,"req":"r2_daily_failover-0027","event":"step_end","step":"retrieve"}
+{"t":1460846.8507438,"req":"r2_daily_failover-0027","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1460846.8511353,"req":"r2_daily_failover-0027","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2174,"provider":"standin_fb"}
+{"t":1460847.1907053,"req":"r2_daily_failover-0027","event":"first_token","step":"draft","ttft_ms":339.4}
+{"t":1460847.2599524,"req":"r2_daily_failover-0027","event":"last_token","step":"draft","total_ms":408.7,"prompt_tokens":1703,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460847.2602808,"req":"r2_daily_failover-0027","event":"verify_det","ok":true,"issues":[]}
+{"t":1460847.260348,"req":"r2_daily_failover-0027","event":"user_first_token"}
+{"t":1460847.2604247,"req":"r2_daily_failover-0027","event":"user_last_token"}
+{"t":1460847.2604858,"req":"r2_daily_failover-0027","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:26] [C:dynchunk:121]"}
+{"t":1460848.41449,"req":"r2_daily_failover-0026","event":"first_token","step":"classify","ttft_ms":3556.5}
+{"t":1460848.4233969,"req":"r2_daily_failover-0026","event":"last_token","step":"classify","total_ms":3565.4,"prompt_tokens":121,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460848.4236951,"req":"r2_daily_failover-0026","event":"step_end","step":"classify"}
+{"t":1460848.4238811,"req":"r2_daily_failover-0026","event":"step_start","step":"retrieve"}
+{"t":1460848.4342739,"req":"r2_daily_failover-0026","event":"step_end","step":"retrieve"}
+{"t":1460848.4353184,"req":"r2_daily_failover-0026","event":"decide","branch":"draft","conf":0.9,"k":5}
+{"t":1460848.4355568,"req":"r2_daily_failover-0026","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2174,"provider":"standin_fb"}
+{"t":1460848.6222689,"req":"r2_daily_failover-0028","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1460848.6224797,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460848.6225569,"req":"r2_daily_failover-0028","event":"step_start","step":"classify"}
+{"t":1460848.6237345,"req":"r2_daily_failover-0028","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":181,"provider":"standin_fb"}
+{"t":1460848.8881556,"req":"r2_daily_failover-0026","event":"first_token","step":"draft","ttft_ms":452.5}
+{"t":1460848.9145576,"req":"r2_daily_failover-0026","event":"last_token","step":"draft","total_ms":478.9,"prompt_tokens":1703,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460848.9149751,"req":"r2_daily_failover-0026","event":"verify_det","ok":true,"issues":[]}
+{"t":1460848.9150644,"req":"r2_daily_failover-0026","event":"user_first_token"}
+{"t":1460848.91515,"req":"r2_daily_failover-0026","event":"user_last_token"}
+{"t":1460848.9151902,"req":"r2_daily_failover-0026","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:26] [C:dynchunk:121]"}
+{"t":1460849.1087776,"req":"r2_daily_failover-0028","event":"first_token","step":"classify","ttft_ms":484.9}
+{"t":1460849.1112281,"req":"r2_daily_failover-0028","event":"last_token","step":"classify","total_ms":487.3,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460849.1113283,"req":"r2_daily_failover-0028","event":"step_end","step":"classify"}
+{"t":1460849.1113907,"req":"r2_daily_failover-0028","event":"step_start","step":"retrieve"}
+{"t":1460849.117528,"req":"r2_daily_failover-0028","event":"step_end","step":"retrieve"}
+{"t":1460849.1182307,"req":"r2_daily_failover-0028","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460849.1187407,"req":"r2_daily_failover-0028","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2173,"provider":"standin_fb"}
+{"t":1460849.7579062,"req":"r2_daily_failover-0028","event":"first_token","step":"draft","ttft_ms":639.0}
+{"t":1460849.8079386,"req":"r2_daily_failover-0028","event":"last_token","step":"draft","total_ms":689.1,"prompt_tokens":1702,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460849.8084495,"req":"r2_daily_failover-0028","event":"verify_det","ok":true,"issues":[]}
+{"t":1460849.8085122,"req":"r2_daily_failover-0028","event":"user_first_token"}
+{"t":1460849.8085566,"req":"r2_daily_failover-0028","event":"user_last_token"}
+{"t":1460849.8085904,"req":"r2_daily_failover-0028","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:15] [C:attention:22]"}
+{"t":1460852.0623945,"req":"r2_daily_failover-0029","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1460852.0626256,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460852.0626966,"req":"r2_daily_failover-0029","event":"step_start","step":"classify"}
+{"t":1460852.0628865,"req":"r2_daily_failover-0029","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":184,"provider":"standin_fb"}
+{"t":1460852.2812288,"req":"r2_daily_failover-0029","event":"first_token","step":"classify","ttft_ms":218.2}
+{"t":1460852.2915012,"req":"r2_daily_failover-0029","event":"last_token","step":"classify","total_ms":228.5,"prompt_tokens":111,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460852.2917052,"req":"r2_daily_failover-0029","event":"step_end","step":"classify"}
+{"t":1460852.2918382,"req":"r2_daily_failover-0029","event":"step_start","step":"retrieve"}
+{"t":1460852.302623,"req":"r2_daily_failover-0029","event":"step_end","step":"retrieve"}
+{"t":1460852.3058467,"req":"r2_daily_failover-0029","event":"decide","branch":"draft","conf":0.86,"k":6}
+{"t":1460852.3062291,"req":"r2_daily_failover-0029","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2465,"provider":"standin_fb"}
+{"t":1460852.756856,"req":"r2_daily_failover-0029","event":"first_token","step":"draft","ttft_ms":450.0}
+{"t":1460852.8346065,"req":"r2_daily_failover-0029","event":"last_token","step":"draft","total_ms":527.8,"prompt_tokens":1943,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460852.8349226,"req":"r2_daily_failover-0029","event":"verify_det","ok":true,"issues":[]}
+{"t":1460852.8350184,"req":"r2_daily_failover-0029","event":"user_first_token"}
+{"t":1460852.8350952,"req":"r2_daily_failover-0029","event":"user_last_token"}
+{"t":1460852.8351578,"req":"r2_daily_failover-0029","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:1] [C:attention:22]"}
+{"t":1460853.175461,"req":"-","event":"loop_lag","lag_ms":219.4}
+{"t":1460853.5355352,"req":"-","event":"loop_lag","lag_ms":309.9}
+{"t":1460854.2307407,"req":"-","event":"loop_lag","lag_ms":520.5}
+{"t":1460854.3263391,"req":"r2_daily_failover-0030","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1460854.3265271,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460854.3269385,"req":"r2_daily_failover-0030","event":"step_start","step":"classify"}
+{"t":1460854.3271253,"req":"r2_daily_failover-0030","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":181,"provider":"standin_fb"}
+{"t":1460854.8750501,"req":"r2_daily_failover-0030","event":"first_token","step":"classify","ttft_ms":547.8}
+{"t":1460854.8815467,"req":"r2_daily_failover-0030","event":"last_token","step":"classify","total_ms":554.3,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460854.8817269,"req":"r2_daily_failover-0030","event":"step_end","step":"classify"}
+{"t":1460854.8819093,"req":"r2_daily_failover-0030","event":"step_start","step":"retrieve"}
+{"t":1460854.8929879,"req":"r2_daily_failover-0030","event":"step_end","step":"retrieve"}
+{"t":1460854.8940248,"req":"r2_daily_failover-0030","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460854.8957834,"req":"r2_daily_failover-0030","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2173,"provider":"standin_fb"}
+{"t":1460855.4558484,"req":"r2_daily_failover-0030","event":"first_token","step":"draft","ttft_ms":559.9}
+{"t":1460855.4773085,"req":"r2_daily_failover-0030","event":"last_token","step":"draft","total_ms":581.4,"prompt_tokens":1702,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460855.4776264,"req":"r2_daily_failover-0030","event":"verify_det","ok":true,"issues":[]}
+{"t":1460855.4778077,"req":"r2_daily_failover-0030","event":"user_first_token"}
+{"t":1460855.4778604,"req":"r2_daily_failover-0030","event":"user_last_token"}
+{"t":1460855.4779017,"req":"r2_daily_failover-0030","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:15] [C:attention:22]"}
+{"t":1460855.7217015,"req":"r2_daily_failover-0031","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1460855.7219099,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460855.7219811,"req":"r2_daily_failover-0031","event":"step_start","step":"classify"}
+{"t":1460855.7221658,"req":"r2_daily_failover-0031","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":196,"provider":"standin_fb"}
+{"t":1460856.0510057,"req":"r2_daily_failover-0031","event":"first_token","step":"classify","ttft_ms":328.7}
+{"t":1460856.0659053,"req":"r2_daily_failover-0031","event":"last_token","step":"classify","total_ms":343.6,"prompt_tokens":120,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460856.0661085,"req":"r2_daily_failover-0031","event":"step_end","step":"classify"}
+{"t":1460856.0662624,"req":"r2_daily_failover-0031","event":"step_start","step":"retrieve"}
+{"t":1460856.1394062,"req":"r2_daily_failover-0031","event":"step_end","step":"retrieve"}
+{"t":1460856.1404829,"req":"r2_daily_failover-0031","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460856.1407662,"req":"r2_daily_failover-0031","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":1960,"provider":"standin_fb"}
+{"t":1460856.5479048,"req":"r2_daily_failover-0031","event":"first_token","step":"draft","ttft_ms":407.0}
+{"t":1460856.6295247,"req":"r2_daily_failover-0031","event":"last_token","step":"draft","total_ms":488.6,"prompt_tokens":1526,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460856.629846,"req":"r2_daily_failover-0031","event":"verify_det","ok":true,"issues":[]}
+{"t":1460856.6299124,"req":"r2_daily_failover-0031","event":"user_first_token"}
+{"t":1460856.6299885,"req":"r2_daily_failover-0031","event":"user_last_token"}
+{"t":1460856.6300486,"req":"r2_daily_failover-0031","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:39] [C:attention:25]"}
+{"t":1460856.6553069,"req":"r2_daily_failover-0032","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1460856.6556503,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460856.6558117,"req":"r2_daily_failover-0032","event":"step_start","step":"classify"}
+{"t":1460856.6560134,"req":"r2_daily_failover-0032","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":178,"provider":"standin_fb"}
+{"t":1460857.298189,"req":"r2_daily_failover-0032","event":"first_token","step":"classify","ttft_ms":642.1}
+{"t":1460857.3012524,"req":"r2_daily_failover-0032","event":"last_token","step":"classify","total_ms":645.1,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460857.3014393,"req":"r2_daily_failover-0032","event":"step_end","step":"classify"}
+{"t":1460857.3015656,"req":"r2_daily_failover-0032","event":"step_start","step":"retrieve"}
+{"t":1460857.307927,"req":"r2_daily_failover-0032","event":"step_end","step":"retrieve"}
+{"t":1460857.3091318,"req":"r2_daily_failover-0032","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460857.3096881,"req":"r2_daily_failover-0032","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2161,"provider":"standin_fb"}
+{"t":1460857.6402624,"req":"r2_daily_failover-0032","event":"first_token","step":"draft","ttft_ms":330.4}
+{"t":1460857.8099751,"req":"r2_daily_failover-0032","event":"last_token","step":"draft","total_ms":500.1,"prompt_tokens":1692,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460857.8103107,"req":"r2_daily_failover-0032","event":"verify_det","ok":true,"issues":[]}
+{"t":1460857.8103768,"req":"r2_daily_failover-0032","event":"user_first_token"}
+{"t":1460857.8104542,"req":"r2_daily_failover-0032","event":"user_last_token"}
+{"t":1460857.810517,"req":"r2_daily_failover-0032","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:29] [C:dynchunk:28]"}
+{"t":1460865.713777,"req":"r2_daily_failover-0033","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1460865.7139235,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460865.7140532,"req":"r2_daily_failover-0033","event":"step_start","step":"classify"}
+{"t":1460865.7142006,"req":"r2_daily_failover-0033","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":182,"provider":"standin_fb"}
+{"t":1460866.0560566,"req":"r2_daily_failover-0033","event":"first_token","step":"classify","ttft_ms":341.8}
+{"t":1460866.0599173,"req":"r2_daily_failover-0033","event":"last_token","step":"classify","total_ms":345.6,"prompt_tokens":109,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460866.0601347,"req":"r2_daily_failover-0033","event":"step_end","step":"classify"}
+{"t":1460866.060228,"req":"r2_daily_failover-0033","event":"step_start","step":"retrieve"}
+{"t":1460866.0650915,"req":"r2_daily_failover-0033","event":"step_end","step":"retrieve"}
+{"t":1460866.0659383,"req":"r2_daily_failover-0033","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460866.0663327,"req":"r2_daily_failover-0033","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2164,"provider":"standin_fb"}
+{"t":1460866.6526245,"req":"r2_daily_failover-0033","event":"first_token","step":"draft","ttft_ms":586.2}
+{"t":1460866.6687849,"req":"r2_daily_failover-0033","event":"last_token","step":"draft","total_ms":602.3,"prompt_tokens":1694,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460866.6690845,"req":"r2_daily_failover-0033","event":"verify_det","ok":true,"issues":[]}
+{"t":1460866.6691451,"req":"r2_daily_failover-0033","event":"user_first_token"}
+{"t":1460866.669197,"req":"r2_daily_failover-0033","event":"user_last_token"}
+{"t":1460866.6692378,"req":"r2_daily_failover-0033","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:22] [C:dynchunk:9]"}
+{"t":1460867.7098404,"req":"r2_daily_failover-0034","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1460867.7100314,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460867.710088,"req":"r2_daily_failover-0034","event":"step_start","step":"classify"}
+{"t":1460867.7102892,"req":"r2_daily_failover-0034","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":173,"provider":"standin_fb"}
+{"t":1460868.1005651,"req":"r2_daily_failover-0034","event":"first_token","step":"classify","ttft_ms":390.2}
+{"t":1460868.1232802,"req":"r2_daily_failover-0034","event":"last_token","step":"classify","total_ms":412.9,"prompt_tokens":101,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460868.1234683,"req":"r2_daily_failover-0034","event":"step_end","step":"classify"}
+{"t":1460868.1235873,"req":"r2_daily_failover-0034","event":"step_start","step":"retrieve"}
+{"t":1460868.1948906,"req":"r2_daily_failover-0034","event":"step_end","step":"retrieve"}
+{"t":1460868.1961228,"req":"r2_daily_failover-0034","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1460868.1964981,"req":"r2_daily_failover-0034","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2406,"provider":"standin_fb"}
+{"t":1460868.5233261,"req":"r2_daily_failover-0034","event":"first_token","step":"draft","ttft_ms":326.7}
+{"t":1460868.545673,"req":"r2_daily_failover-0034","event":"last_token","step":"draft","total_ms":349.1,"prompt_tokens":1894,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460868.5460572,"req":"r2_daily_failover-0034","event":"verify_det","ok":true,"issues":[]}
+{"t":1460868.5461584,"req":"r2_daily_failover-0034","event":"user_first_token"}
+{"t":1460868.5462281,"req":"r2_daily_failover-0034","event":"user_last_token"}
+{"t":1460868.5462738,"req":"r2_daily_failover-0034","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:84] [C:moshi:85]"}
+{"t":1460870.2221127,"req":"r2_daily_failover-0035","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1460870.2222879,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460870.2223512,"req":"r2_daily_failover-0035","event":"step_start","step":"classify"}
+{"t":1460870.2225183,"req":"r2_daily_failover-0035","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":185,"provider":"standin_fb"}
+{"t":1460870.2856483,"req":"r2_daily_failover-0036","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1460870.2858606,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460870.2860112,"req":"r2_daily_failover-0036","event":"step_start","step":"classify"}
+{"t":1460870.2862237,"req":"r2_daily_failover-0036","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":178,"provider":"standin_fb"}
+{"t":1460870.6246326,"req":"r2_daily_failover-0035","event":"first_token","step":"classify","ttft_ms":402.0}
+{"t":1460870.6290348,"req":"r2_daily_failover-0035","event":"last_token","step":"classify","total_ms":406.4,"prompt_tokens":111,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460870.6292778,"req":"r2_daily_failover-0035","event":"step_end","step":"classify"}
+{"t":1460870.629376,"req":"r2_daily_failover-0035","event":"step_start","step":"retrieve"}
+{"t":1460870.6341907,"req":"r2_daily_failover-0035","event":"step_end","step":"retrieve"}
+{"t":1460870.6350413,"req":"r2_daily_failover-0035","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1460870.6352295,"req":"r2_daily_failover-0035","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2183,"provider":"standin_fb"}
+{"t":1460870.6917295,"req":"r2_daily_failover-0036","event":"first_token","step":"classify","ttft_ms":404.0}
+{"t":1460870.7022468,"req":"r2_daily_failover-0036","event":"last_token","step":"classify","total_ms":414.5,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460870.70248,"req":"r2_daily_failover-0036","event":"step_end","step":"classify"}
+{"t":1460870.702612,"req":"r2_daily_failover-0036","event":"step_start","step":"retrieve"}
+{"t":1460870.7328495,"req":"r2_daily_failover-0036","event":"step_end","step":"retrieve"}
+{"t":1460870.7339718,"req":"r2_daily_failover-0036","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460870.7342338,"req":"r2_daily_failover-0036","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2171,"provider":"standin_fb"}
+{"t":1460871.1155067,"req":"r2_daily_failover-0036","event":"first_token","step":"draft","ttft_ms":381.2}
+{"t":1460871.1412725,"req":"r2_daily_failover-0036","event":"last_token","step":"draft","total_ms":406.9,"prompt_tokens":1700,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460871.1417166,"req":"r2_daily_failover-0036","event":"verify_det","ok":true,"issues":[]}
+{"t":1460871.1417885,"req":"r2_daily_failover-0036","event":"user_first_token"}
+{"t":1460871.1418613,"req":"r2_daily_failover-0036","event":"user_last_token"}
+{"t":1460871.1419185,"req":"r2_daily_failover-0036","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:78] [C:moshi:81]"}
+{"t":1460871.314953,"req":"r2_daily_failover-0035","event":"first_token","step":"draft","ttft_ms":679.6}
+{"t":1460871.4242704,"req":"r2_daily_failover-0035","event":"last_token","step":"draft","total_ms":789.0,"prompt_tokens":1710,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460871.424598,"req":"r2_daily_failover-0035","event":"verify_det","ok":true,"issues":[]}
+{"t":1460871.424664,"req":"r2_daily_failover-0035","event":"user_first_token"}
+{"t":1460871.4247403,"req":"r2_daily_failover-0035","event":"user_last_token"}
+{"t":1460871.4248023,"req":"r2_daily_failover-0035","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:8] [C:attention:9]"}
+{"t":1460872.666602,"req":"r2_daily_failover-0037","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1460872.6667378,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin_fb"}
+{"t":1460872.6667806,"req":"r2_daily_failover-0037","event":"step_start","step":"classify"}
+{"t":1460872.6669002,"req":"r2_daily_failover-0037","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":181,"provider":"standin_fb"}
+{"t":1460872.6824045,"req":"r2_daily_failover-0038","event":"enqueue","question":"Which functions does the Transformer use for positional encodings?"}
+{"t":1460872.6825571,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460872.6826009,"req":"r2_daily_failover-0038","event":"step_start","step":"classify"}
+{"t":1460872.684124,"req":"r2_daily_failover-0038","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":181,"provider":"standin_fb"}
+{"t":1460873.0813917,"req":"r2_daily_failover-0038","event":"first_token","step":"classify","ttft_ms":397.1}
+{"t":1460873.0905377,"req":"r2_daily_failover-0038","event":"last_token","step":"classify","total_ms":406.3,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460873.0907513,"req":"r2_daily_failover-0038","event":"step_end","step":"classify"}
+{"t":1460873.0908904,"req":"r2_daily_failover-0038","event":"step_start","step":"retrieve"}
+{"t":1460873.0986021,"req":"r2_daily_failover-0038","event":"step_end","step":"retrieve"}
+{"t":1460873.0996459,"req":"r2_daily_failover-0038","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1460873.0999039,"req":"r2_daily_failover-0038","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2173,"provider":"standin_fb"}
+{"t":1460873.2155257,"req":"r2_daily_failover-0039","event":"enqueue","question":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German tran"}
+{"t":1460873.2157392,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460873.2158089,"req":"r2_daily_failover-0039","event":"step_start","step":"classify"}
+{"t":1460873.2160395,"req":"r2_daily_failover-0039","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":187,"provider":"standin_fb"}
+{"t":1460873.4062408,"req":"r2_daily_failover-0038","event":"first_token","step":"draft","ttft_ms":306.2}
+{"t":1460873.4774427,"req":"r2_daily_failover-0038","event":"last_token","step":"draft","total_ms":377.4,"prompt_tokens":1702,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460873.4777666,"req":"r2_daily_failover-0038","event":"verify_det","ok":true,"issues":[]}
+{"t":1460873.4778316,"req":"r2_daily_failover-0038","event":"user_first_token"}
+{"t":1460873.4779077,"req":"r2_daily_failover-0038","event":"user_last_token"}
+{"t":1460873.4779676,"req":"r2_daily_failover-0038","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:15] [C:attention:22]"}
+{"t":1460873.6561878,"req":"r2_daily_failover-0039","event":"first_token","step":"classify","ttft_ms":440.0}
+{"t":1460873.6647589,"req":"r2_daily_failover-0039","event":"last_token","step":"classify","total_ms":448.6,"prompt_tokens":113,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460873.6649391,"req":"r2_daily_failover-0039","event":"step_end","step":"classify"}
+{"t":1460873.6650758,"req":"r2_daily_failover-0039","event":"step_start","step":"retrieve"}
+{"t":1460873.6846191,"req":"r2_daily_failover-0039","event":"step_end","step":"retrieve"}
+{"t":1460873.6858756,"req":"r2_daily_failover-0039","event":"decide","branch":"draft","conf":0.9,"k":6}
+{"t":1460873.6861751,"req":"r2_daily_failover-0039","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2417,"provider":"standin_fb"}
+{"t":1460873.9260813,"req":"r2_daily_failover-0039","event":"first_token","step":"draft","ttft_ms":237.8}
+{"t":1460873.9516167,"req":"r2_daily_failover-0039","event":"last_token","step":"draft","total_ms":264.0,"prompt_tokens":1903,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460873.9519863,"req":"r2_daily_failover-0039","event":"verify_det","ok":true,"issues":[]}
+{"t":1460873.9520302,"req":"r2_daily_failover-0039","event":"user_first_token"}
+{"t":1460873.9520781,"req":"r2_daily_failover-0039","event":"user_last_token"}
+{"t":1460873.9521064,"req":"r2_daily_failover-0039","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:22] [C:attention:1]"}
+{"t":1460875.3342043,"req":"r2_daily_failover-0040","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1460875.3343942,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin_fb"}
+{"t":1460875.3344652,"req":"r2_daily_failover-0040","event":"step_start","step":"classify"}
+{"t":1460875.3346516,"req":"r2_daily_failover-0040","event":"send","step":"classify","model":"fb-small","attempt":1,"est_tokens":178,"provider":"standin_fb"}
+{"t":1460875.9226855,"req":"r2_daily_failover-0040","event":"first_token","step":"classify","ttft_ms":587.9}
+{"t":1460875.9302292,"req":"r2_daily_failover-0040","event":"last_token","step":"classify","total_ms":595.5,"prompt_tokens":105,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460875.9304012,"req":"r2_daily_failover-0040","event":"step_end","step":"classify"}
+{"t":1460875.9305213,"req":"r2_daily_failover-0040","event":"step_start","step":"retrieve"}
+{"t":1460875.9417663,"req":"r2_daily_failover-0040","event":"step_end","step":"retrieve"}
+{"t":1460875.9428896,"req":"r2_daily_failover-0040","event":"decide","branch":"draft","conf":0.83,"k":5}
+{"t":1460875.943142,"req":"r2_daily_failover-0040","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2181,"provider":"standin_fb"}
+{"t":1460876.3982322,"req":"r2_daily_failover-0037","event":"first_token","step":"classify","ttft_ms":3731.3}
+{"t":1460876.4017461,"req":"r2_daily_failover-0037","event":"last_token","step":"classify","total_ms":3734.8,"prompt_tokens":108,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460876.4019131,"req":"r2_daily_failover-0037","event":"step_end","step":"classify"}
+{"t":1460876.4020388,"req":"r2_daily_failover-0037","event":"step_start","step":"retrieve"}
+{"t":1460876.4158269,"req":"r2_daily_failover-0037","event":"step_end","step":"retrieve"}
+{"t":1460876.4169259,"req":"r2_daily_failover-0037","event":"decide","branch":"draft","conf":0.75,"k":5}
+{"t":1460876.417179,"req":"r2_daily_failover-0037","event":"send","step":"draft","model":"fb-large","attempt":1,"est_tokens":2160,"provider":"standin_fb"}
+{"t":1460876.4299868,"req":"r2_daily_failover-0037","event":"http_429","step":"draft","headers":{"x-ratelimit-limit-requests":"10000","x-ratelimit-limit-tokens":"80000","x-ratelimit-remaining-requests":"9980","x-ratelimit-remaining-tokens":"40803","x-ratelimit-reset-requests":"86.4s","x-ratelimit-reset-tokens":"1s","retry-after":"2285"},"body":"{\"error\":{\"message\":\"Rate limit reached for model `fb-large` on tokens per day (TPD): Limit 40000, Used 39177, Requested 1880. Please try again in 2285s.\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}","provider":"standin_fb"}
+{"t":1460876.4301634,"req":"r2_daily_failover-0037","event":"daily_limit","step":"draft","kind":"TPD","limit":40000.0,"used":39177.0,"retry_after":"2285"}
+{"t":1460876.430313,"req":"r2_daily_failover-0037","event":"degrade","what":"extractive_daily"}
+{"t":1460876.4332115,"req":"r2_daily_failover-0037","event":"user_first_token"}
+{"t":1460876.4333337,"req":"r2_daily_failover-0037","event":"user_last_token"}
+{"t":1460876.4334093,"req":"r2_daily_failover-0037","event":"done","status":"extractive_daily","level":0,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1460876.4636483,"req":"r2_daily_failover-0040","event":"first_token","step":"draft","ttft_ms":520.4}
+{"t":1460876.5322309,"req":"r2_daily_failover-0040","event":"last_token","step":"draft","total_ms":589.0,"prompt_tokens":1708,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1460876.5325849,"req":"r2_daily_failover-0040","event":"verify_det","ok":true,"issues":[]}
+{"t":1460876.5326504,"req":"r2_daily_failover-0040","event":"user_first_token"}
+{"t":1460876.532727,"req":"r2_daily_failover-0040","event":"user_last_token"}
+{"t":1460876.5327885,"req":"r2_daily_failover-0040","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:12] [C:dynchunk:61]"}
+{"t":1460876.9181378,"req":"r2_daily_failover-0041","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1460876.9182965,"req":"r2_daily_failover-0041","event":"step_start","step":"classify"}
+{"t":1460876.9183522,"req":"r2_daily_failover-0041","event":"degrade","what":"classify_heuristic"}
+{"t":1460876.9183961,"req":"r2_daily_failover-0041","event":"step_end","step":"classify"}
+{"t":1460876.9184986,"req":"r2_daily_failover-0041","event":"step_start","step":"retrieve"}
+{"t":1460876.9278877,"req":"r2_daily_failover-0041","event":"step_end","step":"retrieve"}
+{"t":1460876.928596,"req":"r2_daily_failover-0041","event":"degrade","what":"extractive_daily"}
+{"t":1460876.9298741,"req":"r2_daily_failover-0041","event":"user_first_token"}
+{"t":1460876.9299689,"req":"r2_daily_failover-0041","event":"user_last_token"}
+{"t":1460876.9300271,"req":"r2_daily_failover-0041","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
+{"t":1460877.0930956,"req":"r2_daily_failover-0042","event":"enqueue","question":"How does the Transformer's learning rate change over the course of training?"}
+{"t":1460877.0932559,"req":"r2_daily_failover-0042","event":"step_start","step":"classify"}
+{"t":1460877.0933184,"req":"r2_daily_failover-0042","event":"degrade","what":"classify_heuristic"}
+{"t":1460877.0933642,"req":"r2_daily_failover-0042","event":"step_end","step":"classify"}
+{"t":1460877.0934825,"req":"r2_daily_failover-0042","event":"step_start","step":"retrieve"}
+{"t":1460877.1148915,"req":"r2_daily_failover-0042","event":"step_end","step":"retrieve"}
+{"t":1460877.1156436,"req":"r2_daily_failover-0042","event":"degrade","what":"extractive_daily"}
+{"t":1460877.1177014,"req":"r2_daily_failover-0042","event":"user_first_token"}
+{"t":1460877.117832,"req":"r2_daily_failover-0042","event":"user_last_token"}
+{"t":1460877.1178829,"req":"r2_daily_failover-0042","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmu\" [C:attention:20]\n\"the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of th\" [C:attention:21]\n\"6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively\" [C:attention:24]"}
+{"t":1460880.0621624,"req":"r2_daily_failover-0043","event":"enqueue","question":"How does Moshi's theoretical latency compare with the average latency in natural"}
+{"t":1460880.062364,"req":"r2_daily_failover-0043","event":"step_start","step":"classify"}
+{"t":1460880.0624241,"req":"r2_daily_failover-0043","event":"degrade","what":"classify_heuristic"}
+{"t":1460880.0625813,"req":"r2_daily_failover-0043","event":"step_end","step":"classify"}
+{"t":1460880.0627432,"req":"r2_daily_failover-0043","event":"step_start","step":"retrieve"}
+{"t":1460880.0688667,"req":"r2_daily_failover-0043","event":"step_end","step":"retrieve"}
+{"t":1460880.0694868,"req":"r2_daily_failover-0043","event":"degrade","what":"extractive_daily"}
+{"t":1460880.0730968,"req":"r2_daily_failover-0043","event":"user_first_token"}
+{"t":1460880.0732441,"req":"r2_daily_failover-0043","event":"user_last_token"}
+{"t":1460880.0732902,"req":"r2_daily_failover-0043","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"We extend previous work on audio language models and design a streaming, hierarchical architecture, with a theoretical latency of 160 ms\u2014lower than the 230 ms average in natural conversations measured over 10 langu\" [C:moshi:4]\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"We thus switch to a reduced latency of 240ms with the pattern [0, 2, 2, 2, 2, 2, 2, 2].\" [C:moshi:79]"}
+{"t":1460880.6621602,"req":"r2_daily_failover-0044","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1460880.662437,"req":"r2_daily_failover-0044","event":"step_start","step":"classify"}
+{"t":1460880.6624918,"req":"r2_daily_failover-0044","event":"degrade","what":"classify_heuristic"}
+{"t":1460880.6625302,"req":"r2_daily_failover-0044","event":"step_end","step":"classify"}
+{"t":1460880.6626349,"req":"r2_daily_failover-0044","event":"step_start","step":"retrieve"}
+{"t":1460880.6770491,"req":"r2_daily_failover-0044","event":"step_end","step":"retrieve"}
+{"t":1460880.677535,"req":"r2_daily_failover-0044","event":"degrade","what":"extractive_daily"}
+{"t":1460880.6783878,"req":"r2_daily_failover-0044","event":"user_first_token"}
+{"t":1460880.6784627,"req":"r2_daily_failover-0044","event":"user_last_token"}
+{"t":1460880.6784957,"req":"r2_daily_failover-0044","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"are missing , in my opinion .\" [C:attention:38]\n\"just this is what we are missing , in my opinion .\" [C:attention:39]\n\"Net (2-stage) (3,3)-DC 7.0 870M M4 + T1M4 + T26 + M4T1 + M4 1024 , 1024 , 1536 #FLOPs matched to GPT-3 XL Transformer Token GPT2 1792 4.6 1.3B T24 2048 SpaceByte++ Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (space) Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (1-stage) Byte 6-DC 8192 4\" [C:dynchunk:41]"}
+{"t":1460883.3644615,"req":"r2_daily_failover-0045","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1460883.3646636,"req":"r2_daily_failover-0045","event":"step_start","step":"classify"}
+{"t":1460883.3647291,"req":"r2_daily_failover-0045","event":"degrade","what":"classify_heuristic"}
+{"t":1460883.3647695,"req":"r2_daily_failover-0045","event":"step_end","step":"classify"}
+{"t":1460883.3650309,"req":"r2_daily_failover-0045","event":"step_start","step":"retrieve"}
+{"t":1460883.3727494,"req":"r2_daily_failover-0045","event":"step_end","step":"retrieve"}
+{"t":1460883.3735135,"req":"r2_daily_failover-0045","event":"degrade","what":"extractive_daily"}
+{"t":1460883.3747037,"req":"r2_daily_failover-0045","event":"user_first_token"}
+{"t":1460883.374799,"req":"r2_daily_failover-0045","event":"user_last_token"}
+{"t":1460883.3748361,"req":"r2_daily_failover-0045","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1460883.8828902,"req":"r2_daily_failover-0046","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1460883.8830762,"req":"r2_daily_failover-0046","event":"step_start","step":"classify"}
+{"t":1460883.8831332,"req":"r2_daily_failover-0046","event":"degrade","what":"classify_heuristic"}
+{"t":1460883.8831699,"req":"r2_daily_failover-0046","event":"step_end","step":"classify"}
+{"t":1460883.8833128,"req":"r2_daily_failover-0046","event":"step_start","step":"retrieve"}
+{"t":1460883.8972119,"req":"r2_daily_failover-0046","event":"step_end","step":"retrieve"}
+{"t":1460883.8980236,"req":"r2_daily_failover-0046","event":"degrade","what":"extractive_daily"}
+{"t":1460883.8997079,"req":"r2_daily_failover-0046","event":"user_first_token"}
+{"t":1460883.8998557,"req":"r2_daily_failover-0046","event":"user_last_token"}
+{"t":1460883.900013,"req":"r2_daily_failover-0046","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1460889.5116834,"req":"-","event":"loop_lag","lag_ms":281.3}
+{"t":1460889.9915412,"req":"-","event":"loop_lag","lag_ms":272.1}
+{"t":1460891.084406,"req":"-","event":"loop_lag","lag_ms":1042.7}
+{"t":1460892.1307897,"req":"-","event":"loop_lag","lag_ms":982.8}
+{"t":1460893.1714386,"req":"r2_daily_failover-0047","event":"enqueue","question":"What is the ratio loss in the dynamic chunking paper for?"}
+{"t":1460893.1715982,"req":"r2_daily_failover-0047","event":"step_start","step":"classify"}
+{"t":1460893.1716538,"req":"r2_daily_failover-0047","event":"degrade","what":"classify_heuristic"}
+{"t":1460893.1716992,"req":"r2_daily_failover-0047","event":"step_end","step":"classify"}
+{"t":1460893.1718127,"req":"r2_daily_failover-0047","event":"step_start","step":"retrieve"}
+{"t":1460893.1988546,"req":"r2_daily_failover-0047","event":"step_end","step":"retrieve"}
+{"t":1460893.1995372,"req":"r2_daily_failover-0047","event":"degrade","what":"extractive_daily"}
+{"t":1460893.2045601,"req":"r2_daily_failover-0047","event":"user_first_token"}
+{"t":1460893.2047403,"req":"r2_daily_failover-0047","event":"user_last_token"}
+{"t":1460893.2048071,"req":"r2_daily_failover-0047","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"cisions (i.e., boundary probabilities approaching 0 or 1), \ud835\udc39 naturally converges toward \ud835\udc3a, and the loss effectively guides the model toward the desired compression ratio.\" [C:dynchunk:29]\n\"Mixture-of-Experts (MoE) models (Fedus, Zoph, and Shazeer 2022), which face similar challenges in maintaining balanced expert utilization, we introduce a ratio loss to guide compression: Lratio = \ud835\udc41 \ud835\udc41\u22121 ((\ud835\udc41\u22121)\ud835\udc39\ud835\udc3a+ (1 \u2212\ud835\udc39)(1 \u2212\ud835\udc3a)) , \ud835\udc39= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc4f\ud835\udc61, \ud835\udc3a= 1 \ud835\udc3f \ud835\udc3f \u2211\ufe01 \ud835\udc61=1 \ud835\udc5d\ud835\udc61, (10) where \ud835\udc39represents the fract\" [C:dynchunk:28]\n\"Dynamic Chunking.\" [C:dynchunk:7]"}
+{"t":1460898.0207848,"req":"r2_daily_failover-0048","event":"enqueue","question":"What theoretical and practical latency does Moshi report?"}
+{"t":1460898.0211404,"req":"r2_daily_failover-0048","event":"step_start","step":"classify"}
+{"t":1460898.0212375,"req":"r2_daily_failover-0048","event":"degrade","what":"classify_heuristic"}
+{"t":1460898.021286,"req":"r2_daily_failover-0048","event":"step_end","step":"classify"}
+{"t":1460898.0214102,"req":"r2_daily_failover-0048","event":"step_start","step":"retrieve"}
+{"t":1460898.0300044,"req":"r2_daily_failover-0048","event":"step_end","step":"retrieve"}
+{"t":1460898.0307883,"req":"r2_daily_failover-0048","event":"degrade","what":"extractive_daily"}
+{"t":1460898.0319546,"req":"r2_daily_failover-0048","event":"user_first_token"}
+{"t":1460898.032044,"req":"r2_daily_failover-0048","event":"user_last_token"}
+{"t":1460898.0320987,"req":"r2_daily_failover-0048","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"However, this delay pattern induces a theoretical latency of 8 timesteps, which amounts to 640ms, a latency that is incompatible with the requirements of a real-time dialogue model.\" [C:moshi:78]\n\"Moreover, and as described in Table 1, we settle on a theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1.\" [C:moshi:81]\n\"In this work we introduce Moshi, a speech-text foundation model and real-time spoken dialogue system that aims at solving the aforementioned limitations: latency, textual information bottleneck and turn-based modeling.\" [C:moshi:4]"}
+{"t":1460903.4648899,"req":"-","event":"loop_lag","lag_ms":184.5}
+{"t":1460903.7843995,"req":"-","event":"loop_lag","lag_ms":269.3}
+{"t":1460904.1994566,"req":"-","event":"loop_lag","lag_ms":299.4}
+{"t":1460908.5147521,"req":"r2_daily_failover-0049","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1460908.5149678,"req":"r2_daily_failover-0049","event":"step_start","step":"classify"}
+{"t":1460908.5150366,"req":"r2_daily_failover-0049","event":"degrade","what":"classify_heuristic"}
+{"t":1460908.5150887,"req":"r2_daily_failover-0049","event":"step_end","step":"classify"}
+{"t":1460908.5152156,"req":"r2_daily_failover-0049","event":"step_start","step":"retrieve"}
+{"t":1460908.5361924,"req":"r2_daily_failover-0049","event":"step_end","step":"retrieve"}
+{"t":1460908.5407099,"req":"r2_daily_failover-0049","event":"degrade","what":"extractive_daily"}
+{"t":1460908.5423447,"req":"r2_daily_failover-0049","event":"user_first_token"}
+{"t":1460908.5424965,"req":"r2_daily_failover-0049","event":"user_last_token"}
+{"t":1460908.5425635,"req":"r2_daily_failover-0049","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36].\" [C:attention:22]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"1B 2B 3B 4B 5B 6B 7B 8B Training Base Pairs Seen 2.75 2.80 2.85 2.90 2.95 3.6x more data efficient than isotropic model Perplexity on HG38 Transformer Mamba-2 H-Net (Trans.) H-Net (Mamba) Figure 6: Scaling performance on HG38 during the stable phase of training.\" [C:dynchunk:64]"}
+{"t":1460909.0259408,"req":"r2_daily_failover-0050","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1460909.0260907,"req":"r2_daily_failover-0050","event":"step_start","step":"classify"}
+{"t":1460909.0261494,"req":"r2_daily_failover-0050","event":"degrade","what":"classify_heuristic"}
+{"t":1460909.0261947,"req":"r2_daily_failover-0050","event":"step_end","step":"classify"}
+{"t":1460909.0262967,"req":"r2_daily_failover-0050","event":"step_start","step":"retrieve"}
+{"t":1460909.0321382,"req":"r2_daily_failover-0050","event":"step_end","step":"retrieve"}
+{"t":1460909.03284,"req":"r2_daily_failover-0050","event":"degrade","what":"extractive_daily"}
+{"t":1460909.0340212,"req":"r2_daily_failover-0050","event":"user_first_token"}
+{"t":1460909.0341157,"req":"r2_daily_failover-0050","event":"user_last_token"}
+{"t":1460909.0341875,"req":"r2_daily_failover-0050","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"All models are trained on H100 GPUs, using FSDP and activation checkp\" [C:moshi:58]\n\"Both have a perplexity that is better than the ground truth, which is explained by these models being trained on data that is closer to what DialoGPT has been trained on compared to the Fisher dataset.\" [C:moshi:94]\n\"All models are trained on H100 GPUs, using FSDP and activation checkpointing.\" [C:moshi:59]"}
+{"t":1460910.2476081,"req":"r2_daily_failover-0051","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1460910.2478368,"req":"r2_daily_failover-0051","event":"step_start","step":"classify"}
+{"t":1460910.2483718,"req":"r2_daily_failover-0051","event":"degrade","what":"classify_heuristic"}
+{"t":1460910.2487528,"req":"r2_daily_failover-0051","event":"step_end","step":"classify"}
+{"t":1460910.2488774,"req":"r2_daily_failover-0051","event":"step_start","step":"retrieve"}
+{"t":1460910.2619308,"req":"r2_daily_failover-0051","event":"step_end","step":"retrieve"}
+{"t":1460910.2635268,"req":"r2_daily_failover-0051","event":"degrade","what":"extractive_daily"}
+{"t":1460910.2665788,"req":"r2_daily_failover-0051","event":"user_first_token"}
+{"t":1460910.2667074,"req":"r2_daily_failover-0051","event":"user_last_token"}
+{"t":1460910.2667466,"req":"r2_daily_failover-0051","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36].\" [C:attention:22]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"1B 2B 3B 4B 5B 6B 7B 8B Training Base Pairs Seen 2.75 2.80 2.85 2.90 2.95 3.6x more data efficient than isotropic model Perplexity on HG38 Transformer Mamba-2 H-Net (Trans.) H-Net (Mamba) Figure 6: Scaling performance on HG38 during the stable phase of training.\" [C:dynchunk:64]"}
+{"t":1460910.4285982,"req":"r2_daily_failover-0052","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1460910.4287711,"req":"r2_daily_failover-0052","event":"step_start","step":"classify"}
+{"t":1460910.4288267,"req":"r2_daily_failover-0052","event":"degrade","what":"classify_heuristic"}
+{"t":1460910.4288711,"req":"r2_daily_failover-0052","event":"step_end","step":"classify"}
+{"t":1460910.4289832,"req":"r2_daily_failover-0052","event":"step_start","step":"retrieve"}
+{"t":1460910.447046,"req":"r2_daily_failover-0052","event":"step_end","step":"retrieve"}
+{"t":1460910.4479688,"req":"r2_daily_failover-0052","event":"degrade","what":"extractive_daily"}
+{"t":1460910.4491818,"req":"r2_daily_failover-0052","event":"user_first_token"}
+{"t":1460910.4492891,"req":"r2_daily_failover-0052","event":"user_last_token"}
+{"t":1460910.4493473,"req":"r2_daily_failover-0052","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"At 12.5Hz, this represents a bitrate of 1.1kbps.\" [C:moshi:32]\n\"https://github.com/facebookresearch/libri-light/blob/main/eval/README.md 23 Moshi: a speech-text foundation model for real-time dialogue levels of RVQ to obtain a bitrate of 1.5kbps, closer to that of Mimi.\" [C:moshi:71]\n\"loss only 24kHz 12.5Hz 1.1kbps \u2713 8.7% 1.84 3.10 81.0\u00b11.3 Same, downsampled at 16kHz 16kHz 12.5Hz 1.1kbps \u2713 77.7\u00b11.4 Mimi, non adv.\" [C:moshi:69]"}
+{"t":1460911.4500394,"req":"r2_daily_failover-0053","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1460911.4502027,"req":"r2_daily_failover-0053","event":"step_start","step":"classify"}
+{"t":1460911.4502565,"req":"r2_daily_failover-0053","event":"degrade","what":"classify_heuristic"}
+{"t":1460911.4502935,"req":"r2_daily_failover-0053","event":"step_end","step":"classify"}
+{"t":1460911.4504167,"req":"r2_daily_failover-0053","event":"step_start","step":"retrieve"}
+{"t":1460911.456015,"req":"r2_daily_failover-0053","event":"step_end","step":"retrieve"}
+{"t":1460911.4566748,"req":"r2_daily_failover-0053","event":"degrade","what":"extractive_daily"}
+{"t":1460911.4576125,"req":"r2_daily_failover-0053","event":"user_first_token"}
+{"t":1460911.4578266,"req":"r2_daily_failover-0053","event":"user_last_token"}
+{"t":1460911.4579073,"req":"r2_daily_failover-0053","event":"done","status":"extractive_daily","level":2,"steps":["classify","retrieve"],"answer":"Our language-model budget for today is used up, so I can't write a summary right now. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}

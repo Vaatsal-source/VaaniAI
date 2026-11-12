@@ -1,0 +1,13 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.12, "duration": 70.0, "n": 20, "window": 5, "patience": 45.0, "seed": 1234, "tag": "real_failover_r2", "drain": 0}, "n": 4, "perf0": 1456476.4117837}
+{"t": 1456505.0316014, "req": "real_failover_r2-0000", "event": "arrive", "sched": 28.29556589992717, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1456506.2585795, "req": "real_failover_r2-0000", "event": "first_byte"}
+{"t": 1456506.2598382, "req": "real_failover_r2-0000", "event": "end", "status": "abstained"}
+{"t": 1456509.8718957, "req": "real_failover_r2-0001", "event": "arrive", "sched": 33.13586140004918, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1456509.9392474, "req": "real_failover_r2-0002", "event": "arrive", "sched": 33.20321419998072, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1456511.8199573, "req": "real_failover_r2-0001", "event": "first_byte"}
+{"t": 1456511.8228816, "req": "real_failover_r2-0001", "event": "end", "status": "answered"}
+{"t": 1456512.6051745, "req": "real_failover_r2-0002", "event": "first_byte"}
+{"t": 1456512.6080127, "req": "real_failover_r2-0002", "event": "end", "status": "answered"}
+{"t": 1456530.0979975, "req": "real_failover_r2-0003", "event": "arrive", "sched": 53.361962999915704, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1456544.6121794, "req": "real_failover_r2-0003", "event": "first_byte"}
+{"t": 1456544.6153941, "req": "real_failover_r2-0003", "event": "end", "status": "answered"}

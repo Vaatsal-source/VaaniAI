@@ -1,0 +1,451 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 150, "window": 10.0, "patience": 20.0, "seed": 1, "tag": "r2_abl_burst_t10_commit_only", "drain": 0}, "n": 150, "perf0": 1451874.8490576}
+{"t": 1451875.230222, "req": "r2_abl_burst_t10_commit_only-0000", "event": "arrive", "sched": 0.02389519987627864, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451875.3111491, "req": "r2_abl_burst_t10_commit_only-0001", "event": "arrive", "sched": 0.10482419980689883, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451875.3521601, "req": "r2_abl_burst_t10_commit_only-0002", "event": "arrive", "sched": 0.14583779987879097, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451875.3650287, "req": "r2_abl_burst_t10_commit_only-0003", "event": "arrive", "sched": 0.15870579984039068, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451875.4427869, "req": "r2_abl_burst_t10_commit_only-0004", "event": "arrive", "sched": 0.23646049993112683, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451875.4441536, "req": "r2_abl_burst_t10_commit_only-0005", "event": "arrive", "sched": 0.23782569984905422, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451875.464153, "req": "r2_abl_burst_t10_commit_only-0006", "event": "arrive", "sched": 0.25782969989813864, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451875.4928381, "req": "r2_abl_burst_t10_commit_only-0007", "event": "arrive", "sched": 0.2865142999216914, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1451875.4941631, "req": "r2_abl_burst_t10_commit_only-0008", "event": "arrive", "sched": 0.2878387998789549, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451875.4980965, "req": "r2_abl_burst_t10_commit_only-0009", "event": "arrive", "sched": 0.2917699997778982, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451875.5010691, "req": "r2_abl_burst_t10_commit_only-0010", "event": "arrive", "sched": 0.29474039981141686, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451875.5049445, "req": "r2_abl_burst_t10_commit_only-0011", "event": "arrive", "sched": 0.2986176998820156, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451875.5429926, "req": "r2_abl_burst_t10_commit_only-0012", "event": "arrive", "sched": 0.33666939986869693, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451875.6530048, "req": "r2_abl_burst_t10_commit_only-0013", "event": "arrive", "sched": 0.4466786999255419, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1451875.7734866, "req": "r2_abl_burst_t10_commit_only-0014", "event": "arrive", "sched": 0.5671601998619735, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451875.9153127, "req": "r2_abl_burst_t10_commit_only-0015", "event": "arrive", "sched": 0.7089816997759044, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1451876.0412445, "req": "r2_abl_burst_t10_commit_only-0016", "event": "arrive", "sched": 0.8349156999029219, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451876.1572392, "req": "r2_abl_burst_t10_commit_only-0017", "event": "arrive", "sched": 0.9509103999007493, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451876.2889438, "req": "r2_abl_burst_t10_commit_only-0018", "event": "arrive", "sched": 1.0826167999766767, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1451876.2911984, "req": "r2_abl_burst_t10_commit_only-0019", "event": "arrive", "sched": 1.0848728998098522, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451876.4531859, "req": "r2_abl_burst_t10_commit_only-0020", "event": "arrive", "sched": 1.2468574999365956, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451876.5601401, "req": "r2_abl_burst_t10_commit_only-0021", "event": "arrive", "sched": 1.3538147998042405, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451876.798845, "req": "r2_abl_burst_t10_commit_only-0022", "event": "arrive", "sched": 1.592519799945876, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451876.8111123, "req": "r2_abl_burst_t10_commit_only-0000", "event": "first_byte"}
+{"t": 1451876.8161669, "req": "r2_abl_burst_t10_commit_only-0000", "event": "end", "status": "answered"}
+{"t": 1451876.8320834, "req": "r2_abl_burst_t10_commit_only-0001", "event": "first_byte"}
+{"t": 1451876.8362457, "req": "r2_abl_burst_t10_commit_only-0001", "event": "end", "status": "answered"}
+{"t": 1451876.8880669, "req": "r2_abl_burst_t10_commit_only-0023", "event": "arrive", "sched": 1.6817365000024438, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451876.9007793, "req": "r2_abl_burst_t10_commit_only-0024", "event": "arrive", "sched": 1.694456199882552, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451876.9430789, "req": "r2_abl_burst_t10_commit_only-0025", "event": "arrive", "sched": 1.7367523999419063, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1451876.9959569, "req": "r2_abl_burst_t10_commit_only-0026", "event": "arrive", "sched": 1.7896299997810274, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451877.0530179, "req": "r2_abl_burst_t10_commit_only-0002", "event": "first_byte"}
+{"t": 1451877.0623441, "req": "r2_abl_burst_t10_commit_only-0027", "event": "arrive", "sched": 1.8560169998090714, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451877.0643205, "req": "r2_abl_burst_t10_commit_only-0002", "event": "end", "status": "answered"}
+{"t": 1451877.0669216, "req": "r2_abl_burst_t10_commit_only-0028", "event": "arrive", "sched": 1.8605970998760313, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451877.2111643, "req": "r2_abl_burst_t10_commit_only-0029", "event": "arrive", "sched": 2.004838799824938, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451877.3094263, "req": "r2_abl_burst_t10_commit_only-0030", "event": "arrive", "sched": 2.103097799932584, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451877.4275262, "req": "r2_abl_burst_t10_commit_only-0031", "event": "arrive", "sched": 2.2211981997825205, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451877.5421856, "req": "r2_abl_burst_t10_commit_only-0032", "event": "arrive", "sched": 2.335858799982816, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451877.5460585, "req": "r2_abl_burst_t10_commit_only-0033", "event": "arrive", "sched": 2.3397330997977406, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451877.5516085, "req": "r2_abl_burst_t10_commit_only-0034", "event": "arrive", "sched": 2.3452827997971326, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451877.5599836, "req": "r2_abl_burst_t10_commit_only-0035", "event": "arrive", "sched": 2.3536521999631077, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451877.5695193, "req": "r2_abl_burst_t10_commit_only-0036", "event": "arrive", "sched": 2.3631919999606907, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451877.5771683, "req": "r2_abl_burst_t10_commit_only-0037", "event": "arrive", "sched": 2.3708423997741193, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451877.5807616, "req": "r2_abl_burst_t10_commit_only-0038", "event": "arrive", "sched": 2.374436899786815, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451877.634177, "req": "r2_abl_burst_t10_commit_only-0039", "event": "arrive", "sched": 2.4278505998663604, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451877.6981445, "req": "r2_abl_burst_t10_commit_only-0040", "event": "arrive", "sched": 2.4918175998609513, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451877.7711676, "req": "r2_abl_burst_t10_commit_only-0041", "event": "arrive", "sched": 2.564840499777347, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451877.7785103, "req": "r2_abl_burst_t10_commit_only-0042", "event": "arrive", "sched": 2.5721844998188317, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451877.9083471, "req": "r2_abl_burst_t10_commit_only-0043", "event": "arrive", "sched": 2.7020216998644173, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451878.0181389, "req": "r2_abl_burst_t10_commit_only-0044", "event": "arrive", "sched": 2.8118096999824047, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451878.1031533, "req": "r2_abl_burst_t10_commit_only-0045", "event": "arrive", "sched": 2.896827599965036, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451878.2607872, "req": "r2_abl_burst_t10_commit_only-0046", "event": "arrive", "sched": 3.054461999796331, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451878.4197501, "req": "r2_abl_burst_t10_commit_only-0047", "event": "arrive", "sched": 3.213424799963832, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451878.4352953, "req": "r2_abl_burst_t10_commit_only-0003", "event": "first_byte"}
+{"t": 1451878.4465206, "req": "r2_abl_burst_t10_commit_only-0003", "event": "end", "status": "answered"}
+{"t": 1451878.455028, "req": "r2_abl_burst_t10_commit_only-0039", "event": "first_byte"}
+{"t": 1451878.4641197, "req": "r2_abl_burst_t10_commit_only-0039", "event": "end", "status": "extractive_overload"}
+{"t": 1451878.4667831, "req": "r2_abl_burst_t10_commit_only-0010", "event": "first_byte"}
+{"t": 1451878.4753849, "req": "r2_abl_burst_t10_commit_only-0010", "event": "end", "status": "answered"}
+{"t": 1451878.5256047, "req": "r2_abl_burst_t10_commit_only-0013", "event": "first_byte"}
+{"t": 1451878.5369043, "req": "r2_abl_burst_t10_commit_only-0048", "event": "arrive", "sched": 3.330578399822116, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1451878.5417882, "req": "r2_abl_burst_t10_commit_only-0016", "event": "first_byte"}
+{"t": 1451878.5518138, "req": "r2_abl_burst_t10_commit_only-0013", "event": "end", "status": "answered"}
+{"t": 1451878.5523997, "req": "r2_abl_burst_t10_commit_only-0004", "event": "first_byte"}
+{"t": 1451878.5623395, "req": "r2_abl_burst_t10_commit_only-0005", "event": "first_byte"}
+{"t": 1451878.5693209, "req": "r2_abl_burst_t10_commit_only-0040", "event": "first_byte"}
+{"t": 1451878.5806365, "req": "r2_abl_burst_t10_commit_only-0016", "event": "end", "status": "answered"}
+{"t": 1451878.5819672, "req": "r2_abl_burst_t10_commit_only-0004", "event": "end", "status": "answered"}
+{"t": 1451878.5823982, "req": "r2_abl_burst_t10_commit_only-0005", "event": "end", "status": "answered"}
+{"t": 1451878.5827731, "req": "r2_abl_burst_t10_commit_only-0040", "event": "end", "status": "extractive_overload"}
+{"t": 1451878.8422419, "req": "r2_abl_burst_t10_commit_only-0049", "event": "arrive", "sched": 3.635915399994701, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451878.8444979, "req": "r2_abl_burst_t10_commit_only-0041", "event": "first_byte"}
+{"t": 1451878.8744086, "req": "r2_abl_burst_t10_commit_only-0050", "event": "arrive", "sched": 3.668083499884233, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1451878.8794261, "req": "r2_abl_burst_t10_commit_only-0051", "event": "arrive", "sched": 3.673099799780175, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451878.8810966, "req": "r2_abl_burst_t10_commit_only-0041", "event": "end", "status": "extractive_overload"}
+{"t": 1451878.9174632, "req": "r2_abl_burst_t10_commit_only-0015", "event": "first_byte"}
+{"t": 1451878.9276446, "req": "r2_abl_burst_t10_commit_only-0015", "event": "end", "status": "answered"}
+{"t": 1451878.928567, "req": "r2_abl_burst_t10_commit_only-0011", "event": "first_byte"}
+{"t": 1451878.9354295, "req": "r2_abl_burst_t10_commit_only-0052", "event": "arrive", "sched": 3.729104299796745, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451878.9379234, "req": "r2_abl_burst_t10_commit_only-0011", "event": "end", "status": "answered"}
+{"t": 1451878.9419434, "req": "r2_abl_burst_t10_commit_only-0042", "event": "first_byte"}
+{"t": 1451878.952324, "req": "r2_abl_burst_t10_commit_only-0042", "event": "end", "status": "extractive_overload"}
+{"t": 1451878.969483, "req": "r2_abl_burst_t10_commit_only-0043", "event": "first_byte"}
+{"t": 1451878.9808518, "req": "r2_abl_burst_t10_commit_only-0043", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.0052527, "req": "r2_abl_burst_t10_commit_only-0053", "event": "arrive", "sched": 3.798928099917248, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451879.0512083, "req": "r2_abl_burst_t10_commit_only-0045", "event": "first_byte"}
+{"t": 1451879.0637398, "req": "r2_abl_burst_t10_commit_only-0045", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.0673407, "req": "r2_abl_burst_t10_commit_only-0054", "event": "arrive", "sched": 3.8610152998007834, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451879.0882791, "req": "r2_abl_burst_t10_commit_only-0046", "event": "first_byte"}
+{"t": 1451879.0998554, "req": "r2_abl_burst_t10_commit_only-0046", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.1072081, "req": "r2_abl_burst_t10_commit_only-0044", "event": "first_byte"}
+{"t": 1451879.1164512, "req": "r2_abl_burst_t10_commit_only-0044", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.1367001, "req": "r2_abl_burst_t10_commit_only-0047", "event": "first_byte"}
+{"t": 1451879.1481496, "req": "r2_abl_burst_t10_commit_only-0055", "event": "arrive", "sched": 3.941823599860072, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1451879.1501062, "req": "r2_abl_burst_t10_commit_only-0047", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.1505393, "req": "r2_abl_burst_t10_commit_only-0056", "event": "arrive", "sched": 3.9442151999101043, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451879.1993023, "req": "r2_abl_burst_t10_commit_only-0049", "event": "first_byte"}
+{"t": 1451879.2193669, "req": "r2_abl_burst_t10_commit_only-0049", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.2287907, "req": "r2_abl_burst_t10_commit_only-0048", "event": "first_byte"}
+{"t": 1451879.2491071, "req": "r2_abl_burst_t10_commit_only-0048", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.2771079, "req": "r2_abl_burst_t10_commit_only-0051", "event": "first_byte"}
+{"t": 1451879.2924127, "req": "r2_abl_burst_t10_commit_only-0051", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.3284867, "req": "r2_abl_burst_t10_commit_only-0050", "event": "first_byte"}
+{"t": 1451879.3304375, "req": "r2_abl_burst_t10_commit_only-0050", "event": "end", "status": "shed"}
+{"t": 1451879.3439627, "req": "r2_abl_burst_t10_commit_only-0053", "event": "first_byte"}
+{"t": 1451879.3488666, "req": "r2_abl_burst_t10_commit_only-0057", "event": "arrive", "sched": 4.142543099820614, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451879.3502214, "req": "r2_abl_burst_t10_commit_only-0053", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.3775395, "req": "r2_abl_burst_t10_commit_only-0052", "event": "first_byte"}
+{"t": 1451879.3847889, "req": "r2_abl_burst_t10_commit_only-0052", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.38495, "req": "r2_abl_burst_t10_commit_only-0054", "event": "first_byte"}
+{"t": 1451879.3931548, "req": "r2_abl_burst_t10_commit_only-0054", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.394989, "req": "r2_abl_burst_t10_commit_only-0058", "event": "arrive", "sched": 4.188665799796581, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451879.4159428, "req": "r2_abl_burst_t10_commit_only-0055", "event": "first_byte"}
+{"t": 1451879.425962, "req": "r2_abl_burst_t10_commit_only-0055", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.4287258, "req": "r2_abl_burst_t10_commit_only-0056", "event": "first_byte"}
+{"t": 1451879.4355089, "req": "r2_abl_burst_t10_commit_only-0059", "event": "arrive", "sched": 4.229184699943289, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451879.4430043, "req": "r2_abl_burst_t10_commit_only-0056", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.4435235, "req": "r2_abl_burst_t10_commit_only-0060", "event": "arrive", "sched": 4.23719869996421, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451879.4652728, "req": "r2_abl_burst_t10_commit_only-0061", "event": "arrive", "sched": 4.258944699773565, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451879.5389163, "req": "r2_abl_burst_t10_commit_only-0036", "event": "first_byte"}
+{"t": 1451879.5449893, "req": "r2_abl_burst_t10_commit_only-0062", "event": "arrive", "sched": 4.338664399925619, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451879.5472535, "req": "r2_abl_burst_t10_commit_only-0036", "event": "end", "status": "answered"}
+{"t": 1451879.5606888, "req": "r2_abl_burst_t10_commit_only-0007", "event": "first_byte"}
+{"t": 1451879.5670058, "req": "r2_abl_burst_t10_commit_only-0007", "event": "end", "status": "answered"}
+{"t": 1451879.5678658, "req": "r2_abl_burst_t10_commit_only-0063", "event": "arrive", "sched": 4.361540699843317, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1451879.5803362, "req": "r2_abl_burst_t10_commit_only-0057", "event": "first_byte"}
+{"t": 1451879.586948, "req": "r2_abl_burst_t10_commit_only-0057", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.5878608, "req": "r2_abl_burst_t10_commit_only-0064", "event": "arrive", "sched": 4.381538199959323, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451879.6204415, "req": "r2_abl_burst_t10_commit_only-0058", "event": "first_byte"}
+{"t": 1451879.6347959, "req": "r2_abl_burst_t10_commit_only-0058", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.6450852, "req": "r2_abl_burst_t10_commit_only-0065", "event": "arrive", "sched": 4.438762399833649, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451879.6574262, "req": "r2_abl_burst_t10_commit_only-0059", "event": "first_byte"}
+{"t": 1451879.6608029, "req": "r2_abl_burst_t10_commit_only-0059", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.6613399, "req": "r2_abl_burst_t10_commit_only-0038", "event": "first_byte"}
+{"t": 1451879.6687413, "req": "r2_abl_burst_t10_commit_only-0038", "event": "end", "status": "answered"}
+{"t": 1451879.6690995, "req": "r2_abl_burst_t10_commit_only-0060", "event": "first_byte"}
+{"t": 1451879.6999545, "req": "r2_abl_burst_t10_commit_only-0060", "event": "end", "status": "extractive_overload"}
+{"t": 1451879.7001474, "req": "r2_abl_burst_t10_commit_only-0066", "event": "arrive", "sched": 4.493824399774894, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451879.9665007, "req": "r2_abl_burst_t10_commit_only-0067", "event": "arrive", "sched": 4.760176899842918, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451879.9772043, "req": "r2_abl_burst_t10_commit_only-0068", "event": "arrive", "sched": 4.770878099836409, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451880.0458082, "req": "r2_abl_burst_t10_commit_only-0069", "event": "arrive", "sched": 4.83948149997741, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1451880.0488317, "req": "r2_abl_burst_t10_commit_only-0070", "event": "arrive", "sched": 4.842506799846888, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451880.0610853, "req": "r2_abl_burst_t10_commit_only-0071", "event": "arrive", "sched": 4.854759499896318, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451880.0758392, "req": "r2_abl_burst_t10_commit_only-0061", "event": "first_byte"}
+{"t": 1451880.0944299, "req": "r2_abl_burst_t10_commit_only-0072", "event": "arrive", "sched": 4.888103599892929, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1451880.0991468, "req": "r2_abl_burst_t10_commit_only-0061", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.1009279, "req": "r2_abl_burst_t10_commit_only-0062", "event": "first_byte"}
+{"t": 1451880.1140674, "req": "r2_abl_burst_t10_commit_only-0073", "event": "arrive", "sched": 4.907741099828854, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451880.118314, "req": "r2_abl_burst_t10_commit_only-0062", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.1359683, "req": "r2_abl_burst_t10_commit_only-0064", "event": "first_byte"}
+{"t": 1451880.1442141, "req": "r2_abl_burst_t10_commit_only-0064", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.1446854, "req": "r2_abl_burst_t10_commit_only-0074", "event": "arrive", "sched": 4.938360499916598, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451880.1744, "req": "r2_abl_burst_t10_commit_only-0075", "event": "arrive", "sched": 4.968074099859223, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451880.198174, "req": "r2_abl_burst_t10_commit_only-0063", "event": "first_byte"}
+{"t": 1451880.2038082, "req": "r2_abl_burst_t10_commit_only-0063", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.2041701, "req": "r2_abl_burst_t10_commit_only-0065", "event": "first_byte"}
+{"t": 1451880.2086387, "req": "r2_abl_burst_t10_commit_only-0065", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.2090518, "req": "r2_abl_burst_t10_commit_only-0076", "event": "arrive", "sched": 5.002726899925619, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451880.2417779, "req": "r2_abl_burst_t10_commit_only-0066", "event": "first_byte"}
+{"t": 1451880.2484959, "req": "r2_abl_burst_t10_commit_only-0077", "event": "arrive", "sched": 5.042170099914074, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451880.2503442, "req": "r2_abl_burst_t10_commit_only-0066", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.2521489, "req": "r2_abl_burst_t10_commit_only-0078", "event": "arrive", "sched": 5.045821099774912, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451880.2845162, "req": "r2_abl_burst_t10_commit_only-0067", "event": "first_byte"}
+{"t": 1451880.2917009, "req": "r2_abl_burst_t10_commit_only-0079", "event": "arrive", "sched": 5.085372999776155, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451880.2939315, "req": "r2_abl_burst_t10_commit_only-0067", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.300534, "req": "r2_abl_burst_t10_commit_only-0080", "event": "arrive", "sched": 5.09420880000107, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451880.3120372, "req": "r2_abl_burst_t10_commit_only-0068", "event": "first_byte"}
+{"t": 1451880.3191015, "req": "r2_abl_burst_t10_commit_only-0068", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.3405579, "req": "r2_abl_burst_t10_commit_only-0081", "event": "arrive", "sched": 5.1342320998664945, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451880.376857, "req": "r2_abl_burst_t10_commit_only-0070", "event": "first_byte"}
+{"t": 1451880.3850039, "req": "r2_abl_burst_t10_commit_only-0070", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.3864905, "req": "r2_abl_burst_t10_commit_only-0082", "event": "arrive", "sched": 5.1801659998018295, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451880.3960744, "req": "r2_abl_burst_t10_commit_only-0083", "event": "arrive", "sched": 5.189748899778351, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451880.4066639, "req": "r2_abl_burst_t10_commit_only-0069", "event": "first_byte"}
+{"t": 1451880.4135226, "req": "r2_abl_burst_t10_commit_only-0071", "event": "first_byte"}
+{"t": 1451880.4250121, "req": "r2_abl_burst_t10_commit_only-0069", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.425496, "req": "r2_abl_burst_t10_commit_only-0071", "event": "end", "status": "extractive_overload"}
+{"t": 1451880.4963147, "req": "r2_abl_burst_t10_commit_only-0084", "event": "arrive", "sched": 5.289987499825656, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451880.6034689, "req": "r2_abl_burst_t10_commit_only-0085", "event": "arrive", "sched": 5.3971419997978956, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451880.6155974, "req": "r2_abl_burst_t10_commit_only-0086", "event": "arrive", "sched": 5.4092715999577194, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451880.6431789, "req": "r2_abl_burst_t10_commit_only-0087", "event": "arrive", "sched": 5.436850099824369, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451880.6931362, "req": "r2_abl_burst_t10_commit_only-0017", "event": "first_byte"}
+{"t": 1451880.7113682, "req": "r2_abl_burst_t10_commit_only-0088", "event": "arrive", "sched": 5.505041599972174, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451880.7138301, "req": "r2_abl_burst_t10_commit_only-0017", "event": "end", "status": "answered"}
+{"t": 1451880.7168721, "req": "r2_abl_burst_t10_commit_only-0089", "event": "arrive", "sched": 5.510546799981967, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1451880.7180274, "req": "r2_abl_burst_t10_commit_only-0018", "event": "first_byte"}
+{"t": 1451880.7425025, "req": "r2_abl_burst_t10_commit_only-0006", "event": "first_byte"}
+{"t": 1451880.799438, "req": "r2_abl_burst_t10_commit_only-0037", "event": "first_byte"}
+{"t": 1451880.8404533, "req": "r2_abl_burst_t10_commit_only-0022", "event": "first_byte"}
+{"t": 1451881.1140576, "req": "r2_abl_burst_t10_commit_only-0008", "event": "first_byte"}
+{"t": 1451881.7276831, "req": "r2_abl_burst_t10_commit_only-0018", "event": "end", "status": "answered"}
+{"t": 1451881.728383, "req": "r2_abl_burst_t10_commit_only-0006", "event": "end", "status": "answered"}
+{"t": 1451881.7528937, "req": "r2_abl_burst_t10_commit_only-0037", "event": "end", "status": "answered"}
+{"t": 1451881.7536532, "req": "r2_abl_burst_t10_commit_only-0022", "event": "end", "status": "answered"}
+{"t": 1451881.7546162, "req": "r2_abl_burst_t10_commit_only-0008", "event": "end", "status": "answered"}
+{"t": 1451881.7837505, "req": "r2_abl_burst_t10_commit_only-0012", "event": "first_byte"}
+{"t": 1451881.8840326, "req": "r2_abl_burst_t10_commit_only-0073", "event": "first_byte"}
+{"t": 1451882.0892589, "req": "r2_abl_burst_t10_commit_only-0027", "event": "first_byte"}
+{"t": 1451882.2769921, "req": "r2_abl_burst_t10_commit_only-0014", "event": "first_byte"}
+{"t": 1451882.3254379, "req": "r2_abl_burst_t10_commit_only-0072", "event": "first_byte"}
+{"t": 1451882.3271165, "req": "r2_abl_burst_t10_commit_only-0074", "event": "first_byte"}
+{"t": 1451882.3503418, "req": "r2_abl_burst_t10_commit_only-0090", "event": "arrive", "sched": 7.144013999961317, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1451882.3651591, "req": "r2_abl_burst_t10_commit_only-0012", "event": "end", "status": "answered"}
+{"t": 1451882.3656367, "req": "r2_abl_burst_t10_commit_only-0073", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.374588, "req": "r2_abl_burst_t10_commit_only-0027", "event": "end", "status": "answered"}
+{"t": 1451882.3750277, "req": "r2_abl_burst_t10_commit_only-0091", "event": "arrive", "sched": 7.16870279982686, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451882.3816448, "req": "r2_abl_burst_t10_commit_only-0020", "event": "first_byte"}
+{"t": 1451882.4141129, "req": "r2_abl_burst_t10_commit_only-0014", "event": "end", "status": "answered"}
+{"t": 1451882.4146592, "req": "r2_abl_burst_t10_commit_only-0072", "event": "end", "status": "shed"}
+{"t": 1451882.4150581, "req": "r2_abl_burst_t10_commit_only-0074", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.420139, "req": "r2_abl_burst_t10_commit_only-0092", "event": "arrive", "sched": 7.213813699781895, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1451882.4280551, "req": "r2_abl_burst_t10_commit_only-0075", "event": "first_byte"}
+{"t": 1451882.4475144, "req": "r2_abl_burst_t10_commit_only-0076", "event": "first_byte"}
+{"t": 1451882.4708513, "req": "r2_abl_burst_t10_commit_only-0093", "event": "arrive", "sched": 7.264523099875078, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451882.4772491, "req": "r2_abl_burst_t10_commit_only-0020", "event": "end", "status": "answered"}
+{"t": 1451882.4804156, "req": "r2_abl_burst_t10_commit_only-0019", "event": "first_byte"}
+{"t": 1451882.4950357, "req": "r2_abl_burst_t10_commit_only-0094", "event": "arrive", "sched": 7.288709099870175, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451882.4973328, "req": "r2_abl_burst_t10_commit_only-0075", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.4977426, "req": "r2_abl_burst_t10_commit_only-0076", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.498114, "req": "r2_abl_burst_t10_commit_only-0077", "event": "first_byte"}
+{"t": 1451882.512885, "req": "r2_abl_burst_t10_commit_only-0095", "event": "arrive", "sched": 7.306558499811217, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451882.5158288, "req": "r2_abl_burst_t10_commit_only-0019", "event": "end", "status": "answered"}
+{"t": 1451882.5192518, "req": "r2_abl_burst_t10_commit_only-0096", "event": "arrive", "sched": 7.312927199993283, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451882.5230535, "req": "r2_abl_burst_t10_commit_only-0077", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.5285864, "req": "r2_abl_burst_t10_commit_only-0097", "event": "arrive", "sched": 7.3222592999227345, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451882.5306259, "req": "r2_abl_burst_t10_commit_only-0078", "event": "first_byte"}
+{"t": 1451882.5368388, "req": "r2_abl_burst_t10_commit_only-0023", "event": "first_byte"}
+{"t": 1451882.5489757, "req": "r2_abl_burst_t10_commit_only-0098", "event": "arrive", "sched": 7.342649599770084, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451882.5536173, "req": "r2_abl_burst_t10_commit_only-0099", "event": "arrive", "sched": 7.3472930998541415, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451882.565746, "req": "r2_abl_burst_t10_commit_only-0078", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.56632, "req": "r2_abl_burst_t10_commit_only-0023", "event": "end", "status": "answered"}
+{"t": 1451882.569947, "req": "r2_abl_burst_t10_commit_only-0100", "event": "arrive", "sched": 7.36362209985964, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1451882.5775882, "req": "r2_abl_burst_t10_commit_only-0079", "event": "first_byte"}
+{"t": 1451882.5861369, "req": "r2_abl_burst_t10_commit_only-0029", "event": "first_byte"}
+{"t": 1451882.5980112, "req": "r2_abl_burst_t10_commit_only-0101", "event": "arrive", "sched": 7.391685499809682, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451882.6146998, "req": "r2_abl_burst_t10_commit_only-0102", "event": "arrive", "sched": 7.40837369998917, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1451882.6192108, "req": "r2_abl_burst_t10_commit_only-0079", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.6196885, "req": "r2_abl_burst_t10_commit_only-0029", "event": "end", "status": "answered"}
+{"t": 1451882.6333496, "req": "r2_abl_burst_t10_commit_only-0103", "event": "arrive", "sched": 7.427023199852556, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451882.6423639, "req": "r2_abl_burst_t10_commit_only-0080", "event": "first_byte"}
+{"t": 1451882.6702211, "req": "r2_abl_burst_t10_commit_only-0104", "event": "arrive", "sched": 7.463895999826491, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451882.6845791, "req": "r2_abl_burst_t10_commit_only-0105", "event": "arrive", "sched": 7.478252399945632, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1451882.6902017, "req": "r2_abl_burst_t10_commit_only-0080", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.6962672, "req": "r2_abl_burst_t10_commit_only-0106", "event": "arrive", "sched": 7.489941699896008, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1451882.7011027, "req": "r2_abl_burst_t10_commit_only-0081", "event": "first_byte"}
+{"t": 1451882.7221022, "req": "r2_abl_burst_t10_commit_only-0107", "event": "arrive", "sched": 7.515777699882165, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451882.7443647, "req": "r2_abl_burst_t10_commit_only-0108", "event": "arrive", "sched": 7.538036199985072, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1451882.7484182, "req": "r2_abl_burst_t10_commit_only-0081", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.7488934, "req": "r2_abl_burst_t10_commit_only-0082", "event": "first_byte"}
+{"t": 1451882.7659282, "req": "r2_abl_burst_t10_commit_only-0021", "event": "first_byte"}
+{"t": 1451882.7757814, "req": "r2_abl_burst_t10_commit_only-0035", "event": "first_byte"}
+{"t": 1451882.7844068, "req": "r2_abl_burst_t10_commit_only-0031", "event": "first_byte"}
+{"t": 1451882.800223, "req": "r2_abl_burst_t10_commit_only-0109", "event": "arrive", "sched": 7.593897999962792, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451882.8145177, "req": "r2_abl_burst_t10_commit_only-0110", "event": "arrive", "sched": 7.608191799838096, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451882.8185555, "req": "r2_abl_burst_t10_commit_only-0082", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.8191075, "req": "r2_abl_burst_t10_commit_only-0021", "event": "end", "status": "answered"}
+{"t": 1451882.8195082, "req": "r2_abl_burst_t10_commit_only-0035", "event": "end", "status": "answered"}
+{"t": 1451882.8199657, "req": "r2_abl_burst_t10_commit_only-0031", "event": "end", "status": "answered"}
+{"t": 1451882.8275655, "req": "r2_abl_burst_t10_commit_only-0111", "event": "arrive", "sched": 7.621238499879837, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451882.831157, "req": "r2_abl_burst_t10_commit_only-0083", "event": "first_byte"}
+{"t": 1451882.849181, "req": "r2_abl_burst_t10_commit_only-0112", "event": "arrive", "sched": 7.6428548998665065, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451882.8532403, "req": "r2_abl_burst_t10_commit_only-0085", "event": "first_byte"}
+{"t": 1451882.8606608, "req": "r2_abl_burst_t10_commit_only-0084", "event": "first_byte"}
+{"t": 1451882.8686586, "req": "r2_abl_burst_t10_commit_only-0113", "event": "arrive", "sched": 7.6623324998654425, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451882.8772709, "req": "r2_abl_burst_t10_commit_only-0083", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.8789032, "req": "r2_abl_burst_t10_commit_only-0086", "event": "first_byte"}
+{"t": 1451882.894637, "req": "r2_abl_burst_t10_commit_only-0114", "event": "arrive", "sched": 7.6883095998782665, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1451882.9000662, "req": "r2_abl_burst_t10_commit_only-0085", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.9010741, "req": "r2_abl_burst_t10_commit_only-0084", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.9096494, "req": "r2_abl_burst_t10_commit_only-0115", "event": "arrive", "sched": 7.703322699991986, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1451882.9130346, "req": "r2_abl_burst_t10_commit_only-0086", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.913472, "req": "r2_abl_burst_t10_commit_only-0087", "event": "first_byte"}
+{"t": 1451882.9266192, "req": "r2_abl_burst_t10_commit_only-0116", "event": "arrive", "sched": 7.720292599871755, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451882.9311591, "req": "r2_abl_burst_t10_commit_only-0088", "event": "first_byte"}
+{"t": 1451882.9471191, "req": "r2_abl_burst_t10_commit_only-0087", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.9477406, "req": "r2_abl_burst_t10_commit_only-0089", "event": "first_byte"}
+{"t": 1451882.9684547, "req": "r2_abl_burst_t10_commit_only-0088", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.9699168, "req": "r2_abl_burst_t10_commit_only-0090", "event": "first_byte"}
+{"t": 1451882.9807124, "req": "r2_abl_burst_t10_commit_only-0117", "event": "arrive", "sched": 7.774386899778619, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451882.9893852, "req": "r2_abl_burst_t10_commit_only-0089", "event": "end", "status": "extractive_overload"}
+{"t": 1451882.9911873, "req": "r2_abl_burst_t10_commit_only-0091", "event": "first_byte"}
+{"t": 1451883.0008234, "req": "r2_abl_burst_t10_commit_only-0090", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.010054, "req": "r2_abl_burst_t10_commit_only-0091", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0134865, "req": "r2_abl_burst_t10_commit_only-0118", "event": "arrive", "sched": 7.8071614999789745, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451883.0146134, "req": "r2_abl_burst_t10_commit_only-0093", "event": "first_byte"}
+{"t": 1451883.0466242, "req": "r2_abl_burst_t10_commit_only-0093", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0471627, "req": "r2_abl_burst_t10_commit_only-0092", "event": "first_byte"}
+{"t": 1451883.0549386, "req": "r2_abl_burst_t10_commit_only-0094", "event": "first_byte"}
+{"t": 1451883.057602, "req": "r2_abl_burst_t10_commit_only-0119", "event": "arrive", "sched": 7.851278699934483, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451883.0614229, "req": "r2_abl_burst_t10_commit_only-0092", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0630342, "req": "r2_abl_burst_t10_commit_only-0094", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0640759, "req": "r2_abl_burst_t10_commit_only-0095", "event": "first_byte"}
+{"t": 1451883.0692972, "req": "r2_abl_burst_t10_commit_only-0095", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0745918, "req": "r2_abl_burst_t10_commit_only-0097", "event": "first_byte"}
+{"t": 1451883.0789591, "req": "r2_abl_burst_t10_commit_only-0097", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0852189, "req": "r2_abl_burst_t10_commit_only-0120", "event": "arrive", "sched": 7.878896199865267, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451883.0898039, "req": "r2_abl_burst_t10_commit_only-0096", "event": "first_byte"}
+{"t": 1451883.0933004, "req": "r2_abl_burst_t10_commit_only-0096", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.0940504, "req": "r2_abl_burst_t10_commit_only-0098", "event": "first_byte"}
+{"t": 1451883.1013105, "req": "r2_abl_burst_t10_commit_only-0098", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1092039, "req": "r2_abl_burst_t10_commit_only-0099", "event": "first_byte"}
+{"t": 1451883.1153108, "req": "r2_abl_burst_t10_commit_only-0099", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.116807, "req": "r2_abl_burst_t10_commit_only-0100", "event": "first_byte"}
+{"t": 1451883.1237425, "req": "r2_abl_burst_t10_commit_only-0100", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1278797, "req": "r2_abl_burst_t10_commit_only-0101", "event": "first_byte"}
+{"t": 1451883.1339882, "req": "r2_abl_burst_t10_commit_only-0101", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1416191, "req": "r2_abl_burst_t10_commit_only-0102", "event": "first_byte"}
+{"t": 1451883.1471357, "req": "r2_abl_burst_t10_commit_only-0102", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1533914, "req": "r2_abl_burst_t10_commit_only-0103", "event": "first_byte"}
+{"t": 1451883.158271, "req": "r2_abl_burst_t10_commit_only-0103", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1598075, "req": "r2_abl_burst_t10_commit_only-0121", "event": "arrive", "sched": 7.953479099785909, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451883.1716848, "req": "r2_abl_burst_t10_commit_only-0104", "event": "first_byte"}
+{"t": 1451883.1795867, "req": "r2_abl_burst_t10_commit_only-0104", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.1845578, "req": "r2_abl_burst_t10_commit_only-0122", "event": "arrive", "sched": 7.978233499918133, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1451883.1904249, "req": "r2_abl_burst_t10_commit_only-0123", "event": "arrive", "sched": 7.984097899869084, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451883.201771, "req": "r2_abl_burst_t10_commit_only-0106", "event": "first_byte"}
+{"t": 1451883.2230127, "req": "r2_abl_burst_t10_commit_only-0106", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.2354394, "req": "r2_abl_burst_t10_commit_only-0105", "event": "first_byte"}
+{"t": 1451883.2385541, "req": "r2_abl_burst_t10_commit_only-0105", "event": "end", "status": "shed"}
+{"t": 1451883.2460917, "req": "r2_abl_burst_t10_commit_only-0107", "event": "first_byte"}
+{"t": 1451883.2534216, "req": "r2_abl_burst_t10_commit_only-0107", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.264919, "req": "r2_abl_burst_t10_commit_only-0108", "event": "first_byte"}
+{"t": 1451883.2826513, "req": "r2_abl_burst_t10_commit_only-0108", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.4305674, "req": "r2_abl_burst_t10_commit_only-0124", "event": "arrive", "sched": 8.224241999909282, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451883.4323068, "req": "r2_abl_burst_t10_commit_only-0125", "event": "arrive", "sched": 8.225982699776068, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451883.5301085, "req": "r2_abl_burst_t10_commit_only-0126", "event": "arrive", "sched": 8.323780899867415, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1451883.5354607, "req": "r2_abl_burst_t10_commit_only-0127", "event": "arrive", "sched": 8.329112999839708, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1451883.5447338, "req": "r2_abl_burst_t10_commit_only-0128", "event": "arrive", "sched": 8.338406999828294, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451883.5500562, "req": "r2_abl_burst_t10_commit_only-0109", "event": "first_byte"}
+{"t": 1451883.5666535, "req": "r2_abl_burst_t10_commit_only-0109", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.5686026, "req": "r2_abl_burst_t10_commit_only-0129", "event": "arrive", "sched": 8.36227639997378, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1451883.579514, "req": "r2_abl_burst_t10_commit_only-0130", "event": "arrive", "sched": 8.373185999924317, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451883.5932158, "req": "r2_abl_burst_t10_commit_only-0110", "event": "first_byte"}
+{"t": 1451883.6016127, "req": "r2_abl_burst_t10_commit_only-0110", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.6021002, "req": "r2_abl_burst_t10_commit_only-0111", "event": "first_byte"}
+{"t": 1451883.6102556, "req": "r2_abl_burst_t10_commit_only-0033", "event": "first_byte"}
+{"t": 1451883.6190939, "req": "r2_abl_burst_t10_commit_only-0111", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.6195262, "req": "r2_abl_burst_t10_commit_only-0033", "event": "end", "status": "answered"}
+{"t": 1451883.6197211, "req": "r2_abl_burst_t10_commit_only-0112", "event": "first_byte"}
+{"t": 1451883.6420208, "req": "r2_abl_burst_t10_commit_only-0131", "event": "arrive", "sched": 8.43569519999437, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1451883.6443436, "req": "r2_abl_burst_t10_commit_only-0112", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.6454862, "req": "r2_abl_burst_t10_commit_only-0113", "event": "first_byte"}
+{"t": 1451883.657847, "req": "r2_abl_burst_t10_commit_only-0113", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.6592512, "req": "r2_abl_burst_t10_commit_only-0132", "event": "arrive", "sched": 8.452926899772137, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451883.6749973, "req": "r2_abl_burst_t10_commit_only-0133", "event": "arrive", "sched": 8.46865709987469, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451883.6981226, "req": "r2_abl_burst_t10_commit_only-0114", "event": "first_byte"}
+{"t": 1451883.700598, "req": "r2_abl_burst_t10_commit_only-0114", "event": "end", "status": "shed"}
+{"t": 1451883.7008294, "req": "r2_abl_burst_t10_commit_only-0116", "event": "first_byte"}
+{"t": 1451883.7134042, "req": "r2_abl_burst_t10_commit_only-0116", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.7449306, "req": "r2_abl_burst_t10_commit_only-0117", "event": "first_byte"}
+{"t": 1451883.754707, "req": "r2_abl_burst_t10_commit_only-0117", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.7871155, "req": "r2_abl_burst_t10_commit_only-0115", "event": "first_byte"}
+{"t": 1451883.7998338, "req": "r2_abl_burst_t10_commit_only-0115", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.8000833, "req": "r2_abl_burst_t10_commit_only-0118", "event": "first_byte"}
+{"t": 1451883.8250602, "req": "r2_abl_burst_t10_commit_only-0118", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.8258618, "req": "r2_abl_burst_t10_commit_only-0134", "event": "arrive", "sched": 8.619536699960008, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451883.8349887, "req": "r2_abl_burst_t10_commit_only-0135", "event": "arrive", "sched": 8.62866359995678, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1451883.9244145, "req": "r2_abl_burst_t10_commit_only-0136", "event": "arrive", "sched": 8.718087799847126, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451883.9257573, "req": "r2_abl_burst_t10_commit_only-0119", "event": "first_byte"}
+{"t": 1451883.9592831, "req": "r2_abl_burst_t10_commit_only-0119", "event": "end", "status": "extractive_overload"}
+{"t": 1451883.9595061, "req": "r2_abl_burst_t10_commit_only-0137", "event": "arrive", "sched": 8.753179999999702, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1451883.9877867, "req": "r2_abl_burst_t10_commit_only-0120", "event": "first_byte"}
+{"t": 1451884.0090063, "req": "r2_abl_burst_t10_commit_only-0120", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.0236129, "req": "r2_abl_burst_t10_commit_only-0138", "event": "arrive", "sched": 8.817285599885508, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451884.0346937, "req": "r2_abl_burst_t10_commit_only-0122", "event": "first_byte"}
+{"t": 1451884.0604529, "req": "r2_abl_burst_t10_commit_only-0122", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.0631153, "req": "r2_abl_burst_t10_commit_only-0139", "event": "arrive", "sched": 8.856788599863648, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1451884.09939, "req": "r2_abl_burst_t10_commit_only-0121", "event": "first_byte"}
+{"t": 1451884.1120827, "req": "r2_abl_burst_t10_commit_only-0121", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.1284717, "req": "r2_abl_burst_t10_commit_only-0123", "event": "first_byte"}
+{"t": 1451884.1366973, "req": "r2_abl_burst_t10_commit_only-0123", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.1486526, "req": "r2_abl_burst_t10_commit_only-0124", "event": "first_byte"}
+{"t": 1451884.1817173, "req": "r2_abl_burst_t10_commit_only-0124", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.1930409, "req": "r2_abl_burst_t10_commit_only-0140", "event": "arrive", "sched": 8.986714499769732, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451884.2350624, "req": "r2_abl_burst_t10_commit_only-0125", "event": "first_byte"}
+{"t": 1451884.2684557, "req": "r2_abl_burst_t10_commit_only-0141", "event": "arrive", "sched": 9.062130299862474, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1451884.2745071, "req": "r2_abl_burst_t10_commit_only-0125", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.2907001, "req": "r2_abl_burst_t10_commit_only-0126", "event": "first_byte"}
+{"t": 1451884.3028418, "req": "r2_abl_burst_t10_commit_only-0126", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.303608, "req": "r2_abl_burst_t10_commit_only-0127", "event": "first_byte"}
+{"t": 1451884.3173802, "req": "r2_abl_burst_t10_commit_only-0127", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.3335319, "req": "r2_abl_burst_t10_commit_only-0128", "event": "first_byte"}
+{"t": 1451884.3420173, "req": "r2_abl_burst_t10_commit_only-0128", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.3424318, "req": "r2_abl_burst_t10_commit_only-0024", "event": "first_byte"}
+{"t": 1451884.3497256, "req": "r2_abl_burst_t10_commit_only-0024", "event": "end", "status": "answered"}
+{"t": 1451884.3806262, "req": "r2_abl_burst_t10_commit_only-0130", "event": "first_byte"}
+{"t": 1451884.391304, "req": "r2_abl_burst_t10_commit_only-0130", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.3957466, "req": "r2_abl_burst_t10_commit_only-0129", "event": "first_byte"}
+{"t": 1451884.398234, "req": "r2_abl_burst_t10_commit_only-0129", "event": "end", "status": "shed"}
+{"t": 1451884.3984953, "req": "r2_abl_burst_t10_commit_only-0131", "event": "first_byte"}
+{"t": 1451884.4076737, "req": "r2_abl_burst_t10_commit_only-0131", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4215792, "req": "r2_abl_burst_t10_commit_only-0132", "event": "first_byte"}
+{"t": 1451884.4274905, "req": "r2_abl_burst_t10_commit_only-0132", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4299043, "req": "r2_abl_burst_t10_commit_only-0133", "event": "first_byte"}
+{"t": 1451884.4402262, "req": "r2_abl_burst_t10_commit_only-0133", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4481161, "req": "r2_abl_burst_t10_commit_only-0134", "event": "first_byte"}
+{"t": 1451884.4584227, "req": "r2_abl_burst_t10_commit_only-0134", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4665036, "req": "r2_abl_burst_t10_commit_only-0026", "event": "first_byte"}
+{"t": 1451884.4755759, "req": "r2_abl_burst_t10_commit_only-0026", "event": "end", "status": "answered"}
+{"t": 1451884.4758032, "req": "r2_abl_burst_t10_commit_only-0135", "event": "first_byte"}
+{"t": 1451884.4827108, "req": "r2_abl_burst_t10_commit_only-0135", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4857267, "req": "r2_abl_burst_t10_commit_only-0136", "event": "first_byte"}
+{"t": 1451884.4978832, "req": "r2_abl_burst_t10_commit_only-0136", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.4989246, "req": "r2_abl_burst_t10_commit_only-0137", "event": "first_byte"}
+{"t": 1451884.5055797, "req": "r2_abl_burst_t10_commit_only-0137", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.5081736, "req": "r2_abl_burst_t10_commit_only-0138", "event": "first_byte"}
+{"t": 1451884.5139296, "req": "r2_abl_burst_t10_commit_only-0138", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.5173785, "req": "r2_abl_burst_t10_commit_only-0139", "event": "first_byte"}
+{"t": 1451884.5260206, "req": "r2_abl_burst_t10_commit_only-0139", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.5266684, "req": "r2_abl_burst_t10_commit_only-0140", "event": "first_byte"}
+{"t": 1451884.5332053, "req": "r2_abl_burst_t10_commit_only-0140", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.5340957, "req": "r2_abl_burst_t10_commit_only-0141", "event": "first_byte"}
+{"t": 1451884.5426057, "req": "r2_abl_burst_t10_commit_only-0141", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.5683242, "req": "r2_abl_burst_t10_commit_only-0142", "event": "arrive", "sched": 9.36199689982459, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1451884.5814887, "req": "r2_abl_burst_t10_commit_only-0143", "event": "arrive", "sched": 9.375163899967447, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451884.5842471, "req": "r2_abl_burst_t10_commit_only-0142", "event": "first_byte"}
+{"t": 1451884.5910717, "req": "r2_abl_burst_t10_commit_only-0142", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.6028667, "req": "r2_abl_burst_t10_commit_only-0143", "event": "first_byte"}
+{"t": 1451884.6095976, "req": "r2_abl_burst_t10_commit_only-0143", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.6759665, "req": "r2_abl_burst_t10_commit_only-0144", "event": "arrive", "sched": 9.469633599976078, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1451884.7008714, "req": "r2_abl_burst_t10_commit_only-0144", "event": "first_byte"}
+{"t": 1451884.7077381, "req": "r2_abl_burst_t10_commit_only-0144", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.7415834, "req": "r2_abl_burst_t10_commit_only-0145", "event": "arrive", "sched": 9.535254099871963, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1451884.7569052, "req": "r2_abl_burst_t10_commit_only-0145", "event": "first_byte"}
+{"t": 1451884.7632251, "req": "r2_abl_burst_t10_commit_only-0145", "event": "end", "status": "extractive_overload"}
+{"t": 1451884.7922856, "req": "r2_abl_burst_t10_commit_only-0146", "event": "arrive", "sched": 9.585957699920982, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1451884.8124698, "req": "r2_abl_burst_t10_commit_only-0146", "event": "first_byte"}
+{"t": 1451884.8178887, "req": "r2_abl_burst_t10_commit_only-0146", "event": "end", "status": "extractive_overload"}
+{"t": 1451885.0319683, "req": "r2_abl_burst_t10_commit_only-0147", "event": "arrive", "sched": 9.825638099806383, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1451885.0358116, "req": "r2_abl_burst_t10_commit_only-0148", "event": "arrive", "sched": 9.829485999885947, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1451885.07798, "req": "r2_abl_burst_t10_commit_only-0147", "event": "first_byte"}
+{"t": 1451885.0867596, "req": "r2_abl_burst_t10_commit_only-0147", "event": "end", "status": "extractive_overload"}
+{"t": 1451885.0969564, "req": "r2_abl_burst_t10_commit_only-0148", "event": "first_byte"}
+{"t": 1451885.2290258, "req": "r2_abl_burst_t10_commit_only-0148", "event": "end", "status": "extractive_overload"}
+{"t": 1451885.2305695, "req": "r2_abl_burst_t10_commit_only-0149", "event": "arrive", "sched": 10.024243999971077, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1451885.2953937, "req": "r2_abl_burst_t10_commit_only-0149", "event": "first_byte"}
+{"t": 1451885.3010708, "req": "r2_abl_burst_t10_commit_only-0149", "event": "end", "status": "extractive_overload"}
+{"t": 1451886.6600467, "req": "r2_abl_burst_t10_commit_only-0032", "event": "first_byte"}
+{"t": 1451886.6824967, "req": "r2_abl_burst_t10_commit_only-0032", "event": "end", "status": "answered"}
+{"t": 1451887.5857866, "req": "r2_abl_burst_t10_commit_only-0034", "event": "first_byte"}
+{"t": 1451887.5963282, "req": "r2_abl_burst_t10_commit_only-0034", "event": "end", "status": "answered"}
+{"t": 1451890.1107779, "req": "r2_abl_burst_t10_commit_only-0028", "event": "first_byte"}
+{"t": 1451890.1162443, "req": "r2_abl_burst_t10_commit_only-0028", "event": "end", "status": "answered"}
+{"t": 1451890.869164, "req": "r2_abl_burst_t10_commit_only-0009", "event": "first_byte"}
+{"t": 1451890.8769649, "req": "r2_abl_burst_t10_commit_only-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1451891.6032285, "req": "r2_abl_burst_t10_commit_only-0030", "event": "first_byte"}
+{"t": 1451891.6172478, "req": "r2_abl_burst_t10_commit_only-0030", "event": "end", "status": "answered"}
+{"t": 1451894.4701971, "req": "r2_abl_burst_t10_commit_only-0025", "event": "first_byte"}
+{"t": 1451894.474699, "req": "r2_abl_burst_t10_commit_only-0025", "event": "end", "status": "extractive_overload"}

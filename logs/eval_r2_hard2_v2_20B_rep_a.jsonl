@@ -1,0 +1,120 @@
+{"t":1454039.6131107,"req":"n12","event":"enqueue","question":"What are the text and audio cardinalities of Moshi's input and output space, and"}
+{"t":1454039.6135035,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454039.6135835,"req":"n12","event":"step_start","step":"classify"}
+{"t":1454039.6138915,"req":"n12","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":190,"provider":"groq"}
+{"t":1454040.0261865,"req":"n12","event":"first_token","step":"classify","ttft_ms":412.2}
+{"t":1454040.0283681,"req":"n12","event":"last_token","step":"classify","total_ms":414.4,"prompt_tokens":215,"completion_tokens":62,"provider_queue_ms":155.7,"provider_total_ms":84.9}
+{"t":1454040.0295232,"req":"n12","event":"step_end","step":"classify"}
+{"t":1454040.030853,"req":"n12","event":"step_start","step":"retrieve"}
+{"t":1454040.0385544,"req":"n12","event":"step_end","step":"retrieve"}
+{"t":1454040.0394729,"req":"n12","event":"decide","branch":"draft","conf":0.89,"k":6}
+{"t":1454040.0399623,"req":"n12","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2593,"provider":"groq"}
+{"t":1454041.0856561,"req":"n12","event":"first_token","step":"draft","ttft_ms":1045.6}
+{"t":1454041.1439684,"req":"n12","event":"last_token","step":"draft","total_ms":1103.9,"prompt_tokens":2306,"completion_tokens":99,"provider_queue_ms":701.6,"provider_total_ms":285.7}
+{"t":1454041.1441972,"req":"n12","event":"verify_det","ok":true,"issues":[]}
+{"t":1454041.1442861,"req":"n12","event":"user_first_token"}
+{"t":1454041.1443172,"req":"n12","event":"user_last_token"}
+{"t":1454041.1443436,"req":"n12","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The Moshi model\u2019s input and output space uses a text vocabulary of 32 000 tokens and an audio vocabulary of 2 048 tokens, with an audio frame rate of 12.5 Hz. [C:moshi:t0]"}
+{"t":1454041.1447129,"req":"n14","event":"enqueue","question":"Which dataset and how many tokens were all H-Net experiment models trained on?"}
+{"t":1454041.1447821,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454041.1448886,"req":"n14","event":"step_start","step":"classify"}
+{"t":1454041.1452414,"req":"n14","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"groq"}
+{"t":1454043.5307188,"req":"n14","event":"first_token","step":"classify","ttft_ms":2385.4}
+{"t":1454043.5317885,"req":"n14","event":"last_token","step":"classify","total_ms":2386.5,"prompt_tokens":208,"completion_tokens":71,"provider_queue_ms":2185.0,"provider_total_ms":101.9}
+{"t":1454043.5319293,"req":"n14","event":"step_end","step":"classify"}
+{"t":1454043.5320275,"req":"n14","event":"step_start","step":"retrieve"}
+{"t":1454043.5453016,"req":"n14","event":"step_end","step":"retrieve"}
+{"t":1454043.5463202,"req":"n14","event":"decide","branch":"draft","conf":0.88,"k":5}
+{"t":1454043.5468634,"req":"n14","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2176,"provider":"groq"}
+{"t":1454046.5117634,"req":"n14","event":"first_token","step":"draft","ttft_ms":2964.8}
+{"t":1454046.5397257,"req":"n14","event":"last_token","step":"draft","total_ms":2992.8,"prompt_tokens":1712,"completion_tokens":55,"provider_queue_ms":2697.1,"provider_total_ms":172.3}
+{"t":1454046.5399528,"req":"n14","event":"verify_det","ok":true,"issues":[]}
+{"t":1454046.540024,"req":"n14","event":"user_first_token"}
+{"t":1454046.5400852,"req":"n14","event":"user_last_token"}
+{"t":1454046.5401779,"req":"n14","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","draft"],"answer":"The papers don't say. They do not specify a single dataset or token count that all H\u2011Net experiment models were trained on."}
+{"t":1454046.5403941,"req":"n16","event":"enqueue","question":"Which learning rate multipliers per stage does the learning rate modulation appe"}
+{"t":1454046.5406128,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454046.5406883,"req":"n16","event":"step_start","step":"classify"}
+{"t":1454046.5411986,"req":"n16","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":194,"provider":"groq"}
+{"t":1454047.4730737,"req":"n16","event":"first_token","step":"classify","ttft_ms":931.7}
+{"t":1454047.4790187,"req":"n16","event":"last_token","step":"classify","total_ms":937.7,"prompt_tokens":212,"completion_tokens":116,"provider_queue_ms":574.2,"provider_total_ms":163.2}
+{"t":1454047.4792519,"req":"n16","event":"step_end","step":"classify"}
+{"t":1454047.4794458,"req":"n16","event":"step_start","step":"retrieve"}
+{"t":1454047.5355003,"req":"n16","event":"step_end","step":"retrieve"}
+{"t":1454047.5369178,"req":"n16","event":"decide","branch":"loop_rewrite","conf":0.36}
+{"t":1454047.5372141,"req":"n16","event":"send","step":"rewrite","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":99,"provider":"groq"}
+{"t":1454048.0182599,"req":"n16","event":"first_token","step":"rewrite","ttft_ms":480.8}
+{"t":1454048.0336157,"req":"n16","event":"last_token","step":"rewrite","total_ms":496.3,"prompt_tokens":117,"completion_tokens":48,"provider_queue_ms":289.2,"provider_total_ms":55.8}
+{"t":1454048.0338402,"req":"n16","event":"step_start","step":"retrieve"}
+{"t":1454048.0696618,"req":"n16","event":"step_end","step":"retrieve"}
+{"t":1454048.0832813,"req":"n16","event":"decide","branch":"tool_fetch_section"}
+{"t":1454048.0834421,"req":"n16","event":"tool_call","name":"fetch_section","paper":"attention","section":"Appendix C"}
+{"t":1454048.092821,"req":"n16","event":"decide","branch":"draft","conf":0.36,"k":5}
+{"t":1454048.0948154,"req":"n16","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2179,"provider":"groq"}
+{"t":1454049.0129474,"req":"n16","event":"first_token","step":"draft","ttft_ms":918.0}
+{"t":1454050.1752497,"req":"n16","event":"last_token","step":"draft","total_ms":2080.3,"prompt_tokens":1791,"completion_tokens":54,"provider_queue_ms":498.3,"provider_total_ms":171.2}
+{"t":1454050.1755929,"req":"n16","event":"verify_det","ok":true,"issues":[]}
+{"t":1454050.1756712,"req":"n16","event":"user_first_token"}
+{"t":1454050.1757319,"req":"n16","event":"user_last_token"}
+{"t":1454050.1757965,"req":"n16","event":"done","status":"abstained","level":0,"steps":["classify","retrieve","loop","tool","draft"],"answer":"The papers don't say. They do not provide the specific learning\u2011rate multipliers per stage that the learning\u2011rate modulation appendix recommends."}
+{"t":1454050.1759875,"req":"n17","event":"enqueue","question":"What does the related work appendix of the dynamic chunking paper say is the fun"}
+{"t":1454050.1761107,"req":"-","event":"pressure","wait_s":3.34,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454050.1761745,"req":"n17","event":"step_start","step":"classify"}
+{"t":1454050.3134481,"req":"n17","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":201,"provider":"groq"}
+{"t":1454051.9354457,"req":"n17","event":"first_token","step":"classify","ttft_ms":1621.8}
+{"t":1454051.937235,"req":"n17","event":"last_token","step":"classify","total_ms":1623.6,"prompt_tokens":217,"completion_tokens":57,"provider_queue_ms":1144.0,"provider_total_ms":80.0}
+{"t":1454051.937428,"req":"n17","event":"step_end","step":"classify"}
+{"t":1454051.9376009,"req":"n17","event":"step_start","step":"retrieve"}
+{"t":1454051.9474305,"req":"n17","event":"step_end","step":"retrieve"}
+{"t":1454051.949313,"req":"n17","event":"decide","branch":"tool_fetch_section"}
+{"t":1454051.9494048,"req":"n17","event":"tool_call","name":"fetch_section","paper":"dynchunk","section":"Appendix"}
+{"t":1454054.9568973,"req":"n17","event":"tool_timeout","name":"fetch_section"}
+{"t":1454054.9571039,"req":"n17","event":"decide","branch":"draft","conf":0.8,"k":5}
+{"t":1454057.0191313,"req":"n17","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2175,"provider":"groq"}
+{"t":1454057.9999821,"req":"n17","event":"first_token","step":"draft","ttft_ms":980.5}
+{"t":1454058.0663239,"req":"n17","event":"last_token","step":"draft","total_ms":1046.8,"prompt_tokens":1666,"completion_tokens":211,"provider_queue_ms":547.9,"provider_total_ms":356.4}
+{"t":1454058.0667744,"req":"n17","event":"verify_det","ok":true,"issues":[]}
+{"t":1454058.0668733,"req":"n17","event":"user_first_token"}
+{"t":1454058.0669426,"req":"n17","event":"user_last_token"}
+{"t":1454058.0670034,"req":"n17","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The appendix states that the core difficulty is \u201ctransforming raw sequential data into computationally efficient representations,\u201d i.e., the challenge of chunking data in a way that is both efficient and learnable without a fixed tokenizer. [C:dynchunk:5]"}
+{"t":1454058.0678853,"req":"n18","event":"enqueue","question":"By how much does H-Net improve on XWinograd-zh compared with the tokenized Trans"}
+{"t":1454058.068005,"req":"-","event":"pressure","wait_s":11.42,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454058.0681005,"req":"n18","event":"step_start","step":"classify"}
+{"t":1454058.0696175,"req":"n18","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":187,"provider":"groq"}
+{"t":1454060.2334947,"req":"n18","event":"first_token","step":"classify","ttft_ms":2163.7}
+{"t":1454060.2379659,"req":"n18","event":"last_token","step":"classify","total_ms":2168.2,"prompt_tokens":213,"completion_tokens":76,"provider_queue_ms":1099.6,"provider_total_ms":97.0}
+{"t":1454060.2381601,"req":"n18","event":"step_end","step":"classify"}
+{"t":1454060.2382978,"req":"n18","event":"step_start","step":"retrieve"}
+{"t":1454060.3346686,"req":"n18","event":"step_end","step":"retrieve"}
+{"t":1454060.3357258,"req":"n18","event":"decide","branch":"draft","conf":1.0,"k":6}
+{"t":1454075.1184695,"req":"n18","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2422,"provider":"groq"}
+{"t":1454075.7623275,"req":"n18","event":"first_token","step":"draft","ttft_ms":643.7}
+{"t":1454075.8092496,"req":"n18","event":"last_token","step":"draft","total_ms":690.6,"prompt_tokens":1899,"completion_tokens":78,"provider_queue_ms":368.3,"provider_total_ms":191.6}
+{"t":1454075.8094091,"req":"n18","event":"verify_det","ok":false,"issues":["number_not_in_cited:6.4"]}
+{"t":1454075.8094415,"req":"n18","event":"decide","branch":"regenerate","issues":["number_not_in_cited:6.4"]}
+{"t":1454090.268745,"req":"n18","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2463,"provider":"groq"}
+{"t":1454091.6477578,"req":"n18","event":"first_token","step":"draft","ttft_ms":1378.8}
+{"t":1454091.7104688,"req":"n18","event":"last_token","step":"draft","total_ms":1441.5,"prompt_tokens":1929,"completion_tokens":107,"provider_queue_ms":1054.2,"provider_total_ms":262.3}
+{"t":1454091.7106802,"req":"n18","event":"verify_det","ok":false,"issues":["number_not_in_cited:6.4"]}
+{"t":1454091.7107234,"req":"n18","event":"decide","branch":"regenerate","issues":["number_not_in_cited:6.4"]}
+{"t":1454091.7107472,"req":"n18","event":"degrade","what":"decline_unverified"}
+{"t":1454091.7107679,"req":"n18","event":"user_first_token"}
+{"t":1454091.7108184,"req":"n18","event":"user_last_token"}
+{"t":1454091.7108572,"req":"n18","event":"done","status":"declined","level":0,"steps":["classify","retrieve","draft","draft"],"answer":"I couldn't produce an answer I can verify against the papers. Please rephrase or try again shortly."}
+{"t":1454091.7109818,"req":"u06","event":"enqueue","question":"What speaker identification accuracy does Moshi reach?"}
+{"t":1454091.7110477,"req":"-","event":"pressure","wait_s":10.18,"remaining_s":300.0,"queued":0,"committed":0,"provider":"groq"}
+{"t":1454091.7110791,"req":"u06","event":"step_start","step":"classify"}
+{"t":1454091.7115018,"req":"u06","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":177,"provider":"groq"}
+{"t":1454092.7210718,"req":"u06","event":"first_token","step":"classify","ttft_ms":1009.5}
+{"t":1454092.7231822,"req":"u06","event":"last_token","step":"classify","total_ms":1011.6,"prompt_tokens":202,"completion_tokens":58,"provider_queue_ms":808.6,"provider_total_ms":90.8}
+{"t":1454092.7234932,"req":"u06","event":"step_end","step":"classify"}
+{"t":1454092.7236909,"req":"u06","event":"step_start","step":"retrieve"}
+{"t":1454092.7314006,"req":"u06","event":"step_end","step":"retrieve"}
+{"t":1454092.7325806,"req":"u06","event":"decide","branch":"draft","conf":0.6,"k":6}
+{"t":1454106.5398548,"req":"u06","event":"send","step":"draft","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":2338,"provider":"groq"}
+{"t":1454107.2349326,"req":"u06","event":"first_token","step":"draft","ttft_ms":694.9}
+{"t":1454107.280146,"req":"u06","event":"last_token","step":"draft","total_ms":740.1,"prompt_tokens":1808,"completion_tokens":76,"provider_queue_ms":426.9,"provider_total_ms":209.1}
+{"t":1454107.2804338,"req":"u06","event":"verify_det","ok":true,"issues":[]}
+{"t":1454107.2805227,"req":"u06","event":"user_first_token"}
+{"t":1454107.2805829,"req":"u06","event":"user_last_token"}
+{"t":1454107.2806418,"req":"u06","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"The speaker\u2011identification accuracy of Moshi is reported to be between 98.4 % and 99.3 % over the evaluated time windows. [C:moshi:115]"}
