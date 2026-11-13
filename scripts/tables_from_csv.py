@@ -124,7 +124,8 @@ CORE = ["steady_free_tier", "burst_free_tier", "overload_free_tier", "steady_per
         "steady_10x_limits", "burst_10x_limits", "overload_10x_limits", "daily_budget_exhausted_limiter_learns",
         "daily_budget_exhausted_second_provider", "steady_real", "burst_real", "daily_budget_exhausted_real_second_provider"]
 A_ = pd.DataFrame(a_rows).set_index("Scenario"); B_ = pd.DataFrame(b_rows).set_index("Scenario")
-core_a = A_.loc[[c for c in CORE if c in A_.index]].drop(columns=["Runs", "Total time p50 / p95 / p99 (ms)", "Requests with a first token"]).reset_index()
+# Table 2a of the brief asks for first-token AND total time, so the write-up version keeps both.
+core_a = A_.loc[[c for c in CORE if c in A_.index]].drop(columns=["Runs", "Requests with a first token"]).reset_index()
 core_b = B_.loc[[c for c in CORE if c in B_.index]].reset_index()
 T3 = pd.DataFrame(t3)
 core_3 = T3[T3["Question set and drafting model"].isin(["hard9_gpt-oss-20b", "hard25_gpt-oss-20b"])]

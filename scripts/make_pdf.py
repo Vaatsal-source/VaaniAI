@@ -38,13 +38,21 @@ html = f"<!doctype html><meta charset='utf-8'><style>{css}</style>{body}"
 tmp = pathlib.Path(tempfile.mkdtemp()) / "w.html"
 tmp.write_text(html, encoding="utf-8")
 out = ROOT / "WRITEUP.pdf"
-browser = next((p for p in (r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-                            r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
-                            r"C:\Program Files\Google\Chrome\Application\chrome.exe") if pathlib.Path(p).exists()), None)
+import os, shutil
+candidates = [os.environ.get("BROWSER", ""),
+              r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+              r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+              r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+              "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+              "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"]
+candidates += [shutil.which(n) or "" for n in ("google-chrome", "chromium", "chromium-browser", "chrome", "msedge")]
+browser = next((p for p in candidates if p and pathlib.Path(p).exists()), None)
 if not browser:
-    sys.exit("no Edge or Chrome found")
-subprocess.run([browser, "--headless", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={out}", tmp.as_uri()],
-               check=True, capture_output=True, timeout=120)
+    sys.exit("no Edge or Chrome found (set the BROWSER environment variable to its path)")
+flags = ["--headless", "--disable-gpu", "--no-pdf-header-footer"]
+if hasattr(os, "geteuid") and os.geteuid() == 0:   # Chrome refuses to start as root without this (containers, CI)
+    flags.append("--no-sandbox")
+subprocess.run([browser, *flags, f"--print-to-pdf={out}", tmp.as_uri()], check=True, capture_output=True, timeout=120)
 
 doc = fitz.open(str(out))
 text = " ".join(" ".join(p.get_text().split()) for p in doc)
