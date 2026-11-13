@@ -103,7 +103,6 @@ class Pipeline:
         self.r, self.llm, self.log = retriever, llm, log
         self.small, self.large = cfg["models"]["small"], cfg["models"]["large"]
         self.lim = llm.limiters[self.large]          # the draft model is the bottleneck
-        self.lim_small = llm.limiters[self.small]
         # optional second provider, used only while the first one's daily budget is gone
         self.fb = fallback        # {"provider": name, "small": model, "large": model} or None
         self.fb_lim = llm.limiters[fallback["large"]] if fallback else None
@@ -341,7 +340,6 @@ class Pipeline:
             self.log.emit(rid, "tool_call", name="fetch_section", paper=papers[0], section=sec)
             try:
                 extra = await asyncio.wait_for(self.tool.fetch_section(papers[0], sec), self.pc["tool_timeout_s"])
-                seen = {c["id"] for c in chunks}
                 chunks = (extra + [c for c in chunks if c["id"] not in {e["id"] for e in extra}])[:k + 1]
                 res["steps"].append("tool")
             except asyncio.TimeoutError:

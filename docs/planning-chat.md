@@ -1,204 +1,599 @@
+# The Relay — Technical Planning and Engineering Discussion
 
-Claude
-The_Relay_Assignment_Brief.pdf
-The_Relay_Assignment_Brief.pdf
-PDF
-Alright Claude I need to tackle this assignment for a intern , I need you to first read the first page and tell me what is that we need to do , what all do we need to consider , what all the requirements , and what are the constraints , and what tradeoff's am I to make , then we will discuss further
+*An edited and reorganised account of the planning conversation. The technical decisions, measurements, and unresolved questions are retained, but the discussion has been grouped by engineering topic for clarity. This is not a verbatim conversation export.*
 
-Read a file
-1072a46a-The_Relay_Assignment_Brief.pdf
+---
 
-This is only page 1, as you asked. The footer says “Page 1”, so there may be more pages with deliverables or grading criteria.
+## 1. Understanding the problem and defining the engineering goals
 
-What you need to do
-Build a small working version of a multi-step LLM pipeline called “The Relay” in Python, C++ or Go. It answers engineers’ questions about three research papers, with citations, and it has to hold up under bursty, unreliable load. The brief is partly an engineering exercise and partly a test of judgment: it says outright that it left details out on purpose and wants to see what you decide and how you justify it.
+**Me:** I need to build an internship assignment called *The Relay*. Before implementing anything, I want to understand the requirements, constraints, architectural decisions, and tradeoffs. What exactly are we building?
 
-There are three parts of work:
+**Assistant:** We are building a small, multi-step LLM system that answers engineers' questions using a library of three research papers:
 
-The pipeline. It needs at least four steps, at least one tool call, at least one branch or loop, and one step that retrieves passages from the library. The scenario describes the shape: work out what the person is asking, retrieve passages, decide what to do, draft a cited reply, and check the reply before sending.
-A stand-in model service you write yourself. It must be able to be slow, fail, refuse when a limit is hit, slow down under load, and stream its reply a piece at a time. You calibrate it from measurements of the real Groq service.
-Experiments. First send a modest number of real requests to Groq to learn its latency spread, its limits, and what it does when a limit is hit. Then run your pipeline under at least three load shapes you design, such as steady, a sudden burst, and sustained overload. Use the stand-in for loads the real service can’t take. Keep the raw results from both.
-What to consider
-Library. Only three papers, at exact versions: Attention Is All You Need (1706.03762 v7), Moshi (2410.00037 v1), and Dynamic Chunking for End-to-End Hierarchical Sequence Modeling (2507.07955 v2). You fetch them yourself.
-Grounding. Every answer cites where in the papers it came from. If the papers don’t say, the assistant must say so rather than guess. Expect test questions that can’t be answered from memory and some the papers don’t answer at all.
-Traffic. Requests arrive in bursts, usually when something breaks and many users hit it at once. Most requests need a few steps, some need many, and a few loop.
-Provider behaviour. Groq limits requests per minute, tokens per minute and requests per day. The limits differ by plan and model and can change without notice, so discover them rather than hard-code them. Tools time out, and some calls are slow without failing, which is harder to handle than a clean error.
-Users. They’re waiting and they abandon sooner than you’d expect, so latency and cancellation matter.
-Requirements
-Python, C++ or Go, your choice.
-At least four steps, one tool call, one branch or loop, and a retrieval step.
-Citations on every answer, with an explicit “the papers don’t say” path.
-A real Groq free-tier account and key, plus your own calibration of its limits.
-A stand-in service with these behaviours: slow, failing, refusing at a limit, degrading under load, streaming.
-A statement of where the stand-in is least like the real service.
-At least three load shapes of your own design.
-Raw results kept for both the real service and the stand-in.
-Stated tradeoffs: wherever you give up one goal for another, say so.
-Constraints
-Goals that can’t all be met. The company wants fast, good, cheap and nobody turned away, and the brief says it can’t have all four.
-Hard rule. The assistant never sends a wrong or embarrassing answer just to stay fast. Correctness works as a floor, not something to trade freely.
-Free tier. It will not survive heavy load, which is why the stand-in exists.
-Ambiguity. “Fast” is undefined. You pick the target and the numbers.
-Tradeoffs you’ll have to make
-Fast vs good. The verification step improves quality but adds a call and latency. Do you always verify, or only when retrieval confidence is low? Do you use a small, fast model for some steps and a large one for others?
-Good vs cheap. More retrieved passages, more loop iterations and retries all improve quality and burn tokens against your per-minute and per-day caps.
-Cheap vs nobody turned away. Under overload you can queue, which raises latency and risks abandonment. You can degrade, for example by skipping verification or using a smaller model, which lowers quality. Or you can shed load, which turns people away. You have to choose which of these happens first, and for which requests.
-Never wrong vs fast. When the system is stressed, the safe fallback is a slower answer or an honest “I can’t answer that right now”, not a cheaper, shakier answer.
-Retries vs overload. Retrying a slow or failed call can help one request and make the whole system worse. You need backoff and budgets, plus a policy on timeouts versus waiting out slow calls.
-Simple vs many-step requests. A few requests loop. Without a step cap, one of them can eat the shared rate limit and starve everyone else. A cap means some hard questions get a worse answer.
-Defining “fast”. Pick something like a p95 latency or time-to-first-token target, and decide whether streaming counts as fast. Streaming improves perceived speed without changing total time.
-Calibration fidelity. The stand-in is only as good as your measurements. You’ll need to be honest about where it differs from Groq, such as how its latency tails and rate-limit signals behave.
-The most important design decision is probably the overload policy: when a limit is hit, who waits, who gets a degraded answer and who gets turned away. The load experiments are meant to show that choice working.
+- Attention Is All You Need (1706.03762, v7).
+- Moshi (2410.00037, v1).
+- Dynamic Chunking for End-to-End Hierarchical Sequence Modeling (2507.07955, v2).
 
-I’ve only seen page 1. If there’s a second page, send it over, or tell me and we’ll go on to scoping and design.
+The system needs to retrieve relevant passages, generate answers grounded in those passages, cite its sources, and explicitly acknowledge when the papers do not contain the answer.
 
-alright now for page 2
+However, this is not simply a RAG implementation. The main engineering challenge is making the system reliable under bursty traffic and an unreliable, rate-limited model provider.
 
-Read a file
-1072a46a-The_Relay_Assignment_Brief.pdf
+The assignment has three major requirements:
 
-Page 2 is the write-up spec, and it changes how you should build. The write-up is two pages, with required headings in a fixed order, and the numbers in it must match your raw data. The page ends mid-section, just before the results tables, so there is probably a page 3.
+1. Build an LLM pipeline with at least four steps, a retrieval operation, a tool call, and a branch or loop.
+2. Build a stand-in model service that reproduces important aspects of Groq's behaviour, including latency, streaming, failures, rate limits, and load-dependent slowdowns.
+3. Evaluate the complete system under different traffic patterns, retaining raw experimental results.
 
-Required headings, in order
-What I built and why. The design, plus the one decision that shaped it most.
-The real service and my stand-in. The Groq limits you found and how you found them. Also how the stand-in behaves, how you calibrated it from real measurements, and where it differs most from the real thing.
-Results. For each load shape, report time to first token and total time, each at the median and the slow end. You choose and state the percentiles and the number of requests. Also report failures and given-up requests, and say which runs were real and which used the stand-in. Every number goes in the results tables. Include at least one number you couldn’t have guessed without running it. Also report answer quality on at least 15 questions you wrote yourself, and tokens used per answer.
-Where the time goes. Take one slow request and split its latency into waiting, working and retrying. Say whether the delay came before or after the first token, and show how you know.
-When a limit is hit. Say what the system does at the per-minute limit and at the per-day limit. Who is delayed, who is dropped, who gets a weaker answer, and why.
-Retrieval: quality versus cost. This heading is inserted after 5. Try at least three settings for chunk size, number of chunks fetched, and any re-ranking. For each, report answer quality, tokens per answer and time to first token. Choose one, say why, and say what retrieval does when a limit is close.
-How this library will mislead a naive retriever. This is also inserted after 5. Name three ways, each with an example question where it goes wrong.
-Retries. Your policy, plus one case where retrying made things worse.
-What the person sees. At 3pm the daily budget is gone. Describe the reply a waiting person receives.
-What I’m unsure about, what I left out, what I learned. This covers your least certain assumption and what breaks if it’s wrong, two things you deliberately didn’t build, and one new thing you learned, taught in your own words.
-Feedback on Vaani. Visit vaani.dev and give your honest view in a few lines: what stood out, what confused you, and one thing you’d change.
-How I worked with the assistant. This section comes last and has three parts:
-Your real conversation history with the assistant, not a cleaned-up one. If the tool can’t export it, give the prompts instead.
-Half a page on the three prompts that mattered most and why, one thing it got wrong that you caught and how you caught it, and one decision where you overruled it.
-What in the submission is distinctly yours.
-The brief doesn’t say exactly where the Vaani heading goes. I’ve put it after the main body and before the final section, but check whether page 3 says anything.
+**Me:** So the real objective is not just answer quality. We have to demonstrate that the complete system behaves sensibly when its external dependencies become unreliable.
 
-The results tables are required. Fill every cell, write “not measured” where you didn’t measure, use milliseconds for time and one decimal for percentages, and copy the tables into the write-up. Reviewers recompute them from your raw file, so your logs have to reproduce them exactly.
+**Assistant:** Exactly. The four competing objectives are speed, answer quality, cost, and availability. We cannot maximise all four simultaneously.
 
-What this means for how you work
-Instrument first. Log timestamps for queue entry, send, first token, last token, each retry and each give-up, per request. Sections 3, 4 and 8 can’t be written without that data, and you can’t go back and collect it afterwards.
-Include a surprise. The brief wants a result that couldn’t have been guessed without running it. Real Groq behaviour will probably supply one, such as odd latency tails, unusual rate-limit headers or a limit that behaves differently from its docs.
-Define quality before you run. You write at least 15 questions and need a scoring rule, including questions the papers can’t answer and the expected “the papers don’t say” behaviour. Settle the rubric before comparing retrieval settings, or you’ll be tempted to tune it to the results.
-Make the daily-limit path real. Section 9 means you need an actual degraded-mode response when the daily budget is exhausted, not just a description.
-Keep the conversation history. Section 12 asks for the real, uncleaned transcript. That includes this session, so keep it exported or saved.
-Don’t count on me for the personal parts. The Vaani feedback, the “new to me” explanation, and the choices you overruled should come from you.
-The two-page limit is tight against 12 sections plus tables, so you’ll have to be terse. Do you want me to read page 3 next, in case there are more tables or submission details?
+One requirement is non-negotiable: correctness must remain a minimum quality floor. Under pressure, the system should be willing to delay, return a weaker but honest fallback, or decline a request rather than fabricate an answer.
 
+---
 
-later I also fixed up these issues , 
-## 1. Fix the weak spots the tests found
+## 2. System architecture — how The Relay should work
 
-**The big-burst delay (the missed 8-second target).**
-- *Problem:* people admitted just under the 40% line were told "short wait" but waited much longer. The slowest 5% waited 13.2 s.
-- *How:* make the wait estimate more cautious, for example by adding a safety margin, or lowering the cut-off to 30%. Re-run the burst test and see if the slowest-5% wait falls under 8 s. The cost is that a few more people get the quoted fallback.
+**Me:** Let's translate these requirements into an actual architecture. I don't want to start coding independent components without understanding how requests move through the system.
 
-**The "come back tomorrow" message.**
-- *Problem:* the limit is a rolling window, so the real wait might be 11 minutes.
-- *How:* use the retry-after time from the error to say "try again in about N minutes". This is a small change and an honest one.
+**Assistant:** We should think of The Relay as two connected systems:
 
-**The deleted chunks of the third paper.**
-- *Problem:* my filter that removes reference lists also deleted 26 real chunks, including the start of Appendix A.
-- *How:* only drop chunks after the actual "References" heading and before the next major heading. Then rebuild and re-run the search comparison. Add a test question about Appendix A.
+- The request-processing pipeline, responsible for answering questions.
+- The traffic and provider-management layer, responsible for controlling how requests reach external model services.
 
-## 2. Better answers on tables and numbers
+The architecture can be represented as follows.
 
-*Problem:* table numbers come out of the PDF scrambled. The 213M-parameters question was right only 1 time in 6.
-*How:* extract tables as tables, with the header joined to each row. PyMuPDF can find tables. Or keep a whole table together as one chunk. Then re-run the 9 hard questions to see if the score goes up.
-## 3. More confidence in the results
+### A. Request-processing pipeline
 
-*Problem:* only 9 hard questions, so one question moves the score by 11 points. The real-service runs were also tiny (4, 4 and 8 requests).
-*How:*
-**More questions.** Write 20 to 30 more hard ones, freeze them first, then run every setting.
-**Repeat runs.** Run each setting 3 times and report the range, so luck is separated from real differences.
-**A bigger real run.** Do it when the daily quota is fresh. Keep it small enough to stay under the daily limit.
-## 4. Make the fake Groq more truthful
+1. **Request intake and interpretation**
 
-*Problem:* the failure rates were invented, and the busy-slowdown line came from only two tests.
-*How:* run the real service at 12-way and 16-way concurrency to check the slowdown line. Leave a long, quiet test running to see whether real failures or stalls ever appear. Then replace my guessed numbers with measured ones, or say "still unmeasured".
-## 5. Use the backup provider (Gemini)
+   Receive the user's question, identify what information is being requested, and decide whether it needs retrieval or a more complex reasoning path.
 
-*Problem:* it's configured but never tried. If Groq runs out of daily tokens, the system can only quote the papers.
-*How:* when the daily wall hits, send the request to Gemini instead. This needs its limits probed first, the same way as Groq. Then test the switch on the stand-in by making it fail, and check the answers still pass the same verification.
-## 6. Smarter use of the quota
+2. **Knowledge retrieval**
 
-**Cache answers.** Ask the same question twice and the second reply costs nothing.
-**Shorter prompts.** Each answer sends about 1,800 prompt tokens. Sending fewer or shorter chunks would let more questions fit in the 8,000-a-minute budget. Test how much accuracy drops.
-**Confirm the token accounting.** I guessed that Groq charges the maximum answer length up front. If it only charges for what's used, my limiter wastes about a quarter of the quota. A quick test would settle it: send a request with a large max_tokens, then check what the headers say was used.
-## 7. Make it easier to run and trust
+   Search the three-paper library and retrieve relevant passages. BM25 is the retrieval approach referenced in the current implementation discussion.
 
-A single command that runs everything small (tests, a 5-question real check, table rebuild).
-A check that fails if a quality score drops, so a change that hurts answers gets caught.
-A short "how to add a paper" guide, because the system is only proven on three.
-If needed make a edit in your answers for sections for my submission for the project using the info in the readme I gave you earlier
+3. **Decision and control**
 
-I have no results from these fixes: your list says how to do each one, but not what came out. So I’ve edited the sections that become false once the fixes are in, and left [brackets] for every number that has to come from your regenerated tables.
+   Determine whether the retrieved evidence is sufficient. Depending on the result, the pipeline can proceed, retrieve additional evidence, or take an explicit insufficient-evidence path.
 
-I’ve assumed each item was finished. If any were only planned, don’t describe them as done. List them under “what I left out” in section 10, which the brief wants anyway.
+4. **Answer generation**
 
-Two rules before you paste anything:
+   Send the question and retrieved context to the model provider. Generate an answer grounded in the available evidence.
 
-Re-run everything the change touches. The chunk and table fixes alter chunk IDs, so rebuild with make_tables.py and re-run the retrieval comparison. Don’t leave old rows next to new ones. Keep the old runs in logs/ as before-fix runs, as you did with run1_before_queue_aware/.
-Keep the new questions honest. You wrote them after seeing the earlier results, so say that, and freeze them before any setting runs.
-Fix	README sections that change
-1a Burst delay	1, 3 (“Did it meet fast?”), 5
-1b Retry-after message	9
-1c Chunk filter	6, 7 (point 3), 3d
-2 Table extraction	7 (point 1), 3d, 6
-3 More questions, repeats, bigger real run	3a, 3d, top scope note
-4 Stand-in measured	2 (limitations 1, 2), 10
-5 Gemini	1, 2, 5, 9, 10, 12(c)
-6 Quota use	1, 2 (limitation 5), 10
-7 Tooling	“Reproducing it”
-Section 3: “Did it meet fast?” (replace the burst sentences)
-The 150-request burst at 10× first missed: full answers had a p95 time to first token of 13,231.3 ms, because the wait estimate was too optimistic for requests admitted just under the 40% line. I [added a safety margin of [M] ms to the estimate / lowered the cut-off from 40% to [30]%] and re-ran it (logs/load_[tag].jsonl). The p95 for full answers is now [X] ms, [under / still over] the 8,000 ms target. The cost is that quoted-passage fallbacks rose from 108 to [Y] of 150, so [Y−108] more people got a quote instead of a written answer. The original run stays in logs/ as the before.
+5. **Verification**
 
-Section 9: the message
-Replace “Please try again tomorrow.” with “Please try again in about {N} minutes.” The first line of the fallback has the same flaw, so change “budget for today is used up” to “budget is used up for now”. Then replace the “two weaknesses” paragraph:
+   Check that the answer is supported by the retrieved passages and that citations are present. Unsupported claims should not be sent as established facts.
 
-One weakness I know about: the quoted passages are only as relevant as BM25’s coverage score lets them be, and in s_daily_learned one reply quoted a figure caption. The other, a reply that said “tomorrow” when the limit is a rolling window, I fixed. The message now takes N from the 429’s retry-after, so 648 s reads as “about 11 minutes”.
+6. **Response and fallback**
 
-If Gemini now catches the daily wall (below), the reply most people see at 3 pm is a Gemini-written answer. This message then only appears when both providers are out.
+   Stream the answer where possible. When generation cannot proceed safely, return an appropriate fallback, such as relevant quoted passages or an honest decline.
 
-Section 7: points 1 and 3
-Add to point 3, replacing “I didn’t test that exact question”:
+The retrieval, decision, generation, and verification stages provide the basic multi-step orchestration. The branching and possible repeated retrieval provide the conditional and iterative behaviour required by the assignment.
 
-I fixed the filter so it only drops chunks between the real “References” heading and the next major heading. Appendix A is back in the index ([N] H-Net chunks kept instead of 120). I added “What does Appendix A of the dynamic chunking paper say about related work?” as h10, and it [scored X].
+### B. Traffic and provider-management layer
 
-Add to point 1:
+**Me:** Where does rate limiting fit? I assume it shouldn't be mixed into the actual retrieval logic.
 
-I then extracted tables as tables, with the header joined to every row [or kept each table as one chunk]. The 213M question went from 1 correct in 6 runs to [k] in [n], and the hard-set score from 83.3% to [X]% (n=[N], so one question is [100/N] points).
+**Assistant:** Correct. Provider management should sit around the model calls rather than being scattered throughout the pipeline.
 
-Section 3d and “A note on scope”
-Update the question counts (20 easy plus [N] hard, [n] answerable). Report repeated runs as a range, such as “[min]–[max] over 3 runs”, and recompute “one question is 11 points”. In the scope note, replace “tiny” with the new real-run sizes.
+Conceptually, the request path becomes:
 
-Section 2: stand-in limitations 1, 2 and 5
-Heavy overload. The slowdown was a line through two points. I added 12-way and 16-way runs on the real service, and the slope is now [x] per extra in-flight request (it was 0.0625), [still roughly linear / curved]. Beyond 16 in flight the stand-in is still extrapolating.
-Rare events. I left a [N]-minute quiet test running ([M] requests). It saw [k] 5xx, [j] stalls and [i] slow-but-successful calls, so the stand-in’s rates are now [measured / still guesses, because the sample is too small].
-Token accounting. I sent a request with max_tokens=[N] and a short prompt. The headers dropped by [prompt+max_tokens / actual usage], so Groq [does / does not] reserve the maximum up front.
-Section 10
-Rewrite “least certain assumption” around whatever is still unverified. Candidates from your README are the 20B’s daily pool being assumed equal to the 120B’s, Groq’s queue_time not being modelled, and failure rates if the quiet test saw none. Then replace the two things not built:
+`User → Admission control → Request queue → Pipeline → Model provider → Verification → Response`
 
-A persistent, multi-process limiter. The limiter’s state, including limits learned from 429 bodies, lives in memory, so a restart forgets them and two workers would each spend the full budget.
-Request hedging for slow calls. [unchanged text]
-Gemini ripple (sections 1, 2, 5, 9)
-Section 2. Add a Gemini row to the limits table, with limits from scripts/probe_gemini.py.
-Section 5, daily paragraph. Replace “no new model call starts” with: “no new Groq call starts. New arrivals go to Gemini [when? only on the daily wall / also on repeated 429s]. If Gemini is also out, they get the quoted-passages reply or an honest decline.”
-Section 1, decision paragraph. Add: “Failing over to Gemini isn’t the sloppy swap I ruled out, because its drafts pass the same deterministic check. It scored [X]% on the hard set against 83.3% for the 20B.”
-Daily-budget table. The existing rows become “before failover”. Add new rows from the run where the stand-in fails the way Groq’s daily wall does.
-Sections 1, “Reproducing it” and 12(c)
-Section 1, step list. If you added caching, add a step 0: “Cache: identical questions, after normalisation, return the stored verified answer at no token cost.” Add: “The cache is off in every evaluation and load run, so tokens per answer and latency aren’t flattered.” [CONFIRM]
-Reproducing it. Add: “make check runs the tests, a 5-question real check and the table rebuild, and fails if a quality score drops below [threshold]. docs/ADD_A_PAPER.md explains how to add a paper. pytest now runs [N] tests.”
-12(c). Replace the Gemini bullet with: “Choosing Gemini as a secondary provider, first left configured but unused and later [probed, wired in and tested on the stand-in].” Add: “After the tests, choosing which weak spots to fix ([list]) and which to leave ([list]). [CONFIRM which of these you decided and which the assistant proposed.]”
-Send me the regenerated tables, or the new numbers, and tell me which of the seven were finished. I’ll fill in the brackets and check the prose against the figures.
+The admission-control layer manages:
 
+- Requests per minute.
+- Tokens per minute.
+- Requests per day.
+- Estimated waiting time.
+- Overload and request rejection.
+- Request cancellation and abandonment.
 
+The provider adapter is responsible for communicating with the actual model service or the stand-in.
 
+This separation is important because the pipeline should not need to know whether it is talking to Groq or a simulated provider.
 
+### C. Model-provider abstraction
 
-Claude finished the response
+The provider layer has three relevant roles:
 
+| Provider | Purpose |
+|---|---|
+| Groq | Real service used for calibration and initial experiments |
+| Stand-in service | Controlled simulation for burst and overload experiments |
+| Gemini | Potential secondary provider for failover |
 
+The stand-in should reproduce observed provider behaviour rather than simply return predetermined responses. It needs configurable latency, streaming, failures, rate-limit refusals, and load-dependent degradation.
+
+Gemini was configured as a possible backup, but the original discussion explicitly says it had not yet been tested.
+
+---
+
+## 3. Technology stack and implementation decisions
+
+**Me:** What technology choices should we make, and why? I want the stack to be justified by the requirements rather than selecting tools simply because they are popular.
+
+**Assistant:** The assignment permits Python, C++, or Go. The implementation discussed here points towards a Python-based approach.
+
+The technologies and tools explicitly referenced in the planning notes are:
+
+| Component | Technology | Purpose |
+|---|---|---|
+| Pipeline and orchestration | Python | Implement the multi-step workflow |
+| Model inference | Groq API | Real LLM generation and calibration |
+| Retrieval | BM25 | Retrieve relevant paper passages |
+| Document processing | PDF processing; PyMuPDF proposed for table extraction | Build the searchable paper library |
+| Simulated inference | Custom stand-in service | Reproduce provider behaviour |
+| Secondary inference | Gemini API | Potential provider failover |
+| Testing | pytest | Validate components and regression behaviour |
+| Experiment records | JSONL | Preserve raw request-level results |
+| Experiment tooling | Python scripts, including `make_tables.py` and `scripts/probe_gemini.py` | Rebuild results and probe services |
+
+We should not assume that a particular web framework, database, distributed queue, or orchestration framework was used: those choices are not established by the conversation.
+
+**Me:** Why not immediately introduce a vector database or a more complicated retrieval stack?
+
+**Assistant:** Because the library contains only three papers. BM25 gives us a relatively simple baseline that is easy to inspect, evaluate, and debug.
+
+The important question is not whether a sophisticated retriever looks impressive. It is whether the retriever consistently provides the evidence required by the answer-generation stage.
+
+We should first establish a reliable baseline and then compare alternative chunking, retrieval depth, and reranking configurations.
+
+**Me:** And why build our own stand-in instead of just testing Groq?
+
+**Assistant:** Because the real free-tier service cannot reliably sustain the heavy traffic patterns required by the assignment.
+
+The stand-in allows us to control workload conditions, repeat experiments, and test overload policies without exhausting the real provider's quota.
+
+However, its behaviour must be calibrated against actual observations. A simulator that produces convenient results but does not resemble the real service would undermine the experiments.
+
+---
+
+## 4. Engineering tradeoffs and the decisions behind them
+
+**Me:** Let's discuss the actual tradeoffs. Which architectural choices have the biggest consequences?
+
+**Assistant:** There are several.
+
+### A. Answer quality versus latency
+
+Verification improves reliability but introduces additional processing and potentially additional model calls.
+
+Two possible strategies are:
+
+- Verify every answer, accepting additional latency.
+- Use conditional verification, applying more expensive checks when evidence is weak or the question is complex.
+
+The first is safer and simpler. The second may improve average latency but requires a dependable way of identifying risky answers.
+
+Given the assignment's correctness requirement, verification cannot simply be removed during overload.
+
+### B. Retrieval quality versus token consumption
+
+Retrieving more passages can improve answer coverage, but it also increases:
+
+- Prompt-token consumption.
+- Model inference time.
+- TPM pressure.
+- The possibility of irrelevant context confusing the model.
+
+The assignment therefore requires experimentation with at least three configurations of chunk size, retrieval depth, and reranking.
+
+We should select a configuration based on measured quality, token usage, and time to first token rather than retrieval quality alone.
+
+### C. Availability versus overload protection
+
+When demand exceeds the provider's capacity, we have three broad options:
+
+| Strategy | Benefit | Cost |
+|---|---|---|
+| Queue requests | Preserves the opportunity to answer | Increases latency and abandonment |
+| Degrade responses | Reduces model usage | May provide less complete answers |
+| Shed load | Protects the remaining system | Some users receive no generated answer |
+
+The system needs a deliberate admission policy. Accepting every request and allowing the queue to grow indefinitely is not a reliable solution.
+
+### D. Retries versus system-wide congestion
+
+Retries can recover from temporary failures, but they also generate additional traffic.
+
+Under overload, repeated retries can make the original congestion worse. We therefore need:
+
+- Bounded retries.
+- Backoff.
+- A total retry budget.
+- Clear distinctions between temporary failures and rate-limit refusals.
+- A policy for slow calls that have not failed.
+
+### E. Simple requests versus complex requests
+
+Some questions require additional retrieval or reasoning iterations.
+
+Without a step or iteration cap, one complex request can consume a disproportionate share of the shared token budget.
+
+A cap improves fairness but may prevent some difficult questions from receiving a complete answer.
+
+**Me:** Which tradeoff should shape the whole design?
+
+**Assistant:** Overload behaviour. We need to decide which requests wait, which receive a quoted-passage fallback, which can use another provider, and which must be rejected.
+
+The system should never silently sacrifice correctness just to satisfy a latency target.
+
+---
+
+## 5. Experimental architecture and the initial evaluation
+
+**Me:** How do we demonstrate that these choices work instead of simply describing an architecture?
+
+**Assistant:** We need two categories of experiments.
+
+### A. Real-provider calibration
+
+First, use a real Groq account to measure:
+
+- Latency distribution.
+- Streaming behaviour.
+- Rate-limit responses.
+- RPM, TPM, and RPD constraints.
+- Slow-but-successful requests.
+- Behaviour when limits are reached.
+
+The limits should be discovered through experiments instead of hard-coded assumptions.
+
+### B. Controlled load experiments
+
+Next, use the stand-in to evaluate different traffic patterns.
+
+The assignment requires at least three load shapes. Suitable examples are:
+
+1. Steady traffic.
+2. A sudden burst, where many users arrive almost simultaneously.
+3. Sustained overload, where incoming demand remains above the system's capacity.
+
+Each experiment should capture:
+
+- Time to first token.
+- Total response time.
+- Failures.
+- Requests given up or abandoned.
+- Token consumption.
+- Retry counts.
+- The number of users receiving full answers versus fallbacks.
+
+The stand-in makes it possible to study conditions that the free-tier provider cannot sustain.
+
+### C. Instrumentation
+
+**Me:** What should we log? I don't want to realise after the experiments that I missed a measurement.
+
+**Assistant:** Log timestamps for each request at the important transitions:
+
+- Queue entry.
+- Provider submission.
+- First token.
+- Last token.
+- Each retry.
+- Timeout or give-up.
+- Final response.
+
+Keep raw records for both Groq and the stand-in.
+
+This makes it possible to separate queue waiting time, model processing time, and retry delay rather than treating total latency as a single number.
+
+The logs should be retained independently of the summary tables so that the reported statistics can be reproduced.
+
+---
+
+## 6. Results obtained and what they reveal
+
+**Me:** Let's evaluate the results rather than just discussing the architecture. What did the initial experiments tell us?
+
+**Assistant:** The existing measurements exposed several weaknesses.
+
+### A. Sudden-burst performance
+
+The 150-request burst at 10× load missed the 8-second target.
+
+| Metric | Observed result |
+|---|---:|
+| Burst size | 150 requests |
+| Load shape | 10× burst |
+| Target | 8,000 ms |
+| p95 time to first token for full answers | 13,231.3 ms |
+| Quoted-passage fallbacks | 108 / 150 |
+| Fallback proportion | 72% |
+
+The admission controller used a 40% threshold. Requests admitted just below this threshold were told to expect a short wait, but the slowest 5% experienced a substantially longer delay.
+
+This suggests that the waiting-time estimator was too optimistic.
+
+The initial results demonstrate why admission decisions must be evaluated against actual tail latency, not just average latency.
+
+### B. Retrieval and answer quality
+
+The initial hard-question evaluation contained only nine questions.
+
+The reported hard-set score was 83.3%.
+
+One particularly revealing case involved a question about a paper's 213M-parameter configuration:
+
+| Metric | Initial result |
+|---|---:|
+| Correct answers | 1 |
+| Repeated attempts | 6 |
+| Observed correctness | 16.7% |
+
+The issue was traced to poor extraction of tabular information from PDFs. Table numbers and their corresponding headers were becoming disconnected.
+
+Another observed retrieval issue occurred in `s_daily_learned`, where one fallback quoted a figure caption rather than an appropriately relevant passage.
+
+These are not merely language-model problems. They expose weaknesses in document ingestion, retrieval, and evidence selection.
+
+**Me:** So increasing the model's capability wouldn't necessarily solve this?
+
+**Assistant:** Correct. When the information enters the model incorrectly, better generation alone cannot reliably recover the missing structure.
+
+The PDF extraction and chunking pipeline needs attention before we attribute every incorrect answer to the model.
+
+### C. Real-provider experiment size
+
+The real-service runs contained only 4, 4, and 8 requests across the reported runs.
+
+These samples are useful for initial exploration, but they are too small for strong statistical conclusions about tail latency, failures, and rare provider behaviour.
+
+### D. Token efficiency
+
+The reported prompt size was approximately 1,800 tokens per answer, while an 8,000-token-per-minute budget was referenced.
+
+This suggests that retrieval depth and prompt construction can have a substantial influence on throughput.
+
+However, the assumption that Groq reserves the maximum output allowance up front was not yet verified experimentally.
+
+### E. Stand-in fidelity
+
+The stand-in's overload slowdown was fitted using only two measurements. The referenced slope was 0.0625.
+
+Failure rates were also invented rather than measured from sufficiently large real-service observations.
+
+Consequently, the stand-in was useful for controlled testing but was not yet a highly validated model of Groq's behaviour.
+
+---
+
+## 7. Diagnosing the weaknesses and improving the architecture
+
+**Me:** Based on those results, I want to fix the actual weaknesses. Let's prioritise improvements according to their impact.
+
+**Assistant:** We should approach this in several layers.
+
+### A. Improve admission control and burst latency
+
+**Observed problem:** The burst test produced a p95 time to first token of 13,231.3 ms, exceeding the 8-second target.
+
+**Proposed improvement:**
+
+- Introduce a safety margin into the waiting-time estimate.
+- Alternatively, reduce the admission threshold from 40% to approximately 30%.
+- Re-run the 150-request burst.
+- Compare the new p95 latency and number of quoted-passage fallbacks.
+
+The tradeoff is explicit: a more conservative admission policy protects accepted users from unexpectedly long waits but may send more users to the fallback path.
+
+The improvement is not validated until the new experiment provides the updated p95 and fallback count.
+
+### B. Use the actual retry-after information
+
+**Observed problem:** The system suggested that users should come back tomorrow, even though the provider's limit was based on a rolling window.
+
+**Proposed improvement:**
+
+Use the retry-after information supplied by the 429 response.
+
+For example, a retry-after value of 648 seconds should translate into a message such as:
+
+"Please try again in about 11 minutes."
+
+This is more accurate than presenting a rolling-window limit as a daily reset.
+
+### C. Repair reference-list filtering
+
+**Observed problem:** The reference-list filter removed 26 legitimate chunks, including the beginning of Appendix A in the dynamic chunking paper.
+
+**Proposed improvement:**
+
+Only discard material between the actual References heading and the next major heading, rather than deleting every chunk after a broad textual match.
+
+Then:
+
+- Rebuild the paper index.
+- Re-run the retrieval comparison.
+- Add an explicit Appendix A question to the evaluation set.
+- Check whether the newly indexed material can be retrieved correctly.
+
+This addresses evidence loss during ingestion rather than trying to compensate for it at generation time.
+
+### D. Improve table extraction
+
+**Observed problem:** PDF tables were extracted in a scrambled form, causing poor numerical answers.
+
+**Proposed improvement:**
+
+Extract tables as structured tables, joining the header information to each row. PyMuPDF table extraction was suggested as one possible implementation.
+
+An alternative is to retain an entire table as a single chunk when preserving its structure is more important than keeping every chunk small.
+
+After the change, repeat the 213M-parameter question across multiple runs and compare the hard-set answer-quality score.
+
+### E. Improve experimental confidence
+
+**Observed problem:** Nine hard questions and small real-provider runs are not sufficient for strong statistical conclusions.
+
+**Proposed improvement:**
+
+- Create another 20–30 difficult questions.
+- Freeze the evaluation set before running retrieval comparisons.
+- Evaluate every retrieval configuration on the same questions.
+- Repeat each configuration three times.
+- Report the observed range, not just a single score.
+- Increase the real-service sample when the daily quota permits.
+
+One important methodological detail: some new questions were written after observing previous failures. That should be disclosed, and the questions should be frozen before subsequent comparisons.
+
+### F. Make the stand-in more representative
+
+**Observed problem:** The failure behaviour was partly invented, and the slowdown estimate relied on only two real-service measurements.
+
+**Proposed improvement:**
+
+- Run real-service experiments at 12-way and 16-way concurrency.
+- Re-estimate the load-dependent slowdown.
+- Perform a longer quiet test for rare failures and stalls.
+- Replace guessed failure rates with observed values where the sample permits.
+- Clearly label still-unmeasured behaviour instead of pretending it has been calibrated.
+
+The stand-in should remain an approximation, particularly outside the concurrency range actually measured.
+
+### G. Introduce tested provider failover
+
+**Me:** Gemini is configured, so why not use it when Groq reaches its daily limit?
+
+**Assistant:** This is a sensible extension, but configuration is not proof of reliability.
+
+We should first probe Gemini's limits and behaviour, then integrate it as a secondary provider.
+
+When Groq reaches its daily wall:
+
+1. Stop initiating new Groq calls.
+2. Route eligible new requests to Gemini.
+3. Apply the same evidence and verification requirements.
+4. Provide a quoted-passage fallback or honest decline if Gemini is also unavailable.
+
+The critical architectural principle is that provider failover must not bypass answer verification.
+
+The Gemini path needs its own experiments before its results can be reported.
+
+### H. Improve quota efficiency
+
+Several optimisations were identified:
+
+**Caching:** Identical normalised questions can reuse stored verified answers, avoiding repeat model calls.
+
+**Prompt reduction:** Test whether fewer or shorter retrieved passages reduce token consumption without unacceptable quality loss.
+
+**Token-accounting validation:** Test whether the provider accounts for the maximum requested output or actual token usage. The existing limiter may be wasting quota if its reservation assumption is wrong.
+
+These changes should be measured individually so their effect on latency, cost, and answer quality is visible.
+
+---
+
+## 8. Reliability, observability, and reproducibility
+
+**Me:** I also want someone else to be able to reproduce the results. What should the final engineering workflow look like?
+
+**Assistant:** The experiment process should be repeatable through a small set of commands.
+
+The proposed improvements include:
+
+- A single `make check` command that runs tests, a small real-service check, and the results-table rebuild.
+- A quality regression check that fails when answer quality drops below a predefined threshold.
+- A guide explaining how to add a new paper to the knowledge library.
+- Persistent raw JSONL logs for all experiments.
+- Clear separation between before-fix and after-fix results.
+
+For example, the original burst experiment should remain available as a before-fix result rather than being overwritten by the new run.
+
+This is important because the engineering story is not simply that the final version performs better. We should be able to demonstrate which change produced which improvement.
+
+Two additional architectural limitations were identified:
+
+1. **Persistent multi-process rate limiting was not built.** The limiter's state lives in memory, so a restart can forget learned limits and separate workers could independently spend the same quota.
+2. **Request hedging for slow calls was not built.** The system therefore does not yet have a complete strategy for simultaneously protecting against long-running requests and avoiding duplicate provider work.
+
+These omissions should be disclosed rather than hidden.
+
+---
+
+## 9. What should happen when the system reaches its limits?
+
+**Me:** I want the final behaviour to be understandable from the user's perspective. What happens if the system is overloaded or Groq runs out of quota?
+
+**Assistant:** The user-facing response depends on which limit is reached.
+
+| Situation | Intended behaviour |
+|---|---|
+| Short-lived congestion | Queue the request when the estimated wait is acceptable |
+| Excessive predicted wait | Offer a quoted-passage fallback or decline |
+| Rolling rate limit | Use the actual retry-after duration |
+| Groq daily limit | Route to Gemini if available and validated |
+| Both providers unavailable | Return relevant evidence or an honest decline |
+| Insufficient paper evidence | State that the papers do not provide the answer |
+
+The important distinction is between a service being temporarily unable to generate an answer and the source documents not containing the information.
+
+The system should not confuse those two cases or invent an answer to conceal either limitation.
+
+---
+
+## 10. What the current engineering evidence actually establishes
+
+**Me:** Before writing the report, let's distinguish what we have demonstrated from what still needs testing.
+
+**Assistant:** Based on the measurements and discussion available, the evidence can be grouped as follows.
+
+| Area | Established evidence | Remaining uncertainty |
+|---|---|---|
+| Pipeline requirements | Multi-step retrieval and generation design | Exact implementation details should be confirmed against the code |
+| Burst handling | 150-request, 10× test; p95 TTFB of 13,231.3 ms | Performance after admission-control changes |
+| Fallback behaviour | 108 of 150 requests used quoted passages | New fallback rate after policy changes |
+| Retrieval quality | A figure-caption retrieval issue was observed | Results after retrieval changes |
+| PDF tables | 213M question correct in only 1 of 6 attempts | Improvement after structured extraction |
+| Hard-set quality | Reported score of 83.3% | Larger frozen test set and repeated runs |
+| Real-provider calibration | Three reported runs containing 4, 4, and 8 requests | More representative concurrency and failure measurements |
+| Stand-in | Some load behaviour approximated using measured observations | Failure rates and higher-concurrency behaviour remain insufficiently validated |
+| Gemini | Configured as a secondary provider | Limits, integration, failover, and quality results |
+| Caching and token accounting | Optimisation opportunities identified | Actual quota and quality impact |
+
+There is also an evaluation-accounting issue worth checking: the reported 83.3% hard-set score is presented alongside a nine-question hard set. If the score is calculated directly over nine binary-scored questions, each question changes the percentage by approximately 11.1 points. The denominator or scoring aggregation should therefore be verified before submission.
+
+The current results establish several real weaknesses. They do not yet establish that the proposed fixes have resolved them.
+
+---
+
+## 11. Prioritised next steps
+
+**Me:** What should I implement and test next? I want the changes to be ordered sensibly rather than working on optimisations while correctness problems remain.
+
+**Assistant:** I would prioritise them as follows.
+
+| Priority | Work | Validation |
+|---|---|---|
+| 1 | Fix reference filtering and PDF table extraction | Appendix A and 213M-parameter questions |
+| 2 | Improve burst admission estimates | New 150-request burst and p95 TTFB |
+| 3 | Correct retry-after messaging | Test against a real rolling-window 429 |
+| 4 | Expand and freeze the evaluation set | Repeated quality comparisons |
+| 5 | Improve Groq calibration | 12-way, 16-way, and quiet-period tests |
+| 6 | Implement and test Gemini failover | Simulated Groq daily-wall failure |
+| 7 | Reduce prompt and quota consumption | Compare tokens, latency, and quality |
+| 8 | Improve reproducibility and documentation | `make check`, regression tests, and paper-ingestion guide |
+
+The order matters. First ensure that the correct evidence enters the system. Then improve scheduling and reliability. After that, optimise costs and make the entire experiment reproducible.
+
+---
+
+## 12. Final engineering takeaway
+
+**Me:** What is the biggest lesson from this project so far?
+
+**Assistant:** The main lesson is that building a reliable LLM application is not the same as building an application that can call an LLM.
+
+The model is just one component. Overall system quality depends on the interaction between document ingestion, retrieval, orchestration, provider behaviour, admission control, retries, verification, and fallback policies.
+
+The initial experiments showed this clearly:
+
+- A fast model does not guarantee fast user-perceived responses when queueing dominates latency.
+- Good generation cannot compensate for missing or scrambled source evidence.
+- Retries can increase congestion instead of solving it.
+- A simulator is only useful when its assumptions are supported by real measurements.
+- A fallback policy is part of the architecture, not an afterthought.
+
+The goal for the next iteration is therefore not simply to make The Relay faster. It is to make its behaviour more predictable, its answers more trustworthy, its resource usage more efficient, and its results reproducible.

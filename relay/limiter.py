@@ -104,7 +104,7 @@ class Limiter:
                 return float(h[k])
             except (KeyError, ValueError, TypeError):
                 return None
-        lr, lt, ld = num("x-ratelimit-limit-requests"), num("x-ratelimit-limit-tokens"), None
+        lr, lt = num("x-ratelimit-limit-requests"), num("x-ratelimit-limit-tokens")
         if lt:
             self.tok.resize(lt)
         rt = num("x-ratelimit-remaining-tokens")

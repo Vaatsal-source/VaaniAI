@@ -138,7 +138,6 @@ def run(md, SN, OUT):
     md.append(f"Deliberate burst of {len(lim)} tiny requests on gemini-3.1-flash-lite: statuses {dict(st)}. First 429 body (excerpt): `{first429[:330].strip()}`\n")
     snip("gemini", md_table(gd) + f"\n\nA burst of {len(lim)} tiny requests: {dict(st)}. The 429 body carries the limit (\"limit: 15 ... requests per minute\") and the wait "
          f"(\"Please retry in 53.4s\"); there is no `retry-after` header and no `x-ratelimit-*` header at all. The 503 replies say \"experiencing high demand\".")
-    nf = jl(sorted(glob.glob(str(LOGS / "gemini_probe_0_model404*.jsonl")))[0]) if glob.glob(str(LOGS / "gemini_probe_0_model404*.jsonl")) else []
 
     # ---- R5 burst: round 1 versus round 2, three seeds, plus ablation ----
     h("R5. 10x burst of 150 in 10 s: round-1 settings versus round-2 settings on the same code, three seeds")

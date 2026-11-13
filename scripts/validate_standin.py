@@ -7,7 +7,7 @@ import asyncio, json, pathlib, subprocess, sys, time
 import httpx, numpy as np
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PY = str(ROOT / ".venv" / "Scripts" / "python.exe") if (ROOT / ".venv").exists() else sys.executable
+PY = sys.executable
 PORT = 8097
 MODEL = "openai/gpt-oss-20b"
 

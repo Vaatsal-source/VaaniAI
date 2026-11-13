@@ -10,7 +10,7 @@ PRIO = getattr(subprocess, "HIGH_PRIORITY_CLASS", 0)    # Windows: keep the meas
 import httpx
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PY = str(ROOT / ".venv" / "Scripts" / "python.exe")
+PY = sys.executable          # whichever Python (the venv's) launched this script
 
 
 def wait(url, t=60):

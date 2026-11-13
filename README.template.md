@@ -4,6 +4,46 @@ A question-answering service over three papers that gives cited answers, and kee
 
 The papers are Attention Is All You Need (arXiv 1706.03762, v7), Moshi (2410.00037, v1) and the dynamic chunking / H-Net paper (2507.07955, v2). Their SHA-256 hashes are in `papers/MANIFEST.json`.
 
+## Quickstart: clone, run, test
+
+You need Python 3.12 and git. Nothing below needs an API key except the last two steps. Commands are for PowerShell; on Linux or macOS use `source .venv/bin/activate` and `export NAME=value`.
+
+```powershell
+# 1. clone and install
+git clone <this repository's URL> relay; cd relay
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt          # sentence-transformers is only for the dense-retrieval experiment; to skip it:
+                                         #   (Get-Content requirements.txt) -notmatch '^sentence-transformers' | Set-Content ci-req.txt; pip install -r ci-req.txt
+
+# 2. check everything with no key and no quota (about 30 s): unit tests, the retrieval guard, tables match the logs
+python scripts/check.py
+
+# 3. run the system on the stand-in (no key): two terminals
+#    terminal A: the fake model service
+python -m uvicorn standin.server:app --port 8099 --log-level warning
+#    terminal B: the relay, pointed at it (the default provider is the stand-in)
+python -m uvicorn relay.server:app --port 8111 --log-level warning
+#    terminal C: ask a question (the stand-in's answers are canned, so this tests the plumbing, not quality)
+curl.exe -N "http://127.0.0.1:8111/ask?q=How many attention heads does the base Transformer use?&req=t1"
+
+# 4. a load test on the stand-in (starts and stops its own servers; stop the ones from step 3 first)
+python scripts/run_load.py --tag mytest --shape burst --n 20 --window 5            # 20 requests in 5 s; logs/load_mytest.jsonl, logs/server_mytest.jsonl
+python scripts/run_load.py --tag mytest2 --shape steady --rate 0.5 --duration 20  # rate is requests per second
+
+# 5. rebuild every number and the write-up from the committed logs
+python scripts/export_results.py; python scripts/tables_from_csv.py; python scripts/build_writeup.py
+python scripts/make_tables.py; python scripts/build_readme.py                      # README.md from README.template.md
+
+# 6. with a real key (free Groq tier): copy .env.example to .env, paste GROQ_API_KEY (GEMINI_API_KEY is optional)
+Copy-Item .env.example .env
+$env:RELAY_PROVIDER = "groq"
+python -m uvicorn relay.server:app --port 8100 --log-level warning                # then the same curl as above, on port 8100
+python scripts/check.py --real                                                    # 5 real questions, about 11k tokens
+```
+
+Real runs spend real quota: the free tier allows about 85 full answers a day on the 120B model, so keep real runs small (`scripts/run_load.py --provider groq` with a low `--rate`). The key never leaves your machine, `.env` is git-ignored, and CI fails if a key-shaped string is in the repository. `scripts/fetch_papers.py` re-downloads the three PDFs and checks them against `papers/MANIFEST.json`; they are already in the repository, so you only need it if you delete them.
+
 **Reproducing it.** Run `scripts/fetch_papers.py`, then `scripts/probe_groq.py --hit-limit`, then `scripts/fit_calibration.py`. After that `scripts/run_eval.py` and `scripts/run_load.py` produce the logs. `scripts/make_tables.py` rebuilds every table in this file from `logs/`, and `scripts/build_readme.py` fills them into this document. The tables are not typed by hand. Settings live in `config.yaml` and the seed is 1234. `pytest` runs 30 tests (limiter, citation checker, 429 parsing, cache, failover routing, table rebuild). `python scripts/check.py` runs the tests, a free retrieval-quality guard and the tables-match-logs check in about 30 seconds; add `--standin` or `--real` for a burst on the stand-in or five real questions (about 11k Groq tokens). Adding a fourth paper is described in `docs/ADD_A_PAPER.md`.
 
 **For the submission.** The 2-page write-up with the brief's tables is `WRITEUP.md`; the raw per-request file the brief asks for is `results.csv` (`python scripts/export_results.py`), and `python scripts/tables_from_csv.py` recomputes Tables 2a, 2b and 3 from that file alone (`results/brief_tables.md`). This README is the long version behind them.

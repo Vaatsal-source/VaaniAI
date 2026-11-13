@@ -8,7 +8,7 @@ import json, os, pathlib, subprocess, sys, time
 import httpx
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PY = str(ROOT / ".venv" / "Scripts" / "python.exe") if (ROOT / ".venv").exists() else sys.executable
+PY = sys.executable
 RELAY = 8113
 
 
