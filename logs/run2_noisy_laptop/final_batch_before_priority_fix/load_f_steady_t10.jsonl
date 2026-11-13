@@ -1,0 +1,247 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.3, "duration": 240.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "f_steady_t10", "drain": 0}, "n": 82, "perf0": 1484075.8080128}
+{"t": 1484087.372894, "req": "f_steady_t10-0000", "event": "arrive", "sched": 11.323122000088915, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1484088.6209331, "req": "f_steady_t10-0000", "event": "first_byte"}
+{"t": 1484088.6240181, "req": "f_steady_t10-0000", "event": "end", "status": "answered"}
+{"t": 1484089.3122977, "req": "f_steady_t10-0001", "event": "arrive", "sched": 13.262525199912488, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484089.3169638, "req": "f_steady_t10-0002", "event": "arrive", "sched": 13.267192899947986, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1484090.5543523, "req": "f_steady_t10-0001", "event": "first_byte"}
+{"t": 1484090.5570426, "req": "f_steady_t10-0001", "event": "end", "status": "answered"}
+{"t": 1484090.8162307, "req": "f_steady_t10-0002", "event": "first_byte"}
+{"t": 1484090.8185862, "req": "f_steady_t10-0002", "event": "end", "status": "answered"}
+{"t": 1484097.3941216, "req": "f_steady_t10-0003", "event": "arrive", "sched": 21.344342899974436, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1484099.6567463, "req": "f_steady_t10-0003", "event": "first_byte"}
+{"t": 1484099.6584229, "req": "f_steady_t10-0003", "event": "end", "status": "answered"}
+{"t": 1484106.7420204, "req": "f_steady_t10-0004", "event": "arrive", "sched": 30.692245400045067, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1484109.657453, "req": "f_steady_t10-0005", "event": "arrive", "sched": 33.60768190003, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1484110.7996041, "req": "f_steady_t10-0005", "event": "first_byte"}
+{"t": 1484110.8035958, "req": "f_steady_t10-0005", "event": "end", "status": "answered"}
+{"t": 1484111.3620236, "req": "f_steady_t10-0004", "event": "first_byte"}
+{"t": 1484111.3653501, "req": "f_steady_t10-0004", "event": "end", "status": "answered"}
+{"t": 1484113.3510131, "req": "f_steady_t10-0006", "event": "arrive", "sched": 37.301239599939436, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1484113.6590043, "req": "f_steady_t10-0007", "event": "arrive", "sched": 37.609230200061575, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484114.8912192, "req": "f_steady_t10-0007", "event": "first_byte"}
+{"t": 1484114.8928057, "req": "f_steady_t10-0007", "event": "end", "status": "answered"}
+{"t": 1484114.8929875, "req": "f_steady_t10-0006", "event": "first_byte"}
+{"t": 1484114.8944336, "req": "f_steady_t10-0006", "event": "end", "status": "answered"}
+{"t": 1484118.4983255, "req": "f_steady_t10-0008", "event": "arrive", "sched": 42.448551199864596, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484119.2262608, "req": "f_steady_t10-0008", "event": "first_byte"}
+{"t": 1484119.2279346, "req": "f_steady_t10-0008", "event": "end", "status": "answered"}
+{"t": 1484119.3879713, "req": "f_steady_t10-0009", "event": "arrive", "sched": 43.338197299977764, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1484119.5131616, "req": "f_steady_t10-0010", "event": "arrive", "sched": 43.46338890003972, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484120.6374427, "req": "f_steady_t10-0009", "event": "first_byte"}
+{"t": 1484120.639496, "req": "f_steady_t10-0009", "event": "end", "status": "answered"}
+{"t": 1484120.9564655, "req": "f_steady_t10-0010", "event": "first_byte"}
+{"t": 1484120.958142, "req": "f_steady_t10-0010", "event": "end", "status": "answered"}
+{"t": 1484124.6737536, "req": "f_steady_t10-0011", "event": "arrive", "sched": 48.62398230005056, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484125.9486401, "req": "f_steady_t10-0011", "event": "first_byte"}
+{"t": 1484125.9513832, "req": "f_steady_t10-0011", "event": "end", "status": "answered"}
+{"t": 1484126.0961902, "req": "f_steady_t10-0012", "event": "arrive", "sched": 50.0464164998848, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1484127.8886348, "req": "f_steady_t10-0012", "event": "first_byte"}
+{"t": 1484127.892554, "req": "f_steady_t10-0012", "event": "end", "status": "answered"}
+{"t": 1484129.3534298, "req": "f_steady_t10-0013", "event": "arrive", "sched": 53.30365419993177, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484130.811428, "req": "f_steady_t10-0013", "event": "first_byte"}
+{"t": 1484130.8216422, "req": "f_steady_t10-0013", "event": "end", "status": "answered"}
+{"t": 1484132.5404038, "req": "f_steady_t10-0014", "event": "arrive", "sched": 56.490627999883145, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484133.087812, "req": "f_steady_t10-0015", "event": "arrive", "sched": 57.03803829988465, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1484133.7585145, "req": "f_steady_t10-0016", "event": "arrive", "sched": 57.708739900030196, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484133.9317503, "req": "f_steady_t10-0015", "event": "first_byte"}
+{"t": 1484133.9393138, "req": "f_steady_t10-0015", "event": "end", "status": "answered"}
+{"t": 1484134.1490263, "req": "f_steady_t10-0017", "event": "arrive", "sched": 58.09924959996715, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1484134.2102633, "req": "f_steady_t10-0018", "event": "arrive", "sched": 58.16048870002851, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1484134.6053795, "req": "f_steady_t10-0014", "event": "first_byte"}
+{"t": 1484134.6100522, "req": "f_steady_t10-0014", "event": "end", "status": "answered"}
+{"t": 1484134.7030576, "req": "f_steady_t10-0016", "event": "first_byte"}
+{"t": 1484134.7096334, "req": "f_steady_t10-0016", "event": "end", "status": "answered"}
+{"t": 1484134.9268094, "req": "f_steady_t10-0018", "event": "first_byte"}
+{"t": 1484134.9338049, "req": "f_steady_t10-0018", "event": "end", "status": "answered"}
+{"t": 1484136.4354996, "req": "f_steady_t10-0019", "event": "arrive", "sched": 60.38572610006668, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484139.6782215, "req": "f_steady_t10-0019", "event": "first_byte"}
+{"t": 1484139.684796, "req": "f_steady_t10-0019", "event": "end", "status": "answered"}
+{"t": 1484147.5942362, "req": "f_steady_t10-0020", "event": "arrive", "sched": 71.54446060000919, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484147.7233721, "req": "f_steady_t10-0017", "event": "first_byte"}
+{"t": 1484147.7344485, "req": "f_steady_t10-0017", "event": "end", "status": "answered"}
+{"t": 1484147.8281143, "req": "f_steady_t10-0021", "event": "arrive", "sched": 71.77833919995464, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1484149.1593686, "req": "f_steady_t10-0021", "event": "first_byte"}
+{"t": 1484149.165702, "req": "f_steady_t10-0021", "event": "end", "status": "answered"}
+{"t": 1484150.3378052, "req": "f_steady_t10-0020", "event": "first_byte"}
+{"t": 1484150.3453407, "req": "f_steady_t10-0020", "event": "end", "status": "answered"}
+{"t": 1484150.3990359, "req": "f_steady_t10-0022", "event": "arrive", "sched": 74.34925940004177, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1484152.2718673, "req": "f_steady_t10-0022", "event": "first_byte"}
+{"t": 1484152.2791245, "req": "f_steady_t10-0022", "event": "end", "status": "answered"}
+{"t": 1484152.5167816, "req": "f_steady_t10-0023", "event": "arrive", "sched": 76.46700529986992, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484153.5447692, "req": "f_steady_t10-0023", "event": "first_byte"}
+{"t": 1484153.5600217, "req": "f_steady_t10-0023", "event": "end", "status": "answered"}
+{"t": 1484155.5711429, "req": "f_steady_t10-0024", "event": "arrive", "sched": 79.52136159990914, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1484155.8952813, "req": "f_steady_t10-0025", "event": "arrive", "sched": 79.845504200086, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1484157.1862501, "req": "f_steady_t10-0025", "event": "first_byte"}
+{"t": 1484157.1919324, "req": "f_steady_t10-0025", "event": "end", "status": "answered"}
+{"t": 1484158.5341818, "req": "f_steady_t10-0024", "event": "first_byte"}
+{"t": 1484158.5420752, "req": "f_steady_t10-0024", "event": "end", "status": "answered"}
+{"t": 1484158.7834567, "req": "f_steady_t10-0026", "event": "arrive", "sched": 82.73368169995956, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484159.8008862, "req": "f_steady_t10-0027", "event": "arrive", "sched": 83.7511088999454, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1484160.6447102, "req": "f_steady_t10-0026", "event": "first_byte"}
+{"t": 1484160.6540291, "req": "f_steady_t10-0026", "event": "end", "status": "answered"}
+{"t": 1484162.5379148, "req": "f_steady_t10-0028", "event": "arrive", "sched": 86.48813720000908, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484163.4370452, "req": "f_steady_t10-0028", "event": "first_byte"}
+{"t": 1484163.4456012, "req": "f_steady_t10-0028", "event": "end", "status": "answered"}
+{"t": 1484165.9709855, "req": "f_steady_t10-0029", "event": "arrive", "sched": 89.92121069994755, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1484166.3380595, "req": "f_steady_t10-0027", "event": "first_byte"}
+{"t": 1484166.3449174, "req": "f_steady_t10-0027", "event": "end", "status": "answered"}
+{"t": 1484167.9945612, "req": "f_steady_t10-0029", "event": "first_byte"}
+{"t": 1484168.0037088, "req": "f_steady_t10-0029", "event": "end", "status": "answered"}
+{"t": 1484168.1515536, "req": "f_steady_t10-0030", "event": "arrive", "sched": 92.10177549999207, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1484169.4169699, "req": "f_steady_t10-0030", "event": "first_byte"}
+{"t": 1484169.4247481, "req": "f_steady_t10-0030", "event": "end", "status": "answered"}
+{"t": 1484169.6120865, "req": "f_steady_t10-0031", "event": "arrive", "sched": 93.56231099995784, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484171.333857, "req": "f_steady_t10-0032", "event": "arrive", "sched": 95.2840845999308, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1484172.2123952, "req": "f_steady_t10-0032", "event": "first_byte"}
+{"t": 1484172.2219767, "req": "f_steady_t10-0032", "event": "end", "status": "answered"}
+{"t": 1484174.5623761, "req": "f_steady_t10-0031", "event": "first_byte"}
+{"t": 1484174.6031269, "req": "f_steady_t10-0031", "event": "end", "status": "answered"}
+{"t": 1484179.6187134, "req": "f_steady_t10-0033", "event": "arrive", "sched": 103.56893890001811, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1484180.4365917, "req": "f_steady_t10-0033", "event": "first_byte"}
+{"t": 1484180.4433878, "req": "f_steady_t10-0033", "event": "end", "status": "answered"}
+{"t": 1484181.6257613, "req": "f_steady_t10-0034", "event": "arrive", "sched": 105.5759848000016, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1484183.4204765, "req": "f_steady_t10-0034", "event": "first_byte"}
+{"t": 1484183.4287489, "req": "f_steady_t10-0034", "event": "end", "status": "answered"}
+{"t": 1484184.14366, "req": "f_steady_t10-0035", "event": "arrive", "sched": 108.09388189995661, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1484184.2224246, "req": "f_steady_t10-0036", "event": "arrive", "sched": 108.17264740006067, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484184.8625425, "req": "f_steady_t10-0035", "event": "first_byte"}
+{"t": 1484184.8724664, "req": "f_steady_t10-0035", "event": "end", "status": "answered"}
+{"t": 1484185.5785164, "req": "f_steady_t10-0036", "event": "first_byte"}
+{"t": 1484185.5865441, "req": "f_steady_t10-0036", "event": "end", "status": "answered"}
+{"t": 1484186.5819201, "req": "f_steady_t10-0037", "event": "arrive", "sched": 110.53214320004918, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1484186.5853487, "req": "f_steady_t10-0038", "event": "arrive", "sched": 110.53557080007158, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1484187.1277481, "req": "f_steady_t10-0039", "event": "arrive", "sched": 111.07797099999152, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1484187.459139, "req": "f_steady_t10-0037", "event": "first_byte"}
+{"t": 1484187.4681664, "req": "f_steady_t10-0037", "event": "end", "status": "answered"}
+{"t": 1484187.9206422, "req": "f_steady_t10-0039", "event": "first_byte"}
+{"t": 1484187.9325083, "req": "f_steady_t10-0039", "event": "end", "status": "answered"}
+{"t": 1484189.2442624, "req": "f_steady_t10-0040", "event": "arrive", "sched": 113.19448819989339, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1484190.0440109, "req": "f_steady_t10-0040", "event": "first_byte"}
+{"t": 1484190.0523941, "req": "f_steady_t10-0040", "event": "end", "status": "answered"}
+{"t": 1484190.8287745, "req": "f_steady_t10-0041", "event": "arrive", "sched": 114.77899740007706, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484190.998787, "req": "f_steady_t10-0042", "event": "arrive", "sched": 114.94900929997675, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1484192.1999489, "req": "f_steady_t10-0042", "event": "first_byte"}
+{"t": 1484192.2072623, "req": "f_steady_t10-0042", "event": "end", "status": "answered"}
+{"t": 1484192.2895108, "req": "f_steady_t10-0041", "event": "first_byte"}
+{"t": 1484192.2995314, "req": "f_steady_t10-0041", "event": "end", "status": "answered"}
+{"t": 1484193.9067121, "req": "f_steady_t10-0038", "event": "first_byte"}
+{"t": 1484193.9158487, "req": "f_steady_t10-0038", "event": "end", "status": "answered"}
+{"t": 1484193.9674095, "req": "f_steady_t10-0043", "event": "arrive", "sched": 117.91763009992428, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484194.5553632, "req": "f_steady_t10-0044", "event": "arrive", "sched": 118.5055889999494, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1484194.9955563, "req": "f_steady_t10-0043", "event": "first_byte"}
+{"t": 1484195.005076, "req": "f_steady_t10-0043", "event": "end", "status": "answered"}
+{"t": 1484195.9038114, "req": "f_steady_t10-0044", "event": "first_byte"}
+{"t": 1484195.9087121, "req": "f_steady_t10-0044", "event": "end", "status": "answered"}
+{"t": 1484197.275458, "req": "f_steady_t10-0045", "event": "arrive", "sched": 121.22567959991284, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484197.793055, "req": "f_steady_t10-0046", "event": "arrive", "sched": 121.74328009993769, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484198.2432464, "req": "f_steady_t10-0045", "event": "first_byte"}
+{"t": 1484198.252766, "req": "f_steady_t10-0045", "event": "end", "status": "answered"}
+{"t": 1484200.1610416, "req": "f_steady_t10-0046", "event": "first_byte"}
+{"t": 1484200.1690151, "req": "f_steady_t10-0046", "event": "end", "status": "answered"}
+{"t": 1484207.0243284, "req": "f_steady_t10-0047", "event": "arrive", "sched": 130.9745509000495, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1484208.4995792, "req": "f_steady_t10-0047", "event": "first_byte"}
+{"t": 1484208.5063562, "req": "f_steady_t10-0047", "event": "end", "status": "answered"}
+{"t": 1484211.9352162, "req": "f_steady_t10-0048", "event": "arrive", "sched": 135.88543789996766, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484213.1028306, "req": "f_steady_t10-0048", "event": "first_byte"}
+{"t": 1484213.1102805, "req": "f_steady_t10-0048", "event": "end", "status": "answered"}
+{"t": 1484222.4215559, "req": "f_steady_t10-0049", "event": "arrive", "sched": 146.37178130005486, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1484222.9333835, "req": "f_steady_t10-0050", "event": "arrive", "sched": 146.8836061998736, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484223.3601042, "req": "f_steady_t10-0049", "event": "first_byte"}
+{"t": 1484223.3781149, "req": "f_steady_t10-0049", "event": "end", "status": "answered"}
+{"t": 1484224.1498834, "req": "f_steady_t10-0051", "event": "arrive", "sched": 148.10010659997351, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484224.2713428, "req": "f_steady_t10-0052", "event": "arrive", "sched": 148.22156689991243, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484225.1114207, "req": "f_steady_t10-0050", "event": "first_byte"}
+{"t": 1484225.1219201, "req": "f_steady_t10-0050", "event": "end", "status": "answered"}
+{"t": 1484225.1622487, "req": "f_steady_t10-0051", "event": "first_byte"}
+{"t": 1484225.1707988, "req": "f_steady_t10-0051", "event": "end", "status": "answered"}
+{"t": 1484225.2895416, "req": "f_steady_t10-0052", "event": "first_byte"}
+{"t": 1484225.2957872, "req": "f_steady_t10-0052", "event": "end", "status": "answered"}
+{"t": 1484225.3610615, "req": "f_steady_t10-0053", "event": "arrive", "sched": 149.31128260004334, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484226.2882105, "req": "f_steady_t10-0053", "event": "first_byte"}
+{"t": 1484226.2942572, "req": "f_steady_t10-0053", "event": "end", "status": "answered"}
+{"t": 1484230.8875232, "req": "f_steady_t10-0054", "event": "arrive", "sched": 154.8377487999387, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1484231.4937105, "req": "f_steady_t10-0055", "event": "arrive", "sched": 155.44393639988266, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1484232.0388915, "req": "f_steady_t10-0056", "event": "arrive", "sched": 155.98911809991114, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484233.2730782, "req": "f_steady_t10-0056", "event": "first_byte"}
+{"t": 1484233.2750958, "req": "f_steady_t10-0056", "event": "end", "status": "answered"}
+{"t": 1484233.386301, "req": "f_steady_t10-0054", "event": "first_byte"}
+{"t": 1484233.3904727, "req": "f_steady_t10-0054", "event": "end", "status": "answered"}
+{"t": 1484233.5272813, "req": "f_steady_t10-0055", "event": "first_byte"}
+{"t": 1484233.5289795, "req": "f_steady_t10-0055", "event": "end", "status": "answered"}
+{"t": 1484242.3720671, "req": "f_steady_t10-0057", "event": "arrive", "sched": 166.32229529996403, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484242.9183168, "req": "f_steady_t10-0058", "event": "arrive", "sched": 166.86854299996048, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484243.4088118, "req": "f_steady_t10-0057", "event": "first_byte"}
+{"t": 1484243.4110504, "req": "f_steady_t10-0057", "event": "end", "status": "answered"}
+{"t": 1484246.9909236, "req": "f_steady_t10-0058", "event": "first_byte"}
+{"t": 1484246.9930864, "req": "f_steady_t10-0058", "event": "end", "status": "answered"}
+{"t": 1484248.9085729, "req": "f_steady_t10-0059", "event": "arrive", "sched": 172.8588012000546, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484249.0317061, "req": "f_steady_t10-0060", "event": "arrive", "sched": 172.98193400003947, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1484250.0746867, "req": "f_steady_t10-0059", "event": "first_byte"}
+{"t": 1484250.0763135, "req": "f_steady_t10-0059", "event": "end", "status": "answered"}
+{"t": 1484250.6757686, "req": "f_steady_t10-0061", "event": "arrive", "sched": 174.62599710002542, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1484251.8833209, "req": "f_steady_t10-0060", "event": "first_byte"}
+{"t": 1484251.8850939, "req": "f_steady_t10-0060", "event": "end", "status": "answered"}
+{"t": 1484252.1106705, "req": "f_steady_t10-0062", "event": "arrive", "sched": 176.0608981999103, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1484253.1511239, "req": "f_steady_t10-0062", "event": "first_byte"}
+{"t": 1484253.1572957, "req": "f_steady_t10-0062", "event": "end", "status": "answered"}
+{"t": 1484253.1585334, "req": "f_steady_t10-0061", "event": "first_byte"}
+{"t": 1484253.1610965, "req": "f_steady_t10-0061", "event": "end", "status": "answered"}
+{"t": 1484253.4818251, "req": "f_steady_t10-0063", "event": "arrive", "sched": 177.43204659991898, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1484254.6170365, "req": "f_steady_t10-0063", "event": "first_byte"}
+{"t": 1484254.6224913, "req": "f_steady_t10-0063", "event": "end", "status": "answered"}
+{"t": 1484259.1572293, "req": "f_steady_t10-0064", "event": "arrive", "sched": 183.1074524000287, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484261.288339, "req": "f_steady_t10-0065", "event": "arrive", "sched": 185.238561199978, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1484263.2109968, "req": "f_steady_t10-0065", "event": "first_byte"}
+{"t": 1484263.2229136, "req": "f_steady_t10-0065", "event": "end", "status": "answered"}
+{"t": 1484263.6290978, "req": "f_steady_t10-0064", "event": "first_byte"}
+{"t": 1484263.6380687, "req": "f_steady_t10-0064", "event": "end", "status": "answered"}
+{"t": 1484266.5114863, "req": "f_steady_t10-0066", "event": "arrive", "sched": 190.4617125999648, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484268.6356224, "req": "f_steady_t10-0067", "event": "arrive", "sched": 192.58582769986242, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1484273.2163688, "req": "f_steady_t10-0067", "event": "first_byte"}
+{"t": 1484273.7083941, "req": "f_steady_t10-0067", "event": "end", "status": "answered"}
+{"t": 1484273.7093994, "req": "f_steady_t10-0066", "event": "first_byte"}
+{"t": 1484273.9654721, "req": "f_steady_t10-0066", "event": "end", "status": "answered"}
+{"t": 1484274.1839948, "req": "f_steady_t10-0068", "event": "arrive", "sched": 198.13421959988773, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484278.606427, "req": "f_steady_t10-0068", "event": "first_byte"}
+{"t": 1484278.8074345, "req": "f_steady_t10-0068", "event": "end", "status": "answered"}
+{"t": 1484281.3001304, "req": "f_steady_t10-0069", "event": "arrive", "sched": 205.25035390001722, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484283.2380924, "req": "f_steady_t10-0070", "event": "arrive", "sched": 207.18831819994375, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1484287.2188215, "req": "f_steady_t10-0069", "event": "first_byte"}
+{"t": 1484287.3663163, "req": "f_steady_t10-0069", "event": "end", "status": "answered"}
+{"t": 1484288.2935843, "req": "f_steady_t10-0071", "event": "arrive", "sched": 212.2438083998859, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1484289.6309333, "req": "f_steady_t10-0070", "event": "first_byte"}
+{"t": 1484289.8847896, "req": "f_steady_t10-0070", "event": "end", "status": "answered"}
+{"t": 1484291.777282, "req": "f_steady_t10-0071", "event": "first_byte"}
+{"t": 1484291.7955058, "req": "f_steady_t10-0071", "event": "end", "status": "answered"}
+{"t": 1484293.9093134, "req": "f_steady_t10-0072", "event": "arrive", "sched": 217.85953840008005, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484295.0933798, "req": "f_steady_t10-0073", "event": "arrive", "sched": 219.04360500001349, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1484295.5195963, "req": "f_steady_t10-0074", "event": "arrive", "sched": 219.46982080000453, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1484296.217594, "req": "f_steady_t10-0075", "event": "arrive", "sched": 220.167819699971, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1484298.1729885, "req": "f_steady_t10-0076", "event": "arrive", "sched": 222.12320999987423, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1484298.6001585, "req": "f_steady_t10-0077", "event": "arrive", "sched": 222.5503845999483, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484301.2228731, "req": "f_steady_t10-0078", "event": "arrive", "sched": 225.1730988000054, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1484306.3443952, "req": "f_steady_t10-0073", "event": "first_byte"}
+{"t": 1484306.8293291, "req": "f_steady_t10-0073", "event": "end", "status": "answered"}
+{"t": 1484306.9420794, "req": "f_steady_t10-0079", "event": "arrive", "sched": 230.89230419998057, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1484309.1823082, "req": "f_steady_t10-0080", "event": "arrive", "sched": 233.13253349997103, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1484309.6730578, "req": "f_steady_t10-0075", "event": "first_byte"}
+{"t": 1484309.9595165, "req": "f_steady_t10-0075", "event": "end", "status": "answered"}
+{"t": 1484310.2269854, "req": "f_steady_t10-0072", "event": "first_byte"}
+{"t": 1484310.7094329, "req": "f_steady_t10-0072", "event": "end", "status": "answered"}
+{"t": 1484310.7097461, "req": "f_steady_t10-0074", "event": "first_byte"}
+{"t": 1484310.964015, "req": "f_steady_t10-0074", "event": "end", "status": "answered"}
+{"t": 1484311.2777395, "req": "f_steady_t10-0076", "event": "first_byte"}
+{"t": 1484313.2241694, "req": "f_steady_t10-0076", "event": "end", "status": "answered"}
+{"t": 1484313.2248375, "req": "f_steady_t10-0077", "event": "first_byte"}
+{"t": 1484314.3587821, "req": "f_steady_t10-0077", "event": "end", "status": "answered"}
+{"t": 1484314.8390948, "req": "f_steady_t10-0081", "event": "arrive", "sched": 238.78932039998472, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1484316.6262579, "req": "f_steady_t10-0078", "event": "first_byte"}
+{"t": 1484317.2397179, "req": "f_steady_t10-0078", "event": "end", "status": "answered"}
+{"t": 1484317.2891613, "req": "f_steady_t10-0079", "event": "first_byte"}
+{"t": 1484317.6211921, "req": "f_steady_t10-0079", "event": "end", "status": "answered"}
+{"t": 1484319.7057279, "req": "f_steady_t10-0080", "event": "first_byte"}
+{"t": 1484319.7106734, "req": "f_steady_t10-0080", "event": "end", "status": "answered"}
+{"t": 1484320.343655, "req": "f_steady_t10-0081", "event": "first_byte"}
+{"t": 1484320.3523084, "req": "f_steady_t10-0081", "event": "end", "status": "answered"}

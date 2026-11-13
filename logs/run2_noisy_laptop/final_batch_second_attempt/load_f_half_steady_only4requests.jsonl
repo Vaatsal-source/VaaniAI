@@ -1,0 +1,13 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 300.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "f_half_steady", "drain": 0}, "n": 4, "perf0": 1517133.974542}
+{"t": 1517247.4043492, "req": "f_half_steady-0000", "event": "arrive", "sched": 113.17303389986046, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1517248.7214761, "req": "f_half_steady-0000", "event": "first_byte"}
+{"t": 1517248.7244815, "req": "f_half_steady-0000", "event": "end", "status": "answered"}
+{"t": 1517266.7563823, "req": "f_half_steady-0001", "event": "arrive", "sched": 132.52507169987075, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1517267.0233396, "req": "f_half_steady-0002", "event": "arrive", "sched": 132.79202629998326, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1517267.0368702, "req": "f_half_steady-0002", "event": "first_byte"}
+{"t": 1517267.0395812, "req": "f_half_steady-0002", "event": "end", "status": "extractive_overload"}
+{"t": 1517268.0851381, "req": "f_half_steady-0001", "event": "first_byte"}
+{"t": 1517268.0886388, "req": "f_half_steady-0001", "event": "end", "status": "answered"}
+{"t": 1517347.6466076, "req": "f_half_steady-0003", "event": "arrive", "sched": 213.4152973999735, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1517348.9525089, "req": "f_half_steady-0003", "event": "first_byte"}
+{"t": 1517348.9559881, "req": "f_half_steady-0003", "event": "end", "status": "answered"}

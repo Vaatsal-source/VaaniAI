@@ -1,0 +1,57 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 600.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "f_half_steady", "drain": 0}, "n": 19, "perf0": 1483383.4268796}
+{"t": 1483496.8489514, "req": "f_half_steady-0000", "event": "arrive", "sched": 113.18493980006315, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1483498.4814746, "req": "f_half_steady-0000", "event": "first_byte"}
+{"t": 1483498.4882093, "req": "f_half_steady-0000", "event": "end", "status": "answered"}
+{"t": 1483516.1958874, "req": "f_half_steady-0001", "event": "arrive", "sched": 132.53193879988976, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1483516.4595939, "req": "f_half_steady-0002", "event": "arrive", "sched": 132.79564330005087, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1483516.4795598, "req": "f_half_steady-0002", "event": "first_byte"}
+{"t": 1483516.4831587, "req": "f_half_steady-0002", "event": "end", "status": "extractive_overload"}
+{"t": 1483516.9549359, "req": "f_half_steady-0001", "event": "first_byte"}
+{"t": 1483516.9562382, "req": "f_half_steady-0001", "event": "end", "status": "extractive_overload"}
+{"t": 1483597.0816179, "req": "f_half_steady-0003", "event": "arrive", "sched": 213.4176676000934, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1483598.4556603, "req": "f_half_steady-0003", "event": "first_byte"}
+{"t": 1483598.4572712, "req": "f_half_steady-0003", "event": "end", "status": "answered"}
+{"t": 1483690.4554566, "req": "f_half_steady-0004", "event": "arrive", "sched": 306.7915066999849, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1483691.9435051, "req": "f_half_steady-0004", "event": "first_byte"}
+{"t": 1483691.9477943, "req": "f_half_steady-0004", "event": "end", "status": "answered"}
+{"t": 1483719.5521901, "req": "f_half_steady-0005", "event": "arrive", "sched": 335.888243699912, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1483720.7756349, "req": "f_half_steady-0005", "event": "first_byte"}
+{"t": 1483720.7773845, "req": "f_half_steady-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1483756.6799491, "req": "f_half_steady-0006", "event": "arrive", "sched": 373.01600389997475, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1483759.5865119, "req": "f_half_steady-0007", "event": "arrive", "sched": 375.9225669999141, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1483759.5924121, "req": "f_half_steady-0007", "event": "first_byte"}
+{"t": 1483759.5933549, "req": "f_half_steady-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1483762.7618924, "req": "f_half_steady-0006", "event": "first_byte"}
+{"t": 1483762.764338, "req": "f_half_steady-0006", "event": "end", "status": "answered"}
+{"t": 1483808.1837159, "req": "f_half_steady-0008", "event": "arrive", "sched": 424.51976469997317, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1483815.6854251, "req": "f_half_steady-0008", "event": "first_byte"}
+{"t": 1483815.6906861, "req": "f_half_steady-0008", "event": "end", "status": "answered"}
+{"t": 1483817.0763615, "req": "f_half_steady-0009", "event": "arrive", "sched": 433.41241399990395, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1483817.1962382, "req": "f_half_steady-0009", "event": "first_byte"}
+{"t": 1483817.2851652, "req": "f_half_steady-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1483818.2635938, "req": "f_half_steady-0010", "event": "arrive", "sched": 434.59964359994046, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1483819.8159913, "req": "f_half_steady-0010", "event": "first_byte"}
+{"t": 1483820.2663829, "req": "f_half_steady-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1483870.3658333, "req": "f_half_steady-0011", "event": "arrive", "sched": 486.7018820999656, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1483877.0550214, "req": "f_half_steady-0011", "event": "first_byte"}
+{"t": 1483877.0750575, "req": "f_half_steady-0011", "event": "end", "status": "answered"}
+{"t": 1483884.1210323, "req": "f_half_steady-0012", "event": "arrive", "sched": 500.45708389999345, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1483884.8354418, "req": "f_half_steady-0012", "event": "first_byte"}
+{"t": 1483884.9571457, "req": "f_half_steady-0012", "event": "end", "status": "extractive_overload"}
+{"t": 1483916.7431182, "req": "f_half_steady-0013", "event": "arrive", "sched": 533.0791706000455, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1483921.6640688, "req": "f_half_steady-0013", "event": "first_byte"}
+{"t": 1483921.9986421, "req": "f_half_steady-0013", "event": "end", "status": "answered"}
+{"t": 1483948.540659, "req": "f_half_steady-0014", "event": "arrive", "sched": 564.8767109001055, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1483949.9374351, "req": "f_half_steady-0014", "event": "first_byte"}
+{"t": 1483949.9431606, "req": "f_half_steady-0014", "event": "end", "status": "answered"}
+{"t": 1483953.8934097, "req": "f_half_steady-0015", "event": "arrive", "sched": 570.2294632000849, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1483953.9047482, "req": "f_half_steady-0015", "event": "first_byte"}
+{"t": 1483953.9076904, "req": "f_half_steady-0015", "event": "end", "status": "extractive_overload"}
+{"t": 1483960.6536556, "req": "f_half_steady-0016", "event": "arrive", "sched": 576.9897062000819, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1483960.6741795, "req": "f_half_steady-0016", "event": "first_byte"}
+{"t": 1483960.6811247, "req": "f_half_steady-0016", "event": "end", "status": "extractive_overload"}
+{"t": 1483964.903395, "req": "f_half_steady-0017", "event": "arrive", "sched": 581.2393992999569, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1483965.1902818, "req": "f_half_steady-0018", "event": "arrive", "sched": 581.526334800059, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1483967.3902008, "req": "f_half_steady-0018", "event": "first_byte"}
+{"t": 1483967.4257768, "req": "f_half_steady-0018", "event": "end", "status": "extractive_overload"}
+{"t": 1483984.9944718, "req": "f_half_steady-0017", "event": "abandon", "status": null, "after_first_byte": false}

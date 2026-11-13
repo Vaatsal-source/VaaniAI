@@ -1,0 +1,43 @@
+{"event": "meta", "args": {"shape": "steady", "base": "http://127.0.0.1:8110", "rate": 0.04, "duration": 420.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "f_half_steady", "drain": 0}, "n": 14, "perf0": 1518451.5631593}
+{"t": 1518536.8375166, "req": "f_half_steady-0000", "event": "arrive", "sched": 85.00755790015683, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1518551.5420049, "req": "f_half_steady-0001", "event": "arrive", "sched": 99.7120480001904, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1518551.544163, "req": "f_half_steady-0002", "event": "arrive", "sched": 99.71421160013415, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1518551.6708186, "req": "f_half_steady-0000", "event": "first_byte"}
+{"t": 1518552.1928556, "req": "f_half_steady-0000", "event": "end", "status": "answered"}
+{"t": 1518553.7795612, "req": "f_half_steady-0002", "event": "first_byte"}
+{"t": 1518553.7977404, "req": "f_half_steady-0002", "event": "end", "status": "extractive_overload"}
+{"t": 1518562.547767, "req": "f_half_steady-0001", "event": "first_byte"}
+{"t": 1518562.6333028, "req": "f_half_steady-0001", "event": "end", "status": "answered"}
+{"t": 1518612.0343606, "req": "f_half_steady-0003", "event": "arrive", "sched": 160.20440450008027, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1518616.2838396, "req": "f_half_steady-0003", "event": "first_byte"}
+{"t": 1518616.4808575, "req": "f_half_steady-0003", "event": "end", "status": "answered"}
+{"t": 1518681.9510788, "req": "f_half_steady-0004", "event": "arrive", "sched": 230.12112210015766, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1518690.36619, "req": "f_half_steady-0004", "event": "first_byte"}
+{"t": 1518690.3866965, "req": "f_half_steady-0004", "event": "end", "status": "answered"}
+{"t": 1518703.9593331, "req": "f_half_steady-0005", "event": "arrive", "sched": 252.1293756000232, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1518712.7545461, "req": "f_half_steady-0005", "event": "first_byte"}
+{"t": 1518712.7676368, "req": "f_half_steady-0005", "event": "end", "status": "answered"}
+{"t": 1518731.7087563, "req": "f_half_steady-0006", "event": "arrive", "sched": 279.8788015001919, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1518733.7981264, "req": "f_half_steady-0007", "event": "arrive", "sched": 281.9681713001337, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1518734.8974054, "req": "f_half_steady-0007", "event": "first_byte"}
+{"t": 1518734.9206811, "req": "f_half_steady-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1518749.6158643, "req": "f_half_steady-0006", "event": "first_byte"}
+{"t": 1518749.7407367, "req": "f_half_steady-0006", "event": "end", "status": "extractive_overload"}
+{"t": 1518770.130143, "req": "f_half_steady-0008", "event": "arrive", "sched": 318.300187200075, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1518774.4905099, "req": "f_half_steady-0008", "event": "first_byte"}
+{"t": 1518774.7019186, "req": "f_half_steady-0008", "event": "end", "status": "answered"}
+{"t": 1518776.8905589, "req": "f_half_steady-0009", "event": "arrive", "sched": 325.0606011999771, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1518777.6897528, "req": "f_half_steady-0010", "event": "arrive", "sched": 325.8597957000602, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1518779.8923821, "req": "f_half_steady-0009", "event": "first_byte"}
+{"t": 1518780.2121233, "req": "f_half_steady-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1518780.4026004, "req": "f_half_steady-0010", "event": "first_byte"}
+{"t": 1518780.5521276, "req": "f_half_steady-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1518816.54043, "req": "f_half_steady-0011", "event": "arrive", "sched": 364.71047410019673, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1518827.2806726, "req": "f_half_steady-0012", "event": "arrive", "sched": 375.45071800006554, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1518833.7232982, "req": "f_half_steady-0011", "event": "first_byte"}
+{"t": 1518834.16757, "req": "f_half_steady-0011", "event": "end", "status": "extractive_overload"}
+{"t": 1518836.6904177, "req": "f_half_steady-0012", "event": "first_byte"}
+{"t": 1518836.9248901, "req": "f_half_steady-0012", "event": "end", "status": "answered"}
+{"t": 1518851.5683621, "req": "f_half_steady-0013", "event": "arrive", "sched": 399.73840739997104, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1518856.6352093, "req": "f_half_steady-0013", "event": "first_byte"}
+{"t": 1518856.9338331, "req": "f_half_steady-0013", "event": "end", "status": "answered"}

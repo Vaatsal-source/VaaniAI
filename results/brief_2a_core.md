@@ -1,0 +1,15 @@
+| Scenario                                    | Real or stand-in   | Requests sent   | Duration (s)   | Offered rate (per min)   | First token p50 / p95 / p99 (ms)   |
+|:--------------------------------------------|:-------------------|:----------------|:---------------|:-------------------------|:-----------------------------------|
+| steady_free_tier                            | stand-in           | 19              | 478.7          | 2.4                      | 2233.0 / 13717.5 / 14308.9         |
+| burst_free_tier                             | stand-in           | 20              | 4.9            | 250.0                    | 162.4 / 1965.7 / 3096.2            |
+| overload_free_tier                          | stand-in           | 30              | 159.5          | 11.4                     | 1270.2 / 7236.7 / 8760.0           |
+| steady_per_minute_limits_halved             | stand-in           | 14              | 320.1          | 2.7                      | 6741.0 / 17436.4 / 17813.0         |
+| burst_per_minute_limits_halved              | stand-in           | 20              | 4.8            | 250.1                    | 17.1 / 683.3 / 2934.3              |
+| steady_10x_limits                           | stand-in           | 82              | 228.8          | 21.6                     | 1293.7 / 4396.4 / 8437.6           |
+| burst_10x_limits                            | stand-in           | 150             | 16.0           | 933.8                    | 58.0 / 5373.8 / 9997.1             |
+| overload_10x_limits                         | stand-in           | 248             | 238.6          | 63.5                     | 3419.0 / 7881.1 / 11088.2          |
+| daily_budget_exhausted_limiter_learns       | stand-in           | 54              | 138.0          | 23.5                     | 37.1 / 2542.4 / 10149.2            |
+| daily_budget_exhausted_second_provider      | stand-in           | 54              | 138.0          | 23.5                     | 1190.2 / 3882.7 / 9309.5           |
+| steady_real                                 | real               | 3               | 19.4           | 10.7                     | 2499.0 / 2797.1 / 2823.6           |
+| burst_real                                  | real               | 40              | 17.8           | 165.9                    | 39.1 / 17092.3 / 18012.7           |
+| daily_budget_exhausted_real_second_provider | real               | 4               | 39.6           | 9.6                      | 2307.0 / 12737.0 / 14158.8         |

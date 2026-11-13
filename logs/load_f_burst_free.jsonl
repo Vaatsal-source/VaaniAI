@@ -1,0 +1,61 @@
+{"event": "meta", "args": {"shape": "burst", "base": "http://127.0.0.1:8110", "rate": 0.03, "duration": 120, "n": 20, "window": 5.0, "patience": 20.0, "seed": 1234, "tag": "f_burst_free", "drain": 0}, "n": 20, "perf0": 1484913.3021947}
+{"t": 1484913.7330356, "req": "f_burst_free-0000", "event": "arrive", "sched": 0.05008900002576411, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1484913.7968362, "req": "f_burst_free-0001", "event": "arrive", "sched": 0.11389199993573129, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484913.8413808, "req": "f_burst_free-0002", "event": "arrive", "sched": 0.15843500010669231, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1484914.1203233, "req": "f_burst_free-0003", "event": "arrive", "sched": 0.4373780000023544, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484914.2591538, "req": "f_burst_free-0004", "event": "arrive", "sched": 0.57620789995417, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1484914.2970555, "req": "f_burst_free-0004", "event": "first_byte"}
+{"t": 1484914.3021205, "req": "f_burst_free-0004", "event": "end", "status": "extractive_overload"}
+{"t": 1484914.4320656, "req": "f_burst_free-0005", "event": "arrive", "sched": 0.7491188000421971, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484914.4599894, "req": "f_burst_free-0005", "event": "first_byte"}
+{"t": 1484914.4662366, "req": "f_burst_free-0005", "event": "end", "status": "extractive_overload"}
+{"t": 1484914.6180011, "req": "f_burst_free-0006", "event": "arrive", "sched": 0.9350584000349045, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1484914.6352103, "req": "f_burst_free-0006", "event": "first_byte"}
+{"t": 1484914.6358315, "req": "f_burst_free-0006", "event": "end", "status": "shed"}
+{"t": 1484914.7548443, "req": "f_burst_free-0003", "event": "first_byte"}
+{"t": 1484914.7583688, "req": "f_burst_free-0003", "event": "end", "status": "answered"}
+{"t": 1484914.8835575, "req": "f_burst_free-0007", "event": "arrive", "sched": 1.2006123000755906, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1484914.9184219, "req": "f_burst_free-0007", "event": "first_byte"}
+{"t": 1484914.9195636, "req": "f_burst_free-0007", "event": "end", "status": "extractive_overload"}
+{"t": 1484915.3359434, "req": "f_burst_free-0000", "event": "first_byte"}
+{"t": 1484915.3378093, "req": "f_burst_free-0000", "event": "end", "status": "answered"}
+{"t": 1484915.4235683, "req": "f_burst_free-0008", "event": "arrive", "sched": 1.7406232000794262, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484915.6090677, "req": "f_burst_free-0008", "event": "first_byte"}
+{"t": 1484915.6109785, "req": "f_burst_free-0008", "event": "end", "status": "extractive_overload"}
+{"t": 1484915.6881371, "req": "f_burst_free-0001", "event": "first_byte"}
+{"t": 1484915.6901177, "req": "f_burst_free-0001", "event": "end", "status": "answered"}
+{"t": 1484915.88743, "req": "f_burst_free-0009", "event": "arrive", "sched": 2.204488000134006, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1484915.9047335, "req": "f_burst_free-0009", "event": "first_byte"}
+{"t": 1484915.9110257, "req": "f_burst_free-0009", "event": "end", "status": "extractive_overload"}
+{"t": 1484916.1207876, "req": "f_burst_free-0010", "event": "arrive", "sched": 2.4378406000323594, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1484916.1674853, "req": "f_burst_free-0010", "event": "first_byte"}
+{"t": 1484916.1750003, "req": "f_burst_free-0010", "event": "end", "status": "extractive_overload"}
+{"t": 1484916.6502193, "req": "f_burst_free-0011", "event": "arrive", "sched": 2.967274700058624, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1484916.7734145, "req": "f_burst_free-0012", "event": "arrive", "sched": 3.0904683999251574, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1484916.7898322, "req": "f_burst_free-0013", "event": "arrive", "sched": 3.106887700036168, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1484916.8071031, "req": "f_burst_free-0011", "event": "first_byte"}
+{"t": 1484916.8205683, "req": "f_burst_free-0011", "event": "end", "status": "extractive_overload"}
+{"t": 1484916.95264, "req": "f_burst_free-0012", "event": "first_byte"}
+{"t": 1484916.9576814, "req": "f_burst_free-0012", "event": "end", "status": "extractive_overload"}
+{"t": 1484916.9578754, "req": "f_burst_free-0013", "event": "first_byte"}
+{"t": 1484916.9857932, "req": "f_burst_free-0013", "event": "end", "status": "extractive_overload"}
+{"t": 1484917.0602397, "req": "f_burst_free-0014", "event": "arrive", "sched": 3.377295100130141, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1484917.2201349, "req": "f_burst_free-0002", "event": "first_byte"}
+{"t": 1484917.2735083, "req": "f_burst_free-0002", "event": "end", "status": "answered"}
+{"t": 1484917.537234, "req": "f_burst_free-0015", "event": "arrive", "sched": 3.8542883000336587, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1484917.7248456, "req": "f_burst_free-0016", "event": "arrive", "sched": 4.041899400064722, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1484918.0762802, "req": "f_burst_free-0014", "event": "first_byte"}
+{"t": 1484918.102251, "req": "f_burst_free-0014", "event": "end", "status": "extractive_overload"}
+{"t": 1484918.1324722, "req": "f_burst_free-0015", "event": "first_byte"}
+{"t": 1484918.1427963, "req": "f_burst_free-0015", "event": "end", "status": "extractive_overload"}
+{"t": 1484918.1483736, "req": "f_burst_free-0016", "event": "first_byte"}
+{"t": 1484918.1625251, "req": "f_burst_free-0016", "event": "end", "status": "extractive_overload"}
+{"t": 1484918.2520807, "req": "f_burst_free-0017", "event": "arrive", "sched": 4.569135500118136, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1484918.281365, "req": "f_burst_free-0017", "event": "first_byte"}
+{"t": 1484918.2876915, "req": "f_burst_free-0017", "event": "end", "status": "extractive_overload"}
+{"t": 1484918.3835491, "req": "f_burst_free-0018", "event": "arrive", "sched": 4.700601699994877, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1484918.4414004, "req": "f_burst_free-0018", "event": "first_byte"}
+{"t": 1484918.4599123, "req": "f_burst_free-0018", "event": "end", "status": "extractive_overload"}
+{"t": 1484918.5325644, "req": "f_burst_free-0019", "event": "arrive", "sched": 4.849616999970749, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1484918.5687066, "req": "f_burst_free-0019", "event": "first_byte"}
+{"t": 1484918.586219, "req": "f_burst_free-0019", "event": "end", "status": "extractive_overload"}

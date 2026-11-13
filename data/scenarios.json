@@ -1,0 +1,362 @@
+{
+ "_about": "Which logs become which scenario in results.csv. 'load' = client + server log pair from scripts/run_load.py; 'eval' = one row per question from scripts/run_eval.py. setting = the retrieval setting in force. System = which code produced it: round1 = the first version, final = the submitted system (round 2). Runs that were invalid or contaminated (see README appendix) are deliberately not listed. The final batch (tags f_*) was run with the measured processes at high priority on Windows: the first attempt, without it, had laptop freezes of up to 9 s from the machine's background apps and is kept in logs/run2_noisy_laptop/.",
+ "retrieval_settings": {
+  "v1": "bm25 1200/200 top5 (round-1 chunker)",
+  "v2": "bm25 1200/200 top5 + gated table row (round-2 chunker)"
+ },
+ "load": [
+  {
+   "scenario": "steady_free_tier",
+   "tag": "f_steady_free",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_free_tier",
+   "tag": "f_burst_free",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "overload_free_tier",
+   "tag": "f_overload_free",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "steady_per_minute_limits_halved",
+   "tag": "f_half_steady",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_per_minute_limits_halved",
+   "tag": "f_half_burst",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "steady_10x_limits",
+   "tag": "f_steady_t10",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_10x_limits",
+   "tag": "f_burst_t10",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "overload_10x_limits",
+   "tag": "f_overload_t10",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "daily_budget_exhausted_limiter_told",
+   "tag": "r2_daily_known",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "daily_budget_exhausted_limiter_learns",
+   "tag": "r2_daily_learned",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "daily_budget_exhausted_second_provider",
+   "tag": "r2_daily_failover",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_10x_cache_on",
+   "tag": "r2_cache_burst_t10_on",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_free_tier_cache_on",
+   "tag": "r2_cache_burst_free_on",
+   "source": "stand-in",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "steady_free_tier_round1",
+   "tag": "s_steady_free",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "burst_free_tier_round1",
+   "tag": "s_burst_free",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "overload_free_tier_round1",
+   "tag": "s_overload_free",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "steady_10x_limits_round1",
+   "tag": "s_steady_t10",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "burst_10x_limits_round1",
+   "tag": "s_burst_t10",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "overload_10x_limits_round1",
+   "tag": "s_overload_t10",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "daily_budget_exhausted_limiter_told_round1",
+   "tag": "s_daily_known",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "daily_budget_exhausted_limiter_learns_round1",
+   "tag": "s_daily_learned",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_80pct_load_none",
+   "tag": "s_retry_none",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_80pct_load_budgeted",
+   "tag": "s_retry_budget",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_80pct_load_unbounded",
+   "tag": "s_retry_unbounded",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_110pct_load_none",
+   "tag": "s_retrysat_none",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_110pct_load_budgeted",
+   "tag": "s_retrysat_budget",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "retries_110pct_load_unbounded",
+   "tag": "s_retrysat_unbounded",
+   "source": "stand-in",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "steady_real_round1",
+   "tag": "real_steady",
+   "source": "real",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "steady_real_round1",
+   "tag": "real_steady2",
+   "source": "real",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "steady_real",
+   "tag": "real_steady_r2",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real_round1",
+   "tag": "real_burst",
+   "source": "real",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "burst_real",
+   "tag": "real_burst_r2",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real",
+   "tag": "real_burst_r2b",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real",
+   "tag": "real_burst_r2c",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real",
+   "tag": "cmp_r2code_a",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real",
+   "tag": "cmp_r2code_b",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  },
+  {
+   "scenario": "burst_real_round1",
+   "tag": "cmp_r1code_a",
+   "source": "real",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "burst_real_round1",
+   "tag": "cmp_r1code_b",
+   "source": "real",
+   "setting": "v1",
+   "system": "round1"
+  },
+  {
+   "scenario": "daily_budget_exhausted_real_second_provider",
+   "tag": "real_failover_r2",
+   "source": "real",
+   "setting": "v2",
+   "system": "final"
+  }
+ ],
+ "eval": [
+  {
+   "scenario": "quality_easy20_gpt-oss-120b",
+   "tag": "q_bm25_1200_k5",
+   "source": "real",
+   "setting": "A bm25 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_easy20_gpt-oss-120b",
+   "tag": "r_B_dense_1200_k5_easy",
+   "source": "real",
+   "setting": "B dense 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_easy20_gpt-oss-120b",
+   "tag": "r_C_denserr_1200_k5_easy",
+   "source": "real",
+   "setting": "C dense+rerank 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-120b",
+   "tag": "r_A_bm25_1200_k5_hard",
+   "source": "real",
+   "setting": "A bm25 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-20b",
+   "tag": "r20_A_bm25_1200_k5_hard",
+   "source": "real",
+   "setting": "A bm25 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-20b",
+   "tag": "r20_B_dense_1200_k5_hard",
+   "source": "real",
+   "setting": "B dense 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-20b",
+   "tag": "r20_C_denserr_1200_k5_hard",
+   "source": "real",
+   "setting": "C dense+rerank 1200/200 k5 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-20b",
+   "tag": "r20_D_bm25_600_k8_hard",
+   "source": "real",
+   "setting": "D bm25 600/100 k8 (v1)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-20b",
+   "tag": "r20_E_bm25_2400_k3_hard",
+   "source": "real",
+   "setting": "E bm25 2400/300 k3 (v1)"
+  },
+  {
+   "scenario": "quality_hard25_gpt-oss-20b",
+   "tag": "r2_hard2_v2_20B_run1",
+   "source": "real",
+   "setting": "G bm25 1200/200 k5 + gated table row (v2)"
+  },
+  {
+   "scenario": "quality_hard25_gpt-oss-120b",
+   "tag": "r2_hard2_v2_120B_run1",
+   "source": "real",
+   "setting": "G bm25 1200/200 k5 + gated table row (v2)"
+  },
+  {
+   "scenario": "quality_hard9_gpt-oss-120b",
+   "tag": "r2_hard_v2_120B_run1",
+   "source": "real",
+   "setting": "G bm25 1200/200 k5 + gated table row (v2)"
+  },
+  {
+   "scenario": "quality_hard25_gemini-3.1-flash-lite",
+   "tag": "r2_hard2_gemini_run1",
+   "source": "real",
+   "setting": "G bm25 1200/200 k5 + gated table row (v2)"
+  }
+ ]
+}

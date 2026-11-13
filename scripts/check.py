@@ -40,9 +40,10 @@ def quality_guard():
 
 
 def tables_match():
-    files = [ROOT / "results" / "tables.md", ROOT / "README.md"]
+    files = [ROOT / "results" / "tables.md", ROOT / "README.md", ROOT / "results.csv", ROOT / "results" / "brief_tables.md", ROOT / "WRITEUP.md"]
     before = [f.read_bytes() if f.exists() else b"" for f in files]
     run("scripts/make_tables.py"); run("scripts/build_readme.py")
+    run("scripts/export_results.py"); run("scripts/tables_from_csv.py"); run("scripts/build_writeup.py")
     changed = [f.name for f, b in zip(files, before) if f.read_bytes() != b]
     if changed:
         raise RuntimeError(f"{', '.join(changed)} did not match what logs/ and README.template.md produce (they have now been regenerated): "

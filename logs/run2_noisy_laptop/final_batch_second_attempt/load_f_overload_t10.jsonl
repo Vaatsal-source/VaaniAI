@@ -1,0 +1,739 @@
+{"event": "meta", "args": {"shape": "overload", "base": "http://127.0.0.1:8110", "rate": 1.0, "duration": 240.0, "n": 20, "window": 5, "patience": 20.0, "seed": 1234, "tag": "f_overload_t10", "drain": 0}, "n": 248, "perf0": 1516787.7115351}
+{"t": 1516791.3626929, "req": "f_overload_t10-0000", "event": "arrive", "sched": 3.3983191000297666, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516791.9546475, "req": "f_overload_t10-0001", "event": "arrive", "sched": 3.9902725000865757, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516791.955643, "req": "f_overload_t10-0002", "event": "arrive", "sched": 3.991272000130266, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516792.6349065, "req": "f_overload_t10-0000", "event": "first_byte"}
+{"t": 1516792.638999, "req": "f_overload_t10-0000", "event": "end", "status": "answered"}
+{"t": 1516793.2724932, "req": "f_overload_t10-0001", "event": "first_byte"}
+{"t": 1516793.2741679, "req": "f_overload_t10-0001", "event": "end", "status": "answered"}
+{"t": 1516793.2998357, "req": "f_overload_t10-0002", "event": "first_byte"}
+{"t": 1516793.3016813, "req": "f_overload_t10-0002", "event": "end", "status": "answered"}
+{"t": 1516794.3702878, "req": "f_overload_t10-0003", "event": "arrive", "sched": 6.4059133001137525, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516796.5813219, "req": "f_overload_t10-0003", "event": "first_byte"}
+{"t": 1516796.5844843, "req": "f_overload_t10-0003", "event": "end", "status": "answered"}
+{"t": 1516797.1751234, "req": "f_overload_t10-0004", "event": "arrive", "sched": 9.21075060009025, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516798.049217, "req": "f_overload_t10-0005", "event": "arrive", "sched": 10.084843600168824, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516799.1516631, "req": "f_overload_t10-0006", "event": "arrive", "sched": 11.187292000046, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516799.1533337, "req": "f_overload_t10-0004", "event": "first_byte"}
+{"t": 1516799.156683, "req": "f_overload_t10-0004", "event": "end", "status": "answered"}
+{"t": 1516799.2506947, "req": "f_overload_t10-0007", "event": "arrive", "sched": 11.286322100088, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516800.5158324, "req": "f_overload_t10-0006", "event": "first_byte"}
+{"t": 1516800.5173982, "req": "f_overload_t10-0006", "event": "end", "status": "answered"}
+{"t": 1516800.7129549, "req": "f_overload_t10-0008", "event": "arrive", "sched": 12.748580400133505, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516800.979732, "req": "f_overload_t10-0009", "event": "arrive", "sched": 13.0153565001674, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516801.0109723, "req": "f_overload_t10-0010", "event": "arrive", "sched": 13.046598500106484, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516801.0496514, "req": "f_overload_t10-0007", "event": "first_byte"}
+{"t": 1516801.0524706, "req": "f_overload_t10-0007", "event": "end", "status": "answered"}
+{"t": 1516801.6928478, "req": "f_overload_t10-0009", "event": "first_byte"}
+{"t": 1516801.6944214, "req": "f_overload_t10-0009", "event": "end", "status": "answered"}
+{"t": 1516801.9903602, "req": "f_overload_t10-0008", "event": "first_byte"}
+{"t": 1516801.9930717, "req": "f_overload_t10-0008", "event": "end", "status": "answered"}
+{"t": 1516802.5523943, "req": "f_overload_t10-0011", "event": "arrive", "sched": 14.588022100040689, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516802.7317395, "req": "f_overload_t10-0005", "event": "first_byte"}
+{"t": 1516802.7348803, "req": "f_overload_t10-0005", "event": "end", "status": "answered"}
+{"t": 1516802.99214, "req": "f_overload_t10-0012", "event": "arrive", "sched": 15.027766400016844, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516803.8598562, "req": "f_overload_t10-0010", "event": "first_byte"}
+{"t": 1516803.8619405, "req": "f_overload_t10-0010", "event": "end", "status": "answered"}
+{"t": 1516803.9594717, "req": "f_overload_t10-0013", "event": "arrive", "sched": 15.995096200145781, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516804.6392037, "req": "f_overload_t10-0011", "event": "first_byte"}
+{"t": 1516804.6410308, "req": "f_overload_t10-0011", "event": "end", "status": "answered"}
+{"t": 1516804.8878803, "req": "f_overload_t10-0012", "event": "first_byte"}
+{"t": 1516804.8901052, "req": "f_overload_t10-0012", "event": "end", "status": "answered"}
+{"t": 1516804.9267619, "req": "f_overload_t10-0014", "event": "arrive", "sched": 16.96238710009493, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516805.0827999, "req": "f_overload_t10-0015", "event": "arrive", "sched": 17.11842430010438, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516805.2839127, "req": "f_overload_t10-0016", "event": "arrive", "sched": 17.319539500167593, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516805.3753388, "req": "f_overload_t10-0013", "event": "first_byte"}
+{"t": 1516805.3771973, "req": "f_overload_t10-0013", "event": "end", "status": "answered"}
+{"t": 1516805.4080194, "req": "f_overload_t10-0017", "event": "arrive", "sched": 17.44364650011994, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516805.4095737, "req": "f_overload_t10-0018", "event": "arrive", "sched": 17.445201100083068, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516805.961533, "req": "f_overload_t10-0015", "event": "first_byte"}
+{"t": 1516805.9638769, "req": "f_overload_t10-0015", "event": "end", "status": "answered"}
+{"t": 1516806.0872935, "req": "f_overload_t10-0019", "event": "arrive", "sched": 18.122918399982154, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516806.4183273, "req": "f_overload_t10-0017", "event": "first_byte"}
+{"t": 1516806.4201288, "req": "f_overload_t10-0017", "event": "end", "status": "answered"}
+{"t": 1516806.6008671, "req": "f_overload_t10-0018", "event": "first_byte"}
+{"t": 1516806.6042552, "req": "f_overload_t10-0018", "event": "end", "status": "answered"}
+{"t": 1516807.2552701, "req": "f_overload_t10-0019", "event": "first_byte"}
+{"t": 1516807.258251, "req": "f_overload_t10-0019", "event": "end", "status": "answered"}
+{"t": 1516807.8208644, "req": "f_overload_t10-0016", "event": "first_byte"}
+{"t": 1516807.8230643, "req": "f_overload_t10-0016", "event": "end", "status": "answered"}
+{"t": 1516809.433285, "req": "f_overload_t10-0020", "event": "arrive", "sched": 21.46891070017591, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516809.5115244, "req": "f_overload_t10-0021", "event": "arrive", "sched": 21.54715030011721, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516810.2817776, "req": "f_overload_t10-0022", "event": "arrive", "sched": 22.317402600077912, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516810.8975289, "req": "f_overload_t10-0023", "event": "arrive", "sched": 22.93315410008654, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516811.1166342, "req": "f_overload_t10-0020", "event": "first_byte"}
+{"t": 1516811.1196367, "req": "f_overload_t10-0020", "event": "end", "status": "answered"}
+{"t": 1516811.836531, "req": "f_overload_t10-0024", "event": "arrive", "sched": 23.87215630011633, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516811.8469325, "req": "f_overload_t10-0021", "event": "first_byte"}
+{"t": 1516811.8488586, "req": "f_overload_t10-0021", "event": "end", "status": "answered"}
+{"t": 1516811.9165274, "req": "f_overload_t10-0025", "event": "arrive", "sched": 23.9521525001619, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516812.3532757, "req": "f_overload_t10-0022", "event": "first_byte"}
+{"t": 1516812.3556419, "req": "f_overload_t10-0022", "event": "end", "status": "answered"}
+{"t": 1516812.7873064, "req": "f_overload_t10-0026", "event": "arrive", "sched": 24.822930900147185, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516812.8778987, "req": "f_overload_t10-0024", "event": "first_byte"}
+{"t": 1516812.8812777, "req": "f_overload_t10-0024", "event": "end", "status": "answered"}
+{"t": 1516813.1118075, "req": "f_overload_t10-0027", "event": "arrive", "sched": 25.147432800149545, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516813.5147162, "req": "f_overload_t10-0023", "event": "first_byte"}
+{"t": 1516813.5185929, "req": "f_overload_t10-0023", "event": "end", "status": "answered"}
+{"t": 1516813.9093988, "req": "f_overload_t10-0028", "event": "arrive", "sched": 25.94502600003034, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516814.9540454, "req": "f_overload_t10-0029", "event": "arrive", "sched": 26.989670700160787, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516814.969394, "req": "f_overload_t10-0027", "event": "first_byte"}
+{"t": 1516814.9710611, "req": "f_overload_t10-0027", "event": "end", "status": "answered"}
+{"t": 1516815.4524441, "req": "f_overload_t10-0028", "event": "first_byte"}
+{"t": 1516815.4560339, "req": "f_overload_t10-0028", "event": "end", "status": "answered"}
+{"t": 1516815.5945861, "req": "f_overload_t10-0030", "event": "arrive", "sched": 27.630210400093347, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516815.6412774, "req": "f_overload_t10-0029", "event": "first_byte"}
+{"t": 1516815.6450845, "req": "f_overload_t10-0029", "event": "end", "status": "answered"}
+{"t": 1516816.0306048, "req": "f_overload_t10-0031", "event": "arrive", "sched": 28.06623150012456, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516816.3271305, "req": "f_overload_t10-0032", "event": "arrive", "sched": 28.36275570001453, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516816.8381838, "req": "f_overload_t10-0031", "event": "first_byte"}
+{"t": 1516816.8420185, "req": "f_overload_t10-0031", "event": "end", "status": "answered"}
+{"t": 1516817.1156501, "req": "f_overload_t10-0030", "event": "first_byte"}
+{"t": 1516817.117674, "req": "f_overload_t10-0030", "event": "end", "status": "answered"}
+{"t": 1516817.4235377, "req": "f_overload_t10-0032", "event": "first_byte"}
+{"t": 1516817.4260437, "req": "f_overload_t10-0032", "event": "end", "status": "answered"}
+{"t": 1516817.7829661, "req": "f_overload_t10-0025", "event": "first_byte"}
+{"t": 1516817.7868641, "req": "f_overload_t10-0025", "event": "end", "status": "answered"}
+{"t": 1516818.2056662, "req": "f_overload_t10-0014", "event": "first_byte"}
+{"t": 1516818.207594, "req": "f_overload_t10-0014", "event": "end", "status": "answered"}
+{"t": 1516819.0334028, "req": "f_overload_t10-0033", "event": "arrive", "sched": 31.069027699995786, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516819.5402304, "req": "f_overload_t10-0026", "event": "first_byte"}
+{"t": 1516819.5438486, "req": "f_overload_t10-0026", "event": "end", "status": "answered"}
+{"t": 1516819.6360406, "req": "f_overload_t10-0034", "event": "arrive", "sched": 31.671664400026202, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516819.7867511, "req": "f_overload_t10-0033", "event": "first_byte"}
+{"t": 1516819.7901917, "req": "f_overload_t10-0033", "event": "end", "status": "answered"}
+{"t": 1516820.3973697, "req": "f_overload_t10-0035", "event": "arrive", "sched": 32.432996600167826, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516820.3988754, "req": "f_overload_t10-0036", "event": "arrive", "sched": 32.434503900120035, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1516821.1402396, "req": "f_overload_t10-0037", "event": "arrive", "sched": 33.17586660012603, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516821.1409951, "req": "f_overload_t10-0038", "event": "arrive", "sched": 33.17662449995987, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516821.2094022, "req": "f_overload_t10-0035", "event": "first_byte"}
+{"t": 1516821.2113161, "req": "f_overload_t10-0035", "event": "end", "status": "answered"}
+{"t": 1516821.2787308, "req": "f_overload_t10-0039", "event": "arrive", "sched": 33.31435750005767, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516821.9359562, "req": "f_overload_t10-0040", "event": "arrive", "sched": 33.971580900019035, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516821.9589379, "req": "f_overload_t10-0039", "event": "first_byte"}
+{"t": 1516821.9621628, "req": "f_overload_t10-0039", "event": "end", "status": "answered"}
+{"t": 1516822.0005062, "req": "f_overload_t10-0037", "event": "first_byte"}
+{"t": 1516822.0022897, "req": "f_overload_t10-0037", "event": "end", "status": "answered"}
+{"t": 1516822.0023823, "req": "f_overload_t10-0034", "event": "first_byte"}
+{"t": 1516822.0039767, "req": "f_overload_t10-0034", "event": "end", "status": "answered"}
+{"t": 1516822.3872545, "req": "f_overload_t10-0041", "event": "arrive", "sched": 34.42288179998286, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516822.4659761, "req": "f_overload_t10-0042", "event": "arrive", "sched": 34.50160329998471, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1516822.5056738, "req": "f_overload_t10-0038", "event": "first_byte"}
+{"t": 1516822.5094004, "req": "f_overload_t10-0038", "event": "end", "status": "answered"}
+{"t": 1516822.5491133, "req": "f_overload_t10-0042", "event": "first_byte"}
+{"t": 1516822.5510193, "req": "f_overload_t10-0042", "event": "end", "status": "extractive_overload"}
+{"t": 1516822.8305698, "req": "f_overload_t10-0040", "event": "first_byte"}
+{"t": 1516822.8322736, "req": "f_overload_t10-0040", "event": "end", "status": "answered"}
+{"t": 1516822.9521573, "req": "f_overload_t10-0041", "event": "first_byte"}
+{"t": 1516822.9532443, "req": "f_overload_t10-0041", "event": "end", "status": "extractive_overload"}
+{"t": 1516823.3395306, "req": "f_overload_t10-0043", "event": "arrive", "sched": 35.375155200017616, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516823.355484, "req": "f_overload_t10-0043", "event": "first_byte"}
+{"t": 1516823.3583639, "req": "f_overload_t10-0043", "event": "end", "status": "extractive_overload"}
+{"t": 1516823.525168, "req": "f_overload_t10-0044", "event": "arrive", "sched": 35.560793300159276, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516823.5395085, "req": "f_overload_t10-0044", "event": "first_byte"}
+{"t": 1516823.5431535, "req": "f_overload_t10-0044", "event": "end", "status": "extractive_overload"}
+{"t": 1516824.3403327, "req": "f_overload_t10-0045", "event": "arrive", "sched": 36.375959699973464, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516824.3487731, "req": "f_overload_t10-0045", "event": "first_byte"}
+{"t": 1516824.3505035, "req": "f_overload_t10-0045", "event": "end", "status": "extractive_overload"}
+{"t": 1516824.494807, "req": "f_overload_t10-0046", "event": "arrive", "sched": 36.530434000073, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516824.50464, "req": "f_overload_t10-0046", "event": "first_byte"}
+{"t": 1516824.5084022, "req": "f_overload_t10-0046", "event": "end", "status": "extractive_overload"}
+{"t": 1516827.2696581, "req": "f_overload_t10-0047", "event": "arrive", "sched": 39.30528170010075, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516827.2769299, "req": "f_overload_t10-0047", "event": "first_byte"}
+{"t": 1516827.2789137, "req": "f_overload_t10-0047", "event": "end", "status": "extractive_overload"}
+{"t": 1516827.5305866, "req": "f_overload_t10-0036", "event": "first_byte"}
+{"t": 1516827.5330951, "req": "f_overload_t10-0036", "event": "end", "status": "extractive_overload"}
+{"t": 1516828.7314692, "req": "f_overload_t10-0048", "event": "arrive", "sched": 40.76709600002505, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516828.739994, "req": "f_overload_t10-0048", "event": "first_byte"}
+{"t": 1516828.7412274, "req": "f_overload_t10-0048", "event": "end", "status": "extractive_overload"}
+{"t": 1516831.8779782, "req": "f_overload_t10-0049", "event": "arrive", "sched": 43.913605000125244, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516831.8865143, "req": "f_overload_t10-0049", "event": "first_byte"}
+{"t": 1516831.8885022, "req": "f_overload_t10-0049", "event": "end", "status": "extractive_overload"}
+{"t": 1516832.0331816, "req": "f_overload_t10-0050", "event": "arrive", "sched": 44.0688088000752, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516832.0426792, "req": "f_overload_t10-0050", "event": "first_byte"}
+{"t": 1516832.0442678, "req": "f_overload_t10-0050", "event": "end", "status": "extractive_overload"}
+{"t": 1516832.3919112, "req": "f_overload_t10-0051", "event": "arrive", "sched": 44.427537200041115, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1516832.4002706, "req": "f_overload_t10-0051", "event": "first_byte"}
+{"t": 1516832.4039217, "req": "f_overload_t10-0051", "event": "end", "status": "extractive_overload"}
+{"t": 1516832.4393294, "req": "f_overload_t10-0052", "event": "arrive", "sched": 44.47495650011115, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516832.447822, "req": "f_overload_t10-0052", "event": "first_byte"}
+{"t": 1516832.4493549, "req": "f_overload_t10-0052", "event": "end", "status": "extractive_overload"}
+{"t": 1516832.7506778, "req": "f_overload_t10-0053", "event": "arrive", "sched": 44.78630520007573, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516832.7611566, "req": "f_overload_t10-0053", "event": "first_byte"}
+{"t": 1516832.762733, "req": "f_overload_t10-0053", "event": "end", "status": "extractive_overload"}
+{"t": 1516834.3982884, "req": "f_overload_t10-0054", "event": "arrive", "sched": 46.433915900066495, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516834.4055662, "req": "f_overload_t10-0054", "event": "first_byte"}
+{"t": 1516834.4072531, "req": "f_overload_t10-0054", "event": "end", "status": "extractive_overload"}
+{"t": 1516834.6160513, "req": "f_overload_t10-0055", "event": "arrive", "sched": 46.65167840011418, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516834.6249611, "req": "f_overload_t10-0055", "event": "first_byte"}
+{"t": 1516834.6261149, "req": "f_overload_t10-0055", "event": "end", "status": "shed"}
+{"t": 1516834.7858383, "req": "f_overload_t10-0056", "event": "arrive", "sched": 46.821463600033894, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516834.7946309, "req": "f_overload_t10-0056", "event": "first_byte"}
+{"t": 1516834.7952393, "req": "f_overload_t10-0056", "event": "end", "status": "shed"}
+{"t": 1516837.8832569, "req": "f_overload_t10-0057", "event": "arrive", "sched": 49.91887990012765, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516837.9043194, "req": "f_overload_t10-0057", "event": "first_byte"}
+{"t": 1516837.9081002, "req": "f_overload_t10-0057", "event": "end", "status": "extractive_overload"}
+{"t": 1516838.0498175, "req": "f_overload_t10-0058", "event": "arrive", "sched": 50.08544300007634, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516838.0631699, "req": "f_overload_t10-0058", "event": "first_byte"}
+{"t": 1516838.0679382, "req": "f_overload_t10-0058", "event": "end", "status": "extractive_overload"}
+{"t": 1516839.8093488, "req": "f_overload_t10-0059", "event": "arrive", "sched": 51.8449759001378, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516839.8188261, "req": "f_overload_t10-0059", "event": "first_byte"}
+{"t": 1516839.8211005, "req": "f_overload_t10-0059", "event": "end", "status": "extractive_overload"}
+{"t": 1516839.870875, "req": "f_overload_t10-0060", "event": "arrive", "sched": 51.906500700162724, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516839.8814526, "req": "f_overload_t10-0060", "event": "first_byte"}
+{"t": 1516839.8849645, "req": "f_overload_t10-0060", "event": "end", "status": "extractive_overload"}
+{"t": 1516840.3555144, "req": "f_overload_t10-0061", "event": "arrive", "sched": 52.391139399958774, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516840.3666439, "req": "f_overload_t10-0061", "event": "first_byte"}
+{"t": 1516840.3691559, "req": "f_overload_t10-0061", "event": "end", "status": "extractive_overload"}
+{"t": 1516840.7773456, "req": "f_overload_t10-0062", "event": "arrive", "sched": 52.81297320011072, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516840.7837312, "req": "f_overload_t10-0062", "event": "first_byte"}
+{"t": 1516840.7851211, "req": "f_overload_t10-0062", "event": "end", "status": "extractive_overload"}
+{"t": 1516841.2008419, "req": "f_overload_t10-0063", "event": "arrive", "sched": 53.23646669997834, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1516841.2189097, "req": "f_overload_t10-0063", "event": "first_byte"}
+{"t": 1516841.2218737, "req": "f_overload_t10-0063", "event": "end", "status": "extractive_overload"}
+{"t": 1516842.8983105, "req": "f_overload_t10-0064", "event": "arrive", "sched": 54.93393780011684, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516842.9081184, "req": "f_overload_t10-0064", "event": "first_byte"}
+{"t": 1516842.9097376, "req": "f_overload_t10-0064", "event": "end", "status": "extractive_overload"}
+{"t": 1516843.538182, "req": "f_overload_t10-0065", "event": "arrive", "sched": 55.57380930008367, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516843.5467314, "req": "f_overload_t10-0065", "event": "first_byte"}
+{"t": 1516843.5473854, "req": "f_overload_t10-0065", "event": "end", "status": "shed"}
+{"t": 1516845.0870692, "req": "f_overload_t10-0066", "event": "arrive", "sched": 57.12269530002959, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516845.0997352, "req": "f_overload_t10-0066", "event": "first_byte"}
+{"t": 1516845.1013746, "req": "f_overload_t10-0066", "event": "end", "status": "extractive_overload"}
+{"t": 1516845.7071973, "req": "f_overload_t10-0067", "event": "arrive", "sched": 57.74281950015575, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516845.7141886, "req": "f_overload_t10-0067", "event": "first_byte"}
+{"t": 1516845.7163204, "req": "f_overload_t10-0067", "event": "end", "status": "extractive_overload"}
+{"t": 1516847.4128928, "req": "f_overload_t10-0068", "event": "arrive", "sched": 59.448517499957234, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516849.5503835, "req": "f_overload_t10-0069", "event": "arrive", "sched": 61.586011100094765, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516850.128122, "req": "f_overload_t10-0070", "event": "arrive", "sched": 62.16374840005301, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1516851.6464936, "req": "f_overload_t10-0071", "event": "arrive", "sched": 63.682121200021356, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516852.5675301, "req": "f_overload_t10-0071", "event": "first_byte"}
+{"t": 1516852.5710711, "req": "f_overload_t10-0071", "event": "end", "status": "extractive_overload"}
+{"t": 1516852.9088341, "req": "f_overload_t10-0069", "event": "first_byte"}
+{"t": 1516852.9110739, "req": "f_overload_t10-0069", "event": "end", "status": "answered"}
+{"t": 1516853.3320254, "req": "f_overload_t10-0072", "event": "arrive", "sched": 65.36765130003914, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516853.4526834, "req": "f_overload_t10-0068", "event": "first_byte"}
+{"t": 1516853.4566427, "req": "f_overload_t10-0068", "event": "end", "status": "answered"}
+{"t": 1516853.6729139, "req": "f_overload_t10-0073", "event": "arrive", "sched": 65.70854130014777, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516853.8001861, "req": "f_overload_t10-0074", "event": "arrive", "sched": 65.8358136001043, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516854.0189786, "req": "f_overload_t10-0075", "event": "arrive", "sched": 66.05460590007715, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1516854.2636311, "req": "f_overload_t10-0070", "event": "first_byte"}
+{"t": 1516854.2667725, "req": "f_overload_t10-0070", "event": "end", "status": "answered"}
+{"t": 1516854.4408422, "req": "f_overload_t10-0075", "event": "first_byte"}
+{"t": 1516854.4425007, "req": "f_overload_t10-0075", "event": "end", "status": "answered"}
+{"t": 1516854.5839633, "req": "f_overload_t10-0076", "event": "arrive", "sched": 66.61959030013531, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516854.7298457, "req": "f_overload_t10-0077", "event": "arrive", "sched": 66.76547139999457, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516855.4712699, "req": "f_overload_t10-0078", "event": "arrive", "sched": 67.50689509999938, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516856.7494364, "req": "f_overload_t10-0073", "event": "first_byte"}
+{"t": 1516856.7515277, "req": "f_overload_t10-0073", "event": "end", "status": "answered"}
+{"t": 1516857.2161179, "req": "f_overload_t10-0079", "event": "arrive", "sched": 69.25174650014378, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516857.2186576, "req": "f_overload_t10-0076", "event": "first_byte"}
+{"t": 1516857.2227067, "req": "f_overload_t10-0076", "event": "end", "status": "answered"}
+{"t": 1516857.8905207, "req": "f_overload_t10-0080", "event": "arrive", "sched": 69.92614500015043, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516858.8524342, "req": "f_overload_t10-0078", "event": "first_byte"}
+{"t": 1516858.8559966, "req": "f_overload_t10-0078", "event": "end", "status": "extractive_overload"}
+{"t": 1516859.2224597, "req": "f_overload_t10-0074", "event": "first_byte"}
+{"t": 1516859.2240404, "req": "f_overload_t10-0074", "event": "end", "status": "answered"}
+{"t": 1516859.5999, "req": "f_overload_t10-0081", "event": "arrive", "sched": 71.63552480004728, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516860.681791, "req": "f_overload_t10-0082", "event": "arrive", "sched": 72.71741840010509, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516861.278419, "req": "f_overload_t10-0072", "event": "first_byte"}
+{"t": 1516861.2807769, "req": "f_overload_t10-0072", "event": "end", "status": "answered"}
+{"t": 1516861.4786935, "req": "f_overload_t10-0079", "event": "first_byte"}
+{"t": 1516861.4818655, "req": "f_overload_t10-0079", "event": "end", "status": "answered"}
+{"t": 1516861.702016, "req": "f_overload_t10-0083", "event": "arrive", "sched": 73.73764050006866, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516862.10583, "req": "f_overload_t10-0084", "event": "arrive", "sched": 74.14145430014469, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516862.2843703, "req": "f_overload_t10-0080", "event": "first_byte"}
+{"t": 1516862.2862871, "req": "f_overload_t10-0080", "event": "end", "status": "answered"}
+{"t": 1516862.5778426, "req": "f_overload_t10-0077", "event": "first_byte"}
+{"t": 1516862.5811218, "req": "f_overload_t10-0077", "event": "end", "status": "answered"}
+{"t": 1516863.3144443, "req": "f_overload_t10-0081", "event": "first_byte"}
+{"t": 1516863.3170166, "req": "f_overload_t10-0081", "event": "end", "status": "answered"}
+{"t": 1516863.3171197, "req": "f_overload_t10-0085", "event": "arrive", "sched": 75.35274920007214, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516864.4572882, "req": "f_overload_t10-0082", "event": "first_byte"}
+{"t": 1516864.4613047, "req": "f_overload_t10-0082", "event": "end", "status": "answered"}
+{"t": 1516865.0028026, "req": "f_overload_t10-0086", "event": "arrive", "sched": 77.03842970007099, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516865.1742951, "req": "f_overload_t10-0087", "event": "arrive", "sched": 77.20992269995622, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516865.1968224, "req": "f_overload_t10-0083", "event": "first_byte"}
+{"t": 1516865.1984529, "req": "f_overload_t10-0083", "event": "end", "status": "answered"}
+{"t": 1516866.2588045, "req": "f_overload_t10-0084", "event": "first_byte"}
+{"t": 1516866.2612074, "req": "f_overload_t10-0084", "event": "end", "status": "answered"}
+{"t": 1516867.39484, "req": "f_overload_t10-0085", "event": "first_byte"}
+{"t": 1516867.3965976, "req": "f_overload_t10-0085", "event": "end", "status": "answered"}
+{"t": 1516867.5426918, "req": "f_overload_t10-0088", "event": "arrive", "sched": 79.57831670017913, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516867.8692753, "req": "f_overload_t10-0089", "event": "arrive", "sched": 79.90490339999087, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516868.0389279, "req": "f_overload_t10-0090", "event": "arrive", "sched": 80.07455530017614, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516868.3644461, "req": "f_overload_t10-0086", "event": "first_byte"}
+{"t": 1516868.3677167, "req": "f_overload_t10-0086", "event": "end", "status": "answered"}
+{"t": 1516869.382531, "req": "f_overload_t10-0087", "event": "first_byte"}
+{"t": 1516869.3846151, "req": "f_overload_t10-0087", "event": "end", "status": "answered"}
+{"t": 1516869.8800445, "req": "f_overload_t10-0091", "event": "arrive", "sched": 81.91566980001517, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516870.6994722, "req": "f_overload_t10-0088", "event": "first_byte"}
+{"t": 1516870.7038348, "req": "f_overload_t10-0088", "event": "end", "status": "answered"}
+{"t": 1516871.1550351, "req": "f_overload_t10-0092", "event": "arrive", "sched": 83.19066000008024, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1516872.0528038, "req": "f_overload_t10-0089", "event": "first_byte"}
+{"t": 1516872.0550242, "req": "f_overload_t10-0089", "event": "end", "status": "answered"}
+{"t": 1516872.7054321, "req": "f_overload_t10-0093", "event": "arrive", "sched": 84.74106020014733, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516872.7077446, "req": "f_overload_t10-0090", "event": "first_byte"}
+{"t": 1516872.7114002, "req": "f_overload_t10-0090", "event": "end", "status": "answered"}
+{"t": 1516873.3002886, "req": "f_overload_t10-0094", "event": "arrive", "sched": 85.33591350005008, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516873.3941775, "req": "f_overload_t10-0095", "event": "arrive", "sched": 85.42980280006304, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1516873.5155356, "req": "f_overload_t10-0091", "event": "first_byte"}
+{"t": 1516873.5196663, "req": "f_overload_t10-0091", "event": "end", "status": "answered"}
+{"t": 1516873.8953105, "req": "f_overload_t10-0096", "event": "arrive", "sched": 85.93093760008924, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516873.9439355, "req": "f_overload_t10-0097", "event": "arrive", "sched": 85.97956260014325, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516874.284609, "req": "f_overload_t10-0098", "event": "arrive", "sched": 86.32023640000261, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516874.3148577, "req": "f_overload_t10-0099", "event": "arrive", "sched": 86.35048560006544, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516874.322823, "req": "f_overload_t10-0099", "event": "first_byte"}
+{"t": 1516874.3251676, "req": "f_overload_t10-0099", "event": "end", "status": "extractive_overload"}
+{"t": 1516874.6198807, "req": "f_overload_t10-0092", "event": "first_byte"}
+{"t": 1516874.6217238, "req": "f_overload_t10-0092", "event": "end", "status": "answered"}
+{"t": 1516875.0171336, "req": "f_overload_t10-0100", "event": "arrive", "sched": 87.05276140011847, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516875.0271489, "req": "f_overload_t10-0100", "event": "first_byte"}
+{"t": 1516875.0289186, "req": "f_overload_t10-0100", "event": "end", "status": "extractive_overload"}
+{"t": 1516875.1124645, "req": "f_overload_t10-0101", "event": "arrive", "sched": 87.14809180004522, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516875.122553, "req": "f_overload_t10-0101", "event": "first_byte"}
+{"t": 1516875.1245243, "req": "f_overload_t10-0101", "event": "end", "status": "extractive_overload"}
+{"t": 1516875.3795858, "req": "f_overload_t10-0094", "event": "first_byte"}
+{"t": 1516875.3817858, "req": "f_overload_t10-0094", "event": "end", "status": "answered"}
+{"t": 1516877.7188478, "req": "f_overload_t10-0096", "event": "first_byte"}
+{"t": 1516877.722346, "req": "f_overload_t10-0096", "event": "end", "status": "answered"}
+{"t": 1516877.8090035, "req": "f_overload_t10-0102", "event": "arrive", "sched": 89.8446300001815, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516878.4164997, "req": "f_overload_t10-0097", "event": "first_byte"}
+{"t": 1516878.4196227, "req": "f_overload_t10-0097", "event": "end", "status": "answered"}
+{"t": 1516879.0234917, "req": "f_overload_t10-0103", "event": "arrive", "sched": 91.05911929998547, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516879.3956513, "req": "f_overload_t10-0104", "event": "arrive", "sched": 91.43127569998614, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516879.4395603, "req": "f_overload_t10-0095", "event": "first_byte"}
+{"t": 1516879.4414821, "req": "f_overload_t10-0095", "event": "end", "status": "answered"}
+{"t": 1516879.9403911, "req": "f_overload_t10-0093", "event": "first_byte"}
+{"t": 1516879.9443157, "req": "f_overload_t10-0093", "event": "end", "status": "answered"}
+{"t": 1516882.3028758, "req": "f_overload_t10-0105", "event": "arrive", "sched": 94.33850009995513, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516882.3783513, "req": "f_overload_t10-0106", "event": "arrive", "sched": 94.41397660016082, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516882.4541474, "req": "f_overload_t10-0098", "event": "first_byte"}
+{"t": 1516882.4582826, "req": "f_overload_t10-0098", "event": "end", "status": "answered"}
+{"t": 1516882.4815314, "req": "f_overload_t10-0102", "event": "first_byte"}
+{"t": 1516882.4843941, "req": "f_overload_t10-0102", "event": "end", "status": "answered"}
+{"t": 1516882.6774818, "req": "f_overload_t10-0107", "event": "arrive", "sched": 94.71310700010508, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516882.739336, "req": "f_overload_t10-0108", "event": "arrive", "sched": 94.77496180008166, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516883.1241687, "req": "f_overload_t10-0103", "event": "first_byte"}
+{"t": 1516883.126255, "req": "f_overload_t10-0103", "event": "end", "status": "answered"}
+{"t": 1516883.3043654, "req": "f_overload_t10-0109", "event": "arrive", "sched": 95.33999120001681, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1516883.5252586, "req": "f_overload_t10-0110", "event": "arrive", "sched": 95.56088380003348, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516883.9811749, "req": "f_overload_t10-0104", "event": "first_byte"}
+{"t": 1516883.9830509, "req": "f_overload_t10-0104", "event": "end", "status": "answered"}
+{"t": 1516884.0356054, "req": "f_overload_t10-0111", "event": "arrive", "sched": 96.07123270002194, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516884.0462176, "req": "f_overload_t10-0111", "event": "first_byte"}
+{"t": 1516884.0477617, "req": "f_overload_t10-0111", "event": "end", "status": "extractive_overload"}
+{"t": 1516884.6899768, "req": "f_overload_t10-0105", "event": "first_byte"}
+{"t": 1516884.6932408, "req": "f_overload_t10-0105", "event": "end", "status": "answered"}
+{"t": 1516885.2576053, "req": "f_overload_t10-0112", "event": "arrive", "sched": 97.2932301000692, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516885.9287528, "req": "f_overload_t10-0106", "event": "first_byte"}
+{"t": 1516885.9313, "req": "f_overload_t10-0106", "event": "end", "status": "answered"}
+{"t": 1516886.9314498, "req": "f_overload_t10-0107", "event": "first_byte"}
+{"t": 1516886.9351065, "req": "f_overload_t10-0107", "event": "end", "status": "answered"}
+{"t": 1516887.4340816, "req": "f_overload_t10-0113", "event": "arrive", "sched": 99.46970570017584, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516888.1298799, "req": "f_overload_t10-0114", "event": "arrive", "sched": 100.16550580016337, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516888.3309423, "req": "f_overload_t10-0108", "event": "first_byte"}
+{"t": 1516888.3328846, "req": "f_overload_t10-0108", "event": "end", "status": "answered"}
+{"t": 1516888.919232, "req": "f_overload_t10-0109", "event": "first_byte"}
+{"t": 1516888.923479, "req": "f_overload_t10-0109", "event": "end", "status": "answered"}
+{"t": 1516889.8394488, "req": "f_overload_t10-0115", "event": "arrive", "sched": 101.87507569999434, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516890.0007672, "req": "f_overload_t10-0110", "event": "first_byte"}
+{"t": 1516890.0023603, "req": "f_overload_t10-0110", "event": "end", "status": "answered"}
+{"t": 1516890.2873778, "req": "f_overload_t10-0116", "event": "arrive", "sched": 102.32300260011107, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516890.7150502, "req": "f_overload_t10-0112", "event": "first_byte"}
+{"t": 1516890.717907, "req": "f_overload_t10-0112", "event": "end", "status": "answered"}
+{"t": 1516891.7149654, "req": "f_overload_t10-0114", "event": "first_byte"}
+{"t": 1516891.7204566, "req": "f_overload_t10-0114", "event": "end", "status": "answered"}
+{"t": 1516892.1669577, "req": "f_overload_t10-0115", "event": "first_byte"}
+{"t": 1516892.1712701, "req": "f_overload_t10-0115", "event": "end", "status": "answered"}
+{"t": 1516892.2493573, "req": "f_overload_t10-0117", "event": "arrive", "sched": 104.28498150012456, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516892.9479911, "req": "f_overload_t10-0118", "event": "arrive", "sched": 104.98361880006269, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516893.6813672, "req": "f_overload_t10-0116", "event": "first_byte"}
+{"t": 1516893.6833268, "req": "f_overload_t10-0116", "event": "end", "status": "answered"}
+{"t": 1516894.1777681, "req": "f_overload_t10-0119", "event": "arrive", "sched": 106.21339339995757, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516894.3629673, "req": "f_overload_t10-0120", "event": "arrive", "sched": 106.3985925000161, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516894.3922316, "req": "f_overload_t10-0113", "event": "first_byte"}
+{"t": 1516894.3952139, "req": "f_overload_t10-0113", "event": "end", "status": "answered"}
+{"t": 1516895.1961969, "req": "f_overload_t10-0117", "event": "first_byte"}
+{"t": 1516895.1990942, "req": "f_overload_t10-0117", "event": "end", "status": "answered"}
+{"t": 1516895.2504277, "req": "f_overload_t10-0121", "event": "arrive", "sched": 107.28605390014127, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516895.5929845, "req": "f_overload_t10-0122", "event": "arrive", "sched": 107.6286108000204, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516896.0083033, "req": "f_overload_t10-0118", "event": "first_byte"}
+{"t": 1516896.0103404, "req": "f_overload_t10-0118", "event": "end", "status": "answered"}
+{"t": 1516897.1612337, "req": "f_overload_t10-0119", "event": "first_byte"}
+{"t": 1516897.1631212, "req": "f_overload_t10-0119", "event": "end", "status": "answered"}
+{"t": 1516897.26177, "req": "f_overload_t10-0123", "event": "arrive", "sched": 109.29739740001969, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516898.0404216, "req": "f_overload_t10-0124", "event": "arrive", "sched": 110.07604720001109, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1516898.1168672, "req": "f_overload_t10-0120", "event": "first_byte"}
+{"t": 1516898.1193487, "req": "f_overload_t10-0120", "event": "end", "status": "answered"}
+{"t": 1516898.7347336, "req": "f_overload_t10-0125", "event": "arrive", "sched": 110.77035690005869, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516898.8988017, "req": "f_overload_t10-0121", "event": "first_byte"}
+{"t": 1516898.9013094, "req": "f_overload_t10-0121", "event": "end", "status": "answered"}
+{"t": 1516900.2032262, "req": "f_overload_t10-0126", "event": "arrive", "sched": 112.23885449999943, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516900.2055492, "req": "f_overload_t10-0122", "event": "first_byte"}
+{"t": 1516900.2100903, "req": "f_overload_t10-0122", "event": "end", "status": "answered"}
+{"t": 1516900.9662176, "req": "f_overload_t10-0123", "event": "first_byte"}
+{"t": 1516900.9702081, "req": "f_overload_t10-0123", "event": "end", "status": "answered"}
+{"t": 1516901.014639, "req": "f_overload_t10-0127", "event": "arrive", "sched": 113.05026499996893, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516901.4172921, "req": "f_overload_t10-0128", "event": "arrive", "sched": 113.4529173001647, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516901.5574018, "req": "f_overload_t10-0129", "event": "arrive", "sched": 113.59302889998071, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516901.9089229, "req": "f_overload_t10-0124", "event": "first_byte"}
+{"t": 1516901.9110469, "req": "f_overload_t10-0124", "event": "end", "status": "answered"}
+{"t": 1516902.5358011, "req": "f_overload_t10-0130", "event": "arrive", "sched": 114.5714257999789, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516903.1690565, "req": "f_overload_t10-0125", "event": "first_byte"}
+{"t": 1516903.1706071, "req": "f_overload_t10-0125", "event": "end", "status": "answered"}
+{"t": 1516903.8897531, "req": "f_overload_t10-0126", "event": "first_byte"}
+{"t": 1516903.8934963, "req": "f_overload_t10-0126", "event": "end", "status": "answered"}
+{"t": 1516904.7894059, "req": "f_overload_t10-0127", "event": "first_byte"}
+{"t": 1516904.7929036, "req": "f_overload_t10-0127", "event": "end", "status": "answered"}
+{"t": 1516905.1399793, "req": "f_overload_t10-0131", "event": "arrive", "sched": 117.17560439999215, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516905.289444, "req": "f_overload_t10-0128", "event": "first_byte"}
+{"t": 1516905.2921638, "req": "f_overload_t10-0128", "event": "end", "status": "answered"}
+{"t": 1516906.2218457, "req": "f_overload_t10-0129", "event": "first_byte"}
+{"t": 1516906.2235995, "req": "f_overload_t10-0129", "event": "end", "status": "answered"}
+{"t": 1516906.9775856, "req": "f_overload_t10-0132", "event": "arrive", "sched": 119.01321050012484, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1516907.0558794, "req": "f_overload_t10-0133", "event": "arrive", "sched": 119.09150430001318, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516907.3087003, "req": "f_overload_t10-0130", "event": "first_byte"}
+{"t": 1516907.3116585, "req": "f_overload_t10-0130", "event": "end", "status": "answered"}
+{"t": 1516907.4479484, "req": "f_overload_t10-0134", "event": "arrive", "sched": 119.483574999962, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1516907.4486064, "req": "f_overload_t10-0135", "event": "arrive", "sched": 119.48423569998704, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516908.1864289, "req": "f_overload_t10-0131", "event": "first_byte"}
+{"t": 1516908.1880561, "req": "f_overload_t10-0131", "event": "end", "status": "answered"}
+{"t": 1516908.5778412, "req": "f_overload_t10-0136", "event": "arrive", "sched": 120.61346810008399, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516909.5770036, "req": "f_overload_t10-0137", "event": "arrive", "sched": 121.61262880009599, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516911.0028146, "req": "f_overload_t10-0138", "event": "arrive", "sched": 123.03843960002996, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1516911.1670354, "req": "f_overload_t10-0139", "event": "arrive", "sched": 123.20266079995781, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516911.4097692, "req": "f_overload_t10-0140", "event": "arrive", "sched": 123.44539620005526, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1516911.9966671, "req": "f_overload_t10-0141", "event": "arrive", "sched": 124.03229120001197, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516912.0102419, "req": "f_overload_t10-0141", "event": "first_byte"}
+{"t": 1516912.0128434, "req": "f_overload_t10-0141", "event": "end", "status": "extractive_overload"}
+{"t": 1516913.2955425, "req": "f_overload_t10-0142", "event": "arrive", "sched": 125.33117070002481, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516913.2980247, "req": "f_overload_t10-0134", "event": "first_byte"}
+{"t": 1516913.301458, "req": "f_overload_t10-0134", "event": "end", "status": "answered"}
+{"t": 1516913.4469837, "req": "f_overload_t10-0135", "event": "first_byte"}
+{"t": 1516913.4506348, "req": "f_overload_t10-0135", "event": "end", "status": "answered"}
+{"t": 1516913.5478436, "req": "f_overload_t10-0143", "event": "arrive", "sched": 125.58346860017627, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516914.2300472, "req": "f_overload_t10-0137", "event": "first_byte"}
+{"t": 1516914.2324989, "req": "f_overload_t10-0137", "event": "end", "status": "answered"}
+{"t": 1516914.2764023, "req": "f_overload_t10-0136", "event": "first_byte"}
+{"t": 1516914.2787715, "req": "f_overload_t10-0136", "event": "end", "status": "answered"}
+{"t": 1516915.2768636, "req": "f_overload_t10-0144", "event": "arrive", "sched": 127.31248940015212, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516915.7680002, "req": "f_overload_t10-0145", "event": "arrive", "sched": 127.80362500017509, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1516917.1126991, "req": "f_overload_t10-0133", "event": "first_byte"}
+{"t": 1516917.1164253, "req": "f_overload_t10-0133", "event": "end", "status": "answered"}
+{"t": 1516917.1614251, "req": "f_overload_t10-0142", "event": "first_byte"}
+{"t": 1516917.165184, "req": "f_overload_t10-0142", "event": "end", "status": "answered"}
+{"t": 1516917.3367829, "req": "f_overload_t10-0140", "event": "first_byte"}
+{"t": 1516917.3402726, "req": "f_overload_t10-0140", "event": "end", "status": "answered"}
+{"t": 1516917.8229798, "req": "f_overload_t10-0146", "event": "arrive", "sched": 129.85860510007478, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516919.2689376, "req": "f_overload_t10-0138", "event": "first_byte"}
+{"t": 1516919.2721747, "req": "f_overload_t10-0138", "event": "end", "status": "extractive_overload"}
+{"t": 1516919.6307235, "req": "f_overload_t10-0132", "event": "first_byte"}
+{"t": 1516919.6326917, "req": "f_overload_t10-0132", "event": "end", "status": "answered"}
+{"t": 1516921.0500221, "req": "f_overload_t10-0147", "event": "arrive", "sched": 133.0856498000212, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516921.6391283, "req": "f_overload_t10-0144", "event": "first_byte"}
+{"t": 1516921.6415896, "req": "f_overload_t10-0144", "event": "end", "status": "answered"}
+{"t": 1516921.6961351, "req": "f_overload_t10-0145", "event": "first_byte"}
+{"t": 1516921.6990114, "req": "f_overload_t10-0145", "event": "end", "status": "answered"}
+{"t": 1516921.7835312, "req": "f_overload_t10-0139", "event": "first_byte"}
+{"t": 1516921.78609, "req": "f_overload_t10-0139", "event": "end", "status": "answered"}
+{"t": 1516921.8274968, "req": "f_overload_t10-0148", "event": "arrive", "sched": 133.86312270001508, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516922.4042486, "req": "f_overload_t10-0146", "event": "first_byte"}
+{"t": 1516922.4073785, "req": "f_overload_t10-0146", "event": "end", "status": "answered"}
+{"t": 1516923.2126284, "req": "f_overload_t10-0143", "event": "first_byte"}
+{"t": 1516923.2147192, "req": "f_overload_t10-0143", "event": "end", "status": "answered"}
+{"t": 1516924.3554051, "req": "f_overload_t10-0149", "event": "arrive", "sched": 136.39103000005707, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516924.9230883, "req": "f_overload_t10-0150", "event": "arrive", "sched": 136.95871140016243, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516925.4186007, "req": "f_overload_t10-0148", "event": "first_byte"}
+{"t": 1516925.4207798, "req": "f_overload_t10-0148", "event": "end", "status": "answered"}
+{"t": 1516926.0750893, "req": "f_overload_t10-0151", "event": "arrive", "sched": 138.110713200178, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1516926.7489841, "req": "f_overload_t10-0149", "event": "first_byte"}
+{"t": 1516926.7528007, "req": "f_overload_t10-0149", "event": "end", "status": "answered"}
+{"t": 1516927.5368886, "req": "f_overload_t10-0147", "event": "first_byte"}
+{"t": 1516927.539232, "req": "f_overload_t10-0147", "event": "end", "status": "answered"}
+{"t": 1516927.933346, "req": "f_overload_t10-0152", "event": "arrive", "sched": 139.9689715001732, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516928.6445101, "req": "f_overload_t10-0150", "event": "first_byte"}
+{"t": 1516928.6478029, "req": "f_overload_t10-0150", "event": "end", "status": "answered"}
+{"t": 1516929.6809145, "req": "f_overload_t10-0151", "event": "first_byte"}
+{"t": 1516929.6830433, "req": "f_overload_t10-0151", "event": "end", "status": "answered"}
+{"t": 1516929.7688803, "req": "f_overload_t10-0153", "event": "arrive", "sched": 141.80450760014355, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1516929.8616566, "req": "f_overload_t10-0154", "event": "arrive", "sched": 141.897284100065, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1516930.153436, "req": "f_overload_t10-0155", "event": "arrive", "sched": 142.18905950011685, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516930.6986508, "req": "f_overload_t10-0156", "event": "arrive", "sched": 142.73427550005727, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1516931.7058575, "req": "f_overload_t10-0154", "event": "first_byte"}
+{"t": 1516931.7076985, "req": "f_overload_t10-0154", "event": "end", "status": "answered"}
+{"t": 1516932.257704, "req": "f_overload_t10-0153", "event": "first_byte"}
+{"t": 1516932.2594173, "req": "f_overload_t10-0153", "event": "end", "status": "answered"}
+{"t": 1516932.6493784, "req": "f_overload_t10-0157", "event": "arrive", "sched": 144.68500400008634, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516932.7999468, "req": "f_overload_t10-0156", "event": "first_byte"}
+{"t": 1516932.8021312, "req": "f_overload_t10-0156", "event": "end", "status": "answered"}
+{"t": 1516932.9592451, "req": "f_overload_t10-0158", "event": "arrive", "sched": 144.9948710000608, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516933.0997526, "req": "f_overload_t10-0159", "event": "arrive", "sched": 145.13537849998102, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516933.56691, "req": "f_overload_t10-0160", "event": "arrive", "sched": 145.6025352999568, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516933.6271596, "req": "f_overload_t10-0152", "event": "first_byte"}
+{"t": 1516933.6315175, "req": "f_overload_t10-0152", "event": "end", "status": "answered"}
+{"t": 1516933.8010224, "req": "f_overload_t10-0161", "event": "arrive", "sched": 145.83664720016532, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516935.0628659, "req": "f_overload_t10-0162", "event": "arrive", "sched": 147.09849130013026, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1516935.1688453, "req": "f_overload_t10-0155", "event": "first_byte"}
+{"t": 1516935.1708056, "req": "f_overload_t10-0155", "event": "end", "status": "answered"}
+{"t": 1516935.9372852, "req": "f_overload_t10-0163", "event": "arrive", "sched": 147.97291260003112, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516935.9841547, "req": "f_overload_t10-0164", "event": "arrive", "sched": 148.01978219999, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1516935.9950092, "req": "f_overload_t10-0164", "event": "first_byte"}
+{"t": 1516935.9988634, "req": "f_overload_t10-0164", "event": "end", "status": "extractive_overload"}
+{"t": 1516936.3800316, "req": "f_overload_t10-0157", "event": "first_byte"}
+{"t": 1516936.3817713, "req": "f_overload_t10-0157", "event": "end", "status": "answered"}
+{"t": 1516937.5543001, "req": "f_overload_t10-0158", "event": "first_byte"}
+{"t": 1516937.5573122, "req": "f_overload_t10-0158", "event": "end", "status": "answered"}
+{"t": 1516938.0931311, "req": "f_overload_t10-0165", "event": "arrive", "sched": 150.12875710008666, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516938.6033884, "req": "f_overload_t10-0159", "event": "first_byte"}
+{"t": 1516938.6063158, "req": "f_overload_t10-0159", "event": "end", "status": "answered"}
+{"t": 1516938.674793, "req": "f_overload_t10-0166", "event": "arrive", "sched": 150.71042040013708, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1516939.6392215, "req": "f_overload_t10-0160", "event": "first_byte"}
+{"t": 1516939.641551, "req": "f_overload_t10-0160", "event": "end", "status": "answered"}
+{"t": 1516940.1838933, "req": "f_overload_t10-0167", "event": "arrive", "sched": 152.21951930015348, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1516940.3009357, "req": "f_overload_t10-0161", "event": "first_byte"}
+{"t": 1516940.3027596, "req": "f_overload_t10-0161", "event": "end", "status": "answered"}
+{"t": 1516940.3495329, "req": "f_overload_t10-0168", "event": "arrive", "sched": 152.3851579001639, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516940.7279539, "req": "f_overload_t10-0169", "event": "arrive", "sched": 152.76357950014062, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1516940.8055821, "req": "f_overload_t10-0170", "event": "arrive", "sched": 152.8412069999613, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1516940.8241295, "req": "f_overload_t10-0170", "event": "first_byte"}
+{"t": 1516940.8254829, "req": "f_overload_t10-0170", "event": "end", "status": "shed"}
+{"t": 1516941.2049573, "req": "f_overload_t10-0162", "event": "first_byte"}
+{"t": 1516941.2066268, "req": "f_overload_t10-0162", "event": "end", "status": "answered"}
+{"t": 1516941.3039596, "req": "f_overload_t10-0171", "event": "arrive", "sched": 153.33958739996888, "q": "Which functions does the Transformer use for positional enco"}
+{"t": 1516941.3108913, "req": "f_overload_t10-0171", "event": "first_byte"}
+{"t": 1516941.3122984, "req": "f_overload_t10-0171", "event": "end", "status": "extractive_overload"}
+{"t": 1516941.8745043, "req": "f_overload_t10-0172", "event": "arrive", "sched": 153.91013050009497, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516942.8740517, "req": "f_overload_t10-0163", "event": "first_byte"}
+{"t": 1516942.8762208, "req": "f_overload_t10-0163", "event": "end", "status": "answered"}
+{"t": 1516943.0232238, "req": "f_overload_t10-0173", "event": "arrive", "sched": 155.05884960014373, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1516943.3472275, "req": "f_overload_t10-0165", "event": "first_byte"}
+{"t": 1516943.3528401, "req": "f_overload_t10-0165", "event": "end", "status": "answered"}
+{"t": 1516943.6659304, "req": "f_overload_t10-0174", "event": "arrive", "sched": 155.701557100052, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1516944.1742866, "req": "f_overload_t10-0175", "event": "arrive", "sched": 156.2099143001251, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1516944.1835263, "req": "f_overload_t10-0175", "event": "first_byte"}
+{"t": 1516944.1859304, "req": "f_overload_t10-0175", "event": "end", "status": "extractive_overload"}
+{"t": 1516944.1885076, "req": "f_overload_t10-0166", "event": "first_byte"}
+{"t": 1516944.1914328, "req": "f_overload_t10-0166", "event": "end", "status": "answered"}
+{"t": 1517002.278633, "req": "f_overload_t10-0176", "event": "arrive", "sched": 214.31426050001755, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517002.2796884, "req": "f_overload_t10-0167", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2799159, "req": "f_overload_t10-0177", "event": "arrive", "sched": 214.3155447000172, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517002.2806181, "req": "f_overload_t10-0168", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2808199, "req": "f_overload_t10-0169", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2809763, "req": "f_overload_t10-0172", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2811296, "req": "f_overload_t10-0173", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2812788, "req": "f_overload_t10-0174", "event": "abandon", "status": null, "after_first_byte": false}
+{"t": 1517002.2819917, "req": "f_overload_t10-0178", "event": "arrive", "sched": 214.317620200105, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517002.2905341, "req": "f_overload_t10-0179", "event": "arrive", "sched": 214.3261619999539, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1517002.2918176, "req": "f_overload_t10-0180", "event": "arrive", "sched": 214.32744639995508, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1517002.2931256, "req": "f_overload_t10-0181", "event": "arrive", "sched": 214.32875360012986, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517002.2949717, "req": "f_overload_t10-0182", "event": "arrive", "sched": 214.3306001999881, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1517002.2964882, "req": "f_overload_t10-0183", "event": "arrive", "sched": 214.33211680012755, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1517002.2984372, "req": "f_overload_t10-0184", "event": "arrive", "sched": 214.33406520006247, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1517002.3004807, "req": "f_overload_t10-0185", "event": "arrive", "sched": 214.33610900002532, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517002.3040181, "req": "f_overload_t10-0186", "event": "arrive", "sched": 214.33964480017312, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517002.3061524, "req": "f_overload_t10-0187", "event": "arrive", "sched": 214.3417803000193, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1517002.3086279, "req": "f_overload_t10-0188", "event": "arrive", "sched": 214.34425520012155, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1517002.3112393, "req": "f_overload_t10-0189", "event": "arrive", "sched": 214.34686710010283, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1517002.3253958, "req": "f_overload_t10-0190", "event": "arrive", "sched": 214.36102230008692, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1517002.3307492, "req": "f_overload_t10-0191", "event": "arrive", "sched": 214.36637619999237, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1517002.3339489, "req": "f_overload_t10-0192", "event": "arrive", "sched": 214.36957700015046, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517002.34, "req": "f_overload_t10-0193", "event": "arrive", "sched": 214.37562750000507, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1517002.3457807, "req": "f_overload_t10-0194", "event": "arrive", "sched": 214.38140549999662, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1517002.3527638, "req": "f_overload_t10-0195", "event": "arrive", "sched": 214.38839179999195, "q": "How does the Transformer's learning rate change over the cou"}
+{"t": 1517002.3640721, "req": "f_overload_t10-0196", "event": "arrive", "sched": 214.3996994001791, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1517002.3684153, "req": "f_overload_t10-0197", "event": "arrive", "sched": 214.40404259995557, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1517002.3765761, "req": "f_overload_t10-0198", "event": "arrive", "sched": 214.41220380016603, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1517002.3836418, "req": "f_overload_t10-0199", "event": "arrive", "sched": 214.4192695999518, "q": "What word error rate did the original Transformer achieve on"}
+{"t": 1517002.3904476, "req": "f_overload_t10-0200", "event": "arrive", "sched": 214.42607580008917, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1517002.4035564, "req": "f_overload_t10-0201", "event": "arrive", "sched": 214.43918310012668, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517002.4097663, "req": "f_overload_t10-0202", "event": "arrive", "sched": 214.44538130005822, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1517002.4139452, "req": "f_overload_t10-0203", "event": "arrive", "sched": 214.4495731999632, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517002.4205837, "req": "f_overload_t10-0204", "event": "arrive", "sched": 214.45621039997786, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1517002.4292542, "req": "f_overload_t10-0205", "event": "arrive", "sched": 214.46488169999793, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1517002.4325387, "req": "f_overload_t10-0206", "event": "arrive", "sched": 214.468166799983, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517002.4353687, "req": "f_overload_t10-0207", "event": "arrive", "sched": 214.47099629999138, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517002.4381499, "req": "f_overload_t10-0208", "event": "arrive", "sched": 214.47377740009688, "q": "How many tokens was Helium pretrained on?"}
+{"t": 1517002.4414901, "req": "f_overload_t10-0209", "event": "arrive", "sched": 214.47711710003205, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1517002.4439218, "req": "f_overload_t10-0210", "event": "arrive", "sched": 214.47954920004122, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1517002.4701564, "req": "f_overload_t10-0211", "event": "arrive", "sched": 214.50578430015594, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1517002.4745911, "req": "f_overload_t10-0212", "event": "arrive", "sched": 214.51021830015816, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517002.4790861, "req": "f_overload_t10-0213", "event": "arrive", "sched": 214.51471370016225, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1517002.4871603, "req": "f_overload_t10-0214", "event": "arrive", "sched": 214.522788700182, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1517002.4904803, "req": "f_overload_t10-0215", "event": "arrive", "sched": 214.52610770007595, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1517002.4954484, "req": "f_overload_t10-0216", "event": "arrive", "sched": 214.53107660007663, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1517002.4990795, "req": "f_overload_t10-0217", "event": "arrive", "sched": 214.53470750013366, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517002.5037599, "req": "f_overload_t10-0218", "event": "arrive", "sched": 214.53938780003227, "q": "What BLEU score did the big Transformer reach on WMT 2014 En"}
+{"t": 1517002.5060519, "req": "f_overload_t10-0219", "event": "arrive", "sched": 214.54168030014262, "q": "What value of label smoothing was used when training the Tra"}
+{"t": 1517002.5088669, "req": "f_overload_t10-0220", "event": "arrive", "sched": 214.54449490015395, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1517002.5113898, "req": "f_overload_t10-0221", "event": "arrive", "sched": 214.54701770003885, "q": "How well does H-Net perform on protein sequence modeling?"}
+{"t": 1517002.5180797, "req": "f_overload_t10-0222", "event": "arrive", "sched": 214.5537068999838, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1517002.5224336, "req": "f_overload_t10-0223", "event": "arrive", "sched": 214.55806090007536, "q": "How does the H-Net routing module decide where chunk boundar"}
+{"t": 1517003.3010409, "req": "f_overload_t10-0179", "event": "first_byte"}
+{"t": 1517003.3034025, "req": "f_overload_t10-0179", "event": "end", "status": "answered"}
+{"t": 1517003.3875835, "req": "f_overload_t10-0224", "event": "arrive", "sched": 215.42321050004102, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1517003.410367, "req": "f_overload_t10-0183", "event": "first_byte"}
+{"t": 1517003.4153262, "req": "f_overload_t10-0183", "event": "end", "status": "answered"}
+{"t": 1517003.6227239, "req": "f_overload_t10-0180", "event": "first_byte"}
+{"t": 1517003.6258592, "req": "f_overload_t10-0180", "event": "end", "status": "answered"}
+{"t": 1517003.7177268, "req": "f_overload_t10-0209", "event": "first_byte"}
+{"t": 1517003.7203895, "req": "f_overload_t10-0209", "event": "end", "status": "answered"}
+{"t": 1517003.7205089, "req": "f_overload_t10-0176", "event": "first_byte"}
+{"t": 1517003.7240768, "req": "f_overload_t10-0176", "event": "end", "status": "answered"}
+{"t": 1517003.7267707, "req": "f_overload_t10-0184", "event": "first_byte"}
+{"t": 1517003.7297652, "req": "f_overload_t10-0184", "event": "end", "status": "answered"}
+{"t": 1517003.7346255, "req": "f_overload_t10-0178", "event": "first_byte"}
+{"t": 1517003.7362955, "req": "f_overload_t10-0178", "event": "end", "status": "answered"}
+{"t": 1517003.8996888, "req": "f_overload_t10-0202", "event": "first_byte"}
+{"t": 1517003.9023191, "req": "f_overload_t10-0202", "event": "end", "status": "answered"}
+{"t": 1517003.9596628, "req": "f_overload_t10-0182", "event": "first_byte"}
+{"t": 1517003.9616053, "req": "f_overload_t10-0182", "event": "end", "status": "answered"}
+{"t": 1517004.1044059, "req": "f_overload_t10-0225", "event": "arrive", "sched": 216.1400323000271, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1517004.2786749, "req": "f_overload_t10-0190", "event": "first_byte"}
+{"t": 1517004.2816317, "req": "f_overload_t10-0190", "event": "end", "status": "answered"}
+{"t": 1517004.2818942, "req": "f_overload_t10-0207", "event": "first_byte"}
+{"t": 1517004.2838781, "req": "f_overload_t10-0207", "event": "end", "status": "answered"}
+{"t": 1517004.4155436, "req": "f_overload_t10-0177", "event": "first_byte"}
+{"t": 1517004.4169594, "req": "f_overload_t10-0177", "event": "end", "status": "answered"}
+{"t": 1517004.5083786, "req": "f_overload_t10-0201", "event": "first_byte"}
+{"t": 1517004.5115001, "req": "f_overload_t10-0201", "event": "end", "status": "answered"}
+{"t": 1517004.6121899, "req": "f_overload_t10-0191", "event": "first_byte"}
+{"t": 1517004.6134775, "req": "f_overload_t10-0191", "event": "end", "status": "answered"}
+{"t": 1517004.6459656, "req": "f_overload_t10-0226", "event": "arrive", "sched": 216.68159519997425, "q": "What theoretical and practical latency does Moshi report?"}
+{"t": 1517004.6470251, "req": "f_overload_t10-0194", "event": "first_byte"}
+{"t": 1517004.6484229, "req": "f_overload_t10-0194", "event": "end", "status": "answered"}
+{"t": 1517004.6955085, "req": "f_overload_t10-0198", "event": "first_byte"}
+{"t": 1517004.6969068, "req": "f_overload_t10-0198", "event": "end", "status": "answered"}
+{"t": 1517004.7527082, "req": "f_overload_t10-0217", "event": "first_byte"}
+{"t": 1517004.7539933, "req": "f_overload_t10-0217", "event": "end", "status": "answered"}
+{"t": 1517004.8670253, "req": "f_overload_t10-0205", "event": "first_byte"}
+{"t": 1517004.8683367, "req": "f_overload_t10-0205", "event": "end", "status": "answered"}
+{"t": 1517004.9156526, "req": "f_overload_t10-0212", "event": "first_byte"}
+{"t": 1517004.9172544, "req": "f_overload_t10-0212", "event": "end", "status": "answered"}
+{"t": 1517005.1366414, "req": "f_overload_t10-0196", "event": "first_byte"}
+{"t": 1517005.139586, "req": "f_overload_t10-0196", "event": "end", "status": "answered"}
+{"t": 1517005.2511685, "req": "f_overload_t10-0204", "event": "first_byte"}
+{"t": 1517005.2524802, "req": "f_overload_t10-0204", "event": "end", "status": "answered"}
+{"t": 1517005.3177297, "req": "f_overload_t10-0221", "event": "first_byte"}
+{"t": 1517005.3191138, "req": "f_overload_t10-0221", "event": "end", "status": "answered"}
+{"t": 1517005.3974821, "req": "f_overload_t10-0227", "event": "arrive", "sched": 217.43310769996606, "q": "Which gradient estimator does the dynamic chunking paper use"}
+{"t": 1517005.4068065, "req": "f_overload_t10-0227", "event": "first_byte"}
+{"t": 1517005.4081302, "req": "f_overload_t10-0227", "event": "end", "status": "extractive_overload"}
+{"t": 1517005.4107605, "req": "f_overload_t10-0208", "event": "first_byte"}
+{"t": 1517005.4124244, "req": "f_overload_t10-0208", "event": "end", "status": "answered"}
+{"t": 1517005.4585343, "req": "f_overload_t10-0228", "event": "arrive", "sched": 217.49416140001267, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1517005.4760281, "req": "f_overload_t10-0228", "event": "first_byte"}
+{"t": 1517005.4798197, "req": "f_overload_t10-0228", "event": "end", "status": "extractive_overload"}
+{"t": 1517005.4800241, "req": "f_overload_t10-0226", "event": "first_byte"}
+{"t": 1517005.4813445, "req": "f_overload_t10-0186", "event": "first_byte"}
+{"t": 1517005.4825258, "req": "f_overload_t10-0226", "event": "end", "status": "answered"}
+{"t": 1517005.4826456, "req": "f_overload_t10-0186", "event": "end", "status": "answered"}
+{"t": 1517005.6086117, "req": "f_overload_t10-0218", "event": "first_byte"}
+{"t": 1517005.6103649, "req": "f_overload_t10-0218", "event": "end", "status": "answered"}
+{"t": 1517005.610459, "req": "f_overload_t10-0200", "event": "first_byte"}
+{"t": 1517005.6117707, "req": "f_overload_t10-0200", "event": "end", "status": "answered"}
+{"t": 1517005.6566392, "req": "f_overload_t10-0187", "event": "first_byte"}
+{"t": 1517005.6586701, "req": "f_overload_t10-0193", "event": "first_byte"}
+{"t": 1517005.6615137, "req": "f_overload_t10-0187", "event": "end", "status": "answered"}
+{"t": 1517005.6618567, "req": "f_overload_t10-0193", "event": "end", "status": "answered"}
+{"t": 1517005.7675956, "req": "f_overload_t10-0206", "event": "first_byte"}
+{"t": 1517005.7688623, "req": "f_overload_t10-0206", "event": "end", "status": "answered"}
+{"t": 1517005.8744422, "req": "f_overload_t10-0216", "event": "first_byte"}
+{"t": 1517005.8767124, "req": "f_overload_t10-0216", "event": "end", "status": "answered"}
+{"t": 1517006.3386367, "req": "f_overload_t10-0214", "event": "first_byte"}
+{"t": 1517006.341053, "req": "f_overload_t10-0214", "event": "end", "status": "answered"}
+{"t": 1517006.5827778, "req": "f_overload_t10-0225", "event": "first_byte"}
+{"t": 1517006.5841518, "req": "f_overload_t10-0225", "event": "end", "status": "answered"}
+{"t": 1517006.8182567, "req": "f_overload_t10-0211", "event": "first_byte"}
+{"t": 1517006.8196166, "req": "f_overload_t10-0211", "event": "end", "status": "answered"}
+{"t": 1517006.8904608, "req": "f_overload_t10-0229", "event": "arrive", "sched": 218.92605160013773, "q": "How many attention heads does the base Transformer use, and "}
+{"t": 1517006.8916078, "req": "f_overload_t10-0203", "event": "first_byte"}
+{"t": 1517006.8934254, "req": "f_overload_t10-0203", "event": "end", "status": "answered"}
+{"t": 1517006.8994133, "req": "f_overload_t10-0229", "event": "first_byte"}
+{"t": 1517006.9004755, "req": "f_overload_t10-0229", "event": "end", "status": "extractive_overload"}
+{"t": 1517007.2552681, "req": "f_overload_t10-0230", "event": "arrive", "sched": 219.29088670015335, "q": "What open-source license are the Moshi model weights release"}
+{"t": 1517007.2837901, "req": "f_overload_t10-0230", "event": "first_byte"}
+{"t": 1517007.2872746, "req": "f_overload_t10-0230", "event": "end", "status": "extractive_overload"}
+{"t": 1517007.3045339, "req": "f_overload_t10-0215", "event": "first_byte"}
+{"t": 1517007.311754, "req": "f_overload_t10-0215", "event": "end", "status": "answered"}
+{"t": 1517007.4123607, "req": "f_overload_t10-0220", "event": "first_byte"}
+{"t": 1517007.4167618, "req": "f_overload_t10-0220", "event": "end", "status": "answered"}
+{"t": 1517007.4517009, "req": "f_overload_t10-0210", "event": "first_byte"}
+{"t": 1517007.4540515, "req": "f_overload_t10-0210", "event": "end", "status": "answered"}
+{"t": 1517007.5052304, "req": "f_overload_t10-0197", "event": "first_byte"}
+{"t": 1517007.5100979, "req": "f_overload_t10-0197", "event": "end", "status": "answered"}
+{"t": 1517007.5946314, "req": "f_overload_t10-0192", "event": "first_byte"}
+{"t": 1517007.5993119, "req": "f_overload_t10-0192", "event": "end", "status": "extractive_overload"}
+{"t": 1517007.7617534, "req": "f_overload_t10-0185", "event": "first_byte"}
+{"t": 1517007.7669391, "req": "f_overload_t10-0185", "event": "end", "status": "extractive_overload"}
+{"t": 1517008.0182162, "req": "f_overload_t10-0213", "event": "first_byte"}
+{"t": 1517008.0218146, "req": "f_overload_t10-0213", "event": "end", "status": "extractive_overload"}
+{"t": 1517008.4523115, "req": "f_overload_t10-0231", "event": "arrive", "sched": 220.48793649999425, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517008.4689023, "req": "f_overload_t10-0231", "event": "first_byte"}
+{"t": 1517008.4727494, "req": "f_overload_t10-0231", "event": "end", "status": "extractive_overload"}
+{"t": 1517008.5011983, "req": "f_overload_t10-0224", "event": "first_byte"}
+{"t": 1517008.5033922, "req": "f_overload_t10-0224", "event": "end", "status": "extractive_overload"}
+{"t": 1517009.0080226, "req": "f_overload_t10-0219", "event": "first_byte"}
+{"t": 1517009.0127975, "req": "f_overload_t10-0219", "event": "end", "status": "extractive_overload"}
+{"t": 1517009.2315652, "req": "f_overload_t10-0223", "event": "first_byte"}
+{"t": 1517009.2354544, "req": "f_overload_t10-0223", "event": "end", "status": "extractive_overload"}
+{"t": 1517010.1867563, "req": "f_overload_t10-0195", "event": "first_byte"}
+{"t": 1517010.1882963, "req": "f_overload_t10-0195", "event": "end", "status": "extractive_overload"}
+{"t": 1517010.8617588, "req": "f_overload_t10-0232", "event": "arrive", "sched": 222.8973853001371, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1517010.876806, "req": "f_overload_t10-0232", "event": "first_byte"}
+{"t": 1517010.87999, "req": "f_overload_t10-0232", "event": "end", "status": "extractive_overload"}
+{"t": 1517011.0963782, "req": "f_overload_t10-0233", "event": "arrive", "sched": 223.13200300000608, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1517011.1098783, "req": "f_overload_t10-0181", "event": "first_byte"}
+{"t": 1517011.1129283, "req": "f_overload_t10-0181", "event": "end", "status": "answered"}
+{"t": 1517011.1189655, "req": "f_overload_t10-0233", "event": "first_byte"}
+{"t": 1517011.1216671, "req": "f_overload_t10-0233", "event": "end", "status": "extractive_overload"}
+{"t": 1517011.7043772, "req": "f_overload_t10-0199", "event": "first_byte"}
+{"t": 1517011.7105938, "req": "f_overload_t10-0199", "event": "end", "status": "extractive_overload"}
+{"t": 1517011.7943127, "req": "f_overload_t10-0234", "event": "arrive", "sched": 223.82993929996155, "q": "What hardware and how much wall-clock time were used to trai"}
+{"t": 1517011.8132364, "req": "f_overload_t10-0234", "event": "first_byte"}
+{"t": 1517011.8184555, "req": "f_overload_t10-0234", "event": "end", "status": "extractive_overload"}
+{"t": 1517012.8521655, "req": "f_overload_t10-0235", "event": "arrive", "sched": 224.88779240008444, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1517012.866512, "req": "f_overload_t10-0235", "event": "first_byte"}
+{"t": 1517012.8707132, "req": "f_overload_t10-0235", "event": "end", "status": "extractive_overload"}
+{"t": 1517014.5381323, "req": "f_overload_t10-0236", "event": "arrive", "sched": 226.57375760003924, "q": "In Section 3.2.2 of the Transformer paper, how is multi-head"}
+{"t": 1517014.547624, "req": "f_overload_t10-0236", "event": "first_byte"}
+{"t": 1517014.549802, "req": "f_overload_t10-0236", "event": "end", "status": "extractive_overload"}
+{"t": 1517015.0544893, "req": "f_overload_t10-0188", "event": "first_byte"}
+{"t": 1517015.0556395, "req": "f_overload_t10-0188", "event": "end", "status": "extractive_overload"}
+{"t": 1517015.6872227, "req": "f_overload_t10-0237", "event": "arrive", "sched": 227.72284990013577, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517015.6985407, "req": "f_overload_t10-0237", "event": "first_byte"}
+{"t": 1517015.6999782, "req": "f_overload_t10-0237", "event": "end", "status": "extractive_overload"}
+{"t": 1517015.8033122, "req": "f_overload_t10-0222", "event": "first_byte"}
+{"t": 1517015.80473, "req": "f_overload_t10-0222", "event": "end", "status": "extractive_overload"}
+{"t": 1517016.0737342, "req": "f_overload_t10-0238", "event": "arrive", "sched": 228.10936180013232, "q": "How many attention heads does the Transformer base model use"}
+{"t": 1517016.0866871, "req": "f_overload_t10-0238", "event": "first_byte"}
+{"t": 1517016.0879245, "req": "f_overload_t10-0238", "event": "end", "status": "extractive_overload"}
+{"t": 1517016.9157657, "req": "f_overload_t10-0239", "event": "arrive", "sched": 228.9513932999689, "q": "What is the ratio loss in the dynamic chunking paper for?"}
+{"t": 1517016.9185444, "req": "f_overload_t10-0189", "event": "first_byte"}
+{"t": 1517016.9199182, "req": "f_overload_t10-0189", "event": "end", "status": "extractive_overload"}
+{"t": 1517016.9242304, "req": "f_overload_t10-0239", "event": "first_byte"}
+{"t": 1517016.9256497, "req": "f_overload_t10-0239", "event": "end", "status": "extractive_overload"}
+{"t": 1517017.0867642, "req": "f_overload_t10-0240", "event": "arrive", "sched": 229.12239020015113, "q": "How many quantizers does Mimi use, and what bitrate does tha"}
+{"t": 1517017.1055667, "req": "f_overload_t10-0240", "event": "first_byte"}
+{"t": 1517017.1095775, "req": "f_overload_t10-0240", "event": "end", "status": "extractive_overload"}
+{"t": 1517017.7875678, "req": "f_overload_t10-0241", "event": "arrive", "sched": 229.82319210004061, "q": "What GPUs were Moshi's models trained on?"}
+{"t": 1517017.8090342, "req": "f_overload_t10-0241", "event": "first_byte"}
+{"t": 1517017.8158046, "req": "f_overload_t10-0241", "event": "end", "status": "extractive_overload"}
+{"t": 1517020.5887303, "req": "f_overload_t10-0242", "event": "arrive", "sched": 232.62435279996134, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1517020.6097926, "req": "f_overload_t10-0242", "event": "first_byte"}
+{"t": 1517020.6181902, "req": "f_overload_t10-0242", "event": "end", "status": "extractive_overload"}
+{"t": 1517023.5956368, "req": "f_overload_t10-0243", "event": "arrive", "sched": 235.63126190006733, "q": "How does Moshi's theoretical latency compare with the averag"}
+{"t": 1517023.6205364, "req": "f_overload_t10-0243", "event": "first_byte"}
+{"t": 1517023.6300783, "req": "f_overload_t10-0243", "event": "end", "status": "extractive_overload"}
+{"t": 1517023.7365388, "req": "f_overload_t10-0244", "event": "arrive", "sched": 235.77215590002015, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1517023.7659327, "req": "f_overload_t10-0244", "event": "first_byte"}
+{"t": 1517023.7761151, "req": "f_overload_t10-0244", "event": "end", "status": "extractive_overload"}
+{"t": 1517024.4961447, "req": "f_overload_t10-0245", "event": "arrive", "sched": 236.531766399974, "q": "What BLEU score did the Transformer achieve on English-to-Ch"}
+{"t": 1517024.5215905, "req": "f_overload_t10-0245", "event": "first_byte"}
+{"t": 1517024.5336381, "req": "f_overload_t10-0245", "event": "end", "status": "extractive_overload"}
+{"t": 1517025.4603865, "req": "f_overload_t10-0246", "event": "arrive", "sched": 237.49600849999115, "q": "In the H-Net experiments, what is the size of the FLOPs-matc"}
+{"t": 1517025.5013119, "req": "f_overload_t10-0246", "event": "first_byte"}
+{"t": 1517025.5103658, "req": "f_overload_t10-0246", "event": "end", "status": "extractive_overload"}
+{"t": 1517025.6345195, "req": "f_overload_t10-0247", "event": "arrive", "sched": 237.6701432999689, "q": "In section 2.2 of the dynamic chunking paper, what does dech"}
+{"t": 1517025.647082, "req": "f_overload_t10-0247", "event": "first_byte"}
+{"t": 1517025.6498523, "req": "f_overload_t10-0247", "event": "end", "status": "extractive_overload"}

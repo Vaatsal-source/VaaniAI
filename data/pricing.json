@@ -1,0 +1,8 @@
+{
+ "_about": "List prices used for the 'cost per 1,000 answers' column. The free tier bills nothing; these are what the same tokens would cost on Groq's paid on-demand plan. Prices are as shown in Groq's public model pages on 2026-11-13 (a web search returned them with a note that the pages may be more than a year old): confirm at https://console.groq.com/docs/model/openai/gpt-oss-120b before relying on them. Cached-input discounts are ignored, so the cost is an upper bound.",
+ "assumed_model_for_all_tokens": "openai/gpt-oss-120b",
+ "usd_per_million_input_tokens": 0.15,
+ "usd_per_million_output_tokens": 0.60,
+ "also_listed": {"openai/gpt-oss-20b": {"input": 0.075, "output": 0.30}},
+ "why_one_model": "results.csv has one tokens_in and one tokens_out per request, not per model, so every token is priced at the dearer of the two models. In the final system the classify call runs on the 20B and the draft on the 120B, so this overstates the bill a little. Stand-in token counts are the stand-in's own (characters / 4), so stand-in costs are indicative only."
+}

@@ -65,10 +65,18 @@ jobs:
         run: |
           python scripts/make_tables.py
           python scripts/build_readme.py
-      - name: Fail if committed tables or README differ from the logs
+      - name: Regenerate results.csv, the brief's tables and the write-up
         run: |
-          git diff --exit-code -- results/tables.md README.md || {
-            echo "README.md is generated from README.template.md. Edit the template, then run: python scripts/build_readme.py"; exit 1; }
+          python scripts/export_results.py
+          python scripts/tables_from_csv.py
+          python scripts/build_writeup.py
+      - name: Fail if committed tables, results.csv, README or write-up differ from the logs
+        run: |
+          git diff --exit-code -- results/tables.md README.md results.csv results/brief_tables.md results/brief_2a_core.md results/brief_2b_core.md results/brief_3_core.md WRITEUP.md || {
+            echo "README.md and WRITEUP.md are generated from their .template.md files; results.csv from logs/. Edit the template, then run the scripts."; exit 1; }
+      - name: Fail if the write-up still has placeholders
+        run: |
+          if grep -nE '⟦|\{\{' WRITEUP.md; then exit 1; fi
       - name: Fail if the README still has unfinished TODO markers or unfilled table slots
         run: |
           if grep -nE 'TODO\(|\{\{(snip_|TEXT_)' README.md; then exit 1; fi

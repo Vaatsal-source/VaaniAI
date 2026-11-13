@@ -6,6 +6,8 @@ The papers are Attention Is All You Need (arXiv 1706.03762, v7), Moshi (2410.000
 
 **Reproducing it.** Run `scripts/fetch_papers.py`, then `scripts/probe_groq.py --hit-limit`, then `scripts/fit_calibration.py`. After that `scripts/run_eval.py` and `scripts/run_load.py` produce the logs. `scripts/make_tables.py` rebuilds every table in this file from `logs/`, and `scripts/build_readme.py` fills them into this document. The tables are not typed by hand. Settings live in `config.yaml` and the seed is 1234. `pytest` runs 30 tests (limiter, citation checker, 429 parsing, cache, failover routing, table rebuild). `python scripts/check.py` runs the tests, a free retrieval-quality guard and the tables-match-logs check in about 30 seconds; add `--standin` or `--real` for a burst on the stand-in or five real questions (about 11k Groq tokens). Adding a fourth paper is described in `docs/ADD_A_PAPER.md`.
 
+**For the submission.** The 2-page write-up with the brief's tables is `WRITEUP.md`; the raw per-request file the brief asks for is `results.csv` (`python scripts/export_results.py`), and `python scripts/tables_from_csv.py` recomputes Tables 2a, 2b and 3 from that file alone (`results/brief_tables.md`). This README is the long version behind them.
+
 **Two rounds.** Sections 1 to 12 are the first round, written when the first set of experiments was done. A second round fixed the weaknesses that round named; it is described in the appendix after section 12, and the places where it changes something above are marked "(round 2: ...)".
 
 **A note on scope.** The real-Groq numbers are small on purpose because I was on the free tier. Partway through I also hit a daily token limit I didn't know existed (section 2), which used up one model's quota, so some runs had to be repeated on the other model. Every such run is labelled. Runs that turned out to be invalid are still in `logs/`, under names that say what went wrong: `eval_run0_citeparse_bug*`, `eval_tpdexhausted_*`, `eval_suspendartifact_*` and `run1_before_queue_aware/` from round 1, and `eval_invalid_coldstart_*`, `eval_invalid_calltimeout12s_*`, `*r2_invalid_suspendartifact*` and `gemini_probe_0_model404_*` from round 2.
@@ -287,14 +289,14 @@ Two weaknesses I know about. The quoted passages are only as relevant as BM25's 
 
 ## 12. How I worked with the assistant
 
-**(a) The real conversation history.** The raw, uncleaned transcript of this build session is `docs/claude-session.jsonl`. It holds every prompt, tool call and result. My own prompts, in order, were: the brief PDF, "Choose the groq models urself…", "done", "Continue", and then the follow-ups. The only edit is that my Groq organization id is replaced by `[REDACTED-GROQ-ORG-ID]` wherever it appeared (`scripts/redact_transcript.py` does this and checks for API keys; it found none). Machine paths and my email address are left in. The raw API logs in `logs/` still contain the organization id inside the 429 error bodies, because I did not edit the evidence. The earlier planning chat, where I read the brief with the assistant and settled the stack, was a separate session and is not part of that file.
+**(a) The real conversation history.** The raw, uncleaned transcript of this build session is `docs/claude-session.jsonl`. It holds every prompt, tool call and result. My own prompts, in order, were: the brief PDF, "Choose the groq models urself…", "done", "Continue", and then the follow-ups. The only edit is that my Groq organization id is replaced by `[REDACTED-GROQ-ORG-ID]` wherever it appeared (`scripts/redact_transcript.py` does this and checks for API keys; it found none). Machine paths and my email address are left in. The raw API logs in `logs/` still contain the organization id inside the 429 error bodies, because I did not edit the evidence. The earlier planning chat, where I read the brief with the assistant and settled the stack, was a separate session and is not part of that file; its text, copied from the page and not edited, is `docs/planning-chat.md`.
 
 **(b) The three prompts that mattered most, what the assistant got wrong, and a decision I overruled.**
 
 *The three prompts that mattered most:*
 1. **My request to read the first page and list what we need to do** (planning chat): the requirements, the constraints and the tradeoffs, before any design. It made me work out that the overload policy is the central decision, and it led to the rule that every table must be recomputable from raw logs. That is why `make_tables.py` rebuilds every table in this README from `logs/`.
 2. **"What tech stack should I use for this?"** (planning chat). The answer set the architecture: plain asyncio and httpx, no LangChain, my own limiter and retry loop, and an open-loop load generator in a separate process. I kept it because frameworks hide the retries and queueing I have to explain in section 8.
-3. **"Choose the groq models urself… keep in mind the rate limits so that we don't burn out our complete quota in testing itself… Gemini as secondary."** This is the instruction that kept the real runs at 4, 4 and 8 requests and made the stand-in necessary.
+3. **"Choose the groq models urself… keep in mind the rate limits so that we don't burn out our complete quota in testing itself… Gemini as secondary."** This is the instruction that kept the round-1 real runs at 4, 4 and 8 requests and made the stand-in necessary.
 
 *What the assistant got wrong.* I did not catch these myself. The assistant found each one while checking its own results, and each is kept in `logs/` under a name that says what happened:
 - It assumed two Llama models; Groq returned 404 for both, and it switched to the gpt-oss pair after listing the models (`groq_probe_0_model404_*`).
@@ -306,7 +308,7 @@ Two weaknesses I know about. The quoted passages are only as relevant as BM25's 
 
 **(c) What in this submission is distinctly mine.**
 - The instruction to protect the free quota, which shaped the whole test plan: tiny real runs, heavy load on the stand-in.
-- Delegating the model choice to the task and naming a Gemini key as the secondary provider. It is configured and was never run.
+- Delegating the model choice to the task and naming a Gemini key as the secondary provider. Round 1 left it configured and unused; round 2 built it and ran it (appendix D).
 - Asking for the README to read like a person wrote it, and for the CI check and `.gitignore`.
 - Reading vaani.dev and writing sections 10 and 11 myself.
 - Reading the brief first and settling the stack in the planning chat.

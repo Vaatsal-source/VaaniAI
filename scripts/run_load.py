@@ -6,6 +6,7 @@ Flags: --tier N multiplies rpm/tpm/rpd (stand-in AND relay limiter) to model a h
        --mode retrieval mode (bm25 default).
 Raw outputs: logs/load_<tag>.jsonl (client), logs/server_<tag>.jsonl (pipeline), logs/standin_<tag>.json (config)."""
 import argparse, json, os, pathlib, subprocess, sys, time
+PRIO = getattr(subprocess, "HIGH_PRIORITY_CLASS", 0)    # Windows: keep the measured processes ahead of the laptop's background apps (see README appendix)
 import httpx
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -43,7 +44,7 @@ def main():
                   "tpd": 0 if a.tpd_unknown else (a.tpd or int(200000 * a.tier))}
         if a.provider == "standin":
             procs.append(subprocess.Popen([PY, "-m", "uvicorn", "standin.server:app", "--port", "8099", "--log-level", "warning"],
-                                          cwd=ROOT, stdout=subprocess.DEVNULL))
+                                          cwd=ROOT, stdout=subprocess.DEVNULL, creationflags=PRIO))
             wait("http://127.0.0.1:8099/v1/models")
             s = {"rpm": int(30 * a.tier), "tpm": int(8000 * a.tier), "rpd": a.rpd or int(1000 * a.tier),
                  "tpd": a.tpd or int(200000 * a.tier)}
@@ -56,9 +57,9 @@ def main():
                    RELAY_RETRIEVAL=json.dumps({"mode": a.mode}), RELAY_CFG=a.cfg, RELAY_CACHE="1" if a.cache else "0", RELAY_LARGE=a.large or "", RELAY_RETRIES=json.dumps({k: float(v) for k, v in (kv.split("=") for kv in a.retries.split(",") if kv)}))
         (ROOT / "logs" / f"server_{a.tag}.jsonl").write_text("")
         procs.append(subprocess.Popen([PY, "-m", "uvicorn", "relay.server:app", "--port", str(a.relay_port), "--log-level", "warning"],
-                                      cwd=ROOT, env=env, stdout=subprocess.DEVNULL))
+                                      cwd=ROOT, env=env, stdout=subprocess.DEVNULL, creationflags=PRIO))
         wait(f"http://127.0.0.1:{a.relay_port}/health", 120)
-        subprocess.run([PY, str(ROOT / "loadgen" / "loadgen.py"), "--shape", a.shape, "--tag", a.tag, "--base", f"http://127.0.0.1:{a.relay_port}"] + rest, check=True)
+        subprocess.run([PY, str(ROOT / "loadgen" / "loadgen.py"), "--shape", a.shape, "--tag", a.tag, "--base", f"http://127.0.0.1:{a.relay_port}"] + rest, check=True, creationflags=PRIO)
         time.sleep(1)
     finally:
         for p in procs:

@@ -1,0 +1,242 @@
+{"t":1484913.8757313,"req":"f_burst_free-0000","event":"enqueue","question":"How many quantizers does Mimi use, and what bitrate does that give at 12.5Hz?"}
+{"t":1484913.876687,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484913.8769357,"req":"f_burst_free-0000","event":"step_start","step":"classify"}
+{"t":1484913.8825994,"req":"f_burst_free-0000","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":184,"provider":"standin"}
+{"t":1484913.8855424,"req":"f_burst_free-0001","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1484913.8864416,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":1,"provider":"standin"}
+{"t":1484913.8866077,"req":"f_burst_free-0001","event":"step_start","step":"classify"}
+{"t":1484913.8907218,"req":"f_burst_free-0001","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":188,"provider":"standin"}
+{"t":1484913.8925309,"req":"f_burst_free-0002","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1484913.8927504,"req":"-","event":"pressure","wait_s":0.0,"remaining_s":17.0,"queued":0,"committed":2,"provider":"standin"}
+{"t":1484913.8928421,"req":"f_burst_free-0002","event":"step_start","step":"classify"}
+{"t":1484913.8995129,"req":"f_burst_free-0002","event":"send","step":"classify","model":"openai/gpt-oss-20b","attempt":1,"est_tokens":182,"provider":"standin"}
+{"t":1484914.1312583,"req":"f_burst_free-0003","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1484914.1327198,"req":"-","event":"pressure","wait_s":6.67,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1484914.1329352,"req":"f_burst_free-0003","event":"step_start","step":"classify"}
+{"t":1484914.1330248,"req":"f_burst_free-0003","event":"degrade","what":"classify_heuristic"}
+{"t":1484914.1331195,"req":"f_burst_free-0003","event":"step_end","step":"classify"}
+{"t":1484914.1352207,"req":"f_burst_free-0003","event":"step_start","step":"retrieve"}
+{"t":1484914.1598791,"req":"f_burst_free-0003","event":"step_end","step":"retrieve"}
+{"t":1484914.161501,"req":"f_burst_free-0003","event":"decide","branch":"draft","conf":0.75,"k":3}
+{"t":1484914.1625498,"req":"f_burst_free-0003","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":1389,"provider":"standin"}
+{"t":1484914.2659131,"req":"f_burst_free-0004","event":"enqueue","question":"In the H-Net experiments, what is the size of the FLOPs-matched GPT-3 Large Tran"}
+{"t":1484914.2661613,"req":"-","event":"pressure","wait_s":16.32,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1484914.2662553,"req":"f_burst_free-0004","event":"step_start","step":"classify"}
+{"t":1484914.2663146,"req":"f_burst_free-0004","event":"degrade","what":"classify_heuristic"}
+{"t":1484914.2663669,"req":"f_burst_free-0004","event":"step_end","step":"classify"}
+{"t":1484914.2665315,"req":"f_burst_free-0004","event":"step_start","step":"retrieve"}
+{"t":1484914.2881129,"req":"f_burst_free-0004","event":"step_end","step":"retrieve"}
+{"t":1484914.2888683,"req":"f_burst_free-0004","event":"degrade","what":"extractive_overload"}
+{"t":1484914.2904529,"req":"f_burst_free-0004","event":"user_first_token"}
+{"t":1484914.2905752,"req":"f_burst_free-0004","event":"user_last_token"}
+{"t":1484914.2907341,"req":"f_burst_free-0004","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"are missing , in my opinion .\" [C:attention:38]\n\"just this is what we are missing , in my opinion .\" [C:attention:39]\n\"Net (2-stage) (3,3)-DC 7.0 870M M4 + T1M4 + T26 + M4T1 + M4 1024 , 1024 , 1536 #FLOPs matched to GPT-3 XL Transformer Token GPT2 1792 4.6 1.3B T24 2048 SpaceByte++ Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (space) Spacelike 6.0 1.6B M4 + T31 + M4 1024 , 2048 H-Net (1-stage) Byte 6-DC 8192 4\" [C:dynchunk:41]"}
+{"t":1484914.4380339,"req":"f_burst_free-0005","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1484914.4382614,"req":"-","event":"pressure","wait_s":16.15,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1484914.4383467,"req":"f_burst_free-0005","event":"step_start","step":"classify"}
+{"t":1484914.4384022,"req":"f_burst_free-0005","event":"degrade","what":"classify_heuristic"}
+{"t":1484914.4384502,"req":"f_burst_free-0005","event":"step_end","step":"classify"}
+{"t":1484914.4386108,"req":"f_burst_free-0005","event":"step_start","step":"retrieve"}
+{"t":1484914.4537486,"req":"f_burst_free-0005","event":"step_end","step":"retrieve"}
+{"t":1484914.4547578,"req":"f_burst_free-0005","event":"degrade","what":"extractive_overload"}
+{"t":1484914.4562281,"req":"f_burst_free-0005","event":"user_first_token"}
+{"t":1484914.4563591,"req":"f_burst_free-0005","event":"user_last_token"}
+{"t":1484914.4564342,"req":"f_burst_free-0005","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1484914.6210028,"req":"f_burst_free-0006","event":"enqueue","question":"What word error rate did the original Transformer achieve on speech recognition?"}
+{"t":1484914.6211539,"req":"-","event":"pressure","wait_s":15.96,"remaining_s":17.0,"queued":0,"committed":3,"provider":"standin"}
+{"t":1484914.621214,"req":"f_burst_free-0006","event":"step_start","step":"classify"}
+{"t":1484914.6212551,"req":"f_burst_free-0006","event":"degrade","what":"classify_heuristic"}
+{"t":1484914.6212875,"req":"f_burst_free-0006","event":"step_end","step":"classify"}
+{"t":1484914.6213939,"req":"f_burst_free-0006","event":"step_start","step":"retrieve"}
+{"t":1484914.6328989,"req":"f_burst_free-0006","event":"step_end","step":"retrieve"}
+{"t":1484914.6336812,"req":"f_burst_free-0006","event":"shed","reason":"overload_low_confidence"}
+{"t":1484914.6337632,"req":"f_burst_free-0006","event":"user_first_token"}
+{"t":1484914.6338195,"req":"f_burst_free-0006","event":"done","status":"shed","level":2,"steps":["classify","retrieve"],"answer":"I'm at capacity and couldn't find a passage that clearly answers this. Please try again in a minute."}
+{"t":1484914.6661924,"req":"f_burst_free-0003","event":"first_token","step":"draft","ttft_ms":503.4}
+{"t":1484914.6667717,"req":"f_burst_free-0000","event":"first_token","step":"classify","ttft_ms":783.8}
+{"t":1484914.6735162,"req":"f_burst_free-0000","event":"last_token","step":"classify","total_ms":790.6,"prompt_tokens":110,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484914.673841,"req":"f_burst_free-0000","event":"step_end","step":"classify"}
+{"t":1484914.6739576,"req":"f_burst_free-0000","event":"step_start","step":"retrieve"}
+{"t":1484914.6872976,"req":"f_burst_free-0000","event":"step_end","step":"retrieve"}
+{"t":1484914.6894108,"req":"f_burst_free-0000","event":"decide","branch":"draft","conf":0.86,"k":6}
+{"t":1484914.6928514,"req":"f_burst_free-0000","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2527,"provider":"standin"}
+{"t":1484914.747599,"req":"f_burst_free-0003","event":"last_token","step":"draft","total_ms":584.8,"prompt_tokens":1055,"completion_tokens":188,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484914.7487064,"req":"f_burst_free-0003","event":"verify_det","ok":true,"issues":[]}
+{"t":1484914.7488036,"req":"f_burst_free-0003","event":"user_first_token"}
+{"t":1484914.748868,"req":"f_burst_free-0003","event":"user_last_token"}
+{"t":1484914.7489183,"req":"f_burst_free-0003","event":"done","status":"answered","level":1,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:93] [C:moshi:125]"}
+{"t":1484914.8069018,"req":"f_burst_free-0001","event":"first_token","step":"classify","ttft_ms":916.0}
+{"t":1484914.8158098,"req":"f_burst_free-0001","event":"last_token","step":"classify","total_ms":924.8,"prompt_tokens":114,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484914.8160451,"req":"f_burst_free-0001","event":"step_end","step":"classify"}
+{"t":1484914.8162108,"req":"f_burst_free-0001","event":"step_start","step":"retrieve"}
+{"t":1484914.8165568,"req":"f_burst_free-0002","event":"first_token","step":"classify","ttft_ms":916.8}
+{"t":1484914.8329118,"req":"f_burst_free-0001","event":"step_end","step":"retrieve"}
+{"t":1484914.8348959,"req":"f_burst_free-0001","event":"decide","branch":"draft","conf":0.78,"k":5}
+{"t":1484914.8500093,"req":"f_burst_free-0001","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2178,"provider":"standin"}
+{"t":1484914.8680076,"req":"f_burst_free-0002","event":"last_token","step":"classify","total_ms":968.2,"prompt_tokens":109,"completion_tokens":22,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484914.8686541,"req":"f_burst_free-0002","event":"step_end","step":"classify"}
+{"t":1484914.8688214,"req":"f_burst_free-0002","event":"step_start","step":"retrieve"}
+{"t":1484914.8861569,"req":"f_burst_free-0002","event":"step_end","step":"retrieve"}
+{"t":1484914.8908199,"req":"f_burst_free-0002","event":"decide","branch":"draft","conf":1.0,"k":5}
+{"t":1484914.8986161,"req":"f_burst_free-0007","event":"enqueue","question":"In section 2.2 of the dynamic chunking paper, what does dechunking do?"}
+{"t":1484914.8994053,"req":"-","event":"pressure","wait_s":19.97,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1484914.8995025,"req":"f_burst_free-0007","event":"step_start","step":"classify"}
+{"t":1484914.8995468,"req":"f_burst_free-0007","event":"degrade","what":"classify_heuristic"}
+{"t":1484914.8995808,"req":"f_burst_free-0007","event":"step_end","step":"classify"}
+{"t":1484914.8996939,"req":"f_burst_free-0007","event":"step_start","step":"retrieve"}
+{"t":1484914.9070115,"req":"f_burst_free-0007","event":"step_end","step":"retrieve"}
+{"t":1484914.9089481,"req":"f_burst_free-0007","event":"degrade","what":"extractive_overload"}
+{"t":1484914.9100718,"req":"f_burst_free-0007","event":"user_first_token"}
+{"t":1484914.9101847,"req":"f_burst_free-0007","event":"user_last_token"}
+{"t":1484914.9102399,"req":"f_burst_free-0007","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"ise, the same downsampler applies to boundary probabilities, compressing \ud835\udc5d\ud835\udc60into \ud835\udc43\ud835\udc60+1 for use in a dechunking layer (see Section 2.2.2).\" [C:dynchunk:22]\n\"(right) Dynamic Chunking (DC).\" [C:dynchunk:9]\n\"2.2 Dynamic Chunking (DC) H-Net learns chunking boundaries through end-to-end training, allowing it to identify semantically meaningful units adaptively.\" [C:dynchunk:19]"}
+{"t":1484915.2703118,"req":"f_burst_free-0000","event":"first_token","step":"draft","ttft_ms":577.3}
+{"t":1484915.3251414,"req":"f_burst_free-0000","event":"last_token","step":"draft","total_ms":632.2,"prompt_tokens":1994,"completion_tokens":187,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484915.3254228,"req":"f_burst_free-0000","event":"verify_det","ok":true,"issues":[]}
+{"t":1484915.3254803,"req":"f_burst_free-0000","event":"user_first_token"}
+{"t":1484915.3255416,"req":"f_burst_free-0000","event":"user_last_token"}
+{"t":1484915.3255898,"req":"f_burst_free-0000","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:moshi:32] [C:moshi:71]"}
+{"t":1484915.4270686,"req":"f_burst_free-0008","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1484915.4328337,"req":"-","event":"pressure","wait_s":17.34,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1484915.4335248,"req":"f_burst_free-0008","event":"step_start","step":"classify"}
+{"t":1484915.4335736,"req":"f_burst_free-0008","event":"degrade","what":"classify_heuristic"}
+{"t":1484915.4336701,"req":"f_burst_free-0008","event":"step_end","step":"classify"}
+{"t":1484915.4338241,"req":"f_burst_free-0008","event":"step_start","step":"retrieve"}
+{"t":1484915.4913216,"req":"f_burst_free-0001","event":"first_token","step":"draft","ttft_ms":640.9}
+{"t":1484915.5362586,"req":"f_burst_free-0008","event":"step_end","step":"retrieve"}
+{"t":1484915.602365,"req":"f_burst_free-0008","event":"degrade","what":"extractive_overload"}
+{"t":1484915.6035087,"req":"f_burst_free-0008","event":"user_first_token"}
+{"t":1484915.6036071,"req":"f_burst_free-0008","event":"user_last_token"}
+{"t":1484915.6036618,"req":"f_burst_free-0008","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1484915.6720081,"req":"f_burst_free-0001","event":"last_token","step":"draft","total_ms":821.6,"prompt_tokens":1706,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484915.6722752,"req":"f_burst_free-0001","event":"verify_det","ok":true,"issues":[]}
+{"t":1484915.6723339,"req":"f_burst_free-0001","event":"user_first_token"}
+{"t":1484915.6723937,"req":"f_burst_free-0001","event":"user_last_token"}
+{"t":1484915.6724418,"req":"f_burst_free-0001","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:attention:20] [C:attention:23]"}
+{"t":1484915.891678,"req":"f_burst_free-0009","event":"enqueue","question":"What BLEU score did the Transformer achieve on English-to-Chinese translation?"}
+{"t":1484915.8918917,"req":"-","event":"pressure","wait_s":14.74,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1484915.8919846,"req":"f_burst_free-0009","event":"step_start","step":"classify"}
+{"t":1484915.8920571,"req":"f_burst_free-0009","event":"degrade","what":"classify_heuristic"}
+{"t":1484915.8920944,"req":"f_burst_free-0009","event":"step_end","step":"classify"}
+{"t":1484915.8922171,"req":"f_burst_free-0009","event":"step_start","step":"retrieve"}
+{"t":1484915.899799,"req":"f_burst_free-0009","event":"step_end","step":"retrieve"}
+{"t":1484915.900477,"req":"f_burst_free-0009","event":"degrade","what":"extractive_overload"}
+{"t":1484915.9013752,"req":"f_burst_free-0009","event":"user_first_token"}
+{"t":1484915.9014472,"req":"f_burst_free-0009","event":"user_last_token"}
+{"t":1484915.9015131,"req":"f_burst_free-0009","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.\" [C:attention:1]\n\"6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.\" [C:attention:22]\n\"On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.\" [C:attention:23]"}
+{"t":1484916.1406351,"req":"f_burst_free-0010","event":"enqueue","question":"How well does H-Net perform on protein sequence modeling?"}
+{"t":1484916.1408135,"req":"-","event":"pressure","wait_s":14.49,"remaining_s":17.0,"queued":1,"committed":0,"provider":"standin"}
+{"t":1484916.1408734,"req":"f_burst_free-0010","event":"step_start","step":"classify"}
+{"t":1484916.1409145,"req":"f_burst_free-0010","event":"degrade","what":"classify_heuristic"}
+{"t":1484916.1409494,"req":"f_burst_free-0010","event":"step_end","step":"classify"}
+{"t":1484916.14104,"req":"f_burst_free-0010","event":"step_start","step":"retrieve"}
+{"t":1484916.1543239,"req":"f_burst_free-0010","event":"step_end","step":"retrieve"}
+{"t":1484916.1550459,"req":"f_burst_free-0010","event":"degrade","what":"extractive_overload"}
+{"t":1484916.1559403,"req":"f_burst_free-0010","event":"user_first_token"}
+{"t":1484916.1560336,"req":"f_burst_free-0010","event":"user_last_token"}
+{"t":1484916.1560826,"req":"f_burst_free-0010","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"H-Net\u2019s improvements are even more pronounced on languages without obvious segmentation cues, including Chinese and code (59.9 \u219266.3 on XWinograd-zh compared to tokenized Transformer) and DNA language modeling (3.6\u00d7 improved data efficiency compared to isotropic models).\" [C:dynchunk:12]\n\"izer, we find that H-Net (2-stage) scales better than BPE Transformer and H-Net (space) on both Chinese and code (Figure 5), and achieves lower compression after the decay phase (Table 4).\" [C:dynchunk:61]\n\"15 20B 30B 40B 50B 60B 70B 80B 90B 100B Total Training Bytes 0.74 0.76 0.78 0.80 0.82 0.84 0.86 0.88 0.90 Validation Bits-per-byte Chinese (F.-Edu-Chinese-V2.1) 20B 30B 40B 50B 60B 70B 80B Total Training Bytes 0.36 0.38 0.40 0.42 0.44 Code (Pile Github) H-Net (2-stage) H-Net (space) (BPE) Transforme\" [C:dynchunk:58]"}
+{"t":1484916.2853607,"req":"f_burst_free-0002","event":"send","step":"draft","model":"openai/gpt-oss-120b","attempt":1,"est_tokens":2164,"provider":"standin"}
+{"t":1484916.6849806,"req":"f_burst_free-0011","event":"enqueue","question":"What value of label smoothing was used when training the Transformer?"}
+{"t":1484916.6851809,"req":"-","event":"pressure","wait_s":13.94,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484916.6852401,"req":"f_burst_free-0011","event":"step_start","step":"classify"}
+{"t":1484916.6852806,"req":"f_burst_free-0011","event":"degrade","what":"classify_heuristic"}
+{"t":1484916.6853149,"req":"f_burst_free-0011","event":"step_end","step":"classify"}
+{"t":1484916.6854042,"req":"f_burst_free-0011","event":"step_start","step":"retrieve"}
+{"t":1484916.7964417,"req":"f_burst_free-0011","event":"step_end","step":"retrieve"}
+{"t":1484916.7977586,"req":"f_burst_free-0011","event":"degrade","what":"extractive_overload"}
+{"t":1484916.8008434,"req":"f_burst_free-0011","event":"user_first_token"}
+{"t":1484916.8009621,"req":"f_burst_free-0011","event":"user_last_token"}
+{"t":1484916.8010164,"req":"f_burst_free-0011","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36].\" [C:attention:22]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"1B 2B 3B 4B 5B 6B 7B 8B Training Base Pairs Seen 2.75 2.80 2.85 2.90 2.95 3.6x more data efficient than isotropic model Perplexity on HG38 Transformer Mamba-2 H-Net (Trans.) H-Net (Mamba) Figure 6: Scaling performance on HG38 during the stable phase of training.\" [C:dynchunk:64]"}
+{"t":1484916.8210092,"req":"f_burst_free-0012","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1484916.8211981,"req":"-","event":"pressure","wait_s":13.8,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484916.8212831,"req":"f_burst_free-0012","event":"step_start","step":"classify"}
+{"t":1484916.8213266,"req":"f_burst_free-0012","event":"degrade","what":"classify_heuristic"}
+{"t":1484916.8213616,"req":"f_burst_free-0012","event":"step_end","step":"classify"}
+{"t":1484916.8214426,"req":"f_burst_free-0012","event":"step_start","step":"retrieve"}
+{"t":1484916.8244628,"req":"f_burst_free-0013","event":"enqueue","question":"What open-source license are the Moshi model weights released under?"}
+{"t":1484916.825813,"req":"-","event":"pressure","wait_s":13.8,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484916.8259093,"req":"f_burst_free-0013","event":"step_start","step":"classify"}
+{"t":1484916.8259671,"req":"f_burst_free-0013","event":"degrade","what":"classify_heuristic"}
+{"t":1484916.8260052,"req":"f_burst_free-0013","event":"step_end","step":"classify"}
+{"t":1484916.8260926,"req":"f_burst_free-0013","event":"step_start","step":"retrieve"}
+{"t":1484916.8414991,"req":"f_burst_free-0012","event":"step_end","step":"retrieve"}
+{"t":1484916.8420923,"req":"f_burst_free-0012","event":"degrade","what":"extractive_overload"}
+{"t":1484916.8431765,"req":"f_burst_free-0012","event":"user_first_token"}
+{"t":1484916.8433137,"req":"f_burst_free-0012","event":"user_last_token"}
+{"t":1484916.8433701,"req":"f_burst_free-0012","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
+{"t":1484916.9088333,"req":"f_burst_free-0013","event":"step_end","step":"retrieve"}
+{"t":1484916.9220624,"req":"f_burst_free-0013","event":"degrade","what":"extractive_overload"}
+{"t":1484916.9232399,"req":"f_burst_free-0013","event":"user_first_token"}
+{"t":1484916.9233492,"req":"f_burst_free-0013","event":"user_last_token"}
+{"t":1484916.9234029,"req":"f_burst_free-0013","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"(2023), the semantic evaluation uses the open-source DialoGPT model Zhang et al.\" [C:moshi:93]\n\"The first component of Moshi is Helium, a 7B parameter text LLM which is competitive with open-weights models trained with a similar compute budget.\" [C:moshi:125]\n\"substance cannabis 62.95 80.87 82.07 99.60 24.30 68.12 56.17 32.66 72.50 43.82 43.02 substance drug 65.79 93.50 97.37 100.0 34.00 89.18 77.27 48.99 94.74 63.83 63.98 substance tobacco 84.91 99.05 99.05 100.0 66.98 99.05 91.50 75.47 100.0 89.62 87.73 substance other 81.77 96.57 98.88 100.0 45.94 91.8\" [C:moshi:180]"}
+{"t":1484916.9702263,"req":"f_burst_free-0002","event":"first_token","step":"draft","ttft_ms":684.7}
+{"t":1484917.1493609,"req":"f_burst_free-0014","event":"enqueue","question":"What hardware and how much wall-clock time were used to train the base Transform"}
+{"t":1484917.1495679,"req":"-","event":"pressure","wait_s":13.47,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484917.1496319,"req":"f_burst_free-0014","event":"step_start","step":"classify"}
+{"t":1484917.1496746,"req":"f_burst_free-0014","event":"degrade","what":"classify_heuristic"}
+{"t":1484917.1497106,"req":"f_burst_free-0014","event":"step_end","step":"classify"}
+{"t":1484917.1498384,"req":"f_burst_free-0014","event":"step_start","step":"retrieve"}
+{"t":1484917.1875337,"req":"f_burst_free-0002","event":"last_token","step":"draft","total_ms":902.0,"prompt_tokens":1694,"completion_tokens":189,"provider_queue_ms":null,"provider_total_ms":null}
+{"t":1484917.1991687,"req":"f_burst_free-0002","event":"verify_det","ok":true,"issues":[]}
+{"t":1484917.1993021,"req":"f_burst_free-0002","event":"user_first_token"}
+{"t":1484917.1993724,"req":"f_burst_free-0002","event":"user_last_token"}
+{"t":1484917.1997248,"req":"f_burst_free-0002","event":"done","status":"answered","level":0,"steps":["classify","retrieve","draft"],"answer":"According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. According to the retrieved passages, the mechanism is described in detail and the relevant quantities are defined there. [C:dynchunk:22] [C:dynchunk:9]"}
+{"t":1484917.2694189,"req":"f_burst_free-0014","event":"step_end","step":"retrieve"}
+{"t":1484917.270195,"req":"f_burst_free-0014","event":"degrade","what":"extractive_overload"}
+{"t":1484917.2711333,"req":"f_burst_free-0014","event":"user_first_token"}
+{"t":1484917.271215,"req":"f_burst_free-0014","event":"user_last_token"}
+{"t":1484917.271263,"req":"f_burst_free-0014","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs.\" [C:attention:20]\n\"Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.\" [C:attention:23]\n\"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\" [C:attention:26]"}
+{"t":1484918.0668328,"req":"-","event":"loop_lag","lag_ms":842.8}
+{"t":1484918.0906531,"req":"f_burst_free-0015","event":"enqueue","question":"In Section 3.2.2 of the Transformer paper, how is multi-head attention defined?"}
+{"t":1484918.0908315,"req":"-","event":"pressure","wait_s":10.38,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484918.090894,"req":"f_burst_free-0015","event":"step_start","step":"classify"}
+{"t":1484918.0988141,"req":"f_burst_free-0015","event":"degrade","what":"classify_heuristic"}
+{"t":1484918.098946,"req":"f_burst_free-0015","event":"step_end","step":"classify"}
+{"t":1484918.0990782,"req":"f_burst_free-0015","event":"step_start","step":"retrieve"}
+{"t":1484918.1181942,"req":"f_burst_free-0016","event":"enqueue","question":"What GPUs were Moshi's models trained on?"}
+{"t":1484918.1187348,"req":"-","event":"pressure","wait_s":10.35,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484918.1187991,"req":"f_burst_free-0016","event":"step_start","step":"classify"}
+{"t":1484918.1188408,"req":"f_burst_free-0016","event":"degrade","what":"classify_heuristic"}
+{"t":1484918.1188761,"req":"f_burst_free-0016","event":"step_end","step":"classify"}
+{"t":1484918.1189674,"req":"f_burst_free-0016","event":"step_start","step":"retrieve"}
+{"t":1484918.1240684,"req":"f_burst_free-0015","event":"step_end","step":"retrieve"}
+{"t":1484918.1246588,"req":"f_burst_free-0015","event":"degrade","what":"extractive_overload"}
+{"t":1484918.1259669,"req":"f_burst_free-0015","event":"user_first_token"}
+{"t":1484918.1270989,"req":"f_burst_free-0015","event":"user_last_token"}
+{"t":1484918.1271861,"req":"f_burst_free-0015","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"The output is computed as a weighted sum 3 Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention.\" [C:attention:8]\n\"3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: \u2022 In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\" [C:attention:12]\n\"In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.\" [C:attention:5]"}
+{"t":1484918.132337,"req":"f_burst_free-0016","event":"step_end","step":"retrieve"}
+{"t":1484918.1329343,"req":"f_burst_free-0016","event":"degrade","what":"extractive_overload"}
+{"t":1484918.1361064,"req":"f_burst_free-0016","event":"user_first_token"}
+{"t":1484918.1362465,"req":"f_burst_free-0016","event":"user_last_token"}
+{"t":1484918.1363077,"req":"f_burst_free-0016","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"All models are trained on H100 GPUs, using FSDP and activation checkp\" [C:moshi:58]\n\"Both have a perplexity that is better than the ground truth, which is explained by these models being trained on data that is closer to what DialoGPT has been trained on compared to the Fisher dataset.\" [C:moshi:94]\n\"All models are trained on H100 GPUs, using FSDP and activation checkpointing.\" [C:moshi:59]"}
+{"t":1484918.2571706,"req":"f_burst_free-0017","event":"enqueue","question":"How many attention heads does the Transformer base model use, and how many heads"}
+{"t":1484918.257322,"req":"-","event":"pressure","wait_s":10.21,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484918.257378,"req":"f_burst_free-0017","event":"step_start","step":"classify"}
+{"t":1484918.2574135,"req":"f_burst_free-0017","event":"degrade","what":"classify_heuristic"}
+{"t":1484918.2574443,"req":"f_burst_free-0017","event":"step_end","step":"classify"}
+{"t":1484918.2575511,"req":"f_burst_free-0017","event":"step_start","step":"retrieve"}
+{"t":1484918.2746736,"req":"f_burst_free-0017","event":"step_end","step":"retrieve"}
+{"t":1484918.2753783,"req":"f_burst_free-0017","event":"degrade","what":"extractive_overload"}
+{"t":1484918.2766197,"req":"f_burst_free-0017","event":"user_first_token"}
+{"t":1484918.2767456,"req":"f_burst_free-0017","event":"user_last_token"}
+{"t":1484918.276818,"req":"f_burst_free-0017","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"<EOS> <pad> Figure 5: Many of the attention heads exhibit behaviour that seems related to the structure of the sentence.\" [C:attention:39]\n\"While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.\" [C:attention:25]\n\"MOSHI: Entropy is calculated using a formula where it\u2019s negative sum of the products of each possible outcome\u2019s probability and its logarithm to a base, usually base-2 or base-e.\" [C:moshi:181]"}
+{"t":1484918.4154957,"req":"f_burst_free-0018","event":"enqueue","question":"How does the H-Net routing module decide where chunk boundaries go?"}
+{"t":1484918.4158093,"req":"-","event":"pressure","wait_s":10.06,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484918.41592,"req":"f_burst_free-0018","event":"step_start","step":"classify"}
+{"t":1484918.4159947,"req":"f_burst_free-0018","event":"degrade","what":"classify_heuristic"}
+{"t":1484918.416059,"req":"f_burst_free-0018","event":"step_end","step":"classify"}
+{"t":1484918.4162229,"req":"f_burst_free-0018","event":"step_start","step":"retrieve"}
+{"t":1484918.4256885,"req":"f_burst_free-0018","event":"step_end","step":"retrieve"}
+{"t":1484918.42664,"req":"f_burst_free-0018","event":"degrade","what":"extractive_overload"}
+{"t":1484918.4289941,"req":"f_burst_free-0018","event":"user_first_token"}
+{"t":1484918.4295647,"req":"f_burst_free-0018","event":"user_last_token"}
+{"t":1484918.4296687,"req":"f_burst_free-0018","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsa\" [C:dynchunk:8]\n\"2.2.1 Chunking Layer The chunking layer (Chunk in equation (2)) contains a routing module and downsampler, as illustrated in Figure 1( bottom-right ).\" [C:dynchunk:20]\n\"( bottom-right ) Key components of a chunking layer: (a) a routing module for dynamically drawing chunk boundaries, and (b) a downsampler that selectively retains vectors based on boundary indicators, reducing sequence length while preserving semantically significant positions.\" [C:dynchunk:9]"}
+{"t":1484918.5417416,"req":"f_burst_free-0019","event":"enqueue","question":"How many tokens was Helium pretrained on?"}
+{"t":1484918.5420245,"req":"-","event":"pressure","wait_s":9.93,"remaining_s":17.0,"queued":0,"committed":0,"provider":"standin"}
+{"t":1484918.5421288,"req":"f_burst_free-0019","event":"step_start","step":"classify"}
+{"t":1484918.5421931,"req":"f_burst_free-0019","event":"degrade","what":"classify_heuristic"}
+{"t":1484918.5422489,"req":"f_burst_free-0019","event":"step_end","step":"classify"}
+{"t":1484918.5423897,"req":"f_burst_free-0019","event":"step_start","step":"retrieve"}
+{"t":1484918.5537775,"req":"f_burst_free-0019","event":"step_end","step":"retrieve"}
+{"t":1484918.554761,"req":"f_burst_free-0019","event":"degrade","what":"extractive_overload"}
+{"t":1484918.5573124,"req":"f_burst_free-0019","event":"user_first_token"}
+{"t":1484918.5575943,"req":"f_burst_free-0019","event":"user_last_token"}
+{"t":1484918.5577574,"req":"f_burst_free-0019","event":"done","status":"extractive_overload","level":2,"steps":["classify","retrieve"],"answer":"We're very busy right now, so I can't write a summary. Here are the most relevant passages from the papers, quoted verbatim:\n\"t include text tokens from Inner Monologue in these scores, as these metrics are designed to compare untranscribed audio sequences and should be computed on audio tokens only.\" [C:moshi:84]\n\"The corresponding Moshi model is similar to the one mentioned above (audio-only data, no Inner Monologue) but starts from the pretrained Helium checkpoint.\" [C:moshi:85]\n\"resent Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of public English data.\" [C:moshi:6]"}
